@@ -15,7 +15,7 @@
     <div class="container">
         <aside class="sidebar">
             <div class="sidebar-header">
-                <h2>API Reference</h2>
+                <h2><a href="index.html">API Reference</a></h2>
                 <div class="search-box">
                     <input type="text" id="search-input" placeholder="Search API..." autocomplete="off">
                     <button id="clear-search" style="display: none;">&times;</button>
@@ -23,7 +23,9 @@
                 </div>
             </div>
             <nav class="sidebar-nav">
+                <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
             <a href="Api-Index.html" class="type-link" data-file="Api-Index">Api-Index</a>
+            <a href="index.html" class="active type-link" data-file="index">index</a>
             <a href="Namespace-Index.html" class="type-link" data-file="Namespace-Index">Namespace-Index</a>
             <details class="namespace">
                 <summary>Sandbox</summary>
@@ -5790,19 +5792,36 @@
                 </ul>
             </details>
             </nav>
-            <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top" style="display: none;">↑</button>
+            <div class="sidebar-footer">Generated 2025-12-06 17:00 UTC</div>
         </aside>
         <div id="search-results" style="display: none;"></div>
         <main class="content">
-            <h1>API Reference</h1>
-<p>Welcome to the MDK-SE API Reference documentation.</p>
-<p>Use the navigation on the left to browse namespaces, types, and members.</p>
-<h2>Namespaces</h2>
+<h1 id="space-engineers-programmable-block-api-reference">Space Engineers Programmable Block API Reference</h1>
+<p>This is a community-maintained reference for the <strong>Space Engineers In-Game Programming API</strong>. It provides detailed documentation of the classes, interfaces, and methods available when writing scripts for programmable blocks in Space Engineers.</p>
+<blockquote>
+<p><strong>⚠️ Important Notice</strong><br />
+This is an <strong>unofficial</strong> documentation source maintained by the community. Space Engineers and all related content are © Keen Software House. This documentation is provided for educational purposes to help the Space Engineers community create better programmable block scripts.</p>
+</blockquote>
+<h2 id="what-is-space-engineers">What is Space Engineers?</h2>
+<p><strong>Space Engineers</strong> is a sandbox game about engineering, construction, exploration and survival in space and on planets. Developed by <a href="https://www.keenswh.com/">Keen Software House</a>, where players can build space ships, space stations, planetary outposts, and more.</p>
+<h3 id="programmable-blocks">Programmable Blocks</h3>
+<p>One of the most powerful features in Space Engineers is the <strong>Programmable Block</strong> - an in-game computer that allows players to write C# scripts to automate and control their creations. This API documentation covers all the classes and methods available for use in these scripts.</p>
+<h2 id="getting-started">Getting Started</h2>
 <ul>
-<li><strong>Sandbox</strong> - Core Space Engineers API</li>
-<li><strong>VRage</strong> - VRage engine API</li>
-<li><strong>VRageMath</strong> - Mathematics library</li>
+<li>Browse the API using the navigation tree on the left</li>
+<li>Use the search box to quickly find specific types or members</li>
+<li>Prefix your search with <code>T:</code> to search only types, or <code>M:</code> to search only members</li>
 </ul>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><strong>Official Game</strong>: <a href="https://store.steampowered.com/app/244850/Space_Engineers/">Space Engineers on Steam</a></li>
+<li><strong>Official Wiki</strong>: <a href="https://spaceengineers.wiki.gg/wiki/Scripting">keenswh.com</a></li>
+<li><strong>MDK2 Toolkit</strong>: <a href="https://github.com/malforge/mdk2">GitHub Repository</a></li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>This documentation is generated from the Space Engineers game files. If you notice any errors or have suggestions for improvement, please contribute to the documentation project by
+submitting issues or pull requests on the <a href="https://github.com/malforge/mdk2/issues">MDK2 GitHub Repository</a>. Please tag your issues clearly as being related to the API documentation.</p>
+
         </main>
     </div>
     <script src="api-index.js"></script>

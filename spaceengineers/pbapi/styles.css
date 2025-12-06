@@ -75,6 +75,8 @@ body.sidebar-collapsed .sidebar-toggle {
     height: 100vh;
     transition: transform 0.3s ease;
     z-index: 1050;
+    display: flex;
+    flex-direction: column;
 }
 
 body.sidebar-collapsed .sidebar {
@@ -97,6 +99,16 @@ body.sidebar-collapsed .content {
     margin: 0;
     margin-bottom: 15px;
     padding-left: 50px;
+}
+
+.sidebar-header h2 a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.sidebar-header h2 a:hover {
+    opacity: 0.8;
 }
 
 .search-box {
@@ -314,29 +326,42 @@ body.sidebar-collapsed .content {
 
 .sidebar-nav {
     padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+    position: relative;
 }
 
 .sidebar-scroll-top {
+    display: none;
     position: sticky;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: #2d2d30;
+    top: 2px;
+    margin: 2px 2px 0 auto;
+    width: fit-content;
+    padding: 4px 8px;
+    background-color: rgba(45, 45, 48, 0.95);
     border: 1px solid #555555;
-    border-radius: 50%;
+    border-radius: 12px;
     color: #4fc3f7;
-    font-size: 1.2em;
+    font-size: 0.75em;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    text-align: center;
     z-index: 10;
-    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .sidebar-scroll-top:hover {
     background-color: #3c3c3c;
     border-color: #4fc3f7;
+}
+
+.sidebar-footer {
+    padding: 15px 20px;
+    font-size: 0.7em;
+    color: #808080;
+    text-align: center;
+    border-top: 1px solid #3e3e42;
+    margin-top: auto;
 }
 
 .content {

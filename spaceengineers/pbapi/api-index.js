@@ -329,20 +329,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Sidebar scroll-to-top button
-    const sidebar = document.querySelector('.sidebar');
+    const sidebarNav = document.querySelector('.sidebar-nav');
     const scrollTopBtn = document.getElementById('sidebar-scroll-top');
-    
-    if (sidebar && scrollTopBtn) {
-        sidebar.addEventListener('scroll', function() {
-            if (sidebar.scrollTop > 200) {
+
+    if (sidebarNav && scrollTopBtn) {
+        sidebarNav.addEventListener('scroll', function() {
+            if (sidebarNav.scrollTop > 200) {
                 scrollTopBtn.style.display = 'block';
             } else {
                 scrollTopBtn.style.display = 'none';
             }
         });
-        
+
         scrollTopBtn.addEventListener('click', function() {
-            sidebar.scrollTo({ top: 0, behavior: 'smooth' });
+            sidebarNav.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
 });
