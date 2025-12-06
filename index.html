@@ -12,7 +12,8 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
         }
         .container {
             text-align: center;
@@ -20,17 +21,42 @@
         h1 {
             font-size: 2em;
             margin-bottom: 0.5em;
+            color: #ffffff;
         }
         p {
             font-size: 1.2em;
-            color: #555;
+            color: #b0b0b0;
+        }
+        a {
+            display: inline-block;
+            margin-top: 1em;
+            padding: 0.8em 1.5em;
+            font-size: 1.1em;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+        img.avatar {
+            width: 128px;
+            height: 128px;
+            margin-bottom: 1em;
+            border-radius: 50%;
+            border: 3px solid #007bff;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="malware256.png" alt="Malforge Avatar" class="avatar">
         <h1>Site Under Construction</h1>
         <p>This site is a placeholder while waiting for content to be completed. Please check back soon!</p>
+        <p><small><em>(Note: "Soon" is measured in geological time. This placeholder may outlive us all.)</em></small></p>
+        <a href="/spaceengineers/pbapi/">Space Engineers PB API</a>
     </div>
 </body>
 </html>
