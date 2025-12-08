@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --sidebar-width: 320px;
+    --sidebar-min-width: 200px;
+    --sidebar-max-width: 600px;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background-color: #1e1e1e;
@@ -65,7 +71,7 @@ body.sidebar-collapsed .sidebar-toggle {
 }
 
 .sidebar {
-    width: 320px;
+    width: var(--sidebar-width);
     flex-shrink: 0;
     background-color: #252526;
     border-right: 1px solid #3e3e42;
@@ -77,10 +83,32 @@ body.sidebar-collapsed .sidebar-toggle {
     z-index: 1050;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 body.sidebar-collapsed .sidebar {
-    transform: translateX(-320px);
+    transform: translateX(calc(var(--sidebar-width) * -1));
+}
+
+.sidebar-resize-handle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    cursor: col-resize;
+    background: transparent;
+    z-index: 1051;
+    transition: background-color 0.2s ease;
+}
+
+.sidebar-resize-handle:hover,
+.sidebar-resize-handle.resizing {
+    background: rgba(79, 195, 247, 0.5);
+}
+
+body.sidebar-collapsed .sidebar-resize-handle {
+    display: none;
 }
 
 body.sidebar-collapsed .content {
@@ -398,7 +426,6 @@ body.sidebar-collapsed .content {
 
 .content h1 {
     margin: 0;
-    max-width: 1200px;
 }
 
 .content h1 {
@@ -492,6 +519,9 @@ summary {
     font-size: 0.9em;
     transition: background-color 0.15s ease;
     list-style: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 summary::-webkit-details-marker {
@@ -633,13 +663,99 @@ li {
     text-decoration: underline;
 }
 
+/* Table styling */
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #252526;
+    border: 1px solid #3e3e42;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.content table thead {
+    background-color: #2d2d30;
+}
+
+.content table thead tr {
+    border-bottom: 2px solid #4fc3f7;
+}
+
+.content table th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #4fc3f7;
+    font-size: 0.95em;
+    letter-spacing: 0.3px;
+}
+
+.content table th:not(:last-child) {
+    width: 1%;
+    white-space: nowrap;
+}
+
+.content table th:last-child {
+    width: auto;
+}
+
+.content table td {
+    padding: 10px 15px;
+    color: #d4d4d4;
+    border-top: 1px solid #3e3e42;
+    vertical-align: top;
+}
+
+.content table td:not(:last-child) {
+    white-space: nowrap;
+}
+
+.content table tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+.content table tbody tr:hover {
+    background-color: #2a2a2a;
+}
+
+.content table tbody tr:first-child td {
+    border-top: none;
+}
+
+/* Table code elements */
+.content table code {
+    font-size: 0.9em;
+    background-color: #1e1e1e;
+    padding: 2px 5px;
+}
+
+/* Responsive tables - add horizontal scroll on small screens */
+@media (max-width: 768px) {
+    .content table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .content table th,
+    .content table td {
+        padding: 8px 12px;
+        font-size: 0.85em;
+    }
+}
+
 /* Mobile and tablet responsive styles */
 /* Switch to overlay mode when screen is too narrow for sidebar + content */
 @media (max-width: 1024px) {
     .sidebar {
         position: fixed;
         z-index: 1050;
-        transform: translateX(-320px);
+        transform: translateX(calc(var(--sidebar-width) * -1));
+    }
+
+    .sidebar-resize-handle {
+        display: none !important;
     }
     
     body.sidebar-collapsed .sidebar {
@@ -684,12 +800,12 @@ li {
 }
 
 @media (max-width: 480px) {
-    .sidebar {
-        width: 280px;
+    :root {
+        --sidebar-width: 280px;
     }
-    
+
     body.sidebar-collapsed .sidebar {
-        transform: translateX(-280px);
+        transform: translateX(calc(var(--sidebar-width) * -1));
     }
     
     .sidebar-header h2 {

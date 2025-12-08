@@ -44,7 +44,70 @@ document.addEventListener('DOMContentLoaded', function() {
             sidebarToggle.classList.remove('active');
         }
     });
-    
+
+    // Sidebar resize functionality
+    const resizeHandle = document.querySelector('.sidebar-resize-handle');
+    const sidebar = document.querySelector('.sidebar');
+    let isResizing = false;
+    let startX = 0;
+    let startWidth = 0;
+
+    // Load saved width from localStorage
+    const savedWidth = localStorage.getItem('sidebarWidth');
+    if (savedWidth && window.innerWidth > 1024) {
+        document.documentElement.style.setProperty('--sidebar-width', savedWidth + 'px');
+    }
+
+    resizeHandle.addEventListener('mousedown', function(e) {
+        // Only enable resize on desktop
+        if (window.innerWidth <= 1024) return;
+
+        isResizing = true;
+        startX = e.clientX;
+        startWidth = sidebar.offsetWidth;
+        resizeHandle.classList.add('resizing');
+        document.body.style.cursor = 'col-resize';
+        document.body.style.userSelect = 'none';
+        e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', function(e) {
+        if (!isResizing) return;
+
+        const delta = e.clientX - startX;
+        const newWidth = startWidth + delta;
+
+        // Get constraints from CSS variables
+        const minWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sidebar-min-width'));
+        const maxWidth = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sidebar-max-width'));
+
+        // Constrain width
+        const constrainedWidth = Math.max(minWidth, Math.min(maxWidth, newWidth));
+
+        document.documentElement.style.setProperty('--sidebar-width', constrainedWidth + 'px');
+    });
+
+    document.addEventListener('mouseup', function() {
+        if (!isResizing) return;
+
+        isResizing = false;
+        resizeHandle.classList.remove('resizing');
+        document.body.style.cursor = '';
+        document.body.style.userSelect = '';
+
+        // Save width to localStorage
+        const currentWidth = sidebar.offsetWidth;
+        localStorage.setItem('sidebarWidth', currentWidth);
+    });
+
+    // Double-click to reset to default width
+    resizeHandle.addEventListener('dblclick', function() {
+        if (window.innerWidth <= 1024) return;
+
+        document.documentElement.style.setProperty('--sidebar-width', '320px');
+        localStorage.setItem('sidebarWidth', 320);
+    });
+
     const activeLink = document.querySelector('.sidebar-nav a.active');
     if (activeLink) {
         // Expand all parent <details> elements
@@ -116,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         if (!searchQuery) {
-            resultsDiv.innerHTML = '<div class="search-results-container"><div class="search-no-results">Enter search term after prefix</div></div><div class="search-feedback"><h3 id="search-feedback">Search Feedback</h3>\n<p>Is the search not good enough? Please let me know by <a href="https://github.com/malware-dev/MDK-SE/issues">creating an issue</a>.</p>\n<p><em>Note: This documentation is maintained by a community member in their free time.</em></p>\n</div>';
+            resultsDiv.innerHTML = '<div class="search-results-container"><div class="search-no-results">Enter search term after prefix</div></div><div class="search-feedback"><p><small>If search isn\'t meeting your needs, please provide feedback!</small></p></div>';
             resultsDiv.style.display = 'grid';
             return;
         }
@@ -167,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function displayResults() {
         if (currentMatches.length === 0) {
-            resultsDiv.innerHTML = '<div class="search-results-container"><div class="search-no-results">No results found</div></div><div class="search-feedback"><h3 id="search-feedback">Search Feedback</h3>\n<p>Is the search not good enough? Please let me know by <a href="https://github.com/malware-dev/MDK-SE/issues">creating an issue</a>.</p>\n<p><em>Note: This documentation is maintained by a community member in their free time.</em></p>\n</div>';
+            resultsDiv.innerHTML = '<div class="search-results-container"><div class="search-no-results">No results found</div></div><div class="search-feedback"><p><small>If search isn\'t meeting your needs, please provide feedback!</small></p></div>';
             resultsDiv.style.display = 'grid';
             return;
         }
@@ -240,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function() {
         html += '</div>'; // close search-results-container
         
         // Add feedback section (placeholder - will be replaced by template content)
-        html += `<div class="search-feedback"><h3 id="search-feedback">Search Feedback</h3>\n<p>Is the search not good enough? Please let me know by <a href="https://github.com/malware-dev/MDK-SE/issues">creating an issue</a>.</p>\n<p><em>Note: This documentation is maintained by a community member in their free time.</em></p>\n</div>`;
+        html += `<div class="search-feedback"><p><small>If search isn\'t meeting your needs, please provide feedback!</small></p></div>`;
         
         resultsDiv.innerHTML = html;
         resultsDiv.style.display = 'grid';
