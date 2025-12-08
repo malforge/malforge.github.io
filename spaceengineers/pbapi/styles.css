@@ -461,6 +461,10 @@ body.sidebar-collapsed .content {
     margin-bottom: 15px;
 }
 
+.content sub {
+    color: #808080;
+}
+
 /* Section headers like "Implements:", "Inheritors:" etc - reduce bottom margin */
 .content p:has(strong):has(+ ul),
 .content p:has(strong):has(+ ol) {
