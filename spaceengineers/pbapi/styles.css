@@ -50,19 +50,6 @@ body.sidebar-collapsed .sidebar-toggle {
     width: 20px;
     height: 2px;
     background-color: #d4d4d4;
-    transition: all 0.3s ease;
-}
-
-.sidebar-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.sidebar-toggle.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.sidebar-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .container {

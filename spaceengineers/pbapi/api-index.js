@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
     sidebarToggle.addEventListener('click', function(e) {
         e.stopPropagation();
         body.classList.toggle('sidebar-collapsed');
-        sidebarToggle.classList.toggle('active');
     });
     
     // Close sidebar when clicking on content on mobile/tablet
@@ -22,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
             !e.target.closest('.sidebar-toggle') &&
             !body.classList.contains('sidebar-collapsed')) {
             body.classList.add('sidebar-collapsed');
-            sidebarToggle.classList.remove('active');
         }
     });
     
@@ -32,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
             if (window.innerWidth <= 1024) {
                 body.classList.add('sidebar-collapsed');
-                sidebarToggle.classList.remove('active');
             }
         });
     });
@@ -41,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', function() {
         if (window.innerWidth > 1024) {
             body.classList.remove('sidebar-collapsed');
-            sidebarToggle.classList.remove('active');
         }
     });
 
