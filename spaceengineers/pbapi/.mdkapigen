@@ -1,5 +1,5 @@
 {
-  "Generated": "2025-12-12T16:41:09.6360537Z",
+  "Generated": "2025-12-13T13:55:29.0728772Z",
   "Files": [
     "Api-Index.html",
     "api-index.js",
@@ -1153,7 +1153,9 @@
     "Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions@SetValueBool.html",
     "Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions@SetValueColor.html",
     "Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions@SetValueFloat.html",
+    "search-index-old.json",
     "search-index.json",
+    "sidebar-tree.html",
     "SpaceEngineers.Game.ModAPI.Ingame.IMyAirVent.html",
     "SpaceEngineers.Game.ModAPI.Ingame.IMyAirVent@CanPressurize.html",
     "SpaceEngineers.Game.ModAPI.Ingame.IMyAirVent@Depressurize.html",

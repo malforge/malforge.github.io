@@ -1,5 +1,87 @@
+// Load and inject sidebar tree
+async function loadSidebarTree() {
+    const sidebarNav = document.querySelector('.sidebar-nav');
+    const currentPage = sidebarNav.dataset.currentPage;
+    const cacheBuster = sidebarNav.dataset.cacheBuster;
+    
+    try {
+        // Check sessionStorage first for cached tree
+        let treeHtml = sessionStorage.getItem('sidebarTree');
+        
+        if (!treeHtml) {
+            const response = await fetch(`sidebar-tree.html?v=${cacheBuster}`);
+            if (!response.ok) throw new Error('Failed to load sidebar');
+            treeHtml = await response.text();
+            sessionStorage.setItem('sidebarTree', treeHtml);
+        }
+        
+        // Find the loading placeholder and replace it
+        const loadingDiv = sidebarNav.querySelector('.sidebar-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+        
+        // Find the scroll-top button
+        const scrollTopBtn = sidebarNav.querySelector('#sidebar-scroll-top');
+        
+        // Insert tree HTML after the button
+        scrollTopBtn.insertAdjacentHTML('afterend', treeHtml);
+        
+        // Highlight active page and expand to it
+        highlightAndExpandActivePage(currentPage);
+        
+        // Re-attach event listeners for sidebar links (mobile collapse)
+        attachSidebarLinkListeners();
+        
+    } catch (error) {
+        console.error('Error loading sidebar:', error);
+        const loadingDiv = sidebarNav.querySelector('.sidebar-loading');
+        if (loadingDiv) {
+            loadingDiv.textContent = 'Failed to load navigation';
+            loadingDiv.style.color = '#f44336';
+        }
+    }
+}
+
+function highlightAndExpandActivePage(currentPage) {
+    // Find the active link
+    const activeLink = document.querySelector(`.sidebar-nav a[data-file="${currentPage}"]`);
+    if (!activeLink) return;
+    
+    // Add active class
+    activeLink.classList.add('active');
+    
+    // Expand all parent <details> elements
+    let parent = activeLink.parentElement;
+    while (parent && parent !== document) {
+        if (parent.tagName === 'DETAILS') {
+            parent.open = true;
+        }
+        parent = parent.parentElement;
+    }
+    
+    // Scroll active link into view
+    setTimeout(() => {
+        activeLink.scrollIntoView({ block: 'center', behavior: 'auto' });
+    }, 100);
+}
+
+function attachSidebarLinkListeners() {
+    const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 1024) {
+                document.body.classList.add('sidebar-collapsed');
+            }
+        });
+    });
+}
+
 // Expand tree to show active link and scroll into view
 document.addEventListener('DOMContentLoaded', function() {
+    // Load sidebar tree first
+    loadSidebarTree();
+    
     // Sidebar toggle functionality
     const sidebarToggle = document.getElementById('sidebar-toggle');
     const body = document.body;
@@ -22,16 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
             !body.classList.contains('sidebar-collapsed')) {
             body.classList.add('sidebar-collapsed');
         }
-    });
-    
-    // Close sidebar when clicking a link on mobile/tablet
-    const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
-    sidebarLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            if (window.innerWidth <= 1024) {
-                body.classList.add('sidebar-collapsed');
-            }
-        });
     });
     
     // Handle window resize
@@ -103,20 +175,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.documentElement.style.setProperty('--sidebar-width', '320px');
         localStorage.setItem('sidebarWidth', 320);
     });
-
-    const activeLink = document.querySelector('.sidebar-nav a.active');
-    if (activeLink) {
-        // Expand all parent <details> elements
-        let parent = activeLink.parentElement;
-        while (parent) {
-            if (parent.tagName === 'DETAILS') {
-                parent.open = true;
-            }
-            parent = parent.parentElement;
-        }
-        // Scroll into view
-        activeLink.scrollIntoView({ behavior: 'auto', block: 'center' });
-    }
     
     // Search functionality
     const searchInput = document.getElementById('search-input');
