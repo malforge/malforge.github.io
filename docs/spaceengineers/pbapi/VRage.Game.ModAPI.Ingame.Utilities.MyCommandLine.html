@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine - API Reference</title>
+    <link rel="stylesheet" href="styles.css?v=20251214102207">
+</head>
+<body>
+    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2><a href="index.html">API Reference</a></h2>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search API..." autocomplete="off">
+                    <button id="clear-search" style="display: none;">&times;</button>
+                    <div class="search-hint">Prefix: T: for types, M: for members</div>
+                </div>
+            </div>
+            <nav class="sidebar-nav" data-current-page="VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine" data-cache-buster="20251214102207">
+                <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+                <div class="sidebar-loading">Loading navigation...</div>
+            </nav>
+            <div class="sidebar-footer">Generated 2025-12-14 10:22 UTC</div>
+            <div class="sidebar-resize-handle"></div>
+        </aside>
+        <div id="search-results" style="display: none;"></div>
+        <main class="content">
+            <div class="page-header">
+                <div class="page-namespace">VRage.Game.ModAPI.Ingame.Utilities</div>
+                <h1>MyCommandLine</h1>
+            </div>
+<p><strong>Assembly:</strong> VRage.Game.dll</p>
+<pre><code class="language-csharp">public class MyCommandLine
+</code></pre>
+<p>A utility class to parse arguments from a command line string. Switches are defined with hyphen (-switch). Quotes can be placed around an argument to parse verbatim, but inner quotes will be copied verbatim. For example, &quot;one&quot;two&quot; will result in the string one&quot;two.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine@ArgumentCount.html">ArgumentCount</a></td>
+<td>Returns the number of non-switch arguments</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine@Items.html">Items</a></td>
+<td>Contains all items, both arguments and switches</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine@Switches.html">Switches</a></td>
+<td>Contains a list of all detected switches</td>
+</tr>
+</tbody>
+</table>
+<h2 id="constructors">Constructors</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine@.ctor.html">MyCommandLine()</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine@Argument.html">Argument(int)</a></td>
+<td>Returns the argument at the given index. Switches are not counted.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine@Clear.html">Clear()</a></td>
+<td>Clears all arguments</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine@Switch.html">Switch(string)</a></td>
+<td>Determines whether the given switch is set. Switches are specified without their prefixed hyphen.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine@Switch.html">Switch(string, int)</a></td>
+<td>Gets an argument of a switch. For example, using<code>Switch(&quot;key&quot;, 0)</code>on the command line<code>someOtherArgument -key value</code>will return<code>value</code>.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine@TryParse.html">TryParse(string)</a></td>
+<td>Attempts to parse the given string as a command line</td>
+</tr>
+</tbody>
+</table>
+
+        </main>
+    </div>
+    <script src="api-index.js?v=20251214102207"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRageMath.MyMath - API Reference</title>
+    <link rel="stylesheet" href="styles.css?v=20251214102207">
+</head>
+<body>
+    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2><a href="index.html">API Reference</a></h2>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search API..." autocomplete="off">
+                    <button id="clear-search" style="display: none;">&times;</button>
+                    <div class="search-hint">Prefix: T: for types, M: for members</div>
+                </div>
+            </div>
+            <nav class="sidebar-nav" data-current-page="VRageMath.MyMath" data-cache-buster="20251214102207">
+                <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+                <div class="sidebar-loading">Loading navigation...</div>
+            </nav>
+            <div class="sidebar-footer">Generated 2025-12-14 10:22 UTC</div>
+            <div class="sidebar-resize-handle"></div>
+        </aside>
+        <div id="search-results" style="display: none;"></div>
+        <main class="content">
+            <div class="page-header">
+                <div class="page-namespace">VRageMath</div>
+                <h1>MyMath</h1>
+            </div>
+<p><strong>Assembly:</strong> VRage.Math.dll</p>
+<pre><code class="language-csharp">public abstract sealed class MyMath
+</code></pre>
+<h2 id="fields">Fields</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="VRageMath.MyMath@Vector3One.html">static Vector3One</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="VRageMath.MyMath@Abs.html">static Abs(ref Vector3)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@AngleBetween.html">static AngleBetween(Vector3, Vector3)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@AngleTo.html">static AngleTo(Vector3, Vector3)</a></td>
+<td>AngleTo</td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@ArcTanAngle.html">static ArcTanAngle(float, float)</a></td>
+<td>ArcTanAngle</td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@Clamp.html">static Clamp(float, float, float)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@CosineDistance.html">static CosineDistance(ref Vector3, ref Vector3)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@CosineDistance.html">static CosineDistance(ref Vector3D, ref Vector3D)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@CreateFromInsideRadius.html">static CreateFromInsideRadius(float)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@DistanceSquaredFromLineSegment.html">static DistanceSquaredFromLineSegment(Vector3, Vector3, Vector3)</a></td>
+<td>Return minimum distance between line segment v-w and point p.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@FastCos.html">static FastCos(float)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@FastSin.html">static FastSin(float)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@FastTanH.html">static FastTanH(float)</a></td>
+<td>Fast approximation of Hyperbolic tangent Max deviation is &lt;3%</td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@ForwardVectorProjection.html">static ForwardVectorProjection(Vector3, Vector3)</a></td>
+<td>This projection results to initial velocity of non-engine objects, which parents move in some velocity We want to add only forward speed of the parent to the forward direction of the object, and if parent is going backward, no speed is added.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@InitializeFastSin.html">static InitializeFastSin()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@MaxComponents.html">static MaxComponents(ref Vector3, ref Vector3)</a></td>
+<td>Return vector with each component max</td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@Mod.html">static Mod(int, int)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@Mod.html">static Mod(long, int)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@NormalizeAngle.html">static NormalizeAngle(float, float)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@QuaternionToEuler.html">static QuaternionToEuler(Quaternion)</a></td>
+<td>QuaternionToEuler</td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@VectorFromColor.html">static VectorFromColor(byte, byte, byte)</a></td>
+<td>Calculates color from vector</td>
+</tr>
+<tr>
+<td><a href="VRageMath.MyMath@VectorFromColor.html">static VectorFromColor(byte, byte, byte, byte)</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+        </main>
+    </div>
+    <script src="api-index.js?v=20251214102207"></script>
+</body>
+</html>

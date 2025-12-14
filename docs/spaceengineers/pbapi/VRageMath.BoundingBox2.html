@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRageMath.BoundingBox2 - API Reference</title>
+    <link rel="stylesheet" href="styles.css?v=20251214102207">
+</head>
+<body>
+    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2><a href="index.html">API Reference</a></h2>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search API..." autocomplete="off">
+                    <button id="clear-search" style="display: none;">&times;</button>
+                    <div class="search-hint">Prefix: T: for types, M: for members</div>
+                </div>
+            </div>
+            <nav class="sidebar-nav" data-current-page="VRageMath.BoundingBox2" data-cache-buster="20251214102207">
+                <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+                <div class="sidebar-loading">Loading navigation...</div>
+            </nav>
+            <div class="sidebar-footer">Generated 2025-12-14 10:22 UTC</div>
+            <div class="sidebar-resize-handle"></div>
+        </aside>
+        <div id="search-results" style="display: none;"></div>
+        <main class="content">
+            <div class="page-header">
+                <div class="page-namespace">VRageMath</div>
+                <h1>BoundingBox2</h1>
+            </div>
+<p><strong>Assembly:</strong> VRage.Math.dll</p>
+<pre><code class="language-csharp">public struct BoundingBox2: IEquatable&lt;BoundingBox2&gt;
+</code></pre>
+<p>Defines an axis-aligned box-shaped 3D volume.</p>
+<h2 id="fields">Fields</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Max.html">Max</a></td>
+<td>The maximum point the BoundingBox2 contains.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Min.html">Min</a></td>
+<td>The minimum point the BoundingBox2 contains.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Center.html">Center</a></td>
+<td>Calculates center</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Extents.html">Extents</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@HalfExtents.html">HalfExtents</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Height.html">Height</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Size.html">Size</a></td>
+<td>Size</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Width.html">Width</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="constructors">Constructors</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="VRageMath.BoundingBox2@.ctor.html">BoundingBox2(Vector2, Vector2)</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="VRageMath.BoundingBox2@CreateFromHalfExtent.html">static CreateFromHalfExtent(Vector2, float)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@CreateFromHalfExtent.html">static CreateFromHalfExtent(Vector2, Vector2)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@CreateFromPoints.html">static CreateFromPoints(IEnumerable<Vector2>)</a></td>
+<td>Creates the smallest BoundingBox2 that will contain a group of points.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@CreateInvalid.html">static CreateInvalid()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@CreateMerged.html">static CreateMerged(BoundingBox2, BoundingBox2)</a></td>
+<td>Creates the smallest BoundingBox2 that contains the two specified BoundingBox2 instances.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@CreateMerged.html">static CreateMerged(ref BoundingBox2, ref BoundingBox2, out BoundingBox2)</a></td>
+<td>Creates the smallest BoundingBox2 that contains the two specified BoundingBox2 instances.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Area.html">Area()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Contains.html">Contains(BoundingBox2)</a></td>
+<td>Tests whether the BoundingBox2 contains another BoundingBox2.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Contains.html">Contains(ref BoundingBox2, out ContainmentType)</a></td>
+<td>Tests whether the BoundingBox2 contains a BoundingBox2.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Contains.html">Contains(Vector2)</a></td>
+<td>Tests whether the BoundingBox2 contains a point.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Contains.html">Contains(ref Vector2, out ContainmentType)</a></td>
+<td>Tests whether the BoundingBox2 contains a point.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Distance.html">Distance(Vector2)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Equals.html">Equals(BoundingBox2)</a></td>
+<td>Determines whether two instances of BoundingBox2 are equal.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Equals.html">Equals(object)</a></td>
+<td>Determines whether two instances of BoundingBox2 are equal.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@GetCorners.html">GetCorners()</a></td>
+<td>Gets an array of points that make up the corners of the BoundingBox2.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@GetCorners.html">GetCorners(Vector2[])</a></td>
+<td>Gets the array of points that make up the corners of the BoundingBox2.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@GetCornersUnsafe.html">GetCornersUnsafe(*Vector2)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@GetHashCode.html">GetHashCode()</a></td>
+<td>Gets the hash code for this instance.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@GetIncluded.html">GetIncluded(Vector2)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Include.html">Include(ref Vector2)</a></td>
+<td>return expanded aabb (abb include point)</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Include.html">Include(Vector2)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Include.html">Include(Vector2, Vector2, Vector2)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Include.html">Include(ref Vector2, ref Vector2, ref Vector2)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Include.html">Include(ref BoundingBox2)</a></td>
+<td>return expanded aabb (abb include point)</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Include.html">Include(BoundingBox2)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Inflate.html">Inflate(float)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@InflateToMinimum.html">InflateToMinimum(Vector2)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Intersect.html">Intersect(BoundingBox2)</a></td>
+<td>Returns bounding box which is intersection of this and box Result is invalid box when there's no intersection (Min &gt; Max)</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Intersects.html">Intersects(BoundingBox2)</a></td>
+<td>Checks whether the current BoundingBox2 intersects another BoundingBox2.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Intersects.html">Intersects(ref BoundingBox2)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Intersects.html">Intersects(ref BoundingBox2, out bool)</a></td>
+<td>Checks whether the current BoundingBox2 intersects another BoundingBox2.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Perimeter.html">Perimeter()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Scale.html">Scale(Vector2)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@ToString.html">ToString()</a></td>
+<td>Returns a String that represents the current BoundingBox2.</td>
+</tr>
+<tr>
+<td><a href="VRageMath.BoundingBox2@Translate.html">Translate(Vector2)</a></td>
+<td>Translate</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Implements:</strong></p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=netframework-4.6">IEquatable<BoundingBox2></a></li>
+</ul>
+
+        </main>
+    </div>
+    <script src="api-index.js?v=20251214102207"></script>
+</body>
+</html>

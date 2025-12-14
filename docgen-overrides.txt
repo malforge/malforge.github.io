@@ -1,0 +1,26 @@
+# DocGen Type Overrides Configuration
+#
+# This file allows you to suppress member documentation for specific types
+# and replace it with a custom message.
+#
+# Format:
+#   [Fully.Qualified.TypeName]
+#   Your custom message here.
+#   Can span multiple lines.
+#
+#   [Another.Type.Name]
+#   Another message...
+#
+# Lines starting with # are comments and will be ignored.
+# Empty lines are also ignored.
+#
+# This file should be placed in the same directory as docgen.exe
+
+# Example: MySpaceTexts contains thousands of localization properties
+[Sandbox.Game.Localization.MySpaceTexts]
+This type contains thousands of localization text identifiers used throughout Space Engineers.
+
+For a complete list of available text IDs, please refer to the Space Engineers installation directory under `Content\Data\Localization`,
+or the intellisense of your chosen IDE if available.
+
+# Add more type overrides below as needed:
