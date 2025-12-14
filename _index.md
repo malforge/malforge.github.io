@@ -21,7 +21,7 @@ For official tutorials and guides, see the ➡️ [Space Engineers Scripting Wik
 
 ## Getting Started with Script Development
 
-I also maintain **MDK2 (Malware's Development Kit 2)** for Visual Studio users, which adds IntelliSense, templates, and one-click deployment to the game.
+I also maintain **MDK2 (Malware's Development Kit 2)** for any fully C# capable IDE (tested with Visual Studio, VSCode, and JetBrains Rider), which adds IntelliSense, templates, and automatic deployment to the game.
 
 ➡️ [Available here](https://github.com/malforge/mdk2) if that sounds useful to you.
 

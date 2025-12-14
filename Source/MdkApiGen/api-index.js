@@ -77,8 +77,35 @@ function attachSidebarLinkListeners() {
     });
 }
 
+// Convert UTC timestamp to local time
+function formatGenerationTimestamp() {
+    const timestampElement = document.querySelector('.generation-timestamp');
+    if (!timestampElement) return;
+    
+    const utcString = timestampElement.dataset.utc;
+    if (!utcString) return;
+    
+    try {
+        const utcDate = new Date(utcString);
+        const localDateStr = utcDate.toLocaleString(undefined, {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+        });
+        const utcDateStr = utcDate.toISOString().substring(0, 16).replace('T', ' ');
+        timestampElement.textContent = `Generated ${localDateStr} (${utcDateStr} UTC)`;
+    } catch (e) {
+        console.error('Failed to parse timestamp:', e);
+    }
+}
+
 // Expand tree to show active link and scroll into view
 document.addEventListener('DOMContentLoaded', function() {
+    // Format the generation timestamp to local time
+    formatGenerationTimestamp();
     // Load sidebar tree first
     loadSidebarTree();
     

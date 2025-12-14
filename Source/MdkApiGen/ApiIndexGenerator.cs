@@ -731,7 +731,7 @@ class ApiIndexGenerator
             .Replace("{{ROOT_PATH}}", rootPath)
             .Replace("{{CACHE_BUSTER}}", _cacheBuster)
             .Replace("{{CURRENT_FILE_NAME}}", currentFile.FileName)
-            .Replace("{{GENERATION_TIMESTAMP}}", $"Generated {DateTime.UtcNow:yyyy-MM-dd HH:mm} UTC")
+            .Replace("{{GENERATION_TIMESTAMP}}", $"<span class=\"generation-timestamp\" data-utc=\"{DateTime.UtcNow:yyyy-MM-ddTHH:mm:ssZ}\">Generated {DateTime.UtcNow:yyyy-MM-dd HH:mm} UTC</span>")
             .Replace("{{PAGE_HEADER}}", pageHeader)
             .Replace("{{CONTENT}}", content);
 

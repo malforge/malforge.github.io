@@ -77,8 +77,35 @@ function attachSidebarLinkListeners() {
     });
 }
 
+// Convert UTC timestamp to local time
+function formatGenerationTimestamp() {
+    const timestampElement = document.querySelector('.generation-timestamp');
+    if (!timestampElement) return;
+    
+    const utcString = timestampElement.dataset.utc;
+    if (!utcString) return;
+    
+    try {
+        const utcDate = new Date(utcString);
+        const localDateStr = utcDate.toLocaleString(undefined, {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+        });
+        const utcDateStr = utcDate.toISOString().substring(0, 16).replace('T', ' ');
+        timestampElement.textContent = `Generated ${localDateStr} (${utcDateStr} UTC)`;
+    } catch (e) {
+        console.error('Failed to parse timestamp:', e);
+    }
+}
+
 // Expand tree to show active link and scroll into view
 document.addEventListener('DOMContentLoaded', function() {
+    // Format the generation timestamp to local time
+    formatGenerationTimestamp();
     // Load sidebar tree first
     loadSidebarTree();
     
@@ -233,7 +260,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         if (!searchQuery) {
-            resultsDiv.innerHTML = '<div class="search-results-container"><div class="search-no-results">Enter search term after prefix</div></div><div class="search-feedback"><h2 id="need-better-search">Need better search?</h2>\n<p>If the search functionality isn\'t meeting your needs, please let us know!</p>\n<p><strong><a href="https://github.com/malware-dev/MDK-SE/issues">Open an issue on GitHub</a></strong></p>\n<p><em>This documentation is maintained by a community member in their free time. Please be patient and constructive with feedback.</em></p>\n</div>';
+            resultsDiv.innerHTML = '<div class="search-results-container"><div class="search-no-results">Enter search term after prefix</div></div><div class="search-feedback"><p><small>If search isn\'t meeting your needs, please provide feedback!</small></p></div>';
             resultsDiv.style.display = 'grid';
             return;
         }
@@ -284,7 +311,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function displayResults() {
         if (currentMatches.length === 0) {
-            resultsDiv.innerHTML = '<div class="search-results-container"><div class="search-no-results">No results found</div></div><div class="search-feedback"><h2 id="need-better-search">Need better search?</h2>\n<p>If the search functionality isn\'t meeting your needs, please let us know!</p>\n<p><strong><a href="https://github.com/malware-dev/MDK-SE/issues">Open an issue on GitHub</a></strong></p>\n<p><em>This documentation is maintained by a community member in their free time. Please be patient and constructive with feedback.</em></p>\n</div>';
+            resultsDiv.innerHTML = '<div class="search-results-container"><div class="search-no-results">No results found</div></div><div class="search-feedback"><p><small>If search isn\'t meeting your needs, please provide feedback!</small></p></div>';
             resultsDiv.style.display = 'grid';
             return;
         }
@@ -357,7 +384,7 @@ document.addEventListener('DOMContentLoaded', function() {
         html += '</div>'; // close search-results-container
         
         // Add feedback section (placeholder - will be replaced by template content)
-        html += `<div class="search-feedback"><h2 id="need-better-search">Need better search?</h2>\n<p>If the search functionality isn\'t meeting your needs, please let us know!</p>\n<p><strong><a href="https://github.com/malware-dev/MDK-SE/issues">Open an issue on GitHub</a></strong></p>\n<p><em>This documentation is maintained by a community member in their free time. Please be patient and constructive with feedback.</em></p>\n</div>`;
+        html += `<div class="search-feedback"><p><small>If search isn\'t meeting your needs, please provide feedback!</small></p></div>`;
         
         resultsDiv.innerHTML = html;
         resultsDiv.style.display = 'grid';
