@@ -9,7 +9,7 @@ Visit the live site: [https://malforge.github.io](https://malforge.github.io) (o
 ## ⚠️ Important Notes
 
 - This is a **community-maintained** project, not affiliated with Keen Software House
-- For official scripting guides, see the [Space Engineers Wiki](https://spaceengineers.wiki.gg/wiki/Scripting)
+- For scripting guides, see the [Space Engineers Wiki](https://spaceengineers.wiki.gg/wiki/Scripting)
 - Updates happen in free time - some lag behind game updates is expected
 
 ## License
