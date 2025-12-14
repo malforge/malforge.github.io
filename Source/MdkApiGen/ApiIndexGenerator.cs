@@ -72,6 +72,7 @@ class ApiIndexGenerator
         CopyReferencedAssets(apiDirs, outputDir);
         GenerateStylesCss(outputDir);
         CopyJavaScript(outputDir);
+        CopyImages(outputDir);
         GenerateSearchIndex(outputDir);
         GenerateEnhancedSearchIndex(apiDirs, outputDir);
         
@@ -935,6 +936,27 @@ class ApiIndexGenerator
         {
             Console.Error.WriteLine($"Error: api-index.js template not found at {jsSourcePath}");
             Console.Error.WriteLine("  Checked: current directory and executable directory");
+        }
+    }
+    
+    private void CopyImages(DirectoryInfo outputDir)
+    {
+        var wikiImagePath = FileHelpers.FindDefaultFile("wiki.png");
+        if (File.Exists(wikiImagePath))
+        {
+            var outputPath = Path.Combine(outputDir.FullName, "wiki.png");
+            File.Copy(wikiImagePath, outputPath, overwrite: true);
+            _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
+            Console.WriteLine($"Copied wiki.png from {wikiImagePath}");
+        }
+        
+        var mdkImagePath = FileHelpers.FindDefaultFile("mdk2.png");
+        if (File.Exists(mdkImagePath))
+        {
+            var outputPath = Path.Combine(outputDir.FullName, "mdk2.png");
+            File.Copy(mdkImagePath, outputPath, overwrite: true);
+            _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
+            Console.WriteLine($"Copied mdk2.png from {mdkImagePath}");
         }
     }
     
