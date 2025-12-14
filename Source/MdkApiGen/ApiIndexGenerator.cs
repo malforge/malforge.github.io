@@ -16,6 +16,7 @@ class ApiIndexGenerator
     private string _customIndexHtml = ""; // Custom index page content from _index.md
     private HashSet<string> _generatedPaths = new(); // Track all generated files/folders for safe cleanup
     private string _cacheBuster = ""; // Cache-busting query string for CSS/JS
+    private string _pageTemplate = ""; // HTML page template
 
     public ApiIndexGenerator()
     {
@@ -50,6 +51,9 @@ class ApiIndexGenerator
         // Clean output directory safely
         CleanOutputDirectory(outputDir);
 
+        // Load page template
+        LoadPageTemplate();
+
         // Load search feedback from first directory's parent
         LoadSearchFeedback(apiDirs[0]);
         
@@ -68,6 +72,7 @@ class ApiIndexGenerator
         CopyReferencedAssets(apiDirs, outputDir);
         GenerateStylesCss(outputDir);
         CopyJavaScript(outputDir);
+        CopyImages(outputDir);
         GenerateSearchIndex(outputDir);
         GenerateEnhancedSearchIndex(apiDirs, outputDir);
         
@@ -288,6 +293,21 @@ class ApiIndexGenerator
         {
             Console.WriteLine($"No custom index found at {indexPath}");
         }
+    }
+
+    private void LoadPageTemplate()
+    {
+        var templatePath = FileHelpers.FindDefaultFile("page-template.html");
+        
+        if (!File.Exists(templatePath))
+        {
+            Console.Error.WriteLine($"Error: page-template.html not found at {templatePath}");
+            Console.Error.WriteLine("  Checked: current directory and executable directory");
+            throw new FileNotFoundException("page-template.html is required but was not found", templatePath);
+        }
+
+        _pageTemplate = File.ReadAllText(templatePath);
+        Console.WriteLine($"Loaded page template from {templatePath}");
     }
 
     private void ScanApiFiles(DirectoryInfo apiDir)
@@ -667,8 +687,6 @@ class ApiIndexGenerator
 
     private string GenerateHtmlPage(ApiFile currentFile, string namespacePart, string namePart, string content)
     {
-        var sb = new StringBuilder();
-
         // Calculate relative path to root for CSS
         var depth = currentFile.HtmlPath.Count(c => c == Path.DirectorySeparatorChar || c == Path.AltDirectorySeparatorChar);
         var rootPath = depth > 0 ? string.Join("/", Enumerable.Repeat("..", depth)) + "/" : "";
@@ -676,78 +694,48 @@ class ApiIndexGenerator
         // Use full name for browser title
         var browserTitle = string.IsNullOrEmpty(namespacePart) ? namePart : $"{namespacePart}.{namePart}";
 
-        sb.AppendLine("<!DOCTYPE html>");
-        sb.AppendLine("<html lang=\"en\">");
-        sb.AppendLine("<head>");
-        sb.AppendLine("    <meta charset=\"UTF-8\">");
-        sb.AppendLine("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
-        sb.AppendLine($"    <title>{browserTitle} - API Reference</title>");
-        sb.AppendLine($"    <link rel=\"stylesheet\" href=\"{rootPath}styles.css?v={_cacheBuster}\">");
-        sb.AppendLine("</head>");
-        sb.AppendLine("<body>");
-        sb.AppendLine("    <button id=\"sidebar-toggle\" class=\"sidebar-toggle\" aria-label=\"Toggle sidebar\">");
-        sb.AppendLine("        <span></span>");
-        sb.AppendLine("        <span></span>");
-        sb.AppendLine("        <span></span>");
-        sb.AppendLine("    </button>");
-        sb.AppendLine("    <div class=\"container\">");
-        sb.AppendLine("        <aside class=\"sidebar\">");
-        sb.AppendLine("            <div class=\"sidebar-header\">");
-        sb.AppendLine($"                <h2><a href=\"{rootPath}index.html\">API Reference</a></h2>");
-        sb.AppendLine("                <div class=\"search-box\">");
-        sb.AppendLine("                    <input type=\"text\" id=\"search-input\" placeholder=\"Search API...\" autocomplete=\"off\">");
-        sb.AppendLine("                    <button id=\"clear-search\" style=\"display: none;\">&times;</button>");
-        sb.AppendLine("                    <div class=\"search-hint\">Prefix: T: for types, M: for members</div>");
-        sb.AppendLine("                </div>");
-        sb.AppendLine("            </div>");
-        sb.AppendLine($"            <nav class=\"sidebar-nav\" data-current-page=\"{currentFile.FileName}\" data-cache-buster=\"{_cacheBuster}\">");
-        sb.AppendLine("                <button id=\"sidebar-scroll-top\" class=\"sidebar-scroll-top\" aria-label=\"Scroll to top\">↑ Back to top</button>");
-        sb.AppendLine("                <div class=\"sidebar-loading\">Loading navigation...</div>");
-        sb.AppendLine("            </nav>");
-        sb.AppendLine($"            <div class=\"sidebar-footer\">Generated {DateTime.UtcNow:yyyy-MM-dd HH:mm} UTC</div>");
-        sb.AppendLine("            <div class=\"sidebar-resize-handle\"></div>");
-        sb.AppendLine("        </aside>");
-        sb.AppendLine("        <div id=\"search-results\" style=\"display: none;\"></div>");
-        sb.AppendLine("        <main class=\"content\">");
-        
-        // Don't auto-generate title for index page (it has its own in markdown)
+        // Generate page header (title section)
+        string pageHeader = "";
         if (currentFile.FileName != "index")
         {
-            // Generate title with namespace above if present
             if (!string.IsNullOrEmpty(namespacePart))
             {
-                sb.AppendLine("            <div class=\"page-header\">");
-            
-            // Check if namespace/parent has a corresponding page
-            var namespaceFile = _allFiles.FirstOrDefault(f => FormatName(f.FileName) == namespacePart);
-            if (namespaceFile != null)
-            {
-                // Calculate relative path from current file to namespace file
-                var namespaceHtmlPath = namespaceFile.HtmlPath.Replace('\\', '/');
-                sb.AppendLine($"                <div class=\"page-namespace\"><a href=\"{rootPath}{namespaceHtmlPath}\">{WebUtility.HtmlEncode(namespacePart)}</a></div>");
+                var headerBuilder = new StringBuilder();
+                headerBuilder.AppendLine("            <div class=\"page-header\">");
+                
+                // Check if namespace/parent has a corresponding page
+                var namespaceFile = _allFiles.FirstOrDefault(f => FormatName(f.FileName) == namespacePart);
+                if (namespaceFile != null)
+                {
+                    var namespaceHtmlPath = namespaceFile.HtmlPath.Replace('\\', '/');
+                    headerBuilder.AppendLine($"                <div class=\"page-namespace\"><a href=\"{rootPath}{namespaceHtmlPath}\">{WebUtility.HtmlEncode(namespacePart)}</a></div>");
+                }
+                else
+                {
+                    headerBuilder.AppendLine($"                <div class=\"page-namespace\">{WebUtility.HtmlEncode(namespacePart)}</div>");
+                }
+                
+                headerBuilder.AppendLine($"                <h1>{FormatDocumentName(namePart, false)}</h1>");
+                headerBuilder.AppendLine("            </div>");
+                pageHeader = headerBuilder.ToString();
             }
             else
             {
-                sb.AppendLine($"                <div class=\"page-namespace\">{WebUtility.HtmlEncode(namespacePart)}</div>");
+                pageHeader = $"            <h1>{FormatDocumentName(namePart, false)}</h1>\n";
             }
-            
-            sb.AppendLine($"                <h1>{FormatDocumentName(namePart, false)}</h1>");
-            sb.AppendLine("            </div>");
         }
-        else
-        {
-            sb.AppendLine($"            <h1>{FormatDocumentName(namePart, false)}</h1>");
-        }
-        }
-        
-        sb.AppendLine(content);
-        sb.AppendLine("        </main>");
-        sb.AppendLine("    </div>");
-        sb.AppendLine($"    <script src=\"{rootPath}api-index.js?v={_cacheBuster}\"></script>");
-        sb.AppendLine("</body>");
-        sb.AppendLine("</html>");
 
-        return sb.ToString();
+        // Replace placeholders in template
+        var html = _pageTemplate
+            .Replace("{{BROWSER_TITLE}}", browserTitle)
+            .Replace("{{ROOT_PATH}}", rootPath)
+            .Replace("{{CACHE_BUSTER}}", _cacheBuster)
+            .Replace("{{CURRENT_FILE_NAME}}", currentFile.FileName)
+            .Replace("{{GENERATION_TIMESTAMP}}", $"Generated {DateTime.UtcNow:yyyy-MM-dd HH:mm} UTC")
+            .Replace("{{PAGE_HEADER}}", pageHeader)
+            .Replace("{{CONTENT}}", content);
+
+        return html;
     }
 
     private void RenderNode(StringBuilder sb, ApiNode node, string rootPath, int depth, string currentPageFileName)
@@ -948,6 +936,27 @@ class ApiIndexGenerator
         {
             Console.Error.WriteLine($"Error: api-index.js template not found at {jsSourcePath}");
             Console.Error.WriteLine("  Checked: current directory and executable directory");
+        }
+    }
+    
+    private void CopyImages(DirectoryInfo outputDir)
+    {
+        var wikiImagePath = FileHelpers.FindDefaultFile("wiki.png");
+        if (File.Exists(wikiImagePath))
+        {
+            var outputPath = Path.Combine(outputDir.FullName, "wiki.png");
+            File.Copy(wikiImagePath, outputPath, overwrite: true);
+            _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
+            Console.WriteLine($"Copied wiki.png from {wikiImagePath}");
+        }
+        
+        var mdkImagePath = FileHelpers.FindDefaultFile("mdk2.png");
+        if (File.Exists(mdkImagePath))
+        {
+            var outputPath = Path.Combine(outputDir.FullName, "mdk2.png");
+            File.Copy(mdkImagePath, outputPath, overwrite: true);
+            _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
+            Console.WriteLine($"Copied mdk2.png from {mdkImagePath}");
         }
     }
     

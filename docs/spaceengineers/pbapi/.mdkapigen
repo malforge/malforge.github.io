@@ -1,5 +1,5 @@
 {
-  "Generated": "2025-12-14T10:22:09.8397096Z",
+  "Generated": "2025-12-14T12:20:48.8317045Z",
   "Files": [
     "Api-Index.html",
     "api-index.js",
@@ -354,6 +354,7 @@
     "index.html",
     "List-Of-Block-TypeIDs.html",
     "List-Of-Terminal-Properties-And-Actions.html",
+    "mdk2.png",
     "Namespace-Index.html",
     "Sandbox.Game.EntityComponents.MyResourceSinkComponent.html",
     "Sandbox.Game.EntityComponents.MyResourceSourceComponent.html",
@@ -3857,7 +3858,8 @@
     "VRageMath.Vector4UByte@W.html",
     "VRageMath.Vector4UByte@X.html",
     "VRageMath.Vector4UByte@Y.html",
-    "VRageMath.Vector4UByte@Z.html"
+    "VRageMath.Vector4UByte@Z.html",
+    "wiki.png"
   ],
   "Directories": [
     ".\\",
