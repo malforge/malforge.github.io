@@ -16,7 +16,6 @@
 
 #generated build output (has its own git)
 www/
-input/
 
 # Build results
 [Dd]ebug/
