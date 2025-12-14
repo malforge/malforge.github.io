@@ -15,6 +15,8 @@ body {
     background-color: #1e1e1e;
     color: #d4d4d4;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 .sidebar-toggle {
@@ -37,10 +39,6 @@ body {
     transition: background-color 0.2s ease;
 }
 
-body.sidebar-collapsed .sidebar-toggle {
-    left: 15px;
-}
-
 .sidebar-toggle:hover {
     background-color: #3c3c3c;
 }
@@ -52,29 +50,29 @@ body.sidebar-collapsed .sidebar-toggle {
     background-color: #d4d4d4;
 }
 
-.container {
-    display: flex;
-    min-height: 100vh;
-}
-
 .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
     width: var(--sidebar-width);
-    flex-shrink: 0;
     background-color: #252526;
     border-right: 1px solid #3e3e42;
     overflow-y: auto;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    transition: transform 0.3s ease;
     z-index: 1050;
     display: flex;
     flex-direction: column;
-    position: relative;
+    transition: transform 0.3s ease;
 }
 
 body.sidebar-collapsed .sidebar {
     transform: translateX(calc(var(--sidebar-width) * -1));
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px 40px 40px 40px;
 }
 
 .sidebar-resize-handle {
@@ -96,10 +94,6 @@ body.sidebar-collapsed .sidebar {
 
 body.sidebar-collapsed .sidebar-resize-handle {
     display: none;
-}
-
-body.sidebar-collapsed .content {
-    margin-left: 0;
 }
 
 .sidebar-header {
@@ -377,17 +371,6 @@ body.sidebar-collapsed .content {
     text-align: center;
     border-top: 1px solid #3e3e42;
     margin-top: auto;
-}
-
-.content {
-    flex: 1;
-    padding: 40px;
-    transition: margin-left 0.3s ease;
-    margin-left: 0;
-}
-
-body.sidebar-collapsed .content {
-    margin-left: calc(var(--sidebar-width) * -1);
 }
 
 .page-header {
@@ -777,18 +760,9 @@ li {
     }
 }
 
-/* Desktop: show sidebar in sticky mode, keep toggle button visible */
+/* Desktop: keep toggle button visible */
 @media (min-width: 1025px) {
     .sidebar-toggle {
         display: flex;
-    }
-    
-    .sidebar {
-        position: sticky;
-    }
-    
-    /* On desktop, only indent page header when sidebar is collapsed */
-    body.sidebar-collapsed .page-namespace {
-        padding-left: 50px;
     }
 }
