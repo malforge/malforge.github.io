@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{BROWSER_TITLE}} - API Reference</title>
+    <link rel="stylesheet" href="{{ROOT_PATH}}styles.css?v={{CACHE_BUSTER}}">
+</head>
+<body>
+    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2><a href="{{ROOT_PATH}}index.html">API Reference</a></h2>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search API..." autocomplete="off">
+                    <button id="clear-search" style="display: none;">&times;</button>
+                    <div class="search-hint">Prefix: T: for types, M: for members</div>
+                </div>
+            </div>
+            <nav class="sidebar-nav" data-current-page="{{CURRENT_FILE_NAME}}" data-cache-buster="{{CACHE_BUSTER}}">
+                <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+                <div class="sidebar-loading">Loading navigation...</div>
+            </nav>
+            <div class="sidebar-footer">{{GENERATION_TIMESTAMP}}</div>
+            <div class="sidebar-resize-handle"></div>
+        </aside>
+        <div id="search-results" style="display: none;"></div>
+        <main class="content">
+{{PAGE_HEADER}}{{CONTENT}}
+        </main>
+    </div>
+    <script src="{{ROOT_PATH}}api-index.js?v={{CACHE_BUSTER}}"></script>
+</body>
+</html>

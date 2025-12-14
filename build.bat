@@ -12,9 +12,10 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
-echo Copying CSS and JS files...
+echo Copying CSS, JS, and HTML template files...
 copy /Y "%~dp0Source\MdkApiGen\styles.css" "%~dp0bin\styles.css"
 copy /Y "%~dp0Source\MdkApiGen\api-index.js" "%~dp0bin\api-index.js"
+copy /Y "%~dp0Source\MdkApiGen\page-template.html" "%~dp0bin\page-template.html"
 
 echo.
 echo Building DocGen...
