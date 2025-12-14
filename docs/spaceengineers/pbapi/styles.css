@@ -815,3 +815,15 @@ li {
         font-size: 0.9em;
     }
 }
+
+/* Desktop: push content to the right when sidebar is visible */
+@media (min-width: 1025px) {
+    .content {
+        left: var(--sidebar-width);
+        transition: left 0.3s ease;
+    }
+    
+    body.sidebar-collapsed .content {
+        left: 0;
+    }
+}
