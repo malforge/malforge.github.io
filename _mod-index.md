@@ -39,11 +39,11 @@ For official modding resources, see:
 - ➡️ [Space Engineers Modding Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=360966557)
 - ➡️ [Keen Software House Modding Forums](https://forum.keenswh.com/forums/modding.326461/)
 
-## Getting Started with Mod Development
+## Related tools
 
-I also maintain **MDK2 (Malware's Development Kit 2)** for any fully C# capable IDE (tested with Visual Studio, VSCode, and JetBrains Rider), which adds IntelliSense, templates, and automatic deployment to the game.
+MDK2 (Malware's Development Kit 2) is a separate, optional project that enhances development in fully C# capable IDEs (Visual Studio, VS Code, Rider). It provides IntelliSense, templates, and automated deployment to the game. It is not part of this documentation site.
 
-➡️ [Available here](https://github.com/malforge/mdk2) if that sounds useful to you.
+➡️ MDK2 repository: https://github.com/malforge/mdk2
 
 ## About This Documentation
 

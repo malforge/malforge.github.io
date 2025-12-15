@@ -19,11 +19,11 @@ This site documents the classes, interfaces, and methods available to in-game sc
 This documentation is **community-maintained** and is **not affiliated with or endorsed by Keen Software House**.
 For official tutorials and guides, see the ➡️ [Space Engineers Scripting Wiki](https://spaceengineers.wiki.gg/wiki/Scripting)
 
-## Getting Started with Script Development
+## Related tools
 
-I also maintain **MDK2 (Malware's Development Kit 2)** for any fully C# capable IDE (tested with Visual Studio, VSCode, and JetBrains Rider), which adds IntelliSense, templates, and automatic deployment to the game.
+MDK2 (Malware's Development Kit 2) is a separate, optional project that enhances development in fully C# capable IDEs (Visual Studio, VS Code, Rider). It provides IntelliSense, templates, and automated deployment to the game. It is not part of this documentation site.
 
-➡️ [Available here](https://github.com/malforge/mdk2) if that sounds useful to you.
+➡️ MDK2 repository: https://github.com/malforge/mdk2
 
 ## About This Documentation
 
