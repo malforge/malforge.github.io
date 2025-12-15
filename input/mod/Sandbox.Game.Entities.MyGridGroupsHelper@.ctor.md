@@ -1,0 +1,6 @@
+## Summary
+
+```csharp
+public MyGridGroupsHelper()
+```
+

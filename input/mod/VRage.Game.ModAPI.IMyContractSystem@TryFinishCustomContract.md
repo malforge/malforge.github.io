@@ -1,0 +1,17 @@
+## Summary
+
+```csharp
+public bool TryFinishCustomContract(long contractId)
+```
+
+Tries to set the contract to finish state
+
+## Returns
+
+[bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)
+
+True if contract was finished
+
+## Parameters
+
+* [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) contractId

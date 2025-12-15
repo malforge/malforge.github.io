@@ -1,0 +1,13 @@
+## Summary
+
+```csharp
+public bool Add(T item)
+```
+
+## Returns
+
+[bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)
+
+## Parameters
+
+* [T](VRage.Collections.CachingHashSet{T}+T) item

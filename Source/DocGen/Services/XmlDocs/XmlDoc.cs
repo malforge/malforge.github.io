@@ -88,8 +88,31 @@ namespace DocGen.Services.XmlDocs
                             return new TypeParamRefSpan((string)element.Attribute("name"));
                         case "value":
                             return new Paragraph(ParagraphType.Value, element.Nodes().Select(n => Decode(root, n)).Where(n => n != null));
-                        case "include":
                         case "list":
+                            // Parse list element with type attribute and items
+                            var listType = (string)element.Attribute("type") ?? "bullet";
+                            var listHeader = element.Element("listheader");
+                            var listHeaderNode = listHeader != null ? new Span(listHeader.Value.Trim()) : null;
+                            var items = element.Elements("item").Select(itemElement =>
+                            {
+                                // Try to get description first, then term, then just the item's value
+                                var description = itemElement.Element("description");
+                                var term = itemElement.Element("term");
+                                if (description != null)
+                                    return new Span(description.Value.Trim());
+                                if (term != null)
+                                    return new Span(term.Value.Trim());
+                                return new Span(itemElement.Value.Trim());
+                            }).Where(n => n != null);
+                            return new ListParagraph(listType, listHeaderNode, items);
+                        case "item":
+                        case "description":
+                        case "term":
+                        case "listheader":
+                            // These are handled by the list element parser above
+                            // If we encounter them standalone, just extract text
+                            return new Span(element.Value.Trim());
+                        case "include":
                         case "permissions":
                             throw new NotImplementedException($"{element.Name.LocalName} elements are not implemented");
                     }

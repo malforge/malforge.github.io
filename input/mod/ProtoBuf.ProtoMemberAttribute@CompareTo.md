@@ -1,0 +1,26 @@
+## Summary
+
+```csharp
+public int CompareTo(object other)
+```
+
+## Returns
+
+[int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6)
+
+## Parameters
+
+* [object](https://docs.microsoft.com/en-us/dotnet/api/System.Object?view=netframework-4.6) other
+## Summary
+
+```csharp
+public int CompareTo(ProtoMemberAttribute other)
+```
+
+## Returns
+
+[int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6)
+
+## Parameters
+
+* [ProtoMemberAttribute](ProtoBuf.ProtoMemberAttribute) other

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock - API Reference</title>
-    <link rel="stylesheet" href="styles.css?v=20251214130358">
+    <link rel="stylesheet" href="styles.css?v=20251215200302">
 </head>
 <body>
     <noscript>
@@ -38,11 +38,11 @@
                 <div class="search-hint">Prefix: T: for types, M: for members</div>
             </div>
         </div>
-        <nav class="sidebar-nav" data-current-page="Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock" data-cache-buster="20251214130358">
+        <nav class="sidebar-nav" data-current-page="Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock" data-cache-buster="20251215200302">
             <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
             <div class="sidebar-loading">Loading navigation...</div>
         </nav>
-        <div class="sidebar-footer"><span class="generation-timestamp" data-utc="2025-12-14T13:03:59Z">Generated 2025-12-14 13:03 UTC</span></div>
+        <div class="sidebar-footer"><span class="generation-timestamp" data-utc="2025-12-15T20:03:03Z">Generated 2025-12-15 20:03 UTC</span></div>
         <div class="sidebar-resize-handle"></div>
     </aside>
     <div id="search-results" style="display: none;"></div>
@@ -54,7 +54,7 @@
 <p><strong>Assembly:</strong> Sandbox.Common.dll</p>
 <pre><code class="language-csharp">public interface IMyMechanicalConnectionBlock: IMyFunctionalBlock, IMyTerminalBlock, IMyCubeBlock, IMyEntity
 </code></pre>
-<p>Describes blocks linked with <code>GridLinkTypeEnum.Mechanical</code><sub>prohibited</sub> connection (PB scripting interface)</p>
+<p>Describes blocks linked with <code>Mechanical</code><sub>prohibited</sub> connection (PB scripting interface)</p>
 <h2 id="properties">Properties</h2>
 <table>
 <thead>
@@ -313,7 +313,7 @@
 </tr>
 <tr>
 <td><a href="Sandbox.ModAPI.Ingame.IMyTerminalBlock@IsSameConstructAs.html">IsSameConstructAs(IMyTerminalBlock)</a></td>
-<td>Determines whether this block is <code>GridLinkTypeEnum.Mechanical</code><sub>prohibited</sub> connected to the other. This is any block connected with rotors or pistons or other mechanical devices, but not things like connectors. This will in most cases constitute your complete construct.<br /><br />Be aware that using merge blocks combines grids into one, so this function will not filter out grids connected that way. Also be aware that detaching the heads of pistons and rotors will cause this connection to change.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyTerminalBlock.html">IMyTerminalBlock</a></em></td>
+<td>Determines whether this block is <code>Mechanical</code><sub>prohibited</sub> connected to the other. This is any block connected with rotors or pistons or other mechanical devices, but not things like connectors. This will in most cases constitute your complete construct.<br /><br />Be aware that using merge blocks combines grids into one, so this function will not filter out grids connected that way. Also be aware that detaching the heads of pistons and rotors will cause this connection to change.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyTerminalBlock.html">IMyTerminalBlock</a></em></td>
 </tr>
 <tr>
 <td><a href="Sandbox.ModAPI.Ingame.IMyTerminalBlock@SearchActionsOfName.html">SearchActionsOfName(string, List<ITerminalAction>, Func&lt;ITerminalAction, bool&gt;)</a></td>
@@ -440,6 +440,6 @@
 </ul>
 
     </main>
-    <script src="api-index.js?v=20251214130358"></script>
+    <script src="api-index.js?v=20251215200302"></script>
 </body>
 </html>

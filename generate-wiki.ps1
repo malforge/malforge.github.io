@@ -25,7 +25,7 @@ Write-Host "Whitelist: modwhitelist.dat" -ForegroundColor Gray
 Write-Host "Output:    $modDocgenOutput" -ForegroundColor Gray
 Write-Host ""
 
-& "$PSScriptRoot\bin\DocGen\docgen.exe" api,terminals,sprites,types,json --whitelist modwhitelist.dat --output $modDocgenOutput
+& "$PSScriptRoot\bin\DocGen\docgen.exe" api,types,json --whitelist modwhitelist.dat --output $modDocgenOutput
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host ""

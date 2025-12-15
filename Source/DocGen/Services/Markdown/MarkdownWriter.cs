@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -64,26 +65,54 @@ namespace DocGen.Services.Markdown
             return WriteLineAsync("");
         }
 
+        readonly Stack<string> _beginStack = new Stack<string>();
+        
         public Task BeginParagraphAsync()
         {
+            _beginStack.Push(Environment.StackTrace);
             _transaction.Push(new ParagraphTransaction(this));
             return Task.CompletedTask;
         }
 
         public Task EndParagraphAsync()
         {
-            return ((ParagraphTransaction)_transaction.Peek()).CommitAsync();
+            try
+            {
+                return ((ParagraphTransaction)_transaction.Peek()).CommitAsync();
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("Paragraph began at: " + _beginStack.Peek());
+                throw;
+            }
+            finally
+            {
+                _beginStack.Pop();
+            }
         }
 
         public Task BeginCodeBlockAsync()
         {
+            _beginStack.Push(Environment.StackTrace);
             _transaction.Push(new CodeTransaction(this));
             return Task.CompletedTask;
         }
 
         public Task EndCodeBlockAsync()
         {
-            return ((CodeTransaction)_transaction.Peek()).CommitAsync();
+            try
+            {
+                return ((CodeTransaction)_transaction.Peek()).CommitAsync();
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("Code block began at: " + _beginStack.Peek());
+                throw;
+            }
+            finally
+            {
+                _beginStack.Pop();
+            }
         }
 
         public Task BeginQuoteAsync()

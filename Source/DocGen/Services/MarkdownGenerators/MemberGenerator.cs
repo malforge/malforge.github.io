@@ -62,17 +62,17 @@ namespace DocGen.Services.MarkdownGenerators
             // Debug logging for GridLinkTypeEnum
             if (entry.FullName?.Contains("GridLinkTypeEnum") == true)
             {
-                var debugInfo = $"=== DEBUG: GridLinkTypeEnum Reference ===\n" +
-                    $"Text: {text}\n" +
-                    $"FullName: {entry.FullName}\n" +
-                    $"Member: {entry.Member}\n" +
-                    $"Member Type: {entry.Member?.GetType()}\n" +
-                    $"Declaring Type: {entry.Member?.DeclaringType}\n" +
-                    $"Assembly: {entry.Member?.GetAssembly()?.FullName}\n" +
-                    $"Assembly Company: {entry.Member?.GetAssembly()?.GetCustomAttribute<AssemblyCompanyAttribute>()?.Company}\n" +
-                    $"IsMsType Result: {MicrosoftLink.IsMsType(entry.Member)}\n" +
-                    $"IsWhitelisted: {entry.IsWhitelisted}\n" +
-                    $"==========================================\n\n";
+                var debugInfo = "=== DEBUG: GridLinkTypeEnum Reference ===\n" +
+                                $"Text: {text}\n" +
+                                $"FullName: {entry.FullName}\n" +
+                                $"Member: {entry.Member}\n" +
+                                $"Member Type: {entry.Member?.GetType()}\n" +
+                                $"Declaring Type: {entry.Member?.DeclaringType}\n" +
+                                $"Assembly: {entry.Member?.GetAssembly()?.FullName}\n" +
+                                $"Assembly Company: {entry.Member?.GetAssembly()?.GetCustomAttribute<AssemblyCompanyAttribute>()?.Company}\n" +
+                                $"IsMsType Result: {MicrosoftLink.IsMsType(entry.Member)}\n" +
+                                $"IsWhitelisted: {entry.IsWhitelisted}\n" +
+                                "==========================================\n\n";
                 File.AppendAllText("C:\\Temp\\docgen-debug.log", debugInfo);
             }
 
@@ -110,14 +110,36 @@ namespace DocGen.Services.MarkdownGenerators
 
         public override async Task Generate(DirectoryInfo directory, ProgrammableBlockApi api)
         {
-            var tasks = api.Entries.Where(e => !(e.Member is Type) && ShouldBeIgnored(e) == IgnoreReason.No).GroupBy(e => e.SuggestedFileName).Select(g => GeneratePage(api, directory, g));
+            var groups = api.Entries
+                .Where(e => !(e.Member is Type) && ShouldBeIgnored(e) == IgnoreReason.No)
+                .GroupBy(e => e.SuggestedFileName)
+                .ToList(); // Materialize to check for issues
+
+            var tasks = groups.Select(g => GeneratePage(api, directory, g));
             await Task.WhenAll(tasks);
         }
 
         async Task GeneratePage(ProgrammableBlockApi api, DirectoryInfo directory, IGrouping<string, ApiEntry> entries)
         {
             var fileName = Path.Combine(directory.FullName, entries.Key);
-            using (var file = File.CreateText(fileName))
+            // Try creating the file. If we're not allowed to share, wait a bit and try again, for a while.
+            StreamWriter file = null;
+            var attempts = 0;
+            while (file == null && attempts < 5)
+            {
+                try
+                {
+                    file = File.CreateText(fileName);
+                }
+                catch (IOException)
+                {
+                    attempts++;
+                    await Task.Delay(100 * attempts);
+                }
+            }
+
+            if (file == null) throw new IOException("Could not create file " + fileName + " after multiple attempts.");
+            using (file)
             {
                 var writer = new MarkdownWriter(file);
                 // var firstEntry = entries.First();
@@ -216,7 +238,8 @@ namespace DocGen.Services.MarkdownGenerators
             await writer.WriteHeaderAsync(2, "Returns");
             var returnEntry = api.GetEntry(propertyInfo.PropertyType, true);
             await writer.BeginParagraphAsync();
-            await writer.WriteAsync(LinkTo(returnEntry.ToString(ApiEntryStringFlags.ShortDisplayName), returnEntry));
+            if (returnEntry != null)
+                await writer.WriteAsync(LinkTo(returnEntry.ToString(ApiEntryStringFlags.ShortDisplayName), returnEntry));
             await writer.EndParagraphAsync();
             if (overload.Documentation?.Returns != null)
                 await WriteDocumentation(api, overload.Documentation?.Returns, writer);

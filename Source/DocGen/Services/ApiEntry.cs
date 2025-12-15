@@ -142,6 +142,8 @@ namespace DocGen.Services
             if (fieldInfo.IsSpecialName || (!fieldInfo.IsPublic && !fieldInfo.IsFamily && !fieldInfo.IsFamilyOrAssembly && !fieldInfo.IsFamilyOrAssembly))
                 return null;
             var basis = api.GetEntry(fieldInfo.DeclaringType);
+            if (basis == null)
+                return null;
             var xmlDocKey = $"F{basis.XmlDocKey.Substring(1)}.{fieldInfo.Name}";
             return new ApiEntry(api, fieldInfo, basis.AssemblyName, basis.NamespaceName, fieldInfo.Name, xmlDocKey, whitelist.IsWhitelisted(fieldInfo));
         }
@@ -198,12 +200,18 @@ namespace DocGen.Services
             {
                 if (type.FullName == null)
                     return type.Name + "@";
-                return api.GetEntry(type).XmlDocKey.Substring(2) + "@";
+                var entry = api.GetEntry(type);
+                if (entry == null)
+                    return type.FullName + "@";
+                return entry.XmlDocKey.Substring(2) + "@";
             }
 
             if (type.FullName == null)
                 return type.Name;
-            return api.GetEntry(type, true).XmlDocKey.Substring(2);
+            var typeEntry = api.GetEntry(type, true);
+            if (typeEntry == null)
+                return type.FullName;
+            return typeEntry.XmlDocKey.Substring(2);
         }
 
         static IEnumerable<Type> DeclarersOf(Type type, bool inclusive)
@@ -429,7 +437,11 @@ namespace DocGen.Services
                 segments.Add("static");
 
             if (flags.HasFlag(ApiEntryStringFlags.ReturnValue))
-                segments.Add(Api.GetEntry(propertyInfo.PropertyType, true).ToString(ForSubCalls(flags)));
+            {
+                var entry = Api.GetEntry(propertyInfo.PropertyType, true);
+                if (entry != null)
+                    segments.Add(entry.ToString(ForSubCalls(flags)));
+            }
 
             var buffer = new StringBuilder();
             if (flags.HasFlag(ApiEntryStringFlags.DeclaringTypes))
