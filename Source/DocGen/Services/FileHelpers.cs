@@ -24,5 +24,19 @@ namespace DocGen.Services
             // Fall back to executable directory
             return Path.Combine(AppContext.BaseDirectory, fileName);
         }
+
+        /// <summary>
+        /// Ensures that the directory for the specified file path exists.
+        /// Creates the directory if it doesn't exist.
+        /// </summary>
+        /// <param name="filePath">The full path to a file</param>
+        public static void EnsureDirectoryExists(string filePath)
+        {
+            var directory = Path.GetDirectoryName(filePath);
+            if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+        }
     }
 }

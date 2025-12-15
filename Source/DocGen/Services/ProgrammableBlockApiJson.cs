@@ -34,6 +34,7 @@ namespace DocGen.Services
             };
 
             var json = JsonSerializer.Serialize(jsonData, options);
+            FileHelpers.EnsureDirectoryExists(outputPath);
             File.WriteAllText(outputPath, json);
         }
 

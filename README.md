@@ -1,6 +1,8 @@
-# Space Engineers Programmable Block API Documentation
+# Space Engineers API Documentation
 
-This repository contains the **unofficial** API documentation for Space Engineers Programmable Block scripting.
+This repository contains the **unofficial** API documentation for Space Engineers, covering both:
+- **[Programmable Block (PB) API](https://malforge.github.io/spaceengineers/pbapi)** - For in-game scripting
+- **[Mod API](https://malforge.github.io/spaceengineers/modapi)** - For game modification development
 
 ## View the Documentation
 
@@ -15,11 +17,15 @@ This documentation is **community-maintained** and is **not affiliated with or e
 This is a **one-person, free-time project**, maintained with care for the Space Engineers community.  
 Updates happen when time allows - some gaps and lag behind game updates are unavoidable.
 
-## Getting Started with Script Development
+## Getting Started
 
+**For Programmable Block Scripting:**  
 I also maintain **MDK2 (Malware's Development Kit 2)** for any fully C# capable IDE (tested with Visual Studio, VSCode, and JetBrains Rider), which adds IntelliSense, templates, and automatic deployment to the game.
 
 ➡️ [Available here](https://github.com/malforge/mdk2) if that sounds useful to you.
+
+**For Mod Development:**  
+This site provides comprehensive API reference documentation to help you explore the available types, methods, and properties for creating Space Engineers mods.
 
 ## Questions or Issues?
 
