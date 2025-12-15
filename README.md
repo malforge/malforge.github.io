@@ -19,13 +19,12 @@ Updates happen when time allows - some gaps and lag behind game updates are unav
 
 ## Getting Started
 
-**For Programmable Block Scripting:**  
-I also maintain **MDK2 (Malware's Development Kit 2)** for any fully C# capable IDE (tested with Visual Studio, VSCode, and JetBrains Rider), which adds IntelliSense, templates, and automatic deployment to the game.
+**For Development:**  
+I also maintain **MDK2 (Malware's Development Kit 2)** for any fully C# capable IDE (tested with Visual Studio, VSCode, and JetBrains Rider), which adds IntelliSense, templates, and automatic deployment to the game. It supports both **Programmable Block scripting** and **Mod development**.
 
 ➡️ [Available here](https://github.com/malforge/mdk2) if that sounds useful to you.
 
-**For Mod Development:**  
-This site provides comprehensive API reference documentation to help you explore the available types, methods, and properties for creating Space Engineers mods.
+This site provides comprehensive API reference documentation to help you explore the available types, methods, and properties.
 
 ## Questions or Issues?
 

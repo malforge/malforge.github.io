@@ -26,7 +26,7 @@ class ApiIndexGenerator
             .Build();
     }
 
-    public void Generate(List<DirectoryInfo> apiDirs, DirectoryInfo outputDir)
+    public void Generate(List<DirectoryInfo> apiDirs, DirectoryInfo outputDir, string? customIndexFile = null, string? customFeedbackFile = null)
     {
         foreach (var apiDir in apiDirs)
         {
@@ -55,10 +55,10 @@ class ApiIndexGenerator
         LoadPageTemplate();
 
         // Load search feedback from first directory's parent
-        LoadSearchFeedback(apiDirs[0]);
+        LoadSearchFeedback(apiDirs[0], customFeedbackFile);
         
         // Load custom index from first directory's parent
-        LoadCustomIndex(apiDirs[0]);
+        LoadCustomIndex(apiDirs[0], customIndexFile);
         
         // Scan all input directories
         foreach (var apiDir in apiDirs)
@@ -209,9 +209,26 @@ class ApiIndexGenerator
         Console.WriteLine($"Created manifest tracking {manifest.Files.Count} files and {manifest.Directories.Count} directories");
     }
 
-    private void LoadSearchFeedback(DirectoryInfo apiDir)
+    private void LoadSearchFeedback(DirectoryInfo apiDir, string? customFile = null)
     {
-        var feedbackPath = FileHelpers.FindDefaultFile("_searchfeedback.md");
+        string feedbackPath;
+        
+        // If custom file specified, use it
+        if (!string.IsNullOrEmpty(customFile))
+        {
+            feedbackPath = FileHelpers.FindDefaultFile(customFile);
+        }
+        else
+        {
+            // First try to find _searchfeedback.md in the API directory itself
+            feedbackPath = Path.Combine(apiDir.FullName, "_searchfeedback.md");
+            
+            // Fall back to default search (current dir, exe dir)
+            if (!File.Exists(feedbackPath))
+            {
+                feedbackPath = FileHelpers.FindDefaultFile("_searchfeedback.md");
+            }
+        }
         
         if (File.Exists(feedbackPath))
         {
@@ -253,9 +270,26 @@ class ApiIndexGenerator
         }
     }
 
-    private void LoadCustomIndex(DirectoryInfo apiDir)
+    private void LoadCustomIndex(DirectoryInfo apiDir, string? customFile = null)
     {
-        var indexPath = FileHelpers.FindDefaultFile("_index.md");
+        string indexPath;
+        
+        // If custom file specified, use it
+        if (!string.IsNullOrEmpty(customFile))
+        {
+            indexPath = FileHelpers.FindDefaultFile(customFile);
+        }
+        else
+        {
+            // First try to find _index.md in the API directory itself
+            indexPath = Path.Combine(apiDir.FullName, "_index.md");
+            
+            // Fall back to default search (current dir, exe dir)
+            if (!File.Exists(indexPath))
+            {
+                indexPath = FileHelpers.FindDefaultFile("_index.md");
+            }
+        }
         
         if (File.Exists(indexPath))
         {
