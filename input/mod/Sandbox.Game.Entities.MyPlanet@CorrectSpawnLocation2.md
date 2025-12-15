@@ -1,0 +1,19 @@
+## Summary
+
+```csharp
+public bool CorrectSpawnLocation2(ref Vector3D position, double radius, bool resumeSearch)
+```
+
+
+
+## Returns
+
+[bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)
+
+True if it a safe position is found
+
+## Parameters
+
+* [Vector3D](VRageMath.Vector3D) position
+* [double](https://docs.microsoft.com/en-us/dotnet/api/System.Double?view=netframework-4.6) radius
+* [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) resumeSearch

@@ -1,0 +1,293 @@
+**Assembly:** VRage.Game.dll
+
+```csharp
+public interface IMyCubeBlock: IMyEntity
+```
+
+Basic cube interface
+
+## Properties
+
+|Member|Description|
+|---|---|
+|[BlockDefinition](VRage.Game.ModAPI.Ingame.IMyCubeBlock@BlockDefinition)|Gets definition.Id assigned to this block|
+|[CubeGrid](VRage.Game.ModAPI.Ingame.IMyCubeBlock@CubeGrid)|Grid in which the block is placed|
+|[DefinitionDisplayNameText](VRage.Game.ModAPI.Ingame.IMyCubeBlock@DefinitionDisplayNameText)|Definition name|
+|[DisassembleRatio](VRage.Game.ModAPI.Ingame.IMyCubeBlock@DisassembleRatio)|Is set in definition Ratio at which is the block disassembled (grinding) Bigger values - longer grinding|
+|[DisplayNameText](VRage.Game.ModAPI.Ingame.IMyCubeBlock@DisplayNameText)|Translated block name|
+|[IsBeingHacked](VRage.Game.ModAPI.Ingame.IMyCubeBlock@IsBeingHacked)|Hacking of the block is in progress|
+|[IsFunctional](VRage.Game.ModAPI.Ingame.IMyCubeBlock@IsFunctional)|Gets if integrity is above breaking threshold|
+|[IsWorking](VRage.Game.ModAPI.Ingame.IMyCubeBlock@IsWorking)|True if block is able to do its work depening on block type (is functional, powered, enabled, etc...)|
+|[Mass](VRage.Game.ModAPI.Ingame.IMyCubeBlock@Mass)|Block mass|
+|[Max](VRage.Game.ModAPI.Ingame.IMyCubeBlock@Max)|Maximum coordinates of grid cells occupied by this block|
+|[Min](VRage.Game.ModAPI.Ingame.IMyCubeBlock@Min)|Minimum coordinates of grid cells occupied by this block|
+|[NumberInGrid](VRage.Game.ModAPI.Ingame.IMyCubeBlock@NumberInGrid)|Order in which were the blocks of same type added to grid Used in default display name|
+|[Orientation](VRage.Game.ModAPI.Ingame.IMyCubeBlock@Orientation)|Returns block orientation in base 6 directions|
+|[OwnerId](VRage.Game.ModAPI.Ingame.IMyCubeBlock@OwnerId)|IdentityId of player owning block (not steam Id)|
+|[Position](VRage.Game.ModAPI.Ingame.IMyCubeBlock@Position)|Position in grid coordinates|
+|[Closed](VRage.Game.ModAPI.Ingame.IMyEntity@Closed)|True if the block has been removed from the world.<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[Components](VRage.Game.ModAPI.Ingame.IMyEntity@Components)|Gets blocks component logic container<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[DisplayName](VRage.Game.ModAPI.Ingame.IMyEntity@DisplayName)|Gets user friendly name of entity. May be null For block terminal name use [DisplayNameText](VRage.Game.ModAPI.Ingame.IMyCubeBlock@DisplayNameText)<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[EntityId](VRage.Game.ModAPI.Ingame.IMyEntity@EntityId)|Id of entity<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[HasInventory](VRage.Game.ModAPI.Ingame.IMyEntity@HasInventory)|Returns true if this entity has got at least one inventory. Note that one aggregate inventory can contain zero simple inventories => zero will be returned even if GetInventory() != null.<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[InventoryCount](VRage.Game.ModAPI.Ingame.IMyEntity@InventoryCount)|Returns the count of the number of inventories this entity has.<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[Name](VRage.Game.ModAPI.Ingame.IMyEntity@Name)|Some entities can have uniq name, and game can find them by name [TryGetEntityByName(string, out IMyEntity)](VRage.ModAPI.IMyEntities@TryGetEntityByName)<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[WorldAABB](VRage.Game.ModAPI.Ingame.IMyEntity@WorldAABB)|Gets world axis-aligned bounding box<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[WorldAABBHr](VRage.Game.ModAPI.Ingame.IMyEntity@WorldAABBHr)|Gets world axis-aligned bounding box<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[WorldMatrix](VRage.Game.ModAPI.Ingame.IMyEntity@WorldMatrix)|Gets world matrix of this entity<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[WorldVolume](VRage.Game.ModAPI.Ingame.IMyEntity@WorldVolume)|Gets bounding sphere of this entity<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[WorldVolumeHr](VRage.Game.ModAPI.Ingame.IMyEntity@WorldVolumeHr)|Gets bounding sphere of this entity<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+
+## Methods
+
+|Member|Description|
+|---|---|
+|[GetOwnerFactionTag()](VRage.Game.ModAPI.Ingame.IMyCubeBlock@GetOwnerFactionTag)|Tag of faction owning block|
+|[GetUserRelationToOwner(long, MyRelationsBetweenPlayerAndBlock)](VRage.Game.ModAPI.Ingame.IMyCubeBlock@GetUserRelationToOwner)|Gets relation to owner of block|
+|[GetInventory()](VRage.Game.ModAPI.Ingame.IMyEntity@GetInventory)|Simply get the MyInventoryBase component stored in this entity.<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[GetInventory(int)](VRage.Game.ModAPI.Ingame.IMyEntity@GetInventory)|Search for inventory component with maching index.<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[GetPosition()](VRage.Game.ModAPI.Ingame.IMyEntity@GetPosition)|Gets position in world coordinates<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
+|[GetPlayerRelationToOwner()](VRage.Game.ModAPI.Ingame.IMyCubeBlock@GetPlayerRelationToOwner)|_**Obsolete:** GetPlayerRelationToOwner() is useless ingame. Mods should use the one in ModAPI.IMyCubeBlock_<br /><br />Relation of local player to the block Should not be called on Dedicated Server.|
+|[UpdateIsWorking()](VRage.Game.ModAPI.Ingame.IMyCubeBlock@UpdateIsWorking)|_**Obsolete**_<br /><br />Force refresh working state. Call if you change block state that could affect its working status.|
+|[UpdateVisual()](VRage.Game.ModAPI.Ingame.IMyCubeBlock@UpdateVisual)|_**Obsolete**_<br /><br />Updates block visuals (ie. block emissivity)|
+
+**Implements:**  
+* [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)
+
+**Inheritors:**  
+* [IMyAdvancedDoor](Sandbox.ModAPI.IMyAdvancedDoor)  
+* [IMyAdvancedDoor](Sandbox.ModAPI.Ingame.IMyAdvancedDoor)  
+* [IMyAirtightDoorBase](Sandbox.ModAPI.IMyAirtightDoorBase)  
+* [IMyAirtightDoorBase](Sandbox.ModAPI.Ingame.IMyAirtightDoorBase)  
+* [IMyAirtightHangarDoor](Sandbox.ModAPI.IMyAirtightHangarDoor)  
+* [IMyAirtightHangarDoor](Sandbox.ModAPI.Ingame.IMyAirtightHangarDoor)  
+* [IMyAirtightSlideDoor](Sandbox.ModAPI.IMyAirtightSlideDoor)  
+* [IMyAirtightSlideDoor](Sandbox.ModAPI.Ingame.IMyAirtightSlideDoor)  
+* [IMyAirVent](SpaceEngineers.Game.ModAPI.IMyAirVent)  
+* [IMyAirVent](SpaceEngineers.Game.ModAPI.Ingame.IMyAirVent)  
+* [IMyArtificialMassBlock](SpaceEngineers.Game.ModAPI.IMyArtificialMassBlock)  
+* [IMyArtificialMassBlock](SpaceEngineers.Game.ModAPI.Ingame.IMyArtificialMassBlock)  
+* [IMyAssembler](Sandbox.ModAPI.IMyAssembler)  
+* [IMyAssembler](Sandbox.ModAPI.Ingame.IMyAssembler)  
+* [IMyAttachableTopBlock](Sandbox.ModAPI.IMyAttachableTopBlock)  
+* [IMyAttachableTopBlock](Sandbox.ModAPI.Ingame.IMyAttachableTopBlock)  
+* [IMyBasicMissionBlock](Sandbox.ModAPI.IMyBasicMissionBlock)  
+* [IMyBasicMissionBlock](Sandbox.ModAPI.Ingame.IMyBasicMissionBlock)  
+* [IMyBatteryBlock](Sandbox.ModAPI.IMyBatteryBlock)  
+* [IMyBatteryBlock](Sandbox.ModAPI.Ingame.IMyBatteryBlock)  
+* [IMyBeacon](Sandbox.ModAPI.IMyBeacon)  
+* [IMyBeacon](Sandbox.ModAPI.Ingame.IMyBeacon)  
+* [IMyBroadcastController](SpaceEngineers.Game.ModAPI.IMyBroadcastController)  
+* [IMyBroadcastController](SpaceEngineers.Game.ModAPI.Ingame.IMyBroadcastController)  
+* [IMyBroadcastControllerBlock](Sandbox.ModAPI.Ingame.IMyBroadcastControllerBlock)  
+* [IMyButtonPanel](SpaceEngineers.Game.ModAPI.IMyButtonPanel)  
+* [IMyButtonPanel](SpaceEngineers.Game.ModAPI.Ingame.IMyButtonPanel)  
+* [IMyCameraBlock](Sandbox.ModAPI.IMyCameraBlock)  
+* [IMyCameraBlock](Sandbox.ModAPI.Ingame.IMyCameraBlock)  
+* [IMyCargoContainer](Sandbox.ModAPI.IMyCargoContainer)  
+* [IMyCargoContainer](Sandbox.ModAPI.Ingame.IMyCargoContainer)  
+* [IMyCockpit](Sandbox.ModAPI.IMyCockpit)  
+* [IMyCockpit](Sandbox.ModAPI.Ingame.IMyCockpit)  
+* [IMyCollector](Sandbox.ModAPI.IMyCollector)  
+* [IMyCollector](Sandbox.ModAPI.Ingame.IMyCollector)  
+* [IMyControlPanel](SpaceEngineers.Game.ModAPI.IMyControlPanel)  
+* [IMyControlPanel](SpaceEngineers.Game.ModAPI.Ingame.IMyControlPanel)  
+* [IMyConveyor](Sandbox.ModAPI.IMyConveyor)  
+* [IMyConveyor](Sandbox.ModAPI.Ingame.IMyConveyor)  
+* [IMyConveyorSorter](Sandbox.ModAPI.IMyConveyorSorter)  
+* [IMyConveyorSorter](Sandbox.ModAPI.Ingame.IMyConveyorSorter)  
+* [IMyConveyorTube](Sandbox.ModAPI.IMyConveyorTube)  
+* [IMyConveyorTube](Sandbox.ModAPI.Ingame.IMyConveyorTube)  
+* [IMyCryoChamber](Sandbox.ModAPI.IMyCryoChamber)  
+* [IMyCryoChamber](Sandbox.ModAPI.Ingame.IMyCryoChamber)  
+* [IMyCubeBlock](VRage.Game.ModAPI.IMyCubeBlock)  
+* [IMyDecoy](Sandbox.ModAPI.IMyDecoy)  
+* [IMyDecoy](Sandbox.ModAPI.Ingame.IMyDecoy)  
+* [IMyDefensiveCombatBlock](Sandbox.ModAPI.IMyDefensiveCombatBlock)  
+* [IMyDefensiveCombatBlock](Sandbox.ModAPI.Ingame.IMyDefensiveCombatBlock)  
+* [IMyDoor](Sandbox.ModAPI.IMyDoor)  
+* [IMyDoor](Sandbox.ModAPI.Ingame.IMyDoor)  
+* [IMyEmotionControllerBlock](Sandbox.ModAPI.IMyEmotionControllerBlock)  
+* [IMyEmotionControllerBlock](Sandbox.ModAPI.Ingame.IMyEmotionControllerBlock)  
+* [IMyEventControllerBlock](Sandbox.ModAPI.IMyEventControllerBlock)  
+* [IMyEventControllerBlock](Sandbox.ModAPI.Ingame.IMyEventControllerBlock)  
+* [IMyExhaustBlock](Sandbox.ModAPI.IMyExhaustBlock)  
+* [IMyExtendedPistonBase](Sandbox.ModAPI.IMyExtendedPistonBase)  
+* [IMyExtendedPistonBase](Sandbox.ModAPI.Ingame.IMyExtendedPistonBase)  
+* [IMyFlightMovementBlock](Sandbox.ModAPI.IMyFlightMovementBlock)  
+* [IMyFlightMovementBlock](Sandbox.ModAPI.Ingame.IMyFlightMovementBlock)  
+* [IMyFunctionalBlock](Sandbox.ModAPI.IMyFunctionalBlock)  
+* [IMyFunctionalBlock](Sandbox.ModAPI.Ingame.IMyFunctionalBlock)  
+* [IMyGasGenerator](Sandbox.ModAPI.IMyGasGenerator)  
+* [IMyGasGenerator](Sandbox.ModAPI.Ingame.IMyGasGenerator)  
+* [IMyGasTank](Sandbox.ModAPI.IMyGasTank)  
+* [IMyGasTank](Sandbox.ModAPI.Ingame.IMyGasTank)  
+* [IMyGravityGenerator](SpaceEngineers.Game.ModAPI.IMyGravityGenerator)  
+* [IMyGravityGenerator](SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGenerator)  
+* [IMyGravityGeneratorBase](SpaceEngineers.Game.ModAPI.IMyGravityGeneratorBase)  
+* [IMyGravityGeneratorBase](SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGeneratorBase)  
+* [IMyGravityGeneratorSphere](SpaceEngineers.Game.ModAPI.IMyGravityGeneratorSphere)  
+* [IMyGravityGeneratorSphere](SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGeneratorSphere)  
+* [IMyGyro](Sandbox.ModAPI.IMyGyro)  
+* [IMyGyro](Sandbox.ModAPI.Ingame.IMyGyro)  
+* [IMyHeatVent](SpaceEngineers.Game.ModAPI.IMyHeatVent)  
+* [IMyHeatVent](SpaceEngineers.Game.ModAPI.Ingame.IMyHeatVent)  
+* [IMyInteriorLight](SpaceEngineers.Game.ModAPI.IMyInteriorLight)  
+* [IMyInteriorLight](SpaceEngineers.Game.ModAPI.Ingame.IMyInteriorLight)  
+* [IMyJumpDrive](Sandbox.ModAPI.IMyJumpDrive)  
+* [IMyJumpDrive](Sandbox.ModAPI.Ingame.IMyJumpDrive)  
+* [IMyLandingGear](SpaceEngineers.Game.ModAPI.IMyLandingGear)  
+* [IMyLandingGear](SpaceEngineers.Game.ModAPI.Ingame.IMyLandingGear)  
+* [IMyLargeConveyorTurretBase](SpaceEngineers.Game.ModAPI.IMyLargeConveyorTurretBase)  
+* [IMyLargeConveyorTurretBase](SpaceEngineers.Game.ModAPI.Ingame.IMyLargeConveyorTurretBase)  
+* [IMyLargeGatlingTurret](SpaceEngineers.Game.ModAPI.IMyLargeGatlingTurret)  
+* [IMyLargeGatlingTurret](SpaceEngineers.Game.ModAPI.Ingame.IMyLargeGatlingTurret)  
+* [IMyLargeInteriorTurret](SpaceEngineers.Game.ModAPI.IMyLargeInteriorTurret)  
+* [IMyLargeInteriorTurret](SpaceEngineers.Game.ModAPI.Ingame.IMyLargeInteriorTurret)  
+* [IMyLargeMissileTurret](SpaceEngineers.Game.ModAPI.IMyLargeMissileTurret)  
+* [IMyLargeMissileTurret](SpaceEngineers.Game.ModAPI.Ingame.IMyLargeMissileTurret)  
+* [IMyLargeTurretBase](Sandbox.ModAPI.IMyLargeTurretBase)  
+* [IMyLargeTurretBase](Sandbox.ModAPI.Ingame.IMyLargeTurretBase)  
+* [IMyLaserAntenna](Sandbox.ModAPI.IMyLaserAntenna)  
+* [IMyLaserAntenna](Sandbox.ModAPI.Ingame.IMyLaserAntenna)  
+* [IMyLightingBlock](Sandbox.ModAPI.IMyLightingBlock)  
+* [IMyLightingBlock](Sandbox.ModAPI.Ingame.IMyLightingBlock)  
+* [IMyMechanicalConnectionBlock](Sandbox.ModAPI.IMyMechanicalConnectionBlock)  
+* [IMyMechanicalConnectionBlock](Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock)  
+* [IMyMedicalRoom](SpaceEngineers.Game.ModAPI.IMyMedicalRoom)  
+* [IMyMedicalRoom](SpaceEngineers.Game.ModAPI.Ingame.IMyMedicalRoom)  
+* [IMyMotorAdvancedRotor](Sandbox.ModAPI.IMyMotorAdvancedRotor)  
+* [IMyMotorAdvancedRotor](Sandbox.ModAPI.Ingame.IMyMotorAdvancedRotor)  
+* [IMyMotorAdvancedStator](Sandbox.ModAPI.IMyMotorAdvancedStator)  
+* [IMyMotorAdvancedStator](Sandbox.ModAPI.Ingame.IMyMotorAdvancedStator)  
+* [IMyMotorBase](Sandbox.ModAPI.IMyMotorBase)  
+* [IMyMotorBase](Sandbox.ModAPI.Ingame.IMyMotorBase)  
+* [IMyMotorRotor](Sandbox.ModAPI.IMyMotorRotor)  
+* [IMyMotorRotor](Sandbox.ModAPI.Ingame.IMyMotorRotor)  
+* [IMyMotorStator](Sandbox.ModAPI.IMyMotorStator)  
+* [IMyMotorStator](Sandbox.ModAPI.Ingame.IMyMotorStator)  
+* [IMyMotorSuspension](Sandbox.ModAPI.IMyMotorSuspension)  
+* [IMyMotorSuspension](Sandbox.ModAPI.Ingame.IMyMotorSuspension)  
+* [IMyOffensiveCombatBlock](Sandbox.ModAPI.IMyOffensiveCombatBlock)  
+* [IMyOffensiveCombatBlock](Sandbox.ModAPI.Ingame.IMyOffensiveCombatBlock)  
+* [IMyOreDetector](Sandbox.ModAPI.IMyOreDetector)  
+* [IMyOreDetector](Sandbox.ModAPI.Ingame.IMyOreDetector)  
+* [IMyOxygenFarm](SpaceEngineers.Game.ModAPI.IMyOxygenFarm)  
+* [IMyOxygenFarm](SpaceEngineers.Game.ModAPI.Ingame.IMyOxygenFarm)  
+* [IMyParachute](SpaceEngineers.Game.ModAPI.IMyParachute)  
+* [IMyParachute](SpaceEngineers.Game.ModAPI.Ingame.IMyParachute)  
+* [IMyPassage](Sandbox.ModAPI.IMyPassage)  
+* [IMyPassage](Sandbox.ModAPI.Ingame.IMyPassage)  
+* [IMyPathRecorderBlock](Sandbox.ModAPI.IMyPathRecorderBlock)  
+* [IMyPathRecorderBlock](Sandbox.ModAPI.Ingame.IMyPathRecorderBlock)  
+* [IMyPistonBase](Sandbox.ModAPI.IMyPistonBase)  
+* [IMyPistonBase](Sandbox.ModAPI.Ingame.IMyPistonBase)  
+* [IMyPistonTop](Sandbox.ModAPI.IMyPistonTop)  
+* [IMyPistonTop](Sandbox.ModAPI.Ingame.IMyPistonTop)  
+* [IMyPowerProducer](Sandbox.ModAPI.IMyPowerProducer)  
+* [IMyPowerProducer](Sandbox.ModAPI.Ingame.IMyPowerProducer)  
+* [IMyProductionBlock](Sandbox.ModAPI.IMyProductionBlock)  
+* [IMyProductionBlock](Sandbox.ModAPI.Ingame.IMyProductionBlock)  
+* [IMyProgrammableBlock](Sandbox.ModAPI.IMyProgrammableBlock)  
+* [IMyProgrammableBlock](Sandbox.ModAPI.Ingame.IMyProgrammableBlock)  
+* [IMyProjector](Sandbox.ModAPI.IMyProjector)  
+* [IMyProjector](Sandbox.ModAPI.Ingame.IMyProjector)  
+* [IMyRadioAntenna](Sandbox.ModAPI.IMyRadioAntenna)  
+* [IMyRadioAntenna](Sandbox.ModAPI.Ingame.IMyRadioAntenna)  
+* [IMyReactor](Sandbox.ModAPI.IMyReactor)  
+* [IMyReactor](Sandbox.ModAPI.Ingame.IMyReactor)  
+* [IMyRefinery](Sandbox.ModAPI.IMyRefinery)  
+* [IMyRefinery](Sandbox.ModAPI.Ingame.IMyRefinery)  
+* [IMyReflectorLight](Sandbox.ModAPI.IMyReflectorLight)  
+* [IMyReflectorLight](Sandbox.ModAPI.Ingame.IMyReflectorLight)  
+* [IMyRemoteControl](Sandbox.ModAPI.IMyRemoteControl)  
+* [IMyRemoteControl](Sandbox.ModAPI.Ingame.IMyRemoteControl)  
+* [IMySafeZoneBlock](SpaceEngineers.Game.ModAPI.IMySafeZoneBlock)  
+* [IMySafeZoneBlock](SpaceEngineers.Game.ModAPI.Ingame.IMySafeZoneBlock)  
+* [IMySearchlight](Sandbox.ModAPI.IMySearchlight)  
+* [IMySearchlight](Sandbox.ModAPI.Ingame.IMySearchlight)  
+* [IMySensorBlock](Sandbox.ModAPI.IMySensorBlock)  
+* [IMySensorBlock](Sandbox.ModAPI.Ingame.IMySensorBlock)  
+* [IMyShipConnector](Sandbox.ModAPI.IMyShipConnector)  
+* [IMyShipConnector](Sandbox.ModAPI.Ingame.IMyShipConnector)  
+* [IMyShipController](Sandbox.ModAPI.IMyShipController)  
+* [IMyShipController](Sandbox.ModAPI.Ingame.IMyShipController)  
+* [IMyShipDrill](Sandbox.ModAPI.IMyShipDrill)  
+* [IMyShipDrill](Sandbox.ModAPI.Ingame.IMyShipDrill)  
+* [IMyShipGrinder](Sandbox.ModAPI.IMyShipGrinder)  
+* [IMyShipGrinder](Sandbox.ModAPI.Ingame.IMyShipGrinder)  
+* [IMyShipMergeBlock](SpaceEngineers.Game.ModAPI.IMyShipMergeBlock)  
+* [IMyShipMergeBlock](SpaceEngineers.Game.ModAPI.Ingame.IMyShipMergeBlock)  
+* [IMyShipToolBase](Sandbox.ModAPI.IMyShipToolBase)  
+* [IMyShipToolBase](Sandbox.ModAPI.Ingame.IMyShipToolBase)  
+* [IMyShipWelder](Sandbox.ModAPI.IMyShipWelder)  
+* [IMyShipWelder](Sandbox.ModAPI.Ingame.IMyShipWelder)  
+* [IMySmallGatlingGun](Sandbox.ModAPI.IMySmallGatlingGun)  
+* [IMySmallGatlingGun](Sandbox.ModAPI.Ingame.IMySmallGatlingGun)  
+* [IMySmallMissileLauncher](Sandbox.ModAPI.IMySmallMissileLauncher)  
+* [IMySmallMissileLauncher](Sandbox.ModAPI.Ingame.IMySmallMissileLauncher)  
+* [IMySmallMissileLauncherReload](Sandbox.ModAPI.IMySmallMissileLauncherReload)  
+* [IMySmallMissileLauncherReload](Sandbox.ModAPI.Ingame.IMySmallMissileLauncherReload)  
+* [IMySolarPanel](SpaceEngineers.Game.ModAPI.IMySolarPanel)  
+* [IMySolarPanel](SpaceEngineers.Game.ModAPI.Ingame.IMySolarPanel)  
+* [IMySoundBlock](SpaceEngineers.Game.ModAPI.IMySoundBlock)  
+* [IMySoundBlock](SpaceEngineers.Game.ModAPI.Ingame.IMySoundBlock)  
+* [IMySpaceBall](SpaceEngineers.Game.ModAPI.IMySpaceBall)  
+* [IMySpaceBall](SpaceEngineers.Game.ModAPI.Ingame.IMySpaceBall)  
+* [IMyStoreBlock](Sandbox.ModAPI.IMyStoreBlock)  
+* [IMyStoreBlock](Sandbox.ModAPI.Ingame.IMyStoreBlock)  
+* [IMyTargetDummyBlock](Sandbox.ModAPI.IMyTargetDummyBlock)  
+* [IMyTargetDummyBlock](Sandbox.ModAPI.Ingame.IMyTargetDummyBlock)  
+* [IMyTerminalBlock](Sandbox.ModAPI.IMyTerminalBlock)  
+* [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock)  
+* [IMyTextPanel](Sandbox.ModAPI.IMyTextPanel)  
+* [IMyTextPanel](Sandbox.ModAPI.Ingame.IMyTextPanel)  
+* [IMyThrust](Sandbox.ModAPI.IMyThrust)  
+* [IMyThrust](Sandbox.ModAPI.Ingame.IMyThrust)  
+* [IMyTimerBlock](SpaceEngineers.Game.ModAPI.IMyTimerBlock)  
+* [IMyTimerBlock](SpaceEngineers.Game.ModAPI.Ingame.IMyTimerBlock)  
+* [IMyTransponder](SpaceEngineers.Game.ModAPI.IMyTransponder)  
+* [IMyTransponder](SpaceEngineers.Game.ModAPI.Ingame.IMyTransponder)  
+* [IMyTurretControlBlock](SpaceEngineers.Game.ModAPI.IMyTurretControlBlock)  
+* [IMyTurretControlBlock](SpaceEngineers.Game.ModAPI.Ingame.IMyTurretControlBlock)  
+* [IMyUpgradableBlock](Sandbox.ModAPI.IMyUpgradableBlock)  
+* [IMyUpgradableBlock](Sandbox.ModAPI.Ingame.IMyUpgradableBlock)  
+* [IMyUpgradeModule](Sandbox.ModAPI.IMyUpgradeModule)  
+* [IMyUpgradeModule](Sandbox.ModAPI.Ingame.IMyUpgradeModule)  
+* [IMyUserControllableGun](Sandbox.ModAPI.IMyUserControllableGun)  
+* [IMyUserControllableGun](Sandbox.ModAPI.Ingame.IMyUserControllableGun)  
+* [IMyVendingMachine](Sandbox.ModAPI.IMyVendingMachine)  
+* [IMyVirtualMass](SpaceEngineers.Game.ModAPI.IMyVirtualMass)  
+* [IMyVirtualMass](SpaceEngineers.Game.ModAPI.Ingame.IMyVirtualMass)  
+* [IMyWarhead](Sandbox.ModAPI.IMyWarhead)  
+* [IMyWarhead](Sandbox.ModAPI.Ingame.IMyWarhead)  
+* [IMyWheel](Sandbox.ModAPI.IMyWheel)  
+* [IMyWheel](Sandbox.ModAPI.Ingame.IMyWheel)  
+* [IMyWindTurbine](Sandbox.ModAPI.IMyWindTurbine)  
+* [IMyWindTurbine](Sandbox.ModAPI.Ingame.IMyWindTurbine)  
+* [MyAdvancedDoor](Sandbox.Game.Entities.MyAdvancedDoor)  
+* [MyAirtightDoorGeneric](Sandbox.Game.Entities.MyAirtightDoorGeneric)  
+* [MyAirtightHangarDoor](Sandbox.Game.Entities.MyAirtightHangarDoor)  
+* [MyAirtightSlideDoor](Sandbox.Game.Entities.MyAirtightSlideDoor)  
+* [MyBatteryBlock](Sandbox.Game.Entities.MyBatteryBlock)  
+* [MyCameraBlock](Sandbox.Game.Entities.MyCameraBlock)  
+* [MyCargoContainer](Sandbox.Game.Entities.MyCargoContainer)  
+* [MyCockpit](Sandbox.Game.Entities.MyCockpit)  
+* [MyConveyor](Sandbox.Game.Entities.MyConveyor)  
+* [MyConveyorConnector](Sandbox.Game.Entities.MyConveyorConnector)  
+* [MyConveyorSorter](Sandbox.Game.Entities.MyConveyorSorter)  
+* [MyCubeBlock](Sandbox.Game.Entities.MyCubeBlock)  
+* [MyDoor](Sandbox.Game.Entities.MyDoor)  
+* [MyDoorBase](Sandbox.Game.Entities.MyDoorBase)  
+* [MyEmissiveBlock](Sandbox.Game.Entities.MyEmissiveBlock)  
+* [MyFueledPowerProducer](Sandbox.Game.Entities.MyFueledPowerProducer)  
+* [MyGyro](Sandbox.Game.Entities.MyGyro)  
+* [MyJumpDrive](Sandbox.Game.Entities.MyJumpDrive)  
+* [MyKitchen](Sandbox.Game.Entities.MyKitchen)  
+* [MyPlanter](Sandbox.Game.Entities.MyPlanter)  
+* [MyReactor](Sandbox.Game.Entities.MyReactor)  
+* [MyReflectorLight](Sandbox.Game.Entities.MyReflectorLight)  
+* [MyRemoteControl](Sandbox.Game.Entities.MyRemoteControl)  
+* [MyShipController](Sandbox.Game.Entities.MyShipController)  
+* [MyThrust](Sandbox.Game.Entities.MyThrust)
+

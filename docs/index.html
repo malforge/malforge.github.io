@@ -42,6 +42,18 @@
         a:hover {
             background-color: #0056b3;
         }
+        a.experimental {
+            background-color: #ffc107;
+            color: #000;
+        }
+        a.experimental:hover {
+            background-color: #e0a800;
+        }
+        a.experimental::after {
+            content: " ⚠️ Experimental";
+            font-size: 0.85em;
+            opacity: 0.9;
+        }
         img.avatar {
             width: 128px;
             height: 128px;
@@ -58,6 +70,7 @@
         <p>This site is a placeholder while waiting for content to be completed. Please check back soon!</p>
         <p><small><em>(Note: "Soon" is measured in geological time. This placeholder may outlive us all.)</em></small></p>
         <a href="/spaceengineers/pbapi/">Space Engineers PB API</a>
+        <a href="/spaceengineers/modapi/" class="experimental">Space Engineers Mod API</a>
         <a href="https://github.com/malforge/mdk2">MDK²</a>
     </div>
 </body>

@@ -1,0 +1,33 @@
+**Assembly:** Sandbox.Game.dll
+
+```csharp
+public abstract sealed class MyEnergyConstants
+```
+
+## Fields
+
+|Member|Description|
+|---|---|
+|[static BATTERY_MAX_CAPACITY](Sandbox.Game.MyEnergyConstants@BATTERY_MAX_CAPACITY)||
+|[static BATTERY_MAX_POWER_INPUT](Sandbox.Game.MyEnergyConstants@BATTERY_MAX_POWER_INPUT)||
+|[static BATTERY_MAX_POWER_OUTPUT](Sandbox.Game.MyEnergyConstants@BATTERY_MAX_POWER_OUTPUT)||
+|[static MAX_REQUIRED_POWER_ANTENNA](Sandbox.Game.MyEnergyConstants@MAX_REQUIRED_POWER_ANTENNA)||
+|[static MAX_REQUIRED_POWER_CONNECTOR](Sandbox.Game.MyEnergyConstants@MAX_REQUIRED_POWER_CONNECTOR)||
+|[static MAX_REQUIRED_POWER_DOOR](Sandbox.Game.MyEnergyConstants@MAX_REQUIRED_POWER_DOOR)||
+|[static MAX_REQUIRED_POWER_MEDICAL_ROOM](Sandbox.Game.MyEnergyConstants@MAX_REQUIRED_POWER_MEDICAL_ROOM)||
+|[static MAX_REQUIRED_POWER_ORE_DETECTOR](Sandbox.Game.MyEnergyConstants@MAX_REQUIRED_POWER_ORE_DETECTOR)||
+|[static MAX_REQUIRED_POWER_SHIP_DRILL](Sandbox.Game.MyEnergyConstants@MAX_REQUIRED_POWER_SHIP_DRILL)||
+|[static MAX_REQUIRED_POWER_SHIP_GRINDER](Sandbox.Game.MyEnergyConstants@MAX_REQUIRED_POWER_SHIP_GRINDER)||
+|[static MAX_REQUIRED_POWER_SHIP_GUN](Sandbox.Game.MyEnergyConstants@MAX_REQUIRED_POWER_SHIP_GUN)||
+|[static MAX_REQUIRED_POWER_SOUNDBLOCK](Sandbox.Game.MyEnergyConstants@MAX_REQUIRED_POWER_SOUNDBLOCK)||
+|[static MAX_REQUIRED_POWER_TURRET](Sandbox.Game.MyEnergyConstants@MAX_REQUIRED_POWER_TURRET)||
+|[static MIN_REQUIRED_POWER_THRUST_CHANGE_THRESHOLD](Sandbox.Game.MyEnergyConstants@MIN_REQUIRED_POWER_THRUST_CHANGE_THRESHOLD)||
+|[static RECHARGE_TIMEOUT](Sandbox.Game.MyEnergyConstants@RECHARGE_TIMEOUT)||
+|[static REQUIRED_INPUT_CHARACTER_LIGHT](Sandbox.Game.MyEnergyConstants@REQUIRED_INPUT_CHARACTER_LIGHT)||
+|[static REQUIRED_INPUT_CONVEYOR_LINE](Sandbox.Game.MyEnergyConstants@REQUIRED_INPUT_CONVEYOR_LINE)||
+|[static REQUIRED_INPUT_ENGINEERING_TOOL](Sandbox.Game.MyEnergyConstants@REQUIRED_INPUT_ENGINEERING_TOOL)||
+|[static REQUIRED_INPUT_HAND_DRILL](Sandbox.Game.MyEnergyConstants@REQUIRED_INPUT_HAND_DRILL)||
+|[static REQUIRED_INPUT_JETPACK](Sandbox.Game.MyEnergyConstants@REQUIRED_INPUT_JETPACK)||
+|[static REQUIRED_INPUT_LIFE_SUPPORT](Sandbox.Game.MyEnergyConstants@REQUIRED_INPUT_LIFE_SUPPORT)||
+|[static REQUIRED_INPUT_LIFE_SUPPORT_WITHOUT_HELMET](Sandbox.Game.MyEnergyConstants@REQUIRED_INPUT_LIFE_SUPPORT_WITHOUT_HELMET)||
+

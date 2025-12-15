@@ -1,0 +1,107 @@
+Debug Output Added During This Session - FOR REMOVAL
+=====================================================
+Generated: 2025-12-15 21:15:03
+
+The following debug output was added during troubleshooting and should be removed:
+
+1. MemberGenerator.cs
+   --------------------------------------------------------------------------------
+   Line 118-126: Null/empty filename validation block
+   
+   Code to remove:
+   `
+   // Check for any null or empty filenames
+   var badGroups = groups.Where(g => string.IsNullOrEmpty(g.Key)).ToList();
+   if (badGroups.Any())
+   {
+       Console.Error.WriteLine($"ERROR: Found {badGroups.Count} groups with null/empty filenames!");
+       foreach (var entry in badGroups.SelectMany(g => g).Take(10))
+       {
+           Console.Error.WriteLine($"  - {entry.FullName}");
+       }
+   }
+   `
+   
+   Line 138: File write start message
+   Code: Console.WriteLine("Membergenerator started writing to file " + fileName);
+   
+   Line 194: File write finish message  
+   Code: Console.WriteLine("Membergenerator finished writing to file " + fileName);
+
+2. TypeGenerator.cs
+   --------------------------------------------------------------------------------
+   Line 228: Processing member message
+   Code: Console.WriteLine($"Processing member: {item.FullName}");
+   
+   Line 35: File write start message
+   Code: Console.WriteLine("TypeGenerator started writing to file: " + fileName);
+   
+   Line 90: File write finish message
+   Code: Console.WriteLine("TypeGenerator finished writing to file: " + fileName);
+   
+   Lines 250-260: Diagnostic try-catch block
+   
+   Code to remove (replace with simple call):
+   `
+   try
+   {
+       item.Documentation?.Summary?.WriteMarkdown(context, writer);
+   }
+   catch (Exception ex)
+   {
+       Console.Error.WriteLine($"Error writing documentation for: {item.FullName}");
+       Console.Error.WriteLine($"Member: {item.Name}");
+       Console.Error.WriteLine($"Type: {item.Member.GetType().Name}");
+       Console.Error.WriteLine($"Exception: {ex.Message}");
+       throw;
+   }
+   `
+   
+   Should be replaced with just:
+   `
+   item.Documentation?.Summary?.WriteMarkdown(context, writer);
+   `
+
+3. ApiCommand.cs
+   --------------------------------------------------------------------------------
+   Lines 64-68: Extended error diagnostics in catch block
+   
+   Code to remove:
+   `
+   Console.Error.WriteLine($"Stack trace: {ex.StackTrace}");
+   if (ex.InnerException != null)
+   {
+       Console.Error.WriteLine($"Inner exception: {ex.InnerException.Message}");
+       Console.Error.WriteLine($"Inner stack trace: {ex.InnerException.StackTrace}");
+   }
+   `
+   
+   Keep only:
+   Console.Error.WriteLine($"✗ Error: {ex.Message}");
+
+4. JsonCommand.cs
+   --------------------------------------------------------------------------------
+   Lines 70-74: Extended error diagnostics in catch block
+   
+   Code to remove:
+   `
+   Console.Error.WriteLine($"Stack trace: {ex.StackTrace}");
+   if (ex.InnerException != null)
+   {
+       Console.Error.WriteLine($"Inner exception: {ex.InnerException.Message}");
+       Console.Error.WriteLine($"Inner stack trace: {ex.InnerException.StackTrace}");
+   }
+   `
+   
+   Keep only:
+   Console.Error.WriteLine($"✗ Error: {ex.Message}");
+
+SUMMARY
+=======
+Total locations: 4 files
+Total debug blocks to remove: 9
+
+- MemberGenerator.cs: 3 blocks (null check, 2 write messages)
+- TypeGenerator.cs: 4 blocks (processing message, 2 write messages, try-catch)
+- ApiCommand.cs: 1 block (stack trace output)
+- JsonCommand.cs: 1 block (stack trace output)

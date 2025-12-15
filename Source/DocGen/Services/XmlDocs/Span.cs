@@ -7,7 +7,7 @@ namespace DocGen.Services.XmlDocs
     {
         public Span(string textValue)
         {
-            TextValue = textValue;
+            TextValue = textValue ?? "";
         }
 
         public string TextValue { get; }

@@ -84,6 +84,7 @@ namespace DocGen.Services
                 document.AppendLine();
             }
 
+            FileHelpers.EnsureDirectoryExists(output);
             File.WriteAllText(output, document.ToString());
         }
 

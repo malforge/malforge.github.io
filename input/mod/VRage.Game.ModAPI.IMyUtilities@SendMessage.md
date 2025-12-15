@@ -1,0 +1,11 @@
+## Summary
+
+```csharp
+public void SendMessage(string messageText)
+```
+
+Send message to other players
+
+## Parameters
+
+* [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) messageText

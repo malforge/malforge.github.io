@@ -1,0 +1,10 @@
+## Summary
+
+```csharp
+public ulong MyId { get; }
+```
+
+## Returns
+
+[ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6)
+

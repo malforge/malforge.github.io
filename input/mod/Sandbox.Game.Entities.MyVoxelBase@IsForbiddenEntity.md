@@ -1,0 +1,13 @@
+## Summary
+
+```csharp
+public static bool IsForbiddenEntity(MyEntity entity)
+```
+
+## Returns
+
+[bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)
+
+## Parameters
+
+* [MyEntity](VRage.Game.Entity.MyEntity) entity

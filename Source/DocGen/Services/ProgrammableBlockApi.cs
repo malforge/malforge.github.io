@@ -118,7 +118,8 @@ namespace DocGen.Services
                                 {
                                     if (!visitedMembers.Add(member))
                                         continue;
-                                    api._entries.Add(entry);
+                                    if (!api._entries.Contains(entry))
+                                        api._entries.Add(entry);
                                 }
                             }
                         }

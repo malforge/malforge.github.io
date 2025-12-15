@@ -124,6 +124,7 @@ namespace DocGen.Services
         {
             var loader = new TextureLoader();
             var dir = Path.GetDirectoryName(output) ?? ".\\";
+            FileHelpers.EnsureDirectoryExists(output);
             using (var file = File.CreateText(output))
             {
                 var writer = new MarkdownWriter(file);

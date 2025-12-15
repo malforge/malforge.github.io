@@ -1,0 +1,62 @@
+**Assembly:** SpaceEngineers.ObjectBuilders.dll
+
+```csharp
+public class MyObjectBuilder_OffensiveCombatHitAndRunDefinition: MyObjectBuilder_ComponentDefinitionBase
+```
+
+## Fields
+
+|Member|Description|
+|---|---|
+|[AngleAllowedToShoot](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@AngleAllowedToShoot)||
+|[DefaultBreakOffDistance](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@DefaultBreakOffDistance)||
+|[DefaultRetreatAngle](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@DefaultRetreatAngle)||
+|[DefaultRetreatDistance](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@DefaultRetreatDistance)||
+|[DefaultRetreatTimeout](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@DefaultRetreatTimeout)||
+|[MaxBreakOffDistance](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@MaxBreakOffDistance)||
+|[MaxRetreatAngle](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@MaxRetreatAngle)||
+|[MaxRetreatDistance](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@MaxRetreatDistance)||
+|[MaxRetreatTimeout](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@MaxRetreatTimeout)||
+|[MinBreakOffDistance](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@MinBreakOffDistance)||
+|[MinRetreatAngle](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@MinRetreatAngle)||
+|[MinRetreatDistance](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@MinRetreatDistance)||
+|[MinRetreatTimeout](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@MinRetreatTimeout)||
+|[RetreatDistanceToBreakOffDistanceDifference](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@RetreatDistanceToBreakOffDistanceDifference)||
+|[UniqueSelectionId](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@UniqueSelectionId)||
+|[UpdateInterval](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@UpdateInterval)||
+|[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+|[ComponentType](VRage.Game.MyObjectBuilder_ComponentDefinitionBase@ComponentType)|_Inherited from [MyObjectBuilder_ComponentDefinitionBase](VRage.Game.MyObjectBuilder_ComponentDefinitionBase)_|
+|[Description](VRage.Game.MyObjectBuilder_DefinitionBase@Description)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+|[DescriptionArgs](VRage.Game.MyObjectBuilder_DefinitionBase@DescriptionArgs)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+|[DisplayName](VRage.Game.MyObjectBuilder_DefinitionBase@DisplayName)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+|[DLCs](VRage.Game.MyObjectBuilder_DefinitionBase@DLCs)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+|[Enabled](VRage.Game.MyObjectBuilder_DefinitionBase@Enabled)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+|[Icons](VRage.Game.MyObjectBuilder_DefinitionBase@Icons)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+|[Id](VRage.Game.MyObjectBuilder_DefinitionBase@Id)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+|[Public](VRage.Game.MyObjectBuilder_DefinitionBase@Public)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+
+## Properties
+
+|Member|Description|
+|---|---|
+|[SubtypeId](VRage.ObjectBuilders.MyObjectBuilder_Base@SubtypeId)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
+|[SubtypeName](VRage.ObjectBuilders.MyObjectBuilder_Base@SubtypeName)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
+|[TypeId](VRage.ObjectBuilders.MyObjectBuilder_Base@TypeId)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
+
+## Constructors
+
+|Member|Description|
+|---|---|
+|[MyObjectBuilder_OffensiveCombatHitAndRunDefinition()](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_OffensiveCombatHitAndRunDefinition@.ctor)||
+|[MyObjectBuilder_ComponentDefinitionBase()](VRage.Game.MyObjectBuilder_ComponentDefinitionBase@.ctor)|_Inherited from [MyObjectBuilder_ComponentDefinitionBase](VRage.Game.MyObjectBuilder_ComponentDefinitionBase)_|
+
+## Methods
+
+|Member|Description|
+|---|---|
+|[Clone()](VRage.ObjectBuilders.MyObjectBuilder_Base@Clone)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
+|[Equals(MyObjectBuilder_Base)](VRage.ObjectBuilders.MyObjectBuilder_Base@Equals)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
+|[ShouldSerializeSubtypeId()](VRage.ObjectBuilders.MyObjectBuilder_Base@ShouldSerializeSubtypeId)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
+
+**Inheritance:**   [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base) ˃ [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase) ˃ [MyObjectBuilder_ComponentDefinitionBase](VRage.Game.MyObjectBuilder_ComponentDefinitionBase)
+
