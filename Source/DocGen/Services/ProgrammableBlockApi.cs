@@ -56,11 +56,24 @@ namespace DocGen.Services
 
         public static async Task Update(string terminalsCacheFileName, string whitelistCacheFileName, string output)
         {
-            var api = await LoadAsync(whitelistCacheFileName);
             var spaceEngineers = new SpaceEngineers();
+            var gameBinPath = Path.Combine(spaceEngineers.GetInstallPath(), "bin64");
+            
+            // Check if regeneration is needed
+            if (!DependencyManifest.NeedsRegeneration(output, whitelistCacheFileName, terminalsCacheFileName, gameBinPath))
+            {
+                Console.WriteLine("✓ Skipping API generation (dependencies unchanged)");
+                return;
+            }
+            
+            var api = await LoadAsync(whitelistCacheFileName);
             var typeDefinitions = await TypeDefinitions.LoadAsync(terminalsCacheFileName, spaceEngineers.GetInstallPath("Content\\Data"));
 
             await api.SaveAsync(typeDefinitions, output);
+            
+            // Save manifest after successful generation
+            var manifest = DependencyManifest.BuildManifest(whitelistCacheFileName, terminalsCacheFileName, gameBinPath);
+            DependencyManifest.SaveManifest(manifest, output);
         }
 
         public static async Task<ProgrammableBlockApi> LoadAsync(string whitelistCacheFileName)

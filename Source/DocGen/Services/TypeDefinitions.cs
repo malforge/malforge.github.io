@@ -23,6 +23,13 @@ namespace DocGen.Services
 
         public static async Task UpdateAsync(string terminalsPath, string path, string output, string gameBinaryPath)
         {
+            // Check if regeneration is needed (simple timestamp check)
+            if (File.Exists(output) && File.GetLastWriteTimeUtc(output) >= File.GetLastWriteTimeUtc(terminalsPath))
+            {
+                Console.WriteLine("  Skipping (output up-to-date)");
+                return;
+            }
+            
             var typeDefinitions = await LoadAsync(terminalsPath, path);
             typeDefinitions.Generate(path, output);
         }

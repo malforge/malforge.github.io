@@ -18,6 +18,19 @@ namespace DocGen.Services
 
         public static async Task UpdateAsync(string path, string output, string gameBinaryPath)
         {
+            // Check if regeneration is needed (compare against data directory modification time)
+            if (File.Exists(output))
+            {
+                var outputTime = File.GetLastWriteTimeUtc(output);
+                var dataTime = Directory.GetLastWriteTimeUtc(path);
+                
+                if (outputTime >= dataTime)
+                {
+                    Console.WriteLine("  Skipping (output up-to-date)");
+                    return;
+                }
+            }
+            
             var sprites = await LoadAsync(path);
             await sprites.GenerateAsync(path, output);
         }

@@ -645,10 +645,10 @@ class ApiIndexGenerator
                 skipped++;
                 // Still track the file as generated (it exists)
                 _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
-                var outputFileDir = Path.GetDirectoryName(outputPath);
-                if (!string.IsNullOrEmpty(outputFileDir))
+                var skippedFileDir = Path.GetDirectoryName(outputPath);
+                if (!string.IsNullOrEmpty(skippedFileDir))
                 {
-                    var relativeDir = Path.GetRelativePath(outputDir.FullName, outputFileDir) + Path.DirectorySeparatorChar;
+                    var relativeDir = Path.GetRelativePath(outputDir.FullName, skippedFileDir) + Path.DirectorySeparatorChar;
                     _generatedPaths.Add(relativeDir);
                 }
                 continue;

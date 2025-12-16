@@ -22,6 +22,13 @@ namespace DocGen.Services
 
         public static async Task Update(string fileName, string output, Action<string> updateStatusFn)
         {
+            // Check if regeneration is needed (simple timestamp check)
+            if (File.Exists(output) && File.GetLastWriteTimeUtc(output) >= File.GetLastWriteTimeUtc(fileName))
+            {
+                updateStatusFn?.Invoke("Skipping (output up-to-date)");
+                return;
+            }
+            
             updateStatusFn?.Invoke("Loading cache...");
             var terminals = await Task.Run(() => Load(fileName));
             updateStatusFn?.Invoke("Saving document...");

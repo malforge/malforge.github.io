@@ -15,8 +15,19 @@ namespace DocGen.Services
     {
         public static async Task Export(string terminalsCacheFileName, string whitelistCacheFileName, string outputPath)
         {
-            var api = await ProgrammableBlockApi.LoadAsync(whitelistCacheFileName);
             var spaceEngineers = new SpaceEngineers();
+            var gameBinPath = Path.Combine(spaceEngineers.GetInstallPath(), "bin64");
+            var outputDir = Path.GetDirectoryName(outputPath);
+            
+            // Check if regeneration is needed
+            if (!string.IsNullOrEmpty(outputDir) && 
+                !DependencyManifest.NeedsRegeneration(outputDir, whitelistCacheFileName, terminalsCacheFileName, gameBinPath))
+            {
+                Console.WriteLine("✓ Skipping JSON generation (dependencies unchanged)");
+                return;
+            }
+            
+            var api = await ProgrammableBlockApi.LoadAsync(whitelistCacheFileName);
             var typeDefinitions = await TypeDefinitions.LoadAsync(terminalsCacheFileName, spaceEngineers.GetInstallPath("Content\\Data"));
 
             // Load type overrides config if it exists
@@ -36,6 +47,13 @@ namespace DocGen.Services
             var json = JsonSerializer.Serialize(jsonData, options);
             FileHelpers.EnsureDirectoryExists(outputPath);
             File.WriteAllText(outputPath, json);
+            
+            // Save manifest after successful generation (if we have an output directory)
+            if (!string.IsNullOrEmpty(outputDir))
+            {
+                var manifest = DependencyManifest.BuildManifest(whitelistCacheFileName, terminalsCacheFileName, gameBinPath);
+                DependencyManifest.SaveManifest(manifest, outputDir);
+            }
         }
 
         static ApiJsonData BuildJsonData(ProgrammableBlockApi api, TypeDefinitions typeDefinitions, TypeOverridesConfig typeOverrides)
