@@ -1,6 +1,5 @@
 # Space Engineers – Programmable Block API Documentation
 
-Welcome to the **unofficial** API reference for scripting in the *Space Engineers* Programmable Block.
 This site documents the classes, interfaces, and methods available to in-game scripts.
 
 ---
@@ -13,11 +12,10 @@ This site documents the classes, interfaces, and methods available to in-game sc
 
 ---
 
-## ⚠️ Important Notes
-
-### Unofficial Project
-This documentation is **community-maintained** and is **not affiliated with or endorsed by Keen Software House**.
-For tutorials and guides, see the official ➡️ [Space Engineers Scripting Wiki](https://spaceengineers.wiki.gg/wiki/Scripting)
+> [!IMPORTANT]
+> **Unofficial Project**  
+> This documentation is **community-maintained** and is **not affiliated with or endorsed by Keen Software House**.
+> For tutorials and guides, see the official ➡️ [Space Engineers Scripting Wiki](https://spaceengineers.wiki.gg/wiki/Scripting)
 
 ## Related tools
 

@@ -1,12 +1,6 @@
 # Space Engineers – Mod API Documentation
 
-Welcome to the **unofficial** API reference for modding *Space Engineers*.
 This site documents the classes, interfaces, and methods available to mod developers.
-
-> **⚠️ WARNING: This documentation generator is experimental for the Mod API.**  
-> The documentation generator has been thoroughly tested for the Programmable Block API, but the Mod API is new territory.
-> There may be rendering issues, missing information, or other anomalies we haven't discovered yet.
-> The best way to find problems is to use it - so please report any issues you encounter!
 
 ---
 
@@ -18,23 +12,15 @@ This site documents the classes, interfaces, and methods available to mod develo
 
 ---
 
-## ⚠️ Important Notes
+> [!WARNING]
+> **Experimental Status**  
+> This documentation has been thoroughly tested for the Programmable Block API, but the Mod API is new territory.
+> The Mod API is **much larger** (thousands more types) and **more complex** (deeper inheritance hierarchies).
+> If you spot something wrong, please report it so we can fix it.
 
-### Experimental Status
-This documentation is generated using the same tools as the Programmable Block API, but the Mod API is:
-- **Much larger** - thousands more types and members to document
-- **More complex** - deeper inheritance hierarchies and more intricate relationships
-- **Less tested** - we're working out the kinks as we go
-
-**Expect:**
-- Possible rendering issues or formatting problems
-- Edge cases in documentation generation we haven't encountered yet
-- Potential missing or incorrectly parsed documentation
-
-**Help us improve it!** If you spot something wrong, please report it so we can fix it.
-
-### Unofficial Project
-This documentation is **community-maintained** and is **not affiliated with or endorsed by Keen Software House**.
+> [!IMPORTANT]
+> **Unofficial Project**  
+> This documentation is **community-maintained** and is **not affiliated with or endorsed by Keen Software House**.
 
 ## Related tools
 
@@ -64,4 +50,4 @@ This documentation is provided **as-is**, for educational and reference use only
 
 ---
 
-*Happy modding - and may Clang be merciful.*
+*Happy modding - and may your grids never mysteriously explode.*

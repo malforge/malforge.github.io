@@ -2,7 +2,6 @@ using Markdig;
 using Markdig.Renderers;
 using Markdig.Syntax;
 using System.Text;
-using System.Text.RegularExpressions;
 
 namespace MdkApiGen;
 
@@ -146,9 +145,6 @@ public class DocGenerator
     {
         var markdown = File.ReadAllText(mdFile.FullName);
         
-        // Pre-process GitHub-style alerts before converting to HTML
-        markdown = ProcessGitHubAlerts(markdown);
-        
         // Convert markdown to HTML
         var html = Markdown.ToHtml(markdown, _pipeline);
         
@@ -168,49 +164,6 @@ public class DocGenerator
             .Replace("{{CONTENT}}", html);
         
         File.WriteAllText(outputPath, finalHtml);
-    }
-
-    private string ProcessGitHubAlerts(string markdown)
-    {
-        // Convert GitHub-style alerts to HTML-friendly blockquotes
-        // Pattern: > [!NOTE], > [!WARNING], etc.
-        var alertPattern = @"^>\s*\[!(NOTE|WARNING|IMPORTANT|TIP|CAUTION)\]\s*$";
-        var lines = markdown.Split('\n');
-        var result = new StringBuilder();
-        
-        for (int i = 0; i < lines.Length; i++)
-        {
-            var line = lines[i];
-            var match = Regex.Match(line, alertPattern, RegexOptions.IgnoreCase);
-            
-            if (match.Success)
-            {
-                var alertType = match.Groups[1].Value.ToLower();
-                result.AppendLine($"<blockquote class=\"alert-{alertType}\">");
-                result.AppendLine($"<p><strong>{match.Groups[1].Value}</strong></p>");
-                
-                // Collect subsequent blockquote lines
-                i++;
-                while (i < lines.Length && lines[i].TrimStart().StartsWith(">"))
-                {
-                    var content = lines[i].TrimStart().Substring(1).TrimStart();
-                    if (!string.IsNullOrWhiteSpace(content))
-                    {
-                        result.AppendLine($"<p>{content}</p>");
-                    }
-                    i++;
-                }
-                i--; // Back up one since the for loop will increment
-                
-                result.AppendLine("</blockquote>");
-            }
-            else
-            {
-                result.AppendLine(line);
-            }
-        }
-        
-        return result.ToString();
     }
 
     private void CopyAssets(DirectoryInfo outputDir)

@@ -834,3 +834,48 @@ li {
         left: 0;
     }
 }
+
+/* GitHub-style Alerts (Markdig format) */
+.content .markdown-alert {
+    margin: 20px 0;
+    padding: 15px 20px;
+    border-left: 4px solid;
+    border-radius: 4px;
+}
+
+.content .markdown-alert-note {
+    background-color: rgba(76, 195, 247, 0.1);
+    border-color: #4fc3f7;
+}
+
+.content .markdown-alert-warning {
+    background-color: rgba(255, 193, 7, 0.1);
+    border-color: #ffc107;
+}
+
+.content .markdown-alert-important {
+    background-color: rgba(156, 39, 176, 0.1);
+    border-color: #9c27b0;
+}
+
+.content .markdown-alert-tip {
+    background-color: rgba(76, 175, 80, 0.1);
+    border-color: #4caf50;
+}
+
+.content .markdown-alert-caution {
+    background-color: rgba(244, 67, 54, 0.1);
+    border-color: #f44336;
+}
+
+.content .markdown-alert-title {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.content .markdown-alert-title svg {
+    margin-right: 8px;
+    fill: currentColor;
+}
