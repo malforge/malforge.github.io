@@ -26,6 +26,25 @@ class ApiIndexGenerator
             .Build();
     }
 
+    private string GenerateCacheBuster()
+    {
+        var cssPath = FileHelpers.FindDefaultFile("styles.css");
+        var jsPath = FileHelpers.FindDefaultFile("api-index.js");
+        
+        if (!File.Exists(cssPath) || !File.Exists(jsPath))
+        {
+            Console.WriteLine("Warning: CSS or JS file not found, using timestamp fallback");
+            return DateTime.UtcNow.ToString("yyyyMMddHHmmss");
+        }
+        
+        using var sha = System.Security.Cryptography.SHA256.Create();
+        var cssBytes = File.ReadAllBytes(cssPath);
+        var jsBytes = File.ReadAllBytes(jsPath);
+        var combined = cssBytes.Concat(jsBytes).ToArray();
+        var hash = sha.ComputeHash(combined);
+        return Convert.ToHexString(hash).Substring(0, 12).ToLowerInvariant();
+    }
+
     public void Generate(List<DirectoryInfo> apiDirs, DirectoryInfo outputDir, string? customIndexFile = null, string? customFeedbackFile = null)
     {
         foreach (var apiDir in apiDirs)
@@ -44,8 +63,8 @@ class ApiIndexGenerator
         }
         Console.WriteLine($"Output directory: {outputDir.FullName}");
 
-        // Generate cache-busting timestamp
-        _cacheBuster = DateTime.UtcNow.ToString("yyyyMMddHHmmss");
+        // Generate cache-busting hash based on CSS and JS content
+        _cacheBuster = GenerateCacheBuster();
         Console.WriteLine($"Cache-buster: {_cacheBuster}");
 
         // Clean output directory safely
