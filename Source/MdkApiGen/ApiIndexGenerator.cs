@@ -928,6 +928,7 @@ class ApiIndexGenerator
             .Replace("{{GENERATION_TIMESTAMP}}", $"<span class=\"generation-timestamp\" data-utc=\"{DateTime.UtcNow:yyyy-MM-ddTHH:mm:ssZ}\">Generated {DateTime.UtcNow:yyyy-MM-dd HH:mm} UTC</span>")
             .Replace("{{PAGE_HEADER}}", pageHeader)
             .Replace("{{API_SWITCHER}}", apiSwitcher)
+            .Replace("{{API_TYPE}}", _apiType)
             .Replace("{{CONTENT}}", content);
 
         return html;

@@ -11,11 +11,9 @@ if ($LASTEXITCODE -ne 0) {
     exit 1
 }
 
-Write-Host "Copying CSS, JS, HTML template, and image files..." -ForegroundColor Cyan
-Copy-Item "$PSScriptRoot\Source\MdkApiGen\styles.css" "$PSScriptRoot\bin\styles.css" -Force
-Copy-Item "$PSScriptRoot\Source\MdkApiGen\api-index.js" "$PSScriptRoot\bin\api-index.js" -Force
-Copy-Item "$PSScriptRoot\Source\MdkApiGen\page-template.html" "$PSScriptRoot\bin\page-template.html" -Force
-Copy-Item "$PSScriptRoot\Source\MdkApiGen\*.png" "$PSScriptRoot\bin\" -Force -ErrorAction SilentlyContinue
+# Note: CSS, JS, HTML templates, and images are copied automatically by dotnet publish
+# with PreserveNewest behavior (only copies if source is newer than destination)
+# See Source/MdkApiGen/MdkApiGen.csproj for configuration
 
 Write-Host ""
 Write-Host "Building DocGen..." -ForegroundColor Cyan

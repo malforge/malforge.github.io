@@ -259,10 +259,8 @@ namespace DocGen.Services
 
             var generators = new DocumentGenerator[]
             {
-                new ApiIndexGenerator(),
                 new TypeGenerator(typeDefinitions, typeOverrides),
                 new MemberGenerator(),
-                new NamespaceIndexGenerator(),
                 new NamespaceGenerator()
             };
 
