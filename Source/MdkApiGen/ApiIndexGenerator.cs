@@ -17,6 +17,7 @@ class ApiIndexGenerator
     private HashSet<string> _generatedPaths = new(); // Track all generated files/folders for safe cleanup
     private string _cacheBuster = ""; // Cache-busting query string for CSS/JS
     private string _pageTemplate = ""; // HTML page template
+    private DateTime _globalDependencyTimestamp = DateTime.MinValue; // Latest timestamp of global dependencies
 
     public ApiIndexGenerator()
     {
@@ -43,6 +44,71 @@ class ApiIndexGenerator
         var combined = cssBytes.Concat(jsBytes).ToArray();
         var hash = sha.ComputeHash(combined);
         return Convert.ToHexString(hash).Substring(0, 12).ToLowerInvariant();
+    }
+
+    private void CalculateGlobalDependencyTimestamp(DirectoryInfo apiDir, string? customIndexFile, string? customFeedbackFile)
+    {
+        var dependencies = new List<string>();
+        
+        // Page template
+        var templatePath = FileHelpers.FindDefaultFile("page-template.html");
+        if (File.Exists(templatePath))
+            dependencies.Add(templatePath);
+        
+        // CSS and JS (they affect the cache buster which goes in every page)
+        var cssPath = FileHelpers.FindDefaultFile("styles.css");
+        if (File.Exists(cssPath))
+            dependencies.Add(cssPath);
+        
+        var jsPath = FileHelpers.FindDefaultFile("api-index.js");
+        if (File.Exists(jsPath))
+            dependencies.Add(jsPath);
+        
+        // Search feedback
+        string feedbackPath;
+        if (!string.IsNullOrEmpty(customFeedbackFile))
+        {
+            feedbackPath = FileHelpers.FindDefaultFile(customFeedbackFile);
+        }
+        else
+        {
+            feedbackPath = Path.Combine(apiDir.FullName, "_searchfeedback.md");
+            if (!File.Exists(feedbackPath))
+            {
+                feedbackPath = FileHelpers.FindDefaultFile("_searchfeedback.md");
+            }
+        }
+        if (File.Exists(feedbackPath))
+            dependencies.Add(feedbackPath);
+        
+        // Custom index
+        string indexPath;
+        if (!string.IsNullOrEmpty(customIndexFile))
+        {
+            indexPath = FileHelpers.FindDefaultFile(customIndexFile);
+        }
+        else
+        {
+            indexPath = Path.Combine(apiDir.FullName, "_index.md");
+            if (!File.Exists(indexPath))
+            {
+                indexPath = FileHelpers.FindDefaultFile("_index.md");
+            }
+        }
+        if (File.Exists(indexPath))
+            dependencies.Add(indexPath);
+        
+        // Find the latest timestamp among all dependencies
+        _globalDependencyTimestamp = dependencies
+            .Where(File.Exists)
+            .Select(f => File.GetLastWriteTimeUtc(f))
+            .DefaultIfEmpty(DateTime.MinValue)
+            .Max();
+        
+        if (_globalDependencyTimestamp > DateTime.MinValue)
+        {
+            Console.WriteLine($"Global dependencies last modified: {_globalDependencyTimestamp:yyyy-MM-dd HH:mm:ss} UTC");
+        }
     }
 
     public void Generate(List<DirectoryInfo> apiDirs, DirectoryInfo outputDir, string? customIndexFile = null, string? customFeedbackFile = null)
@@ -78,6 +144,9 @@ class ApiIndexGenerator
         
         // Load custom index from first directory's parent
         LoadCustomIndex(apiDirs[0], customIndexFile);
+        
+        // Calculate global dependency timestamp (latest of all global dependencies)
+        CalculateGlobalDependencyTimestamp(apiDirs[0], customIndexFile, customFeedbackFile);
         
         // Scan all input directories
         foreach (var apiDir in apiDirs)
@@ -561,9 +630,30 @@ class ApiIndexGenerator
     private void GeneratePages(DirectoryInfo outputDir)
     {
         Console.WriteLine("Starting page generation...");
-        int count = 0;
+        int generated = 0;
+        int skipped = 0;
+        int total = 0;
+        
         foreach (var file in _allFiles)
         {
+            total++;
+            var outputPath = Path.Combine(outputDir.FullName, file.HtmlPath);
+            
+            // Check if we need to regenerate this file
+            if (ShouldSkipRegeneration(file.FullPath, outputPath))
+            {
+                skipped++;
+                // Still track the file as generated (it exists)
+                _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
+                var outputFileDir = Path.GetDirectoryName(outputPath);
+                if (!string.IsNullOrEmpty(outputFileDir))
+                {
+                    var relativeDir = Path.GetRelativePath(outputDir.FullName, outputFileDir) + Path.DirectorySeparatorChar;
+                    _generatedPaths.Add(relativeDir);
+                }
+                continue;
+            }
+            
             var markdownContent = File.ReadAllText(file.FullPath);
 
             string htmlContent;
@@ -582,7 +672,7 @@ class ApiIndexGenerator
                 Console.Error.WriteLine($"Relative path: {file.RelativePath}");
                 Console.Error.WriteLine($"Size: {new FileInfo(file.FullPath).Length:N0} bytes");
                 Console.Error.WriteLine($"Lines: {markdownContent.Split('\n').Length:N0}");
-                Console.Error.WriteLine($"Progress: {count}/{_allFiles.Count} files processed before failure");
+                Console.Error.WriteLine($"Progress: {generated}/{_allFiles.Count} files processed before failure");
                 Console.Error.WriteLine();
                 Console.Error.WriteLine($"Error Type: {ex.GetType().Name}");
                 Console.Error.WriteLine($"Error Message: {ex.Message}");
@@ -628,7 +718,6 @@ class ApiIndexGenerator
             
             var fullHtml = GenerateHtmlPage(file, namespacePart, namePart, htmlContent);
 
-            var outputPath = Path.Combine(outputDir.FullName, file.HtmlPath);
             var outputFileDir = Path.GetDirectoryName(outputPath);
             if (!string.IsNullOrEmpty(outputFileDir))
             {
@@ -642,21 +731,52 @@ class ApiIndexGenerator
             // Track generated file (store relative path)
             _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
             
-            count++;
-            if (count % 100 == 0)
+            generated++;
+            if (generated % 100 == 0)
             {
-                Console.WriteLine($"  Generated {count}/{_allFiles.Count} pages...");
+                Console.WriteLine($"  Generated {generated}/{total} pages...");
             }
         }
 
-        Console.WriteLine($"Generated {_allFiles.Count} HTML pages");
+        Console.WriteLine($"Generated {generated} HTML pages, skipped {skipped} unchanged pages (total: {total})");
 
         // Generate index.html
         GenerateIndexPage(outputDir);
     }
 
+    private bool ShouldSkipRegeneration(string sourceMarkdownPath, string outputHtmlPath)
+    {
+        // If output doesn't exist, we must generate it
+        if (!File.Exists(outputHtmlPath))
+            return false;
+        
+        var outputTimestamp = File.GetLastWriteTimeUtc(outputHtmlPath);
+        var sourceTimestamp = File.GetLastWriteTimeUtc(sourceMarkdownPath);
+        
+        // If source is newer than output, regenerate
+        if (sourceTimestamp > outputTimestamp)
+            return false;
+        
+        // If any global dependency is newer than output, regenerate
+        if (_globalDependencyTimestamp > outputTimestamp)
+            return false;
+        
+        // Otherwise, skip regeneration
+        return true;
+    }
+
     private void GenerateIndexPage(DirectoryInfo outputDir)
     {
+        var outputPath = Path.Combine(outputDir.FullName, "index.html");
+        
+        // Check if we should skip regeneration (index.html is special - depends on global dependencies)
+        if (File.Exists(outputPath) && _globalDependencyTimestamp <= File.GetLastWriteTimeUtc(outputPath))
+        {
+            Console.WriteLine("Skipped index.html (unchanged)");
+            _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
+            return;
+        }
+        
         string content;
         string title;
 
@@ -732,7 +852,6 @@ class ApiIndexGenerator
         };
 
         var fullHtml = GenerateHtmlPage(indexPageFile, "", title, content);
-        var outputPath = Path.Combine(outputDir.FullName, "index.html");
         File.WriteAllText(outputPath, fullHtml);
         // Track generated file
         _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
