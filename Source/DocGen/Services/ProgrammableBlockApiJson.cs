@@ -13,18 +13,23 @@ namespace DocGen.Services
 {
     internal static class ProgrammableBlockApiJson
     {
-        public static async Task Export(string terminalsCacheFileName, string whitelistCacheFileName, string outputPath)
+        public static async Task Export(string terminalsCacheFileName, string whitelistCacheFileName, string outputPath, bool forceRegeneration = false)
         {
             var spaceEngineers = new SpaceEngineers();
             var gameBinPath = Path.Combine(spaceEngineers.GetInstallPath(), "bin64");
             var outputDir = Path.GetDirectoryName(outputPath);
             
             // Check if regeneration is needed
-            if (!string.IsNullOrEmpty(outputDir) && 
+            if (!forceRegeneration && !string.IsNullOrEmpty(outputDir) && 
                 !DependencyManifest.NeedsRegeneration(outputDir, whitelistCacheFileName, terminalsCacheFileName, gameBinPath))
             {
                 Console.WriteLine("✓ Skipping JSON generation (dependencies unchanged)");
                 return;
+            }
+            
+            if (forceRegeneration)
+            {
+                Console.WriteLine("Force regeneration enabled");
             }
             
             var api = await ProgrammableBlockApi.LoadAsync(whitelistCacheFileName);

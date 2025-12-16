@@ -54,16 +54,21 @@ namespace DocGen.Services
             }
         }
 
-        public static async Task Update(string terminalsCacheFileName, string whitelistCacheFileName, string output)
+        public static async Task Update(string terminalsCacheFileName, string whitelistCacheFileName, string output, bool forceRegeneration = false)
         {
             var spaceEngineers = new SpaceEngineers();
             var gameBinPath = Path.Combine(spaceEngineers.GetInstallPath(), "bin64");
             
             // Check if regeneration is needed
-            if (!DependencyManifest.NeedsRegeneration(output, whitelistCacheFileName, terminalsCacheFileName, gameBinPath))
+            if (!forceRegeneration && !DependencyManifest.NeedsRegeneration(output, whitelistCacheFileName, terminalsCacheFileName, gameBinPath))
             {
                 Console.WriteLine("✓ Skipping API generation (dependencies unchanged)");
                 return;
+            }
+            
+            if (forceRegeneration)
+            {
+                Console.WriteLine("Force regeneration enabled");
             }
             
             var api = await LoadAsync(whitelistCacheFileName);

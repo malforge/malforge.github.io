@@ -19,6 +19,7 @@ namespace DocGen.Commands
             var terminalPath = GetArgValue(args, "--terminal");
             var whitelistPath = GetArgValue(args, "--whitelist");
             var outputPath = GetArgValue(args, "--output");
+            var forceRegeneration = args.Contains("--force");
 
             // Auto-detect terminal file if not specified
             if (string.IsNullOrEmpty(terminalPath)) terminalPath = FileHelpers.FindDefaultFile("terminal.dat");
@@ -54,7 +55,7 @@ namespace DocGen.Commands
 
             try
             {
-                await ProgrammableBlockApi.Update(terminalPath, whitelistPath, outputPath);
+                await ProgrammableBlockApi.Update(terminalPath, whitelistPath, outputPath, forceRegeneration);
                 Console.WriteLine("✓ API documentation generated successfully");
                 return 0;
             }
@@ -69,12 +70,13 @@ namespace DocGen.Commands
         {
             Console.WriteLine("Generate API documentation from whitelist");
             Console.WriteLine();
-            Console.WriteLine("Usage: docgen api --output <directory> [--terminal <file>] [--whitelist <file>]");
+            Console.WriteLine("Usage: docgen api --output <directory> [--terminal <file>] [--whitelist <file>] [--force]");
             Console.WriteLine();
             Console.WriteLine("Options:");
             Console.WriteLine("  --output     Output directory for API documentation (required)");
             Console.WriteLine("  --terminal   Path to terminal.dat cache file (default: current dir, fallback: exe dir)");
             Console.WriteLine("  --whitelist  Path to pbwhitelist.dat file (default: current dir, fallback: exe dir)");
+            Console.WriteLine("  --force      Force regeneration, ignoring dependency checks");
         }
 
         static string GetArgValue(string[] args, string flag)

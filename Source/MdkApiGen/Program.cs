@@ -10,6 +10,7 @@ if (args.Length < 4)
     Console.WriteLine("  --output, -o         The output directory for generated index.html");
     Console.WriteLine("  --index-file         Custom _index.md file (default: _index.md)");
     Console.WriteLine("  --feedback-file      Custom _searchfeedback.md file (default: _searchfeedback.md)");
+    Console.WriteLine("  --force              Force regeneration of all files, ignoring timestamps");
     return 1;
 }
 
@@ -17,24 +18,33 @@ List<DirectoryInfo> inputDirs = new();
 DirectoryInfo? outputDir = null;
 string? customIndexFile = null;
 string? customFeedbackFile = null;
+bool forceRegeneration = false;
 
-for (int i = 0; i < args.Length - 1; i++)
+for (int i = 0; i < args.Length; i++)
 {
     if (args[i] == "--input" || args[i] == "-i")
     {
-        inputDirs.Add(new DirectoryInfo(args[i + 1]));
+        if (i + 1 < args.Length)
+            inputDirs.Add(new DirectoryInfo(args[i + 1]));
     }
     else if (args[i] == "--output" || args[i] == "-o")
     {
-        outputDir = new DirectoryInfo(args[i + 1]);
+        if (i + 1 < args.Length)
+            outputDir = new DirectoryInfo(args[i + 1]);
     }
     else if (args[i] == "--index-file")
     {
-        customIndexFile = args[i + 1];
+        if (i + 1 < args.Length)
+            customIndexFile = args[i + 1];
     }
     else if (args[i] == "--feedback-file")
     {
-        customFeedbackFile = args[i + 1];
+        if (i + 1 < args.Length)
+            customFeedbackFile = args[i + 1];
+    }
+    else if (args[i] == "--force")
+    {
+        forceRegeneration = true;
     }
 }
 
@@ -45,6 +55,6 @@ if (inputDirs.Count == 0 || outputDir == null)
 }
 
 var generator = new ApiIndexGenerator();
-generator.Generate(inputDirs, outputDir, customIndexFile, customFeedbackFile);
+generator.Generate(inputDirs, outputDir, customIndexFile, customFeedbackFile, forceRegeneration);
 
 return 0;

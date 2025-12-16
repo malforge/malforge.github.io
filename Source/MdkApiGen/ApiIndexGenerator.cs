@@ -18,6 +18,7 @@ class ApiIndexGenerator
     private string _cacheBuster = ""; // Cache-busting query string for CSS/JS
     private string _pageTemplate = ""; // HTML page template
     private DateTime _globalDependencyTimestamp = DateTime.MinValue; // Latest timestamp of global dependencies
+    private bool _forceRegeneration = false; // Force regeneration of all files
 
     public ApiIndexGenerator()
     {
@@ -111,8 +112,15 @@ class ApiIndexGenerator
         }
     }
 
-    public void Generate(List<DirectoryInfo> apiDirs, DirectoryInfo outputDir, string? customIndexFile = null, string? customFeedbackFile = null)
+    public void Generate(List<DirectoryInfo> apiDirs, DirectoryInfo outputDir, string? customIndexFile = null, string? customFeedbackFile = null, bool forceRegeneration = false)
     {
+        _forceRegeneration = forceRegeneration;
+        
+        if (_forceRegeneration)
+        {
+            Console.WriteLine("Force regeneration enabled - all files will be regenerated");
+        }
+        
         foreach (var apiDir in apiDirs)
         {
             if (!apiDir.Exists)
@@ -746,6 +754,10 @@ class ApiIndexGenerator
 
     private bool ShouldSkipRegeneration(string sourceMarkdownPath, string outputHtmlPath)
     {
+        // If force regeneration is enabled, never skip
+        if (_forceRegeneration)
+            return false;
+        
         // If output doesn't exist, we must generate it
         if (!File.Exists(outputHtmlPath))
             return false;
@@ -770,7 +782,7 @@ class ApiIndexGenerator
         var outputPath = Path.Combine(outputDir.FullName, "index.html");
         
         // Check if we should skip regeneration (index.html is special - depends on global dependencies)
-        if (File.Exists(outputPath) && _globalDependencyTimestamp <= File.GetLastWriteTimeUtc(outputPath))
+        if (!_forceRegeneration && File.Exists(outputPath) && _globalDependencyTimestamp <= File.GetLastWriteTimeUtc(outputPath))
         {
             Console.WriteLine("Skipped index.html (unchanged)");
             _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
