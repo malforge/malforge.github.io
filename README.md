@@ -14,8 +14,7 @@ Visit the live site: **[https://malforge.github.io](https://malforge.github.io)*
 
 This documentation is **community-maintained** and is **not affiliated with or endorsed by Keen Software House**.
 
-This is a **one-person, free-time project**, maintained with care for the Space Engineers community.  
-Updates happen when time allows - some gaps and lag behind game updates are unavoidable.
+This is a **one-person, free-time project**. Updates happen when time allows - some gaps and lag behind game updates are unavoidable.
 
 ## Related tools
 
