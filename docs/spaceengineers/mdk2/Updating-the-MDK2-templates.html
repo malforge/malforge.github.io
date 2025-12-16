@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Updating the MDK2 templates - MDK2 Documentation - MDK2 Documentation</title>
-    <link rel="stylesheet" href="docs-styles.css?v=5b1774c80005">
+    <link rel="stylesheet" href="docs-styles.css?v=0547896f3fc5">
 </head>
 <body>
     <noscript>
@@ -75,32 +75,32 @@
     <main class="content">
         <article class="docs-content">
 <ol>
-<li>Start by pressing your Windows or Start button, then type</li>
+<li>Start by pressing your Windows or Start button, then type<br />
+<code>terminal</code><br />
+and press enter (you can also use <code>Command Prompt</code> for this instead of terminal if you prefer).
+<img src="https://github.com/user-attachments/assets/396abbe3-e0f3-4486-b346-a5256b392edb" alt="image" /></li>
 </ol>
-<p><code>terminal</code></p>
-<p>and press enter (you can also use <code>Command Prompt</code> for this instead of terminal if you prefer).</p>
-<p><img src="https://github.com/user-attachments/assets/396abbe3-e0f3-4486-b346-a5256b392edb" alt="image" /></p>
 <hr />
 <ol start="2">
-<li>To see if there are any update available, type:</li>
+<li>To see if there are any update available, type:<br />
+<code>dotnet new update --check-only</code><br />
+and press enter.<br />
+<img src="https://github.com/user-attachments/assets/b5787d9c-0f26-4c64-bda7-b785fe1489a2" alt="image" /><br />
+Here we can see that we have 2.0.4 installed of the Script template, but there's a 2.0.5 available.</li>
 </ol>
-<p><code>dotnet new update --check-only</code></p>
-<p>and press enter.</p>
-<p><img src="https://github.com/user-attachments/assets/b5787d9c-0f26-4c64-bda7-b785fe1489a2" alt="image" /></p>
-<p>Here we can see that we have 2.0.4 installed of the Script template, but there's a 2.0.5 available.</p>
 <hr />
 <ol start="3">
-<li>Update the template. You can either do the quick thing, simply typing</li>
+<li>Update the template. You can either do the quick thing, simply typing<br />
+<code>dotnet new update</code><br />
+and press enter, which will simply update every template you have to the newest version,
+or if you wish to update the template specifically, follow the instructions shown in the
+screenshot above, in this particular case<br />
+<code>dotnet new install Mal.Mdk2.ScriptTemplates::2.0.5</code><br />
+to update the templates to version 2.0.5.</li>
 </ol>
-<p><code>dotnet new update</code></p>
-<p>and press enter, which will simply update every template you have to the newest version,</p>
-<p>or if you wish to update the template specifically, follow the instructions shown in the</p>
-<p>screenshot above, in this particular case</p>
-<p><code>dotnet new install Mal.Mdk2.ScriptTemplates::2.0.5</code></p>
-<p>to update the templates to version 2.0.5.</p>
 
         </article>
     </main>
-    <script src="docs.js?v=5b1774c80005"></script>
+    <script src="docs.js?v=0547896f3fc5"></script>
 </body>
 </html>

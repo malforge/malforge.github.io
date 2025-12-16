@@ -26,5 +26,19 @@
   * [Using Jetbrains Rider](Updating-the-MDK2-Nuget-packages-using-Jetbrains-Rider.html)
 
 ## 4. Platform Support
-* [Running MDK² on Linux (functional, but unsupported](Running-MDK-on-Linux-(functional,-but-unsupported).html)
+* [Running MDK² on Linux (functional, but unsupported)](Running-MDK-on-Linux-(functional,-but-unsupported).html)
 
+---
+
+## Contributing to Documentation
+
+**Found an error or have a suggestion?** We'd love to hear about it!
+
+- **Report issues**: [Open an issue on GitHub](https://github.com/malforge/malforge.github.io/issues)
+- **Contribute fixes**: The documentation source files are in the [malforge.github.io repository](https://github.com/malforge/malforge.github.io)
+  - Documentation files are in `input/mdk2/`
+  - Fork the repository
+  - Make your changes to the markdown files
+  - Submit a pull request
+
+Your contributions help make MDK² better for everyone!

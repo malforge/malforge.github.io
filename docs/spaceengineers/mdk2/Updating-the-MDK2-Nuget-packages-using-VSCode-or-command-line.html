@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Updating the MDK2 Nuget packages using VSCode or command line - MDK2 Documentation - MDK2 Documentation</title>
-    <link rel="stylesheet" href="docs-styles.css?v=5b1774c80005">
+    <link rel="stylesheet" href="docs-styles.css?v=0547896f3fc5">
 </head>
 <body>
     <noscript>
@@ -75,37 +75,36 @@
     <main class="content">
         <article class="docs-content">
 <ol>
-<li>Start by pressing your Windows or Start button, then type</li>
+<li>Start by pressing your Windows or Start button, then type<br />
+<code>terminal</code><br />
+and press enter (you can also use <code>Command Prompt</code> for this instead of terminal if you prefer).
+<img src="https://github.com/user-attachments/assets/396abbe3-e0f3-4486-b346-a5256b392edb" alt="image" /></li>
 </ol>
-<p><code>terminal</code></p>
-<p>and press enter (you can also use <code>Command Prompt</code> for this instead of terminal if you prefer).</p>
-<p><img src="https://github.com/user-attachments/assets/396abbe3-e0f3-4486-b346-a5256b392edb" alt="image" /></p>
 <hr />
 <ol start="2">
-<li>Make sure you stand in your project folder. Type</li>
+<li>Make sure you stand in your project folder. Type
+<code>cd D:\Repos\Mdk.PbScript1\</code>
+and press enter. Obviously <code>Mdk.PbScript1</code> is an example placeholder here.</li>
 </ol>
-<p><code>cd D:\Repos\Mdk.PbScript1\</code></p>
-<p>and press enter. Obviously <code>Mdk.PbScript1</code> is an example placeholder here.</p>
 <hr />
 <ol start="3">
-<li>To see if there are any update available, type:</li>
+<li>To see if there are any update available, type:<br />
+<code>dotnet list package --outdated</code><br />
+and press enter.<br />
+<img src="https://github.com/user-attachments/assets/bbd77478-f9b2-44ba-81e2-8b24ed5518d2" alt="image" /><br />
+Here we can see that we have two MDK2 packages with updates available.</li>
 </ol>
-<p><code>dotnet list package --outdated</code></p>
-<p>and press enter.</p>
-<p><img src="https://github.com/user-attachments/assets/bbd77478-f9b2-44ba-81e2-8b24ed5518d2" alt="image" /></p>
-<p>Here we can see that we have two MDK2 packages with updates available.</p>
 <hr />
 <ol start="4">
-<li><p>Update an individual package. Type</p>
-<p><code>dotnet add package Mal.Mdk2.PbAnalyzers</code></p>
-</li>
+<li>Update an individual package. Type
+<code>dotnet add package Mal.Mdk2.PbAnalyzers</code><br />
+and press enter.<br />
+<img src="https://github.com/user-attachments/assets/eb1100d3-2be9-4e29-811f-0e1dd3d90a22" alt="image" /><br />
+Repeat this for all the packages you want to update.</li>
 </ol>
-<p>and press enter.</p>
-<p><img src="https://github.com/user-attachments/assets/eb1100d3-2be9-4e29-811f-0e1dd3d90a22" alt="image" /></p>
-<p>Repeat this for all the packages you want to update.</p>
 
         </article>
     </main>
-    <script src="docs.js?v=5b1774c80005"></script>
+    <script src="docs.js?v=0547896f3fc5"></script>
 </body>
 </html>

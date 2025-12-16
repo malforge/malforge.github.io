@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MDK² Project Configuration Guide - MDK2 Documentation - MDK2 Documentation</title>
-    <link rel="stylesheet" href="docs-styles.css?v=5b1774c80005">
+    <link rel="stylesheet" href="docs-styles.css?v=0547896f3fc5">
 </head>
 <body>
     <noscript>
@@ -77,11 +77,11 @@
 <p>The MDK project configuration is managed through two <code>.ini</code> files, which handle various settings related to script generation, debugging, and output. These files enable flexibility by distinguishing between project-specific configurations and machine-specific overrides.</p>
 <h3 id="file-overview">File Overview</h3>
 <ol>
-<li><p><strong><code>[projectname].mdk.ini</code></strong></p>
-<p>This file contains project-specific settings and should be checked into source control to maintain consistent configurations across different environments.</p>
+<li><p><strong><code>[projectname].mdk.ini</code></strong><br />
+This file contains project-specific settings and should be checked into source control to maintain consistent configurations across different environments.</p>
 </li>
-<li><p><strong><code>[projectname].mdk.local.ini</code></strong></p>
-<p>This file is specific to the local machine and is not meant to be checked into version control. It allows developers to apply local customizations (e.g., output paths) without affecting the project-wide settings.</p>
+<li><p><strong><code>[projectname].mdk.local.ini</code></strong><br />
+This file is specific to the local machine and is not meant to be checked into version control. It allows developers to apply local customizations (e.g., output paths) without affecting the project-wide settings.</p>
 </li>
 </ol>
 <h3 id="configuration-settings">Configuration Settings</h3>
@@ -93,31 +93,24 @@
 </ul>
 <h4 id="traceonoff"><code>trace=on|off</code></h4>
 <ul>
-<li><p><strong>Description:</strong> This setting is mainly for debugging by the tool developer. You may be asked to enable this if something goes wrong with the tool, as it helps provide more detailed logs for troubleshooting.</p>
-</li>
-<li><p><strong>Default:</strong> <code>off</code>.</p>
-</li>
+<li><strong>Description:</strong> This setting is mainly for debugging by the tool developer. You may be asked to enable this if something goes wrong with the tool, as it helps provide more detailed logs for troubleshooting.</li>
+<li><strong>Default:</strong> <code>off</code>.</li>
 </ul>
 <h4 id="minifynonetrimstripcommentslitefull"><code>minify=none|trim|stripcomments|lite|full</code></h4>
 <ul>
-<li><p><strong>Description:</strong> Configures the level of minification applied to the code. This affects the size and structure of the output but not its functionality.</p>
+<li><strong>Description:</strong> Configures the level of minification applied to the code. This affects the size and structure of the output but not its functionality.
 <ul>
-<li><p><strong>none:</strong> No minification.</p>
-</li>
-<li><p><strong>trim:</strong> Unused types (not members) are removed from the output.</p>
-</li>
-<li><p><strong>stripcomments:</strong> Builds on <code>trim</code>, removing comments from the code.</p>
-</li>
-<li><p><strong>lite:</strong> Builds on <code>stripcomments</code>, removing leading/trailing whitespace.</p>
-</li>
-<li><p><strong>full:</strong> The highest level of minification, renaming identifiers to shorter names in addition to <code>lite</code>.</p>
-</li>
+<li><strong>none:</strong> No minification.</li>
+<li><strong>trim:</strong> Unused types (not members) are removed from the output.</li>
+<li><strong>stripcomments:</strong> Builds on <code>trim</code>, removing comments from the code.</li>
+<li><strong>lite:</strong> Builds on <code>stripcomments</code>, removing leading/trailing whitespace.</li>
+<li><strong>full:</strong> The highest level of minification, renaming identifiers to shorter names in addition to <code>lite</code>.</li>
 </ul>
 </li>
 </ul>
 <h4 id="ignoresglob-patterns"><code>ignores=[glob patterns]</code></h4>
 <ul>
-<li><p><strong>Description:</strong> Specifies files and directories to exclude when building the script. The value is a comma-separated list of <a href="https://code.visualstudio.com/docs/editor/glob-patterns">glob patterns</a>. Use this setting to prevent certain files (e.g., build artifacts, debug files) from being included in the output.</p>
+<li><strong>Description:</strong> Specifies files and directories to exclude when building the script. The value is a comma-separated list of <a href="https://code.visualstudio.com/docs/editor/glob-patterns">glob patterns</a>. Use this setting to prevent certain files (e.g., build artifacts, debug files) from being included in the output.
 <ul>
 <li><strong>Example:</strong> <code>obj/**/*, MDK/**/*, **/*.debug.cs</code></li>
 </ul>
@@ -131,23 +124,19 @@
 <p>The following settings are typically defined in the <code>.mdk.local.ini</code> file to apply machine-specific configurations. These are not required to be shared across developers or environments, providing flexibility in setup.</p>
 <h4 id="outputautospecific-path"><code>output=auto|[specific path]</code></h4>
 <ul>
-<li><p><strong>Description:</strong> Specifies where the generated script output should be saved.</p>
+<li><strong>Description:</strong> Specifies where the generated script output should be saved.
 <ul>
-<li><p><strong>auto:</strong> Automatically determines the best location for the output. This will usually be resolved to where Space Engineers itself places local scripts, which is usually in the folder <code>%AppData%\SpaceEngineers\IngameScripts\local</code><a href="#1"><sup>1</sup></a></p>
-</li>
-<li><p><strong>[specific path]:</strong> A custom path where the script will be saved locally.</p>
-</li>
+<li><strong>auto:</strong> Automatically determines the best location for the output. This will usually be resolved to where Space Engineers itself places local scripts, which is usually in the folder <code>%AppData%\SpaceEngineers\IngameScripts\local</code><a href="#1"><sup>1</sup></a></li>
+<li><strong>[specific path]:</strong> A custom path where the script will be saved locally.</li>
 </ul>
 </li>
 </ul>
 <h4 id="binarypathautospecific-path"><code>binarypath=auto|[specific path]</code></h4>
 <ul>
-<li><p><strong>Description:</strong> Allows overriding the default binary path used during the build process.</p>
+<li><strong>Description:</strong> Allows overriding the default binary path used during the build process.
 <ul>
-<li><p><strong>auto:</strong> Automatically selects the appropriate binary path. This would usually be resolved to the <code>Bin64</code> subfolder of your Space Engineer's installation folder.</p>
-</li>
-<li><p><strong>[specific path]:</strong> A custom binary path can be provided for local use cases.</p>
-</li>
+<li><strong>auto:</strong> Automatically selects the appropriate binary path. This would usually be resolved to the <code>Bin64</code> subfolder of your Space Engineer's installation folder.</li>
+<li><strong>[specific path]:</strong> A custom binary path can be provided for local use cases.</li>
 </ul>
 </li>
 </ul>
@@ -155,12 +144,12 @@
 <h3 id="how-the-files-work-together">How the Files Work Together</h3>
 <p>Both <code>.mdk.ini</code> and <code>.mdk.local.ini</code> can contain the same settings, but typically, project-wide configurations go into the <code>.mdk.ini</code> file, while machine-specific settings that should not be shared go into <code>.mdk.local.ini</code>. Settings in the <code>.mdk.local.ini</code> file will always override those in the <code>.mdk.ini</code> if both are defined.</p>
 <hr />
-<p><strong>Footnotes:</strong></p>
-<p><a class="anchor" id="1"></a></p>
-<p>1: <code>%AppData%</code> is a Windows macro that will resolve to a special folder on your computer. If you wish to find it, open a Windows Explorer and type it into the address bar and press <code>enter</code>.</p>
+<p><strong>Footnotes:</strong><br />
+<a class="anchor" id="1"></a>
+1: <code>%AppData%</code> is a Windows macro that will resolve to a special folder on your computer. If you wish to find it, open a Windows Explorer and type it into the address bar and press <code>enter</code>.</p>
 
         </article>
     </main>
-    <script src="docs.js?v=5b1774c80005"></script>
+    <script src="docs.js?v=0547896f3fc5"></script>
 </body>
 </html>

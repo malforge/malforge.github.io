@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Getting Started using VSCode - MDK2 Documentation - MDK2 Documentation</title>
-    <link rel="stylesheet" href="docs-styles.css?v=5b1774c80005">
+    <link rel="stylesheet" href="docs-styles.css?v=0547896f3fc5">
 </head>
 <body>
     <noscript>
@@ -77,10 +77,8 @@
 <ol>
 <li><p>Make sure you have installed DotNet 9.</p>
 <ul>
-<li><p>Make sure to close VSCode before this step.</p>
-</li>
-<li><p>Open a Terminal window by pressing the Windows/Start button and typing <code>Terminal</code> (or <code>Command Prompt</code> if you prefer)</p>
-</li>
+<li>Make sure to close VSCode before this step.</li>
+<li>Open a Terminal window by pressing the Windows/Start button and typing <code>Terminal</code> (or <code>Command Prompt</code> if you prefer)</li>
 </ul>
 <p><img src="https://github.com/malforge/mdk2/assets/4653628/f6d70f83-3869-4aa6-9cf1-fbe8d68510f1" alt="Start menu showing Terminal and Command Prompt highlighted" /></p>
 <ul>
@@ -91,10 +89,8 @@
 </li>
 <li><p>Install the DotNet New template package.</p>
 <ul>
-<li><p>Make sure to close Visual Studio before this step.</p>
-</li>
-<li><p>Open a Terminal window by pressing the Windows/Start button and typing <code>Terminal</code> (or <code>Command Prompt</code> if you prefer)</p>
-</li>
+<li>Make sure to close Visual Studio before this step.</li>
+<li>Open a Terminal window by pressing the Windows/Start button and typing <code>Terminal</code> (or <code>Command Prompt</code> if you prefer)</li>
 </ul>
 <p><img src="https://github.com/malforge/mdk2/assets/4653628/f6d70f83-3869-4aa6-9cf1-fbe8d68510f1" alt="Start menu showing Terminal and Command Prompt highlighted" /></p>
 <ul>
@@ -103,51 +99,38 @@
 <p><img src="https://github.com/malforge/mdk2/assets/4653628/09ad40eb-3dc8-45ac-af50-f4157e89cb83" alt="image" /></p>
 </li>
 </ol>
-<blockquote class="alert-note">
-<p><strong>NOTE</strong></p>
-<p>Some people get this message:  
-</p>
-<p>![image](https://github.com/user-attachments/assets/0e3a164c-1740-4ae7-a01e-b173e7f2bb14)  
-</p>
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p>Some people get this message:</p>
+<p><img src="https://github.com/user-attachments/assets/0e3a164c-1740-4ae7-a01e-b173e7f2bb14" alt="image" /></p>
 <p>This usually means that for whatever reason, the nuget primary package source has not been added to your nuget package manager. You can
-</p>
-<p>double check this by typing `dotnet nuget list source`. If everything is as it should, it should at least list an entry with the official
-</p>
-<p>nuget source:  
-</p>
-<p>![image](https://github.com/user-attachments/assets/e8df7247-f76d-4222-8af9-634896aa810f)  
-</p>
-<p>If it doesn't, you can add it by typing in `dotnet nuget add source "https://api.nuget.org/v3/index.json" --name "NuGet.org"`.
-</p>
-<p>After this, you can try adding the template package again.  
-</p>
-</blockquote>
-<blockquote class="alert-note">
-<p><strong>NOTE</strong></p>
-<p>Some people were not able to run the install command before restarting their computer after installing DotNet 9 or Visual Studio.
-</p>
-</blockquote>
+double check this by typing <code>dotnet nuget list source</code>. If everything is as it should, it should at least list an entry with the official
+nuget source:</p>
+<p><img src="https://github.com/user-attachments/assets/e8df7247-f76d-4222-8af9-634896aa810f" alt="image" /></p>
+<p>If it doesn't, you can add it by typing in <code>dotnet nuget add source &quot;https://api.nuget.org/v3/index.json&quot; --name &quot;NuGet.org&quot;</code>.
+After this, you can try adding the template package again.</p>
+</div>
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p>Some people were not able to run the install command before restarting their computer after installing DotNet 9 or Visual Studio.</p>
+</div>
 <ol start="3">
 <li><p>Create your first script project</p>
 <ul>
-<li><p>Open another Terminal window (or continue using the one you opened earlier)</p>
-</li>
-<li><p>Type <code>dotnet new mdk2pbscript -n MyFirstScript -o MyFirstScript</code></p>
-</li>
+<li>Open another Terminal window (or continue using the one you opened earlier)</li>
+<li>Type <code>dotnet new mdk2pbscript -n MyFirstScript -o MyFirstScript</code><br />
+<img src="https://github.com/malforge/mdk2/assets/4653628/88843e20-8951-4a0f-bb7c-62967c4da5dd" alt="image" /></li>
 </ul>
-<p><img src="https://github.com/malforge/mdk2/assets/4653628/88843e20-8951-4a0f-bb7c-62967c4da5dd" alt="image" /></p>
 </li>
 <li><p>Open the project in VSCode</p>
 <ul>
-<li><p>Open VSCode</p>
-</li>
-<li><p>Close any welcome dialogs or other stuff VSCode might throw at you</p>
-</li>
+<li>Open VSCode</li>
+<li>Close any welcome dialogs or other stuff VSCode might throw at you</li>
 </ul>
 <p><img src="https://github.com/malforge/mdk2/assets/4653628/842d4602-9393-4f78-a5bf-43eb451a414a" alt="image" /></p>
 <ul>
-<li><p>Drag your new script folder into VSCode</p>
-<p>VSCode may show you a dialog (you may have to actually select one of the code files, like <code>Program.cs</code>, before it does).</p>
+<li><p>Drag your new script folder into VSCode<br />
+VSCode may show you a dialog (you may have to actually select one of the code files, like <code>Program.cs</code>, before it does).</p>
 <p><img src="https://github.com/malforge/mdk2/assets/4653628/ac174c05-316b-4847-9c56-463fb74a151a" alt="image" /></p>
 <p>You want this extension, install it and make sure it's active (it <em>should</em> activate automatically when installed).</p>
 </li>
@@ -159,6 +142,6 @@
 
         </article>
     </main>
-    <script src="docs.js?v=5b1774c80005"></script>
+    <script src="docs.js?v=0547896f3fc5"></script>
 </body>
 </html>

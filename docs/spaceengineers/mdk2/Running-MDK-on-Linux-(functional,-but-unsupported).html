@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Running MDK on Linux (functional, but unsupported) - MDK2 Documentation - MDK2 Documentation</title>
-    <link rel="stylesheet" href="docs-styles.css?v=5b1774c80005">
+    <link rel="stylesheet" href="docs-styles.css?v=0547896f3fc5">
 </head>
 <body>
     <noscript>
@@ -76,11 +76,8 @@
         <article class="docs-content">
 <h1 id="running-mdk2-under-linux">Running MDK2 under linux</h1>
 <p>To run MDK2 under linux, you'll have to compile the mdk.exe program as a linux executable, then replace it in the ~/.nuget/packages/mal.mdk2.pbpackager directory. To do that clone <a href="https://github.com/malforge/mdk2">the mdk2 repo</a> then change into it and run the following commands:</p>
-<pre><code>
-cd Source/Mdk.CommandLine  
-
+<pre><code>cd Source/Mdk.CommandLine  
 dotnet publish &quot;Mdk.CommandLine.csproj&quot; -c Release --self-contained false -r linux-x64 /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true -o &quot;*Undefined*Binaries&quot;
-
 </code></pre>
 <p>Your linux-compiled mdk.exe will be in <code>*Undefined*Binaries/mdk</code> (No <code>.exe</code>) and all you have to do now is copy it into <code>~/.nuget/packages/mal.mdk2.pbpackager/&lt;version&gt;/tools/mdk.exe</code> -- Overwriting the one that came from the nuget package download.</p>
 <p>Note that to use it, you'll have to manually supply the location of space engineers' Bin64 folder, as well as your script locations using <code>&lt;proj&gt;.mdk.local.ini</code> as MDK2 can not auto-detect this under Linux.</p>
@@ -92,21 +89,21 @@ dotnet publish &quot;Mdk.CommandLine.csproj&quot; -c Release --self-contained fa
 <ol>
 <li><p>Restore / Download the MDK NuGet packages for the script project you want to build.</p>
 </li>
-<li><p>With the MDK2 Repo opened in the aforementioned IDE of your choice:</p>
-<p>Edit the .csproj files for MDK.CommandLine and MDK.CheckDotNet and change the value of the <RuntimeIdentifier> tags to &quot;linux-x64&quot;</p>
-<p><img src="https://github.com/user-attachments/assets/c364b16c-b6af-4d4b-8833-71358d4582cd" alt="Image" /></p>
+<li><p>With the MDK2 Repo opened in the aforementioned IDE of your choice:
+Edit the .csproj files for MDK.CommandLine and MDK.CheckDotNet and change the value of the <RuntimeIdentifier> tags to &quot;linux-x64&quot;
+<img src="https://github.com/user-attachments/assets/c364b16c-b6af-4d4b-8833-71358d4582cd" alt="Image" /></p>
 </li>
 <li><p>Copy the contents of mdk2/Source/Mdk.CommandLine/bin/Release/net9.0/linux-x64 to ~/.nuget/packages/mal.mdk2.pbpackager/2.1.5/tools (Merge and replace all)</p>
 </li>
 <li><p>Copy the contents of mdk2/Source/Mdk.CheckDotNet/bin/Debug/net8.0/linux-x64 to ~/.nuget/packages/mal.mdk2.pbpackager/2.1.5/tools (Merge and replace all)</p>
 </li>
-<li><p>At this point: You have a mdk.exe (built for windows) and a mdk (no extension, built for linux) file in the ~/.nuget/packages/mal.mdk2.pbpackager/2.1.5/tools directory.</p>
-<p>Delete mdk.exe, and rename mdk to mdk.exe in order to replace it.</p>
+<li><p>At this point: You have a mdk.exe (built for windows) and a mdk (no extension, built for linux) file in the ~/.nuget/packages/mal.mdk2.pbpackager/2.1.5/tools directory.
+Delete mdk.exe, and rename mdk to mdk.exe in order to replace it.</p>
 </li>
 <li><p>Reload any projects you may have open, attempt to build.</p>
 </li>
-<li><p>Attempt to build your script - and hopefully you see similar results to below!</p>
-<p><img src="https://github.com/user-attachments/assets/14db05f9-ae22-48c9-a992-ede67cd13aed" alt="Image" /></p>
+<li><p>Attempt to build your script - and hopefully you see similar results to below!
+<img src="https://github.com/user-attachments/assets/14db05f9-ae22-48c9-a992-ede67cd13aed" alt="Image" /></p>
 </li>
 </ol>
 <p>(My script is large. Disregard that.)</p>
@@ -115,6 +112,6 @@ dotnet publish &quot;Mdk.CommandLine.csproj&quot; -c Release --self-contained fa
 
         </article>
     </main>
-    <script src="docs.js?v=5b1774c80005"></script>
+    <script src="docs.js?v=0547896f3fc5"></script>
 </body>
 </html>
