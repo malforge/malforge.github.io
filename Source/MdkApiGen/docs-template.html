@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{BROWSER_TITLE}} - MDK2 Documentation</title>
+    <link rel="stylesheet" href="{{ROOT_PATH}}docs-styles.css?v={{CACHE_BUSTER}}">
+</head>
+<body>
+    <noscript>
+        <div style="position: fixed; top: 0; left: 0; right: 0; background: #ff6b6b; color: white; padding: 1em; text-align: center; z-index: 10000; font-family: Arial, sans-serif;">
+            <strong>JavaScript Required:</strong> This documentation site requires JavaScript to function. Please enable JavaScript in your browser to view the navigation.
+        </div>
+    </noscript>
+    <header class="top-header">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-nav">
+            <a href="{{ROOT_PATH}}index.html" class="header-btn" title="Home">
+                <span>🏠</span>
+            </a>
+            <a href="https://spaceengineers.wiki.gg/" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="Space Engineers Wiki">
+                <img src="{{ROOT_PATH}}wiki.png" alt="Wiki" class="header-icon">
+            </a>
+            <a href="https://github.com/malforge/mdk2" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="MDK2 - Malware's Development Kit">
+                <img src="{{ROOT_PATH}}mdk2.png" alt="MDK2" class="header-icon">
+            </a>
+            <a href="../pbapi/index.html" class="header-btn header-btn-api" title="Programmable Block API">
+                <span class="api-label"><strong>PB</strong><br><small>api</small></span>
+            </a>
+            <a href="../modapi/index.html" class="header-btn header-btn-api header-btn-compact" title="Mod API">
+                <span class="api-label"><strong>MOD</strong><br><small>api</small></span>
+            </a>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">MDK2 Documentation</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+{{SIDEBAR_NAV}}
+        </nav>
+        <div class="sidebar-resize-handle"></div>
+    </aside>
+    <main class="content">
+        <article class="docs-content">
+{{CONTENT}}
+        </article>
+    </main>
+    <script src="{{ROOT_PATH}}docs.js?v={{CACHE_BUSTER}}"></script>
+</body>
+</html>

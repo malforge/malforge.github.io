@@ -1,5 +1,54 @@
 using MdkApiGen;
 
+// Check for docs mode first
+if (args.Length > 0 && args[0] == "--docs")
+{
+    if (args.Length < 5)
+    {
+        Console.WriteLine("Documentation Generator");
+        Console.WriteLine("Usage: MdkApiGen --docs --input <docs-directory> --output <output-directory>");
+        Console.WriteLine();
+        Console.WriteLine("Options:");
+        Console.WriteLine("  --input, -i      The directory containing markdown documentation files");
+        Console.WriteLine("  --output, -o     The output directory for generated HTML");
+        Console.WriteLine("  --title          Documentation site title (default: 'Documentation')");
+        return 1;
+    }
+
+    DirectoryInfo? docsInputDir = null;
+    DirectoryInfo? docsOutputDir = null;
+    string title = "Documentation";
+
+    for (int i = 1; i < args.Length; i++)
+    {
+        if (args[i] == "--input" || args[i] == "-i")
+        {
+            if (i + 1 < args.Length)
+                docsInputDir = new DirectoryInfo(args[i + 1]);
+        }
+        else if (args[i] == "--output" || args[i] == "-o")
+        {
+            if (i + 1 < args.Length)
+                docsOutputDir = new DirectoryInfo(args[i + 1]);
+        }
+        else if (args[i] == "--title")
+        {
+            if (i + 1 < args.Length)
+                title = args[i + 1];
+        }
+    }
+
+    if (docsInputDir == null || docsOutputDir == null)
+    {
+        Console.Error.WriteLine("Error: Both --input and --output are required.");
+        return 1;
+    }
+
+    var docGen = new DocGenerator();
+    docGen.Generate(docsInputDir, docsOutputDir, title);
+    return 0;
+}
+
 if (args.Length < 4)
 {
     Console.WriteLine("API Index Generator");
