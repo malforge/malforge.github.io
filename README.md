@@ -31,6 +31,7 @@ This site provides comprehensive API reference documentation to help you explore
 
 **Need help learning to script?** This site is just an API reference - for tutorials and guides, check out:
 - [Space Engineers Scripting Wiki](https://spaceengineers.wiki.gg/wiki/Scripting) - Great tutorials and examples
+- [Space Engineers Modding Guide](https://spaceengineers.wiki.gg/wiki/Modding)
 - [Keen Software House Discord](https://discord.gg/keenswh) - Active community ready to help!
 
 ## License

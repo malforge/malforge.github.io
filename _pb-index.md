@@ -17,7 +17,7 @@ This site documents the classes, interfaces, and methods available to in-game sc
 
 ### Unofficial Project
 This documentation is **community-maintained** and is **not affiliated with or endorsed by Keen Software House**.
-For official tutorials and guides, see the ➡️ [Space Engineers Scripting Wiki](https://spaceengineers.wiki.gg/wiki/Scripting)
+For tutorials and guides, see the official ➡️ [Space Engineers Scripting Wiki](https://spaceengineers.wiki.gg/wiki/Scripting)
 
 ## Related tools
 

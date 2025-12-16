@@ -35,9 +35,6 @@ This documentation is generated using the same tools as the Programmable Block A
 
 ### Unofficial Project
 This documentation is **community-maintained** and is **not affiliated with or endorsed by Keen Software House**.
-For official modding resources, see:
-- ➡️ [Space Engineers Modding Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=360966557)
-- ➡️ [Keen Software House Modding Forums](https://forum.keenswh.com/forums/modding.326461/)
 
 ## Related tools
 
@@ -57,9 +54,8 @@ The Mod API documentation is generated from the game's assemblies and may not ca
 **Found a problem with the documentation?** We'd love to hear about it! Please [open an issue here](https://github.com/malforge/malforge.github.io/issues) so we can fix it.
 
 **Need help learning to mod?** This site is just an API reference - for tutorials and guides, check out:
-- [Space Engineers Modding Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=360966557)
+- [Space Engineers Modding Guide](https://spaceengineers.wiki.gg/wiki/Modding)
 - [Keen Software House Discord](https://discord.gg/keenswh) - Active community ready to help!
-- [Space Engineers Modding Forums](https://forum.keenswh.com/forums/modding.326461/)
 
 ### Legal
 *Space Engineers* is a trademark of Keen Software House.
