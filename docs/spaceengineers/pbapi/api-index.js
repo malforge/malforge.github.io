@@ -3,16 +3,18 @@ async function loadSidebarTree() {
     const sidebarNav = document.querySelector('.sidebar-nav');
     const currentPage = sidebarNav.dataset.currentPage;
     const cacheBuster = sidebarNav.dataset.cacheBuster;
+    const apiType = sidebarNav.dataset.apiType || 'unknown';
     
     try {
-        // Check sessionStorage first for cached tree
-        let treeHtml = sessionStorage.getItem('sidebarTree');
+        // Check sessionStorage first for cached tree (unique per API type)
+        const storageKey = `sidebarTree_${apiType}`;
+        let treeHtml = sessionStorage.getItem(storageKey);
         
         if (!treeHtml) {
             const response = await fetch(`sidebar-tree.html?v=${cacheBuster}`);
             if (!response.ok) throw new Error('Failed to load sidebar');
             treeHtml = await response.text();
-            sessionStorage.setItem('sidebarTree', treeHtml);
+            sessionStorage.setItem(storageKey, treeHtml);
         }
         
         // Find the loading placeholder and replace it
