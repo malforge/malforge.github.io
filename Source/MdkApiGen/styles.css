@@ -83,6 +83,13 @@ body {
     /* No special styling needed - inherits from .header-btn */
 }
 
+.header-btn.api-switcher {
+    width: auto;
+    padding: 0 12px;
+    gap: 6px;
+    font-size: 0.85em;
+}
+
 .header-icon {
     width: 24px;
     height: 24px;

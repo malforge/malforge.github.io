@@ -19,6 +19,7 @@ class ApiIndexGenerator
     private string _pageTemplate = ""; // HTML page template
     private DateTime _globalDependencyTimestamp = DateTime.MinValue; // Latest timestamp of global dependencies
     private bool _forceRegeneration = false; // Force regeneration of all files
+    private string _apiType = ""; // API type: "pb" or "mod"
 
     public ApiIndexGenerator()
     {
@@ -112,13 +113,19 @@ class ApiIndexGenerator
         }
     }
 
-    public void Generate(List<DirectoryInfo> apiDirs, DirectoryInfo outputDir, string? customIndexFile = null, string? customFeedbackFile = null, bool forceRegeneration = false)
+    public void Generate(List<DirectoryInfo> apiDirs, DirectoryInfo outputDir, string? customIndexFile = null, string? customFeedbackFile = null, bool forceRegeneration = false, string? apiType = null)
     {
         _forceRegeneration = forceRegeneration;
+        _apiType = apiType ?? "";
         
         if (_forceRegeneration)
         {
             Console.WriteLine("Force regeneration enabled - all files will be regenerated");
+        }
+        
+        if (!string.IsNullOrEmpty(_apiType))
+        {
+            Console.WriteLine($"API type: {_apiType}");
         }
         
         foreach (var apiDir in apiDirs)
@@ -909,6 +916,9 @@ class ApiIndexGenerator
             }
         }
 
+        // Generate API switcher
+        string apiSwitcher = GenerateApiSwitcher(currentFile.FileName, rootPath);
+
         // Replace placeholders in template
         var html = _pageTemplate
             .Replace("{{BROWSER_TITLE}}", browserTitle)
@@ -917,9 +927,32 @@ class ApiIndexGenerator
             .Replace("{{CURRENT_FILE_NAME}}", currentFile.FileName)
             .Replace("{{GENERATION_TIMESTAMP}}", $"<span class=\"generation-timestamp\" data-utc=\"{DateTime.UtcNow:yyyy-MM-ddTHH:mm:ssZ}\">Generated {DateTime.UtcNow:yyyy-MM-dd HH:mm} UTC</span>")
             .Replace("{{PAGE_HEADER}}", pageHeader)
+            .Replace("{{API_SWITCHER}}", apiSwitcher)
             .Replace("{{CONTENT}}", content);
 
         return html;
+    }
+
+    private string GenerateApiSwitcher(string currentFileName, string rootPath)
+    {
+        // If no API type specified, don't show switcher
+        if (string.IsNullOrEmpty(_apiType))
+            return "";
+        
+        string targetApi = _apiType == "pb" ? "mod" : "pb";
+        string targetApiName = _apiType == "pb" ? "Mod API" : "PB API";
+        string currentApiName = _apiType == "pb" ? "PB API" : "Mod API";
+        
+        // Calculate path to other API
+        // Structure: docs/spaceengineers/{pbapi|modapi}/
+        // We need to go up to spaceengineers and then switch to the other API
+        string targetPath = $"../{targetApi}api/";
+        
+        // Try to link to the same file in the other API if it exists
+        // For now, just link to the index - we can enhance this later
+        string targetUrl = $"{targetPath}index.html";
+        
+        return $"<a href=\"{targetUrl}\" class=\"header-btn api-switcher\" title=\"Switch to {targetApiName}\">🔄 {targetApiName}</a>";
     }
 
     private void RenderNode(StringBuilder sb, ApiNode node, string rootPath, int depth, string currentPageFileName)

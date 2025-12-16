@@ -10,6 +10,7 @@ if (args.Length < 4)
     Console.WriteLine("  --output, -o         The output directory for generated index.html");
     Console.WriteLine("  --index-file         Custom _index.md file (default: _index.md)");
     Console.WriteLine("  --feedback-file      Custom _searchfeedback.md file (default: _searchfeedback.md)");
+    Console.WriteLine("  --api-type           API type: 'pb' or 'mod' (used for API switcher)");
     Console.WriteLine("  --force              Force regeneration of all files, ignoring timestamps");
     return 1;
 }
@@ -18,6 +19,7 @@ List<DirectoryInfo> inputDirs = new();
 DirectoryInfo? outputDir = null;
 string? customIndexFile = null;
 string? customFeedbackFile = null;
+string? apiType = null;
 bool forceRegeneration = false;
 
 for (int i = 0; i < args.Length; i++)
@@ -42,6 +44,11 @@ for (int i = 0; i < args.Length; i++)
         if (i + 1 < args.Length)
             customFeedbackFile = args[i + 1];
     }
+    else if (args[i] == "--api-type")
+    {
+        if (i + 1 < args.Length)
+            apiType = args[i + 1].ToLower();
+    }
     else if (args[i] == "--force")
     {
         forceRegeneration = true;
@@ -55,6 +62,6 @@ if (inputDirs.Count == 0 || outputDir == null)
 }
 
 var generator = new ApiIndexGenerator();
-generator.Generate(inputDirs, outputDir, customIndexFile, customFeedbackFile, forceRegeneration);
+generator.Generate(inputDirs, outputDir, customIndexFile, customFeedbackFile, forceRegeneration, apiType);
 
 return 0;

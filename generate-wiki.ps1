@@ -39,7 +39,7 @@ Write-Host "Input:  $pbDocgenOutput" -ForegroundColor Gray
 Write-Host "Output: $pbApiOutput" -ForegroundColor Gray
 Write-Host ""
 
-& "$PSScriptRoot\bin\MdkApiGen.exe" --input $pbDocgenOutput --output $pbApiOutput --index-file "_pb-index.md"
+& "$PSScriptRoot\bin\MdkApiGen.exe" --input $pbDocgenOutput --output $pbApiOutput --index-file "_pb-index.md" --api-type "pb"
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host ""
@@ -53,7 +53,7 @@ Write-Host "Input:  $modDocgenOutput" -ForegroundColor Gray
 Write-Host "Output: $modApiOutput" -ForegroundColor Gray
 Write-Host ""
 
-& "$PSScriptRoot\bin\MdkApiGen.exe" --input $modDocgenOutput --output $modApiOutput --index-file "_mod-index.md"
+& "$PSScriptRoot\bin\MdkApiGen.exe" --input $modDocgenOutput --output $modApiOutput --index-file "_mod-index.md" --api-type "mod"
 
 if ($LASTEXITCODE -eq 0) {
     Write-Host ""
