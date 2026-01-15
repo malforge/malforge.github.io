@@ -27,6 +27,11 @@ This section applies to both `.ini` files. All settings can be defined in either
     - **stripcomments:** Builds on `trim`, removing comments from the code.
     - **lite:** Builds on `stripcomments`, removing leading/trailing whitespace.
     - **full:** The highest level of minification, renaming identifiers to shorter names in addition to `lite`.
+	
+#### `minifyextraoptions=none|nomembertrimming`
+- **Description:** Modifies how the minify options work.
+    - **none:** No altered behavior.
+	- **nomembertrimming:** The **trim** minifying process will not remove unused members, only types (legacy mode).
 
 #### `ignores=[glob patterns]`
 - **Description:** Specifies files and directories to exclude when building the script. The value is a comma-separated list of [glob patterns](https://code.visualstudio.com/docs/editor/glob-patterns). Use this setting to prevent certain files (e.g., build artifacts, debug files) from being included in the output.
