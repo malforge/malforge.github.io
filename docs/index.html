@@ -3,56 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Placeholder Page</title>
+    <title>Malforge - Development Resources</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
+            padding: 2em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
             color: #e0e0e0;
         }
         .container {
+            max-width: 900px;
             text-align: center;
-        }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 0.5em;
-            color: #ffffff;
-        }
-        p {
-            font-size: 1.2em;
-            color: #b0b0b0;
-        }
-        a {
-            display: inline-block;
-            margin-top: 1em;
-            padding: 0.8em 1.5em;
-            font-size: 1.1em;
-            color: #fff;
-            background-color: #007bff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        a:hover {
-            background-color: #0056b3;
-        }
-        a.experimental {
-            background-color: #ffc107;
-            color: #000;
-        }
-        a.experimental:hover {
-            background-color: #e0a800;
-        }
-        a.experimental::after {
-            content: " ⚠️ Experimental";
-            font-size: 0.85em;
-            opacity: 0.9;
         }
         img.avatar {
             width: 128px;
@@ -60,18 +30,188 @@
             margin-bottom: 1em;
             border-radius: 50%;
             border: 3px solid #007bff;
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.3em;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .tagline {
+            font-size: 1.3em;
+            color: #b0b0b0;
+            margin-bottom: 2em;
+            font-style: italic;
+        }
+        .section {
+            background-color: rgba(26, 26, 46, 0.8);
+            border-radius: 10px;
+            padding: 2em;
+            margin-bottom: 2em;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .section h2 {
+            color: #4da6ff;
+            margin-top: 0;
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+        }
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #d0d0d0;
+            margin-bottom: 1.5em;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: center;
+            margin-top: 1.5em;
+        }
+        a.button {
+            display: inline-block;
+            padding: 0.9em 1.8em;
+            font-size: 1.05em;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            font-weight: 500;
+        }
+        a.button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+        }
+        a.button.experimental {
+            background-color: #ffc107;
+            color: #000;
+        }
+        a.button.experimental:hover {
+            background-color: #e0a800;
+            box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+        }
+        a.button.experimental::after {
+            content: " ⚠️";
+            font-size: 0.9em;
+        }
+        a.button.secondary {
+            background-color: #6c757d;
+        }
+        a.button.secondary:hover {
+            background-color: #5a6268;
+            box-shadow: 0 4px 12px rgba(108, 117, 125, 0.4);
+        }
+        a.button.packages {
+            background-color: #28a745;
+        }
+        a.button.packages:hover {
+            background-color: #218838;
+            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+        }
+        .section.about {
+            background-color: rgba(26, 26, 46, 0.4);
+            border: none;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.85;
+        }
+        .section.about h2 {
+            font-size: 1.4em;
+            color: #9db3cc;
+        }
+        .section.about p {
+            margin-bottom: 1em;
+            font-size: 1em;
+        }
+        .section.about a {
+            color: #4da6ff;
+            text-decoration: none;
+        }
+        .section.about a:hover {
+            text-decoration: underline;
+        }
+        .section.about p:last-child {
+            margin-bottom: 0;
+        }
+            margin-top: 2em;
+            font-size: 0.9em;
+            color: #808080;
+        }
+        .footer a {
+            color: #4da6ff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            .tagline {
+                font-size: 1.1em;
+            }
+            .section h2 {
+                font-size: 1.5em;
+            }
+            .links {
+                flex-direction: column;
+            }
+            a.button {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="malware256.png" alt="Malforge Avatar" class="avatar">
-        <h1>Site Under Construction</h1>
-        <p>This site is a placeholder while waiting for content to be completed. Please check back soon!</p>
-        <p><small><em>(Note: "Soon" is measured in geological time. This placeholder may outlive us all.)</em></small></p>
-        <a href="/spaceengineers/pbapi/">Space Engineers PB API</a>
-        <a href="/spaceengineers/modapi/" class="experimental">Space Engineers Mod API</a>
-        <a href="https://github.com/malforge/mdk2">MDK²</a>
+        <h1>Malforge</h1>
+        <p class="tagline">Development Resources & Documentation</p>
+        
+        <div class="section">
+            <h2>Space Engineers</h2>
+            <p>Various tools and docs I've made for Space Engineers scripting and modding.</p>
+            
+            <h3 style="color: #80b3ff; font-size: 1.3em; margin-top: 1.5em; margin-bottom: 0.5em;">API Documentation</h3>
+            <p>Searchable API references I maintain for Space Engineers. Makes it easier to find what types, methods, and properties are available when you're building something.</p>
+            <div class="links">
+                <a href="/spaceengineers/pbapi/" class="button">Programmable Block API</a>
+                <a href="/spaceengineers/modapi/" class="button">Mod API</a>
+            </div>
+
+            <h3 style="color: #80b3ff; font-size: 1.3em; margin-top: 1.5em; margin-bottom: 0.5em;">Development Tools</h3>
+            <p>MDK² is a development kit that brings IntelliSense, project templates, and automated deployment to Visual Studio, VS Code, and Rider. Makes the whole development process much smoother.</p>
+            <div class="links">
+                <a href="https://github.com/malforge/mdk2" class="button secondary">MDK² on GitHub</a>
+            </div>
+
+            <h3 style="color: #80b3ff; font-size: 1.3em; margin-top: 1.5em; margin-bottom: 0.5em;">Package Libraries</h3>
+            <p>A pretty new place for sharing reusable libraries (mixins). Currently just has a coroutine scheduler, but I'm hoping others will share their stuff too!</p>
+            <div class="links">
+                <a href="https://github.com/malforge/mdk2-packages" class="button packages">Browse Packages</a>
+            </div>
+        </div>
+
+        <div class="section about">
+            <h2>About Me</h2>
+            <p>Hi. I'm Malware, a software engineer. "What?" you might say, "why would anyone use a nickname based on malicious software? Can I even trust this person?"</p>
+            <p>Well, yes, I promise you can. My nickname is chosen deliberately, both as a sarcastic reference to said malicious software that I hate as much as anyone, and a play on words. You see, my real name initials are MAL, and I am a software engineer through and through, both by vocation and hobby. Mal + [soft]ware = Malware. Cheesy? Oh, yes, absolutely, but I like it. However, in case my word is not enough, I intend to provide the source code of everything I share here.</p>
+            <p>Like I said, a software engineer through and through. I have been programming since my very early teens (or maybe before, I can't remember exactly). I wrote my first piece of software more than 30 years ago alongside my father, with a then brand-new 80286 computer. We used <a href="https://en.wikipedia.org/wiki/GW-BASIC" target="_blank">GW-BASIC</a>. Well, technically, he actually wrote it, I suggested and watched with big eyes. That sparked my unending love for programming, and I never looked back. I am now a professional business software programmer, and I've been in my current job for nearing two decades. I love this job.</p>
+            <p>I hope this is enough information to help you trust me despite my chosen nickname!</p>
+        </div>
+
+        <div class="footer">
+            <p><a href="https://github.com/malforge">GitHub Organization</a> • <a href="https://github.com/malforge/malforge.github.io/issues">Report an Issue</a></p>
+        </div>
     </div>
 </body>
 </html>
