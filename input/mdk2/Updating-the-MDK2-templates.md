@@ -1,23 +1,36 @@
-1. Start by pressing your Windows or Start button, then type  
-  `terminal`  
-and press enter (you can also use `Command Prompt` for this instead of terminal if you prefer).
-![image](https://github.com/user-attachments/assets/396abbe3-e0f3-4486-b346-a5256b392edb)  
+## Using MDK Hub (Recommended)
 
-- - -
+1. Open MDK Hub.
+2. Click the **"Check for Updates"** button (or look for the update notification badge).
+3. If template updates are available, you'll see them listed.
+4. Click **"Update Templates"** to install the latest version.
 
-2. To see if there are any update available, type:  
-  `dotnet new update --check-only`  
-and press enter.  
-![image](https://github.com/user-attachments/assets/b5787d9c-0f26-4c64-bda7-b785fe1489a2)  
-Here we can see that we have 2.0.4 installed of the Script template, but there's a 2.0.5 available.
+The Hub will handle the update automatically and notify you when complete.
 
-- - -
+## Using Command Line
 
-3. Update the template. You can either do the quick thing, simply typing  
-  `dotnet new update`  
-and press enter, which will simply update every template you have to the newest version,
-or if you wish to update the template specifically, follow the instructions shown in the 
-screenshot above, in this particular case  
-  `dotnet new install Mal.Mdk2.ScriptTemplates::2.0.5`  
-to update the templates to version 2.0.5.
+1. Open a terminal (Terminal, Command Prompt, or PowerShell).
+
+   ![image](https://github.com/user-attachments/assets/396abbe3-e0f3-4486-b346-a5256b392edb)
+
+2. Check for available updates:
+   ```
+   dotnet new update --check-only
+   ```
+
+   ![image](https://github.com/user-attachments/assets/b5787d9c-0f26-4c64-bda7-b785fe1489a2)
+
+   This shows your current version and any available updates.
+
+3. Update the templates:
+   - **Update all templates**: 
+     ```
+     dotnet new update
+     ```
+   - **Update MDK templates specifically** (as shown in the screenshot):
+     ```
+     dotnet new install Mal.Mdk2.ScriptTemplates::[version]
+     ```
+
+The command line method updates the templates globally for all IDEs (Visual Studio and Rider have template UIs; VSCode users use `dotnet new`).
 
