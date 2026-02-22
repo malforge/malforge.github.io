@@ -20,6 +20,7 @@ class ApiIndexGenerator
     private DateTime _globalDependencyTimestamp = DateTime.MinValue; // Latest timestamp of global dependencies
     private bool _forceRegeneration = false; // Force regeneration of all files
     private string _apiType = ""; // API type: "pb" or "mod"
+    private GenerationManifest? _previousManifest; // Previous generation manifest for stale-file cleanup
 
     public ApiIndexGenerator()
     {
@@ -56,15 +57,6 @@ class ApiIndexGenerator
         var templatePath = FileHelpers.FindDefaultFile("page-template.html");
         if (File.Exists(templatePath))
             dependencies.Add(templatePath);
-        
-        // CSS and JS (they affect the cache buster which goes in every page)
-        var cssPath = FileHelpers.FindDefaultFile("styles.css");
-        if (File.Exists(cssPath))
-            dependencies.Add(cssPath);
-        
-        var jsPath = FileHelpers.FindDefaultFile("api-index.js");
-        if (File.Exists(jsPath))
-            dependencies.Add(jsPath);
         
         // Search feedback
         string feedbackPath;
@@ -179,6 +171,7 @@ class ApiIndexGenerator
         GenerateSearchIndex(outputDir);
         GenerateEnhancedSearchIndex(apiDirs, outputDir);
         GenerateBuildInfo(outputDir);
+        RemoveStaleFilesFromPreviousManifest(outputDir);
         
         // Create key file to mark this as a safe directory to clean
         CreateKeyFile(outputDir);
@@ -214,81 +207,93 @@ class ApiIndexGenerator
             throw new InvalidOperationException("Output directory not safe to clean - missing key file");
         }
 
-        Console.WriteLine("Cleaning output directory...");
-
-        // Try to load previous manifest
-        GenerationManifest? previousManifest = null;
         try
         {
             var manifestJson = File.ReadAllText(keyFile);
-            previousManifest = JsonSerializer.Deserialize<GenerationManifest>(manifestJson);
+            _previousManifest = JsonSerializer.Deserialize<GenerationManifest>(manifestJson);
+            if (_previousManifest != null)
+            {
+                Console.WriteLine($"Output directory verified; loaded previous manifest with {_previousManifest.Files.Count} files");
+                return;
+            }
         }
         catch (JsonException)
         {
-            // Legacy key file (plain text) - delete everything for backwards compatibility
-            Console.WriteLine("Legacy key file detected - performing full cleanup");
-            foreach (var file in outputDir.GetFiles())
-            {
-                file.Delete();
-            }
-            foreach (var dir in outputDir.GetDirectories())
-            {
-                dir.Delete(true);
-            }
-            Console.WriteLine("Output directory cleaned");
-            return;
+            Console.WriteLine("Output directory verified; existing .mdkapigen is legacy format");
         }
 
-        if (previousManifest == null)
-        {
-            Console.WriteLine("No previous manifest found - skipping cleanup");
+        _previousManifest = null;
+        Console.WriteLine("Output directory verified; preserving files for incremental generation");
+    }
+
+    private void RemoveStaleFilesFromPreviousManifest(DirectoryInfo outputDir)
+    {
+        if (_previousManifest == null)
             return;
-        }
 
-        // Delete only tracked files from previous generation
-        int filesDeleted = 0;
-        int dirsDeleted = 0;
+        var currentFiles = new HashSet<string>(
+            _generatedPaths.Where(p => !p.EndsWith(Path.DirectorySeparatorChar) && !p.EndsWith(Path.AltDirectorySeparatorChar)),
+            StringComparer.OrdinalIgnoreCase);
 
-        foreach (var relPath in previousManifest.Files)
+        var staleFiles = _previousManifest.Files
+            .Where(f => !currentFiles.Contains(f))
+            .Where(IsStaleCleanupCandidate)
+            .OrderBy(f => f, StringComparer.OrdinalIgnoreCase)
+            .ToList();
+
+        if (staleFiles.Count == 0)
+            return;
+
+        Console.WriteLine($"Removing {staleFiles.Count} stale generated files...");
+        var removed = 0;
+        foreach (var relPath in staleFiles)
         {
             var fullPath = Path.Combine(outputDir.FullName, relPath);
-            if (File.Exists(fullPath))
+            if (!File.Exists(fullPath))
+                continue;
+
+            try
             {
-                try
-                {
-                    File.Delete(fullPath);
-                    filesDeleted++;
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Warning: Could not delete {relPath}: {ex.Message}");
-                }
+                File.Delete(fullPath);
+                removed++;
+                if (removed % 1000 == 0)
+                    Console.WriteLine($"  Removed {removed}/{staleFiles.Count} stale files...");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Warning: Could not delete stale file {relPath}: {ex.Message}");
             }
         }
 
-        // Delete directories in reverse order (deepest first) to handle nested structures
-        foreach (var relPath in previousManifest.Directories.OrderByDescending(p => p.Length))
+        foreach (var relPath in _previousManifest.Directories.OrderByDescending(p => p.Length))
         {
             var fullPath = Path.Combine(outputDir.FullName, relPath.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar));
-            if (Directory.Exists(fullPath))
+            if (!Directory.Exists(fullPath))
+                continue;
+
+            try
             {
-                try
-                {
-                    // Only delete if empty (all files should already be deleted)
-                    if (!Directory.EnumerateFileSystemEntries(fullPath).Any())
-                    {
-                        Directory.Delete(fullPath);
-                        dirsDeleted++;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Warning: Could not delete directory {relPath}: {ex.Message}");
-                }
+                if (!Directory.EnumerateFileSystemEntries(fullPath).Any())
+                    Directory.Delete(fullPath);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Warning: Could not delete stale directory {relPath}: {ex.Message}");
             }
         }
 
-        Console.WriteLine($"Cleaned {filesDeleted} files and {dirsDeleted} directories from previous generation");
+        Console.WriteLine($"Removed {removed} stale generated files");
+    }
+
+    private static bool IsStaleCleanupCandidate(string relativePath)
+    {
+        if (relativePath.EndsWith(".html", StringComparison.OrdinalIgnoreCase))
+            return true;
+
+        return string.Equals(relativePath, "search-index.json", StringComparison.OrdinalIgnoreCase) ||
+               string.Equals(relativePath, "search-index-old.json", StringComparison.OrdinalIgnoreCase) ||
+               string.Equals(relativePath, "build-info.json", StringComparison.OrdinalIgnoreCase) ||
+               string.Equals(relativePath, "sidebar-tree.html", StringComparison.OrdinalIgnoreCase);
     }
 
     private void CreateKeyFile(DirectoryInfo outputDir)
@@ -309,7 +314,7 @@ class ApiIndexGenerator
             WriteIndented = true
         });
 
-        File.WriteAllText(keyFilePath, json);
+        WriteAllTextIfChanged(keyFilePath, json);
         Console.WriteLine($"Created manifest tracking {manifest.Files.Count} files and {manifest.Directories.Count} directories");
     }
 
@@ -513,7 +518,7 @@ class ApiIndexGenerator
                     _generatedPaths.Add(relativeDir);
                 }
                 
-                File.Copy(sourceFile, outputPath, overwrite: true);
+                CopyFileIfChanged(sourceFile, outputPath);
                 // Track generated file
                 _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
                 copied++;
@@ -636,7 +641,7 @@ class ApiIndexGenerator
         var treeHtml = _baseTreeHtml.Replace("{{ROOT}}", "");
         
         var outputPath = Path.Combine(outputDir.FullName, "sidebar-tree.html");
-        File.WriteAllText(outputPath, treeHtml);
+        WriteAllTextIfChanged(outputPath, treeHtml);
         
         // Track generated file
         _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
@@ -666,6 +671,10 @@ class ApiIndexGenerator
                 {
                     var relativeDir = Path.GetRelativePath(outputDir.FullName, skippedFileDir) + Path.DirectorySeparatorChar;
                     _generatedPaths.Add(relativeDir);
+                }
+                if (total % 1000 == 0)
+                {
+                    Console.WriteLine($"  Processed {total}/{_allFiles.Count} pages (generated: {generated}, skipped: {skipped})");
                 }
                 continue;
             }
@@ -743,18 +752,29 @@ class ApiIndexGenerator
                 _generatedPaths.Add(relativeDir);
             }
 
-            File.WriteAllText(outputPath, fullHtml);
+            var wroteFile = WriteAllTextIfChanged(outputPath, fullHtml);
             // Track generated file (store relative path)
             _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
             
-            generated++;
-            if (generated % 100 == 0)
+            if (wroteFile)
+                generated++;
+            else
+                skipped++;
+            if (wroteFile && generated % 100 == 0)
             {
                 Console.WriteLine($"  Generated {generated}/{total} pages...");
+            }
+            else if (total % 1000 == 0)
+            {
+                Console.WriteLine($"  Processed {total}/{_allFiles.Count} pages (generated: {generated}, skipped: {skipped})");
             }
         }
 
         Console.WriteLine($"Generated {generated} HTML pages, skipped {skipped} unchanged pages (total: {total})");
+        if (generated == 0 && skipped > 0)
+        {
+            Console.WriteLine("No page content changes detected; all pages are up to date.");
+        }
 
         // Generate index.html
         GenerateIndexPage(outputDir);
@@ -780,6 +800,10 @@ class ApiIndexGenerator
         // If any global dependency is newer than output, regenerate
         if (_globalDependencyTimestamp > outputTimestamp)
             return false;
+
+        // If CSS/JS cache-buster changed, regenerate this page
+        if (!OutputHasCurrentCacheBuster(outputHtmlPath))
+            return false;
         
         // Otherwise, skip regeneration
         return true;
@@ -790,7 +814,10 @@ class ApiIndexGenerator
         var outputPath = Path.Combine(outputDir.FullName, "index.html");
         
         // Check if we should skip regeneration (index.html is special - depends on global dependencies)
-        if (!_forceRegeneration && File.Exists(outputPath) && _globalDependencyTimestamp <= File.GetLastWriteTimeUtc(outputPath))
+        if (!_forceRegeneration &&
+            File.Exists(outputPath) &&
+            _globalDependencyTimestamp <= File.GetLastWriteTimeUtc(outputPath) &&
+            OutputHasCurrentCacheBuster(outputPath))
         {
             Console.WriteLine("Skipped index.html (unchanged)");
             _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
@@ -872,7 +899,7 @@ class ApiIndexGenerator
         };
 
         var fullHtml = GenerateHtmlPage(indexPageFile, "", title, content);
-        File.WriteAllText(outputPath, fullHtml);
+        WriteAllTextIfChanged(outputPath, fullHtml);
         // Track generated file
         _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
     }
@@ -950,10 +977,60 @@ class ApiIndexGenerator
 
         var outputPath = Path.Combine(outputDir.FullName, "build-info.json");
         var json = JsonSerializer.Serialize(buildInfo, new JsonSerializerOptions { WriteIndented = true });
-        File.WriteAllText(outputPath, json);
+        WriteAllTextIfChanged(outputPath, json);
         _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
 
         Console.WriteLine($"Generated build-info.json ({buildInfo.generatedUtc})");
+    }
+
+    private bool OutputHasCurrentCacheBuster(string outputPath)
+    {
+        if (!File.Exists(outputPath))
+            return false;
+
+        var content = File.ReadAllText(outputPath);
+        var cssToken = $"styles.css?v={_cacheBuster}";
+        var jsToken = $"api-index.js?v={_cacheBuster}";
+        return content.Contains(cssToken, StringComparison.Ordinal) &&
+               content.Contains(jsToken, StringComparison.Ordinal);
+    }
+
+    private bool WriteAllTextIfChanged(string outputPath, string content)
+    {
+        if (File.Exists(outputPath))
+        {
+            var existing = File.ReadAllText(outputPath);
+            if (string.Equals(existing, content, StringComparison.Ordinal))
+                return false;
+        }
+
+        var directory = Path.GetDirectoryName(outputPath);
+        if (!string.IsNullOrEmpty(directory))
+            Directory.CreateDirectory(directory);
+
+        File.WriteAllText(outputPath, content);
+        return true;
+    }
+
+    private bool CopyFileIfChanged(string sourcePath, string outputPath)
+    {
+        if (!File.Exists(sourcePath))
+            return false;
+
+        if (File.Exists(outputPath))
+        {
+            var sourceBytes = File.ReadAllBytes(sourcePath);
+            var outputBytes = File.ReadAllBytes(outputPath);
+            if (sourceBytes.AsSpan().SequenceEqual(outputBytes))
+                return false;
+        }
+
+        var directory = Path.GetDirectoryName(outputPath);
+        if (!string.IsNullOrEmpty(directory))
+            Directory.CreateDirectory(directory);
+
+        File.Copy(sourcePath, outputPath, overwrite: true);
+        return true;
     }
 
     private string GenerateApiSwitcher(string currentFileName, string rootPath)
@@ -1151,7 +1228,7 @@ class ApiIndexGenerator
 
         var css = File.ReadAllText(templatePath);
         var outputPath = Path.Combine(outputDir.FullName, "styles.css");
-        File.WriteAllText(outputPath, css);
+        WriteAllTextIfChanged(outputPath, css);
         // Track generated file
         _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
         Console.WriteLine($"Copied styles.css from {templatePath}");
@@ -1167,7 +1244,7 @@ class ApiIndexGenerator
             var jsContent = File.ReadAllText(jsSourcePath);
             jsContent = jsContent.Replace("SEARCH_FEEDBACK_PLACEHOLDER", EscapeForJavaScript(_searchFeedbackHtml));
 
-            File.WriteAllText(jsOutputPath, jsContent);
+            WriteAllTextIfChanged(jsOutputPath, jsContent);
             // Track generated file
             _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, jsOutputPath));
             Console.WriteLine($"Copied api-index.js from {jsSourcePath}");
@@ -1185,7 +1262,7 @@ class ApiIndexGenerator
         if (File.Exists(wikiImagePath))
         {
             var outputPath = Path.Combine(outputDir.FullName, "wiki.png");
-            File.Copy(wikiImagePath, outputPath, overwrite: true);
+            CopyFileIfChanged(wikiImagePath, outputPath);
             _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
             Console.WriteLine($"Copied wiki.png from {wikiImagePath}");
         }
@@ -1194,7 +1271,7 @@ class ApiIndexGenerator
         if (File.Exists(mdkImagePath))
         {
             var outputPath = Path.Combine(outputDir.FullName, "mdk2.png");
-            File.Copy(mdkImagePath, outputPath, overwrite: true);
+            CopyFileIfChanged(mdkImagePath, outputPath);
             _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
             Console.WriteLine($"Copied mdk2.png from {mdkImagePath}");
         }
@@ -1250,7 +1327,7 @@ class ApiIndexGenerator
         });
 
         var outputPath = Path.Combine(outputDir.FullName, "search-index-old.json");
-        File.WriteAllText(outputPath, json);
+        WriteAllTextIfChanged(outputPath, json);
         // Track generated file
         _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
         Console.WriteLine($"Generated old search index with {searchItems.Count} items");
@@ -1384,7 +1461,7 @@ class ApiIndexGenerator
             });
             
             var outputPath = Path.Combine(outputDir.FullName, "search-index.json");
-            File.WriteAllText(outputPath, json);
+            WriteAllTextIfChanged(outputPath, json);
             // Track generated file
             _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
             
