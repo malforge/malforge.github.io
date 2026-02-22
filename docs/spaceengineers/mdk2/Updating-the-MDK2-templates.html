@@ -48,13 +48,13 @@
     <li><a href="Getting-Started-using-Jetbrains-Rider.html">Getting Started using Jetbrains Rider</a></li>
     <li><a href="Getting-Started-using-Visual-Studio.html">Getting Started using Visual Studio</a></li>
     <li><a href="Getting-Started-using-VSCode.html">Getting Started using VSCode</a></li>
+    <li><a href="Getting-Started-with-MDK-Hub.html">Getting Started with MDK Hub</a></li>
 </ul>
 <h3>Configuration</h3>
 <ul>
     <li><a href="Controlling-File-Order-in-MDK²-Projects.html">Controlling File Order in MDK² Projects</a></li>
     <li><a href="MDK²-Project-Configuration-Guide.html">MDK² Project Configuration Guide</a></li>
     <li><a href="Mixin-Projects.html">Mixin Projects</a></li>
-    <li><a href="Programmable-Block-Scripts.html">Programmable Block Scripts</a></li>
     <li><a href="Using-the-Minifier-and-Preserve-Regions-in-MDK².html">Using the Minifier and Preserve Regions in MDK²</a></li>
 </ul>
 <h3>Updates</h3>
@@ -64,40 +64,45 @@
     <li><a href="Updating-the-MDK2-Nuget-packages-using-VSCode-or-command-line.html">Updating the MDK2 Nuget packages using VSCode or command line</a></li>
     <li><a href="Updating-the-MDK2-templates.html">Updating the MDK2 templates</a></li>
 </ul>
-<h3>Platform Support</h3>
-<ul>
-    <li><a href="Running-MDK-on-Linux-(functional,-but-unsupported).html">Running MDK on Linux (functional, but unsupported)</a></li>
-</ul>
 
         </nav>
         <div class="sidebar-resize-handle"></div>
     </aside>
     <main class="content">
         <article class="docs-content">
+<h2 id="using-mdk-hub-recommended">Using MDK Hub (Recommended)</h2>
 <ol>
-<li>Start by pressing your Windows or Start button, then type<br />
-<code>terminal</code><br />
-and press enter (you can also use <code>Command Prompt</code> for this instead of terminal if you prefer).
-<img src="https://github.com/user-attachments/assets/396abbe3-e0f3-4486-b346-a5256b392edb" alt="image" /></li>
+<li>Open MDK Hub.</li>
+<li>Click the <strong>&quot;Check for Updates&quot;</strong> button (or look for the update notification badge).</li>
+<li>If template updates are available, you'll see them listed.</li>
+<li>Click <strong>&quot;Update Templates&quot;</strong> to install the latest version.</li>
 </ol>
-<hr />
-<ol start="2">
-<li>To see if there are any update available, type:<br />
-<code>dotnet new update --check-only</code><br />
-and press enter.<br />
-<img src="https://github.com/user-attachments/assets/b5787d9c-0f26-4c64-bda7-b785fe1489a2" alt="image" /><br />
-Here we can see that we have 2.0.4 installed of the Script template, but there's a 2.0.5 available.</li>
+<p>The Hub will handle the update automatically and notify you when complete.</p>
+<h2 id="using-command-line">Using Command Line</h2>
+<ol>
+<li><p>Open a terminal (Terminal, Command Prompt, or PowerShell).</p>
+<p><img src="https://github.com/user-attachments/assets/396abbe3-e0f3-4486-b346-a5256b392edb" alt="image" /></p>
+</li>
+<li><p>Check for available updates:</p>
+<pre><code>dotnet new update --check-only
+</code></pre>
+<p><img src="https://github.com/user-attachments/assets/b5787d9c-0f26-4c64-bda7-b785fe1489a2" alt="image" /></p>
+<p>This shows your current version and any available updates.</p>
+</li>
+<li><p>Update the templates:</p>
+<ul>
+<li><strong>Update all templates</strong>:
+<pre><code>dotnet new update
+</code></pre>
+</li>
+<li><strong>Update MDK templates specifically</strong> (as shown in the screenshot):
+<pre><code>dotnet new install Mal.Mdk2.ScriptTemplates::[version]
+</code></pre>
+</li>
+</ul>
+</li>
 </ol>
-<hr />
-<ol start="3">
-<li>Update the template. You can either do the quick thing, simply typing<br />
-<code>dotnet new update</code><br />
-and press enter, which will simply update every template you have to the newest version,
-or if you wish to update the template specifically, follow the instructions shown in the
-screenshot above, in this particular case<br />
-<code>dotnet new install Mal.Mdk2.ScriptTemplates::2.0.5</code><br />
-to update the templates to version 2.0.5.</li>
-</ol>
+<p>The command line method updates the templates globally for all IDEs (Visual Studio and Rider have template UIs; VSCode users use <code>dotnet new</code>).</p>
 
         </article>
     </main>

@@ -48,13 +48,13 @@
     <li><a href="Getting-Started-using-Jetbrains-Rider.html">Getting Started using Jetbrains Rider</a></li>
     <li><a href="Getting-Started-using-Visual-Studio.html">Getting Started using Visual Studio</a></li>
     <li><a href="Getting-Started-using-VSCode.html">Getting Started using VSCode</a></li>
+    <li><a href="Getting-Started-with-MDK-Hub.html">Getting Started with MDK Hub</a></li>
 </ul>
 <h3>Configuration</h3>
 <ul>
     <li><a href="Controlling-File-Order-in-MDK²-Projects.html">Controlling File Order in MDK² Projects</a></li>
     <li><a href="MDK²-Project-Configuration-Guide.html">MDK² Project Configuration Guide</a></li>
     <li><a href="Mixin-Projects.html">Mixin Projects</a></li>
-    <li><a href="Programmable-Block-Scripts.html">Programmable Block Scripts</a></li>
     <li><a href="Using-the-Minifier-and-Preserve-Regions-in-MDK².html">Using the Minifier and Preserve Regions in MDK²</a></li>
 </ul>
 <h3>Updates</h3>
@@ -64,17 +64,17 @@
     <li><a href="Updating-the-MDK2-Nuget-packages-using-VSCode-or-command-line.html">Updating the MDK2 Nuget packages using VSCode or command line</a></li>
     <li><a href="Updating-the-MDK2-templates.html">Updating the MDK2 templates</a></li>
 </ul>
-<h3>Platform Support</h3>
-<ul>
-    <li><a href="Running-MDK-on-Linux-(functional,-but-unsupported).html">Running MDK on Linux (functional, but unsupported)</a></li>
-</ul>
 
         </nav>
         <div class="sidebar-resize-handle"></div>
     </aside>
     <main class="content">
         <article class="docs-content">
-<p>The MDK project configuration is managed through two <code>.ini</code> files, which handle various settings related to script generation, debugging, and output. These files enable flexibility by distinguishing between project-specific configurations and machine-specific overrides.</p>
+<p>The MDK project configuration is managed through <code>.ini</code> files, which handle various settings related to script generation, minification, and output paths. These files enable flexibility by distinguishing between project-specific configurations and machine-specific overrides.</p>
+<div class="markdown-alert markdown-alert-tip">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
+<p><strong>MDK Hub users</strong>: You can edit most configuration settings visually through the Hub's configuration editor instead of manually editing <code>.ini</code> files.</p>
+</div>
 <h3 id="file-overview">File Overview</h3>
 <ol>
 <li><p><strong><code>[projectname].mdk.ini</code></strong><br />
@@ -91,10 +91,37 @@ This file is specific to the local machine and is not meant to be checked into v
 <ul>
 <li><strong>Description:</strong> Defines the type of project. <strong>This value should not be changed.</strong> The project is a programmable block script, or it is a mod project. This value should have been set by the project template.</li>
 </ul>
+<h4 id="logfile-path"><code>log=[file path]</code></h4>
+<ul>
+<li><strong>Description:</strong> Writes all console output to the specified log file. Useful for debugging build issues, troubleshooting, or capturing output in CI/CD environments.</li>
+<li><strong>Example:</strong> <code>log=mdk-build.log</code></li>
+<li><strong>Command-line equivalent:</strong> <code>mdk pack -log mdk-build.log</code></li>
+<li><strong>Note:</strong> This is typically a local-only setting and should go in <code>mdk.local.ini</code>.</li>
+</ul>
 <h4 id="traceonoff"><code>trace=on|off</code></h4>
 <ul>
 <li><strong>Description:</strong> This setting is mainly for debugging by the tool developer. You may be asked to enable this if something goes wrong with the tool, as it helps provide more detailed logs for troubleshooting.</li>
 <li><strong>Default:</strong> <code>off</code>.</li>
+</ul>
+<h4 id="interactiveopenhubshownotificationdonothing"><code>interactive=OpenHub|ShowNotification|DoNothing</code></h4>
+<ul>
+<li><strong>Description:</strong> Controls how MDK interacts with the Hub when builds complete.
+<ul>
+<li><strong>OpenHub:</strong> Opens the Hub window when a build completes.</li>
+<li><strong>ShowNotification:</strong> Shows a toast notification when a build completes.</li>
+<li><strong>DoNothing:</strong> No notifications are shown.</li>
+</ul>
+</li>
+<li><strong>Default:</strong> <code>ShowNotification</code>.</li>
+<li><strong>Use case:</strong> Set to <code>DoNothing</code> for CI/CD environments or if you're not using the Hub.</li>
+</ul>
+<h4 id="namespacescomma-separated-list"><code>namespaces=[comma-separated list]</code></h4>
+<ul>
+<li><strong>Description:</strong> Specifies which namespaces are allowed in your programmable block script code. This setting only applies to programmable block projects (not mods).</li>
+<li><strong>Default:</strong> <code>IngameScript</code> (set by the script template).</li>
+<li><strong>Primary use case:</strong> Allowing mixin libraries to use different namespaces so they can be shared between both scripts and mods. For example, a mixin might use <code>MyLibrary</code> namespace while your script uses <code>IngameScript</code>.</li>
+<li><strong>Important:</strong> Space Engineers strips all namespaces from the final script when you paste it into a programmable block. If you have two types with the same name in different namespaces, they will conflict. It's strongly recommended to keep all your script code in a single namespace.</li>
+<li><strong>Example:</strong> <code>namespaces=IngameScript,MyHelpers</code></li>
 </ul>
 <h4 id="minifynonetrimstripcommentslitefull"><code>minify=none|trim|stripcomments|lite|full</code></h4>
 <ul>
@@ -105,6 +132,15 @@ This file is specific to the local machine and is not meant to be checked into v
 <li><strong>stripcomments:</strong> Builds on <code>trim</code>, removing comments from the code.</li>
 <li><strong>lite:</strong> Builds on <code>stripcomments</code>, removing leading/trailing whitespace.</li>
 <li><strong>full:</strong> The highest level of minification, renaming identifiers to shorter names in addition to <code>lite</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="minifyextraoptionsnonenomembertrimming"><code>minifyextraoptions=none|nomembertrimming</code></h4>
+<ul>
+<li><strong>Description:</strong> Modifies how the minify options work.
+<ul>
+<li><strong>none:</strong> No altered behavior.</li>
+<li><strong>nomembertrimming:</strong> The <strong>trim</strong> minifying process will not remove unused members, only types (legacy mode).</li>
 </ul>
 </li>
 </ul>
@@ -120,29 +156,62 @@ This file is specific to the local machine and is not meant to be checked into v
 <ul>
 <li><strong>Description:</strong> Specifies files and directories to exclude when building a mod (this value is not use when building scripts). The value is a comma-separated list of <a href="https://code.visualstudio.com/docs/editor/glob-patterns">glob patterns</a>. Use this setting to prevent certain files (e.g., mod meta information) from being deleted when MDK is cleaning out the output in preparation for a new build.</li>
 </ul>
+<h4 id="macroscomma-separated-list"><code>macros=[comma-separated list]</code></h4>
+<ul>
+<li><strong>Description:</strong> Define custom text replacement macros that are expanded during the build process. Macros use the format <code>$NAME$</code> and can be used in string literals, comments, and documentation comments.</li>
+<li><strong>Format:</strong> <code>NAME1=value1,NAME2=value2</code> (comma-separated). Quote values that contain spaces or special characters.</li>
+<li><strong>Example:</strong> <code>macros=$VERSION$=1.0.5,$AUTHOR$=YourName</code></li>
+<li><strong>See also:</strong> <strong><a href="Using-Macros-in-MDK%C2%B2.html">Using Macros in MDK²</a></strong> for detailed documentation and examples.</li>
+</ul>
 <h3 id="local-specific-settings">Local-Specific Settings</h3>
 <p>The following settings are typically defined in the <code>.mdk.local.ini</code> file to apply machine-specific configurations. These are not required to be shared across developers or environments, providing flexibility in setup.</p>
 <h4 id="outputautospecific-path"><code>output=auto|[specific path]</code></h4>
 <ul>
 <li><strong>Description:</strong> Specifies where the generated script output should be saved.
 <ul>
-<li><strong>auto:</strong> Automatically determines the best location for the output. This will usually be resolved to where Space Engineers itself places local scripts, which is usually in the folder <code>%AppData%\SpaceEngineers\IngameScripts\local</code><a href="#1"><sup>1</sup></a></li>
+<li><strong>auto:</strong> Automatically determines the best location for the output. On Windows, this resolves to <code>%AppData%\SpaceEngineers\IngameScripts\local</code><a href="#1"><sup>1</sup></a>. On Linux, defaults to <code>~/.local/share/SpaceEngineers/IngameScripts/local</code> (or as configured in Hub).</li>
 <li><strong>[specific path]:</strong> A custom path where the script will be saved locally.</li>
 </ul>
 </li>
 </ul>
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p><strong>Global path configuration</strong>: Instead of setting <code>output</code> per-project, you can configure a global default in MDK Hub's settings. This is especially useful on Linux where auto-detection isn't available.</p>
+</div>
 <h4 id="binarypathautospecific-path"><code>binarypath=auto|[specific path]</code></h4>
 <ul>
 <li><strong>Description:</strong> Allows overriding the default binary path used during the build process.
 <ul>
-<li><strong>auto:</strong> Automatically selects the appropriate binary path. This would usually be resolved to the <code>Bin64</code> subfolder of your Space Engineer's installation folder.</li>
+<li><strong>auto:</strong> Automatically selects the appropriate binary path. On Windows, this is auto-detected from your Space Engineers installation. On Linux, you must configure this in Hub settings.</li>
 <li><strong>[specific path]:</strong> A custom binary path can be provided for local use cases.</li>
 </ul>
 </li>
 </ul>
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p><strong>Command-line users</strong>: The command-line interface uses <code>-gamebin</code> as the parameter name, but in INI files, use <code>binarypath</code>. Both refer to the same setting (the Space Engineers Bin64 folder).</p>
+</div>
 <hr />
 <h3 id="how-the-files-work-together">How the Files Work Together</h3>
-<p>Both <code>.mdk.ini</code> and <code>.mdk.local.ini</code> can contain the same settings, but typically, project-wide configurations go into the <code>.mdk.ini</code> file, while machine-specific settings that should not be shared go into <code>.mdk.local.ini</code>. Settings in the <code>.mdk.local.ini</code> file will always override those in the <code>.mdk.ini</code> if both are defined.</p>
+<p>Both <code>.mdk.ini</code> and <code>.mdk.local.ini</code> can contain the same settings, but they serve different purposes. Settings in <code>.mdk.local.ini</code> will always override those in <code>.mdk.ini</code> if both are defined.</p>
+<p><strong>Recommended organization (as used by MDK Hub):</strong></p>
+<p><strong>mdk.ini</strong> (project settings - commit to source control):</p>
+<ul>
+<li><code>type</code> - Project type</li>
+<li><code>namespaces</code> - Allowed namespaces</li>
+<li><code>ignores</code> - Files to exclude from build</li>
+<li><code>minify</code> - Minification level</li>
+<li><code>minifyextraoptions</code> - Minification options</li>
+<li><code>donotclean</code> - Files to preserve (mods only)</li>
+</ul>
+<p><strong>mdk.local.ini</strong> (machine-specific settings - do NOT commit):</p>
+<ul>
+<li><code>output</code> - Where compiled scripts are deployed</li>
+<li><code>binarypath</code> - Space Engineers installation path</li>
+<li><code>interactive</code> - Hub notification behavior</li>
+<li><code>trace</code> - Debug logging (when requested for troubleshooting)</li>
+<li><code>log</code> - Build log file path</li>
+</ul>
 <hr />
 <p><strong>Footnotes:</strong><br />
 <a class="anchor" id="1"></a>

@@ -48,13 +48,13 @@
     <li><a href="Getting-Started-using-Jetbrains-Rider.html">Getting Started using Jetbrains Rider</a></li>
     <li><a href="Getting-Started-using-Visual-Studio.html">Getting Started using Visual Studio</a></li>
     <li><a href="Getting-Started-using-VSCode.html">Getting Started using VSCode</a></li>
+    <li><a href="Getting-Started-with-MDK-Hub.html">Getting Started with MDK Hub</a></li>
 </ul>
 <h3>Configuration</h3>
 <ul>
     <li><a href="Controlling-File-Order-in-MDK²-Projects.html">Controlling File Order in MDK² Projects</a></li>
     <li><a href="MDK²-Project-Configuration-Guide.html">MDK² Project Configuration Guide</a></li>
     <li><a href="Mixin-Projects.html">Mixin Projects</a></li>
-    <li><a href="Programmable-Block-Scripts.html">Programmable Block Scripts</a></li>
     <li><a href="Using-the-Minifier-and-Preserve-Regions-in-MDK².html">Using the Minifier and Preserve Regions in MDK²</a></li>
 </ul>
 <h3>Updates</h3>
@@ -64,81 +64,72 @@
     <li><a href="Updating-the-MDK2-Nuget-packages-using-VSCode-or-command-line.html">Updating the MDK2 Nuget packages using VSCode or command line</a></li>
     <li><a href="Updating-the-MDK2-templates.html">Updating the MDK2 templates</a></li>
 </ul>
-<h3>Platform Support</h3>
-<ul>
-    <li><a href="Running-MDK-on-Linux-(functional,-but-unsupported).html">Running MDK on Linux (functional, but unsupported)</a></li>
-</ul>
 
         </nav>
         <div class="sidebar-resize-handle"></div>
     </aside>
     <main class="content">
         <article class="docs-content">
+<h2 id="prerequisites">Prerequisites</h2>
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p>Before following this guide, make sure you've installed and set up <strong><a href="Getting-Started-with-MDK-Hub.html">MDK Hub</a></strong>. The Hub handles .NET SDK installation, template setup, and project management for you.</p>
+</div>
+<h2 id="creating-a-new-project">Creating a New Project</h2>
+<h3 id="option-1-using-the-command-line">Option 1: Using the Command Line</h3>
 <ol>
-<li><p>Make sure you have installed DotNet 9.</p>
-<ul>
-<li>Make sure to close VSCode before this step.</li>
-<li>Open a Terminal window by pressing the Windows/Start button and typing <code>Terminal</code> (or <code>Command Prompt</code> if you prefer)</li>
-</ul>
-<p><img src="https://github.com/malforge/mdk2/assets/4653628/f6d70f83-3869-4aa6-9cf1-fbe8d68510f1" alt="Start menu showing Terminal and Command Prompt highlighted" /></p>
-<ul>
-<li>Type <code>dotnet --list-sdks</code> and press <code>enter</code>.</li>
-</ul>
-<p><img src="https://github.com/user-attachments/assets/c81cbc52-b297-423c-82a2-3bac7b2f591b" alt="image" /></p>
-<p>If you do not have any .NET 9 versions, you need to go to <a href="https://dotnet.microsoft.com/en-us/download">https://dotnet.microsoft.com/en-us/download</a>.</p>
+<li><p>Open a Terminal window (Command Prompt, PowerShell, or your preferred terminal).</p>
 </li>
-<li><p>Install the DotNet New template package.</p>
-<ul>
-<li>Make sure to close Visual Studio before this step.</li>
-<li>Open a Terminal window by pressing the Windows/Start button and typing <code>Terminal</code> (or <code>Command Prompt</code> if you prefer)</li>
-</ul>
-<p><img src="https://github.com/malforge/mdk2/assets/4653628/f6d70f83-3869-4aa6-9cf1-fbe8d68510f1" alt="Start menu showing Terminal and Command Prompt highlighted" /></p>
-<ul>
-<li>Type <code>dotnet new install Mal.Mdk2.ScriptTemplates</code> and press <code>enter</code></li>
-</ul>
-<p><img src="https://github.com/malforge/mdk2/assets/4653628/09ad40eb-3dc8-45ac-af50-f4157e89cb83" alt="image" /></p>
+<li><p>Navigate to where you want to create your project.</p>
+</li>
+<li><p>Run:</p>
+<pre><code>dotnet new mdk2pbscript -n MyFirstScript -o MyFirstScript
+</code></pre>
+<p>Replace <code>MyFirstScript</code> with your desired project name.</p>
+<p><img src="https://github.com/malforge/mdk2/assets/4653628/88843e20-8951-4a0f-bb7c-62967c4da5dd" alt="image" /></p>
 </li>
 </ol>
-<div class="markdown-alert markdown-alert-note">
-<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>Some people get this message:</p>
-<p><img src="https://github.com/user-attachments/assets/0e3a164c-1740-4ae7-a01e-b173e7f2bb14" alt="image" /></p>
-<p>This usually means that for whatever reason, the nuget primary package source has not been added to your nuget package manager. You can
-double check this by typing <code>dotnet nuget list source</code>. If everything is as it should, it should at least list an entry with the official
-nuget source:</p>
-<p><img src="https://github.com/user-attachments/assets/e8df7247-f76d-4222-8af9-634896aa810f" alt="image" /></p>
-<p>If it doesn't, you can add it by typing in <code>dotnet nuget add source &quot;https://api.nuget.org/v3/index.json&quot; --name &quot;NuGet.org&quot;</code>.
-After this, you can try adding the template package again.</p>
-</div>
-<div class="markdown-alert markdown-alert-note">
-<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>Some people were not able to run the install command before restarting their computer after installing DotNet 9 or Visual Studio.</p>
-</div>
-<ol start="3">
-<li><p>Create your first script project</p>
-<ul>
-<li>Open another Terminal window (or continue using the one you opened earlier)</li>
-<li>Type <code>dotnet new mdk2pbscript -n MyFirstScript -o MyFirstScript</code><br />
-<img src="https://github.com/malforge/mdk2/assets/4653628/88843e20-8951-4a0f-bb7c-62967c4da5dd" alt="image" /></li>
-</ul>
+<h3 id="option-2-using-mdk-hub">Option 2: Using MDK Hub</h3>
+<p>Click <strong>&quot;New Project&quot;</strong> in the Hub dashboard and let it create the project for you.</p>
+<h2 id="opening-the-project-in-vscode">Opening the Project in VSCode</h2>
+<ol>
+<li><p>Open VSCode.</p>
 </li>
-<li><p>Open the project in VSCode</p>
-<ul>
-<li>Open VSCode</li>
-<li>Close any welcome dialogs or other stuff VSCode might throw at you</li>
-</ul>
+<li><p>Close any welcome dialogs.</p>
 <p><img src="https://github.com/malforge/mdk2/assets/4653628/842d4602-9393-4f78-a5bf-43eb451a414a" alt="image" /></p>
-<ul>
-<li><p>Drag your new script folder into VSCode<br />
-VSCode may show you a dialog (you may have to actually select one of the code files, like <code>Program.cs</code>, before it does).</p>
+</li>
+<li><p>Drag your project folder into VSCode (or use <code>File</code> → <code>Open Folder</code>).</p>
+</li>
+<li><p>If prompted, install the <strong>C# Dev Kit</strong> extension:</p>
 <p><img src="https://github.com/malforge/mdk2/assets/4653628/ac174c05-316b-4847-9c56-463fb74a151a" alt="image" /></p>
-<p>You want this extension, install it and make sure it's active (it <em>should</em> activate automatically when installed).</p>
+<p>This extension provides IntelliSense, debugging, and build support for C# projects.</p>
 </li>
-<li><p>When you get back to the Explorer now, your project should be loaded and ready for you.</p>
+</ol>
+<h2 id="building-your-script">Building Your Script</h2>
+<ol>
+<li>Make your code changes in <code>Program.cs</code> or add new <code>.cs</code> files as needed.</li>
+<li>Build the project:
+<ul>
+<li>Press <code>Ctrl+Shift+B</code> (or <code>Cmd+Shift+B</code> on Mac)</li>
+<li>Or open the terminal and run: <code>dotnet build</code></li>
+</ul>
 </li>
+<li>MDK will automatically:
+<ul>
+<li>Combine all your <code>.cs</code> files into a single script</li>
+<li>Apply minification (if configured)</li>
+<li>Deploy the script to your Space Engineers IngameScripts folder</li>
+<li>Show a notification when complete (if Hub is running)</li>
 </ul>
 </li>
 </ol>
+<p>Your compiled script will be available in Space Engineers under <strong>Programmable Block</strong> → <strong>Edit</strong> → <strong>Browse Scripts</strong> (the folder icon).</p>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><strong><a href="MDK%C2%B2-Project-Configuration-Guide.html">Configure your project</a></strong> - Adjust minification levels, ignore patterns, and more</li>
+<li><strong><a href="Controlling-File-Order-in-MDK%C2%B2-Projects.html">Control file order</a></strong> - Manage how your files are combined</li>
+<li><strong><a href="Using-the-Minifier-and-Preserve-Regions-in-MDK%C2%B2.html">Preserve code during minification</a></strong> - Keep specific types/methods unminified</li>
+</ul>
 
         </article>
     </main>

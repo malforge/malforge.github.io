@@ -3,8 +3,10 @@
 
 $pbDocgenOutput = "$PSScriptRoot\input\pb"
 $modDocgenOutput = "$PSScriptRoot\input\mod"
+$mdkDocsInput = "$PSScriptRoot\input\mdk2"
 $pbApiOutput = "$PSScriptRoot\docs\spaceengineers\pbapi"
 $modApiOutput = "$PSScriptRoot\docs\spaceengineers\modapi"
+$mdkDocsOutput = "$PSScriptRoot\docs\spaceengineers\mdk2"
 
 Write-Host "Step 1: Generating PB API documentation with DocGen..." -ForegroundColor Cyan
 Write-Host "Whitelist: pbwhitelist.dat" -ForegroundColor Gray
@@ -55,17 +57,32 @@ Write-Host ""
 
 & "$PSScriptRoot\bin\MdkApiGen.exe" --input $modDocgenOutput --output $modApiOutput --index-file "_mod-index.md" --api-type "mod"
 
+if ($LASTEXITCODE -ne 0) {
+    Write-Host ""
+    Write-Host "Mod API Index generation failed!" -ForegroundColor Red
+    exit 1
+}
+
+Write-Host ""
+Write-Host "Step 5: Generating MDK2 Documentation..." -ForegroundColor Cyan
+Write-Host "Input:  $mdkDocsInput" -ForegroundColor Gray
+Write-Host "Output: $mdkDocsOutput" -ForegroundColor Gray
+Write-Host ""
+
+& "$PSScriptRoot\bin\MdkApiGen.exe" --docs --input $mdkDocsInput --output $mdkDocsOutput --title "MDK2 Documentation"
+
 if ($LASTEXITCODE -eq 0) {
     Write-Host ""
     Write-Host "========================================" -ForegroundColor Green
     Write-Host "API documentation generated successfully!" -ForegroundColor Green
     Write-Host "========================================" -ForegroundColor Green
     Write-Host ""
-    Write-Host "PB API:  $pbApiOutput\index.html" -ForegroundColor Yellow
-    Write-Host "Mod API: $modApiOutput\index.html" -ForegroundColor Yellow
+    Write-Host "PB API:   $pbApiOutput\index.html" -ForegroundColor Yellow
+    Write-Host "Mod API:  $modApiOutput\index.html" -ForegroundColor Yellow
+    Write-Host "MDK2 Docs: $mdkDocsOutput\index.html" -ForegroundColor Yellow
     Write-Host ""
 } else {
     Write-Host ""
-    Write-Host "Mod API Index generation failed!" -ForegroundColor Red
+    Write-Host "MDK2 documentation generation failed!" -ForegroundColor Red
     exit 1
 }

@@ -48,13 +48,13 @@
     <li><a href="Getting-Started-using-Jetbrains-Rider.html">Getting Started using Jetbrains Rider</a></li>
     <li><a href="Getting-Started-using-Visual-Studio.html">Getting Started using Visual Studio</a></li>
     <li><a href="Getting-Started-using-VSCode.html">Getting Started using VSCode</a></li>
+    <li><a href="Getting-Started-with-MDK-Hub.html">Getting Started with MDK Hub</a></li>
 </ul>
 <h3>Configuration</h3>
 <ul>
     <li><a href="Controlling-File-Order-in-MDK²-Projects.html">Controlling File Order in MDK² Projects</a></li>
     <li><a href="MDK²-Project-Configuration-Guide.html">MDK² Project Configuration Guide</a></li>
     <li><a href="Mixin-Projects.html">Mixin Projects</a></li>
-    <li><a href="Programmable-Block-Scripts.html">Programmable Block Scripts</a></li>
     <li><a href="Using-the-Minifier-and-Preserve-Regions-in-MDK².html">Using the Minifier and Preserve Regions in MDK²</a></li>
 </ul>
 <h3>Updates</h3>
@@ -64,27 +64,33 @@
     <li><a href="Updating-the-MDK2-Nuget-packages-using-VSCode-or-command-line.html">Updating the MDK2 Nuget packages using VSCode or command line</a></li>
     <li><a href="Updating-the-MDK2-templates.html">Updating the MDK2 templates</a></li>
 </ul>
-<h3>Platform Support</h3>
-<ul>
-    <li><a href="Running-MDK-on-Linux-(functional,-but-unsupported).html">Running MDK on Linux (functional, but unsupported)</a></li>
-</ul>
 
         </nav>
         <div class="sidebar-resize-handle"></div>
     </aside>
     <main class="content">
         <article class="docs-content">
-<p>A <strong>mixin project</strong> is a specialized project type that allows you to combine reusable code components or libraries with your main script. This feature is especially useful when you have code that can be shared across multiple projects, such as utility functions or common classes.</p>
+<p>A <strong>mixin project</strong> is a specialized project type that allows you to combine reusable code components or libraries with your scripts or mods. This feature is especially useful when you have code that can be shared across multiple projects, such as utility functions or common classes.</p>
 <h3 id="when-to-use-a-mixin-project">When to Use a Mixin Project</h3>
 <ul>
-<li><strong>Code Reusability:</strong> If you have common logic that needs to be used across different programmable block scripts, a mixin project helps modularize this functionality.</li>
-<li><strong>Separation of Concerns:</strong> Keeps your core script focused on its specific logic while externalizing reusable components.</li>
-<li><strong>Maintainability:</strong> Centralizing shared code makes it easier to maintain and update in one location.</li>
+<li><strong>Code Reusability:</strong> Share common logic across different programmable block scripts or mods.</li>
+<li><strong>Separation of Concerns:</strong> Keep your core script or mod focused on its specific logic while externalizing reusable components.</li>
+<li><strong>Maintainability:</strong> Centralize shared code to make it easier to maintain and update in one location.</li>
+<li><strong>Cross-Project Type Sharing:</strong> Use the same mixin library in both scripts and mods (configure the <code>namespaces</code> setting in script projects to allow mixin namespaces).</li>
 </ul>
 <h3 id="how-to-create-a-mixin-project">How to Create a Mixin Project</h3>
-<p>When creating a new mixin project, select the template called <strong>&quot;MDK Mixin (MDK2)&quot;</strong>.</p>
+<p>Mixin projects use the <strong>&quot;MDK Mixin (MDK2)&quot;</strong> template. You can create them via:</p>
+<ul>
+<li><strong>Visual Studio or Rider</strong>: Use the new project dialog and search for &quot;MDK Mixin&quot;</li>
+<li><strong>Command line</strong>: Run <code>dotnet new mdk2mixin -n MyMixinName -o MyMixinName</code></li>
+</ul>
+<p>After creating a mixin project, you can add it to the Hub using &quot;Add Existing Project&quot;.</p>
 <h3 id="how-mixin-projects-work">How Mixin Projects Work</h3>
-<p>During the build process, code from the mixin project is merged into the main script. This gives you access to all the methods and classes defined in the mixin without duplicating the code. Since mixins are designed for reuse, they keep your scripts modular and prevent unnecessary repetition.</p>
+<p>During the build process, code from the mixin project is merged into the main script or mod. This gives you access to all the methods and classes defined in the mixin without duplicating the code. Since mixins are designed for reuse, they keep your projects modular and prevent unnecessary repetition.</p>
+<div class="markdown-alert markdown-alert-tip">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
+<p>When using a mixin with programmable block scripts, you may need to add the mixin's namespace to the <code>namespaces</code> setting in your script's <code>mdk.ini</code> file. See the <a href="MDK%C2%B2-Project-Configuration-Guide.html#namespacescomma-separated-list">Project Configuration Guide</a> for details.</p>
+</div>
 
         </article>
     </main>

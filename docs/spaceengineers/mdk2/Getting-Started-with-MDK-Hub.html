@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Getting Started using Jetbrains Rider - MDK2 Documentation - MDK2 Documentation</title>
+    <title>Getting Started with MDK Hub - MDK2 Documentation - MDK2 Documentation</title>
     <link rel="stylesheet" href="docs-styles.css?v=0547896f3fc5">
 </head>
 <body>
@@ -70,61 +70,46 @@
     </aside>
     <main class="content">
         <article class="docs-content">
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Go to the <a href="https://github.com/malforge/mdk2/releases">MDK2 Releases page</a> on GitHub.</li>
+<li>Download the <strong>latest release</strong> (or prerelease if you want to test new features):
+<ul>
+<li><strong>Windows Installer</strong>: <code>Malforge.MdkHub-win-Setup.exe</code> (recommended)</li>
+<li><strong>Windows Portable</strong>: <code>Malforge.MdkHub-win-x64-[version].zip</code> (extract and run)</li>
+<li><strong>Linux</strong>: <code>Malforge.MdkHub-linux-x64-[version].AppImage</code></li>
+</ul>
+</li>
+<li>Run the installer or extracted executable.</li>
+</ol>
 <div class="markdown-alert markdown-alert-note">
 <p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>Before following this guide, make sure you've installed and set up <strong><a href="Getting-Started-with-MDK-Hub.html">MDK Hub</a></strong>. The Hub handles .NET SDK installation, template setup, and project management for you.</p>
+<p><strong>Windows users</strong>: You may see a SmartScreen warning because MDK Hub is not commercially code-signed (signing certificates cost hundreds of dollars annually, which isn't practical for free open-source tools). The software is safe - all source code is publicly visible on GitHub. Click &quot;More info&quot; and then &quot;Run anyway&quot; to proceed.</p>
 </div>
-<h2 id="creating-a-new-project">Creating a New Project</h2>
-<h3 id="option-1-using-riders-template-ui">Option 1: Using Rider's Template UI</h3>
-<ol>
-<li><p>Open JetBrains Rider.</p>
-</li>
-<li><p>Click <strong>&quot;New Solution&quot;</strong>.</p>
-<p><img src="https://github.com/user-attachments/assets/de932e77-4f4e-4070-b6e9-e2c4f958b5e7" alt="new-solution" /></p>
-</li>
-<li><p>In the template list, find and select <strong>&quot;Programmable Block Script (MDK2)&quot;</strong>.</p>
-<p><img src="https://github.com/user-attachments/assets/5c708cd6-12fc-4850-b8e5-2f52469b392b" alt="templates" /></p>
-</li>
-<li><p>Choose a name and location for your project, then click <strong>&quot;Create&quot;</strong>.</p>
-</li>
-</ol>
-<h3 id="option-2-using-the-command-line">Option 2: Using the Command Line</h3>
-<p>Open a terminal and run:</p>
-<pre><code>dotnet new mdk2pbscript -n MyFirstScript -o MyFirstScript
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p><strong>Linux users</strong>: You may need to make the AppImage executable:</p>
+<pre><code class="language-bash">chmod +x Malforge.MdkHub-linux-x64-[version].AppImage
 </code></pre>
-<p>Then open the project in Rider.</p>
-<h3 id="option-3-using-mdk-hub">Option 3: Using MDK Hub</h3>
-<p>Click <strong>&quot;New Project&quot;</strong> in the Hub dashboard and let it create the project for you, then open it in Rider.</p>
-<div class="markdown-alert markdown-alert-note">
-<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>Make sure you select the <strong>Script</strong> project template, not the <strong>Mixin</strong> project. Mixin projects are for advanced shared code libraries.</p>
 </div>
-<h2 id="building-your-script">Building Your Script</h2>
-<ol>
-<li>Make your code changes in <code>Program.cs</code> or add new <code>.cs</code> files as needed.</li>
-<li>Build the project (<code>Ctrl+Shift+F9</code> or <code>Build</code> → <code>Build Solution</code>).</li>
-<li>MDK will automatically:
-<ul>
-<li>Combine all your <code>.cs</code> files into a single script</li>
-<li>Apply minification (if configured)</li>
-<li>Deploy the script to your Space Engineers IngameScripts folder</li>
-<li>Show a notification when complete (if Hub is running)</li>
-</ul>
-</li>
-</ol>
-<p>Your compiled script will be available in Space Engineers under <strong>Programmable Block</strong> → <strong>Edit</strong> → <strong>Browse Scripts</strong> (the folder icon).</p>
+<h2 id="first-launch">First Launch</h2>
+<p>When you first open MDK Hub, it will automatically check your system and set up what's needed. If you don't have .NET 9 installed, the Hub will offer to download and install it for you. It will also install the MDK2 templates so they're available in Visual Studio and Rider (or via <code>dotnet new</code> for VSCode users).</p>
+<p>Just follow the on-screen prompts - the Hub handles the setup for you.</p>
+<div class="markdown-alert markdown-alert-warning">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Warning</p>
+<p><strong>Linux users</strong>: On first launch, you'll need to manually configure paths since Linux doesn't have the same auto-detection that Windows does. You'll be prompted to set your Space Engineers binary path (the <code>Bin64</code> folder), your script output path (where compiled scripts are deployed), and your mod output path.</p>
+</div>
+<h2 id="what-youll-see">What You'll See</h2>
+<p>After setup completes, you'll see the Hub's main dashboard. If you've built MDK2 projects before, they'll appear here automatically (MDK2 keeps track of projects you've built). Otherwise, you'll see a clean slate ready for your first project. Quick actions for creating new projects, checking for updates, and configuring settings are readily available.</p>
+<h2 id="creating-your-first-project">Creating Your First Project</h2>
+<p>The Hub offers several options in the Projects panel:</p>
+<p><strong>New Programmable Block Script</strong> - Opens a dialog where you choose a name and location. The Hub creates the project using the MDK2 script template and automatically adds it to your project list.</p>
+<p><strong>New Mod</strong> - Creates a mod project.</p>
+<p><strong>Add Existing Project</strong> - If you already created a project from your IDE or command line, use this to browse for the <code>.csproj</code> file and add it to the Hub's project list.</p>
 <h2 id="next-steps">Next Steps</h2>
-<ul>
-<li><strong><a href="MDK%C2%B2-Project-Configuration-Guide.html">Configure your project</a></strong> - Adjust minification levels, ignore patterns, and more</li>
-<li><strong><a href="Controlling-File-Order-in-MDK%C2%B2-Projects.html">Control file order</a></strong> - Manage how your files are combined</li>
-<li><strong><a href="Using-the-Minifier-and-Preserve-Regions-in-MDK%C2%B2.html">Preserve code during minification</a></strong> - Keep specific types/methods unminified</li>
-</ul>
-<hr />
-<div class="markdown-alert markdown-alert-note">
-<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p><em>A big thank you to <a href="https://github.com/Drew-Chase">@Drew-Chase</a> who contributed to the Rider documentation.</em></p>
-</div>
+<p>Now that the Hub is set up, you're ready to start coding. Check out the IDE-specific guides for <strong><a href="Getting-Started-using-Visual-Studio.html">Visual Studio</a></strong>, <strong><a href="Getting-Started-using-VSCode.html">VSCode</a></strong>, or <strong><a href="Getting-Started-using-Jetbrains-Rider.html">Jetbrains Rider</a></strong> to learn your preferred workflow.</p>
+<h2 id="what-the-hub-does-for-you">What the Hub Does for You</h2>
+<p>The Hub provides several useful features beyond initial setup. You can view all your MDK2 projects in one place and open them in your preferred IDE with one click. The update system lets you check for Hub updates, template updates, and NuGet package updates. For packages, select a project and choose &quot;Update This Project&quot; or &quot;Update All Projects&quot; to handle updates across your codebase. When you build your scripts, you'll get desktop notifications showing whether the build succeeded or failed. The configuration editor lets you modify <code>mdk.ini</code> settings visually, and global path configuration (especially useful on Linux) can be managed from the Hub's settings.</p>
 
         </article>
     </main>

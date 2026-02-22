@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Macros in MDK² - MDK2 Documentation - MDK2 Documentation</title>
+    <link rel="stylesheet" href="docs-styles.css?v=0547896f3fc5">
+</head>
+<body>
+    <noscript>
+        <div style="position: fixed; top: 0; left: 0; right: 0; background: #ff6b6b; color: white; padding: 1em; text-align: center; z-index: 10000; font-family: Arial, sans-serif;">
+            <strong>JavaScript Required:</strong> This documentation site requires JavaScript to function. Please enable JavaScript in your browser to view the navigation.
+        </div>
+    </noscript>
+    <header class="top-header">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-nav">
+            <a href="index.html" class="header-btn" title="Home">
+                <span>🏠</span>
+            </a>
+            <a href="https://spaceengineers.wiki.gg/" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="Space Engineers Wiki">
+                <img src="wiki.png" alt="Wiki" class="header-icon">
+            </a>
+            <a href="https://github.com/malforge/mdk2" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="MDK2 - Malware's Development Kit">
+                <img src="mdk2.png" alt="MDK2" class="header-icon">
+            </a>
+            <a href="../pbapi/index.html" class="header-btn header-btn-api" title="Programmable Block API">
+                <span class="api-label"><strong>PB</strong><br><small>api</small></span>
+            </a>
+            <a href="../modapi/index.html" class="header-btn header-btn-api header-btn-compact" title="Mod API">
+                <span class="api-label"><strong>MOD</strong><br><small>api</small></span>
+            </a>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">MDK2 Documentation</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+<a href="index.html">Home</a>
+<h3>Getting Started</h3>
+<ul>
+    <li><a href="Getting-Started-using-Jetbrains-Rider.html">Getting Started using Jetbrains Rider</a></li>
+    <li><a href="Getting-Started-using-Visual-Studio.html">Getting Started using Visual Studio</a></li>
+    <li><a href="Getting-Started-using-VSCode.html">Getting Started using VSCode</a></li>
+    <li><a href="Getting-Started-with-MDK-Hub.html">Getting Started with MDK Hub</a></li>
+</ul>
+<h3>Configuration</h3>
+<ul>
+    <li><a href="Controlling-File-Order-in-MDK²-Projects.html">Controlling File Order in MDK² Projects</a></li>
+    <li><a href="MDK²-Project-Configuration-Guide.html">MDK² Project Configuration Guide</a></li>
+    <li><a href="Mixin-Projects.html">Mixin Projects</a></li>
+    <li><a href="Using-the-Minifier-and-Preserve-Regions-in-MDK².html">Using the Minifier and Preserve Regions in MDK²</a></li>
+</ul>
+<h3>Updates</h3>
+<ul>
+    <li><a href="Updating-the-MDK2-Nuget-packages-using-Jetbrains-Rider.html">Updating the MDK2 Nuget packages using Jetbrains Rider</a></li>
+    <li><a href="Updating-the-MDK2-Nuget-packages-using-Visual-Studio.html">Updating the MDK2 Nuget packages using Visual Studio</a></li>
+    <li><a href="Updating-the-MDK2-Nuget-packages-using-VSCode-or-command-line.html">Updating the MDK2 Nuget packages using VSCode or command line</a></li>
+    <li><a href="Updating-the-MDK2-templates.html">Updating the MDK2 templates</a></li>
+</ul>
+
+        </nav>
+        <div class="sidebar-resize-handle"></div>
+    </aside>
+    <main class="content">
+        <article class="docs-content">
+<h1 id="using-macros-in-mdk2">Using Macros in MDK²</h1>
+<p>MDK² supports text replacement macros that are expanded during the build process. Macros are useful for embedding build timestamps, version information, or any other text that should be generated at build time.</p>
+<h2 id="macro-format">Macro Format</h2>
+<p>Macros use the format <code>$NAME$</code> where NAME can contain letters, digits, and underscores. For example:</p>
+<pre><code class="language-csharp">// This comment was generated at $MDK_DATETIME$
+string version = &quot;Built on $MDK_DATE$ at $MDK_TIME$&quot;;
+</code></pre>
+<h2 id="default-macros">Default Macros</h2>
+<p>MDK² provides three built-in macros that are automatically available:</p>
+<ul>
+<li><strong><code>$MDK_DATETIME$</code></strong> - Current date and time (format: <code>yyyy-MM-dd HH:mm</code>)</li>
+<li><strong><code>$MDK_DATE$</code></strong> - Current date only (format: <code>yyyy-MM-dd</code>)</li>
+<li><strong><code>$MDK_TIME$</code></strong> - Current time only (format: <code>HH:mm</code>)</li>
+</ul>
+<p>These macros are updated every time you build your project, making them perfect for build timestamps.</p>
+<h2 id="defining-custom-macros">Defining Custom Macros</h2>
+<p>You can define your own custom macros in two ways:</p>
+<h3 id="using-ini-configuration">Using INI Configuration</h3>
+<p>Add macros to your <code>mdk.ini</code> or <code>mdk.local.ini</code> file:</p>
+<pre><code class="language-ini">[mdk]
+macros=$VERSION$=1.0.5,$AUTHOR$=YourName
+</code></pre>
+<p>Multiple macros are comma-separated in the format <code>NAME=value</code>. If a value contains spaces or special characters, enclose it in quotes:</p>
+<pre><code class="language-ini">[mdk]
+macros=$VERSION$=1.0.5,$DESCRIPTION$=&quot;My awesome script&quot;
+</code></pre>
+<h3 id="using-command-line">Using Command Line</h3>
+<p>When running <code>mdk pack</code> from the command line, you can define macros using the <code>-macro</code> flag:</p>
+<pre><code class="language-bash">mdk pack MyProject.csproj -macro $BUILD_NUMBER$=42 -macro $BRANCH$=main
+</code></pre>
+<p>You can use <code>-macro</code> multiple times to define multiple macros.</p>
+<h2 id="where-macros-are-replaced">Where Macros Are Replaced</h2>
+<p>Macros are replaced in the following locations during the build process:</p>
+<ul>
+<li><strong>String literals</strong>: <code>string message = &quot;Version $VERSION$&quot;;</code></li>
+<li><strong>Single-line comments</strong>: <code>// Built on $MDK_DATETIME$</code></li>
+<li><strong>Multi-line comments</strong>: <code>/* Version $VERSION$ */</code></li>
+<li><strong>Documentation comments</strong>: <code>/// &lt;summary&gt;Version $VERSION$&lt;/summary&gt;</code></li>
+<li><strong>Instructions.readme</strong>: Macros in your Instructions.readme file are replaced before being added as header comments to the output script</li>
+</ul>
+<p>Macros are replaced everywhere in both programmable block scripts and mods.</p>
+<h2 id="unknown-macros">Unknown Macros</h2>
+<p>If you reference a macro that hasn't been defined (for example, <code>$UNDEFINED$</code>), it will be left as-is in the output. This prevents accidental text replacement and makes it safe to use dollar signs in your code for other purposes.</p>
+<h2 id="example-usage">Example Usage</h2>
+<p>Here's a practical example of using macros in a programmable block script:</p>
+<pre><code class="language-csharp">public Program()
+{
+    // Script built on $MDK_DATETIME$
+    Echo(&quot;Script Version: $VERSION$&quot;);
+    Echo(&quot;Build Date: $MDK_DATE$&quot;);
+}
+</code></pre>
+<p>With macros defined in your <code>mdk.ini</code>:</p>
+<pre><code class="language-ini">[mdk]
+macros=$VERSION$=2.1.0
+</code></pre>
+<p>After building, the output script will contain:</p>
+<pre><code class="language-csharp">public Program()
+{
+    // Script built on 2026-02-17 11:50
+    Echo(&quot;Script Version: 2.1.0&quot;);
+    Echo(&quot;Build Date: 2026-02-17&quot;);
+}
+</code></pre>
+<h2 id="tips">Tips</h2>
+<ul>
+<li>Use <code>mdk.local.ini</code> for machine-specific macros (like local build numbers) that shouldn't be committed to source control</li>
+<li>Use <code>mdk.ini</code> for project-wide macros (like version numbers) that should be shared with all developers</li>
+<li>Macro names are case-insensitive: <code>$VERSION$</code> and <code>$version$</code> refer to the same macro</li>
+<li>Keep macro names descriptive and use UPPERCASE to make them stand out in your code</li>
+</ul>
+
+        </article>
+    </main>
+    <script src="docs.js?v=0547896f3fc5"></script>
+</body>
+</html>

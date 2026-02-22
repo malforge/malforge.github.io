@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Installation - MDK2 Documentation - MDK2 Documentation</title>
+    <link rel="stylesheet" href="docs-styles.css?v=0547896f3fc5">
+</head>
+<body>
+    <noscript>
+        <div style="position: fixed; top: 0; left: 0; right: 0; background: #ff6b6b; color: white; padding: 1em; text-align: center; z-index: 10000; font-family: Arial, sans-serif;">
+            <strong>JavaScript Required:</strong> This documentation site requires JavaScript to function. Please enable JavaScript in your browser to view the navigation.
+        </div>
+    </noscript>
+    <header class="top-header">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-nav">
+            <a href="index.html" class="header-btn" title="Home">
+                <span>🏠</span>
+            </a>
+            <a href="https://spaceengineers.wiki.gg/" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="Space Engineers Wiki">
+                <img src="wiki.png" alt="Wiki" class="header-icon">
+            </a>
+            <a href="https://github.com/malforge/mdk2" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="MDK2 - Malware's Development Kit">
+                <img src="mdk2.png" alt="MDK2" class="header-icon">
+            </a>
+            <a href="../pbapi/index.html" class="header-btn header-btn-api" title="Programmable Block API">
+                <span class="api-label"><strong>PB</strong><br><small>api</small></span>
+            </a>
+            <a href="../modapi/index.html" class="header-btn header-btn-api header-btn-compact" title="Mod API">
+                <span class="api-label"><strong>MOD</strong><br><small>api</small></span>
+            </a>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">MDK2 Documentation</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+<a href="index.html">Home</a>
+<h3>Getting Started</h3>
+<ul>
+    <li><a href="Getting-Started-using-Jetbrains-Rider.html">Getting Started using Jetbrains Rider</a></li>
+    <li><a href="Getting-Started-using-Visual-Studio.html">Getting Started using Visual Studio</a></li>
+    <li><a href="Getting-Started-using-VSCode.html">Getting Started using VSCode</a></li>
+    <li><a href="Getting-Started-with-MDK-Hub.html">Getting Started with MDK Hub</a></li>
+</ul>
+<h3>Configuration</h3>
+<ul>
+    <li><a href="Controlling-File-Order-in-MDK²-Projects.html">Controlling File Order in MDK² Projects</a></li>
+    <li><a href="MDK²-Project-Configuration-Guide.html">MDK² Project Configuration Guide</a></li>
+    <li><a href="Mixin-Projects.html">Mixin Projects</a></li>
+    <li><a href="Using-the-Minifier-and-Preserve-Regions-in-MDK².html">Using the Minifier and Preserve Regions in MDK²</a></li>
+</ul>
+<h3>Updates</h3>
+<ul>
+    <li><a href="Updating-the-MDK2-Nuget-packages-using-Jetbrains-Rider.html">Updating the MDK2 Nuget packages using Jetbrains Rider</a></li>
+    <li><a href="Updating-the-MDK2-Nuget-packages-using-Visual-Studio.html">Updating the MDK2 Nuget packages using Visual Studio</a></li>
+    <li><a href="Updating-the-MDK2-Nuget-packages-using-VSCode-or-command-line.html">Updating the MDK2 Nuget packages using VSCode or command line</a></li>
+    <li><a href="Updating-the-MDK2-templates.html">Updating the MDK2 templates</a></li>
+</ul>
+
+        </nav>
+        <div class="sidebar-resize-handle"></div>
+    </aside>
+    <main class="content">
+        <article class="docs-content">
+<h1 id="manual-installation-advanced">Manual Installation (Advanced)</h1>
+<div class="markdown-alert markdown-alert-warning">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Warning</p>
+<p>This guide is for advanced users who prefer not to use MDK Hub or need to set up MDK2 in special environments. <strong>Most users should use <a href="Getting-Started-with-MDK-Hub.html">MDK Hub</a> instead</strong> - it's simpler and handles these steps automatically.</p>
+</div>
+<p>If you're here because you're having issues with the Hub, consider <a href="https://github.com/malforge/mdk2/issues">filing an issue</a> so we can improve the experience for everyone.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li><p><strong>.NET 9 SDK</strong> - Download from <a href="https://dotnet.microsoft.com/en-us/download">dotnet.microsoft.com</a></p>
+<ul>
+<li>Verify installation: <code>dotnet --list-sdks</code></li>
+<li>You should see at least one <code>9.x.x</code> version listed</li>
+</ul>
+</li>
+<li><p><strong>Space Engineers</strong> - Required for game assembly references</p>
+<ul>
+<li>The game must be installed and findable by MDK</li>
+<li>On Linux: Note your installation path (you'll need to configure it manually)</li>
+</ul>
+</li>
+<li><p><strong>IDE</strong> (optional but recommended):</p>
+<ul>
+<li>Visual Studio 2022 (17.10 or later) with .NET desktop development workload</li>
+<li>Visual Studio Code with C# Dev Kit extension</li>
+<li>JetBrains Rider</li>
+</ul>
+</li>
+</ol>
+<h2 id="installing-templates">Installing Templates</h2>
+<ol>
+<li>Open a terminal/command prompt.</li>
+<li>Run:
+<pre><code>dotnet new install Mal.Mdk2.ScriptTemplates
+</code></pre>
+</li>
+<li>Verify installation:
+<pre><code>dotnet new list | grep mdk2
+</code></pre>
+You should see <code>mdk2pbscript</code> and <code>mdk2pbmixin</code> templates listed.</li>
+</ol>
+<h3 id="troubleshooting-template-installation">Troubleshooting Template Installation</h3>
+<p>If you get an error about NuGet sources:</p>
+<ol>
+<li>Check your NuGet sources:
+<pre><code>dotnet nuget list source
+</code></pre>
+</li>
+<li>If <code>nuget.org</code> is missing, add it:
+<pre><code>dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org
+</code></pre>
+</li>
+<li>Try the template installation again.</li>
+</ol>
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p>Some users need to restart their computer after installing .NET 9 before template installation will work.</p>
+</div>
+<h2 id="creating-a-project">Creating a Project</h2>
+<h3 id="option-1-command-line">Option 1: Command Line</h3>
+<pre><code class="language-bash">dotnet new mdk2pbscript -n MyScriptName -o MyScriptName
+</code></pre>
+<p>Replace <code>MyScriptName</code> with your desired project name.</p>
+<h3 id="option-2-ide-template">Option 2: IDE Template</h3>
+<ul>
+<li><strong>Visual Studio</strong>: File → New → Project → Search for &quot;MDK&quot;</li>
+<li><strong>Rider</strong>: New Solution → Search for &quot;MDK&quot;</li>
+<li><strong>VSCode</strong>: Use command line method, then open folder in VSCode</li>
+</ul>
+<h2 id="configuration-linux-users-non-hub-users">Configuration (Linux Users &amp; Non-Hub Users)</h2>
+<p>If you're on Linux, Space Engineers isn't auto-detected, or you're not using MDK Hub:</p>
+<ol>
+<li>Create or edit <code>MyScriptName.mdk.local.ini</code> in your project folder.</li>
+<li>Add:
+<pre><code class="language-ini">[mdk]
+binarypath=/path/to/SpaceEngineers/Bin64
+output=/path/to/.local/share/SpaceEngineers/IngameScripts/local
+interactive=DoNothing
+</code></pre>
+</li>
+</ol>
+<p>Replace paths with your actual Space Engineers installation and desired output location.</p>
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p>The <code>interactive=DoNothing</code> setting prevents MDK from showing Hub notifications. This is recommended if you're not using the Hub or running in CI/CD environments.</p>
+</div>
+<h2 id="building">Building</h2>
+<h3 id="from-command-line">From Command Line</h3>
+<pre><code class="language-bash">cd MyScriptName
+dotnet build
+</code></pre>
+<h3 id="from-ide">From IDE</h3>
+<ul>
+<li><strong>Visual Studio</strong>: Press <code>Ctrl+Shift+B</code> or Build → Build Solution</li>
+<li><strong>Rider</strong>: Press <code>Ctrl+Shift+F9</code> or Build → Build Solution</li>
+<li><strong>VSCode</strong>: Press <code>Ctrl+Shift+B</code> or run <code>dotnet build</code> in terminal</li>
+</ul>
+<p>Your compiled script will appear in the configured output path (or the default Space Engineers local scripts folder on Windows).</p>
+<h2 id="updating-templates">Updating Templates</h2>
+<p>To update to the latest template version:</p>
+<pre><code class="language-bash">dotnet new update
+</code></pre>
+<p>Or to update a specific template:</p>
+<pre><code class="language-bash">dotnet new install Mal.Mdk2.ScriptTemplates --force
+</code></pre>
+<h2 id="updating-nuget-packages">Updating NuGet Packages</h2>
+<p>MDK2 uses NuGet packages for analyzers, packagers, and references. To update:</p>
+<h3 id="command-line">Command Line</h3>
+<pre><code class="language-bash">dotnet list package --outdated
+dotnet add package Mal.Mdk2.PbPackager
+dotnet add package Mal.Mdk2.PbAnalyzers
+dotnet add package Mal.Mdk2.References
+</code></pre>
+<h3 id="ide">IDE</h3>
+<ul>
+<li><strong>Visual Studio</strong>: Right-click project → Manage NuGet Packages → Updates tab</li>
+<li><strong>Rider</strong>: Right-click project → Manage NuGet Packages → Updates tab</li>
+<li><strong>VSCode</strong>: Use command line method</li>
+</ul>
+<h2 id="why-use-hub-instead">Why Use Hub Instead?</h2>
+<p>MDK Hub provides several benefits over manual installation:</p>
+<ul>
+<li><strong>Automatic setup</strong> - No manual .NET checks, template installs, or NuGet source troubleshooting</li>
+<li><strong>Centralized management</strong> - See all projects in one place, update packages in bulk</li>
+<li><strong>Build notifications</strong> - Desktop notifications when builds complete</li>
+<li><strong>Visual configuration</strong> - Edit <code>mdk.ini</code> settings through a GUI</li>
+<li><strong>Project detection</strong> - Automatically finds and imports existing projects</li>
+<li><strong>Cross-platform</strong> - Works on both Windows and Linux</li>
+</ul>
+<p>If you're doing manual installation due to a Hub issue, please report it - we want to make the Hub work for everyone!</p>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><strong><a href="MDK%C2%B2-Project-Configuration-Guide.html">Configure your project</a></strong> - Set minification levels, ignore patterns, etc.</li>
+<li><strong><a href="index.html#getting-started">IDE-specific guides</a></strong> - Learn IDE-specific workflows</li>
+<li><strong><a href="index.html#configuration">Advanced topics</a></strong> - File ordering, minifier preservation, mixin projects</li>
+</ul>
+
+        </article>
+    </main>
+    <script src="docs.js?v=0547896f3fc5"></script>
+</body>
+</html>

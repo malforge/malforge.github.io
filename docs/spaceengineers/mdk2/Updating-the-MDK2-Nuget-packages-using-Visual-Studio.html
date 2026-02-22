@@ -48,13 +48,13 @@
     <li><a href="Getting-Started-using-Jetbrains-Rider.html">Getting Started using Jetbrains Rider</a></li>
     <li><a href="Getting-Started-using-Visual-Studio.html">Getting Started using Visual Studio</a></li>
     <li><a href="Getting-Started-using-VSCode.html">Getting Started using VSCode</a></li>
+    <li><a href="Getting-Started-with-MDK-Hub.html">Getting Started with MDK Hub</a></li>
 </ul>
 <h3>Configuration</h3>
 <ul>
     <li><a href="Controlling-File-Order-in-MDK²-Projects.html">Controlling File Order in MDK² Projects</a></li>
     <li><a href="MDK²-Project-Configuration-Guide.html">MDK² Project Configuration Guide</a></li>
     <li><a href="Mixin-Projects.html">Mixin Projects</a></li>
-    <li><a href="Programmable-Block-Scripts.html">Programmable Block Scripts</a></li>
     <li><a href="Using-the-Minifier-and-Preserve-Regions-in-MDK².html">Using the Minifier and Preserve Regions in MDK²</a></li>
 </ul>
 <h3>Updates</h3>
@@ -64,26 +64,35 @@
     <li><a href="Updating-the-MDK2-Nuget-packages-using-VSCode-or-command-line.html">Updating the MDK2 Nuget packages using VSCode or command line</a></li>
     <li><a href="Updating-the-MDK2-templates.html">Updating the MDK2 templates</a></li>
 </ul>
-<h3>Platform Support</h3>
-<ul>
-    <li><a href="Running-MDK-on-Linux-(functional,-but-unsupported).html">Running MDK on Linux (functional, but unsupported)</a></li>
-</ul>
 
         </nav>
         <div class="sidebar-resize-handle"></div>
     </aside>
     <main class="content">
         <article class="docs-content">
-<p>After opening your project, right-click on the solution node in Solution Explorer, then find and click<br />
-<code>Manage Nuget Packages for Solution...</code></p>
+<h1 id="updating-mdk2-nuget-packages-using-visual-studio">Updating MDK² NuGet Packages using Visual Studio</h1>
+<div class="markdown-alert markdown-alert-tip">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p>
+<p><strong>Using MDK Hub?</strong> The Hub can update packages automatically. See the <a href="index.html#updates--maintenance">Updates &amp; Maintenance</a> section for details.</p>
+</div>
+<h2 id="using-visual-studio">Using Visual Studio</h2>
+<ol>
+<li><p>Open your project in Visual Studio.</p>
+</li>
+<li><p>Right-click on the solution in Solution Explorer.</p>
+</li>
+<li><p>Click <strong>&quot;Manage NuGet Packages for Solution...&quot;</strong></p>
 <p><img src="https://github.com/user-attachments/assets/30386329-43aa-4510-ab19-f1d0ae3802b9" alt="image" /></p>
-<hr />
-<p>This opens the package manager console. Click on the <code>Updates</code> tab to see any packages that needs updates.</p>
+</li>
+<li><p>Click the <strong>&quot;Updates&quot;</strong> tab to see outdated packages.</p>
 <p><img src="https://github.com/user-attachments/assets/85504d2e-bebe-4f3e-ba47-7c39f30e8b0b" alt="image" /></p>
-<p>Here we can see that all the MDK packages are out of date and needs to be updated. Select them all and click <code>Update</code>.</p>
-<hr />
+</li>
+<li><p>Select the MDK packages you want to update and click <strong>&quot;Update&quot;</strong>.</p>
 <p><img src="https://github.com/user-attachments/assets/1e7d30c2-f7f3-4e55-b08c-105c2183bed2" alt="image" /></p>
-<p>Hit <code>Apply</code> and your packages will be updated.</p>
+</li>
+<li><p>Click <strong>&quot;Apply&quot;</strong> to complete the update.</p>
+</li>
+</ol>
 
         </article>
     </main>
