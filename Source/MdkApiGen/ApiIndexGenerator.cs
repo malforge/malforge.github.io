@@ -178,6 +178,7 @@ class ApiIndexGenerator
         CopyImages(outputDir);
         GenerateSearchIndex(outputDir);
         GenerateEnhancedSearchIndex(apiDirs, outputDir);
+        GenerateBuildInfo(outputDir);
         
         // Create key file to mark this as a safe directory to clean
         CreateKeyFile(outputDir);
@@ -925,13 +926,34 @@ class ApiIndexGenerator
             .Replace("{{ROOT_PATH}}", rootPath)
             .Replace("{{CACHE_BUSTER}}", _cacheBuster)
             .Replace("{{CURRENT_FILE_NAME}}", currentFile.FileName)
-            .Replace("{{GENERATION_TIMESTAMP}}", $"<span class=\"generation-timestamp\" data-utc=\"{DateTime.UtcNow:yyyy-MM-ddTHH:mm:ssZ}\">Generated {DateTime.UtcNow:yyyy-MM-dd HH:mm} UTC</span>")
+            .Replace("{{GENERATION_TIMESTAMP}}", $"<span class=\"generation-timestamp\" data-root-path=\"{rootPath}\">Generated...</span>")
             .Replace("{{PAGE_HEADER}}", pageHeader)
             .Replace("{{API_SWITCHER}}", apiSwitcher)
             .Replace("{{API_TYPE}}", _apiType)
             .Replace("{{CONTENT}}", content);
 
         return html;
+    }
+
+    private void GenerateBuildInfo(DirectoryInfo outputDir)
+    {
+        var latestApiUpdateUtc = _allFiles
+            .Where(f => File.Exists(f.FullPath))
+            .Select(f => File.GetLastWriteTimeUtc(f.FullPath))
+            .DefaultIfEmpty(DateTime.UtcNow)
+            .Max();
+
+        var buildInfo = new
+        {
+            generatedUtc = latestApiUpdateUtc.ToString("yyyy-MM-ddTHH:mm:ssZ")
+        };
+
+        var outputPath = Path.Combine(outputDir.FullName, "build-info.json");
+        var json = JsonSerializer.Serialize(buildInfo, new JsonSerializerOptions { WriteIndented = true });
+        File.WriteAllText(outputPath, json);
+        _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
+
+        Console.WriteLine($"Generated build-info.json ({buildInfo.generatedUtc})");
     }
 
     private string GenerateApiSwitcher(string currentFileName, string rootPath)

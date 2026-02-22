@@ -79,15 +79,21 @@ function attachSidebarLinkListeners() {
     });
 }
 
-// Convert UTC timestamp to local time
-function formatGenerationTimestamp() {
+// Load global API generation timestamp and convert to local time
+async function formatGenerationTimestamp() {
     const timestampElement = document.querySelector('.generation-timestamp');
     if (!timestampElement) return;
     
-    const utcString = timestampElement.dataset.utc;
-    if (!utcString) return;
+    const rootPath = timestampElement.dataset.rootPath || '';
     
     try {
+        const response = await fetch(`${rootPath}build-info.json`, { cache: 'no-store' });
+        if (!response.ok) throw new Error('Failed to load build-info.json');
+
+        const buildInfo = await response.json();
+        const utcString = buildInfo?.generatedUtc;
+        if (!utcString) throw new Error('Missing generatedUtc in build-info.json');
+
         const utcDate = new Date(utcString);
         const localDateStr = utcDate.toLocaleString(undefined, {
             year: 'numeric',
@@ -98,9 +104,10 @@ function formatGenerationTimestamp() {
             hour12: false
         });
         const utcDateStr = utcDate.toISOString().substring(0, 16).replace('T', ' ');
-        timestampElement.textContent = `Generated ${localDateStr} (${utcDateStr} UTC)`;
+        timestampElement.textContent = `API docs updated ${localDateStr} (${utcDateStr} UTC)`;
     } catch (e) {
-        console.error('Failed to parse timestamp:', e);
+        console.error('Failed to load generation timestamp:', e);
+        timestampElement.textContent = 'API docs updated time unavailable';
     }
 }
 
