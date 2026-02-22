@@ -1,7 +1,8 @@
 {
-  "Generated": "2026-02-17T14:23:48.3000233Z",
+  "Generated": "2026-02-22T14:45:35.5576977Z",
   "Files": [
     "api-index.js",
+    "build-info.json",
     "images\\spritethumb_1.jpg",
     "images\\spritethumb_10.jpg",
     "images\\spritethumb_100.jpg",
