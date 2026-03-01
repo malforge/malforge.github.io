@@ -4,20 +4,22 @@ Welcome to MDK² (Malware's Development Kit for Space Engineers), a comprehensiv
 
 ## Getting Started
 
-The quickest way to get started is to install MDK Hub, which handles all the setup automatically. Once that's done, you can use your preferred IDE to write code.
+Start by choosing how you want to install MDK²:
 
 **[Get Started with MDK Hub](Getting-Started-with-MDK-Hub.html)** - Install the Hub and let it set up .NET, templates, and project management for you.
 
-After the Hub is set up, choose your development environment:
-
-- **[Visual Studio](Getting-Started-using-Visual-Studio.html)**
-- **[Jetbrains Rider](Getting-Started-using-Jetbrains-Rider.html)**
-- **[VSCode](Getting-Started-using-VSCode.html)**  
-
-If you prefer not to use the Hub, the **[Manual Installation Guide](Manual-Installation.html)** covers advanced setup for those who want more control.
+**[Manual Installation Guide](Manual-Installation.html)** - Advanced setup for users who prefer full manual control.
 
 > [!NOTE]
 > **Upgrading from MDK (version 1)?** Due to significant architectural changes, we recommend creating a new MDK² project and copying your code files over rather than attempting to upgrade existing projects.
+
+## Using Your IDE
+
+Once MDK² is installed (via Hub or manually), use your preferred IDE workflow:
+
+- **[Develop with Visual Studio](Getting-Started-using-Visual-Studio.html)**
+- **[Develop with Jetbrains Rider](Getting-Started-using-Jetbrains-Rider.html)**
+- **[Develop with VSCode](Getting-Started-using-VSCode.html)**  
 
 ---
 
