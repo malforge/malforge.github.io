@@ -42,7 +42,10 @@ public class DocGenerator
         Console.WriteLine($"Cache-buster: {_cacheBuster}");
 
         // Get all markdown files
-        var markdownFiles = inputDir.GetFiles("*.md", SearchOption.AllDirectories);
+        var markdownFiles = inputDir
+            .GetFiles("*.md", SearchOption.AllDirectories)
+            .Where(file => !file.Name.StartsWith("_", StringComparison.Ordinal))
+            .ToArray();
         Console.WriteLine($"Found {markdownFiles.Length} markdown files");
 
         // Build navigation structure
@@ -94,6 +97,21 @@ public class DocGenerator
 
     private string BuildNavigation(FileInfo[] files, DirectoryInfo baseDir)
     {
+        var sidebarHtmlPath = Path.Combine(baseDir.FullName, "_sidebar.html");
+        if (File.Exists(sidebarHtmlPath))
+        {
+            Console.WriteLine($"Loaded sidebar from {sidebarHtmlPath}");
+            return File.ReadAllText(sidebarHtmlPath);
+        }
+
+        var sidebarMarkdownPath = Path.Combine(baseDir.FullName, "_sidebar.md");
+        if (File.Exists(sidebarMarkdownPath))
+        {
+            Console.WriteLine($"Loaded sidebar from {sidebarMarkdownPath}");
+            var sidebarMarkdown = File.ReadAllText(sidebarMarkdownPath);
+            return Markdown.ToHtml(sidebarMarkdown, _pipeline);
+        }
+
         var nav = new StringBuilder();
         
         // Group by section based on the original Home.md structure
