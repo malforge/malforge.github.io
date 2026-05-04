@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public Vector3D Start { get; }
+public Vector3D Start { get; set; }
 ```
 
 ## Returns

@@ -14,6 +14,8 @@ public struct MyPasteGridParameters
 |[InstantBuild](Sandbox.Game.Entities.MyCubeGrid+MyPasteGridParameters@InstantBuild)||
 |[ObjectVelocity](Sandbox.Game.Entities.MyCubeGrid+MyPasteGridParameters@ObjectVelocity)||
 |[Offset](Sandbox.Game.Entities.MyCubeGrid+MyPasteGridParameters@Offset)||
+|[OnPasteFinished](Sandbox.Game.Entities.MyCubeGrid+MyPasteGridParameters@OnPasteFinished)||
+|[SkipDlcAndSkinChecks](Sandbox.Game.Entities.MyCubeGrid+MyPasteGridParameters@SkipDlcAndSkinChecks)||
 
 ## Constructors
 

@@ -10,6 +10,7 @@ public class MyObjectBuilder_PhysicalObject: MyObjectBuilder_Base
 |---|---|
 |[DurabilityHP](VRage.Game.MyObjectBuilder_PhysicalObject@DurabilityHP)|This is used for GUI to show the amount of health points (durability) of the weapons and tools. This is updated through Durability entity component if entity exists..|
 |[Flags](VRage.Game.MyObjectBuilder_PhysicalObject@Flags)||
+|[UniqueId](VRage.Game.MyObjectBuilder_PhysicalObject@UniqueId)|Globally unique identifier for tracking specific item instances across inventory transfers. When set (non-empty), this item cannot stack with any other items.|
 
 ## Properties
 
@@ -35,6 +36,7 @@ public class MyObjectBuilder_PhysicalObject: MyObjectBuilder_Base
 |[GetInstanceOnStackSplit()](VRage.Game.MyObjectBuilder_PhysicalObject@GetInstanceOnStackSplit)|Since 204 items like gas containers can stack. All items that has data, that can change should override this method, and return a clone.|
 |[GetObjectId()](VRage.Game.MyObjectBuilder_PhysicalObject@GetObjectId)||
 |[ShouldSerializeDurabilityHP()](VRage.Game.MyObjectBuilder_PhysicalObject@ShouldSerializeDurabilityHP)||
+|[ShouldSerializeUniqueId()](VRage.Game.MyObjectBuilder_PhysicalObject@ShouldSerializeUniqueId)||
 |[Clone()](VRage.ObjectBuilders.MyObjectBuilder_Base@Clone)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
 |[Equals(MyObjectBuilder_Base)](VRage.ObjectBuilders.MyObjectBuilder_Base@Equals)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
 |[ShouldSerializeSubtypeId()](VRage.ObjectBuilders.MyObjectBuilder_Base@ShouldSerializeSubtypeId)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|

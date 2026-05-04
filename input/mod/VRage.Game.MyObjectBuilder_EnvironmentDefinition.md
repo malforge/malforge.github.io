@@ -17,6 +17,8 @@ Global (environment) mergeable definitions
 |[EnvironmentOrientation](VRage.Game.MyObjectBuilder_EnvironmentDefinition@EnvironmentOrientation)||
 |[EnvironmentTexture](VRage.Game.MyObjectBuilder_EnvironmentDefinition@EnvironmentTexture)||
 |[ExtremeLoddingSettings](VRage.Game.MyObjectBuilder_EnvironmentDefinition@ExtremeLoddingSettings)||
+|[FloatingObjectLinearDampening](VRage.Game.MyObjectBuilder_EnvironmentDefinition@FloatingObjectLinearDampening)||
+|[FloatingObjectLinearDampeningInSafezone](VRage.Game.MyObjectBuilder_EnvironmentDefinition@FloatingObjectLinearDampeningInSafezone)||
 |[FogProperties](VRage.Game.MyObjectBuilder_EnvironmentDefinition@FogProperties)||
 |[HBAOSettings](VRage.Game.MyObjectBuilder_EnvironmentDefinition@HBAOSettings)||
 |[HighlightPulseInSeconds](VRage.Game.MyObjectBuilder_EnvironmentDefinition@HighlightPulseInSeconds)||

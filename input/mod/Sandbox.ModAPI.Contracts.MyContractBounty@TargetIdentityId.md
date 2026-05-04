@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public long TargetIdentityId { get; }
+public long TargetIdentityId { get; set; }
 ```
 
 ## Returns

@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public long GridId { get; }
+public long GridId { get; set; }
 ```
 
 ## Returns

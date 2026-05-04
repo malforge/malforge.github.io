@@ -8,9 +8,11 @@ public class MyObjectBuilder_ContractTypeHuntDefinition: MyObjectBuilder_Contrac
 
 |Member|Description|
 |---|---|
+|[CooldownInEconomyUpdates](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeHuntDefinition@CooldownInEconomyUpdates)||
 |[Duration_BaseTime](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeHuntDefinition@Duration_BaseTime)||
 |[KillRange](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeHuntDefinition@KillRange)||
 |[KillRangeMultiplier](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeHuntDefinition@KillRangeMultiplier)||
+|[MoneyReputationCoeficient](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeHuntDefinition@MoneyReputationCoeficient)||
 |[RemarkPeriodInS](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeHuntDefinition@RemarkPeriodInS)||
 |[RemarkVariance](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeHuntDefinition@RemarkVariance)||
 |[ReputationLossForTarget](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeHuntDefinition@ReputationLossForTarget)||
@@ -23,15 +25,17 @@ public class MyObjectBuilder_ContractTypeHuntDefinition: MyObjectBuilder_Contrac
 |[DLCs](VRage.Game.MyObjectBuilder_DefinitionBase@DLCs)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[DurationMultiplier](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@DurationMultiplier)|_Inherited from [MyObjectBuilder_ContractTypeDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition)_|
 |[Enabled](VRage.Game.MyObjectBuilder_DefinitionBase@Enabled)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+|[EnableForPlayerBlock](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@EnableForPlayerBlock)|_Inherited from [MyObjectBuilder_ContractTypeDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition)_|
 |[FailReputationPrice](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@FailReputationPrice)|_Inherited from [MyObjectBuilder_ContractTypeDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition)_|
 |[Icons](VRage.Game.MyObjectBuilder_DefinitionBase@Icons)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[Id](VRage.Game.MyObjectBuilder_DefinitionBase@Id)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[MaxStartingDeposit](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@MaxStartingDeposit)|_Inherited from [MyObjectBuilder_ContractTypeDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition)_|
 |[MinimumMoney](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@MinimumMoney)|_Inherited from [MyObjectBuilder_ContractTypeDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition)_|
 |[MinimumReputation](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@MinimumReputation)|_Inherited from [MyObjectBuilder_ContractTypeDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition)_|
+|[MinReputationRequirement](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@MinReputationRequirement)|_Inherited from [MyObjectBuilder_ContractTypeDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition)_|
 |[MinStartingDeposit](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@MinStartingDeposit)|_Inherited from [MyObjectBuilder_ContractTypeDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition)_|
-|[MoneyReputationCoeficient](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@MoneyReputationCoeficient)|_Inherited from [MyObjectBuilder_ContractTypeDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition)_|
 |[Public](VRage.Game.MyObjectBuilder_DefinitionBase@Public)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+|[StrategyType](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@StrategyType)|_Inherited from [MyObjectBuilder_ContractTypeDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition)_|
 
 ## Properties
 

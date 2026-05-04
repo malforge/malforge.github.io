@@ -55,6 +55,7 @@
 <p><strong>Assembly:</strong> Sandbox.Game.dll</p>
 <pre><code class="language-csharp">public class MyContractRepair: IMyContractRepair, IMyContract
 </code></pre>
+<p>Implements IMyContractRepair interface so you can create your own contract. Call IMYContractSystem.AddContract with this instance.</p>
 <h2 id="properties">Properties</h2>
 <table>
 <thead>
@@ -69,7 +70,15 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.ModAPI.Contracts.MyContractRepair@ContractCondition.html">ContractCondition</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="Sandbox.ModAPI.Contracts.MyContractRepair@Duration.html">Duration</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.Contracts.MyContractRepair@FailReputationPrice.html">FailReputationPrice</a></td>
 <td></td>
 </tr>
 <tr>
@@ -93,6 +102,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.ModAPI.Contracts.MyContractRepair@RewardReputation.html">RewardReputation</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="Sandbox.ModAPI.Contracts.MyContractRepair@StartBlockId.html">StartBlockId</a></td>
 <td></td>
 </tr>
@@ -101,8 +114,16 @@
 <td>Gets money that player would loose if he won't complete contract<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
+<td><a href="VRage.Game.ModAPI.IMyContract@ContractCondition.html">ContractCondition</a></td>
+<td>Gets contract condition. Condition has contract after is created, not in wrapper class. You have to get contract from the contract system.<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
+</tr>
+<tr>
 <td><a href="VRage.Game.ModAPI.IMyContract@Duration.html">Duration</a></td>
 <td>Gets duration of contract in minutes<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyContract@FailReputationPrice.html">FailReputationPrice</a></td>
+<td>Gets reputation price when contract fails<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContractRepair@GridId.html">GridId</a></td>
@@ -125,6 +146,10 @@
 <td>Gets or sets function that is triggered when contract is successfully completed<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
+<td><a href="VRage.Game.ModAPI.IMyContract@RewardReputation.html">RewardReputation</a></td>
+<td>Gets reputation reward<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
+</tr>
+<tr>
 <td><a href="VRage.Game.ModAPI.IMyContract@StartBlockId.html">StartBlockId</a></td>
 <td>Gets id of block, that created contract<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
@@ -139,6 +164,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="Sandbox.ModAPI.Contracts.MyContractRepair@.ctor.html">MyContractRepair()</a></td>
+<td></td>
+</tr>
 <tr>
 <td><a href="Sandbox.ModAPI.Contracts.MyContractRepair@.ctor.html">MyContractRepair(long, int, int, int, long)</a></td>
 <td></td>

@@ -78,6 +78,9 @@ Describes cargo container block (PB scripting interface)
 * [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock)
 
 **Type Definitions:**  
+* MyObjectBuilder_CargoContainer/LargeBlockBulkContainerA  
+* MyObjectBuilder_CargoContainer/LargeBlockBulkContainerB  
+* MyObjectBuilder_CargoContainer/LargeBlockBulkContainerC  
 * MyObjectBuilder_CargoContainer/LargeBlockCargoTerminal  
 * MyObjectBuilder_CargoContainer/LargeBlockCargoTerminalHalf  
 * MyObjectBuilder_CargoContainer/LargeBlockInsetBookshelf  

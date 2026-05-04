@@ -18,7 +18,7 @@ public static bool TestPlacementArea(MyCubeGrid targetGrid, ref MyGridPlacement
 ## Summary
 
 ```csharp
-public static bool TestPlacementArea(MyCubeGrid targetGrid, bool targetGridIsStatic, ref MyGridPlacementSettings settings, BoundingBoxD localAabb, bool dynamicBuildMode, MyEntity ignoredEntity, bool testVoxel, bool testPhysics)
+public static bool TestPlacementArea(MyCubeGrid targetGrid, bool targetGridIsStatic, ref MyGridPlacementSettings settings, BoundingBoxD localAabb, bool dynamicBuildMode, MyEntity ignoredEntity, bool testVoxel, bool testPhysics, bool useSingleBlockGridSettings)
 ```
 
 ## Returns
@@ -35,3 +35,4 @@ public static bool TestPlacementArea(MyCubeGrid targetGrid, bool targetGridIsSta
 * [MyEntity](VRage.Game.Entity.MyEntity) ignoredEntity
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) testVoxel
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) testPhysics
+* [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) useSingleBlockGridSettings

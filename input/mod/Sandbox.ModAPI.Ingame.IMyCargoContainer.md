@@ -82,6 +82,9 @@ Describes cargo container block (PB scripting interface)
 * [MyCargoContainer](Sandbox.Game.Entities.MyCargoContainer)
 
 **Type Definitions:**  
+* MyObjectBuilder_CargoContainer/LargeBlockBulkContainerA  
+* MyObjectBuilder_CargoContainer/LargeBlockBulkContainerB  
+* MyObjectBuilder_CargoContainer/LargeBlockBulkContainerC  
 * MyObjectBuilder_CargoContainer/LargeBlockCargoTerminal  
 * MyObjectBuilder_CargoContainer/LargeBlockCargoTerminalHalf  
 * MyObjectBuilder_CargoContainer/LargeBlockInsetBookshelf  

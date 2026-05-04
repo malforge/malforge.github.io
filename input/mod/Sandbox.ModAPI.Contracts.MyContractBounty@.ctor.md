@@ -1,6 +1,12 @@
 ## Summary
 
 ```csharp
+public MyContractBounty()
+```
+
+## Summary
+
+```csharp
 public MyContractBounty(long startBlockId, int moneyReward, int collateral, int duration, long targetIdentityId)
 ```
 

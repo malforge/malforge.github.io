@@ -121,6 +121,7 @@ public abstract sealed class MyPlatformGameSettings
 |[static SHOW_DISPLAY_GRAPHIC_OPTIONS](Sandbox.Game.MyPlatformGameSettings@SHOW_DISPLAY_GRAPHIC_OPTIONS)||
 |[static SHOW_EMAIL_SEND_LOG](Sandbox.Game.MyPlatformGameSettings@SHOW_EMAIL_SEND_LOG)||
 |[static SHOW_EXPERIMENTAL_SERVERS](Sandbox.Game.MyPlatformGameSettings@SHOW_EXPERIMENTAL_SERVERS)||
+|[static SHOW_INVENTORY_ITEM_BLOCKS](Sandbox.Game.MyPlatformGameSettings@SHOW_INVENTORY_ITEM_BLOCKS)||
 |[static SHOW_MAIN_MENU_EXIT](Sandbox.Game.MyPlatformGameSettings@SHOW_MAIN_MENU_EXIT)||
 |[static SHOW_NEWSLETTER_MENU_BUTTON](Sandbox.Game.MyPlatformGameSettings@SHOW_NEWSLETTER_MENU_BUTTON)||
 |[static SHOW_ONLY_COMPATIBLE_SERVICE_LOBBY](Sandbox.Game.MyPlatformGameSettings@SHOW_ONLY_COMPATIBLE_SERVICE_LOBBY)||

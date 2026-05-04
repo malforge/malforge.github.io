@@ -1,6 +1,12 @@
 ## Summary
 
 ```csharp
+public MyContractHauling()
+```
+
+## Summary
+
+```csharp
 public MyContractHauling(long startBlockId, int moneyReward, int collateral, int duration, long endBlockId)
 ```
 

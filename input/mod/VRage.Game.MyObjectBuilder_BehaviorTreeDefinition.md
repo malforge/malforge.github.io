@@ -10,6 +10,7 @@ public class MyObjectBuilder_BehaviorTreeDefinition: MyObjectBuilder_DefinitionB
 |---|---|
 |[Behavior](VRage.Game.MyObjectBuilder_BehaviorTreeDefinition@Behavior)||
 |[FirstNode](VRage.Game.MyObjectBuilder_BehaviorTreeDefinition@FirstNode)||
+|[ResetMemoryOnNodeExit](VRage.Game.MyObjectBuilder_BehaviorTreeDefinition@ResetMemoryOnNodeExit)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[Description](VRage.Game.MyObjectBuilder_DefinitionBase@Description)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[DescriptionArgs](VRage.Game.MyObjectBuilder_DefinitionBase@DescriptionArgs)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|

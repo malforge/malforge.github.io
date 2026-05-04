@@ -101,6 +101,8 @@ Describes door block (PB scripting interface)
 * MyObjectBuilder_Door/  
 * MyObjectBuilder_Door/CorridorRoundDoor  
 * MyObjectBuilder_Door/CorridorRoundDoorInv  
+* MyObjectBuilder_Door/LargeBlockAngledDoorA  
+* MyObjectBuilder_Door/LargeBlockAngledDoorB  
 * MyObjectBuilder_Door/LargeBlockCentredDoor  
 * MyObjectBuilder_Door/LargeBlockCentredDoorGlass  
 * MyObjectBuilder_Door/LargeBlockEvenWideDoor  
@@ -115,6 +117,7 @@ Describes door block (PB scripting interface)
 * MyObjectBuilder_Door/LargeBlockSmallGate  
 * MyObjectBuilder_Door/SlidingHatchDoor  
 * MyObjectBuilder_Door/SlidingHatchDoorHalf  
+* MyObjectBuilder_Door/SmallBlockAngledDoorA  
 * MyObjectBuilder_Door/SmallBlockCentredDoor  
 * MyObjectBuilder_Door/SmallBlockCentredDoorGlass  
 * MyObjectBuilder_Door/SmallDoor  

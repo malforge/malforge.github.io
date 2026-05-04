@@ -8,23 +8,9 @@ public enum MyControlBindingType
 
 |Member|Description|
 |---|---|
+|Axis||
+|Button||
 |Empty||
 |Fake||
-|PressedOneModifierAxis||
-|PressedOneModifierButton||
-|PressedOneOfTwoModifierAxis||
-|PressedOneOfTwoModifierButton||
-|PressedThreeModifierAxis||
-|PressedThreeModifierButton||
-|PressedTwoModifierAxis||
-|PressedTwoModifierButton||
-|ReleasedOneModifierAxis||
-|ReleasedOneModifierButton||
-|ReleasedThreeModifierAxis||
-|ReleasedThreeModifierButton||
-|ReleasedTwoModifierAxis||
-|ReleasedTwoModifierButton||
-|SimpleAxis||
-|SimpleButton||
 |Undefined||
 

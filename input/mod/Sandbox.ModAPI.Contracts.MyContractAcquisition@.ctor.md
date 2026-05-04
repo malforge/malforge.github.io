@@ -1,6 +1,12 @@
 ## Summary
 
 ```csharp
+public MyContractAcquisition()
+```
+
+## Summary
+
+```csharp
 public MyContractAcquisition(long startBlockId, int moneyReward, int collateral, int duration, long endBlockId, MyDefinitionId itemTypeId, int itemAmount)
 ```
 

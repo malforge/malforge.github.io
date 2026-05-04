@@ -77,6 +77,7 @@ public class MyObjectBuilder_GasTankDefinition: MyObjectBuilder_ProductionBlockD
 |[InventoryMaxVolume](VRage.Game.MyObjectBuilder_ProductionBlockDefinition@InventoryMaxVolume)|_Inherited from [MyObjectBuilder_ProductionBlockDefinition](VRage.Game.MyObjectBuilder_ProductionBlockDefinition)_|
 |[InventorySize](VRage.Game.MyObjectBuilder_ProductionBlockDefinition@InventorySize)|_Inherited from [MyObjectBuilder_ProductionBlockDefinition](VRage.Game.MyObjectBuilder_ProductionBlockDefinition)_|
 |[IsAirTight](VRage.Game.MyObjectBuilder_CubeBlockDefinition@IsAirTight)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
+|[IsInventoryItem](VRage.Game.MyObjectBuilder_CubeBlockDefinition@IsInventoryItem)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[IsStandAlone](VRage.Game.MyObjectBuilder_CubeBlockDefinition@IsStandAlone)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Mass](VRage.Game.MyObjectBuilder_PhysicalModelDefinition@Mass)|_Inherited from [MyObjectBuilder_PhysicalModelDefinition](VRage.Game.MyObjectBuilder_PhysicalModelDefinition)_|
 |[MaxIntegrity](VRage.Game.MyObjectBuilder_CubeBlockDefinition@MaxIntegrity)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
@@ -107,6 +108,7 @@ public class MyObjectBuilder_GasTankDefinition: MyObjectBuilder_ProductionBlockD
 |[ScreenAreas](VRage.Game.MyObjectBuilder_FunctionalBlockDefinition@ScreenAreas)|_Inherited from [MyObjectBuilder_FunctionalBlockDefinition](VRage.Game.MyObjectBuilder_FunctionalBlockDefinition)_|
 |[SilenceableByShipSoundSystem](VRage.Game.MyObjectBuilder_CubeBlockDefinition@SilenceableByShipSoundSystem)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[SimpleUpdateVisualOnSkinChange](VRage.Game.MyObjectBuilder_CubeBlockDefinition@SimpleUpdateVisualOnSkinChange)|Set to true if you dont want to reset subpart positions or reload the whole model on skin change<br /><br />_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
+|[SingleBlockGridVoxelPlacement](VRage.Game.MyObjectBuilder_CubeBlockDefinition@SingleBlockGridVoxelPlacement)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Size](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Size)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Skeleton](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Skeleton)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[StandbyPowerConsumption](VRage.Game.MyObjectBuilder_ProductionBlockDefinition@StandbyPowerConsumption)|_Inherited from [MyObjectBuilder_ProductionBlockDefinition](VRage.Game.MyObjectBuilder_ProductionBlockDefinition)_|

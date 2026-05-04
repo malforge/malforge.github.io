@@ -53,15 +53,15 @@
                 <h1>StoreGrid</h1>
             </div>
 <h2 id="summary">Summary</h2>
-<pre><code class="language-csharp">public bool StoreGrid(MyCubeGrid grid, ulong? creator, string name, bool takeAll)
+<pre><code class="language-csharp">public ValueTuple&lt;Guid?, MyObjectBuilder_SavedGridDetails&gt; StoreGrid(MyCubeGrid rootGrid, string name, ulong? creator, bool takeAll)
 </code></pre>
 <h2 id="returns">Returns</h2>
-<p><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6">bool</a></p>
+<p>ValueTuple&lt;Guid?, MyObjectBuilder_SavedGridDetails&gt; <sub>prohibited</sub></p>
 <h2 id="parameters">Parameters</h2>
 <ul>
-<li><a href="Sandbox.Game.Entities.MyCubeGrid.html">MyCubeGrid</a> grid</li>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6">ulong?</a> creator</li>
+<li><a href="Sandbox.Game.Entities.MyCubeGrid.html">MyCubeGrid</a> rootGrid</li>
 <li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6">string</a> name</li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6">ulong?</a> creator</li>
 <li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6">bool</a> takeAll</li>
 </ul>
 

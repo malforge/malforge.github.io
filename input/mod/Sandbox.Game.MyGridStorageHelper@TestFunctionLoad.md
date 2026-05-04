@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public MyGridLoadFuture TestFunctionLoad(MyPositionAndOrientation transform, Action onCompletion)
+public MyGridLoadFuture TestFunctionLoad(MyPositionAndOrientation transform, Action<MyGridLoadFuture> onCompletion)
 ```
 
 ## Returns
@@ -11,4 +11,4 @@ public MyGridLoadFuture TestFunctionLoad(MyPositionAndOrientation transform, Act
 ## Parameters
 
 * [MyPositionAndOrientation](VRage.MyPositionAndOrientation) transform
-* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action?view=netframework-4.6) onCompletion
+* [Action<MyGridLoadFuture>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6) onCompletion

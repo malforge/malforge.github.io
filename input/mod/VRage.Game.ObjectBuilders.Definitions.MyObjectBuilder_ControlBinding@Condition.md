@@ -1,10 +1,10 @@
 ## Summary
 
 ```csharp
-public MyPredefinedContitions Condition
+public MyPredefinedConditions Condition
 ```
 
 ## Returns
 
-[MyPredefinedContitions](VRage.Game.ObjectBuilders.Definitions.MyPredefinedContitions)
+[MyPredefinedConditions](VRage.Game.ObjectBuilders.Definitions.MyPredefinedConditions)
 

@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public int MoneyReward { get; }
+public int MoneyReward { get; set; }
 ```
 
 ## Returns

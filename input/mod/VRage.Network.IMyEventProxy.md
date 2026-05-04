@@ -22,6 +22,7 @@ Interface which only marks class as event owner. Object itself must be replicate
 * [MyCargoContainerInventoryBagEntity](Sandbox.Game.Entities.MyCargoContainerInventoryBagEntity)  
 * [MyCharacterDetectorComponent](Sandbox.Game.Entities.Character.Components.MyCharacterDetectorComponent)  
 * [MyCharacterJetpackComponent](Sandbox.Game.Entities.Character.Components.MyCharacterJetpackComponent)  
+* [MyCharacterLadderComponent](Sandbox.Game.Entities.Character.Components.MyCharacterLadderComponent)  
 * [MyCharacterOxygenComponent](Sandbox.Game.Entities.Character.Components.MyCharacterOxygenComponent)  
 * [MyCharacterRagdollComponent](Sandbox.Game.Entities.Character.Components.MyCharacterRagdollComponent)  
 * [MyCharacterRaycastDetectorComponent](Sandbox.Game.Entities.Character.Components.MyCharacterRaycastDetectorComponent)  

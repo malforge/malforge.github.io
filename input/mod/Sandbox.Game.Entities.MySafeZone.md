@@ -206,6 +206,7 @@ public class MySafeZone: MyEntity, IMyEntity, IMyEntity, IMyEventProxy, IMyEvent
 |[Contains(BoundingBoxD)](Sandbox.Game.Entities.MySafeZone@Contains)||
 |[Contains(BoundingSphereD, ContainmentType)](Sandbox.Game.Entities.MySafeZone@Contains)||
 |[GetDetectorIntersectionWithLine(ref LineD, out Vector3D?)](Sandbox.Game.Entities.MySafeZone@GetDetectorIntersectionWithLine)||
+|[GetGridsInside()](Sandbox.Game.Entities.MySafeZone@GetGridsInside)||
 |[GetIntersectionWithLine(ref LineD, out Vector3D?, bool, IntersectionFlags)](Sandbox.Game.Entities.MySafeZone@GetIntersectionWithLine)||
 |[GetObjectBuilder(bool)](Sandbox.Game.Entities.MySafeZone@GetObjectBuilder)||
 |[Init(MyObjectBuilder_EntityBase)](Sandbox.Game.Entities.MySafeZone@Init)||

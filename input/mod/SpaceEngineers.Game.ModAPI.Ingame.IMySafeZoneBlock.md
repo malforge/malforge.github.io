@@ -84,5 +84,6 @@ Safe zone block interface
 * [IMySafeZoneBlock](SpaceEngineers.Game.ModAPI.IMySafeZoneBlock)
 
 **Type Definitions:**  
-* MyObjectBuilder_SafeZoneBlock/SafeZoneBlock
+* MyObjectBuilder_SafeZoneBlock/SafeZoneBlock  
+* MyObjectBuilder_SafeZoneBlock/SafeZoneBlockReskin
 

@@ -32,6 +32,7 @@ public class MyEntity3DSoundEmitter: IMy3DSoundEmitter
 |[LastSoundData](Sandbox.Game.Entities.MyEntity3DSoundEmitter@LastSoundData)||
 |[Loop](Sandbox.Game.Entities.MyEntity3DSoundEmitter@Loop)||
 |[Plays2D](Sandbox.Game.Entities.MyEntity3DSoundEmitter@Plays2D)||
+|[SecondarySound](Sandbox.Game.Entities.MyEntity3DSoundEmitter@SecondarySound)||
 |[Sound](Sandbox.Game.Entities.MyEntity3DSoundEmitter@Sound)||
 |[SoundId](Sandbox.Game.Entities.MyEntity3DSoundEmitter@SoundId)||
 |[SoundPair](Sandbox.Game.Entities.MyEntity3DSoundEmitter@SoundPair)||

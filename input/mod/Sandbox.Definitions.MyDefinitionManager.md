@@ -109,6 +109,7 @@ public class MyDefinitionManager: MyDefinitionManagerBase
 |[GetFactionName(string)](Sandbox.Definitions.MyDefinitionManager@GetFactionName)||
 |[GetFactionNameDefinitions()](Sandbox.Definitions.MyDefinitionManager@GetFactionNameDefinitions)||
 |[GetFactionsFromDefinition()](Sandbox.Definitions.MyDefinitionManager@GetFactionsFromDefinition)|Gets all factions from definition.|
+|[GetFactionStationAdvertDefinitions()](Sandbox.Definitions.MyDefinitionManager@GetFactionStationAdvertDefinitions)||
 |[GetFirstRespawnShip()](Sandbox.Definitions.MyDefinitionManager@GetFirstRespawnShip)||
 |[GetGridCreator(MyStringHash)](Sandbox.Definitions.MyDefinitionManager@GetGridCreator)||
 |[GetGridCreatorDefinitions()](Sandbox.Definitions.MyDefinitionManager@GetGridCreatorDefinitions)||
@@ -167,6 +168,7 @@ public class MyDefinitionManager: MyDefinitionManagerBase
 |[GetSoundDefinition(MyStringHash)](Sandbox.Definitions.MyDefinitionManager@GetSoundDefinition)||
 |[GetSoundDefinitions()](Sandbox.Definitions.MyDefinitionManager@GetSoundDefinitions)||
 |[GetSpawnGroupDefinition(int)](Sandbox.Definitions.MyDefinitionManager@GetSpawnGroupDefinition)||
+|[GetSpawnGroupDefinition(MyDefinitionId)](Sandbox.Definitions.MyDefinitionManager@GetSpawnGroupDefinition)||
 |[GetSpawnGroupDefinitions()](Sandbox.Definitions.MyDefinitionManager@GetSpawnGroupDefinitions)||
 |[GetStoryCategoryDefinition(MyDefinitionId)](Sandbox.Definitions.MyDefinitionManager@GetStoryCategoryDefinition)|Get story category by id|
 |[GetStoryDefinition(MyDefinitionId)](Sandbox.Definitions.MyDefinitionManager@GetStoryDefinition)|Get story by id|
@@ -218,12 +220,14 @@ public class MyDefinitionManager: MyDefinitionManagerBase
 |[TryGetComponentDefinition(MyDefinitionId, out MyComponentDefinition)](Sandbox.Definitions.MyDefinitionManager@TryGetComponentDefinition)||
 |[TryGetContainerDefinition(MyDefinitionId, out MyContainerDefinition)](Sandbox.Definitions.MyDefinitionManager@TryGetContainerDefinition)||
 |[TryGetContainerDefinition(MyObjectBuilderType, MyStringHash, out MyContainerDefinition)](Sandbox.Definitions.MyDefinitionManager@TryGetContainerDefinition)||
+|[TryGetContractTypeDefinition(MyDefinitionId, out MyContractTypeDefinition)](Sandbox.Definitions.MyDefinitionManager@TryGetContractTypeDefinition)||
 |[TryGetCubeBlockDefinition(MyDefinitionId, out MyCubeBlockDefinition)](Sandbox.Definitions.MyDefinitionManager@TryGetCubeBlockDefinition)||
 |[TryGetDefinition<T>(MyDefinitionId, out T)](Sandbox.Definitions.MyDefinitionManager@TryGetDefinition{T})||
 |[TryGetDefinitionGroup(string)](Sandbox.Definitions.MyDefinitionManager@TryGetDefinitionGroup)||
 |[TryGetDefinitionsByTypeId(MyObjectBuilderType, HashSet<MyDefinitionId>)](Sandbox.Definitions.MyDefinitionManager@TryGetDefinitionsByTypeId)||
 |[TryGetEntityComponentDefinition(MyDefinitionId, out MyComponentDefinitionBase)](Sandbox.Definitions.MyDefinitionManager@TryGetEntityComponentDefinition)||
 |[TryGetFactionDefinition(string)](Sandbox.Definitions.MyDefinitionManager@TryGetFactionDefinition)||
+|[TryGetGasPropertyDefinition(MyDefinitionId, out MyGasProperties)](Sandbox.Definitions.MyDefinitionManager@TryGetGasPropertyDefinition)||
 |[TryGetHandItemDefinition(ref MyDefinitionId)](Sandbox.Definitions.MyDefinitionManager@TryGetHandItemDefinition)||
 |[TryGetHandItemForPhysicalItem(MyDefinitionId)](Sandbox.Definitions.MyDefinitionManager@TryGetHandItemForPhysicalItem)||
 |[TryGetIngotBlueprintDefinition(MyObjectBuilder_Base, out MyBlueprintDefinitionBase)](Sandbox.Definitions.MyDefinitionManager@TryGetIngotBlueprintDefinition)||

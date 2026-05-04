@@ -1,12 +1,12 @@
 ## Summary
 
 ```csharp
-public MyContractCustom(MyDefinitionId definitionId, long startBlockId, int moneyReward, int collateral, int duration, string name, string description, int reputationReward, int failReputationPrice, long? endBlockId)
+public MyContractCustom(MyDefinitionId contractTypeDefinitionId, long startBlockId, int moneyReward, int collateral, int duration, string name, string description, int reputationReward, int failReputationPrice, long? endBlockId)
 ```
 
 ## Parameters
 
-* [MyDefinitionId](VRage.Game.MyDefinitionId) definitionId
+* [MyDefinitionId](VRage.Game.MyDefinitionId) contractTypeDefinitionId
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) startBlockId
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) moneyReward
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) collateral

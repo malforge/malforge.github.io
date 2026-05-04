@@ -168,7 +168,6 @@ public class MyAdvancedDoor: MyDoorBase, IMyEntity, IMyEntity, IMyComponentOwner
 |[UpdateAfterSimulation()](Sandbox.Game.Entities.MyAdvancedDoor@UpdateAfterSimulation)||
 |[UpdateOnceBeforeFrame()](Sandbox.Game.Entities.MyAdvancedDoor@UpdateOnceBeforeFrame)||
 |[UpdateSoundEmitters()](Sandbox.Game.Entities.MyAdvancedDoor@UpdateSoundEmitters)||
-|[UpdateVisual()](Sandbox.Game.Entities.MyAdvancedDoor@UpdateVisual)||
 |[AddUpgradeValue(string, float)](VRage.Game.ModAPI.IMyCubeBlock@AddUpgradeValue)|Preferred way of registering a block for upgrades Adding directly to the dictionary can have unintended consequences when multiple mods are involved.<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.IMyCubeBlock)_|
 |[BeforeSave()](VRage.ModAPI.IMyEntity@BeforeSave)|Called before method GetObjectBuilder, when saving sector<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
 |[CalcLocalMatrix(out Matrix, out string)](VRage.Game.ModAPI.IMyCubeBlock@CalcLocalMatrix)|Calculates local matrix, and currentModel<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.IMyCubeBlock)_|

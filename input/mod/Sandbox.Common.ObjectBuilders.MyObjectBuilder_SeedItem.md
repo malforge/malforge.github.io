@@ -10,6 +10,7 @@ public class MyObjectBuilder_SeedItem: MyObjectBuilder_PhysicalObject
 |---|---|
 |[DurabilityHP](VRage.Game.MyObjectBuilder_PhysicalObject@DurabilityHP)|This is used for GUI to show the amount of health points (durability) of the weapons and tools. This is updated through Durability entity component if entity exists..<br /><br />_Inherited from [MyObjectBuilder_PhysicalObject](VRage.Game.MyObjectBuilder_PhysicalObject)_|
 |[Flags](VRage.Game.MyObjectBuilder_PhysicalObject@Flags)|_Inherited from [MyObjectBuilder_PhysicalObject](VRage.Game.MyObjectBuilder_PhysicalObject)_|
+|[UniqueId](VRage.Game.MyObjectBuilder_PhysicalObject@UniqueId)|Globally unique identifier for tracking specific item instances across inventory transfers. When set (non-empty), this item cannot stack with any other items.<br /><br />_Inherited from [MyObjectBuilder_PhysicalObject](VRage.Game.MyObjectBuilder_PhysicalObject)_|
 
 ## Properties
 
@@ -39,6 +40,7 @@ public class MyObjectBuilder_SeedItem: MyObjectBuilder_PhysicalObject
 |[GetObjectId()](VRage.Game.MyObjectBuilder_PhysicalObject@GetObjectId)|_Inherited from [MyObjectBuilder_PhysicalObject](VRage.Game.MyObjectBuilder_PhysicalObject)_|
 |[ShouldSerializeDurabilityHP()](VRage.Game.MyObjectBuilder_PhysicalObject@ShouldSerializeDurabilityHP)|_Inherited from [MyObjectBuilder_PhysicalObject](VRage.Game.MyObjectBuilder_PhysicalObject)_|
 |[ShouldSerializeSubtypeId()](VRage.ObjectBuilders.MyObjectBuilder_Base@ShouldSerializeSubtypeId)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
+|[ShouldSerializeUniqueId()](VRage.Game.MyObjectBuilder_PhysicalObject@ShouldSerializeUniqueId)|_Inherited from [MyObjectBuilder_PhysicalObject](VRage.Game.MyObjectBuilder_PhysicalObject)_|
 
 **Inheritance:**   [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base) ˃ [MyObjectBuilder_PhysicalObject](VRage.Game.MyObjectBuilder_PhysicalObject)
 

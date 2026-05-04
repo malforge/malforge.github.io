@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public long StartBlockId { get; }
+public long StartBlockId { get; set; }
 ```
 
 ## Returns

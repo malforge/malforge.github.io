@@ -58,8 +58,6 @@ public class MyCryoChamberDefinition: MyCockpitDefinition
 |[DestroySound](Sandbox.Definitions.MyCubeBlockDefinition@DestroySound)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[DetonateChance](Sandbox.Definitions.MyCubeBlockDefinition@DetonateChance)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[DisassembleRatio](Sandbox.Definitions.MyCubeBlockDefinition@DisassembleRatio)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
-|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
-|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DisplayNameVariant](Sandbox.Definitions.MyCubeBlockDefinition@DisplayNameVariant)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[EdgeType](Sandbox.Definitions.MyCubeBlockDefinition@EdgeType)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[Effects](Sandbox.Definitions.MyCubeBlockDefinition@Effects)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
@@ -106,6 +104,7 @@ public class MyCryoChamberDefinition: MyCockpitDefinition
 |[RaycastOffset](Sandbox.Definitions.MyShipControllerDefinition@RaycastOffset)|_Inherited from [MyShipControllerDefinition](Sandbox.Definitions.MyShipControllerDefinition)_|
 |[ScreenAreas](Sandbox.Definitions.MyFunctionalBlockDefinition@ScreenAreas)|_Inherited from [MyFunctionalBlockDefinition](Sandbox.Definitions.MyFunctionalBlockDefinition)_|
 |[SilenceableByShipSoundSystem](Sandbox.Definitions.MyCubeBlockDefinition@SilenceableByShipSoundSystem)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
+|[SingleBlockGridVoxelPlacement](Sandbox.Definitions.MyCubeBlockDefinition@SingleBlockGridVoxelPlacement)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[Size](Sandbox.Definitions.MyCubeBlockDefinition@Size)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[Skeleton](Sandbox.Definitions.MyCubeBlockDefinition@Skeleton)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[TagDefinition](Sandbox.Definitions.MyCubeBlockDefinition@TagDefinition)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
@@ -131,11 +130,14 @@ public class MyCryoChamberDefinition: MyCockpitDefinition
 |[Center](Sandbox.Definitions.MyCubeBlockDefinition@Center)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[DescriptionText](VRage.Game.MyDefinitionBase@DescriptionText)|Use this property when showing description in GUI, as it takes into account more complex description construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Direction](Sandbox.Definitions.MyCubeBlockDefinition@Direction)|Allowed cube block directions.<br /><br />_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
+|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DisplayNameText](Sandbox.Definitions.MyCubeBlockDefinition@DisplayNameText)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[DisplayNameText](VRage.Game.MyDefinitionBase@DisplayNameText)|Use this property when showing name in GUI instead of DisplayName. This takes into account more complex name construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DLCs](VRage.Game.MyDefinitionBase@DLCs)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[GuiVisible](Sandbox.Definitions.MyCubeBlockDefinition@GuiVisible)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[IsGeneratedBlock](Sandbox.Definitions.MyCubeBlockDefinition@IsGeneratedBlock)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
+|[IsInventoryItem](Sandbox.Definitions.MyCubeBlockDefinition@IsInventoryItem)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[Mirrored](Sandbox.Definitions.MyCubeBlockDefinition@Mirrored)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[MirroringBlock](Sandbox.Definitions.MyCubeBlockDefinition@MirroringBlock)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[MirroringCenter](Sandbox.Definitions.MyCubeBlockDefinition@MirroringCenter)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|

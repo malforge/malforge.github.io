@@ -67,6 +67,7 @@ public class MyObjectBuilder_ReflectorBlockDefinition: MyObjectBuilder_LightingB
 |[Icons](VRage.Game.MyObjectBuilder_DefinitionBase@Icons)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[Id](VRage.Game.MyObjectBuilder_DefinitionBase@Id)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[IsAirTight](VRage.Game.MyObjectBuilder_CubeBlockDefinition@IsAirTight)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
+|[IsInventoryItem](VRage.Game.MyObjectBuilder_CubeBlockDefinition@IsInventoryItem)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[IsStandAlone](VRage.Game.MyObjectBuilder_CubeBlockDefinition@IsStandAlone)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[LightBlinkIntervalSeconds](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingBlockDefinition@LightBlinkIntervalSeconds)|_Inherited from [MyObjectBuilder_LightingBlockDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingBlockDefinition)_|
 |[LightBlinkLenght](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingBlockDefinition@LightBlinkLenght)|_Inherited from [MyObjectBuilder_LightingBlockDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingBlockDefinition)_|
@@ -108,6 +109,7 @@ public class MyObjectBuilder_ReflectorBlockDefinition: MyObjectBuilder_LightingB
 |[ScreenAreas](VRage.Game.MyObjectBuilder_FunctionalBlockDefinition@ScreenAreas)|_Inherited from [MyObjectBuilder_FunctionalBlockDefinition](VRage.Game.MyObjectBuilder_FunctionalBlockDefinition)_|
 |[SilenceableByShipSoundSystem](VRage.Game.MyObjectBuilder_CubeBlockDefinition@SilenceableByShipSoundSystem)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[SimpleUpdateVisualOnSkinChange](VRage.Game.MyObjectBuilder_CubeBlockDefinition@SimpleUpdateVisualOnSkinChange)|Set to true if you dont want to reset subpart positions or reload the whole model on skin change<br /><br />_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
+|[SingleBlockGridVoxelPlacement](VRage.Game.MyObjectBuilder_CubeBlockDefinition@SingleBlockGridVoxelPlacement)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Size](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Size)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Skeleton](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Skeleton)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[SpotLightEmissiveMaterial](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingBlockDefinition@SpotLightEmissiveMaterial)|_Inherited from [MyObjectBuilder_LightingBlockDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingBlockDefinition)_|

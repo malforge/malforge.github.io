@@ -11,6 +11,7 @@ public class MyObjectBuilder_StationsListDefinition: MyObjectBuilder_DefinitionB
 |[GeneratedItemsContainerType](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StationsListDefinition@GeneratedItemsContainerType)||
 |[SpawnDistance](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StationsListDefinition@SpawnDistance)||
 |[StationNames](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StationsListDefinition@StationNames)||
+|[StationPrefabsFactionTypes](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StationsListDefinition@StationPrefabsFactionTypes)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[Description](VRage.Game.MyObjectBuilder_DefinitionBase@Description)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[DescriptionArgs](VRage.Game.MyObjectBuilder_DefinitionBase@DescriptionArgs)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|

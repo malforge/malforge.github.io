@@ -10,6 +10,7 @@ public class MyObjectBuilder_UseObjectsComponentDefinition: MyObjectBuilder_Comp
 |---|---|
 |[LoadFromModel](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_UseObjectsComponentDefinition@LoadFromModel)||
 |[UseObjectFromModelBBox](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_UseObjectsComponentDefinition@UseObjectFromModelBBox)||
+|[UseObjectTypeOverride](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_UseObjectsComponentDefinition@UseObjectTypeOverride)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[ComponentType](VRage.Game.MyObjectBuilder_ComponentDefinitionBase@ComponentType)|_Inherited from [MyObjectBuilder_ComponentDefinitionBase](VRage.Game.MyObjectBuilder_ComponentDefinitionBase)_|
 |[Description](VRage.Game.MyObjectBuilder_DefinitionBase@Description)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|

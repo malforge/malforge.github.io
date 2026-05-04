@@ -8,6 +8,8 @@ public class MySpawnGroupDefinition: MyDefinitionBase
 
 |Member|Description|
 |---|---|
+|[static OnSpawnGroupGridsCreated](Sandbox.Definitions.MySpawnGroupDefinition@OnSpawnGroupGridsCreated)||
+|[ContractTriggerSettings](Sandbox.Definitions.MySpawnGroupDefinition@ContractTriggerSettings)||
 |[EnableNpcResources](Sandbox.Definitions.MySpawnGroupDefinition@EnableNpcResources)||
 |[EnableTradingStationVisit](Sandbox.Definitions.MySpawnGroupDefinition@EnableTradingStationVisit)||
 |[FactionSubEncounters](Sandbox.Definitions.MySpawnGroupDefinition@FactionSubEncounters)||
@@ -26,8 +28,6 @@ public class MySpawnGroupDefinition: MyDefinitionBase
 |[DescriptionArgs](VRage.Game.MyDefinitionBase@DescriptionArgs)|String used for shortcuts used in description<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DescriptionEnum](VRage.Game.MyDefinitionBase@DescriptionEnum)|Enum used for localization of description. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DescriptionString](VRage.Game.MyDefinitionBase@DescriptionString)|String used for user created description which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
-|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
-|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Enabled](VRage.Game.MyDefinitionBase@Enabled)|Definition can be disabled by mod, then it will be removed from definition manager<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Icons](VRage.Game.MyDefinitionBase@Icons)|Icons for the definition, they are used from top to bottom.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Id](VRage.Game.MyDefinitionBase@Id)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
@@ -39,6 +39,7 @@ public class MySpawnGroupDefinition: MyDefinitionBase
 |---|---|
 |[FactionSubtypeIds](Sandbox.Definitions.MySpawnGroupDefinition@FactionSubtypeIds)||
 |[FactionTypesSubtypeIds](Sandbox.Definitions.MySpawnGroupDefinition@FactionTypesSubtypeIds)||
+|[HasContractTrigger](Sandbox.Definitions.MySpawnGroupDefinition@HasContractTrigger)||
 |[IsGlobalEncounter](Sandbox.Definitions.MySpawnGroupDefinition@IsGlobalEncounter)||
 |[IsPirate](Sandbox.Definitions.MySpawnGroupDefinition@IsPirate)||
 |[IsPlanetaryEncounter](Sandbox.Definitions.MySpawnGroupDefinition@IsPlanetaryEncounter)||
@@ -49,6 +50,8 @@ public class MySpawnGroupDefinition: MyDefinitionBase
 |[MinHostileSubEncounters](Sandbox.Definitions.MySpawnGroupDefinition@MinHostileSubEncounters)|Min count of hostile sub encounters to spawn|
 |[SpawnRadius](Sandbox.Definitions.MySpawnGroupDefinition@SpawnRadius)||
 |[DescriptionText](VRage.Game.MyDefinitionBase@DescriptionText)|Use this property when showing description in GUI, as it takes into account more complex description construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DisplayNameText](VRage.Game.MyDefinitionBase@DisplayNameText)|Use this property when showing name in GUI instead of DisplayName. This takes into account more complex name construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DLCs](VRage.Game.MyDefinitionBase@DLCs)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 

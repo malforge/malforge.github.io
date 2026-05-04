@@ -8,6 +8,15 @@ public class MyAnimalBotDefinition: MyAgentDefinition
 
 |Member|Description|
 |---|---|
+|[static DEFAULT_AGENT_HEIGHT](Sandbox.Definitions.MyAgentDefinition@DEFAULT_AGENT_HEIGHT)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[static DEFAULT_AGENT_MAX_CLIMB](Sandbox.Definitions.MyAgentDefinition@DEFAULT_AGENT_MAX_CLIMB)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[static DEFAULT_AGENT_MAX_SLOPE](Sandbox.Definitions.MyAgentDefinition@DEFAULT_AGENT_MAX_SLOPE)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[static DEFAULT_AGENT_RADIUS](Sandbox.Definitions.MyAgentDefinition@DEFAULT_AGENT_RADIUS)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[static DEFAULT_PATH_ARRIVAL_RADIUS](Sandbox.Definitions.MyAgentDefinition@DEFAULT_PATH_ARRIVAL_RADIUS)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[AgentHeight](Sandbox.Definitions.MyAgentDefinition@AgentHeight)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[AgentMaxClimb](Sandbox.Definitions.MyAgentDefinition@AgentMaxClimb)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[AgentMaxSlope](Sandbox.Definitions.MyAgentDefinition@AgentMaxSlope)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[AgentRadius](Sandbox.Definitions.MyAgentDefinition@AgentRadius)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AttackLength](Sandbox.Definitions.MyAgentDefinition@AttackLength)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AttackRadius](Sandbox.Definitions.MyAgentDefinition@AttackRadius)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AttackSound](Sandbox.Definitions.MyAgentDefinition@AttackSound)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
@@ -16,35 +25,45 @@ public class MyAnimalBotDefinition: MyAgentDefinition
 |[BehaviorType](Sandbox.Definitions.MyBotDefinition@BehaviorType)|_Inherited from [MyBotDefinition](Sandbox.Definitions.MyBotDefinition)_|
 |[BotBehaviorTree](Sandbox.Definitions.MyBotDefinition@BotBehaviorTree)|_Inherited from [MyBotDefinition](Sandbox.Definitions.MyBotDefinition)_|
 |[BotModel](Sandbox.Definitions.MyAgentDefinition@BotModel)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[CanOpenDoors](Sandbox.Definitions.MyAgentDefinition@CanOpenDoors)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[CharacterDamage](Sandbox.Definitions.MyAgentDefinition@CharacterDamage)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[Commandable](Sandbox.Definitions.MyBotDefinition@Commandable)|_Inherited from [MyBotDefinition](Sandbox.Definitions.MyBotDefinition)_|
 |[Context](VRage.Game.MyDefinitionBase@Context)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DescriptionArgs](VRage.Game.MyDefinitionBase@DescriptionArgs)|String used for shortcuts used in description<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DescriptionEnum](VRage.Game.MyDefinitionBase@DescriptionEnum)|Enum used for localization of description. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DescriptionString](VRage.Game.MyDefinitionBase@DescriptionString)|String used for user created description which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
-|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
-|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[DisableBroadcasting](Sandbox.Definitions.MyAgentDefinition@DisableBroadcasting)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[DoorOpenDistance](Sandbox.Definitions.MyAgentDefinition@DoorOpenDistance)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[Enabled](VRage.Game.MyDefinitionBase@Enabled)|Definition can be disabled by mod, then it will be removed from definition manager<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[FactionTag](Sandbox.Definitions.MyAgentDefinition@FactionTag)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[GridDamage](Sandbox.Definitions.MyAgentDefinition@GridDamage)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[Icons](VRage.Game.MyDefinitionBase@Icons)|Icons for the definition, they are used from top to bottom.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Id](VRage.Game.MyDefinitionBase@Id)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[IgnoredByAITargeting](Sandbox.Definitions.MyAgentDefinition@IgnoredByAITargeting)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[InventoryContainerTypeId](Sandbox.Definitions.MyAgentDefinition@InventoryContainerTypeId)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[InventoryContentGenerated](Sandbox.Definitions.MyAgentDefinition@InventoryContentGenerated)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[Invulnerable](Sandbox.Definitions.MyAgentDefinition@Invulnerable)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[JoinSpawnerFaction](Sandbox.Definitions.MyAgentDefinition@JoinSpawnerFaction)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[PathArrivalRadius](Sandbox.Definitions.MyAgentDefinition@PathArrivalRadius)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[Public](VRage.Game.MyDefinitionBase@Public)|Indicates if definition should be offered in Cube builder<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[RemoveAfterDeath](Sandbox.Definitions.MyAgentDefinition@RemoveAfterDeath)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[RemoveTimeMs](Sandbox.Definitions.MyAgentDefinition@RemoveTimeMs)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[RespawnTimeMs](Sandbox.Definitions.MyAgentDefinition@RespawnTimeMs)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[SteeringBehaviors](Sandbox.Definitions.MyAgentDefinition@SteeringBehaviors)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[TargetCharacters](Sandbox.Definitions.MyAgentDefinition@TargetCharacters)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[TargetGrids](Sandbox.Definitions.MyAgentDefinition@TargetGrids)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[TargetType](Sandbox.Definitions.MyAgentDefinition@TargetType)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[TypeDefinitionId](Sandbox.Definitions.MyBotDefinition@TypeDefinitionId)|_Inherited from [MyBotDefinition](Sandbox.Definitions.MyBotDefinition)_|
+|[UseFactionColor](Sandbox.Definitions.MyAgentDefinition@UseFactionColor)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[WildlifeCategory](Sandbox.Definitions.MyAgentDefinition@WildlifeCategory)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 
 ## Properties
 
 |Member|Description|
 |---|---|
 |[DescriptionText](VRage.Game.MyDefinitionBase@DescriptionText)|Use this property when showing description in GUI, as it takes into account more complex description construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DisplayNameText](VRage.Game.MyDefinitionBase@DisplayNameText)|Use this property when showing name in GUI instead of DisplayName. This takes into account more complex name construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DLCs](VRage.Game.MyDefinitionBase@DLCs)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 

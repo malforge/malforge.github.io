@@ -11,7 +11,9 @@ public class MyAmmoMagazineDefinition: MyPhysicalItemDefinition
 |[AmmoDefinitionId](Sandbox.Definitions.MyAmmoMagazineDefinition@AmmoDefinitionId)||
 |[Capacity](Sandbox.Definitions.MyAmmoMagazineDefinition@Capacity)||
 |[Category](Sandbox.Definitions.MyAmmoMagazineDefinition@Category)||
+|[AlwaysInStore](Sandbox.Definitions.MyPhysicalItemDefinition@AlwaysInStore)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[AvailableInSurvival](VRage.Game.MyDefinitionBase@AvailableInSurvival)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[CanPlayerOffer](Sandbox.Definitions.MyPhysicalItemDefinition@CanPlayerOffer)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[CanPlayerOrder](Sandbox.Definitions.MyPhysicalItemDefinition@CanPlayerOrder)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[CanSpawnFromScreen](Sandbox.Definitions.MyPhysicalItemDefinition@CanSpawnFromScreen)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[Context](VRage.Game.MyDefinitionBase@Context)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
@@ -22,8 +24,6 @@ public class MyAmmoMagazineDefinition: MyPhysicalItemDefinition
 |[DestroyedPieceId](Sandbox.Definitions.MyPhysicalItemDefinition@DestroyedPieceId)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[DestroyedPieces](Sandbox.Definitions.MyPhysicalItemDefinition@DestroyedPieces)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[DestroySound](Sandbox.Definitions.MyPhysicalItemDefinition@DestroySound)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
-|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
-|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Enabled](VRage.Game.MyDefinitionBase@Enabled)|Definition can be disabled by mod, then it will be removed from definition manager<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Health](Sandbox.Definitions.MyPhysicalItemDefinition@Health)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[Icons](VRage.Game.MyDefinitionBase@Icons)|Icons for the definition, they are used from top to bottom.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
@@ -55,6 +55,8 @@ public class MyAmmoMagazineDefinition: MyPhysicalItemDefinition
 |Member|Description|
 |---|---|
 |[DescriptionText](VRage.Game.MyDefinitionBase@DescriptionText)|Use this property when showing description in GUI, as it takes into account more complex description construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DisplayNameText](VRage.Game.MyDefinitionBase@DisplayNameText)|Use this property when showing name in GUI instead of DisplayName. This takes into account more complex name construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DLCs](VRage.Game.MyDefinitionBase@DLCs)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[ExtraInventoryTooltipLine](Sandbox.Definitions.MyPhysicalItemDefinition@ExtraInventoryTooltipLine)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|

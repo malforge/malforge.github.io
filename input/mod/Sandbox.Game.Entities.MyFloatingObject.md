@@ -29,6 +29,8 @@ public class MyFloatingObject: MyEntity, IMyEntity, IMyEntity, IMyUseObject, IMy
 |[ClosestDistanceToAnyPlayerSquared](Sandbox.Game.Entities.MyFloatingObject@ClosestDistanceToAnyPlayerSquared)||
 |[CreationTime](Sandbox.Game.Entities.MyFloatingObject@CreationTime)||
 |[Item](Sandbox.Game.Entities.MyFloatingObject@Item)||
+|[m_holdingLandingGears](Sandbox.Game.Entities.MyFloatingObject@m_holdingLandingGears)||
+|[m_holdingSafeZones](Sandbox.Game.Entities.MyFloatingObject@m_holdingSafeZones)||
 |[NumberOfFramesInsideVoxel](Sandbox.Game.Entities.MyFloatingObject@NumberOfFramesInsideVoxel)||
 |[OnRecreatedPhysics](Sandbox.Game.Entities.MyFloatingObject@OnRecreatedPhysics)||
 |[SyncWaitCounter](Sandbox.Game.Entities.MyFloatingObject@SyncWaitCounter)||
@@ -213,9 +215,13 @@ public class MyFloatingObject: MyEntity, IMyEntity, IMyEntity, IMyUseObject, IMy
 |---|---|
 |[static GetCubeBlockParent(MyEntity)](VRage.Game.Entity.MyEntity@GetCubeBlockParent)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[DoDamage(float, MyStringHash, bool, long, MyStringHash?)](Sandbox.Game.Entities.MyFloatingObject@DoDamage)||
+|[EnterSafezone(MySafeZone)](Sandbox.Game.Entities.MyFloatingObject@EnterSafezone)||
 |[GetObjectBuilder(bool)](Sandbox.Game.Entities.MyFloatingObject@GetObjectBuilder)||
 |[HasConstraints()](Sandbox.Game.Entities.MyFloatingObject@HasConstraints)||
 |[Init(MyObjectBuilder_EntityBase)](Sandbox.Game.Entities.MyFloatingObject@Init)||
+|[LandingGearAttached(IMyEntity)](Sandbox.Game.Entities.MyFloatingObject@LandingGearAttached)||
+|[LandingGearDetached(IMyEntity)](Sandbox.Game.Entities.MyFloatingObject@LandingGearDetached)||
+|[LeaveSafezone(MySafeZone)](Sandbox.Game.Entities.MyFloatingObject@LeaveSafezone)||
 |[OnAddedToScene(object)](Sandbox.Game.Entities.MyFloatingObject@OnAddedToScene)||
 |[OnDestroy()](Sandbox.Game.Entities.MyFloatingObject@OnDestroy)||
 |[OnReplicationEnded()](Sandbox.Game.Entities.MyFloatingObject@OnReplicationEnded)||
@@ -226,6 +232,7 @@ public class MyFloatingObject: MyEntity, IMyEntity, IMyEntity, IMyUseObject, IMy
 |[UpdateAfterSimulationParallel()](Sandbox.Game.Entities.MyFloatingObject@UpdateAfterSimulationParallel)||
 |[UpdateBeforeSimulationParallel()](Sandbox.Game.Entities.MyFloatingObject@UpdateBeforeSimulationParallel)||
 |[UpdateInternalState()](Sandbox.Game.Entities.MyFloatingObject@UpdateInternalState)||
+|[UpdateLinearDampening()](Sandbox.Game.Entities.MyFloatingObject@UpdateLinearDampening)||
 |[AddDebugRenderComponent(MyDebugRenderComponentBase)](VRage.Game.Entity.MyEntity@AddDebugRenderComponent)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[AddToGamePruningStructure()](VRage.Game.Entity.MyEntity@AddToGamePruningStructure)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[AfterPaste()](VRage.Game.Entity.MyEntity@AfterPaste)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|

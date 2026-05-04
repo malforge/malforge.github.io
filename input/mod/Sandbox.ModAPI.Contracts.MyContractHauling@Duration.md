@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public int Duration { get; }
+public int Duration { get; set; }
 ```
 
 ## Returns

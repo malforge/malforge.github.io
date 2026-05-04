@@ -10,6 +10,7 @@ public enum ReputationChangeReason
 |---|---|
 |Admin||
 |Contract||
+|Decay||
 |Hostility||
 |Mod||
 |None||

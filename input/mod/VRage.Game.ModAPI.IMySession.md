@@ -114,6 +114,7 @@ ModAPI giving access to MySession functions and properties for modders
 |[SetCameraController(MyCameraControllerEnum, IMyEntity, Vector3D?)](VRage.Game.ModAPI.IMySession@SetCameraController)|Sets mode of camera controller|
 |[SetComponentUpdateOrder(MySessionComponentBase, MyUpdateOrder)](VRage.Game.ModAPI.IMySession@SetComponentUpdateOrder)|Change the update order of a session component. There is a proxy for this method in the session component itself.|
 |[TryGetAdminSettings(ulong, out MyAdminSettingsEnum)](VRage.Game.ModAPI.IMySession@TryGetAdminSettings)|Gets enabled admins settings|
+|[TryGetComponentByInterfaceType<T>(out T)](VRage.Game.ModAPI.IMySession@TryGetComponentByInterfaceType{T})||
 |[Unload()](VRage.Game.ModAPI.IMySession@Unload)|Unloads current game session. Calls [UnloadDataComponents()](VRage.Game.ModAPI.IMySession@UnloadDataComponents) , [UnloadMultiplayer()](VRage.Game.ModAPI.IMySession@UnloadMultiplayer) |
 |[UnloadDataComponents()](VRage.Game.ModAPI.IMySession@UnloadDataComponents)|Unloads data components. Shouldn't be called directly. Use [Unload()](VRage.Game.ModAPI.IMySession@Unload) instead|
 |[UnloadMultiplayer()](VRage.Game.ModAPI.IMySession@UnloadMultiplayer)|Unloads data components. Shouldn't be called directly. Use [Unload()](VRage.Game.ModAPI.IMySession@Unload) instead|

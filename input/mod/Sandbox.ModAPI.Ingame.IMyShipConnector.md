@@ -100,6 +100,7 @@ Describes connector block (PB scripting interface)
 * MyObjectBuilder_ShipConnector/ConnectorSmall  
 * MyObjectBuilder_ShipConnector/LargeBlockInsetConnector  
 * MyObjectBuilder_ShipConnector/LargeBlockInsetConnectorSmall  
+* MyObjectBuilder_ShipConnector/LargeBlockStructural_PlatformConnector  
 * MyObjectBuilder_ShipConnector/SmallBlockInsetConnector  
 * MyObjectBuilder_ShipConnector/SmallBlockInsetConnectorMedium
 

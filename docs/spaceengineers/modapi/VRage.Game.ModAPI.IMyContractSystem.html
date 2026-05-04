@@ -113,6 +113,10 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="VRage.Game.ModAPI.IMyContractSystem@ActiveContracts.html">ActiveContracts</a></td>
+<td>List of active contracts</td>
+</tr>
+<tr>
 <td><a href="VRage.Game.ModAPI.IMyContractSystem@CustomCanActivateContract.html">CustomCanActivateContract</a></td>
 <td>Gets or sets function that is triggered when player trying to take contract First argument - ContractId, Second - IdentityId</td>
 </tr>
@@ -123,6 +127,10 @@
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContractSystem@CustomNeedsUpdate.html">CustomNeedsUpdate</a></td>
 <td>Gets or sets function that is triggered each 100 frames per each contract.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyContractSystem@InactiveContracts.html">InactiveContracts</a></td>
+<td>List of inactive contracts</td>
 </tr>
 </tbody>
 </table>
@@ -136,8 +144,24 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="VRage.Game.ModAPI.IMyContractSystem@AddContract.html">AddContract(IMyContract)</a></td>
-<td>Adds the contract</td>
+<td><a href="VRage.Game.ModAPI.IMyContractSystem@AcceptContract.html">AcceptContract(long, long)</a></td>
+<td>Accepts contract for specified player</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyContractSystem@AddContract.html">AddContract(IMyContract, long)</a></td>
+<td>Adds the contract for the block or for faction station</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyContractSystem@GetAvailableContractsForBlock.html">GetAvailableContractsForBlock(long)</a></td>
+<td>Gets available (inactive) contracts for block. This list does not contain contracts for stations.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyContractSystem@GetAvailableContractsForFactionStation.html">GetAvailableContractsForFactionStation(long)</a></td>
+<td>Gets available (inactive) contracts for station. This list contains only NPC faction stations contracts.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyContractSystem@GetContractById.html">GetContractById(long)</a></td>
+<td>Gets existing contract (active or inactive)</td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContractSystem@GetContractDefinitionId.html">GetContractDefinitionId(long)</a></td>

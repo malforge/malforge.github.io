@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public string DisplayNameString
+public string DisplayNameString { get; set; }
 ```
 
 String name used for user created definitions which do not have localization support.

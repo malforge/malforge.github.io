@@ -26,6 +26,7 @@ Describes faction (mods interface)
 |[ObjectivePercentageCompleted](VRage.Game.ModAPI.IMyFaction@ObjectivePercentageCompleted)|Gets or sets percentage of completed objective. Used in Uranium Heist scenario|
 |[PrivateInfo](VRage.Game.ModAPI.IMyFaction@PrivateInfo)|Gets faction private info|
 |[Score](VRage.Game.ModAPI.IMyFaction@Score)|Gets or sets score of faction. Used in Uranium Heist scenario|
+|[Stations](VRage.Game.ModAPI.IMyFaction@Stations)|Gets stations for the NPC (economy trading) faction|
 |[Tag](VRage.Game.ModAPI.IMyFaction@Tag)|Gets faction tag|
 
 ## Methods
@@ -33,6 +34,7 @@ Describes faction (mods interface)
 |Member|Description|
 |---|---|
 |[GetBalanceShortString()](VRage.Game.ModAPI.IMyFaction@GetBalanceShortString)|Gets balance of an account associated with faction. Format is 'BALANCE CURRENCYSHORTNAME'.|
+|[GetStationById(long)](VRage.Game.ModAPI.IMyFaction@GetStationById)|Gets station by id|
 |[HasLastMember()](VRage.Game.ModAPI.IMyFaction@HasLastMember)|Returns if faction has last member|
 |[IsEnemy(long)](VRage.Game.ModAPI.IMyFaction@IsEnemy)|Returns if player with provided playerId is enemy to faction|
 |[IsEveryoneNpc()](VRage.Game.ModAPI.IMyFaction@IsEveryoneNpc)|Returns if faction has no humans|

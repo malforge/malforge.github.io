@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public int Collateral { get; }
+public int Collateral { get; set; }
 ```
 
 ## Returns

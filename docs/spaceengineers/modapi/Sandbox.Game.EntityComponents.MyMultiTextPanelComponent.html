@@ -53,7 +53,7 @@
                 <h1>MyMultiTextPanelComponent</h1>
             </div>
 <p><strong>Assembly:</strong> Sandbox.Game.dll</p>
-<pre><code class="language-csharp">public class MyMultiTextPanelComponent: MyEventProxyEntityComponent, IMyComponentBase, IMyEntityComponentBase, IMyEventProxy, IMyEventOwner, IMyTextSurfaceProvider, IMyTextPanelProvider
+<pre><code class="language-csharp">public class MyMultiTextPanelComponent: MyUpdatingEntityComponent, IMyComponentBase, IMyEntityComponentBase, IMyEventProxy, IMyEventOwner, IMyUpdatingEntityComponent, IMyTextSurfaceProvider, IMyTextPanelProvider
 </code></pre>
 <h2 id="fields">Fields</h2>
 <table>
@@ -187,6 +187,42 @@
 <td><em>Inherited from <a href="VRage.Game.Components.MyComponentBase.html">MyComponentBase</a></em></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@NeedsUpdate.html">NeedsUpdate</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@NeedsUpdateAfterSimulation.html">NeedsUpdateAfterSimulation</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@NeedsUpdateAfterSimulation10.html">NeedsUpdateAfterSimulation10</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@NeedsUpdateAfterSimulation100.html">NeedsUpdateAfterSimulation100</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@NeedsUpdateBeforeSimulation.html">NeedsUpdateBeforeSimulation</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@NeedsUpdateBeforeSimulation100.html">NeedsUpdateBeforeSimulation100</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@NeedsUpdateChanged.html">NeedsUpdateChanged</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@NeedsUpdateSimulation.html">NeedsUpdateSimulation</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@ParentEntity.html">ParentEntity</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
 <td><a href="VRage.Game.Components.Interfaces.IMyComponentBase@RemoveExistingComponentOnNewInsert.html">RemoveExistingComponentOnNewInsert</a></td>
 <td><em>Inherited from <a href="VRage.Game.Components.Interfaces.IMyComponentBase.html">IMyComponentBase</a></em></td>
 </tr>
@@ -197,6 +233,18 @@
 <tr>
 <td><a href="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider@SurfaceCount.html">SurfaceCount</a></td>
 <td>Get surfaces count<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider.html">IMyTextSurfaceProvider</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@UpdateParallel.html">UpdateParallel</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@UpdateParallelChanged.html">UpdateParallelChanged</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@UpdatingType.html">UpdatingType</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
 </tr>
 <tr>
 <td><a href="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider@UseGenericLcd.html">UseGenericLcd</a></td>
@@ -313,7 +361,11 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="Sandbox.Game.EntityComponents.MyMultiTextPanelComponent@UpdateAfterSimulation.html">UpdateAfterSimulation(bool)</a></td>
+<td><a href="Sandbox.Game.EntityComponents.MyMultiTextPanelComponent@UpdateAfterSimulation10.html">UpdateAfterSimulation10()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyMultiTextPanelComponent@UpdateOnceBeforeFrame.html">UpdateOnceBeforeFrame()</a></td>
 <td></td>
 </tr>
 <tr>
@@ -420,9 +472,45 @@
 <td><a href="VRage.Game.Components.MyComponentBase@SetContainer.html">SetContainer(IMyComponentContainer)</a></td>
 <td>Sets the container of this component. Note that the component is not added to the container here! Therefore, use MyComponentContainer.Add(...) method and it will in turn call this method. Actually, you should seldom have the need to call this method yourself.<br /><br /><em>Inherited from <a href="VRage.Game.Components.MyComponentBase.html">MyComponentBase</a></em></td>
 </tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@UpdateAfterSimulation.html">UpdateAfterSimulation()</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@UpdateAfterSimulation10.html">UpdateAfterSimulation10()</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@UpdateAfterSimulation100.html">UpdateAfterSimulation100()</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@UpdateAfterSimulationParallel.html">UpdateAfterSimulationParallel()</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@UpdateBeforeSimulation.html">UpdateBeforeSimulation()</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@UpdateBeforeSimulation100.html">UpdateBeforeSimulation100()</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@UpdateBeforeSimulationParallel.html">UpdateBeforeSimulationParallel()</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@UpdateOnceBeforeFrame.html">UpdateOnceBeforeFrame()</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent@UpdateSimulate.html">UpdateSimulate()</a></td>
+<td><em>Inherited from <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></em></td>
+</tr>
 </tbody>
 </table>
-<p><strong>Inheritance:</strong>   <a href="VRage.Game.Components.MyComponentBase.html">MyComponentBase</a> ˃ <a href="VRage.Game.Components.MyEntityComponentBase.html">MyEntityComponentBase</a> ˃ <a href="Sandbox.Game.EntityComponents.MyEventProxyEntityComponent.html">MyEventProxyEntityComponent</a></p>
+<p><strong>Inheritance:</strong>   <a href="VRage.Game.Components.MyComponentBase.html">MyComponentBase</a> ˃ <a href="VRage.Game.Components.MyEntityComponentBase.html">MyEntityComponentBase</a> ˃ <a href="Sandbox.Game.EntityComponents.MyEventProxyEntityComponent.html">MyEventProxyEntityComponent</a> ˃ <a href="Sandbox.Game.EntityComponents.MyUpdatingEntityComponent.html">MyUpdatingEntityComponent</a></p>
 <p><strong>Implements:</strong></p>
 <ul>
 <li><a href="VRage.Game.Components.Interfaces.IMyComponentBase.html">IMyComponentBase</a></li>
@@ -431,6 +519,7 @@
 <li><a href="VRage.Network.IMyEventProxy.html">IMyEventProxy</a></li>
 <li>IMyTextPanelProvider <sub>prohibited</sub></li>
 <li><a href="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider.html">IMyTextSurfaceProvider</a></li>
+<li>IMyUpdatingEntityComponent <sub>prohibited</sub></li>
 </ul>
 
     </main>

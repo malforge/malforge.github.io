@@ -11,6 +11,7 @@ Implements Store Item Data
 |Member|Description|
 |---|---|
 |[Amount](VRage.Game.ModAPI.MyStoreItemData@Amount)|Gets amount for buy/sell|
+|[GasTanks](VRage.Game.ModAPI.MyStoreItemData@GasTanks)|Gas Tanks entity IDs, when store item is for selling gas|
 |[ItemId](VRage.Game.ModAPI.MyStoreItemData@ItemId)|Gets definition id of the item|
 |[OnCancel](VRage.Game.ModAPI.MyStoreItemData@OnCancel)|When owner of store block cancels order/offer regarding this item|
 |[OnTransaction](VRage.Game.ModAPI.MyStoreItemData@OnTransaction)|When player makes an transaction regarding this item int - amount sold int - amount remaining int - price of transaction long - owner of block long - buyer/seller|
@@ -20,5 +21,5 @@ Implements Store Item Data
 
 |Member|Description|
 |---|---|
-|[MyStoreItemData(SerializableDefinitionId, int, int, Action<int, int, long, long, long>, Action)](VRage.Game.ModAPI.MyStoreItemData@.ctor)||
+|[MyStoreItemData(SerializableDefinitionId, int, int, List<long>, Action<int, int, long, long, long>, Action)](VRage.Game.ModAPI.MyStoreItemData@.ctor)||
 

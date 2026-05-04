@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public MyDefinitionId DefinitionId { get; }
+public MyDefinitionId DefinitionId { get; set; }
 ```
 
 ## Returns

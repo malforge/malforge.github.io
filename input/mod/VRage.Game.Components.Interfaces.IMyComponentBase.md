@@ -42,6 +42,7 @@ public interface IMyComponentBase
 * [MyCharacterComponent](Sandbox.Game.Entities.Character.Components.MyCharacterComponent)  
 * [MyCharacterDetectorComponent](Sandbox.Game.Entities.Character.Components.MyCharacterDetectorComponent)  
 * [MyCharacterJetpackComponent](Sandbox.Game.Entities.Character.Components.MyCharacterJetpackComponent)  
+* [MyCharacterLadderComponent](Sandbox.Game.Entities.Character.Components.MyCharacterLadderComponent)  
 * [MyCharacterOxygenComponent](Sandbox.Game.Entities.Character.Components.MyCharacterOxygenComponent)  
 * [MyCharacterPickupComponent](Sandbox.Game.Entities.Character.Components.MyCharacterPickupComponent)  
 * [MyCharacterRagdollComponent](Sandbox.Game.Entities.Character.Components.MyCharacterRagdollComponent)  

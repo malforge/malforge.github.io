@@ -15,9 +15,11 @@ public class MyObjectBuilder_StoreItem
 |[ItemType](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StoreItem@ItemType)||
 |[PrefabName](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StoreItem@PrefabName)||
 |[PrefabTotalPcu](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StoreItem@PrefabTotalPcu)||
+|[PreviousPricePerUnit](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StoreItem@PreviousPricePerUnit)||
 |[PricePerUnit](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StoreItem@PricePerUnit)||
 |[PricePerUnitDiscount](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StoreItem@PricePerUnitDiscount)||
 |[RemovedAmount](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StoreItem@RemovedAmount)||
+|[SelectedGasTanks](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StoreItem@SelectedGasTanks)||
 |[StoreItemType](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StoreItem@StoreItemType)||
 |[UpdateCount](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StoreItem@UpdateCount)||
 

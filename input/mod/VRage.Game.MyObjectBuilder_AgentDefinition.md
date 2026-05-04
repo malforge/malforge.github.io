@@ -8,21 +8,35 @@ public class MyObjectBuilder_AgentDefinition: MyObjectBuilder_BotDefinition
 
 |Member|Description|
 |---|---|
+|[AgentHeight](VRage.Game.MyObjectBuilder_AgentDefinition@AgentHeight)||
+|[AgentMaxClimb](VRage.Game.MyObjectBuilder_AgentDefinition@AgentMaxClimb)||
+|[AgentMaxSlope](VRage.Game.MyObjectBuilder_AgentDefinition@AgentMaxSlope)||
+|[AgentRadius](VRage.Game.MyObjectBuilder_AgentDefinition@AgentRadius)||
 |[AttackLength](VRage.Game.MyObjectBuilder_AgentDefinition@AttackLength)||
 |[AttackRadius](VRage.Game.MyObjectBuilder_AgentDefinition@AttackRadius)||
 |[AttackSound](VRage.Game.MyObjectBuilder_AgentDefinition@AttackSound)||
 |[BotModel](VRage.Game.MyObjectBuilder_AgentDefinition@BotModel)||
+|[CanOpenDoors](VRage.Game.MyObjectBuilder_AgentDefinition@CanOpenDoors)||
 |[CharacterDamage](VRage.Game.MyObjectBuilder_AgentDefinition@CharacterDamage)||
+|[DisableBroadcasting](VRage.Game.MyObjectBuilder_AgentDefinition@DisableBroadcasting)||
+|[DoorOpenDistance](VRage.Game.MyObjectBuilder_AgentDefinition@DoorOpenDistance)||
 |[FactionTag](VRage.Game.MyObjectBuilder_AgentDefinition@FactionTag)||
 |[GridDamage](VRage.Game.MyObjectBuilder_AgentDefinition@GridDamage)||
+|[IgnoredByAITargeting](VRage.Game.MyObjectBuilder_AgentDefinition@IgnoredByAITargeting)||
 |[InventoryContainerTypeId](VRage.Game.MyObjectBuilder_AgentDefinition@InventoryContainerTypeId)||
 |[InventoryContentGenerated](VRage.Game.MyObjectBuilder_AgentDefinition@InventoryContentGenerated)||
+|[Invulnerable](VRage.Game.MyObjectBuilder_AgentDefinition@Invulnerable)||
+|[JoinSpawnerFaction](VRage.Game.MyObjectBuilder_AgentDefinition@JoinSpawnerFaction)||
+|[PathArrivalRadius](VRage.Game.MyObjectBuilder_AgentDefinition@PathArrivalRadius)||
 |[RemoveAfterDeath](VRage.Game.MyObjectBuilder_AgentDefinition@RemoveAfterDeath)||
 |[RemoveTimeMs](VRage.Game.MyObjectBuilder_AgentDefinition@RemoveTimeMs)||
 |[RespawnTimeMs](VRage.Game.MyObjectBuilder_AgentDefinition@RespawnTimeMs)||
+|[SteeringBehaviors](VRage.Game.MyObjectBuilder_AgentDefinition@SteeringBehaviors)||
 |[TargetCharacters](VRage.Game.MyObjectBuilder_AgentDefinition@TargetCharacters)||
 |[TargetGrids](VRage.Game.MyObjectBuilder_AgentDefinition@TargetGrids)||
 |[TargetType](VRage.Game.MyObjectBuilder_AgentDefinition@TargetType)||
+|[UseFactionColor](VRage.Game.MyObjectBuilder_AgentDefinition@UseFactionColor)||
+|[WildlifeCategory](VRage.Game.MyObjectBuilder_AgentDefinition@WildlifeCategory)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[BehaviorSubtype](VRage.Game.MyObjectBuilder_BotDefinition@BehaviorSubtype)|_Inherited from [MyObjectBuilder_BotDefinition](VRage.Game.MyObjectBuilder_BotDefinition)_|
 |[BehaviorType](VRage.Game.MyObjectBuilder_BotDefinition@BehaviorType)|_Inherited from [MyObjectBuilder_BotDefinition](VRage.Game.MyObjectBuilder_BotDefinition)_|

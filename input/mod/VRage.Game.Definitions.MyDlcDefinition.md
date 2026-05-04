@@ -13,8 +13,6 @@ public class MyDlcDefinition: MyDefinitionBase, IMyDLC
 |[DescriptionArgs](VRage.Game.MyDefinitionBase@DescriptionArgs)|String used for shortcuts used in description<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DescriptionEnum](VRage.Game.MyDefinitionBase@DescriptionEnum)|Enum used for localization of description. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DescriptionString](VRage.Game.MyDefinitionBase@DescriptionString)|String used for user created description which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
-|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
-|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Enabled](VRage.Game.MyDefinitionBase@Enabled)|Definition can be disabled by mod, then it will be removed from definition manager<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Icons](VRage.Game.MyDefinitionBase@Icons)|Icons for the definition, they are used from top to bottom.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Id](VRage.Game.MyDefinitionBase@Id)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
@@ -26,12 +24,14 @@ public class MyDlcDefinition: MyDefinitionBase, IMyDLC
 |---|---|
 |[AppId](VRage.Game.Definitions.MyDlcDefinition@AppId)||
 |[Badge](VRage.Game.Definitions.MyDlcDefinition@Badge)|Badge of the DLC, to be displayed in main menu|
+|[CanBuy](VRage.Game.Definitions.MyDlcDefinition@CanBuy)||
 |[Description](VRage.Game.Definitions.MyDlcDefinition@Description)|Description of the DLC, preferably a localized string|
 |[DisplayName](VRage.Game.Definitions.MyDlcDefinition@DisplayName)|Name of the DLC, preferably a localized string|
 |[Icon](VRage.Game.Definitions.MyDlcDefinition@Icon)|Icon of the DLC, to be displayed in G-screen, blueprints, etc ...|
 |[Name](VRage.Game.Definitions.MyDlcDefinition@Name)||
 |[Ps4ProductIds](VRage.Game.Definitions.MyDlcDefinition@Ps4ProductIds)||
 |[Ps5ProductIds](VRage.Game.Definitions.MyDlcDefinition@Ps5ProductIds)||
+|[ServiceFilter](VRage.Game.Definitions.MyDlcDefinition@ServiceFilter)||
 |[XboxPackageId](VRage.Game.Definitions.MyDlcDefinition@XboxPackageId)||
 |[XboxStoreId](VRage.Game.Definitions.MyDlcDefinition@XboxStoreId)||
 |[AppId](VRage.Game.ModAPI.IMyDLC@AppId)|Gets the Steam AppID of the DLC.<br /><br />_Inherited from [IMyDLC](VRage.Game.ModAPI.IMyDLC)_|
@@ -39,6 +39,8 @@ public class MyDlcDefinition: MyDefinitionBase, IMyDLC
 |[Description](VRage.Game.ModAPI.IMyDLC@Description)|Gets localized description of the DLC.<br /><br />_Inherited from [IMyDLC](VRage.Game.ModAPI.IMyDLC)_|
 |[DescriptionText](VRage.Game.MyDefinitionBase@DescriptionText)|Use this property when showing description in GUI, as it takes into account more complex description construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DisplayName](VRage.Game.ModAPI.IMyDLC@DisplayName)|Gets localized name of the DLC.<br /><br />_Inherited from [IMyDLC](VRage.Game.ModAPI.IMyDLC)_|
+|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DisplayNameText](VRage.Game.MyDefinitionBase@DisplayNameText)|Use this property when showing name in GUI instead of DisplayName. This takes into account more complex name construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DLCs](VRage.Game.MyDefinitionBase@DLCs)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Icon](VRage.Game.ModAPI.IMyDLC@Icon)|Gets icon of the DLC. Displayed in G-screen, blueprints, etc ...<br /><br />_Inherited from [IMyDLC](VRage.Game.ModAPI.IMyDLC)_|

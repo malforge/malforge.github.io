@@ -41,12 +41,10 @@ public class MyObjectBuilder_FactionTypeDefinition: MyObjectBuilder_DefinitionBa
 |[Station_Rule_Max_Orbit](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Station_Rule_Max_Orbit)||
 |[Station_Rule_Max_Outpost](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Station_Rule_Max_Outpost)||
 |[Station_Rule_Max_Station](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Station_Rule_Max_Station)||
-|[Station_Rule_Max_StationM](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Station_Rule_Max_StationM)||
 |[Station_Rule_Min_Deep](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Station_Rule_Min_Deep)||
 |[Station_Rule_Min_Orbit](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Station_Rule_Min_Orbit)||
 |[Station_Rule_Min_Outpost](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Station_Rule_Min_Outpost)||
 |[Station_Rule_Min_Station](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Station_Rule_Min_Station)||
-|[Station_Rule_Min_StationM](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Station_Rule_Min_StationM)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[Description](VRage.Game.MyObjectBuilder_DefinitionBase@Description)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[DescriptionArgs](VRage.Game.MyObjectBuilder_DefinitionBase@DescriptionArgs)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|

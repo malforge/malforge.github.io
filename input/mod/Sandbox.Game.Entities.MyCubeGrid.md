@@ -82,7 +82,6 @@ Grid - small ship, large ship, station Cubes (armor, walls...) are merge and ren
 |[static OnBlocksChangeFinishedGlobally](Sandbox.Game.Entities.MyCubeGrid@OnBlocksChangeFinishedGlobally)|Called on multi block changes. Both arguments may be null. First from where blocks where removed, second - where added|
 |[static OnSplitGridCreated](Sandbox.Game.Entities.MyCubeGrid@OnSplitGridCreated)||
 |[GridPresenceTierChanged](Sandbox.Game.Entities.MyCubeGrid@GridPresenceTierChanged)||
-|[IsPoweredChanged](Sandbox.Game.Entities.MyCubeGrid@IsPoweredChanged)||
 |[OnBlockAdded](Sandbox.Game.Entities.MyCubeGrid@OnBlockAdded)||
 |[OnBlockClosed](Sandbox.Game.Entities.MyCubeGrid@OnBlockClosed)||
 |[OnBlockIntegrityChanged](Sandbox.Game.Entities.MyCubeGrid@OnBlockIntegrityChanged)||
@@ -112,6 +111,7 @@ Grid - small ship, large ship, station Cubes (armor, walls...) are merge and ren
 |[OnTargetLocked](Sandbox.Game.Entities.MyCubeGrid@OnTargetLocked)||
 |[OnTargetLockLost](Sandbox.Game.Entities.MyCubeGrid@OnTargetLockLost)||
 |[PlayerPresenceTierChanged](Sandbox.Game.Entities.MyCubeGrid@PlayerPresenceTierChanged)||
+|[PowerSwitchChanged](Sandbox.Game.Entities.MyCubeGrid@PowerSwitchChanged)||
 |[SpeedChanged](Sandbox.Game.Entities.MyCubeGrid@SpeedChanged)||
 |[SyncPropertyChanged](Sandbox.Game.Entities.MyCubeGrid@SyncPropertyChanged)||
 |[AddedToScene](VRage.Game.Entity.MyEntity@AddedToScene)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
@@ -200,7 +200,7 @@ Grid - small ship, large ship, station Cubes (armor, walls...) are merge and ren
 |[IsMarkedForEarlyDeactivation](Sandbox.Game.Entities.MyCubeGrid@IsMarkedForEarlyDeactivation)||
 |[IsNpcSpawnedGrid](Sandbox.Game.Entities.MyCubeGrid@IsNpcSpawnedGrid)||
 |[IsParked](Sandbox.Game.Entities.MyCubeGrid@IsParked)||
-|[IsPowered](Sandbox.Game.Entities.MyCubeGrid@IsPowered)||
+|[IsPowerSwitchOn](Sandbox.Game.Entities.MyCubeGrid@IsPowerSwitchOn)||
 |[IsRespawnGrid](Sandbox.Game.Entities.MyCubeGrid@IsRespawnGrid)|Gets or sets indication if a grid coresponds to a respawn ship/cart.|
 |[IsSmokeParticleActive](Sandbox.Game.Entities.MyCubeGrid@IsSmokeParticleActive)||
 |[IsSolarOccluded](Sandbox.Game.Entities.MyCubeGrid@IsSolarOccluded)||
@@ -436,7 +436,7 @@ Grid - small ship, large ship, station Cubes (armor, walls...) are merge and ren
 |[static TestBlockPlacementArea(MyCubeBlockDefinition, MyBlockOrientation?, MatrixD, ref MyGridPlacementSettings, BoundingBoxD, bool, MyEntity, bool)](Sandbox.Game.Entities.MyCubeGrid@TestBlockPlacementArea)||
 |[static TestBlockPlacementAreaVanilla(MyCubeGrid, ref MyGridPlacementSettings, MyBlockOrientation, MyCubeBlockDefinition, ref Vector3D, ref Quaternion, ref Vector3, ref BoundingBoxD, out MyCubeGrid, ulong, MyEntity, bool, bool, bool, bool)](Sandbox.Game.Entities.MyCubeGrid@TestBlockPlacementAreaVanilla)||
 |[static TestPlacementArea(MyCubeGrid, ref MyGridPlacementSettings, BoundingBoxD, bool, MyEntity)](Sandbox.Game.Entities.MyCubeGrid@TestPlacementArea)||
-|[static TestPlacementArea(MyCubeGrid, bool, ref MyGridPlacementSettings, BoundingBoxD, bool, MyEntity, bool, bool)](Sandbox.Game.Entities.MyCubeGrid@TestPlacementArea)||
+|[static TestPlacementArea(MyCubeGrid, bool, ref MyGridPlacementSettings, BoundingBoxD, bool, MyEntity, bool, bool, bool)](Sandbox.Game.Entities.MyCubeGrid@TestPlacementArea)||
 |[static TestPlacementAreaCube(MyCubeGrid, ref MyGridPlacementSettings, Vector3I, Vector3I, MyBlockOrientation, MyCubeBlockDefinition, ulong, MyEntity, bool, bool, bool)](Sandbox.Game.Entities.MyCubeGrid@TestPlacementAreaCube)||
 |[static TestPlacementAreaCube(MyCubeGrid, ref MyGridPlacementSettings, Vector3I, Vector3I, MyBlockOrientation, MyCubeBlockDefinition, out MyCubeGrid, ulong, MyEntity, bool, bool, bool, bool)](Sandbox.Game.Entities.MyCubeGrid@TestPlacementAreaCube)|Test cube block placement area in grid.|
 |[static TestPlacementAreaCubeNoAABBInflate(MyCubeGrid, ref MyGridPlacementSettings, Vector3I, Vector3I, MyBlockOrientation, MyCubeBlockDefinition, out MyCubeGrid, ulong, MyEntity, bool, bool)](Sandbox.Game.Entities.MyCubeGrid@TestPlacementAreaCubeNoAABBInflate)||

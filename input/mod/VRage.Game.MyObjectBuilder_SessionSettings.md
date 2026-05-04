@@ -101,6 +101,15 @@ public class MyObjectBuilder_SessionSettings: MyObjectBuilder_Base
 |[GlobalEncounterPCU](VRage.Game.MyObjectBuilder_SessionSettings@GlobalEncounterPCU)||
 |[GlobalEncounterRemovalTimeClock](VRage.Game.MyObjectBuilder_SessionSettings@GlobalEncounterRemovalTimeClock)||
 |[GlobalEncounterTimer](VRage.Game.MyObjectBuilder_SessionSettings@GlobalEncounterTimer)||
+|[GridStorageAllowsInventory](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageAllowsInventory)||
+|[GridStorageExpediteCostPerSecond](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageExpediteCostPerSecond)||
+|[GridStorageExpediteFactor](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageExpediteFactor)||
+|[GridStorageMaxPerPlayer](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageMaxPerPlayer)||
+|[GridStorageMinutesPerPCU](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageMinutesPerPCU)||
+|[GridStorageQueueLimit](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageQueueLimit)||
+|[GridStorageRetrievalTimeMaxMinutes](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageRetrievalTimeMaxMinutes)||
+|[GridStorageRetrievalTimeMinMinutes](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageRetrievalTimeMinMinutes)||
+|[GridStorageRetrievalTimeMultiplier](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageRetrievalTimeMultiplier)||
 |[GrinderSpeedMultiplier](VRage.Game.MyObjectBuilder_SessionSettings@GrinderSpeedMultiplier)||
 |[HackSpeedMultiplier](VRage.Game.MyObjectBuilder_SessionSettings@HackSpeedMultiplier)||
 |[HarvestRatioMultiplier](VRage.Game.MyObjectBuilder_SessionSettings@HarvestRatioMultiplier)||
@@ -152,6 +161,7 @@ public class MyObjectBuilder_SessionSettings: MyObjectBuilder_Base
 |[RealisticSound](VRage.Game.MyObjectBuilder_SessionSettings@RealisticSound)||
 |[RefinerySpeedMultiplier](VRage.Game.MyObjectBuilder_SessionSettings@RefinerySpeedMultiplier)||
 |[RemoveOldIdentitiesH](VRage.Game.MyObjectBuilder_SessionSettings@RemoveOldIdentitiesH)||
+|[ReputationDecayRate](VRage.Game.MyObjectBuilder_SessionSettings@ReputationDecayRate)||
 |[ResetForageableItems](VRage.Game.MyObjectBuilder_SessionSettings@ResetForageableItems)||
 |[ResetForageableItemsDistance](VRage.Game.MyObjectBuilder_SessionSettings@ResetForageableItemsDistance)||
 |[ResetForageableItemsTimeM](VRage.Game.MyObjectBuilder_SessionSettings@ResetForageableItemsTimeM)||

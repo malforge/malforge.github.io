@@ -13,8 +13,6 @@ public class MyDefinitionBase
 |[DescriptionArgs](VRage.Game.MyDefinitionBase@DescriptionArgs)|String used for shortcuts used in description|
 |[DescriptionEnum](VRage.Game.MyDefinitionBase@DescriptionEnum)|Enum used for localization of description. Null for player created definitions.|
 |[DescriptionString](VRage.Game.MyDefinitionBase@DescriptionString)|String used for user created description which do not have localization support.|
-|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.|
-|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.|
 |[Enabled](VRage.Game.MyDefinitionBase@Enabled)|Definition can be disabled by mod, then it will be removed from definition manager|
 |[Icons](VRage.Game.MyDefinitionBase@Icons)|Icons for the definition, they are used from top to bottom.|
 |[Id](VRage.Game.MyDefinitionBase@Id)||
@@ -25,6 +23,8 @@ public class MyDefinitionBase
 |Member|Description|
 |---|---|
 |[DescriptionText](VRage.Game.MyDefinitionBase@DescriptionText)|Use this property when showing description in GUI, as it takes into account more complex description construction.|
+|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.|
+|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.|
 |[DisplayNameText](VRage.Game.MyDefinitionBase@DisplayNameText)|Use this property when showing name in GUI instead of DisplayName. This takes into account more complex name construction.|
 |[DLCs](VRage.Game.MyDefinitionBase@DLCs)||
 
@@ -78,6 +78,7 @@ public class MyDefinitionBase
 * [MyExhaustEffectDefinition](Sandbox.Definitions.MyExhaustEffectDefinition)  
 * [MyFactionDefinition](Sandbox.Definitions.MyFactionDefinition)  
 * [MyFactionNameDefinition](Sandbox.Definitions.MyFactionNameDefinition)  
+* [MyFactionStationAdvertDefinition](Sandbox.Definitions.MyFactionStationAdvertDefinition)  
 * [MyFactionTypeDefinition](Sandbox.Definitions.MyFactionTypeDefinition)  
 * [MyFlareDefinition](Sandbox.Definitions.MyFlareDefinition)  
 * [MyFontDefinition](VRage.Game.Definitions.MyFontDefinition)  

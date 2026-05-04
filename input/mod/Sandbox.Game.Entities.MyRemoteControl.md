@@ -48,8 +48,6 @@ public class MyRemoteControl: MyShipController, IMyEntity, IMyEntity, IMyCompone
 |[Priority](Sandbox.Game.Entities.MyRemoteControl@Priority)||
 |[UpdateFlags](Sandbox.Game.Entities.MyRemoteControl@UpdateFlags)||
 |[AreBreaksOn](Sandbox.Game.Entities.MyShipController@AreBreaksOn)|_Inherited from [MyShipController](Sandbox.Game.Entities.MyShipController)_|
-|[AuxiliaryContext](Sandbox.Game.Entities.IMyControllableEntity@AuxiliaryContext)|_Inherited from [IMyControllableEntity](Sandbox.Game.Entities.IMyControllableEntity)_|
-|[AuxiliaryContext](Sandbox.Game.Entities.MyShipController@AuxiliaryContext)|_Inherited from [MyShipController](Sandbox.Game.Entities.MyShipController)_|
 |[BlockDefinition](VRage.Game.ModAPI.Ingame.IMyCubeBlock@BlockDefinition)|Gets definition.Id assigned to this block<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.Ingame.IMyCubeBlock)_|
 |[BlockDefinition](Sandbox.Game.Entities.MyShipController@BlockDefinition)|_Inherited from [MyShipController](Sandbox.Game.Entities.MyShipController)_|
 |[CanControlShip](Sandbox.ModAPI.Ingame.IMyShipController@CanControlShip)|Determines whether this specific ship controller is capable of controlling the ship it's installed on.<br /><br />_Inherited from [IMyShipController](Sandbox.ModAPI.Ingame.IMyShipController)_|

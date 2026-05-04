@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public double SearchRadius { get; }
+public double SearchRadius { get; set; }
 ```
 
 ## Returns

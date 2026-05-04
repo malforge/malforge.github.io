@@ -8,6 +8,8 @@ public class MyObjectBuilder_PhysicalItemDefinition: MyObjectBuilder_DefinitionB
 
 |Member|Description|
 |---|---|
+|[AlwaysInStore](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@AlwaysInStore)||
+|[CanPlayerOffer](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@CanPlayerOffer)||
 |[CanPlayerOrder](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@CanPlayerOrder)||
 |[CanSpawnFromScreen](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@CanSpawnFromScreen)||
 |[DepositAllEnabled](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@DepositAllEnabled)||

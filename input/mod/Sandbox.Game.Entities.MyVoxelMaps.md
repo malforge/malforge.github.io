@@ -39,7 +39,7 @@ public class MyVoxelMaps: IMyVoxelMaps
 |[TryGetVoxelMapByNameStart(string)](Sandbox.Game.Entities.MyVoxelMaps@TryGetVoxelMapByNameStart)||
 |[Clear()](VRage.Game.ModAPI.IMyVoxelMaps@Clear)|Resets all voxels over whole world<br /><br />_Inherited from [IMyVoxelMaps](VRage.Game.ModAPI.IMyVoxelMaps)_|
 |[CreatePredefinedVoxelMap(string, string, MatrixD, bool)](VRage.Game.ModAPI.IMyVoxelMaps@CreatePredefinedVoxelMap)|Creates an voxel map with some additional options.<br /><br />_Inherited from [IMyVoxelMaps](VRage.Game.ModAPI.IMyVoxelMaps)_|
-|[CreateProceduralVoxelMap(int, float, MatrixD)](VRage.Game.ModAPI.IMyVoxelMaps@CreateProceduralVoxelMap)|_Inherited from [IMyVoxelMaps](VRage.Game.ModAPI.IMyVoxelMaps)_|
+|[CreateProceduralVoxelMap(int, float, MatrixD, int)](VRage.Game.ModAPI.IMyVoxelMaps@CreateProceduralVoxelMap)|_Inherited from [IMyVoxelMaps](VRage.Game.ModAPI.IMyVoxelMaps)_|
 |[CreateStorage(Vector3I)](VRage.Game.ModAPI.IMyVoxelMaps@CreateStorage)|Creates voxels storage<br /><br />_Inherited from [IMyVoxelMaps](VRage.Game.ModAPI.IMyVoxelMaps)_|
 |[CreateStorage(Byte[])](VRage.Game.ModAPI.IMyVoxelMaps@CreateStorage)|Creates storage from GZipped bytes.<br /><br />_Inherited from [IMyVoxelMaps](VRage.Game.ModAPI.IMyVoxelMaps)_|
 |[CreateVoxelMap(string, IMyStorage, Vector3D, long)](VRage.Game.ModAPI.IMyVoxelMaps@CreateVoxelMap)|Creates voxels map<br /><br />_Inherited from [IMyVoxelMaps](VRage.Game.ModAPI.IMyVoxelMaps)_|

@@ -55,6 +55,7 @@
 <p><strong>Assembly:</strong> Sandbox.Game.dll</p>
 <pre><code class="language-csharp">public class MyContractEscort: IMyContractEscort, IMyContract
 </code></pre>
+<p>Implements IMyContractEscort interface so you can create your own contract. Call IMYContractSystem.AddContract with this instance.</p>
 <h2 id="properties">Properties</h2>
 <table>
 <thead>
@@ -69,11 +70,19 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.ModAPI.Contracts.MyContractEscort@ContractCondition.html">ContractCondition</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="Sandbox.ModAPI.Contracts.MyContractEscort@Duration.html">Duration</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="Sandbox.ModAPI.Contracts.MyContractEscort@End.html">End</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.Contracts.MyContractEscort@FailReputationPrice.html">FailReputationPrice</a></td>
 <td></td>
 </tr>
 <tr>
@@ -97,6 +106,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.ModAPI.Contracts.MyContractEscort@RewardReputation.html">RewardReputation</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="Sandbox.ModAPI.Contracts.MyContractEscort@Start.html">Start</a></td>
 <td></td>
 </tr>
@@ -109,12 +122,20 @@
 <td>Gets money that player would loose if he won't complete contract<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
+<td><a href="VRage.Game.ModAPI.IMyContract@ContractCondition.html">ContractCondition</a></td>
+<td>Gets contract condition. Condition has contract after is created, not in wrapper class. You have to get contract from the contract system.<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
+</tr>
+<tr>
 <td><a href="VRage.Game.ModAPI.IMyContract@Duration.html">Duration</a></td>
 <td>Gets duration of contract in minutes<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContractEscort@End.html">End</a></td>
-<td><em>Inherited from <a href="VRage.Game.ModAPI.IMyContractEscort.html">IMyContractEscort</a></em></td>
+<td>End position of the contract<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContractEscort.html">IMyContractEscort</a></em></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyContract@FailReputationPrice.html">FailReputationPrice</a></td>
+<td>Gets reputation price when contract fails<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContract@MoneyReward.html">MoneyReward</a></td>
@@ -134,11 +155,15 @@
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContractEscort@OwnerIdentityId.html">OwnerIdentityId</a></td>
-<td><em>Inherited from <a href="VRage.Game.ModAPI.IMyContractEscort.html">IMyContractEscort</a></em></td>
+<td>Identity id of the owner of the escorted grid<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContractEscort.html">IMyContractEscort</a></em></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyContract@RewardReputation.html">RewardReputation</a></td>
+<td>Gets reputation reward<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContractEscort@Start.html">Start</a></td>
-<td><em>Inherited from <a href="VRage.Game.ModAPI.IMyContractEscort.html">IMyContractEscort</a></em></td>
+<td>Start position of the contract<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContractEscort.html">IMyContractEscort</a></em></td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContract@StartBlockId.html">StartBlockId</a></td>
@@ -155,6 +180,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="Sandbox.ModAPI.Contracts.MyContractEscort@.ctor.html">MyContractEscort()</a></td>
+<td></td>
+</tr>
 <tr>
 <td><a href="Sandbox.ModAPI.Contracts.MyContractEscort@.ctor.html">MyContractEscort(long, int, int, int, Vector3D, Vector3D, long)</a></td>
 <td></td>

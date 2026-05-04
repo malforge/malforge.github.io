@@ -10,12 +10,14 @@ public class MyObjectBuilder_ContractTypeDefinition: MyObjectBuilder_DefinitionB
 |---|---|
 |[ChancesPerFactionType](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@ChancesPerFactionType)||
 |[DurationMultiplier](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@DurationMultiplier)||
+|[EnableForPlayerBlock](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@EnableForPlayerBlock)||
 |[FailReputationPrice](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@FailReputationPrice)||
 |[MaxStartingDeposit](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@MaxStartingDeposit)||
 |[MinimumMoney](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@MinimumMoney)||
 |[MinimumReputation](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@MinimumReputation)||
+|[MinReputationRequirement](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@MinReputationRequirement)||
 |[MinStartingDeposit](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@MinStartingDeposit)||
-|[MoneyReputationCoeficient](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@MoneyReputationCoeficient)||
+|[StrategyType](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDefinition@StrategyType)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[Description](VRage.Game.MyObjectBuilder_DefinitionBase@Description)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[DescriptionArgs](VRage.Game.MyObjectBuilder_DefinitionBase@DescriptionArgs)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
@@ -54,7 +56,10 @@ public class MyObjectBuilder_ContractTypeDefinition: MyObjectBuilder_DefinitionB
 * [MyObjectBuilder_ContractTypeDeliverDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDeliverDefinition)  
 * [MyObjectBuilder_ContractTypeEscortDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeEscortDefinition)  
 * [MyObjectBuilder_ContractTypeFindDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeFindDefinition)  
+* [MyObjectBuilder_ContractTypeGridHaulingDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeGridHaulingDefinition)  
 * [MyObjectBuilder_ContractTypeHuntDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeHuntDefinition)  
 * [MyObjectBuilder_ContractTypeObtainAndDeliverDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeObtainAndDeliverDefinition)  
-* [MyObjectBuilder_ContractTypeRepairDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeRepairDefinition)
+* [MyObjectBuilder_ContractTypePvEBountyDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypePvEBountyDefinition)  
+* [MyObjectBuilder_ContractTypeRepairDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeRepairDefinition)  
+* [MyObjectBuilder_ContractTypeSalvageDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeSalvageDefinition)
 

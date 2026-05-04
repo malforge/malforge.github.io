@@ -8,6 +8,7 @@ public enum ItemTypes
 
 |Member|Description|
 |---|---|
+|Gas||
 |Grid||
 |Hydrogen||
 |Oxygen||

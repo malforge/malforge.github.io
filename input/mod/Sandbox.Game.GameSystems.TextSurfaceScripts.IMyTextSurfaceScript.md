@@ -31,6 +31,7 @@ public interface IMyTextSurfaceScript: IDisposable
 * [MyTSSDigitalClock](Sandbox.Game.GameSystems.TextSurfaceScripts.MyTSSDigitalClock)  
 * [MyTSSEnergyHydrogen](Sandbox.Game.GameSystems.TextSurfaceScripts.MyTSSEnergyHydrogen)  
 * [MyTSSFactionIcon](Sandbox.Game.GameSystems.TextSurfaceScripts.MyTSSFactionIcon)  
+* [MyTSSFactionStationAdvert](Sandbox.Game.GameSystems.TextSurfaceScripts.MyTSSFactionStationAdvert)  
 * [MyTSSGravity](Sandbox.Game.GameSystems.TextSurfaceScripts.MyTSSGravity)  
 * [MyTSSVelocity](Sandbox.Game.GameSystems.TextSurfaceScripts.MyTSSVelocity)  
 * [MyTSSVendingMachine](Sandbox.Game.GameSystems.TextSurfaceScripts.MyTSSVendingMachine)

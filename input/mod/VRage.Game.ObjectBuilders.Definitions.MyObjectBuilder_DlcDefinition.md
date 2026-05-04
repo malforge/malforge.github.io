@@ -10,11 +10,13 @@ public class MyObjectBuilder_DlcDefinition: MyObjectBuilder_DefinitionBase
 |---|---|
 |[AppId](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@AppId)||
 |[Badge](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@Badge)|Icon of the DLC, to be displayed in G-screen, blueprints, etc ...|
+|[CanBuy](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@CanBuy)||
 |[DescriptionStringId](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@DescriptionStringId)||
 |[DisplayNameStringId](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@DisplayNameStringId)||
 |[Name](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@Name)||
 |[Ps4ProductIds](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@Ps4ProductIds)||
 |[Ps5ProductIds](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@Ps5ProductIds)||
+|[ServiceFilter](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@ServiceFilter)||
 |[XboxPackageId](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@XboxPackageId)||
 |[XboxStoreId](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@XboxStoreId)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|

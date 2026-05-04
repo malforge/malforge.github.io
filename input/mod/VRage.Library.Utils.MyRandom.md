@@ -32,6 +32,7 @@ Original C# implementation which allows settings the seed.
 |[Next(int, int)](VRage.Library.Utils.MyRandom@Next)||
 |[NextBytes(Byte[])](VRage.Library.Utils.MyRandom@NextBytes)||
 |[NextDouble()](VRage.Library.Utils.MyRandom@NextDouble)||
+|[NextDouble(double, double)](VRage.Library.Utils.MyRandom@NextDouble)||
 |[NextFloat()](VRage.Library.Utils.MyRandom@NextFloat)||
 |[NextLong()](VRage.Library.Utils.MyRandom@NextLong)||
 |[PushSeed(int)](VRage.Library.Utils.MyRandom@PushSeed)||

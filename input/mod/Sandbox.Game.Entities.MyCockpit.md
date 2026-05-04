@@ -64,8 +64,6 @@ public class MyCockpit: MyShipController, IMyEntity, IMyEntity, IMyComponentOwne
 |[UseGenericLcd](Sandbox.Game.Entities.MyCockpit@UseGenericLcd)||
 |[AllowCubeBuilding](VRage.Game.ModAPI.Interfaces.IMyCameraController@AllowCubeBuilding)|Gets if player block building enabled<br /><br />_Inherited from [IMyCameraController](VRage.Game.ModAPI.Interfaces.IMyCameraController)_|
 |[AreBreaksOn](Sandbox.Game.Entities.MyShipController@AreBreaksOn)|_Inherited from [MyShipController](Sandbox.Game.Entities.MyShipController)_|
-|[AuxiliaryContext](Sandbox.Game.Entities.IMyControllableEntity@AuxiliaryContext)|_Inherited from [IMyControllableEntity](Sandbox.Game.Entities.IMyControllableEntity)_|
-|[AuxiliaryContext](Sandbox.Game.Entities.MyShipController@AuxiliaryContext)|_Inherited from [MyShipController](Sandbox.Game.Entities.MyShipController)_|
 |[BlockDefinition](VRage.Game.ModAPI.Ingame.IMyCubeBlock@BlockDefinition)|Gets definition.Id assigned to this block<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.Ingame.IMyCubeBlock)_|
 |[BlockDefinition](Sandbox.Game.Entities.MyShipController@BlockDefinition)|_Inherited from [MyShipController](Sandbox.Game.Entities.MyShipController)_|
 |[CanControlShip](Sandbox.ModAPI.Ingame.IMyShipController@CanControlShip)|Determines whether this specific ship controller is capable of controlling the ship it's installed on.<br /><br />_Inherited from [IMyShipController](Sandbox.ModAPI.Ingame.IMyShipController)_|
@@ -293,6 +291,7 @@ public class MyCockpit: MyShipController, IMyEntity, IMyEntity, IMyComponentOwne
 |[GetPushInformation()](Sandbox.Game.Entities.MyCockpit@GetPushInformation)||
 |[GetViewMatrix()](Sandbox.Game.Entities.MyCockpit@GetViewMatrix)||
 |[GiveControlToPilot()](Sandbox.Game.Entities.MyCockpit@GiveControlToPilot)||
+|[HasLineOfSightToDetector(Vector3D)](Sandbox.Game.Entities.MyCockpit@HasLineOfSightToDetector)||
 |[Init(MyObjectBuilder_CubeBlock, MyCubeGrid)](Sandbox.Game.Entities.MyCockpit@Init)||
 |[InitComponents()](Sandbox.Game.Entities.MyCockpit@InitComponents)||
 |[InitializeConveyorEndpoint()](Sandbox.Game.Entities.MyCockpit@InitializeConveyorEndpoint)||

@@ -14,7 +14,12 @@ public class MyGridStorageHelper
 
 |Member|Description|
 |---|---|
-|[StoreGrid(MyCubeGrid, ulong?, string, bool)](Sandbox.Game.MyGridStorageHelper@StoreGrid)||
-|[TestFunctionLoad(MyPositionAndOrientation, Action)](Sandbox.Game.MyGridStorageHelper@TestFunctionLoad)||
+|[CopyGridFilesTo(string)](Sandbox.Game.MyGridStorageHelper@CopyGridFilesTo)||
+|[Delete(Guid)](Sandbox.Game.MyGridStorageHelper@Delete)||
+|[GetDetails(List<Guid>)](Sandbox.Game.MyGridStorageHelper@GetDetails)||
+|[LoadGrid(Guid, Quaternion, Vector3D, Vector3D, float, long, Action<MyGridLoadFuture>)](Sandbox.Game.MyGridStorageHelper@LoadGrid)||
+|[OnSessionSaveStart()](Sandbox.Game.MyGridStorageHelper@OnSessionSaveStart)||
+|[StoreGrid(MyCubeGrid, string, ulong?, bool)](Sandbox.Game.MyGridStorageHelper@StoreGrid)||
+|[TestFunctionLoad(MyPositionAndOrientation, Action<MyGridLoadFuture>)](Sandbox.Game.MyGridStorageHelper@TestFunctionLoad)||
 |[TestFunctionStore(List<Item>)](Sandbox.Game.MyGridStorageHelper@TestFunctionStore)||
 

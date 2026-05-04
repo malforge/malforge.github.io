@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public MyJoystickButtonsEnum JoystickButton { get; set; }
+public MyJoystickButtonsEnum JoystickButton { get; }
 ```
 
 ## Returns

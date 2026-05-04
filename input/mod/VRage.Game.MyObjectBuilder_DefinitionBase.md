@@ -80,6 +80,7 @@ public abstract class MyObjectBuilder_DefinitionBase: MyObjectBuilder_Base
 * [MyObjectBuilder_ExhaustEffectDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_ExhaustEffectDefinition)  
 * [MyObjectBuilder_FactionDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition)  
 * [MyObjectBuilder_FactionNameDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionNameDefinition)  
+* [MyObjectBuilder_FactionStationAdvertDefinition](VRage.Game.MyObjectBuilder_FactionStationAdvertDefinition)  
 * [MyObjectBuilder_FactionTypeDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition)  
 * [MyObjectBuilder_FlareDefinition](VRage.Game.MyObjectBuilder_FlareDefinition)  
 * [MyObjectBuilder_FontDefinition](VRage.Game.MyObjectBuilder_FontDefinition)  

@@ -104,11 +104,13 @@ public abstract class MyUpdatingEntityComponent: MyEventProxyEntityComponent, IM
 * [MyAtmosphereDetectorComponent](Sandbox.Game.EntityComponents.MyAtmosphereDetectorComponent)  
 * [MyCharacterDetectorComponent](Sandbox.Game.Entities.Character.Components.MyCharacterDetectorComponent)  
 * [MyCharacterJetpackComponent](Sandbox.Game.Entities.Character.Components.MyCharacterJetpackComponent)  
+* [MyCharacterLadderComponent](Sandbox.Game.Entities.Character.Components.MyCharacterLadderComponent)  
 * [MyCharacterOxygenComponent](Sandbox.Game.Entities.Character.Components.MyCharacterOxygenComponent)  
 * [MyCharacterRagdollComponent](Sandbox.Game.Entities.Character.Components.MyCharacterRagdollComponent)  
 * [MyCharacterSoundComponent](Sandbox.Game.Components.MyCharacterSoundComponent)  
 * [MyEntityReverbDetectorComponent](Sandbox.Game.EntityComponents.MyEntityReverbDetectorComponent)  
 * [MyEntityStatComponent](Sandbox.Game.Components.MyEntityStatComponent)  
+* [MyMultiTextPanelComponent](Sandbox.Game.EntityComponents.MyMultiTextPanelComponent)  
 * [MyTargetFocusComponent](Sandbox.Game.EntityComponents.MyTargetFocusComponent)  
 * [MyTargetLockingComponent](Sandbox.Game.EntityComponents.MyTargetLockingComponent)
 

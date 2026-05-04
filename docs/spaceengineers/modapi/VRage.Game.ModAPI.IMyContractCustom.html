@@ -78,24 +78,24 @@
 <td><a href="VRage.ModAPI.IMyEntity@EntityId.html">EntityId</a> of block that should finish contract</td>
 </tr>
 <tr>
-<td><a href="VRage.Game.ModAPI.IMyContractCustom@FailReputationPrice.html">FailReputationPrice</a></td>
-<td>Amount of reputation you lose on contract failure</td>
-</tr>
-<tr>
 <td><a href="VRage.Game.ModAPI.IMyContractCustom@Name.html">Name</a></td>
 <td>Name of contract</td>
-</tr>
-<tr>
-<td><a href="VRage.Game.ModAPI.IMyContractCustom@ReputationReward.html">ReputationReward</a></td>
-<td>Amount of reputation gained on contract success</td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContract@Collateral.html">Collateral</a></td>
 <td>Gets money that player would loose if he won't complete contract<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
+<td><a href="VRage.Game.ModAPI.IMyContract@ContractCondition.html">ContractCondition</a></td>
+<td>Gets contract condition. Condition has contract after is created, not in wrapper class. You have to get contract from the contract system.<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
+</tr>
+<tr>
 <td><a href="VRage.Game.ModAPI.IMyContract@Duration.html">Duration</a></td>
 <td>Gets duration of contract in minutes<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyContract@FailReputationPrice.html">FailReputationPrice</a></td>
+<td>Gets reputation price when contract fails<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContract@MoneyReward.html">MoneyReward</a></td>
@@ -112,6 +112,10 @@
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContract@OnContractSucceeded.html">OnContractSucceeded</a></td>
 <td>Gets or sets function that is triggered when contract is successfully completed<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyContract@RewardReputation.html">RewardReputation</a></td>
+<td>Gets reputation reward<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContract@StartBlockId.html">StartBlockId</a></td>

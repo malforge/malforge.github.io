@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public Vector3D End { get; }
+public Vector3D End { get; set; }
 ```
 
 ## Returns

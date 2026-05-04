@@ -76,9 +76,19 @@
 <a name="blocks-Algae Farm">**Algae Farm**</a> ([IMyFunctionalBlock](Sandbox.ModAPI.Ingame.IMyFunctionalBlock))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_FunctionalBlock/LargeBlockAlgaeFarm`  
   
+<a name="blocks-Almagest Engineer Plushie">**Almagest Engineer Plushie**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/EngineerPlushieSE2`  
+  
 <a name="blocks-And">**And**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolAnd`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolAnd`  
+  
+<a name="blocks-Angled Door A">**Angled Door A**</a> ([IMyDoor](Sandbox.ModAPI.Ingame.IMyDoor))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Door/LargeBlockAngledDoorA`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Door/SmallBlockAngledDoorA`  
+  
+<a name="blocks-Angled Door B">**Angled Door B**</a> ([IMyDoor](Sandbox.ModAPI.Ingame.IMyDoor))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Door/LargeBlockAngledDoorB`  
   
 <a name="blocks-Angled Interior Wall A">**Angled Interior Wall A**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/AngledInteriorWallA`  
@@ -260,6 +270,12 @@
 <a name="blocks-Bed">**Bed**</a> ([IMyCryoChamber](Sandbox.ModAPI.Ingame.IMyCryoChamber))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CryoChamber/LargeBlockBed`  
   
+<a name="blocks-Billboard LCD">**Billboard LCD**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_LCDPanelsBlock/LargeBlockBillboard`  
+  
+<a name="blocks-Billboard LCD Round">**Billboard LCD Round**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_LCDPanelsBlock/LargeBlockBillboardRound`  
+  
 <a name="blocks-Blast Door Corner">**Blast Door Corner**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/ArmorCorner`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallArmorCorner`  
@@ -345,6 +361,15 @@
   
 <a name="blocks-Buggy Cockpit">**Buggy Cockpit**</a> ([IMyCockpit](Sandbox.ModAPI.Ingame.IMyCockpit))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Cockpit/BuggyCockpit`  
+  
+<a name="blocks-Bulk Cargo Container A">**Bulk Cargo Container A**</a> ([IMyCargoContainer](Sandbox.ModAPI.Ingame.IMyCargoContainer))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CargoContainer/LargeBlockBulkContainerA`  
+  
+<a name="blocks-Bulk Cargo Container B">**Bulk Cargo Container B**</a> ([IMyCargoContainer](Sandbox.ModAPI.Ingame.IMyCargoContainer))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CargoContainer/LargeBlockBulkContainerB`  
+  
+<a name="blocks-Bulk Cargo Container C">**Bulk Cargo Container C**</a> ([IMyCargoContainer](Sandbox.ModAPI.Ingame.IMyCargoContainer))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CargoContainer/LargeBlockBulkContainerC`  
   
 <a name="blocks-Bunk">**Bunk**</a> ([IMyCryoChamber](Sandbox.ModAPI.Ingame.IMyCryoChamber))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CryoChamber/SmallBlockBunkBed`  
@@ -714,6 +739,15 @@
 <a name="blocks-Desk Corner Inv.">**Desk Corner Inv.**</a> ([IMyCockpit](Sandbox.ModAPI.Ingame.IMyCockpit))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Cockpit/LargeBlockDeskCornerInv`  
   
+<a name="blocks-Diagonal Beam 3x3">**Diagonal Beam 3x3**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockStructural_SupportBeam3x3`  
+  
+<a name="blocks-Diagonal Beam 4x4">**Diagonal Beam 4x4**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockStructural_SupportBeam4x4`  
+  
+<a name="blocks-Diagonal Beam 5x5">**Diagonal Beam 5x5**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockStructural_SupportBeam5x5`  
+  
 <a name="blocks-Diagonal Window">**Diagonal Window**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeWindowEdge`  
   
@@ -843,9 +877,11 @@
   
 <a name="blocks-Freight 1">**Freight 1**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/Freight1`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/Freight1Small`  
   
 <a name="blocks-Freight 2">**Freight 2**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/Freight2`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/Freight2Small`  
   
 <a name="blocks-Freight 3">**Freight 3**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/Freight3`  
@@ -1454,6 +1490,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CargoContainer/LargeBlockLargeContainer`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CargoContainer/SmallBlockLargeContainer`  
   
+<a name="blocks-Large Corner Vivarium">**Large Corner Vivarium**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockLargeCornerVivarium`  
+  
 <a name="blocks-Large Flat Atmospheric Thruster">**Large Flat Atmospheric Thruster**</a> ([IMyThrust](Sandbox.ModAPI.Ingame.IMyThrust))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Thrust/LargeBlockLargeFlatAtmosphericThrust`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Thrust/SmallBlockLargeFlatAtmosphericThrust`  
@@ -1480,6 +1519,9 @@
 <a name="blocks-Large Reactor">**Large Reactor**</a> ([IMyReactor](Sandbox.ModAPI.Ingame.IMyReactor))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Reactor/LargeBlockLargeGenerator`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Reactor/SmallBlockLargeGenerator`  
+  
+<a name="blocks-Large Vivarium">**Large Vivarium**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockLargeVivarium`  
   
 <a name="blocks-Large Warfare Ion Thruster">**Large Warfare Ion Thruster**</a> ([IMyThrust](Sandbox.ModAPI.Ingame.IMyThrust))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Thrust/LargeBlockLargeModularThruster`  
@@ -1841,6 +1883,36 @@
   
 <a name="blocks-Narrow Door Half">**Narrow Door Half**</a> ([IMyDoor](Sandbox.ModAPI.Ingame.IMyDoor))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Door/LargeBlockNarrowDoorHalf`  
+  
+<a name="blocks-Narrow Viewport">**Narrow Viewport**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockNarrowViewport`  
+  
+<a name="blocks-Narrow Viewport 2x1 Base">**Narrow Viewport 2x1 Base**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockNarrowViewport_2x1Base`  
+  
+<a name="blocks-Narrow Viewport 2x1 Base Inv.">**Narrow Viewport 2x1 Base Inv.**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockNarrowViewport_2x1BaseInv`  
+  
+<a name="blocks-Narrow Viewport 2x1 Tip">**Narrow Viewport 2x1 Tip**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockNarrowViewport_2x1Tip`  
+  
+<a name="blocks-Narrow Viewport 2x1 Tip Inv.">**Narrow Viewport 2x1 Tip Inv.**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockNarrowViewport_2x1TipInv`  
+  
+<a name="blocks-Narrow Viewport Double">**Narrow Viewport Double**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockNarrowViewport_Double`  
+  
+<a name="blocks-Narrow Viewport Half Slope">**Narrow Viewport Half Slope**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockNarrowViewport_HalfSlope`  
+  
+<a name="blocks-Narrow Viewport Half Slope Inv.">**Narrow Viewport Half Slope Inv.**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockNarrowViewport_HalfSlopeInv`  
+  
+<a name="blocks-Narrow Viewport Slope">**Narrow Viewport Slope**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockNarrowViewport_Slope`  
+  
+<a name="blocks-Narrow Viewport Slope Inv.">**Narrow Viewport Slope Inv.**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockNarrowViewport_SlopeInv`  
   
 <a name="blocks-Neon Tubes 1">**Neon Tubes 1**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_EmissiveBlock/LargeNeonTubesStraight1`  
@@ -2362,6 +2434,9 @@
 <a name="blocks-Safe Zone">**Safe Zone**</a> ([IMySafeZoneBlock](SpaceEngineers.Game.ModAPI.Ingame.IMySafeZoneBlock))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_SafeZoneBlock/SafeZoneBlock`  
   
+<a name="blocks-Safe Zone Type II">**Safe Zone Type II**</a> ([IMySafeZoneBlock](SpaceEngineers.Game.ModAPI.Ingame.IMySafeZoneBlock))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_SafeZoneBlock/SafeZoneBlockReskin`  
+  
 <a name="blocks-Scaffold Block">**Scaffold Block**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/Truss`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/TrussSmall`  
@@ -2449,6 +2524,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_SensorBlock/LargeBlockSensor`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_SensorBlock/SmallBlockSensor`  
   
+<a name="blocks-Services Terminal">**Services Terminal**</a> ([IMyFunctionalBlock](Sandbox.ModAPI.Ingame.IMyFunctionalBlock))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_FunctionalBlock/ServicesTerminal`  
+  
 <a name="blocks-Short Wheel Suspension 1x1 Left">**Short Wheel Suspension 1x1 Left**</a> ([IMyMotorSuspension](Sandbox.ModAPI.Ingame.IMyMotorSuspension))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_MotorSuspension/ShortSuspension1x1mirrored`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_MotorSuspension/SmallShortSuspension1x1mirrored`  
@@ -2483,6 +2561,69 @@
   
 <a name="blocks-Shower">**Shower**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/Shower`  
+  
+<a name="blocks-Sign Airlock">**Sign Airlock**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign1`  
+  
+<a name="blocks-Sign Bridge">**Sign Bridge**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign2`  
+  
+<a name="blocks-Sign Cafeteria">**Sign Cafeteria**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign3`  
+  
+<a name="blocks-Sign Cryogenics">**Sign Cryogenics**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign4`  
+  
+<a name="blocks-Sign Engineering">**Sign Engineering**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign5`  
+  
+<a name="blocks-Sign Exit">**Sign Exit**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign6`  
+  
+<a name="blocks-Sign Farm">**Sign Farm**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign7`  
+  
+<a name="blocks-Sign Hangar">**Sign Hangar**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign8`  
+  
+<a name="blocks-Sign Laboratory">**Sign Laboratory**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign9`  
+  
+<a name="blocks-Sign Lobby">**Sign Lobby**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign10`  
+  
+<a name="blocks-Sign Logistics">**Sign Logistics**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign11`  
+  
+<a name="blocks-Sign Maintenance">**Sign Maintenance**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign12`  
+  
+<a name="blocks-Sign Market">**Sign Market**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign13`  
+  
+<a name="blocks-Sign Medical">**Sign Medical**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign14`  
+  
+<a name="blocks-Sign Production">**Sign Production**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign15`  
+  
+<a name="blocks-Sign Quarters">**Sign Quarters**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign16`  
+  
+<a name="blocks-Sign Security">**Sign Security**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign17`  
+  
+<a name="blocks-Sign Server">**Sign Server**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign18`  
+  
+<a name="blocks-Sign Stairwell">**Sign Stairwell**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign19`  
+  
+<a name="blocks-Sign Storage">**Sign Storage**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign20`  
+  
+<a name="blocks-Sign Warehouse">**Sign Warehouse**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockFloorPlanSign21`  
   
 <a name="blocks-Simple Bed">**Simple Bed**</a> ([IMyCryoChamber](Sandbox.ModAPI.Ingame.IMyCryoChamber))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CryoChamber/LargeBlockBedFree`  
@@ -2530,6 +2671,9 @@
 <a name="blocks-Small Conveyor Tube T Junction">**Small Conveyor Tube T Junction**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Conveyor/ConveyorTubeSmallT`  
   
+<a name="blocks-Small Corner Vivarium">**Small Corner Vivarium**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockSmallCornerVivarium`  
+  
 <a name="blocks-Small Curved Conveyor Tube">**Small Curved Conveyor Tube**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_ConveyorConnector/ConveyorTubeSmallCurved`  
   
@@ -2566,6 +2710,9 @@
   
 <a name="blocks-Small Reinforced Curved Conveyor Tube">**Small Reinforced Curved Conveyor Tube**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_ConveyorConnector/ConveyorTubeDuctSmallCurved`  
+  
+<a name="blocks-Small Vivarium">**Small Vivarium**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockSmallVivarium`  
   
 <a name="blocks-Small Warfare Reactor">**Small Warfare Reactor**</a> ([IMyReactor](Sandbox.ModAPI.Ingame.IMyReactor))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Reactor/LargeBlockSmallGeneratorWarfare2`  
@@ -2617,6 +2764,7 @@
   
 <a name="blocks-Storage Bin">**Storage Bin**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeStorageBin1`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallStorageBin1`  
   
 <a name="blocks-Storage Bin Pallet">**Storage Bin Pallet**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeStorageBin3`  
@@ -2635,6 +2783,18 @@
   
 <a name="blocks-Store">**Store**</a> ([IMyStoreBlock](Sandbox.ModAPI.Ingame.IMyStoreBlock))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_StoreBlock/StoreBlock`  
+  
+<a name="blocks-Structural Frame">**Structural Frame**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockStructural_Frame`  
+  
+<a name="blocks-Structural Platform">**Structural Platform**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockStructural_Platform`  
+  
+<a name="blocks-Structural Platform Connector">**Structural Platform Connector**</a> ([IMyShipConnector](Sandbox.ModAPI.Ingame.IMyShipConnector))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_ShipConnector/LargeBlockStructural_PlatformConnector`  
+  
+<a name="blocks-Structural Platform Corner">**Structural Platform Corner**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockStructural_PlatformTriangle`  
   
 <a name="blocks-Survival Kit">**Survival Kit**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_SurvivalKit/SurvivalKitLarge`  
@@ -3175,6 +3335,9 @@ Fill Value: {1}</a>**
 **<a name="Blueprints-DisplayName_Item_EngineerPlushie">DisplayName_Item_EngineerPlushie</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/EngineerPlushie`  
   
+**<a name="Blueprints-DisplayName_Item_EngineerPlushieSE2">DisplayName_Item_EngineerPlushieSE2</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/EngineerPlushieSE2`  
+  
 **<a name="Blueprints-DisplayName_Item_SabiroidPlushie">DisplayName_Item_SabiroidPlushie</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/SabiroidPlushie`  
   
@@ -3580,6 +3743,9 @@ Recharge Value: {0}</a>**
   
 
 ## Components  
+**<a name="Components-Almagest Engineer Plushie">Almagest Engineer Plushie</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_Component/EngineerPlushieSE2`  
+  
 **<a name="Components-Bulletproof Glass">Bulletproof Glass</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_Component/BulletproofGlass`  
   
@@ -3780,6 +3946,9 @@ Recharge Value: {0}</a>**
 **<a name="Other-Datapad">Datapad</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_Datapad/Datapad`  
   
+**<a name="Other-Encrypted Data Storage">Encrypted Data Storage</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_Package/EncryptedDataStorage`  
+  
 **<a name="Other-Fruit">Fruit</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_ConsumableItem/Fruit`  
   
@@ -3797,6 +3966,9 @@ Recharge Value: {0}</a>**
   
 **<a name="Other-Insect Meat (Raw)">Insect Meat (Raw)</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_ConsumableItem/InsectMeatRaw`  
+  
+**<a name="Other-Intercepted Transmissions">Intercepted Transmissions</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_Package/InterceptedTransmissions`  
   
 **<a name="Other-Mammal Meat (Cooked)">Mammal Meat (Cooked)</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_ConsumableItem/MammalMeatCooked`  
@@ -3873,8 +4045,17 @@ Recharge Value: {0}</a>**
 **<a name="Other-Powerkit">Powerkit</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_ConsumableItem/Powerkit`  
   
+**<a name="Other-Research Materials">Research Materials</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_Package/ResearchMaterials`  
+  
+**<a name="Other-Smuggled Goods">Smuggled Goods</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_Package/SmuggledGoods`  
+  
 **<a name="Other-Space Credit">Space Credit</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_PhysicalObject/SpaceCredit`  
+  
+**<a name="Other-Technical Blueprints">Technical Blueprints</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_Package/TechnicalBlueprints`  
   
 **<a name="Other-Vegetable Seeds">Vegetable Seeds</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_SeedItem/Vegetables`  

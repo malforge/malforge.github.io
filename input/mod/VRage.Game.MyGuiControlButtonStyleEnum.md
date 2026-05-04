@@ -16,6 +16,7 @@ public enum MyGuiControlButtonStyleEnum
 |Close||
 |CloseBackground||
 |ComboBoxButton||
+|ControllerBinding||
 |ControlSetting||
 |Debug||
 |DebugNew||

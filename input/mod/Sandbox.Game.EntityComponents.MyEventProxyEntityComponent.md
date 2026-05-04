@@ -80,7 +80,6 @@ public abstract class MyEventProxyEntityComponent: MyEntityComponentBase, IMyCom
 
 **Inheritors:**  
 * [MyAutopilotComponent](Sandbox.Game.EntityComponents.MyAutopilotComponent)  
-* [MyMultiTextPanelComponent](Sandbox.Game.EntityComponents.MyMultiTextPanelComponent)  
 * [MyPathRecorderComponent](Sandbox.Game.EntityComponents.MyPathRecorderComponent)  
 * [MyTargetLockingBlockComponent](Sandbox.Game.EntityComponents.MyTargetLockingBlockComponent)  
 * [MyUpdatingEntityComponent](Sandbox.Game.EntityComponents.MyUpdatingEntityComponent)

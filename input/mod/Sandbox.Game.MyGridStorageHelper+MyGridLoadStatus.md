@@ -12,6 +12,7 @@ public enum MyGridLoadStatus
 |Fail_DetailLoadFailed||
 |Fail_GridLoadFailed||
 |Fail_IdentityNotFound||
+|Fail_NotEnoughBlockLimits||
 |Fail_NotEnoughPCU||
 |Fail_Unspecified||
 |None||

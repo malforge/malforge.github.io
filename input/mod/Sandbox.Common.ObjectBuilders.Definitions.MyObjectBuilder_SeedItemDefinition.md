@@ -17,7 +17,9 @@ public class MyObjectBuilder_SeedItemDefinition: MyObjectBuilder_PhysicalItemDef
 |[MinimumOutput](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_SeedItemDefinition@MinimumOutput)||
 |[OutputItemDefinitionId](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_SeedItemDefinition@OutputItemDefinitionId)||
 |[WaterConsumptionMultiplier](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_SeedItemDefinition@WaterConsumptionMultiplier)||
+|[AlwaysInStore](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@AlwaysInStore)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+|[CanPlayerOffer](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@CanPlayerOffer)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|
 |[CanPlayerOrder](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@CanPlayerOrder)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|
 |[CanSpawnFromScreen](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@CanSpawnFromScreen)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|
 |[DepositAllEnabled](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@DepositAllEnabled)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|

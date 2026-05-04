@@ -37,7 +37,6 @@ public class MyShipController: MyTerminalBlock, IMyEntity, IMyEntity, IMyCompone
 |Member|Description|
 |---|---|
 |[AreBreaksOn](Sandbox.Game.Entities.MyShipController@AreBreaksOn)||
-|[AuxiliaryContext](Sandbox.Game.Entities.MyShipController@AuxiliaryContext)||
 |[BlockDefinition](Sandbox.Game.Entities.MyShipController@BlockDefinition)||
 |[CanHavePreviousCameraEntity](Sandbox.Game.Entities.MyShipController@CanHavePreviousCameraEntity)||
 |[CanHavePreviousControlledEntity](Sandbox.Game.Entities.MyShipController@CanHavePreviousControlledEntity)||
@@ -88,7 +87,6 @@ public class MyShipController: MyTerminalBlock, IMyEntity, IMyEntity, IMyCompone
 |[Toolbar](Sandbox.Game.Entities.MyShipController@Toolbar)||
 |[ToolbarType](Sandbox.Game.Entities.MyShipController@ToolbarType)||
 |[TopGrid](Sandbox.Game.Entities.MyShipController@TopGrid)||
-|[AuxiliaryContext](Sandbox.Game.Entities.IMyControllableEntity@AuxiliaryContext)|_Inherited from [IMyControllableEntity](Sandbox.Game.Entities.IMyControllableEntity)_|
 |[BlockDefinition](VRage.Game.ModAPI.Ingame.IMyCubeBlock@BlockDefinition)|Gets definition.Id assigned to this block<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.Ingame.IMyCubeBlock)_|
 |[CanControlShip](Sandbox.ModAPI.Ingame.IMyShipController@CanControlShip)|Determines whether this specific ship controller is capable of controlling the ship it's installed on.<br /><br />_Inherited from [IMyShipController](Sandbox.ModAPI.Ingame.IMyShipController)_|
 |[CanSwitchLandingGears](VRage.Game.ModAPI.Interfaces.IMyControllableEntity@CanSwitchLandingGears)|Gets if entity can switch landing gears<br /><br />_Inherited from [IMyControllableEntity](VRage.Game.ModAPI.Interfaces.IMyControllableEntity)_|

@@ -242,6 +242,7 @@ public class MyPlanet: MyVoxelBase, IMyEntity, IMyEntity, IMyVoxelDrawable, IMyV
 |[GetObjectBuilder(bool)](Sandbox.Game.Entities.MyPlanet@GetObjectBuilder)||
 |[GetOrePriority()](Sandbox.Game.Entities.MyPlanet@GetOrePriority)||
 |[GetOxygenForPosition(Vector3D)](Sandbox.Game.Entities.MyPlanet@GetOxygenForPosition)||
+|[GetSurfacePlacementMatrix(Vector3D)](Sandbox.Game.Entities.MyPlanet@GetSurfacePlacementMatrix)||
 |[GetWindSpeed(Vector3D)](Sandbox.Game.Entities.MyPlanet@GetWindSpeed)||
 |[Init(MyObjectBuilder_EntityBase)](Sandbox.Game.Entities.MyPlanet@Init)||
 |[Init(MyObjectBuilder_EntityBase, IMyStorage)](Sandbox.Game.Entities.MyPlanet@Init)||

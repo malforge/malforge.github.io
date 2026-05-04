@@ -26,9 +26,8 @@ public class MyContractTypeEscortDefinition: MyContractTypeDefinition
 |[DescriptionArgs](VRage.Game.MyDefinitionBase@DescriptionArgs)|String used for shortcuts used in description<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DescriptionEnum](VRage.Game.MyDefinitionBase@DescriptionEnum)|Enum used for localization of description. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DescriptionString](VRage.Game.MyDefinitionBase@DescriptionString)|String used for user created description which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
-|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
-|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Enabled](VRage.Game.MyDefinitionBase@Enabled)|Definition can be disabled by mod, then it will be removed from definition manager<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[EnableForPlayerBlock](Sandbox.Definitions.MyContractTypeDefinition@EnableForPlayerBlock)|_Inherited from [MyContractTypeDefinition](Sandbox.Definitions.MyContractTypeDefinition)_|
 |[Icons](VRage.Game.MyDefinitionBase@Icons)|Icons for the definition, they are used from top to bottom.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Id](VRage.Game.MyDefinitionBase@Id)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Public](VRage.Game.MyDefinitionBase@Public)|Indicates if definition should be offered in Cube builder<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
@@ -40,6 +39,8 @@ public class MyContractTypeEscortDefinition: MyContractTypeDefinition
 |[ChancesPerFactionType](Sandbox.Definitions.MyContractTypeDefinition@ChancesPerFactionType)|_Inherited from [MyContractTypeDefinition](Sandbox.Definitions.MyContractTypeDefinition)_|
 |[DescriptionName](Sandbox.Definitions.MyContractTypeDefinition@DescriptionName)|_Inherited from [MyContractTypeDefinition](Sandbox.Definitions.MyContractTypeDefinition)_|
 |[DescriptionText](VRage.Game.MyDefinitionBase@DescriptionText)|Use this property when showing description in GUI, as it takes into account more complex description construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[DisplayNameString](VRage.Game.MyDefinitionBase@DisplayNameString)|String name used for user created definitions which do not have localization support.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DisplayNameText](VRage.Game.MyDefinitionBase@DisplayNameText)|Use this property when showing name in GUI instead of DisplayName. This takes into account more complex name construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DLCs](VRage.Game.MyDefinitionBase@DLCs)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DurationMultiplier](Sandbox.Definitions.MyContractTypeDefinition@DurationMultiplier)|_Inherited from [MyContractTypeDefinition](Sandbox.Definitions.MyContractTypeDefinition)_|
@@ -47,8 +48,9 @@ public class MyContractTypeEscortDefinition: MyContractTypeDefinition
 |[MaxStartingDeposit](Sandbox.Definitions.MyContractTypeDefinition@MaxStartingDeposit)|_Inherited from [MyContractTypeDefinition](Sandbox.Definitions.MyContractTypeDefinition)_|
 |[MinimumMoney](Sandbox.Definitions.MyContractTypeDefinition@MinimumMoney)|_Inherited from [MyContractTypeDefinition](Sandbox.Definitions.MyContractTypeDefinition)_|
 |[MinimumReputation](Sandbox.Definitions.MyContractTypeDefinition@MinimumReputation)|_Inherited from [MyContractTypeDefinition](Sandbox.Definitions.MyContractTypeDefinition)_|
+|[MinReputationRequirement](Sandbox.Definitions.MyContractTypeDefinition@MinReputationRequirement)|_Inherited from [MyContractTypeDefinition](Sandbox.Definitions.MyContractTypeDefinition)_|
 |[MinStartingDeposit](Sandbox.Definitions.MyContractTypeDefinition@MinStartingDeposit)|_Inherited from [MyContractTypeDefinition](Sandbox.Definitions.MyContractTypeDefinition)_|
-|[MoneyReputationCoeficient](Sandbox.Definitions.MyContractTypeDefinition@MoneyReputationCoeficient)|_Inherited from [MyContractTypeDefinition](Sandbox.Definitions.MyContractTypeDefinition)_|
+|[StrategyType](Sandbox.Definitions.MyContractTypeDefinition@StrategyType)|_Inherited from [MyContractTypeDefinition](Sandbox.Definitions.MyContractTypeDefinition)_|
 |[TitleName](Sandbox.Definitions.MyContractTypeDefinition@TitleName)|_Inherited from [MyContractTypeDefinition](Sandbox.Definitions.MyContractTypeDefinition)_|
 
 ## Constructors

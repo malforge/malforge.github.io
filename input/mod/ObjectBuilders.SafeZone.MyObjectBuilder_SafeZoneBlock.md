@@ -10,6 +10,7 @@ public class MyObjectBuilder_SafeZoneBlock: MyObjectBuilder_FunctionalBlock
 |---|---|
 |[SafeZoneId](ObjectBuilders.SafeZone.MyObjectBuilder_SafeZoneBlock@SafeZoneId)||
 |[TextPanels](ObjectBuilders.SafeZone.MyObjectBuilder_SafeZoneBlock@TextPanels)||
+|[UseConveyorSystem](ObjectBuilders.SafeZone.MyObjectBuilder_SafeZoneBlock@UseConveyorSystem)||
 |[BlockGeneralDamageModifier](VRage.Game.MyObjectBuilder_CubeBlock@BlockGeneralDamageModifier)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[BlockOrientation](VRage.Game.MyObjectBuilder_CubeBlock@BlockOrientation)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[BuildPercent](VRage.Game.MyObjectBuilder_CubeBlock@BuildPercent)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|

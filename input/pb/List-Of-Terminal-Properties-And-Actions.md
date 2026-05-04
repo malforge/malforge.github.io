@@ -3096,11 +3096,9 @@
 |-|-|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
-|DecreaseSafeZoneXSlider|Decrease Set Width|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
-|IncreaseSafeZoneXSlider|Increase Set Width|
 |IncreaseTextPaddingSlider|Increase Text Padding|
 |OnOff|Toggle block On/Off|
 |OnOff_Off|Toggle block Off|
@@ -3109,6 +3107,7 @@
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
 |ShowOnHUD_On|Show on HUD On|
+|UseConveyor|Automatic Push/Pull On/Off|
 
 ### Properties
 
@@ -3149,6 +3148,7 @@
 |ShowInToolbarConfig|bool|
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
+|UseConveyor|bool|
 
 ## IMySearchlight
 

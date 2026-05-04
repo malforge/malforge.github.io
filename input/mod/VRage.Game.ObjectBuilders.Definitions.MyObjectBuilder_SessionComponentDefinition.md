@@ -45,12 +45,14 @@ public class MyObjectBuilder_SessionComponentDefinition: MyObjectBuilder_Definit
 **Inheritors:**  
 * [MyObjectbuilder_AiRvoComponentDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectbuilder_AiRvoComponentDefinition)  
 * [MyObjectbuilder_AutopilotPathfindingComponentDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectbuilder_AutopilotPathfindingComponentDefinition)  
+* [MyObjectBuilder_ContractRiskDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_ContractRiskDefinition)  
 * [MyObjectBuilder_CubeBuilderDefinition](VRage.Game.ObjectBuilders.Definitions.SessionComponents.MyObjectBuilder_CubeBuilderDefinition)  
 * [MyObjectbuilder_GlobalEncountersGeneratorDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectbuilder_GlobalEncountersGeneratorDefinition)  
 * [MyObjectbuilder_HazardExposureComponentDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectbuilder_HazardExposureComponentDefinition)  
 * [MyObjectbuilder_SessionComponentAntiCheatDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectbuilder_SessionComponentAntiCheatDefinition)  
 * [MyObjectBuilder_SessionComponentContractSystemDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_SessionComponentContractSystemDefinition)  
 * [MyObjectbuilder_SessionComponentEconomyDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectbuilder_SessionComponentEconomyDefinition)  
+* [MyObjectBuilder_SessionComponentItemTriggeredContractsDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_SessionComponentItemTriggeredContractsDefinition)  
 * [MyObjectBuilder_SessionComponentResearchDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_SessionComponentResearchDefinition)  
 * [MyObjectBuilder_SessionComponentSmartUpdaterDefinition](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_SessionComponentSmartUpdaterDefinition)
 

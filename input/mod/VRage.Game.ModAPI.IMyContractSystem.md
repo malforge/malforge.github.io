@@ -24,15 +24,21 @@ Describes contract system (mods interface)
 
 |Member|Description|
 |---|---|
+|[ActiveContracts](VRage.Game.ModAPI.IMyContractSystem@ActiveContracts)|List of active contracts|
 |[CustomCanActivateContract](VRage.Game.ModAPI.IMyContractSystem@CustomCanActivateContract)|Gets or sets function that is triggered when player trying to take contract First argument - ContractId, Second - IdentityId|
 |[CustomFinishCondition](VRage.Game.ModAPI.IMyContractSystem@CustomFinishCondition)|The operation of finishing Condition itself Returns whether it succeeded or not|
 |[CustomNeedsUpdate](VRage.Game.ModAPI.IMyContractSystem@CustomNeedsUpdate)|Gets or sets function that is triggered each 100 frames per each contract.|
+|[InactiveContracts](VRage.Game.ModAPI.IMyContractSystem@InactiveContracts)|List of inactive contracts|
 
 ## Methods
 
 |Member|Description|
 |---|---|
-|[AddContract(IMyContract)](VRage.Game.ModAPI.IMyContractSystem@AddContract)|Adds the contract|
+|[AcceptContract(long, long)](VRage.Game.ModAPI.IMyContractSystem@AcceptContract)|Accepts contract for specified player|
+|[AddContract(IMyContract, long)](VRage.Game.ModAPI.IMyContractSystem@AddContract)|Adds the contract for the block or for faction station|
+|[GetAvailableContractsForBlock(long)](VRage.Game.ModAPI.IMyContractSystem@GetAvailableContractsForBlock)|Gets available (inactive) contracts for block. This list does not contain contracts for stations.|
+|[GetAvailableContractsForFactionStation(long)](VRage.Game.ModAPI.IMyContractSystem@GetAvailableContractsForFactionStation)|Gets available (inactive) contracts for station. This list contains only NPC faction stations contracts.|
+|[GetContractById(long)](VRage.Game.ModAPI.IMyContractSystem@GetContractById)|Gets existing contract (active or inactive)|
 |[GetContractDefinitionId(long)](VRage.Game.ModAPI.IMyContractSystem@GetContractDefinitionId)|Gets Contracts Definition Id|
 |[GetContractState(long)](VRage.Game.ModAPI.IMyContractSystem@GetContractState)|Gets Contract State|
 |[IsContractActive(long)](VRage.Game.ModAPI.IMyContractSystem@IsContractActive)|Checks if specified contract is in active state|

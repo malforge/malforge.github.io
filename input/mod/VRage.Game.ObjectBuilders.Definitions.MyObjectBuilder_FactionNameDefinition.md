@@ -10,6 +10,7 @@ public class MyObjectBuilder_FactionNameDefinition: MyObjectBuilder_DefinitionBa
 |---|---|
 |[LanguageId](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionNameDefinition@LanguageId)||
 |[Names](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionNameDefinition@Names)||
+|[StationTypeNames](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionNameDefinition@StationTypeNames)||
 |[StringType](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionNameDefinition@StringType)||
 |[Tags](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionNameDefinition@Tags)||
 |[Type](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionNameDefinition@Type)||

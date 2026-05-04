@@ -8,7 +8,6 @@ public interface IMyControllableEntity: IMyControllableEntity
 
 |Member|Description|
 |---|---|
-|[AuxiliaryContext](Sandbox.Game.Entities.IMyControllableEntity@AuxiliaryContext)||
 |[ControlContext](Sandbox.Game.Entities.IMyControllableEntity@ControlContext)||
 |[ControllerInfo](Sandbox.Game.Entities.IMyControllableEntity@ControllerInfo)||
 |[EnabledBroadcasting](Sandbox.Game.Entities.IMyControllableEntity@EnabledBroadcasting)||

@@ -57,6 +57,7 @@ public class MyObjectBuilder_Definitions: MyObjectBuilder_Base
 |[Environments](VRage.Game.MyObjectBuilder_Definitions@Environments)||
 |[FactionNames](VRage.Game.MyObjectBuilder_Definitions@FactionNames)||
 |[Factions](VRage.Game.MyObjectBuilder_Definitions@Factions)||
+|[FactionStationAdverts](VRage.Game.MyObjectBuilder_Definitions@FactionStationAdverts)||
 |[Flares](VRage.Game.MyObjectBuilder_Definitions@Flares)||
 |[Fonts](VRage.Game.MyObjectBuilder_Definitions@Fonts)||
 |[GasProperties](VRage.Game.MyObjectBuilder_Definitions@GasProperties)||

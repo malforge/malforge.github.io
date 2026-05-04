@@ -25,4 +25,5 @@ public abstract sealed class MyInputExtensions
 |[static GetRoll(this IMyInput)](VRage.Input.MyInputExtensions@GetRoll)||
 |[static GetRotation(this IMyInput)](VRage.Input.MyInputExtensions@GetRotation)||
 |[static GetRotation(this IMyInput)](VRage.Input.MyInputExtensions@GetRotation)||
+|[static IsLookAround(this IMyInput)](VRage.Input.MyInputExtensions@IsLookAround)||
 

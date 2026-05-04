@@ -12,7 +12,12 @@ Describes interface of the control
 |---|---|
 |[Code](VRage.Input.IMyControllerControl@Code)|Code of the control|
 |[Condition](VRage.Input.IMyControllerControl@Condition)|Condition if control should be active|
+|[Context](VRage.Input.IMyControllerControl@Context)|Context in which this control exists|
 |[Control](VRage.Input.IMyControllerControl@Control)|Base Control|
+|[ControlId](VRage.Input.IMyControllerControl@ControlId)|Id of this control|
+|[IgnorePriorityMap](VRage.Input.IMyControllerControl@IgnorePriorityMap)|Should this control ignore priority map|
+|[Modifier1](VRage.Input.IMyControllerControl@Modifier1)|First modifier|
+|[Modifier2](VRage.Input.IMyControllerControl@Modifier2)|Second modifier|
 
 ## Methods
 

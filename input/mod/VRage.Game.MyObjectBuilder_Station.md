@@ -13,6 +13,7 @@ public class MyObjectBuilder_Station
 |[Id](VRage.Game.MyObjectBuilder_Station@Id)||
 |[IsDeepSpaceStation](VRage.Game.MyObjectBuilder_Station@IsDeepSpaceStation)||
 |[IsOnPlanetWithAtmosphere](VRage.Game.MyObjectBuilder_Station@IsOnPlanetWithAtmosphere)||
+|[Name](VRage.Game.MyObjectBuilder_Station@Name)||
 |[Position](VRage.Game.MyObjectBuilder_Station@Position)||
 |[PrefabName](VRage.Game.MyObjectBuilder_Station@PrefabName)||
 |[SafeZoneEntityId](VRage.Game.MyObjectBuilder_Station@SafeZoneEntityId)||

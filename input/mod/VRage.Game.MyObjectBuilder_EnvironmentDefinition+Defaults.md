@@ -16,6 +16,8 @@ public abstract sealed class Defaults
 |[static ContourHighlightThickness](VRage.Game.MyObjectBuilder_EnvironmentDefinition+Defaults@ContourHighlightThickness)||
 |[static EnvironmentOrientation](VRage.Game.MyObjectBuilder_EnvironmentDefinition+Defaults@EnvironmentOrientation)||
 |[static EnvironmentTexture](VRage.Game.MyObjectBuilder_EnvironmentDefinition+Defaults@EnvironmentTexture)||
+|[static FloatingObjectLinearDampening](VRage.Game.MyObjectBuilder_EnvironmentDefinition+Defaults@FloatingObjectLinearDampening)||
+|[static FloatingObjectLinearDampeningInSafezone](VRage.Game.MyObjectBuilder_EnvironmentDefinition+Defaults@FloatingObjectLinearDampeningInSafezone)||
 |[static HighlightPulseInSeconds](VRage.Game.MyObjectBuilder_EnvironmentDefinition+Defaults@HighlightPulseInSeconds)||
 |[static LargeShipMaxAngularSpeed](VRage.Game.MyObjectBuilder_EnvironmentDefinition+Defaults@LargeShipMaxAngularSpeed)||
 |[static LargeShipMaxSpeed](VRage.Game.MyObjectBuilder_EnvironmentDefinition+Defaults@LargeShipMaxSpeed)||

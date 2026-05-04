@@ -16,6 +16,7 @@ public class MyObjectBuilder_SessionComponentEconomy: MyObjectBuilder_SessionCom
 |[CurrencyDestroyedThisTick](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_SessionComponentEconomy@CurrencyDestroyedThisTick)||
 |[CurrencyGeneratedThisTick](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_SessionComponentEconomy@CurrencyGeneratedThisTick)||
 |[GenerateFactionsOnStart](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_SessionComponentEconomy@GenerateFactionsOnStart)||
+|[LastEconomyTick](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_SessionComponentEconomy@LastEconomyTick)||
 
 ## Properties
 

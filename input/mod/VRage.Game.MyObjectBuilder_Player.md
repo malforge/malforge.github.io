@@ -28,6 +28,7 @@ public class MyObjectBuilder_Player: MyObjectBuilder_Base
 |[RemoteAdminSettings](VRage.Game.MyObjectBuilder_Player@RemoteAdminSettings)||
 |[SteamID](VRage.Game.MyObjectBuilder_Player@SteamID)||
 |[Toolbar](VRage.Game.MyObjectBuilder_Player@Toolbar)||
+|[VisitedStationIds](VRage.Game.MyObjectBuilder_Player@VisitedStationIds)||
 
 ## Properties
 
@@ -55,6 +56,7 @@ public class MyObjectBuilder_Player: MyObjectBuilder_Base
 |[ShouldSerializePlayerId()](VRage.Game.MyObjectBuilder_Player@ShouldSerializePlayerId)||
 |[ShouldSerializePlayerModel()](VRage.Game.MyObjectBuilder_Player@ShouldSerializePlayerModel)||
 |[ShouldSerializeSteamID()](VRage.Game.MyObjectBuilder_Player@ShouldSerializeSteamID)||
+|[ShouldSerializeVisitedStationIds()](VRage.Game.MyObjectBuilder_Player@ShouldSerializeVisitedStationIds)||
 |[Clone()](VRage.ObjectBuilders.MyObjectBuilder_Base@Clone)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
 |[Equals(MyObjectBuilder_Base)](VRage.ObjectBuilders.MyObjectBuilder_Base@Equals)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
 |[ShouldSerializeSubtypeId()](VRage.ObjectBuilders.MyObjectBuilder_Base@ShouldSerializeSubtypeId)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|

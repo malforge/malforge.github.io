@@ -41,6 +41,7 @@ public abstract class MyObjectBuilder_Base
 * [MyObjectBuilder_BlockGroup](VRage.Game.MyObjectBuilder_BlockGroup)  
 * [MyObjectBuilder_Bot](VRage.Game.MyObjectBuilder_Bot)  
 * [MyObjectBuilder_BotMemory](VRage.Game.MyObjectBuilder_BotMemory)  
+* [MyObjectBuilder_BotSteeringBase](VRage.Game.MyObjectBuilder_BotSteeringBase)  
 * [MyObjectBuilder_ChatHistory](VRage.Game.MyObjectBuilder_ChatHistory)  
 * [MyObjectBuilder_Checkpoint](VRage.Game.MyObjectBuilder_Checkpoint)  
 * [MyObjectBuilder_Client](VRage.Game.MyObjectBuilder_Client)  

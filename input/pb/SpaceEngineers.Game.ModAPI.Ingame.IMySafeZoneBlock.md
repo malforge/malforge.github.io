@@ -81,5 +81,6 @@ Safe zone block interface
 * [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock)
 
 **Type Definitions:**  
-* MyObjectBuilder_SafeZoneBlock/SafeZoneBlock
+* MyObjectBuilder_SafeZoneBlock/SafeZoneBlock  
+* MyObjectBuilder_SafeZoneBlock/SafeZoneBlockReskin
 

@@ -1,6 +1,12 @@
 ## Summary
 
 ```csharp
+public MyContractSearch()
+```
+
+## Summary
+
+```csharp
 public MyContractSearch(long startBlockId, int moneyReward, int collateral, int duration, long targetGridId, double searchRadius)
 ```
 

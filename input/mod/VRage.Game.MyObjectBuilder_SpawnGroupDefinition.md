@@ -8,6 +8,7 @@ public class MyObjectBuilder_SpawnGroupDefinition: MyObjectBuilder_DefinitionBas
 
 |Member|Description|
 |---|---|
+|[ContractTriggerSettings](VRage.Game.MyObjectBuilder_SpawnGroupDefinition@ContractTriggerSettings)||
 |[EnableNpcResources](VRage.Game.MyObjectBuilder_SpawnGroupDefinition@EnableNpcResources)||
 |[EnableTradingStationVisit](VRage.Game.MyObjectBuilder_SpawnGroupDefinition@EnableTradingStationVisit)||
 |[Factions](VRage.Game.MyObjectBuilder_SpawnGroupDefinition@Factions)||

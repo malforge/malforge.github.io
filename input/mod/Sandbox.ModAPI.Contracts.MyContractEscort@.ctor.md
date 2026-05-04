@@ -1,6 +1,12 @@
 ## Summary
 
 ```csharp
+public MyContractEscort()
+```
+
+## Summary
+
+```csharp
 public MyContractEscort(long startBlockId, int moneyReward, int collateral, int duration, Vector3D start, Vector3D end, long ownerIdentityId)
 ```
 

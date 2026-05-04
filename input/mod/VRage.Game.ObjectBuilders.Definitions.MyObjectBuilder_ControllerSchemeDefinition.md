@@ -10,6 +10,8 @@ public class MyObjectBuilder_ControllerSchemeDefinition: MyObjectBuilder_Definit
 |---|---|
 |[Contexts](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ControllerSchemeDefinition@Contexts)||
 |[ControlScheme](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ControllerSchemeDefinition@ControlScheme)||
+|[DefaultModifier1](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ControllerSchemeDefinition@DefaultModifier1)||
+|[DefaultModifier2](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ControllerSchemeDefinition@DefaultModifier2)||
 |[IsDefault](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ControllerSchemeDefinition@IsDefault)||
 |[IsJoystickScheme](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ControllerSchemeDefinition@IsJoystickScheme)||
 |[IsSelectable](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ControllerSchemeDefinition@IsSelectable)||

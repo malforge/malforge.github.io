@@ -23,6 +23,7 @@ public interface IMyStoreItem
 |[ItemType](VRage.Game.ModAPI.IMyStoreItem@ItemType)|The type of item. eg: PhysicalItem, Grid, etc|
 |[PrefabName](VRage.Game.ModAPI.IMyStoreItem@PrefabName)|The name of the Prefab Definition SubtypeId if the item is a Grid|
 |[PrefabTotalPcu](VRage.Game.ModAPI.IMyStoreItem@PrefabTotalPcu)|The PCU value of a Grid item|
+|[PreviousPricePerUnit](VRage.Game.ModAPI.IMyStoreItem@PreviousPricePerUnit)|The previous price of the item. Used to calculate price trend.|
 |[PricePerUnit](VRage.Game.ModAPI.IMyStoreItem@PricePerUnit)|The individual cost of a single item.|
 |[PricePerUnitDiscount](VRage.Game.ModAPI.IMyStoreItem@PricePerUnitDiscount)|This governs the tooltip that appears when you hover your cursor over the price in the store (eg: 0.5 for 50% discount). This doesn't actually affect the price, use Amount to adjust that.|
 |[RemovedAmount](VRage.Game.ModAPI.IMyStoreItem@RemovedAmount)|The amount that has been removed from the item through purchases (ie: Purchased Amount)|

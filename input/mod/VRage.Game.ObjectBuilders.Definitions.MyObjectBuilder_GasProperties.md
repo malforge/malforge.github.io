@@ -8,6 +8,7 @@ public class MyObjectBuilder_GasProperties: MyObjectBuilder_DefinitionBase
 
 |Member|Description|
 |---|---|
+|[CanPlayerOffer](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_GasProperties@CanPlayerOffer)||
 |[EnergyDensity](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_GasProperties@EnergyDensity)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[Description](VRage.Game.MyObjectBuilder_DefinitionBase@Description)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|

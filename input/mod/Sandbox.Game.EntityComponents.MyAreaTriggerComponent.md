@@ -9,6 +9,7 @@ public class MyAreaTriggerComponent: MyTriggerComponent, IMyComponentBase, IMyEn
 |Member|Description|
 |---|---|
 |[EntityEntered](Sandbox.Game.EntityComponents.MyAreaTriggerComponent@EntityEntered)||
+|[PlayerEntered](Sandbox.Game.EntityComponents.MyAreaTriggerComponent@PlayerEntered)||
 
 ## Events
 

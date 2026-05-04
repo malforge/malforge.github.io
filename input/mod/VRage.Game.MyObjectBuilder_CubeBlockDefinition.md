@@ -53,6 +53,7 @@ public class MyObjectBuilder_CubeBlockDefinition: MyObjectBuilder_PhysicalModelD
 |[GuiVisible](VRage.Game.MyObjectBuilder_CubeBlockDefinition@GuiVisible)||
 |[HasPhysics](VRage.Game.MyObjectBuilder_CubeBlockDefinition@HasPhysics)||
 |[IsAirTight](VRage.Game.MyObjectBuilder_CubeBlockDefinition@IsAirTight)||
+|[IsInventoryItem](VRage.Game.MyObjectBuilder_CubeBlockDefinition@IsInventoryItem)||
 |[IsStandAlone](VRage.Game.MyObjectBuilder_CubeBlockDefinition@IsStandAlone)||
 |[MaxIntegrity](VRage.Game.MyObjectBuilder_CubeBlockDefinition@MaxIntegrity)||
 |[MechanicalTopInitialPlacementOffset](VRage.Game.MyObjectBuilder_CubeBlockDefinition@MechanicalTopInitialPlacementOffset)||
@@ -76,6 +77,7 @@ public class MyObjectBuilder_CubeBlockDefinition: MyObjectBuilder_PhysicalModelD
 |[Rotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Rotation)||
 |[SilenceableByShipSoundSystem](VRage.Game.MyObjectBuilder_CubeBlockDefinition@SilenceableByShipSoundSystem)||
 |[SimpleUpdateVisualOnSkinChange](VRage.Game.MyObjectBuilder_CubeBlockDefinition@SimpleUpdateVisualOnSkinChange)|Set to true if you dont want to reset subpart positions or reload the whole model on skin change|
+|[SingleBlockGridVoxelPlacement](VRage.Game.MyObjectBuilder_CubeBlockDefinition@SingleBlockGridVoxelPlacement)||
 |[Size](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Size)||
 |[Skeleton](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Skeleton)||
 |[TargetingGroups](VRage.Game.MyObjectBuilder_CubeBlockDefinition@TargetingGroups)||

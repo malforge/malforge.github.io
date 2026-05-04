@@ -55,6 +55,7 @@
 <p><strong>Assembly:</strong> Sandbox.Game.dll</p>
 <pre><code class="language-csharp">public class MyContractCustom: IMyContractCustom, IMyContract
 </code></pre>
+<p>Implements IMyContractCustom interface so you can create your own contract. Call IMYContractSystem.AddContract with this instance. This is just wrapper used when crating contract. Once contract is created do not use this, get actuall contract from the contract system.</p>
 <h2 id="properties">Properties</h2>
 <table>
 <thead>
@@ -66,6 +67,10 @@
 <tbody>
 <tr>
 <td><a href="Sandbox.ModAPI.Contracts.MyContractCustom@Collateral.html">Collateral</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.Contracts.MyContractCustom@ContractCondition.html">ContractCondition</a></td>
 <td></td>
 </tr>
 <tr>
@@ -94,7 +99,7 @@
 </tr>
 <tr>
 <td><a href="Sandbox.ModAPI.Contracts.MyContractCustom@Name.html">Name</a></td>
-<td></td>
+<td>Name of the contract. If null or empty, definition DisplayName is used.</td>
 </tr>
 <tr>
 <td><a href="Sandbox.ModAPI.Contracts.MyContractCustom@OnContractAcquired.html">OnContractAcquired</a></td>
@@ -109,7 +114,7 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="Sandbox.ModAPI.Contracts.MyContractCustom@ReputationReward.html">ReputationReward</a></td>
+<td><a href="Sandbox.ModAPI.Contracts.MyContractCustom@RewardReputation.html">RewardReputation</a></td>
 <td></td>
 </tr>
 <tr>
@@ -119,6 +124,10 @@
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContract@Collateral.html">Collateral</a></td>
 <td>Gets money that player would loose if he won't complete contract<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyContract@ContractCondition.html">ContractCondition</a></td>
+<td>Gets contract condition. Condition has contract after is created, not in wrapper class. You have to get contract from the contract system.<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContractCustom@DefinitionId.html">DefinitionId</a></td>
@@ -137,8 +146,8 @@
 <td><a href="VRage.ModAPI.IMyEntity@EntityId.html">EntityId</a> of block that should finish contract<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContractCustom.html">IMyContractCustom</a></em></td>
 </tr>
 <tr>
-<td><a href="VRage.Game.ModAPI.IMyContractCustom@FailReputationPrice.html">FailReputationPrice</a></td>
-<td>Amount of reputation you lose on contract failure<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContractCustom.html">IMyContractCustom</a></em></td>
+<td><a href="VRage.Game.ModAPI.IMyContract@FailReputationPrice.html">FailReputationPrice</a></td>
+<td>Gets reputation price when contract fails<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContract@MoneyReward.html">MoneyReward</a></td>
@@ -161,12 +170,16 @@
 <td>Gets or sets function that is triggered when contract is successfully completed<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
-<td><a href="VRage.Game.ModAPI.IMyContractCustom@ReputationReward.html">ReputationReward</a></td>
-<td>Amount of reputation gained on contract success<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContractCustom.html">IMyContractCustom</a></em></td>
+<td><a href="VRage.Game.ModAPI.IMyContract@RewardReputation.html">RewardReputation</a></td>
+<td>Gets reputation reward<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyContract@StartBlockId.html">StartBlockId</a></td>
 <td>Gets id of block, that created contract<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyContract.html">IMyContract</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.Contracts.MyContractCustom@ReputationReward.html">ReputationReward</a></td>
+<td><em><strong>Obsolete:</strong> Use RewardReputation</em></td>
 </tr>
 </tbody>
 </table>

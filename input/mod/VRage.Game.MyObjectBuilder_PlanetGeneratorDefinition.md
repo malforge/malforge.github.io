@@ -8,7 +8,10 @@ public class MyObjectBuilder_PlanetGeneratorDefinition: MyObjectBuilder_Definiti
 
 |Member|Description|
 |---|---|
+|[AllowContractSpawns](VRage.Game.MyObjectBuilder_PlanetGeneratorDefinition@AllowContractSpawns)||
 |[AllowMeteors](VRage.Game.MyObjectBuilder_PlanetGeneratorDefinition@AllowMeteors)||
+|[AllowOrbitalEconomyStations](VRage.Game.MyObjectBuilder_PlanetGeneratorDefinition@AllowOrbitalEconomyStations)||
+|[AllowSurfaceEconomyStations](VRage.Game.MyObjectBuilder_PlanetGeneratorDefinition@AllowSurfaceEconomyStations)||
 |[AnimalSpawnInfo](VRage.Game.MyObjectBuilder_PlanetGeneratorDefinition@AnimalSpawnInfo)||
 |[Atmosphere](VRage.Game.MyObjectBuilder_PlanetGeneratorDefinition@Atmosphere)||
 |[AtmosphereSettings](VRage.Game.MyObjectBuilder_PlanetGeneratorDefinition@AtmosphereSettings)||
