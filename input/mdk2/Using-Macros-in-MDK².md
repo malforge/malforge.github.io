@@ -13,13 +13,15 @@ string version = "Built on $MDK_DATE$ at $MDK_TIME$";
 
 ## Default Macros
 
-MDK² provides three built-in macros that are automatically available:
+MDK² provides several built-in macros that are automatically available:
 
 - **`$MDK_DATETIME$`** - Current date and time (format: `yyyy-MM-dd HH:mm`)
 - **`$MDK_DATE$`** - Current date only (format: `yyyy-MM-dd`)
 - **`$MDK_TIME$`** - Current time only (format: `HH:mm`)
+- **`$MDK_PROJECT$`** - The project name
+- **`$MDK_BRANCH$`** - The current git branch name (empty when it can't be determined)
 
-These macros are updated every time you build your project, making them perfect for build timestamps.
+The date/time macros are updated every time you build your project, making them perfect for build timestamps. `$MDK_PROJECT$` and `$MDK_BRANCH$` are most often used in the `pattern` of a `[mdk-branch:*]` section to name a mod's [branch-specific output folder](MDK²-Project-Configuration-Guide.html), but like all macros they work anywhere macros are replaced.
 
 ## Defining Custom Macros
 

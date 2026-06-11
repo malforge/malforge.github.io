@@ -167,6 +167,39 @@ This file is specific to the local machine and is not meant to be checked into v
 <li><strong>Example:</strong> <code>macros=$VERSION$=1.0.5,$AUTHOR$=YourName</code></li>
 <li><strong>See also:</strong> <strong><a href="Using-Macros-in-MDK%C2%B2.html">Using Macros in MDK²</a></strong> for detailed documentation and examples.</li>
 </ul>
+<h3 id="branch-specific-output-folders-mods">Branch-Specific Output Folders (mods)</h3>
+<div class="markdown-alert markdown-alert-note">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
+<p>This applies to <strong>mod</strong> projects only.</p>
+</div>
+<p>By default a mod is packed into an output folder named after the project. You can override that folder name <strong>per git branch</strong> by adding <code>[mdk-branch:&lt;branchname&gt;]</code> sections to <code>mdk.ini</code>. Because the output folder is what determines a mod's Steam Workshop identity, this lets you publish a separate (e.g. <em>alpha</em> or <em>test</em>) Workshop item from a dedicated branch without ever touching your released mod — handy when you need to push a build to a dedicated server for testing. Promoting a tested change to the real mod is then just merging the branch.</p>
+<p>When MDK packs a mod, it reads the current git branch and looks for a matching <code>[mdk-branch:&lt;branch&gt;]</code> section:</p>
+<ul>
+<li><strong>Match found:</strong> the mod is packed into a folder named by that section's <code>pattern</code> value.</li>
+<li><strong>No match (e.g. your <code>master</code>/<code>main</code> branch):</strong> the mod is packed into the project-name folder, exactly as before.</li>
+<li><strong>No branch sections defined at all:</strong> branch detection is irrelevant; behavior is unchanged.</li>
+</ul>
+<h4 id="mdk-branchbranchname"><code>[mdk-branch:&lt;branchname&gt;]</code></h4>
+<ul>
+<li><strong>Description:</strong> Declares a per-branch output folder. The branch name lives in the section header, so it may contain characters that aren't valid in a key (for example a slash, as in <code>release/beta</code>). Add one section per branch you want redirected.</li>
+<li><strong><code>pattern</code>:</strong> The output folder name to use on that branch. Supports the same macros as the <code>macros</code> setting — most usefully <code>$MDK_PROJECT$</code> (the project name) and <code>$MDK_BRANCH$</code> (the current branch name), plus <code>$MDK_DATE$</code> and friends. Any characters that aren't valid in a folder name (such as a <code>/</code> coming from <code>$MDK_BRANCH$</code>) are replaced with <code>-</code>.</li>
+<li><strong><code>watermark</code>:</strong> Whether to stamp a translucent red watermark across the deployed thumbnail so the build is easy to spot in the Workshop. <strong>Defaults to <code>true</code></strong> for a branch section (a redirect implies a non-release build); set <code>watermark=false</code> to disable.</li>
+<li><strong><code>watermarktext</code>:</strong> The text to stamp. Defaults to the branch name (uppercased). Supports macros.</li>
+<li><strong>Example:</strong>
+<pre><code class="language-ini">[mdk-branch:alpha]
+pattern=$MDK_PROJECT$.Alpha
+; watermark defaults to on; &quot;ALPHA&quot; is stamped on the thumbnail
+
+[mdk-branch:release/beta]
+pattern=$MDK_PROJECT$.Beta
+watermark=false        ; a polished beta channel - no stamp
+</code></pre>
+</li>
+</ul>
+<div class="markdown-alert markdown-alert-important">
+<p class="markdown-alert-title"><svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
+<p>If you have defined any <code>[mdk-branch:*]</code> sections but MDK cannot determine the current branch (the project isn't in a git repository, or the repository is in a detached-HEAD state), the pack is <strong>aborted</strong> with an error. This is deliberate: it prevents an intended alpha build from silently being packed into — and published over — your released mod.</p>
+</div>
 <h3 id="local-specific-settings">Local-Specific Settings</h3>
 <p>The following settings are typically defined in the <code>.mdk.local.ini</code> file to apply machine-specific configurations. These are not required to be shared across developers or environments, providing flexibility in setup.</p>
 <h4 id="outputautospecific-path"><code>output=auto|[specific path]</code></h4>
@@ -207,6 +240,7 @@ This file is specific to the local machine and is not meant to be checked into v
 <li><code>minify</code> - Minification level</li>
 <li><code>minifyextraoptions</code> - Minification options</li>
 <li><code>donotclean</code> - Files to preserve (mods only)</li>
+<li><code>[mdk-branch:*]</code> - Per-branch output folders (mods only)</li>
 </ul>
 <p><strong>mdk.local.ini</strong> (machine-specific settings - do NOT commit):</p>
 <ul>

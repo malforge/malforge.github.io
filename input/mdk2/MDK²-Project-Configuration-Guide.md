@@ -70,6 +70,38 @@ This section applies to both `.ini` files. All settings can be defined in either
 - **Example:** `macros=$VERSION$=1.0.5,$AUTHOR$=YourName`
 - **See also:** **[Using Macros in MDK²](Using-Macros-in-MDK².html)** for detailed documentation and examples.
 
+### Branch-Specific Output Folders (mods)
+
+> [!NOTE]
+> This applies to **mod** projects only.
+
+By default a mod is packed into an output folder named after the project. You can override that folder name **per git branch** by adding `[mdk-branch:<branchname>]` sections to `mdk.ini`. Because the output folder is what determines a mod's Steam Workshop identity, this lets you publish a separate (e.g. *alpha* or *test*) Workshop item from a dedicated branch without ever touching your released mod — handy when you need to push a build to a dedicated server for testing. Promoting a tested change to the real mod is then just merging the branch.
+
+When MDK packs a mod, it reads the current git branch and looks for a matching `[mdk-branch:<branch>]` section:
+
+- **Match found:** the mod is packed into a folder named by that section's `pattern` value.
+- **No match (e.g. your `master`/`main` branch):** the mod is packed into the project-name folder, exactly as before.
+- **No branch sections defined at all:** branch detection is irrelevant; behavior is unchanged.
+
+#### `[mdk-branch:<branchname>]`
+- **Description:** Declares a per-branch output folder. The branch name lives in the section header, so it may contain characters that aren't valid in a key (for example a slash, as in `release/beta`). Add one section per branch you want redirected.
+- **`pattern`:** The output folder name to use on that branch. Supports the same macros as the `macros` setting — most usefully `$MDK_PROJECT$` (the project name) and `$MDK_BRANCH$` (the current branch name), plus `$MDK_DATE$` and friends. Any characters that aren't valid in a folder name (such as a `/` coming from `$MDK_BRANCH$`) are replaced with `-`.
+- **`watermark`:** Whether to stamp a translucent red watermark across the deployed thumbnail so the build is easy to spot in the Workshop. **Defaults to `true`** for a branch section (a redirect implies a non-release build); set `watermark=false` to disable.
+- **`watermarktext`:** The text to stamp. Defaults to the branch name (uppercased). Supports macros.
+- **Example:**
+    ```ini
+    [mdk-branch:alpha]
+    pattern=$MDK_PROJECT$.Alpha
+    ; watermark defaults to on; "ALPHA" is stamped on the thumbnail
+
+    [mdk-branch:release/beta]
+    pattern=$MDK_PROJECT$.Beta
+    watermark=false        ; a polished beta channel - no stamp
+    ```
+
+> [!IMPORTANT]
+> If you have defined any `[mdk-branch:*]` sections but MDK cannot determine the current branch (the project isn't in a git repository, or the repository is in a detached-HEAD state), the pack is **aborted** with an error. This is deliberate: it prevents an intended alpha build from silently being packed into — and published over — your released mod.
+
 ### Local-Specific Settings
 
 The following settings are typically defined in the `.mdk.local.ini` file to apply machine-specific configurations. These are not required to be shared across developers or environments, providing flexibility in setup.
@@ -105,6 +137,7 @@ Both `.mdk.ini` and `.mdk.local.ini` can contain the same settings, but they ser
 - `minify` - Minification level
 - `minifyextraoptions` - Minification options
 - `donotclean` - Files to preserve (mods only)
+- `[mdk-branch:*]` - Per-branch output folders (mods only)
 
 **mdk.local.ini** (machine-specific settings - do NOT commit):
 - `output` - Where compiled scripts are deployed

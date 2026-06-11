@@ -82,13 +82,15 @@
 string version = &quot;Built on $MDK_DATE$ at $MDK_TIME$&quot;;
 </code></pre>
 <h2 id="default-macros">Default Macros</h2>
-<p>MDK² provides three built-in macros that are automatically available:</p>
+<p>MDK² provides several built-in macros that are automatically available:</p>
 <ul>
 <li><strong><code>$MDK_DATETIME$</code></strong> - Current date and time (format: <code>yyyy-MM-dd HH:mm</code>)</li>
 <li><strong><code>$MDK_DATE$</code></strong> - Current date only (format: <code>yyyy-MM-dd</code>)</li>
 <li><strong><code>$MDK_TIME$</code></strong> - Current time only (format: <code>HH:mm</code>)</li>
+<li><strong><code>$MDK_PROJECT$</code></strong> - The project name</li>
+<li><strong><code>$MDK_BRANCH$</code></strong> - The current git branch name (empty when it can't be determined)</li>
 </ul>
-<p>These macros are updated every time you build your project, making them perfect for build timestamps.</p>
+<p>The date/time macros are updated every time you build your project, making them perfect for build timestamps. <code>$MDK_PROJECT$</code> and <code>$MDK_BRANCH$</code> are most often used in the <code>pattern</code> of a <code>[mdk-branch:*]</code> section to name a mod's <a href="MDK%C2%B2-Project-Configuration-Guide.html">branch-specific output folder</a>, but like all macros they work anywhere macros are replaced.</p>
 <h2 id="defining-custom-macros">Defining Custom Macros</h2>
 <p>You can define your own custom macros in two ways:</p>
 <h3 id="using-ini-configuration">Using INI Configuration</h3>
