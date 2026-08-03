@@ -127,7 +127,6 @@
     <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
     <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
     <action name="UseConveyor" text="Automatic Push/Pull On/Off" />
-    <action name="helpOthers" text="Help Others On/Off" />
     <property name="OnOff" type="Boolean" />
     <property name="ShowInTerminal" type="Boolean" />
     <property name="ShowInInventory" type="Boolean" />
@@ -146,13 +145,13 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
-    <property name="helpOthers" type="Boolean" />
   </block>
   <block typedefinition="FunctionalBlock" sampledsubtype="LargeBlockAlgaeFarmReskin" class="Sandbox.Game.Entities.Cube.MyFunctionalBlock" type="Sandbox.ModAPI.Ingame.IMyFunctionalBlock">
     <subtype name="LargeBlockAlgaeFarm" />
     <subtype name="LargeBlockAlgaeFarmReskin" />
     <subtype name="LargeBlockConduitDamaged" />
     <subtype name="LargeBlockFarmPlot" />
+    <subtype name="ServicesTerminal" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -248,6 +247,8 @@
     <subtype name="LargeBlockInsetTerrariumDesert" />
     <subtype name="LargeBlockInsetTerrariumForest" />
     <subtype name="LargeBlockInsetWallLight" />
+    <subtype name="LargeBlockLightRound" />
+    <subtype name="LargeBlockLightSquare" />
     <subtype name="LargeBlockLight_1corner" />
     <subtype name="LargeBlockLight_2corner" />
     <subtype name="LargeBlockTrofferLight" />
@@ -256,6 +257,8 @@
     <subtype name="OffsetLight" />
     <subtype name="PassageSciFiLight" />
     <subtype name="SmallBlockInsetLight" />
+    <subtype name="SmallBlockLightRound" />
+    <subtype name="SmallBlockLightSquare" />
     <subtype name="SmallBlockLight_1corner" />
     <subtype name="SmallBlockLight_2corner" />
     <subtype name="SmallBlockSmallLight" />
@@ -1836,6 +1839,8 @@
   <block typedefinition="Door" sampledsubtype="LargeBlockSmallGate" class="Sandbox.Game.Entities.MyDoor" type="Sandbox.ModAPI.Ingame.IMyDoor">
     <subtype name="CorridorRoundDoor" />
     <subtype name="CorridorRoundDoorInv" />
+    <subtype name="LargeBlockAngledDoorA" />
+    <subtype name="LargeBlockAngledDoorB" />
     <subtype name="LargeBlockCentredDoor" />
     <subtype name="LargeBlockCentredDoorGlass" />
     <subtype name="LargeBlockEvenWideDoor" />
@@ -1850,6 +1855,7 @@
     <subtype name="LargeBlockSmallGate" />
     <subtype name="SlidingHatchDoor" />
     <subtype name="SlidingHatchDoorHalf" />
+    <subtype name="SmallBlockAngledDoorA" />
     <subtype name="SmallBlockCentredDoor" />
     <subtype name="SmallBlockCentredDoorGlass" />
     <subtype name="SmallDoor" />
@@ -1905,6 +1911,7 @@
     <subtype name="LargeBlockBathroom" />
     <subtype name="LargeBlockBathroomOpen" />
     <subtype name="LargeBlockCaptainDesk" />
+    <subtype name="LargeBlockClosedSlopedCockpit" />
     <subtype name="LargeBlockCockpit" />
     <subtype name="LargeBlockCockpitIndustrial" />
     <subtype name="LargeBlockCockpitSeat" />
@@ -1918,6 +1925,7 @@
     <subtype name="LargeBlockInsetPlantCouch" />
     <subtype name="LargeBlockLabDeskSeat" />
     <subtype name="LargeBlockModularBridgeCockpit" />
+    <subtype name="LargeBlockOpenSlopedCockpit" />
     <subtype name="LargeBlockStandingCockpit" />
     <subtype name="LargeBlockSuspendedControlSeat" />
     <subtype name="LargeBlockSuspendedControlSeatB" />
@@ -1930,9 +1938,11 @@
     <subtype name="PassengerSeatSmallOffset" />
     <subtype name="RoverCockpit" />
     <subtype name="SmallBlockCapCockpit" />
+    <subtype name="SmallBlockClosedSlopedCockpit" />
     <subtype name="SmallBlockCockpit" />
     <subtype name="SmallBlockCockpitIndustrial" />
     <subtype name="SmallBlockFlushCockpit" />
+    <subtype name="SmallBlockOpenSlopedCockpit" />
     <subtype name="SmallBlockStandingCockpit" />
     <subtype name="SmallBlockSuspendedControlSeat" />
     <subtype name="SmallBlockSuspendedControlSeatB" />
@@ -2344,6 +2354,7 @@
     <subtype name="LargeBlockAccessPanel2" />
     <subtype name="LargeBlockAccessPanel4" />
     <subtype name="LargeBlockSciFiTerminal" />
+    <subtype name="LargeBlockServerRack2" />
     <subtype name="LargeControlPanelPedestal" />
     <subtype name="LargeCrate" />
     <subtype name="LargeFreezer" />
@@ -2435,6 +2446,9 @@
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
   <block typedefinition="CargoContainer" sampledsubtype="LargeBlockLockerRoom" class="Sandbox.Game.Entities.MyCargoContainer" type="Sandbox.ModAPI.Ingame.IMyCargoContainer">
+    <subtype name="LargeBlockBulkContainerA" />
+    <subtype name="LargeBlockBulkContainerB" />
+    <subtype name="LargeBlockBulkContainerC" />
     <subtype name="LargeBlockCargoTerminal" />
     <subtype name="LargeBlockCargoTerminalHalf" />
     <subtype name="LargeBlockInsetBookshelf" />
@@ -2790,6 +2804,7 @@
     <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
     <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
     <action name="AnyoneCanUse" text="Anyone Can Use On/Off" />
+    <action name="Searchable" text="Searchable On/Off" />
     <action name="UseConveyor" text="Automatic Push/Pull On/Off" />
     <property name="OnOff" type="Boolean" />
     <property name="ShowInTerminal" type="Boolean" />
@@ -2809,12 +2824,15 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="AnyoneCanUse" type="Boolean" />
+    <property name="Searchable" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
   <block typedefinition="LCDPanelsBlock" sampledsubtype="LabEquipment" class="Sandbox.Game.Entities.Blocks.MyLCDPanelsBlock" type="">
     <subtype name="LabEquipment" />
     <subtype name="LabEquipment1" />
     <subtype name="LabEquipment3" />
+    <subtype name="LargeBlockBillboard" />
+    <subtype name="LargeBlockBillboardRound" />
     <subtype name="LargeBlockLabDeskMicroscope" />
     <subtype name="MedicalStation" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
@@ -3234,6 +3252,7 @@
     <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
     <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
     <action name="AnyoneCanUse" text="Anyone Can Use On/Off" />
+    <action name="Searchable" text="Searchable On/Off" />
     <action name="UseConveyor" text="Automatic Push/Pull On/Off" />
     <property name="OnOff" type="Boolean" />
     <property name="ShowInTerminal" type="Boolean" />
@@ -3253,10 +3272,12 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="AnyoneCanUse" type="Boolean" />
+    <property name="Searchable" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
   <block typedefinition="SafeZoneBlock" sampledsubtype="SafeZoneBlock" class="SpaceEngineers.Game.Entities.Blocks.SafeZone.MySafeZoneBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMySafeZoneBlock">
     <subtype name="SafeZoneBlock" />
+    <subtype name="SafeZoneBlockReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -3264,6 +3285,7 @@
     <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMySafeZoneBlock" terminal="true" />
     <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" terminal="false" />
     <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" terminal="false" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" terminal="false" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -3277,8 +3299,7 @@
     <action name="IncreaseChangeIntervalSlider" text="Increase Image change interval" />
     <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
     <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
-    <action name="IncreaseSafeZoneXSlider" text="Increase Set Width" />
-    <action name="DecreaseSafeZoneXSlider" text="Decrease Set Width" />
+    <action name="UseConveyor" text="Automatic Push/Pull On/Off" />
     <property name="OnOff" type="Boolean" />
     <property name="ShowInTerminal" type="Boolean" />
     <property name="ShowInInventory" type="Boolean" />
@@ -3298,6 +3319,7 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="SafeZoneCreate" type="Boolean" />
     <property name="SafeZoneShapeCombo" type="Int64" />
+    <property name="UseConveyor" type="Boolean" />
     <property name="SafeZoneSlider" type="Single" />
     <property name="SafeZoneXSlider" type="Single" />
     <property name="SafeZoneYSlider" type="Single" />
@@ -3359,9 +3381,12 @@
   <block typedefinition="BatteryBlock" sampledsubtype="LargeBlockBatteryBlock" class="Sandbox.Game.Entities.MyBatteryBlock" type="Sandbox.ModAPI.Ingame.IMyBatteryBlock">
     <subtype name="LargeBlockBatteryBlock" />
     <subtype name="LargeBlockBatteryBlockWarfare2" />
+    <subtype name="LargeBlockBatteryReskin" />
+    <subtype name="LargeBlockBatteryReskinOffset" />
     <subtype name="LargeBlockPrototechBattery" />
     <subtype name="SmallBlockBatteryBlock" />
     <subtype name="SmallBlockBatteryBlockWarfare2" />
+    <subtype name="SmallBlockBatteryReskin" />
     <subtype name="SmallBlockPrototechBattery" />
     <subtype name="SmallBlockSmallBatteryBlock" />
     <interface name="Sandbox.ModAPI.Ingame.IMyBatteryBlock" terminal="true" />
@@ -3465,11 +3490,13 @@
   <block typedefinition="OxygenTank" sampledsubtype="LargeHydrogenTankSmallLab" class="Sandbox.Game.Entities.Blocks.MyGasTank" type="Sandbox.ModAPI.Ingame.IMyGasTank">
     <subtype name="LargeBlockOxygenTankLab" />
     <subtype name="LargeHydrogenTank" />
+    <subtype name="LargeHydrogenTankBulk" />
     <subtype name="LargeHydrogenTankIndustrial" />
     <subtype name="LargeHydrogenTankSmall" />
     <subtype name="LargeHydrogenTankSmallLab" />
     <subtype name="OxygenTankSmall" />
     <subtype name="SmallHydrogenTank" />
+    <subtype name="SmallHydrogenTankBulk" />
     <subtype name="SmallHydrogenTankLab" />
     <subtype name="SmallHydrogenTankSmall" />
     <subtype name="SmallOxygenTankSmall" />
@@ -3522,6 +3549,7 @@
   <block typedefinition="OxygenGenerator" sampledsubtype="LargeBlockOxygenGeneratorLab" class="Sandbox.Game.Entities.Blocks.MyGasGenerator" type="Sandbox.ModAPI.Ingame.IMyGasGenerator">
     <subtype name="IrrigationSystem" />
     <subtype name="LargeBlockOxygenGeneratorLab" />
+    <subtype name="LargeBlockPrototechOxygenGenerator" />
     <subtype name="OxygenGeneratorSmall" />
     <subtype name="SmallBlockOxygenGeneratorLab" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
@@ -3548,6 +3576,7 @@
     <action name="UseConveyor" text="Automatic Push/Pull On/Off" />
     <action name="Refill" text="Refill Bottles" />
     <action name="Auto-Refill" text="Auto-Refill On/Off" />
+    <action name="AutomaticallyPullBottles" text="Automatically Pull Bottles On/Off" />
     <property name="OnOff" type="Boolean" />
     <property name="ShowInTerminal" type="Boolean" />
     <property name="ShowInInventory" type="Boolean" />
@@ -3567,6 +3596,7 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
     <property name="Auto-Refill" type="Boolean" />
+    <property name="AutomaticallyPullBottles" type="Boolean" />
   </block>
   <block typedefinition="ExhaustBlock" sampledsubtype="LargeExhaustCap" class="Sandbox.Game.Entities.Blocks.MyExhaustBlock" type="">
     <subtype name="LargeExhaustCap" />
@@ -4103,6 +4133,7 @@
   </block>
   <block typedefinition="Collector" sampledsubtype="Collector" class="Sandbox.Game.Entities.Blocks.MyCollector" type="Sandbox.ModAPI.Ingame.IMyCollector">
     <subtype name="Collector" />
+    <subtype name="CollectorFlat" />
     <subtype name="CollectorSmall" />
     <interface name="Sandbox.ModAPI.Ingame.IMyCollector" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
@@ -4151,6 +4182,7 @@
     <subtype name="ConnectorSmall" />
     <subtype name="LargeBlockInsetConnector" />
     <subtype name="LargeBlockInsetConnectorSmall" />
+    <subtype name="LargeBlockStructural_PlatformConnector" />
     <subtype name="SmallBlockInsetConnector" />
     <subtype name="SmallBlockInsetConnectorMedium" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
@@ -4726,6 +4758,8 @@
     <action name="Open_Off" text=" Closed" />
     <action name="AnyoneCanUse" text="Anyone Can Use On/Off" />
     <action name="AutoDeploy" text="Auto deploy On/Off" />
+    <action name="AutoDeploy_On" text="Auto deploy On" />
+    <action name="AutoDeploy_Off" text="Auto deploy Off" />
     <property name="OnOff" type="Boolean" />
     <property name="ShowInTerminal" type="Boolean" />
     <property name="ShowInInventory" type="Boolean" />

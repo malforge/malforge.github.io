@@ -364,7 +364,7 @@ Subtypes: `LargeBasicMission`, `SmallBasicMission`
 
 Interface: `IMyBatteryBlock`
 
-Subtypes: `LargeBlockBatteryBlock`, `LargeBlockBatteryBlockWarfare2`, `LargeBlockPrototechBattery`, `SmallBlockBatteryBlock`, `SmallBlockBatteryBlockWarfare2`, `SmallBlockPrototechBattery`, `SmallBlockSmallBatteryBlock`
+Subtypes: `LargeBlockBatteryBlock`, `LargeBlockBatteryBlockWarfare2`, `LargeBlockBatteryReskin`, `LargeBlockBatteryReskinOffset`, `LargeBlockPrototechBattery`, `SmallBlockBatteryBlock`, `SmallBlockBatteryBlockWarfare2`, `SmallBlockBatteryReskin`, `SmallBlockPrototechBattery`, `SmallBlockSmallBatteryBlock`
 
 ### Actions
 
@@ -636,7 +636,7 @@ Subtypes: `LargeCameraBlock`, `LargeCameraTopMounted`, `SmallCameraBlock`, `Smal
 
 Interface: `IMyCargoContainer`
 
-Subtypes: `LargeBlockCargoTerminal`, `LargeBlockCargoTerminalHalf`, `LargeBlockInsetBookshelf`, `LargeBlockLabCabinet`, `LargeBlockLabCornerDesk`, `LargeBlockLargeContainer`, `LargeBlockLargeIndustrialContainer`, `LargeBlockLockerRoom`, `LargeBlockLockerRoomCorner`, `LargeBlockLockers`, `LargeBlockSmallContainer`, `LargeBlockWeaponRack`, `SmallBlockLargeContainer`, `SmallBlockMediumContainer`, `SmallBlockModularContainer`, `SmallBlockSmallContainer`, `SmallBlockWeaponRack`
+Subtypes: `LargeBlockBulkContainerA`, `LargeBlockBulkContainerB`, `LargeBlockBulkContainerC`, `LargeBlockCargoTerminal`, `LargeBlockCargoTerminalHalf`, `LargeBlockInsetBookshelf`, `LargeBlockLabCabinet`, `LargeBlockLabCornerDesk`, `LargeBlockLargeContainer`, `LargeBlockLargeIndustrialContainer`, `LargeBlockLockerRoom`, `LargeBlockLockerRoomCorner`, `LargeBlockLockers`, `LargeBlockSmallContainer`, `LargeBlockWeaponRack`, `SmallBlockLargeContainer`, `SmallBlockMediumContainer`, `SmallBlockModularContainer`, `SmallBlockSmallContainer`, `SmallBlockWeaponRack`
 
 ### Actions
 
@@ -660,7 +660,7 @@ Subtypes: `LargeBlockCargoTerminal`, `LargeBlockCargoTerminalHalf`, `LargeBlockI
 
 Interface: `IMyCockpit`
 
-Subtypes: `BuggyCockpit`, `CockpitOpen`, `DBSmallBlockFighterCockpit`, `LargeBlockBathroom`, `LargeBlockBathroomOpen`, `LargeBlockCaptainDesk`, `LargeBlockCockpit`, `LargeBlockCockpitIndustrial`, `LargeBlockCockpitSeat`, `LargeBlockConsoleModuleInvertedCorner`, `LargeBlockConsoleModuleScreens`, `LargeBlockCouch`, `LargeBlockCouchCorner`, `LargeBlockDesk`, `LargeBlockDeskCorner`, `LargeBlockDeskCornerInv`, `LargeBlockInsetPlantCouch`, `LargeBlockLabDeskSeat`, `LargeBlockModularBridgeCockpit`, `LargeBlockStandingCockpit`, `LargeBlockSuspendedControlSeat`, `LargeBlockSuspendedControlSeatB`, `LargeBlockToilet`, `OpenCockpitLarge`, `OpenCockpitSmall`, `PassengerBench`, `PassengerSeatLarge`, `PassengerSeatSmallNew`, `PassengerSeatSmallOffset`, `RoverCockpit`, `SmallBlockCapCockpit`, `SmallBlockCockpit`, `SmallBlockCockpitIndustrial`, `SmallBlockFlushCockpit`, `SmallBlockStandingCockpit`, `SmallBlockSuspendedControlSeat`, `SmallBlockSuspendedControlSeatB`, `SpeederCockpit`, `SpeederCockpitCompact`
+Subtypes: `BuggyCockpit`, `CockpitOpen`, `DBSmallBlockFighterCockpit`, `LargeBlockBathroom`, `LargeBlockBathroomOpen`, `LargeBlockCaptainDesk`, `LargeBlockClosedSlopedCockpit`, `LargeBlockCockpit`, `LargeBlockCockpitIndustrial`, `LargeBlockCockpitSeat`, `LargeBlockConsoleModuleInvertedCorner`, `LargeBlockConsoleModuleScreens`, `LargeBlockCouch`, `LargeBlockCouchCorner`, `LargeBlockDesk`, `LargeBlockDeskCorner`, `LargeBlockDeskCornerInv`, `LargeBlockInsetPlantCouch`, `LargeBlockLabDeskSeat`, `LargeBlockModularBridgeCockpit`, `LargeBlockOpenSlopedCockpit`, `LargeBlockStandingCockpit`, `LargeBlockSuspendedControlSeat`, `LargeBlockSuspendedControlSeatB`, `LargeBlockToilet`, `OpenCockpitLarge`, `OpenCockpitSmall`, `PassengerBench`, `PassengerSeatLarge`, `PassengerSeatSmallNew`, `PassengerSeatSmallOffset`, `RoverCockpit`, `SmallBlockCapCockpit`, `SmallBlockClosedSlopedCockpit`, `SmallBlockCockpit`, `SmallBlockCockpitIndustrial`, `SmallBlockFlushCockpit`, `SmallBlockOpenSlopedCockpit`, `SmallBlockStandingCockpit`, `SmallBlockSuspendedControlSeat`, `SmallBlockSuspendedControlSeatB`, `SpeederCockpit`, `SpeederCockpitCompact`
 
 ### Actions
 
@@ -720,7 +720,7 @@ Subtypes: `BuggyCockpit`, `CockpitOpen`, `DBSmallBlockFighterCockpit`, `LargeBlo
 
 Interface: `IMyCollector`
 
-Subtypes: `Collector`, `CollectorSmall`
+Subtypes: `Collector`, `CollectorFlat`, `CollectorSmall`
 
 ### Actions
 
@@ -1051,7 +1051,7 @@ Subtypes: `LargeDefensiveCombat`, `SmallDefensiveCombat`
 
 Interface: `IMyDoor`
 
-Subtypes: `CorridorRoundDoor`, `CorridorRoundDoorInv`, `LargeBlockCentredDoor`, `LargeBlockCentredDoorGlass`, `LargeBlockEvenWideDoor`, `LargeBlockGate`, `LargeBlockHalfCentredDoor`, `LargeBlockHalfCentredDoorGlass`, `LargeBlockLabDoor`, `LargeBlockLabDoorInv`, `LargeBlockNarrowDoor`, `LargeBlockNarrowDoorHalf`, `LargeBlockOffsetDoor`, `LargeBlockSmallGate`, `SlidingHatchDoor`, `SlidingHatchDoorHalf`, `SmallBlockCentredDoor`, `SmallBlockCentredDoorGlass`, `SmallDoor`, `SmallSideDoor`
+Subtypes: `CorridorRoundDoor`, `CorridorRoundDoorInv`, `LargeBlockAngledDoorA`, `LargeBlockAngledDoorB`, `LargeBlockCentredDoor`, `LargeBlockCentredDoorGlass`, `LargeBlockEvenWideDoor`, `LargeBlockGate`, `LargeBlockHalfCentredDoor`, `LargeBlockHalfCentredDoorGlass`, `LargeBlockLabDoor`, `LargeBlockLabDoorInv`, `LargeBlockNarrowDoor`, `LargeBlockNarrowDoorHalf`, `LargeBlockOffsetDoor`, `LargeBlockSmallGate`, `SlidingHatchDoor`, `SlidingHatchDoorHalf`, `SmallBlockAngledDoorA`, `SmallBlockCentredDoor`, `SmallBlockCentredDoorGlass`, `SmallDoor`, `SmallSideDoor`
 
 ### Actions
 
@@ -1489,7 +1489,7 @@ Subtypes: `LargeFlightMovement`, `SmallFlightMovement`
 
 Interface: `IMyFunctionalBlock`
 
-Subtypes: `LargeBlockAlgaeFarm`, `LargeBlockAlgaeFarmReskin`, `LargeBlockConduitDamaged`, `LargeBlockFarmPlot`
+Subtypes: `LargeBlockAlgaeFarm`, `LargeBlockAlgaeFarmReskin`, `LargeBlockConduitDamaged`, `LargeBlockFarmPlot`, `ServicesTerminal`
 
 ### Actions
 
@@ -1818,7 +1818,7 @@ Subtypes: `LargeHydrogenEngine`, `LargeHydrogenEngineReskin`, `LargePrototechRea
 
 Interface: `IMyInteriorLight`
 
-Subtypes: `AirDuctLight`, `CorridorLight`, `CorridorNarrowStowage`, `CorridorRoundLight`, `LabEquipment2`, `LargeBlockConduitLight`, `LargeBlockConduitLightInv`, `LargeBlockHalfTrofferLight`, `LargeBlockHalfTrofferLightInv`, `LargeBlockInsetAquarium`, `LargeBlockInsetKitchen`, `LargeBlockInsetLight`, `LargeBlockInsetTerrariumDesert`, `LargeBlockInsetTerrariumForest`, `LargeBlockInsetWallLight`, `LargeBlockLight_1corner`, `LargeBlockLight_2corner`, `LargeBlockTrofferLight`, `LargeInsetPlanter`, `LargeLightPanel`, `OffsetLight`, `PassageSciFiLight`, `SmallBlockInsetLight`, `SmallBlockLight_1corner`, `SmallBlockLight_2corner`, `SmallBlockSmallLight`, `SmallLight`, `SmallLightPanel`, `TrussPillarLight`, `TrussPillarLightSmall`
+Subtypes: `AirDuctLight`, `CorridorLight`, `CorridorNarrowStowage`, `CorridorRoundLight`, `LabEquipment2`, `LargeBlockConduitLight`, `LargeBlockConduitLightInv`, `LargeBlockHalfTrofferLight`, `LargeBlockHalfTrofferLightInv`, `LargeBlockInsetAquarium`, `LargeBlockInsetKitchen`, `LargeBlockInsetLight`, `LargeBlockInsetTerrariumDesert`, `LargeBlockInsetTerrariumForest`, `LargeBlockInsetWallLight`, `LargeBlockLightRound`, `LargeBlockLightSquare`, `LargeBlockLight_1corner`, `LargeBlockLight_2corner`, `LargeBlockTrofferLight`, `LargeInsetPlanter`, `LargeLightPanel`, `OffsetLight`, `PassageSciFiLight`, `SmallBlockInsetLight`, `SmallBlockLightRound`, `SmallBlockLightSquare`, `SmallBlockLight_1corner`, `SmallBlockLight_2corner`, `SmallBlockSmallLight`, `SmallLight`, `SmallLightPanel`, `TrussPillarLight`, `TrussPillarLightSmall`
 
 ### Actions
 
@@ -2413,7 +2413,7 @@ Subtypes: `LargeBlockLaserAntenna`, `SmallBlockLaserAntenna`
 
 ## LCDPanelsBlock
 
-Subtypes: `LabEquipment`, `LabEquipment1`, `LabEquipment3`, `LargeBlockLabDeskMicroscope`, `MedicalStation`
+Subtypes: `LabEquipment`, `LabEquipment1`, `LabEquipment3`, `LargeBlockBillboard`, `LargeBlockBillboardRound`, `LargeBlockLabDeskMicroscope`, `MedicalStation`
 
 ### Actions
 
@@ -3112,12 +3112,13 @@ Subtypes: `LargeBlockOxygenFarm`, `LargeBlockOxygenFarmReskin`
 
 Interface: `IMyGasGenerator`
 
-Subtypes: `IrrigationSystem`, `LargeBlockOxygenGeneratorLab`, `OxygenGeneratorSmall`, `SmallBlockOxygenGeneratorLab`
+Subtypes: `IrrigationSystem`, `LargeBlockOxygenGeneratorLab`, `LargeBlockPrototechOxygenGenerator`, `OxygenGeneratorSmall`, `SmallBlockOxygenGeneratorLab`
 
 ### Actions
 
 |Name|Description|
 |-|-|
+|AutomaticallyPullBottles|Automatically Pull Bottles On/Off|
 |Auto-Refill|Auto-Refill On/Off|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
@@ -3140,6 +3141,7 @@ Subtypes: `IrrigationSystem`, `LargeBlockOxygenGeneratorLab`, `OxygenGeneratorSm
 |Name|Type|
 |-|-|
 |alignment|long|
+|AutomaticallyPullBottles|bool|
 |Auto-Refill|bool|
 |BackgroundColor|Color|
 |ChangeIntervalSlider|float|
@@ -3163,7 +3165,7 @@ Subtypes: `IrrigationSystem`, `LargeBlockOxygenGeneratorLab`, `OxygenGeneratorSm
 
 Interface: `IMyGasTank`
 
-Subtypes: `LargeBlockOxygenTankLab`, `LargeHydrogenTank`, `LargeHydrogenTankIndustrial`, `LargeHydrogenTankSmall`, `LargeHydrogenTankSmallLab`, `OxygenTankSmall`, `SmallHydrogenTank`, `SmallHydrogenTankLab`, `SmallHydrogenTankSmall`, `SmallOxygenTankSmall`
+Subtypes: `LargeBlockOxygenTankLab`, `LargeHydrogenTank`, `LargeHydrogenTankBulk`, `LargeHydrogenTankIndustrial`, `LargeHydrogenTankSmall`, `LargeHydrogenTankSmallLab`, `OxygenTankSmall`, `SmallHydrogenTank`, `SmallHydrogenTankBulk`, `SmallHydrogenTankLab`, `SmallHydrogenTankSmall`, `SmallOxygenTankSmall`
 
 ### Actions
 
@@ -3224,6 +3226,8 @@ Subtypes: `LgParachute`, `SmParachute`
 |-|-|
 |AnyoneCanUse|Anyone Can Use On/Off|
 |AutoDeploy|Auto deploy On/Off|
+|AutoDeploy_Off|Auto deploy Off|
+|AutoDeploy_On|Auto deploy On|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
@@ -3713,7 +3717,7 @@ Subtypes: `LargeBlockRemoteControl`, `SmallBlockRemoteControl`
 
 Interface: `IMySafeZoneBlock`
 
-Subtypes: `SafeZoneBlock`
+Subtypes: `SafeZoneBlock`, `SafeZoneBlockReskin`
 
 ### Actions
 
@@ -3721,11 +3725,9 @@ Subtypes: `SafeZoneBlock`
 |-|-|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
-|DecreaseSafeZoneXSlider|Decrease Set Width|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
-|IncreaseSafeZoneXSlider|Increase Set Width|
 |IncreaseTextPaddingSlider|Increase Text Padding|
 |OnOff|Toggle block On/Off|
 |OnOff_Off|Toggle block Off|
@@ -3734,6 +3736,7 @@ Subtypes: `SafeZoneBlock`
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
 |ShowOnHUD_On|Show on HUD On|
+|UseConveyor|Automatic Push/Pull On/Off|
 
 ### Properties
 
@@ -3774,6 +3777,7 @@ Subtypes: `SafeZoneBlock`
 |ShowInToolbarConfig|bool|
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
+|UseConveyor|bool|
 
 ## Searchlight
 
@@ -4016,7 +4020,7 @@ Subtypes: `LargeBlockSensor`, `LargeBlockSensorReskin`, `SmallBlockSensor`, `Sma
 
 Interface: `IMyShipConnector`
 
-Subtypes: `Connector`, `ConnectorMedium`, `ConnectorSmall`, `LargeBlockInsetConnector`, `LargeBlockInsetConnectorSmall`, `SmallBlockInsetConnector`, `SmallBlockInsetConnectorMedium`
+Subtypes: `Connector`, `ConnectorMedium`, `ConnectorSmall`, `LargeBlockInsetConnector`, `LargeBlockInsetConnectorSmall`, `LargeBlockStructural_PlatformConnector`, `SmallBlockInsetConnector`, `SmallBlockInsetConnectorMedium`
 
 ### Actions
 
@@ -4146,7 +4150,6 @@ Subtypes: `LargeShipWelder`, `LargeShipWelderReskin`, `SmallShipWelder`, `SmallS
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
-|helpOthers|Help Others On/Off|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseTextPaddingSlider|Increase Text Padding|
@@ -4170,7 +4173,6 @@ Subtypes: `LargeShipWelder`, `LargeShipWelderReskin`, `SmallShipWelder`, `SmallS
 |Font|long|
 |FontColor|Color|
 |FontSize|float|
-|helpOthers|bool|
 |Name|StringBuilder|
 |OnOff|bool|
 |PreserveAspectRatio|bool|
@@ -4519,6 +4521,7 @@ Subtypes: `AtmBlock`, `StoreBlock`
 |OnOff_Off|Toggle block Off|
 |OnOff_On|Toggle block On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
+|Searchable|Searchable On/Off|
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
 |ShowOnHUD_On|Show on HUD On|
@@ -4541,6 +4544,7 @@ Subtypes: `AtmBlock`, `StoreBlock`
 |PreserveAspectRatio|bool|
 |ScriptBackgroundColor|Color|
 |ScriptForegroundColor|Color|
+|Searchable|bool|
 |ShowInInventory|bool|
 |ShowInTerminal|bool|
 |ShowInToolbarConfig|bool|
@@ -4651,7 +4655,7 @@ Subtypes: `TargetDummy`
 
 Interface: `IMyTerminalBlock`
 
-Subtypes: `ControlPanel`, `LargeBlockAccessPanel1`, `LargeBlockAccessPanel2`, `LargeBlockAccessPanel4`, `LargeBlockSciFiTerminal`, `LargeControlPanelPedestal`, `LargeCrate`, `LargeFreezer`, `SmallBlockAccessPanel1`, `SmallBlockAccessPanel2`, `SmallBlockAccessPanel3`, `SmallBlockAccessPanel4`, `SmallBlockFirstAidCabinet`, `SmallBlockKitchenFridge`, `SmallBlockKitchenMicrowave`, `SmallBlockKitchenOven`, `SmallControlPanel`, `SmallControlPanelPedestal`
+Subtypes: `ControlPanel`, `LargeBlockAccessPanel1`, `LargeBlockAccessPanel2`, `LargeBlockAccessPanel4`, `LargeBlockSciFiTerminal`, `LargeBlockServerRack2`, `LargeControlPanelPedestal`, `LargeCrate`, `LargeFreezer`, `SmallBlockAccessPanel1`, `SmallBlockAccessPanel2`, `SmallBlockAccessPanel3`, `SmallBlockAccessPanel4`, `SmallBlockFirstAidCabinet`, `SmallBlockKitchenFridge`, `SmallBlockKitchenMicrowave`, `SmallBlockKitchenOven`, `SmallControlPanel`, `SmallControlPanelPedestal`
 
 ### Actions
 
@@ -5082,6 +5086,7 @@ Subtypes: `FoodDispenser`, `VendingMachine`
 |OnOff_Off|Toggle block Off|
 |OnOff_On|Toggle block On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
+|Searchable|Searchable On/Off|
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
 |ShowOnHUD_On|Show on HUD On|
@@ -5104,6 +5109,7 @@ Subtypes: `FoodDispenser`, `VendingMachine`
 |PreserveAspectRatio|bool|
 |ScriptBackgroundColor|Color|
 |ScriptForegroundColor|Color|
+|Searchable|bool|
 |ShowInInventory|bool|
 |ShowInTerminal|bool|
 |ShowInToolbarConfig|bool|
