@@ -77,6 +77,7 @@ public abstract class MyObjectBuilder_ProjectorBase: MyObjectBuilder_FunctionalB
 |[static Upgrade(MyObjectBuilder_CubeBlock, MyObjectBuilderType, string)](VRage.Game.MyObjectBuilder_CubeBlock@Upgrade)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[GetTextPanelsData()](VRage.Game.MyObjectBuilder_ProjectorBase@GetTextPanelsData)||
 |[Remap(IMyRemapHelper)](VRage.Game.MyObjectBuilder_ProjectorBase@Remap)||
+|[SetupForGridPaste()](VRage.Game.MyObjectBuilder_ProjectorBase@SetupForGridPaste)||
 |[SetupForProjector()](VRage.Game.MyObjectBuilder_ProjectorBase@SetupForProjector)||
 |[Clone()](VRage.ObjectBuilders.MyObjectBuilder_Base@Clone)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
 |[Equals(MyObjectBuilder_Base)](VRage.ObjectBuilders.MyObjectBuilder_Base@Equals)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|

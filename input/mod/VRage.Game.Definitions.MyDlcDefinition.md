@@ -29,6 +29,7 @@ public class MyDlcDefinition: MyDefinitionBase, IMyDLC
 |[DisplayName](VRage.Game.Definitions.MyDlcDefinition@DisplayName)|Name of the DLC, preferably a localized string|
 |[Icon](VRage.Game.Definitions.MyDlcDefinition@Icon)|Icon of the DLC, to be displayed in G-screen, blueprints, etc ...|
 |[Name](VRage.Game.Definitions.MyDlcDefinition@Name)||
+|[Order](VRage.Game.Definitions.MyDlcDefinition@Order)||
 |[Ps4ProductIds](VRage.Game.Definitions.MyDlcDefinition@Ps4ProductIds)||
 |[Ps5ProductIds](VRage.Game.Definitions.MyDlcDefinition@Ps5ProductIds)||
 |[ServiceFilter](VRage.Game.Definitions.MyDlcDefinition@ServiceFilter)||

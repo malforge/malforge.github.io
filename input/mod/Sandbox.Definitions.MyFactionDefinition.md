@@ -11,6 +11,7 @@ public class MyFactionDefinition: MyDefinitionBase
 |[AcceptHumans](Sandbox.Definitions.MyFactionDefinition@AcceptHumans)||
 |[AutoAcceptMember](Sandbox.Definitions.MyFactionDefinition@AutoAcceptMember)||
 |[BackgroundColor](Sandbox.Definitions.MyFactionDefinition@BackgroundColor)||
+|[BotLootContainerType](Sandbox.Definitions.MyFactionDefinition@BotLootContainerType)||
 |[DefaultRelation](Sandbox.Definitions.MyFactionDefinition@DefaultRelation)||
 |[DefaultRelationToPlayers](Sandbox.Definitions.MyFactionDefinition@DefaultRelationToPlayers)||
 |[DiscoveredByDefault](Sandbox.Definitions.MyFactionDefinition@DiscoveredByDefault)||
@@ -23,10 +24,12 @@ public class MyFactionDefinition: MyDefinitionBase
 |[Name](Sandbox.Definitions.MyFactionDefinition@Name)||
 |[ObjectivePercentageCompleted](Sandbox.Definitions.MyFactionDefinition@ObjectivePercentageCompleted)||
 |[Score](Sandbox.Definitions.MyFactionDefinition@Score)||
+|[Skins](Sandbox.Definitions.MyFactionDefinition@Skins)||
 |[StartingBalance](Sandbox.Definitions.MyFactionDefinition@StartingBalance)||
 |[StartingReputation](Sandbox.Definitions.MyFactionDefinition@StartingReputation)||
 |[StaticReputation](Sandbox.Definitions.MyFactionDefinition@StaticReputation)||
 |[StringType](Sandbox.Definitions.MyFactionDefinition@StringType)||
+|[SuitColor](Sandbox.Definitions.MyFactionDefinition@SuitColor)||
 |[Tag](Sandbox.Definitions.MyFactionDefinition@Tag)||
 |[Type](Sandbox.Definitions.MyFactionDefinition@Type)||
 |[AvailableInSurvival](VRage.Game.MyDefinitionBase@AvailableInSurvival)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|

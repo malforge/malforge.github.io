@@ -4,7 +4,7 @@
 public bool HelpOthers { get; set; }
 ```
 
-Gets and sets whether this welder can help other welders
+Gets and sets whether this welder can help other welders Obsolete. Does nothing
 
 ## Returns
 

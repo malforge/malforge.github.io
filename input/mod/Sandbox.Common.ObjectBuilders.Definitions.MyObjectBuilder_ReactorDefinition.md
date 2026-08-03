@@ -95,6 +95,7 @@ public class MyObjectBuilder_ReactorDefinition: MyObjectBuilder_FueledPowerProdu
 |[PriorityModifier](VRage.Game.MyObjectBuilder_CubeBlockDefinition@PriorityModifier)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Public](VRage.Game.MyObjectBuilder_DefinitionBase@Public)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[RandomRotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@RandomRotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
+|[Repairable](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Repairable)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[ResourceSinkGroup](VRage.Game.MyObjectBuilder_FueledPowerProducerDefinition@ResourceSinkGroup)|_Inherited from [MyObjectBuilder_FueledPowerProducerDefinition](VRage.Game.MyObjectBuilder_FueledPowerProducerDefinition)_|
 |[ResourceSourceGroup](VRage.Game.MyObjectBuilder_PowerProducerDefinition@ResourceSourceGroup)|_Inherited from [MyObjectBuilder_PowerProducerDefinition](VRage.Game.MyObjectBuilder_PowerProducerDefinition)_|
 |[Rotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Rotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|

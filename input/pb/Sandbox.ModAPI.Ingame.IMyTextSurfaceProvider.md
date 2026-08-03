@@ -32,6 +32,7 @@ Describes block, that has at least 1 text surface (PB scripting interface)
 * MyObjectBuilder_Cockpit/LargeBlockBathroom  
 * MyObjectBuilder_Cockpit/LargeBlockBathroomOpen  
 * MyObjectBuilder_Cockpit/LargeBlockCaptainDesk  
+* MyObjectBuilder_Cockpit/LargeBlockClosedSlopedCockpit  
 * MyObjectBuilder_Cockpit/LargeBlockCockpit  
 * MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial  
 * MyObjectBuilder_Cockpit/LargeBlockCockpitSeat  
@@ -45,6 +46,7 @@ Describes block, that has at least 1 text surface (PB scripting interface)
 * MyObjectBuilder_Cockpit/LargeBlockInsetPlantCouch  
 * MyObjectBuilder_Cockpit/LargeBlockLabDeskSeat  
 * MyObjectBuilder_Cockpit/LargeBlockModularBridgeCockpit  
+* MyObjectBuilder_Cockpit/LargeBlockOpenSlopedCockpit  
 * MyObjectBuilder_Cockpit/LargeBlockStandingCockpit  
 * MyObjectBuilder_Cockpit/LargeBlockSuspendedControlSeat  
 * MyObjectBuilder_Cockpit/LargeBlockSuspendedControlSeatB  
@@ -57,9 +59,11 @@ Describes block, that has at least 1 text surface (PB scripting interface)
 * MyObjectBuilder_Cockpit/PassengerSeatSmallOffset  
 * MyObjectBuilder_Cockpit/RoverCockpit  
 * MyObjectBuilder_Cockpit/SmallBlockCapCockpit  
+* MyObjectBuilder_Cockpit/SmallBlockClosedSlopedCockpit  
 * MyObjectBuilder_Cockpit/SmallBlockCockpit  
 * MyObjectBuilder_Cockpit/SmallBlockCockpitIndustrial  
 * MyObjectBuilder_Cockpit/SmallBlockFlushCockpit  
+* MyObjectBuilder_Cockpit/SmallBlockOpenSlopedCockpit  
 * MyObjectBuilder_Cockpit/SmallBlockStandingCockpit  
 * MyObjectBuilder_Cockpit/SmallBlockSuspendedControlSeat  
 * MyObjectBuilder_Cockpit/SmallBlockSuspendedControlSeatB  

@@ -90,6 +90,7 @@ public class MyObjectBuilder_FueledPowerProducerDefinition: MyObjectBuilder_Powe
 |[PriorityModifier](VRage.Game.MyObjectBuilder_CubeBlockDefinition@PriorityModifier)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Public](VRage.Game.MyObjectBuilder_DefinitionBase@Public)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[RandomRotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@RandomRotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
+|[Repairable](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Repairable)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[ResourceSourceGroup](VRage.Game.MyObjectBuilder_PowerProducerDefinition@ResourceSourceGroup)|_Inherited from [MyObjectBuilder_PowerProducerDefinition](VRage.Game.MyObjectBuilder_PowerProducerDefinition)_|
 |[Rotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Rotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[ScreenAreas](VRage.Game.MyObjectBuilder_FunctionalBlockDefinition@ScreenAreas)|_Inherited from [MyObjectBuilder_FunctionalBlockDefinition](VRage.Game.MyObjectBuilder_FunctionalBlockDefinition)_|

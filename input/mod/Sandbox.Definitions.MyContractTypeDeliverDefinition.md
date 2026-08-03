@@ -8,6 +8,7 @@ public class MyContractTypeDeliverDefinition: MyContractTypeDefinition
 
 |Member|Description|
 |---|---|
+|[CustomDescriptions](Sandbox.Definitions.MyContractTypeDeliverDefinition@CustomDescriptions)||
 |[Duration_BaseTime](Sandbox.Definitions.MyContractTypeDeliverDefinition@Duration_BaseTime)||
 |[Duration_TimePerJumpDist](Sandbox.Definitions.MyContractTypeDeliverDefinition@Duration_TimePerJumpDist)||
 |[Duration_TimePerMeter](Sandbox.Definitions.MyContractTypeDeliverDefinition@Duration_TimePerMeter)||

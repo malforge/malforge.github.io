@@ -22,6 +22,7 @@ public class MyObjectBuilder_Identity: MyObjectBuilder_Base
 |[RespawnShips](VRage.Game.MyObjectBuilder_Identity@RespawnShips)||
 |[SavedCharacters](VRage.Game.MyObjectBuilder_Identity@SavedCharacters)||
 |[TransferedPCUDelta](VRage.Game.MyObjectBuilder_Identity@TransferedPCUDelta)||
+|[VisitedStationIds](VRage.Game.MyObjectBuilder_Identity@VisitedStationIds)||
 
 ## Properties
 
@@ -44,6 +45,7 @@ public class MyObjectBuilder_Identity: MyObjectBuilder_Base
 |---|---|
 |[ShouldSerializeColorMask()](VRage.Game.MyObjectBuilder_Identity@ShouldSerializeColorMask)||
 |[ShouldSerializePlayerId()](VRage.Game.MyObjectBuilder_Identity@ShouldSerializePlayerId)||
+|[ShouldSerializeVisitedStationIds()](VRage.Game.MyObjectBuilder_Identity@ShouldSerializeVisitedStationIds)||
 |[Clone()](VRage.ObjectBuilders.MyObjectBuilder_Base@Clone)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
 |[Equals(MyObjectBuilder_Base)](VRage.ObjectBuilders.MyObjectBuilder_Base@Equals)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
 |[ShouldSerializeSubtypeId()](VRage.ObjectBuilders.MyObjectBuilder_Base@ShouldSerializeSubtypeId)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|

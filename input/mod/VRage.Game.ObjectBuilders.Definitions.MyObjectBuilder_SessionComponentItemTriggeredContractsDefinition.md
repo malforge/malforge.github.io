@@ -11,6 +11,7 @@ public class MyObjectBuilder_SessionComponentItemTriggeredContractsDefinition: M
 |[AllowEnemyFactions](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_SessionComponentItemTriggeredContractsDefinition@AllowEnemyFactions)||
 |[ContractEntries](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_SessionComponentItemTriggeredContractsDefinition@ContractEntries)||
 |[SpawnChance](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_SessionComponentItemTriggeredContractsDefinition@SpawnChance)||
+|[SpawnGroups](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_SessionComponentItemTriggeredContractsDefinition@SpawnGroups)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[Description](VRage.Game.MyObjectBuilder_DefinitionBase@Description)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[DescriptionArgs](VRage.Game.MyObjectBuilder_DefinitionBase@DescriptionArgs)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|

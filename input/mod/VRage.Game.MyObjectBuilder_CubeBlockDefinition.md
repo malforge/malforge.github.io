@@ -74,6 +74,7 @@ public class MyObjectBuilder_CubeBlockDefinition: MyObjectBuilder_PhysicalModelD
 |[PrimarySound](VRage.Game.MyObjectBuilder_CubeBlockDefinition@PrimarySound)||
 |[PriorityModifier](VRage.Game.MyObjectBuilder_CubeBlockDefinition@PriorityModifier)||
 |[RandomRotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@RandomRotation)||
+|[Repairable](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Repairable)||
 |[Rotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Rotation)||
 |[SilenceableByShipSoundSystem](VRage.Game.MyObjectBuilder_CubeBlockDefinition@SilenceableByShipSoundSystem)||
 |[SimpleUpdateVisualOnSkinChange](VRage.Game.MyObjectBuilder_CubeBlockDefinition@SimpleUpdateVisualOnSkinChange)|Set to true if you dont want to reset subpart positions or reload the whole model on skin change|

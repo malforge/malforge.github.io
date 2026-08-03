@@ -106,6 +106,8 @@ public interface IMyInteriorLight: IMyLightingBlock, IMyFunctionalBlock, IMyTerm
 * MyObjectBuilder_InteriorLight/LargeBlockInsetWallLight  
 * MyObjectBuilder_InteriorLight/LargeBlockLight_1corner  
 * MyObjectBuilder_InteriorLight/LargeBlockLight_2corner  
+* MyObjectBuilder_InteriorLight/LargeBlockLightRound  
+* MyObjectBuilder_InteriorLight/LargeBlockLightSquare  
 * MyObjectBuilder_InteriorLight/LargeBlockTrofferLight  
 * MyObjectBuilder_InteriorLight/LargeInsetPlanter  
 * MyObjectBuilder_InteriorLight/LargeLightPanel  
@@ -114,6 +116,8 @@ public interface IMyInteriorLight: IMyLightingBlock, IMyFunctionalBlock, IMyTerm
 * MyObjectBuilder_InteriorLight/SmallBlockInsetLight  
 * MyObjectBuilder_InteriorLight/SmallBlockLight_1corner  
 * MyObjectBuilder_InteriorLight/SmallBlockLight_2corner  
+* MyObjectBuilder_InteriorLight/SmallBlockLightRound  
+* MyObjectBuilder_InteriorLight/SmallBlockLightSquare  
 * MyObjectBuilder_InteriorLight/SmallBlockSmallLight  
 * MyObjectBuilder_InteriorLight/SmallLight  
 * MyObjectBuilder_InteriorLight/SmallLightPanel  

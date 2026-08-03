@@ -81,6 +81,7 @@ public interface IMyComponentBase
 * [MyModStorageComponent](Sandbox.Game.EntityComponents.MyModStorageComponent)  
 * [MyModStorageComponentBase](VRage.Game.Components.MyModStorageComponentBase)  
 * [MyMultiTextPanelComponent](Sandbox.Game.EntityComponents.MyMultiTextPanelComponent)  
+* [MyNpcAssetModifierComponent](Sandbox.Game.EntityComponents.MyNpcAssetModifierComponent)  
 * [MyNullGameLogicComponent](VRage.Game.Components.MyNullGameLogicComponent)  
 * [MyNullPositionComponent](VRage.Game.Components.MyNullPositionComponent)  
 * [MyNullRenderComponent](VRage.Game.Components.MyNullRenderComponent)  

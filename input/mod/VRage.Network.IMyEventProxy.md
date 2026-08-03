@@ -49,6 +49,7 @@ Interface which only marks class as event owner. Object itself must be replicate
 * [MyMeteor](Sandbox.Game.Entities.MyMeteor)  
 * [MyModifiableEntity](Sandbox.Game.Entities.MyModifiableEntity)  
 * [MyMultiTextPanelComponent](Sandbox.Game.EntityComponents.MyMultiTextPanelComponent)  
+* [MyNpcAssetModifierComponent](Sandbox.Game.EntityComponents.MyNpcAssetModifierComponent)  
 * [MyPathRecorderComponent](Sandbox.Game.EntityComponents.MyPathRecorderComponent)  
 * [MyPlanet](Sandbox.Game.Entities.MyPlanet)  
 * [MyProceduralLogicalSector](Sandbox.Game.WorldEnvironment.MyProceduralLogicalSector)  

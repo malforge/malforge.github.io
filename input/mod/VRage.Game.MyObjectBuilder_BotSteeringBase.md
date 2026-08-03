@@ -30,6 +30,7 @@ public abstract class MyObjectBuilder_BotSteeringBase: MyObjectBuilder_Base
 
 **Inheritors:**  
 * [MyObjectBuilder_BotCharacterAvoidanceSteering](VRage.Game.MyObjectBuilder_BotCharacterAvoidanceSteering)  
+* [MyObjectBuilder_BotFleeFromCharacterSteering](VRage.Game.MyObjectBuilder_BotFleeFromCharacterSteering)  
 * [MyObjectBuilder_BotForwardCollisionAvoidanceSteering](VRage.Game.MyObjectBuilder_BotForwardCollisionAvoidanceSteering)  
 * [MyObjectBuilder_BotSafeDistanceSteering](VRage.Game.MyObjectBuilder_BotSafeDistanceSteering)
 

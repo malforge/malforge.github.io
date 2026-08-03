@@ -11,6 +11,7 @@ DTO to pass grid entity data from server to client UI
 |Member|Description|
 |---|---|
 |[BlocksCount](Sandbox.Common.ObjectBuilders.MyActiveGridsDataTuple@BlocksCount)||
+|[CombatCooldownRemainingMs](Sandbox.Common.ObjectBuilders.MyActiveGridsDataTuple@CombatCooldownRemainingMs)||
 |[DisplayName](Sandbox.Common.ObjectBuilders.MyActiveGridsDataTuple@DisplayName)||
 |[EntityId](Sandbox.Common.ObjectBuilders.MyActiveGridsDataTuple@EntityId)||
 |[GridType](Sandbox.Common.ObjectBuilders.MyActiveGridsDataTuple@GridType)||

@@ -27,14 +27,10 @@ public class TypeSortedCachingList<T>: IReadOnlyList<T>, IReadOnlyCollection<T>,
 |[ApplyAdditions()](VRage.Collections.TypeSortedCachingList{T}@ApplyAdditions)||
 |[ApplyChanges()](VRage.Collections.TypeSortedCachingList{T}@ApplyChanges)||
 |[ApplyRemovals()](VRage.Collections.TypeSortedCachingList{T}@ApplyRemovals)||
-|[Clear()](VRage.Collections.TypeSortedCachingList{T}@Clear)||
 |[ClearImmediate()](VRage.Collections.TypeSortedCachingList{T}@ClearImmediate)||
-|[CopyWithChanges()](VRage.Collections.TypeSortedCachingList{T}@CopyWithChanges)||
 |[DebugCheckEmpty()](VRage.Collections.TypeSortedCachingList{T}@DebugCheckEmpty)||
 |[GetEnumerator()](VRage.Collections.TypeSortedCachingList{T}@GetEnumerator)||
 |[Remove(T, bool)](VRage.Collections.TypeSortedCachingList{T}@Remove)||
-|[RemoveAtImmediately(int)](VRage.Collections.TypeSortedCachingList{T}@RemoveAtImmediately)||
-|[Sort(IComparer<T>)](VRage.Collections.TypeSortedCachingList{T}@Sort)||
 |[ToString()](VRage.Collections.TypeSortedCachingList{T}@ToString)||
 
 **Implements:**  

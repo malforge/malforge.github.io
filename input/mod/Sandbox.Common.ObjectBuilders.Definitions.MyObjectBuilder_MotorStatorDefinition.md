@@ -100,6 +100,7 @@ public class MyObjectBuilder_MotorStatorDefinition: MyObjectBuilder_MechanicalCo
 |[PriorityModifier](VRage.Game.MyObjectBuilder_CubeBlockDefinition@PriorityModifier)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Public](VRage.Game.MyObjectBuilder_DefinitionBase@Public)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[RandomRotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@RandomRotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
+|[Repairable](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Repairable)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Rotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Rotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[RotorPart](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MechanicalConnectionBlockBaseDefinition@RotorPart)|_Inherited from [MyObjectBuilder_MechanicalConnectionBlockBaseDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MechanicalConnectionBlockBaseDefinition)_|
 |[SafetyDetach](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MechanicalConnectionBlockBaseDefinition@SafetyDetach)|_Inherited from [MyObjectBuilder_MechanicalConnectionBlockBaseDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MechanicalConnectionBlockBaseDefinition)_|

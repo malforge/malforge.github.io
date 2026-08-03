@@ -131,6 +131,7 @@ public abstract sealed class MyControlsSpace
 |[static ROTATION_UP](Sandbox.Game.MyControlsSpace@ROTATION_UP)||
 |[static SCREENSHOT](Sandbox.Game.MyControlsSpace@SCREENSHOT)||
 |[static SECONDARY_TOOL_ACTION](Sandbox.Game.MyControlsSpace@SECONDARY_TOOL_ACTION)||
+|[static SIGNALS_FULLY_VISIBLE](Sandbox.Game.MyControlsSpace@SIGNALS_FULLY_VISIBLE)||
 |[static SLOT0](Sandbox.Game.MyControlsSpace@SLOT0)||
 |[static SLOT1](Sandbox.Game.MyControlsSpace@SLOT1)||
 |[static SLOT2](Sandbox.Game.MyControlsSpace@SLOT2)||

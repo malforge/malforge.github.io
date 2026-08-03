@@ -11,7 +11,7 @@ public class MyObjectBuilder_RepairServiceComponentDefinition: MyObjectBuilder_C
 |[BaseCostPerBlock](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_RepairServiceComponentDefinition@BaseCostPerBlock)||
 |[FriendlyReputationDiscountMax](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_RepairServiceComponentDefinition@FriendlyReputationDiscountMax)||
 |[FriendlyReputationDiscountMin](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_RepairServiceComponentDefinition@FriendlyReputationDiscountMin)||
-|[NonRepairableBlocks](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_RepairServiceComponentDefinition@NonRepairableBlocks)||
+|[WorksOutsideStation](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_RepairServiceComponentDefinition@WorksOutsideStation)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[ComponentType](VRage.Game.MyObjectBuilder_ComponentDefinitionBase@ComponentType)|_Inherited from [MyObjectBuilder_ComponentDefinitionBase](VRage.Game.MyObjectBuilder_ComponentDefinitionBase)_|
 |[Description](VRage.Game.MyObjectBuilder_DefinitionBase@Description)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|

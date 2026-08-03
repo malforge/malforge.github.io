@@ -17,7 +17,7 @@ public class MyHumanoidBotDefinition: MyAgentDefinition
 |[InventoryItems](Sandbox.Definitions.MyHumanoidBotDefinition@InventoryItems)||
 |[PlayerGreetingAnimation](Sandbox.Definitions.MyHumanoidBotDefinition@PlayerGreetingAnimation)||
 |[StartingWeaponDefinitionId](Sandbox.Definitions.MyHumanoidBotDefinition@StartingWeaponDefinitionId)||
-|[AgentHeight](Sandbox.Definitions.MyAgentDefinition@AgentHeight)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[AgentHeight](Sandbox.Definitions.MyAgentDefinition@AgentHeight)|This and AgentRadius/AgentMaxClimb are discretized at navmesh build: height & climb against MyRecastOptions.cellHeight, radius against MyPlatformGameSettings.NAVMESH_CELL_SIZE. SBC values are snapped to the Steam grid: the number is what Recast uses on Steam, and on console (coarser cellSize) it rounds up to the next cell count.<br /><br />_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AgentMaxClimb](Sandbox.Definitions.MyAgentDefinition@AgentMaxClimb)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AgentMaxSlope](Sandbox.Definitions.MyAgentDefinition@AgentMaxSlope)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AgentRadius](Sandbox.Definitions.MyAgentDefinition@AgentRadius)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|

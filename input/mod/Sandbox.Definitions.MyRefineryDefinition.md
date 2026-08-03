@@ -136,6 +136,7 @@ public class MyRefineryDefinition: MyProductionBlockDefinition
 |[NotWorkingPriorityMultiplier](Sandbox.Definitions.MyCubeBlockDefinition@NotWorkingPriorityMultiplier)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[PriorityModifier](Sandbox.Definitions.MyCubeBlockDefinition@PriorityModifier)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[RandomRotation](Sandbox.Definitions.MyCubeBlockDefinition@RandomRotation)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
+|[Repairable](Sandbox.Definitions.MyCubeBlockDefinition@Repairable)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[Rotation](Sandbox.Definitions.MyCubeBlockDefinition@Rotation)|Allowed cube block rotations.<br /><br />_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[SimpleUpdateVisualOnSkinChange](Sandbox.Definitions.MyCubeBlockDefinition@SimpleUpdateVisualOnSkinChange)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[SymmetryX](Sandbox.Definitions.MyCubeBlockDefinition@SymmetryX)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|

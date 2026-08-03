@@ -36,6 +36,7 @@ public class MyObjectBuilder_SessionComponent: MyObjectBuilder_Base
 * [MyObjectBuilder_AntennaSessionComponent](VRage.Game.MyObjectBuilder_AntennaSessionComponent)  
 * [MyObjectBuilder_AutopilotPathfindingComponent](Sandbox.Common.ObjectBuilders.MyObjectBuilder_AutopilotPathfindingComponent)  
 * [MyObjectBuilder_BoardScreen](VRage.Game.MyObjectBuilder_BoardScreen)  
+* [MyObjectBuilder_BotAnchorComponent](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_BotAnchorComponent)  
 * [MyObjectBuilder_CampaignSessionComponent](VRage.Game.ObjectBuilders.MyObjectBuilder_CampaignSessionComponent)  
 * [MyObjectBuilder_ContractRisk](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ContractRisk)  
 * [MyObjectBuilder_CoordinateSystem](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_CoordinateSystem)  

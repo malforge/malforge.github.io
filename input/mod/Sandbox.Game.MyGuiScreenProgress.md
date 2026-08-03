@@ -1,7 +1,7 @@
 **Assembly:** Sandbox.Game.dll
 
 ```csharp
-public class MyGuiScreenProgress: MyGuiScreenProgressBase, IMyGuiControlsParent, IMyGuiControlsOwner, IVRageGuiScreen
+public class MyGuiScreenProgress: MyGuiScreenProgressBase, IMyGuiControlsParent, IMyGuiControlsOwner, IVRageGuiScreen, IMyTestScreenInputBindings
 ```
 
 ## Events
@@ -37,5 +37,6 @@ public class MyGuiScreenProgress: MyGuiScreenProgressBase, IMyGuiControlsParent,
 **Implements:**  
 * IMyGuiControlsOwner <sub>prohibited</sub>  
 * IMyGuiControlsParent <sub>prohibited</sub>  
+* IMyTestScreenInputBindings <sub>prohibited</sub>  
 * IVRageGuiScreen <sub>prohibited</sub>
 

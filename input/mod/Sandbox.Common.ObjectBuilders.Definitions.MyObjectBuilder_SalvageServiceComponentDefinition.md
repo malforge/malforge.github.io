@@ -11,6 +11,7 @@ public class MyObjectBuilder_SalvageServiceComponentDefinition: MyObjectBuilder_
 |[MaxFriendlyBonus](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_SalvageServiceComponentDefinition@MaxFriendlyBonus)||
 |[MinFriendlyBonus](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_SalvageServiceComponentDefinition@MinFriendlyBonus)||
 |[MinPricePercentage](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_SalvageServiceComponentDefinition@MinPricePercentage)||
+|[WorksOutsideStation](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_SalvageServiceComponentDefinition@WorksOutsideStation)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[ComponentType](VRage.Game.MyObjectBuilder_ComponentDefinitionBase@ComponentType)|_Inherited from [MyObjectBuilder_ComponentDefinitionBase](VRage.Game.MyObjectBuilder_ComponentDefinitionBase)_|
 |[Description](VRage.Game.MyObjectBuilder_DefinitionBase@Description)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|

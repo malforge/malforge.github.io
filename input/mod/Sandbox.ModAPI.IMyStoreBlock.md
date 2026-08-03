@@ -98,6 +98,7 @@ Describes store block (mods interface)
 |[Render](VRage.ModAPI.IMyEntity@Render)|Gets or sets render logic<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
 |[ResourceSink](VRage.Game.ModAPI.IMyCubeBlock@ResourceSink)|Resource sink (draws power)<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.IMyCubeBlock)_|
 |[Save](VRage.ModAPI.IMyEntity@Save)|Gets or sets [Save](VRage.ModAPI.EntityFlags@Save) . Entity won't be saved if [Save](VRage.ModAPI.IMyEntity@Save) is false<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
+|[Searchable](Sandbox.ModAPI.Ingame.IMyStoreBlock@Searchable)|When false, this store's listings are hidden from Item Search (Market Watch) results.<br /><br />_Inherited from [IMyStoreBlock](Sandbox.ModAPI.Ingame.IMyStoreBlock)_|
 |[ShadowBoxLod](VRage.ModAPI.IMyEntity@ShadowBoxLod)|Gets or sets flag [ShadowBoxLod](VRage.Game.Components.MyRenderComponentBase@ShadowBoxLod)<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
 |[ShowInInventory](Sandbox.ModAPI.Ingame.IMyTerminalBlock@ShowInInventory)|Represent terminal gui toggle `Show block in Inventory Screen`. Gets or sets its value<br /><br />_Inherited from [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock)_|
 |[ShowInTerminal](Sandbox.ModAPI.Ingame.IMyTerminalBlock@ShowInTerminal)|Represent terminal gui toggle `Show block in terminal`. Gets or sets its value<br /><br />_Inherited from [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock)_|
@@ -131,6 +132,7 @@ Describes store block (mods interface)
 |[CreateStoreItem(int, int, StoreItemTypes, ItemTypes)](Sandbox.ModAPI.IMyStoreBlock@CreateStoreItem)|Creates a store item that allows more control over how the item is setup. This method is suitable for Hydrogen and Oxygen types.|
 |[CreateStoreItem(string, int, int, int)](Sandbox.ModAPI.IMyStoreBlock@CreateStoreItem)|Creates a store item that sells a Prefab / Grid.|
 |[CreateStoreItem(MyObjectBuilder_StoreItem)](Sandbox.ModAPI.IMyStoreBlock@CreateStoreItem)|Creates a store item that allows more control over how the item is setup by using an object builder to initialize the item.|
+|[CreateStoreItem(MyDefinitionId, int, int, StoreItemTypes, ItemTypes)](Sandbox.ModAPI.IMyStoreBlock@CreateStoreItem)|Creates a store item that sells an store item.|
 |[GetStoreItemById(long)](Sandbox.ModAPI.IMyStoreBlock@GetStoreItemById)|Gets a store item using a provided id.|
 |[GetStoreItems(List<IMyStoreItem>)](Sandbox.ModAPI.IMyStoreBlock@GetStoreItems)|Gets all the current items in a store block|
 |[InsertOffer(MyStoreItemData, out long)](Sandbox.ModAPI.IMyStoreBlock@InsertOffer)|Creates store item and returns its id.|

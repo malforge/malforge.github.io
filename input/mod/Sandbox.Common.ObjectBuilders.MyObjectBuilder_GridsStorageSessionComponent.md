@@ -8,6 +8,7 @@ public class MyObjectBuilder_GridsStorageSessionComponent: MyObjectBuilder_Sessi
 
 |Member|Description|
 |---|---|
+|[CombatCooldownsRemainingMs](Sandbox.Common.ObjectBuilders.MyObjectBuilder_GridsStorageSessionComponent@CombatCooldownsRemainingMs)|Remaining combat cooldown in milliseconds at save time, keyed by mechanical-root grid entity ID.|
 |[GridsData](Sandbox.Common.ObjectBuilders.MyObjectBuilder_GridsStorageSessionComponent@GridsData)||
 |[UserData](Sandbox.Common.ObjectBuilders.MyObjectBuilder_GridsStorageSessionComponent@UserData)||
 

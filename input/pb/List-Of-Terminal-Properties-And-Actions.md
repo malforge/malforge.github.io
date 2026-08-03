@@ -1,133 +1,101 @@
 ## Overview
 **Note: Terminal actions and properties are for all intents and purposes obsolete since all vanilla block interfaces now contain proper API access to _most of_ this information. It is highly recommended you use those for less overhead.**
 
-[IMyAirtightHangarDoor](#imyairtighthangardoor)  
-[IMyAirtightSlideDoor](#imyairtightslidedoor)  
-[IMyAirVent](#imyairvent)  
-[IMyArtificialMassBlock](#imyartificialmassblock)  
-[IMyAssembler](#imyassembler)  
-[IMyBasicMissionBlock](#imybasicmissionblock)  
-[IMyBatteryBlock](#imybatteryblock)  
-[IMyBeacon](#imybeacon)  
-[IMyBroadcastController](#imybroadcastcontroller)  
-[IMyButtonPanel](#imybuttonpanel)  
-[IMyCameraBlock](#imycamerablock)  
-[IMyCargoContainer](#imycargocontainer)  
-[IMyCockpit](#imycockpit)  
-[IMyCollector](#imycollector)  
-[IMyConveyorSorter](#imyconveyorsorter)  
-[IMyCryoChamber](#imycryochamber)  
-[IMyDecoy](#imydecoy)  
-[IMyDefensiveCombatBlock](#imydefensivecombatblock)  
-[IMyDoor](#imydoor)  
-[IMyEmotionControllerBlock](#imyemotioncontrollerblock)  
-[IMyEventControllerBlock](#imyeventcontrollerblock)  
-[IMyExtendedPistonBase](#imyextendedpistonbase)  
-[IMyFlightMovementBlock](#imyflightmovementblock)  
-[IMyFunctionalBlock](#imyfunctionalblock)  
-[IMyGasGenerator](#imygasgenerator)  
-[IMyGasTank](#imygastank)  
-[IMyGravityGenerator](#imygravitygenerator)  
-[IMyGravityGeneratorSphere](#imygravitygeneratorsphere)  
-[IMyGyro](#imygyro)  
-[IMyHeatVent](#imyheatvent)  
-[IMyInteriorLight](#imyinteriorlight)  
-[IMyJumpDrive](#imyjumpdrive)  
-[IMyLandingGear](#imylandinggear)  
-[IMyLargeGatlingTurret](#imylargegatlingturret)  
-[IMyLargeInteriorTurret](#imylargeinteriorturret)  
-[IMyLaserAntenna](#imylaserantenna)  
-[IMyMedicalRoom](#imymedicalroom)  
-[IMyMotorAdvancedStator](#imymotoradvancedstator)  
-[IMyMotorSuspension](#imymotorsuspension)  
-[IMyOffensiveCombatBlock](#imyoffensivecombatblock)  
-[IMyOreDetector](#imyoredetector)  
-[IMyOxygenFarm](#imyoxygenfarm)  
-[IMyParachute](#imyparachute)  
-[IMyPathRecorderBlock](#imypathrecorderblock)  
-[IMyPistonBase](#imypistonbase)  
-[IMyProgrammableBlock](#imyprogrammableblock)  
-[IMyProjector](#imyprojector)  
-[IMyRadioAntenna](#imyradioantenna)  
-[IMyReactor](#imyreactor)  
-[IMyRefinery](#imyrefinery)  
-[IMyReflectorLight](#imyreflectorlight)  
-[IMyRemoteControl](#imyremotecontrol)  
-[IMySafeZoneBlock](#imysafezoneblock)  
-[IMySearchlight](#imysearchlight)  
-[IMySensorBlock](#imysensorblock)  
-[IMyShipConnector](#imyshipconnector)  
-[IMyShipDrill](#imyshipdrill)  
-[IMyShipGrinder](#imyshipgrinder)  
-[IMyShipMergeBlock](#imyshipmergeblock)  
-[IMyShipWelder](#imyshipwelder)  
-[IMySmallGatlingGun](#imysmallgatlinggun)  
-[IMySmallMissileLauncher](#imysmallmissilelauncher)  
-[IMySmallMissileLauncherReload](#imysmallmissilelauncherreload)  
-[IMySolarPanel](#imysolarpanel)  
-[IMySoundBlock](#imysoundblock)  
-[IMySpaceBall](#imyspaceball)  
-[IMyStoreBlock](#imystoreblock)  
-[IMyTargetDummyBlock](#imytargetdummyblock)  
-[IMyTerminalBlock](#imyterminalblock)  
-[IMyTextPanel](#imytextpanel)  
-[IMyThrust](#imythrust)  
-[IMyTimerBlock](#imytimerblock)  
-[IMyTransponder](#imytransponder)  
-[IMyTurretControlBlock](#imyturretcontrolblock)  
-[IMyUpgradeModule](#imyupgrademodule)  
-[IMyWarhead](#imywarhead)  
-[IMyWindTurbine](#imywindturbine)  
+Blocks are listed by their type definition. A block can be fetched through any of the interfaces listed beneath it, so the same actions and properties apply to every one of them.
 
-## IMyAirtightHangarDoor
+[AirtightHangarDoor](#airtighthangardoor)  
+[AirtightSlideDoor](#airtightslidedoor)  
+[AirVent](#airvent)  
+[Assembler](#assembler)  
+[BasicMissionBlock](#basicmissionblock)  
+[BatteryBlock](#batteryblock)  
+[Beacon](#beacon)  
+[BroadcastController](#broadcastcontroller)  
+[ButtonPanel](#buttonpanel)  
+[CameraBlock](#camerablock)  
+[CargoContainer](#cargocontainer)  
+[Cockpit](#cockpit)  
+[Collector](#collector)  
+[ContractBlock](#contractblock)  
+[ConveyorSorter](#conveyorsorter)  
+[CryoChamber](#cryochamber)  
+[DebugSphere1](#debugsphere1)  
+[DebugSphere2](#debugsphere2)  
+[DebugSphere3](#debugsphere3)  
+[Decoy](#decoy)  
+[DefensiveCombatBlock](#defensivecombatblock)  
+[Door](#door)  
+[Drill](#drill)  
+[EmotionControllerBlock](#emotioncontrollerblock)  
+[EventControllerBlock](#eventcontrollerblock)  
+[ExhaustBlock](#exhaustblock)  
+[ExtendedPistonBase](#extendedpistonbase)  
+[FlightMovementBlock](#flightmovementblock)  
+[FunctionalBlock](#functionalblock)  
+[GravityGenerator](#gravitygenerator)  
+[GravityGeneratorSphere](#gravitygeneratorsphere)  
+[Gyro](#gyro)  
+[HeatVentBlock](#heatventblock)  
+[HydrogenEngine](#hydrogenengine)  
+[InteriorLight](#interiorlight)  
+[InteriorTurret](#interiorturret)  
+[Jukebox](#jukebox)  
+[JumpDrive](#jumpdrive)  
+[LandingGear](#landinggear)  
+[LargeGatlingTurret](#largegatlingturret)  
+[LargeMissileTurret](#largemissileturret)  
+[LaserAntenna](#laserantenna)  
+[LCDPanelsBlock](#lcdpanelsblock)  
+[MedicalRoom](#medicalroom)  
+[MergeBlock](#mergeblock)  
+[MotorAdvancedStator](#motoradvancedstator)  
+[MotorStator](#motorstator)  
+[MotorSuspension](#motorsuspension)  
+[MyProgrammableBlock](#myprogrammableblock)  
+[OffensiveCombatBlock](#offensivecombatblock)  
+[OreDetector](#oredetector)  
+[OxygenFarm](#oxygenfarm)  
+[OxygenGenerator](#oxygengenerator)  
+[OxygenTank](#oxygentank)  
+[Parachute](#parachute)  
+[PathRecorderBlock](#pathrecorderblock)  
+[PistonBase](#pistonbase)  
+[Projector](#projector)  
+[RadioAntenna](#radioantenna)  
+[Reactor](#reactor)  
+[Refinery](#refinery)  
+[ReflectorLight](#reflectorlight)  
+[RemoteControl](#remotecontrol)  
+[SafeZoneBlock](#safezoneblock)  
+[Searchlight](#searchlight)  
+[SensorBlock](#sensorblock)  
+[ShipConnector](#shipconnector)  
+[ShipGrinder](#shipgrinder)  
+[ShipWelder](#shipwelder)  
+[SmallGatlingGun](#smallgatlinggun)  
+[SmallMissileLauncher](#smallmissilelauncher)  
+[SmallMissileLauncherReload](#smallmissilelauncherreload)  
+[SolarPanel](#solarpanel)  
+[SoundBlock](#soundblock)  
+[SpaceBall](#spaceball)  
+[StoreBlock](#storeblock)  
+[SurvivalKit](#survivalkit)  
+[TargetDummyBlock](#targetdummyblock)  
+[TerminalBlock](#terminalblock)  
+[TextPanel](#textpanel)  
+[Thrust](#thrust)  
+[TimerBlock](#timerblock)  
+[TransponderBlock](#transponderblock)  
+[TurretControlBlock](#turretcontrolblock)  
+[UpgradeModule](#upgrademodule)  
+[VendingMachine](#vendingmachine)  
+[VirtualMass](#virtualmass)  
+[Warhead](#warhead)  
+[WindTurbine](#windturbine)  
 
-### Actions
+## AirtightHangarDoor
 
-|Name|Description|
-|-|-|
-|AnyoneCanUse|Anyone Can Use On/Off|
-|DecreaseChangeIntervalSlider|Decrease Image change interval|
-|DecreaseFontSize|Decrease Font Size|
-|DecreaseTextPaddingSlider|Decrease Text Padding|
-|IncreaseChangeIntervalSlider|Increase Image change interval|
-|IncreaseFontSize|Increase Font Size|
-|IncreaseTextPaddingSlider|Increase Text Padding|
-|OnOff|Toggle block On/Off|
-|OnOff_Off|Toggle block Off|
-|OnOff_On|Toggle block On|
-|Open| Open/Closed|
-|Open_Off| Closed|
-|Open_On| Open|
-|PreserveAspectRatio|Preserve aspect ratio On/Off|
-|ShowOnHUD|Show on HUD On/Off|
-|ShowOnHUD_Off|Show on HUD Off|
-|ShowOnHUD_On|Show on HUD On|
-
-### Properties
-
-|Name|Type|
-|-|-|
-|alignment|long|
-|AnyoneCanUse|bool|
-|BackgroundColor|Color|
-|ChangeIntervalSlider|float|
-|Content|long|
-|Font|long|
-|FontColor|Color|
-|FontSize|float|
-|Name|StringBuilder|
-|OnOff|bool|
-|Open|bool|
-|PreserveAspectRatio|bool|
-|ScriptBackgroundColor|Color|
-|ScriptForegroundColor|Color|
-|ShowInInventory|bool|
-|ShowInTerminal|bool|
-|ShowInToolbarConfig|bool|
-|ShowOnHUD|bool|
-|TextPaddingSlider|float|
-
-## IMyAirtightSlideDoor
+Available as: `IMyAirtightDoorBase`, `IMyAirtightHangarDoor`, `IMyDoor`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -175,7 +143,59 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyAirVent
+## AirtightSlideDoor
+
+Available as: `IMyAirtightDoorBase`, `IMyAirtightSlideDoor`, `IMyDoor`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|AnyoneCanUse|Anyone Can Use On/Off|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|Open| Open/Closed|
+|Open_Off| Closed|
+|Open_On| Open|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|AnyoneCanUse|bool|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|Open|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+
+## AirVent
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyAirVent`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -221,49 +241,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyArtificialMassBlock
+## Assembler
 
-### Actions
-
-|Name|Description|
-|-|-|
-|DecreaseChangeIntervalSlider|Decrease Image change interval|
-|DecreaseFontSize|Decrease Font Size|
-|DecreaseTextPaddingSlider|Decrease Text Padding|
-|IncreaseChangeIntervalSlider|Increase Image change interval|
-|IncreaseFontSize|Increase Font Size|
-|IncreaseTextPaddingSlider|Increase Text Padding|
-|OnOff|Toggle block On/Off|
-|OnOff_Off|Toggle block Off|
-|OnOff_On|Toggle block On|
-|PreserveAspectRatio|Preserve aspect ratio On/Off|
-|ShowOnHUD|Show on HUD On/Off|
-|ShowOnHUD_Off|Show on HUD Off|
-|ShowOnHUD_On|Show on HUD On|
-
-### Properties
-
-|Name|Type|
-|-|-|
-|alignment|long|
-|BackgroundColor|Color|
-|ChangeIntervalSlider|float|
-|Content|long|
-|Font|long|
-|FontColor|Color|
-|FontSize|float|
-|Name|StringBuilder|
-|OnOff|bool|
-|PreserveAspectRatio|bool|
-|ScriptBackgroundColor|Color|
-|ScriptForegroundColor|Color|
-|ShowInInventory|bool|
-|ShowInTerminal|bool|
-|ShowInToolbarConfig|bool|
-|ShowOnHUD|bool|
-|TextPaddingSlider|float|
-
-## IMyAssembler
+Available as: `IMyAssembler`, `IMyFunctionalBlock`, `IMyProductionBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -309,7 +289,9 @@
 |TextPaddingSlider|float|
 |UseConveyor|bool|
 
-## IMyBasicMissionBlock
+## BasicMissionBlock
+
+Available as: `IMyBasicMissionBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -372,7 +354,9 @@
 |TextPaddingSlider|float|
 |Wander|bool|
 
-## IMyBatteryBlock
+## BatteryBlock
+
+Available as: `IMyBatteryBlock`, `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -422,7 +406,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyBeacon
+## Beacon
+
+Available as: `IMyBeacon`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -470,7 +456,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyBroadcastController
+## BroadcastController
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyBroadcastController`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -537,7 +525,9 @@
 |TextPaddingSlider|float|
 |UseAntenna|bool|
 
-## IMyButtonPanel
+## ButtonPanel
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyButtonPanel`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -582,7 +572,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyCameraBlock
+## CameraBlock
+
+Available as: `IMyCameraBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -624,7 +616,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyCargoContainer
+## CargoContainer
+
+Available as: `IMyCargoContainer`, `IMyTerminalBlock`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -644,7 +638,9 @@
 |ShowInToolbarConfig|bool|
 |ShowOnHUD|bool|
 
-## IMyCockpit
+## Cockpit
+
+Available as: `IMyCockpit`, `IMyShipController`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -700,7 +696,9 @@
 |TargetLocking|bool|
 |TextPaddingSlider|float|
 
-## IMyCollector
+## Collector
+
+Available as: `IMyCollector`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -744,7 +742,55 @@
 |TextPaddingSlider|float|
 |UseConveyor|bool|
 
-## IMyConveyorSorter
+## ContractBlock
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|AnyoneCanUse|Anyone Can Use On/Off|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|AnyoneCanUse|bool|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+
+## ConveyorSorter
+
+Available as: `IMyConveyorSorter`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -792,7 +838,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyCryoChamber
+## CryoChamber
+
+Available as: `IMyCockpit`, `IMyCryoChamber`, `IMyShipController`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -848,7 +896,9 @@
 |TargetLocking|bool|
 |TextPaddingSlider|float|
 
-## IMyDecoy
+## DebugSphere1
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -890,7 +940,141 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyDefensiveCombatBlock
+## DebugSphere2
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+
+## DebugSphere3
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+
+## Decoy
+
+Available as: `IMyDecoy`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+
+## DefensiveCombatBlock
+
+Available as: `IMyDefensiveCombatBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -965,7 +1149,9 @@
 |TextPaddingSlider|float|
 |WaypointZoneSize|float|
 
-## IMyDoor
+## Door
+
+Available as: `IMyDoor`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -1013,7 +1199,59 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyEmotionControllerBlock
+## Drill
+
+Available as: `IMyFunctionalBlock`, `IMyShipDrill`, `IMyShipToolBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+|TerrainClearingMode|Terrain Clearing Mode On/Off|
+|TerrainClearingMode_Off|Terrain Clearing Mode Off|
+|TerrainClearingMode_On|Terrain Clearing Mode On|
+|UseConveyor|Automatic Push/Pull On/Off|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TerrainClearingMode|bool|
+|TextPaddingSlider|float|
+|UseConveyor|bool|
+
+## EmotionControllerBlock
+
+Available as: `IMyEmotionControllerBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -1071,7 +1309,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyEventControllerBlock
+## EventControllerBlock
+
+Available as: `IMyEventControllerBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -1138,7 +1378,57 @@
 |TextPaddingSlider|float|
 |Threshold|float|
 
-## IMyExtendedPistonBase
+## ExhaustBlock
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreasePowerDependency|Decrease Power Dependency|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreasePowerDependency|Increase Power Dependency|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|EffectsCombo|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PowerDependency|float|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+
+## ExtendedPistonBase
+
+Available as: `IMyExtendedPistonBase`, `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyPistonBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -1212,7 +1502,9 @@
 |Velocity|float|
 |Weld speed|float|
 
-## IMyFlightMovementBlock
+## FlightMovementBlock
+
+Available as: `IMyFlightMovementBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -1283,7 +1575,9 @@
 |SpeedLimit|float|
 |TextPaddingSlider|float|
 
-## IMyFunctionalBlock
+## FunctionalBlock
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -1325,103 +1619,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyGasGenerator
+## GravityGenerator
 
-### Actions
-
-|Name|Description|
-|-|-|
-|Auto-Refill|Auto-Refill On/Off|
-|DecreaseChangeIntervalSlider|Decrease Image change interval|
-|DecreaseFontSize|Decrease Font Size|
-|DecreaseTextPaddingSlider|Decrease Text Padding|
-|IncreaseChangeIntervalSlider|Increase Image change interval|
-|IncreaseFontSize|Increase Font Size|
-|IncreaseTextPaddingSlider|Increase Text Padding|
-|OnOff|Toggle block On/Off|
-|OnOff_Off|Toggle block Off|
-|OnOff_On|Toggle block On|
-|PreserveAspectRatio|Preserve aspect ratio On/Off|
-|Refill|Refill Bottles|
-|ShowOnHUD|Show on HUD On/Off|
-|ShowOnHUD_Off|Show on HUD Off|
-|ShowOnHUD_On|Show on HUD On|
-|UseConveyor|Automatic Push/Pull On/Off|
-
-### Properties
-
-|Name|Type|
-|-|-|
-|alignment|long|
-|Auto-Refill|bool|
-|BackgroundColor|Color|
-|ChangeIntervalSlider|float|
-|Content|long|
-|Font|long|
-|FontColor|Color|
-|FontSize|float|
-|Name|StringBuilder|
-|OnOff|bool|
-|PreserveAspectRatio|bool|
-|ScriptBackgroundColor|Color|
-|ScriptForegroundColor|Color|
-|ShowInInventory|bool|
-|ShowInTerminal|bool|
-|ShowInToolbarConfig|bool|
-|ShowOnHUD|bool|
-|TextPaddingSlider|float|
-|UseConveyor|bool|
-
-## IMyGasTank
-
-### Actions
-
-|Name|Description|
-|-|-|
-|Auto-Refill|Auto-Refill On/Off|
-|DecreaseChangeIntervalSlider|Decrease Image change interval|
-|DecreaseFontSize|Decrease Font Size|
-|DecreaseTextPaddingSlider|Decrease Text Padding|
-|IncreaseChangeIntervalSlider|Increase Image change interval|
-|IncreaseFontSize|Increase Font Size|
-|IncreaseTextPaddingSlider|Increase Text Padding|
-|OnOff|Toggle block On/Off|
-|OnOff_Off|Toggle block Off|
-|OnOff_On|Toggle block On|
-|PreserveAspectRatio|Preserve aspect ratio On/Off|
-|Refill|Refill Bottles|
-|ShowOnHUD|Show on HUD On/Off|
-|ShowOnHUD_Off|Show on HUD Off|
-|ShowOnHUD_On|Show on HUD On|
-|Stockpile|Stockpile On/Off|
-|Stockpile_Off|Stockpile Off|
-|Stockpile_On|Stockpile On|
-
-### Properties
-
-|Name|Type|
-|-|-|
-|alignment|long|
-|Auto-Refill|bool|
-|BackgroundColor|Color|
-|ChangeIntervalSlider|float|
-|Content|long|
-|Font|long|
-|FontColor|Color|
-|FontSize|float|
-|Name|StringBuilder|
-|OnOff|bool|
-|PreserveAspectRatio|bool|
-|ScriptBackgroundColor|Color|
-|ScriptForegroundColor|Color|
-|ShowInInventory|bool|
-|ShowInTerminal|bool|
-|ShowInToolbarConfig|bool|
-|ShowOnHUD|bool|
-|Stockpile|bool|
-|TextPaddingSlider|float|
-
-## IMyGravityGenerator
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyGravityGenerator`, `IMyGravityGeneratorBase`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -1476,7 +1676,9 @@
 |TextPaddingSlider|float|
 |Width|float|
 
-## IMyGravityGeneratorSphere
+## GravityGeneratorSphere
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyGravityGeneratorBase`, `IMyGravityGeneratorSphere`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -1525,7 +1727,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyGyro
+## Gyro
+
+Available as: `IMyFunctionalBlock`, `IMyGyro`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -1587,7 +1791,9 @@
 |TextPaddingSlider|float|
 |Yaw|float|
 
-## IMyHeatVent
+## HeatVentBlock
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyHeatVent`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -1648,7 +1854,53 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyInteriorLight
+## HydrogenEngine
+
+Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+
+## InteriorLight
+
+Available as: `IMyFunctionalBlock`, `IMyLightingBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyInteriorLight`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -1715,7 +1967,164 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyJumpDrive
+## InteriorTurret
+
+Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUserControllableGun`, `IMyLargeInteriorTurret`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseRange|Decrease AI aiming radius|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|EnableIdleMovement|Enable idle movement On/Off|
+|EnableIdleMovement_Off|Enable idle movement Off|
+|EnableIdleMovement_On|Enable idle movement On|
+|EnableTargetLocking|Enable target locking On/Off|
+|FocusLockedTarget|Focus Locked Target|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseRange|Increase AI aiming radius|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|Shoot|Shoot On/Off|
+|Shoot_Off|Shoot Off|
+|Shoot_On|Shoot On|
+|ShootOnce|Shoot once|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+|TargetCharacters|Target characters On/Off|
+|TargetCharacters_Off|Target characters Off|
+|TargetCharacters_On|Target characters On|
+|TargetEnemies|Target Enemies On/Off|
+|TargetEnemies_Off|Target Enemies Off|
+|TargetEnemies_On|Target Enemies On|
+|TargetFriends|Target Friends On/Off|
+|TargetFriends_Off|Target Friends Off|
+|TargetFriends_On|Target Friends On|
+|TargetingGroup_CycleSubsystems|Cycle Subsystems|
+|TargetingGroup_PowerSystems|Target Power systems|
+|TargetingGroup_Propulsion|Target Propulsion|
+|TargetingGroup_Weapons|Target Weapons|
+|TargetLargeShips|Target large ships On/Off|
+|TargetLargeShips_Off|Target large ships Off|
+|TargetLargeShips_On|Target large ships On|
+|TargetMeteors|Target meteors On/Off|
+|TargetMeteors_Off|Target meteors Off|
+|TargetMeteors_On|Target meteors On|
+|TargetMissiles|Target rockets On/Off|
+|TargetMissiles_Off|Target rockets Off|
+|TargetMissiles_On|Target rockets On|
+|TargetNeutrals|Target neutrals On/Off|
+|TargetNeutrals_Off|Target neutrals Off|
+|TargetNeutrals_On|Target neutrals On|
+|TargetSmallShips|Target small ships On/Off|
+|TargetSmallShips_Off|Target small ships Off|
+|TargetSmallShips_On|Target small ships On|
+|TargetStations|Target stations On/Off|
+|TargetStations_Off|Target stations Off|
+|TargetStations_On|Target stations On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|EnableIdleMovement|bool|
+|EnableTargetLocking|bool|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|Range|float|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|Shoot|bool|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TargetCharacters|bool|
+|TargetEnemies|bool|
+|TargetFriends|bool|
+|TargetingGroup_Selector|long|
+|TargetLargeShips|bool|
+|TargetMeteors|bool|
+|TargetMissiles|bool|
+|TargetNeutrals|bool|
+|TargetSmallShips|bool|
+|TargetStations|bool|
+|TextPaddingSlider|float|
+
+## Jukebox
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMySoundBlock`, `IMyCubeBlock`, `IMyEntity`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseLoopableSlider|Decrease Loop time|
+|DecreaseRangeSlider|Decrease Range|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|DecreaseVolumeSlider|Decrease Volume|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseLoopableSlider|Increase Loop time|
+|IncreaseRangeSlider|Increase Range|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|IncreaseVolumeSlider|Increase Volume|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PlaySound|Play|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+|StopSound|Stop|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|LoopableSlider|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|RangeSlider|float|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+|VolumeSlider|float|
+
+## JumpDrive
+
+Available as: `IMyFunctionalBlock`, `IMyJumpDrive`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -1766,7 +2175,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyLandingGear
+## LandingGear
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyLandingGear`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -1815,7 +2226,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyLargeGatlingTurret
+## LargeGatlingTurret
+
+Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUserControllableGun`, `IMyLargeConveyorTurretBase`, `IMyLargeGatlingTurret`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -1915,7 +2328,9 @@
 |TextPaddingSlider|float|
 |UseConveyor|bool|
 
-## IMyLargeInteriorTurret
+## LargeMissileTurret
+
+Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUserControllableGun`, `IMyLargeConveyorTurretBase`, `IMyLargeMissileTurret`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -1976,6 +2391,7 @@
 |TargetStations|Target stations On/Off|
 |TargetStations_Off|Target stations Off|
 |TargetStations_On|Target stations On|
+|UseConveyor|Automatic Push/Pull On/Off|
 
 ### Properties
 
@@ -2012,8 +2428,11 @@
 |TargetSmallShips|bool|
 |TargetStations|bool|
 |TextPaddingSlider|float|
+|UseConveyor|bool|
 
-## IMyLaserAntenna
+## LaserAntenna
+
+Available as: `IMyFunctionalBlock`, `IMyLaserAntenna`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -2064,7 +2483,53 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyMedicalRoom
+## LCDPanelsBlock
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+
+## MedicalRoom
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyMedicalRoom`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -2109,7 +2574,53 @@
 |TakeOwnership|bool|
 |TextPaddingSlider|float|
 
-## IMyMotorAdvancedStator
+## MergeBlock
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyShipMergeBlock`, `IMyCubeBlock`, `IMyEntity`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+
+## MotorAdvancedStator
+
+Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorAdvancedStator`, `IMyMotorBase`, `IMyMotorStator`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -2201,7 +2712,103 @@
 |Velocity|float|
 |Weld speed|float|
 
-## IMyMotorSuspension
+## MotorStator
+
+Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorBase`, `IMyMotorStator`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|AddHingeTopPart|Add Hinge Head|
+|AddMediumHingeTopPart|Add Medium Head|
+|AddMediumRotorTopPart|Add Medium Head|
+|AddRotorTopPart|Add Rotor Head|
+|AddSmallHingeTopPart|Add Small Head|
+|AddSmallRotorTopPart|Add Small Head|
+|Attach|Attach|
+|DecreaseBrakingTorque|Decrease Braking torque|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseDisplacement|Decrease Rotor displacement|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseLowerLimit|Decrease Lower limit|
+|DecreaseSafetyDetach|Decrease Safety detach|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|DecreaseTorque|Decrease Torque|
+|DecreaseUpperLimit|Decrease Upper limit|
+|DecreaseVelocity|Decrease Velocity|
+|DecreaseWeld speed|Decrease Safety lock speed|
+|Detach|Detach|
+|Force weld|Safety lock override On/Off|
+|HingeLock|Hinge lock On/Off|
+|HingeLock_Off|Hinge lock Off|
+|HingeLock_On|Hinge lock On|
+|IncreaseBrakingTorque|Increase Braking torque|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseDisplacement|Increase Rotor displacement|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseLowerLimit|Increase Lower limit|
+|IncreaseSafetyDetach|Increase Safety detach|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|IncreaseTorque|Increase Torque|
+|IncreaseUpperLimit|Increase Upper limit|
+|IncreaseVelocity|Increase Velocity|
+|IncreaseWeld speed|Increase Safety lock speed|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ResetVelocity|Reset Velocity|
+|Reverse|Reverse|
+|RotateToAngle|Rotate To Angle|
+|RotorLock|Rotor lock On/Off|
+|RotorLock_Off|Rotor lock Off|
+|RotorLock_On|Rotor lock On|
+|SetLowerLimit|Set Lower Limit|
+|SetUpperLimit|Set Upper Limit|
+|SetVelocity|Set Velocity|
+|ShareInertiaTensor|Share inertia tensor On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|BrakingTorque|float|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Displacement|float|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Force weld|bool|
+|HingeLock|bool|
+|LowerLimit|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|RotorLock|bool|
+|SafetyDetach|float|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShareInertiaTensor|bool|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+|Torque|float|
+|UpperLimit|float|
+|Velocity|float|
+|Weld speed|float|
+
+## MotorSuspension
+
+Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorBase`, `IMyMotorSuspension`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -2300,7 +2907,56 @@
 |TextPaddingSlider|float|
 |Weld speed|float|
 
-## IMyOffensiveCombatBlock
+## MyProgrammableBlock
+
+Available as: `IMyFunctionalBlock`, `IMyProgrammableBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|Run|Run|
+|RunWithDefaultArgument|Run with default argument|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|ConsoleCommand|StringBuilder|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+
+## OffensiveCombatBlock
+
+Available as: `IMyFunctionalBlock`, `IMyOffensiveCombatBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -2417,7 +3073,9 @@
 |TextPaddingSlider|float|
 |UpdateInterval|float|
 
-## IMyOreDetector
+## OreDetector
+
+Available as: `IMyFunctionalBlock`, `IMyOreDetector`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -2462,7 +3120,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyOxygenFarm
+## OxygenFarm
+
+Available as: `IMyFunctionalBlock`, `IMySolarOccludable`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyOxygenFarm`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -2504,7 +3164,111 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyParachute
+## OxygenGenerator
+
+Available as: `IMyFunctionalBlock`, `IMyGasGenerator`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|AutomaticallyPullBottles|Automatically Pull Bottles On/Off|
+|Auto-Refill|Auto-Refill On/Off|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|Refill|Refill Bottles|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+|UseConveyor|Automatic Push/Pull On/Off|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|AutomaticallyPullBottles|bool|
+|Auto-Refill|bool|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+|UseConveyor|bool|
+
+## OxygenTank
+
+Available as: `IMyFunctionalBlock`, `IMyGasTank`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|Auto-Refill|Auto-Refill On/Off|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|Refill|Refill Bottles|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+|Stockpile|Stockpile On/Off|
+|Stockpile_Off|Stockpile Off|
+|Stockpile_On|Stockpile On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|Auto-Refill|bool|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|Stockpile|bool|
+|TextPaddingSlider|float|
+
+## Parachute
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyParachute`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -2512,6 +3276,8 @@
 |-|-|
 |AnyoneCanUse|Anyone Can Use On/Off|
 |AutoDeploy|Auto deploy On/Off|
+|AutoDeploy_Off|Auto deploy Off|
+|AutoDeploy_On|Auto deploy On|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
@@ -2555,7 +3321,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyPathRecorderBlock
+## PathRecorderBlock
+
+Available as: `IMyFunctionalBlock`, `IMyPathRecorderBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -2623,7 +3391,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyPistonBase
+## PistonBase
+
+Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyPistonBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -2697,52 +3467,9 @@
 |Velocity|float|
 |Weld speed|float|
 
-## IMyProgrammableBlock
+## Projector
 
-### Actions
-
-|Name|Description|
-|-|-|
-|DecreaseChangeIntervalSlider|Decrease Image change interval|
-|DecreaseFontSize|Decrease Font Size|
-|DecreaseTextPaddingSlider|Decrease Text Padding|
-|IncreaseChangeIntervalSlider|Increase Image change interval|
-|IncreaseFontSize|Increase Font Size|
-|IncreaseTextPaddingSlider|Increase Text Padding|
-|OnOff|Toggle block On/Off|
-|OnOff_Off|Toggle block Off|
-|OnOff_On|Toggle block On|
-|PreserveAspectRatio|Preserve aspect ratio On/Off|
-|Run|Run|
-|RunWithDefaultArgument|Run with default argument|
-|ShowOnHUD|Show on HUD On/Off|
-|ShowOnHUD_Off|Show on HUD Off|
-|ShowOnHUD_On|Show on HUD On|
-
-### Properties
-
-|Name|Type|
-|-|-|
-|alignment|long|
-|BackgroundColor|Color|
-|ChangeIntervalSlider|float|
-|ConsoleCommand|StringBuilder|
-|Content|long|
-|Font|long|
-|FontColor|Color|
-|FontSize|float|
-|Name|StringBuilder|
-|OnOff|bool|
-|PreserveAspectRatio|bool|
-|ScriptBackgroundColor|Color|
-|ScriptForegroundColor|Color|
-|ShowInInventory|bool|
-|ShowInTerminal|bool|
-|ShowInToolbarConfig|bool|
-|ShowOnHUD|bool|
-|TextPaddingSlider|float|
-
-## IMyProjector
+Available as: `IMyFunctionalBlock`, `IMyProjector`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -2815,7 +3542,9 @@
 |Y|float|
 |Z|float|
 
-## IMyRadioAntenna
+## RadioAntenna
+
+Available as: `IMyFunctionalBlock`, `IMyRadioAntenna`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -2862,7 +3591,9 @@
 |ShowShipName|bool|
 |TextPaddingSlider|float|
 
-## IMyReactor
+## Reactor
+
+Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyReactor`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -2906,7 +3637,9 @@
 |TextPaddingSlider|float|
 |UseConveyor|bool|
 
-## IMyRefinery
+## Refinery
+
+Available as: `IMyFunctionalBlock`, `IMyProductionBlock`, `IMyRefinery`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -2950,7 +3683,9 @@
 |TextPaddingSlider|float|
 |UseConveyor|bool|
 
-## IMyReflectorLight
+## ReflectorLight
+
+Available as: `IMyFunctionalBlock`, `IMyLightingBlock`, `IMyReflectorLight`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -3020,7 +3755,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyRemoteControl
+## RemoteControl
+
+Available as: `IMyRemoteControl`, `IMyShipController`, `IMyTerminalBlock`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -3088,7 +3825,9 @@
 |SpeedLimit|float|
 |TargetLocking|bool|
 
-## IMySafeZoneBlock
+## SafeZoneBlock
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMySafeZoneBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -3150,7 +3889,9 @@
 |TextPaddingSlider|float|
 |UseConveyor|bool|
 
-## IMySearchlight
+## Searchlight
+
+Available as: `IMyFunctionalBlock`, `IMySearchlight`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -3268,7 +4009,9 @@
 |TargetStations|bool|
 |TextPaddingSlider|float|
 
-## IMySensorBlock
+## SensorBlock
+
+Available as: `IMyFunctionalBlock`, `IMySensorBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -3379,7 +4122,9 @@
 |TextPaddingSlider|float|
 |Top|float|
 
-## IMyShipConnector
+## ShipConnector
+
+Available as: `IMyFunctionalBlock`, `IMyShipConnector`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -3448,55 +4193,9 @@
 |ThrowOut|bool|
 |Trading|bool|
 
-## IMyShipDrill
+## ShipGrinder
 
-### Actions
-
-|Name|Description|
-|-|-|
-|DecreaseChangeIntervalSlider|Decrease Image change interval|
-|DecreaseFontSize|Decrease Font Size|
-|DecreaseTextPaddingSlider|Decrease Text Padding|
-|IncreaseChangeIntervalSlider|Increase Image change interval|
-|IncreaseFontSize|Increase Font Size|
-|IncreaseTextPaddingSlider|Increase Text Padding|
-|OnOff|Toggle block On/Off|
-|OnOff_Off|Toggle block Off|
-|OnOff_On|Toggle block On|
-|PreserveAspectRatio|Preserve aspect ratio On/Off|
-|ShowOnHUD|Show on HUD On/Off|
-|ShowOnHUD_Off|Show on HUD Off|
-|ShowOnHUD_On|Show on HUD On|
-|TerrainClearingMode|Terrain Clearing Mode On/Off|
-|TerrainClearingMode_Off|Terrain Clearing Mode Off|
-|TerrainClearingMode_On|Terrain Clearing Mode On|
-|UseConveyor|Automatic Push/Pull On/Off|
-
-### Properties
-
-|Name|Type|
-|-|-|
-|alignment|long|
-|BackgroundColor|Color|
-|ChangeIntervalSlider|float|
-|Content|long|
-|Font|long|
-|FontColor|Color|
-|FontSize|float|
-|Name|StringBuilder|
-|OnOff|bool|
-|PreserveAspectRatio|bool|
-|ScriptBackgroundColor|Color|
-|ScriptForegroundColor|Color|
-|ShowInInventory|bool|
-|ShowInTerminal|bool|
-|ShowInToolbarConfig|bool|
-|ShowOnHUD|bool|
-|TerrainClearingMode|bool|
-|TextPaddingSlider|float|
-|UseConveyor|bool|
-
-## IMyShipGrinder
+Available as: `IMyFunctionalBlock`, `IMyShipGrinder`, `IMyShipToolBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -3540,7 +4239,9 @@
 |TextPaddingSlider|float|
 |UseConveyor|bool|
 
-## IMyShipMergeBlock
+## ShipWelder
+
+Available as: `IMyFunctionalBlock`, `IMyShipToolBase`, `IMyShipWelder`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -3549,49 +4250,6 @@
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
-|IncreaseChangeIntervalSlider|Increase Image change interval|
-|IncreaseFontSize|Increase Font Size|
-|IncreaseTextPaddingSlider|Increase Text Padding|
-|OnOff|Toggle block On/Off|
-|OnOff_Off|Toggle block Off|
-|OnOff_On|Toggle block On|
-|PreserveAspectRatio|Preserve aspect ratio On/Off|
-|ShowOnHUD|Show on HUD On/Off|
-|ShowOnHUD_Off|Show on HUD Off|
-|ShowOnHUD_On|Show on HUD On|
-
-### Properties
-
-|Name|Type|
-|-|-|
-|alignment|long|
-|BackgroundColor|Color|
-|ChangeIntervalSlider|float|
-|Content|long|
-|Font|long|
-|FontColor|Color|
-|FontSize|float|
-|Name|StringBuilder|
-|OnOff|bool|
-|PreserveAspectRatio|bool|
-|ScriptBackgroundColor|Color|
-|ScriptForegroundColor|Color|
-|ShowInInventory|bool|
-|ShowInTerminal|bool|
-|ShowInToolbarConfig|bool|
-|ShowOnHUD|bool|
-|TextPaddingSlider|float|
-
-## IMyShipWelder
-
-### Actions
-
-|Name|Description|
-|-|-|
-|DecreaseChangeIntervalSlider|Decrease Image change interval|
-|DecreaseFontSize|Decrease Font Size|
-|DecreaseTextPaddingSlider|Decrease Text Padding|
-|helpOthers|Help Others On/Off|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseTextPaddingSlider|Increase Text Padding|
@@ -3615,7 +4273,6 @@
 |Font|long|
 |FontColor|Color|
 |FontSize|float|
-|helpOthers|bool|
 |Name|StringBuilder|
 |OnOff|bool|
 |PreserveAspectRatio|bool|
@@ -3628,7 +4285,9 @@
 |TextPaddingSlider|float|
 |UseConveyor|bool|
 
-## IMySmallGatlingGun
+## SmallGatlingGun
+
+Available as: `IMyFunctionalBlock`, `IMySmallGatlingGun`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUserControllableGun`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -3677,7 +4336,9 @@
 |TextPaddingSlider|float|
 |UseConveyor|bool|
 
-## IMySmallMissileLauncher
+## SmallMissileLauncher
+
+Available as: `IMyFunctionalBlock`, `IMySmallMissileLauncher`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUserControllableGun`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -3726,7 +4387,9 @@
 |TextPaddingSlider|float|
 |UseConveyor|bool|
 
-## IMySmallMissileLauncherReload
+## SmallMissileLauncherReload
+
+Available as: `IMyFunctionalBlock`, `IMySmallMissileLauncher`, `IMySmallMissileLauncherReload`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUserControllableGun`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -3777,7 +4440,9 @@
 |UseConveyor|bool|
 |UseConveyor|bool|
 
-## IMySolarPanel
+## SolarPanel
+
+Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMySolarOccludable`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMySolarPanel`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -3819,7 +4484,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMySoundBlock
+## SoundBlock
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMySoundBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -3872,7 +4539,9 @@
 |TextPaddingSlider|float|
 |VolumeSlider|float|
 
-## IMySpaceBall
+## SpaceBall
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMySpaceBall`, `IMyVirtualMass`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -3919,7 +4588,9 @@
 |TextPaddingSlider|float|
 |VirtualMass|float|
 
-## IMyStoreBlock
+## StoreBlock
+
+Available as: `IMyFunctionalBlock`, `IMyStoreBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -3936,6 +4607,7 @@
 |OnOff_Off|Toggle block Off|
 |OnOff_On|Toggle block On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
+|Searchable|Searchable On/Off|
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
 |ShowOnHUD_On|Show on HUD On|
@@ -3958,6 +4630,7 @@
 |PreserveAspectRatio|bool|
 |ScriptBackgroundColor|Color|
 |ScriptForegroundColor|Color|
+|Searchable|bool|
 |ShowInInventory|bool|
 |ShowInTerminal|bool|
 |ShowInToolbarConfig|bool|
@@ -3965,7 +4638,58 @@
 |TextPaddingSlider|float|
 |UseConveyor|bool|
 
-## IMyTargetDummyBlock
+## SurvivalKit
+
+Available as: `IMyAssembler`, `IMyFunctionalBlock`, `IMyProductionBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+|slaveMode|Cooperative Mode On/Off|
+|UseConveyor|Automatic Push/Pull On/Off|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|slaveMode|bool|
+|SpawnName|StringBuilder|
+|TextPaddingSlider|float|
+|UseConveyor|bool|
+
+## TargetDummyBlock
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
 
 ### Actions
 
@@ -4011,7 +4735,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyTerminalBlock
+## TerminalBlock
+
+Available as: `IMyTerminalBlock`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -4031,7 +4757,9 @@
 |ShowInToolbarConfig|bool|
 |ShowOnHUD|bool|
 
-## IMyTextPanel
+## TextPanel
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextPanel`, `IMyTextSurface`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -4095,7 +4823,9 @@
 |TextPaddingSlider|float|
 |Title|StringBuilder|
 
-## IMyThrust
+## Thrust
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyThrust`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -4141,7 +4871,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyTimerBlock
+## TimerBlock
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyTimerBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -4191,7 +4923,9 @@
 |TextPaddingSlider|float|
 |TriggerDelay|float|
 
-## IMyTransponder
+## TransponderBlock
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyTransponder`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -4243,7 +4977,9 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyTurretControlBlock
+## TurretControlBlock
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyTurretControlBlock`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -4357,7 +5093,9 @@
 |TargetStations|bool|
 |TextPaddingSlider|float|
 
-## IMyUpgradeModule
+## UpgradeModule
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUpgradeModule`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -4399,7 +5137,103 @@
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## IMyWarhead
+## VendingMachine
+
+Available as: `IMyFunctionalBlock`, `IMyStoreBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|AnyoneCanUse|Anyone Can Use On/Off|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|Searchable|Searchable On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+|UseConveyor|Automatic Push/Pull On/Off|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|AnyoneCanUse|bool|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|Searchable|bool|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+|UseConveyor|bool|
+
+## VirtualMass
+
+Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyArtificialMassBlock`, `IMyVirtualMass`, `IMyCubeBlock`, `IMyEntity`
+
+### Actions
+
+|Name|Description|
+|-|-|
+|DecreaseChangeIntervalSlider|Decrease Image change interval|
+|DecreaseFontSize|Decrease Font Size|
+|DecreaseTextPaddingSlider|Decrease Text Padding|
+|IncreaseChangeIntervalSlider|Increase Image change interval|
+|IncreaseFontSize|Increase Font Size|
+|IncreaseTextPaddingSlider|Increase Text Padding|
+|OnOff|Toggle block On/Off|
+|OnOff_Off|Toggle block Off|
+|OnOff_On|Toggle block On|
+|PreserveAspectRatio|Preserve aspect ratio On/Off|
+|ShowOnHUD|Show on HUD On/Off|
+|ShowOnHUD_Off|Show on HUD Off|
+|ShowOnHUD_On|Show on HUD On|
+
+### Properties
+
+|Name|Type|
+|-|-|
+|alignment|long|
+|BackgroundColor|Color|
+|ChangeIntervalSlider|float|
+|Content|long|
+|Font|long|
+|FontColor|Color|
+|FontSize|float|
+|Name|StringBuilder|
+|OnOff|bool|
+|PreserveAspectRatio|bool|
+|ScriptBackgroundColor|Color|
+|ScriptForegroundColor|Color|
+|ShowInInventory|bool|
+|ShowInTerminal|bool|
+|ShowInToolbarConfig|bool|
+|ShowOnHUD|bool|
+|TextPaddingSlider|float|
+
+## Warhead
+
+Available as: `IMyTerminalBlock`, `IMyUpgradableBlock`, `IMyWarhead`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 
@@ -4429,7 +5263,9 @@
 |ShowInToolbarConfig|bool|
 |ShowOnHUD|bool|
 
-## IMyWindTurbine
+## WindTurbine
+
+Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyWindTurbine`, `IMyCubeBlock`, `IMyEntity`
 
 ### Actions
 

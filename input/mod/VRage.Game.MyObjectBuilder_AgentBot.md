@@ -9,6 +9,7 @@ public class MyObjectBuilder_AgentBot: MyObjectBuilder_Bot
 |Member|Description|
 |---|---|
 |[AiTarget](VRage.Game.MyObjectBuilder_AgentBot@AiTarget)||
+|[AnchorEntityId](VRage.Game.MyObjectBuilder_AgentBot@AnchorEntityId)|Entity id of the bot anchor that spawned this bot, so the populator can re-claim it after save/load without a distance heuristic. Zero when not anchor-spawned.|
 |[RemoveAfterDeath](VRage.Game.MyObjectBuilder_AgentBot@RemoveAfterDeath)||
 |[RespawnCounter](VRage.Game.MyObjectBuilder_AgentBot@RespawnCounter)||
 |[AsociatedMyPlayerId](VRage.Game.MyObjectBuilder_Bot@AsociatedMyPlayerId)|_Inherited from [MyObjectBuilder_Bot](VRage.Game.MyObjectBuilder_Bot)_|

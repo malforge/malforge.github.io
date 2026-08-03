@@ -34,6 +34,7 @@ Grid - small ship, large ship, station Cubes (armor, walls...) are merge and ren
 |[CloseGrid](Sandbox.Game.Entities.MyCubeGrid@CloseGrid)||
 |[ControlledFromTurret](Sandbox.Game.Entities.MyCubeGrid@ControlledFromTurret)||
 |[CreatePhysics](Sandbox.Game.Entities.MyCubeGrid@CreatePhysics)||
+|[ForceLockMotors](Sandbox.Game.Entities.MyCubeGrid@ForceLockMotors)||
 |[GridGeneralDamageModifier](Sandbox.Game.Entities.MyCubeGrid@GridGeneralDamageModifier)||
 |[GridPresenceUpdate](Sandbox.Game.Entities.MyCubeGrid@GridPresenceUpdate)||
 |[HasMechanicalTopPenindingReattach](Sandbox.Game.Entities.MyCubeGrid@HasMechanicalTopPenindingReattach)||

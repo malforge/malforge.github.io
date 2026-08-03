@@ -12,6 +12,8 @@ public struct SpawnGroupPrefab
 |[Behaviour](Sandbox.Definitions.MySpawnGroupDefinition+SpawnGroupPrefab@Behaviour)||
 |[BehaviourActivationDistance](Sandbox.Definitions.MySpawnGroupDefinition+SpawnGroupPrefab@BehaviourActivationDistance)||
 |[GpsGrid](Sandbox.Definitions.MySpawnGroupDefinition+SpawnGroupPrefab@GpsGrid)||
+|[MaxNPCCount](Sandbox.Definitions.MySpawnGroupDefinition+SpawnGroupPrefab@MaxNPCCount)||
+|[NPCSpawnPointsOverride](Sandbox.Definitions.MySpawnGroupDefinition+SpawnGroupPrefab@NPCSpawnPointsOverride)||
 |[PlaceToGridOrigin](Sandbox.Definitions.MySpawnGroupDefinition+SpawnGroupPrefab@PlaceToGridOrigin)||
 |[Position](Sandbox.Definitions.MySpawnGroupDefinition+SpawnGroupPrefab@Position)||
 |[ResetOwnership](Sandbox.Definitions.MySpawnGroupDefinition+SpawnGroupPrefab@ResetOwnership)||

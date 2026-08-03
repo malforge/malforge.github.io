@@ -11,6 +11,7 @@ public class MyObjectBuilder_SalvageServiceQuote: MyObjectBuilder_ComponentBase
 |[Failed](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_SalvageServiceQuote@Failed)||
 |[GridEntityId](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_SalvageServiceQuote@GridEntityId)||
 |[GridName](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_SalvageServiceQuote@GridName)||
+|[HostileBlocks](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_SalvageServiceQuote@HostileBlocks)||
 |[IsInventoryEmpty](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_SalvageServiceQuote@IsInventoryEmpty)||
 |[IsLargeGrid](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_SalvageServiceQuote@IsLargeGrid)||
 |[NumberOfBlocks](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_SalvageServiceQuote@NumberOfBlocks)||
@@ -39,6 +40,7 @@ public class MyObjectBuilder_SalvageServiceQuote: MyObjectBuilder_ComponentBase
 |[Clone()](VRage.ObjectBuilders.MyObjectBuilder_Base@Clone)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
 |[Equals(MyObjectBuilder_Base)](VRage.ObjectBuilders.MyObjectBuilder_Base@Equals)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
 |[Remap(IMyRemapHelper)](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_ComponentBase@Remap)|_Inherited from [MyObjectBuilder_ComponentBase](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_ComponentBase)_|
+|[SetupForGridPaste()](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_ComponentBase@SetupForGridPaste)|_Inherited from [MyObjectBuilder_ComponentBase](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_ComponentBase)_|
 |[SetupForProjector()](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_ComponentBase@SetupForProjector)|_Inherited from [MyObjectBuilder_ComponentBase](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_ComponentBase)_|
 |[ShouldSerializeSubtypeId()](VRage.ObjectBuilders.MyObjectBuilder_Base@ShouldSerializeSubtypeId)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
 

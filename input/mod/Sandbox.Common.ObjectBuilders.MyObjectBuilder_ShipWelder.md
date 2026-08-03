@@ -8,7 +8,6 @@ public class MyObjectBuilder_ShipWelder: MyObjectBuilder_ShipToolBase
 
 |Member|Description|
 |---|---|
-|[HelpOthers](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipWelder@HelpOthers)||
 |[BlockGeneralDamageModifier](VRage.Game.MyObjectBuilder_CubeBlock@BlockGeneralDamageModifier)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[BlockOrientation](VRage.Game.MyObjectBuilder_CubeBlock@BlockOrientation)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[BuildPercent](VRage.Game.MyObjectBuilder_CubeBlock@BuildPercent)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
@@ -41,6 +40,7 @@ public class MyObjectBuilder_ShipWelder: MyObjectBuilder_ShipToolBase
 |[SubBlocks](VRage.Game.MyObjectBuilder_CubeBlock@SubBlocks)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[TextPanelsNew](VRage.Game.MyObjectBuilder_FunctionalBlock@TextPanelsNew)|_Inherited from [MyObjectBuilder_FunctionalBlock](VRage.Game.MyObjectBuilder_FunctionalBlock)_|
 |[UseConveyorSystem](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipToolBase@UseConveyorSystem)|_Inherited from [MyObjectBuilder_ShipToolBase](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipToolBase)_|
+|[HelpOthers](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipWelder@HelpOthers)|_**Obsolete**_|
 
 ## Properties
 

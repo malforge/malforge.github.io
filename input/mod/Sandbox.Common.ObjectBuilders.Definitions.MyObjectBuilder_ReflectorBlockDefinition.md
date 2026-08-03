@@ -103,6 +103,7 @@ public class MyObjectBuilder_ReflectorBlockDefinition: MyObjectBuilder_LightingB
 |[PriorityModifier](VRage.Game.MyObjectBuilder_CubeBlockDefinition@PriorityModifier)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Public](VRage.Game.MyObjectBuilder_DefinitionBase@Public)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[RandomRotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@RandomRotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
+|[Repairable](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Repairable)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[RequiredPowerInput](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingBlockDefinition@RequiredPowerInput)|_Inherited from [MyObjectBuilder_LightingBlockDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingBlockDefinition)_|
 |[ResourceSinkGroup](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingBlockDefinition@ResourceSinkGroup)|_Inherited from [MyObjectBuilder_LightingBlockDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingBlockDefinition)_|
 |[Rotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Rotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|

@@ -14,6 +14,7 @@ public class MyObjectBuilder_DlcDefinition: MyObjectBuilder_DefinitionBase
 |[DescriptionStringId](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@DescriptionStringId)||
 |[DisplayNameStringId](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@DisplayNameStringId)||
 |[Name](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@Name)||
+|[Order](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@Order)||
 |[Ps4ProductIds](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@Ps4ProductIds)||
 |[Ps5ProductIds](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@Ps5ProductIds)||
 |[ServiceFilter](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DlcDefinition@ServiceFilter)||

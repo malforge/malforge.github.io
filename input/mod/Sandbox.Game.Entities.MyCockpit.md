@@ -282,7 +282,9 @@ public class MyCockpit: MyShipController, IMyEntity, IMyEntity, IMyComponentOwne
 |[CalculateCurrentModel(out Matrix)](Sandbox.Game.Entities.MyCockpit@CalculateCurrentModel)||
 |[CanUse(UseActionEnum, IMyControllableEntity)](Sandbox.Game.Entities.MyCockpit@CanUse)||
 |[CheckEmissiveState(bool)](Sandbox.Game.Entities.MyCockpit@CheckEmissiveState)||
+|[ClearBotStandPositionDebug()](Sandbox.Game.Entities.MyCockpit@ClearBotStandPositionDebug)||
 |[ClearSavedpilot()](Sandbox.Game.Entities.MyCockpit@ClearSavedpilot)||
+|[GetDetectorPosition()](Sandbox.Game.Entities.MyCockpit@GetDetectorPosition)||
 |[GetHeadMatrix(bool, bool, bool, bool)](Sandbox.Game.Entities.MyCockpit@GetHeadMatrix)||
 |[GetHudParams(bool)](Sandbox.Game.Entities.MyCockpit@GetHudParams)||
 |[GetObjectBuilderCubeBlock(bool)](Sandbox.Game.Entities.MyCockpit@GetObjectBuilderCubeBlock)||
@@ -316,6 +318,7 @@ public class MyCockpit: MyShipController, IMyEntity, IMyEntity, IMyComponentOwne
 |[RequestUse(UseActionEnum, MyCharacter)](Sandbox.Game.Entities.MyCockpit@RequestUse)||
 |[Rotate(Vector2, float)](Sandbox.Game.Entities.MyCockpit@Rotate)||
 |[RotateStopped()](Sandbox.Game.Entities.MyCockpit@RotateStopped)||
+|[SetBotStandPositionDebugState(Vector3D, MyBotStandPositionDebugState)](Sandbox.Game.Entities.MyCockpit@SetBotStandPositionDebugState)||
 |[ShowInventory()](Sandbox.Game.Entities.MyCockpit@ShowInventory)||
 |[ShowRemoteAccessMenu()](Sandbox.Game.Entities.MyCockpit@ShowRemoteAccessMenu)||
 |[ShowTerminal()](Sandbox.Game.Entities.MyCockpit@ShowTerminal)||

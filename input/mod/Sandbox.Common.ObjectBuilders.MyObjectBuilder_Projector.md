@@ -82,6 +82,7 @@ public class MyObjectBuilder_Projector: MyObjectBuilder_ProjectorBase
 |[GetTextPanelsData()](VRage.Game.MyObjectBuilder_FunctionalBlock@GetTextPanelsData)|Used to get correct TextPanel stored data. v199- using `TextPanels` and v200+ using `TextPanelsNew`. LCD data should be saved into `TextPanelsNew`, but readed from TextPanels if it is not null.<br /><br />_Inherited from [MyObjectBuilder_FunctionalBlock](VRage.Game.MyObjectBuilder_FunctionalBlock)_|
 |[Remap(IMyRemapHelper)](VRage.Game.MyObjectBuilder_ProjectorBase@Remap)|_Inherited from [MyObjectBuilder_ProjectorBase](VRage.Game.MyObjectBuilder_ProjectorBase)_|
 |[Remap(IMyRemapHelper)](VRage.Game.MyObjectBuilder_CubeBlock@Remap)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
+|[SetupForGridPaste()](VRage.Game.MyObjectBuilder_ProjectorBase@SetupForGridPaste)|_Inherited from [MyObjectBuilder_ProjectorBase](VRage.Game.MyObjectBuilder_ProjectorBase)_|
 |[SetupForGridPaste()](VRage.Game.MyObjectBuilder_CubeBlock@SetupForGridPaste)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[SetupForProjector()](VRage.Game.MyObjectBuilder_ProjectorBase@SetupForProjector)|_Inherited from [MyObjectBuilder_ProjectorBase](VRage.Game.MyObjectBuilder_ProjectorBase)_|
 |[SetupForProjector()](VRage.Game.MyObjectBuilder_CubeBlock@SetupForProjector)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|

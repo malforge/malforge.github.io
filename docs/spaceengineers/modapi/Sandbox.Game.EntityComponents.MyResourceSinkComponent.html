@@ -65,6 +65,10 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="Sandbox.Game.EntityComponents.MyResourceSinkComponent@KeepInputFuncsOnRemove.html">KeepInputFuncsOnRemove</a></td>
+<td>Set by owners that move this sink between entities (e.g. thrust): keeps RequiredInputFunc set even when the current host entity closes, because the sink lives on and Update() would NRE on a null func. Other sinks clear their funcs on teardown to break the func -&gt; entity reference (see ClearInputFuncs).</td>
+</tr>
+<tr>
 <td><a href="Sandbox.Game.EntityComponents.MyResourceSinkComponent@ParentBlock.html">ParentBlock</a></td>
 <td></td>
 </tr>

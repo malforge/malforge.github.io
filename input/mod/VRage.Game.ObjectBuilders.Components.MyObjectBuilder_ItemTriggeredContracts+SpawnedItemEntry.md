@@ -9,6 +9,7 @@ public class SpawnedItemEntry
 |Member|Description|
 |---|---|
 |[ContractSubtypeId](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_ItemTriggeredContracts+SpawnedItemEntry@ContractSubtypeId)||
+|[DefinitionSubtypeId](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_ItemTriggeredContracts+SpawnedItemEntry@DefinitionSubtypeId)||
 |[GridEntityId](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_ItemTriggeredContracts+SpawnedItemEntry@GridEntityId)||
 |[ItemSubtypeId](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_ItemTriggeredContracts+SpawnedItemEntry@ItemSubtypeId)||
 |[OwnerFactionId](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_ItemTriggeredContracts+SpawnedItemEntry@OwnerFactionId)||

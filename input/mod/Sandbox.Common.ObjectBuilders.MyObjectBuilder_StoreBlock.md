@@ -10,6 +10,7 @@ public class MyObjectBuilder_StoreBlock: MyObjectBuilder_FunctionalBlock
 |---|---|
 |[AnyoneCanUse](Sandbox.Common.ObjectBuilders.MyObjectBuilder_StoreBlock@AnyoneCanUse)||
 |[PlayerItems](Sandbox.Common.ObjectBuilders.MyObjectBuilder_StoreBlock@PlayerItems)||
+|[Searchable](Sandbox.Common.ObjectBuilders.MyObjectBuilder_StoreBlock@Searchable)||
 |[TextPanels](Sandbox.Common.ObjectBuilders.MyObjectBuilder_StoreBlock@TextPanels)||
 |[UseConveyorSystem](Sandbox.Common.ObjectBuilders.MyObjectBuilder_StoreBlock@UseConveyorSystem)||
 |[BlockGeneralDamageModifier](VRage.Game.MyObjectBuilder_CubeBlock@BlockGeneralDamageModifier)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|

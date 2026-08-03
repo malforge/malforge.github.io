@@ -15,6 +15,7 @@ Implements IMyContractAcquisition interface so you can create your own contract.
 |[Duration](Sandbox.ModAPI.Contracts.MyContractAcquisition@Duration)||
 |[EndBlockId](Sandbox.ModAPI.Contracts.MyContractAcquisition@EndBlockId)||
 |[FailReputationPrice](Sandbox.ModAPI.Contracts.MyContractAcquisition@FailReputationPrice)||
+|[Id](Sandbox.ModAPI.Contracts.MyContractAcquisition@Id)||
 |[ItemAmount](Sandbox.ModAPI.Contracts.MyContractAcquisition@ItemAmount)||
 |[ItemTypeId](Sandbox.ModAPI.Contracts.MyContractAcquisition@ItemTypeId)||
 |[MoneyReward](Sandbox.ModAPI.Contracts.MyContractAcquisition@MoneyReward)||
@@ -28,6 +29,7 @@ Implements IMyContractAcquisition interface so you can create your own contract.
 |[Duration](VRage.Game.ModAPI.IMyContract@Duration)|Gets duration of contract in minutes<br /><br />_Inherited from [IMyContract](VRage.Game.ModAPI.IMyContract)_|
 |[EndBlockId](VRage.Game.ModAPI.IMyContractAcquisition@EndBlockId)|Gets id of block, that should receive goods<br /><br />_Inherited from [IMyContractAcquisition](VRage.Game.ModAPI.IMyContractAcquisition)_|
 |[FailReputationPrice](VRage.Game.ModAPI.IMyContract@FailReputationPrice)|Gets reputation price when contract fails<br /><br />_Inherited from [IMyContract](VRage.Game.ModAPI.IMyContract)_|
+|[Id](VRage.Game.ModAPI.IMyContract@Id)|Gets unique id of the contract. Pass it to IMyContractSystem methods such as RemoveContract or GetContractById.<br /><br />_Inherited from [IMyContract](VRage.Game.ModAPI.IMyContract)_|
 |[ItemAmount](VRage.Game.ModAPI.IMyContractAcquisition@ItemAmount)|Gets amount of items that should be delivered<br /><br />_Inherited from [IMyContractAcquisition](VRage.Game.ModAPI.IMyContractAcquisition)_|
 |[ItemTypeId](VRage.Game.ModAPI.IMyContractAcquisition@ItemTypeId)|Gets id of item that should be delivered<br /><br />_Inherited from [IMyContractAcquisition](VRage.Game.ModAPI.IMyContractAcquisition)_|
 |[MoneyReward](VRage.Game.ModAPI.IMyContract@MoneyReward)|Gets reward for completion of this contract<br /><br />_Inherited from [IMyContract](VRage.Game.ModAPI.IMyContract)_|

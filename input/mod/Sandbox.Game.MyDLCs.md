@@ -10,6 +10,7 @@ Class for storing DLC ids.
 
 |Member|Description|
 |---|---|
+|[static DLC_NAME_CompleteEdition](Sandbox.Game.MyDLCs@DLC_NAME_CompleteEdition)||
 |[static DLC_NAME_Frostbite](Sandbox.Game.MyDLCs@DLC_NAME_Frostbite)||
 |[static SE2_APP_ID](Sandbox.Game.MyDLCs@SE2_APP_ID)||
 

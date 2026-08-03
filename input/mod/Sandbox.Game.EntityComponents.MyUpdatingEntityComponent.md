@@ -111,6 +111,7 @@ public abstract class MyUpdatingEntityComponent: MyEventProxyEntityComponent, IM
 * [MyEntityReverbDetectorComponent](Sandbox.Game.EntityComponents.MyEntityReverbDetectorComponent)  
 * [MyEntityStatComponent](Sandbox.Game.Components.MyEntityStatComponent)  
 * [MyMultiTextPanelComponent](Sandbox.Game.EntityComponents.MyMultiTextPanelComponent)  
+* [MyNpcAssetModifierComponent](Sandbox.Game.EntityComponents.MyNpcAssetModifierComponent)  
 * [MyTargetFocusComponent](Sandbox.Game.EntityComponents.MyTargetFocusComponent)  
 * [MyTargetLockingComponent](Sandbox.Game.EntityComponents.MyTargetLockingComponent)
 

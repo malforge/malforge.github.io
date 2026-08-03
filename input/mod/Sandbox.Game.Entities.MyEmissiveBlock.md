@@ -34,7 +34,6 @@ public class MyEmissiveBlock: MyCubeBlock, IMyEntity, IMyEntity, IMyComponentOwn
 |[IsPreviewChanged](VRage.Game.Entity.MyEntity@IsPreviewChanged)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[IsSilenced](Sandbox.Game.Entities.MyCubeBlock@IsSilenced)|_Inherited from [MyCubeBlock](Sandbox.Game.Entities.MyCubeBlock)_|
 |[m_positionResetFromServer](VRage.Game.Entity.MyEntity@m_positionResetFromServer)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
-|[m_soundEmitter](Sandbox.Game.Entities.MyCubeBlock@m_soundEmitter)|_Inherited from [MyCubeBlock](Sandbox.Game.Entities.MyCubeBlock)_|
 |[OnEntityCloseRequest](VRage.Game.Entity.MyEntity@OnEntityCloseRequest)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[PropagateSubpartRotationThroughHieerarchy](VRage.Game.Entity.MyEntity@PropagateSubpartRotationThroughHieerarchy)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[ReadyForReplicationAction](VRage.Game.Entity.MyEntity@ReadyForReplicationAction)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
@@ -207,6 +206,7 @@ public class MyEmissiveBlock: MyCubeBlock, IMyEntity, IMyEntity, IMyComponentOwn
 |[ShadowBoxLod](VRage.ModAPI.IMyEntity@ShadowBoxLod)|Gets or sets flag [ShadowBoxLod](VRage.Game.Components.MyRenderComponentBase@ShadowBoxLod)<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
 |[SkipIfTooSmall](VRage.ModAPI.IMyEntity@SkipIfTooSmall)|Gets or sets flag [SkipIfTooSmall](VRage.ModAPI.EntityFlags@SkipIfTooSmall)<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
 |[SlimBlock](VRage.Game.ModAPI.IMyCubeBlock@SlimBlock)|Gets the SlimBlock associated with this block<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.IMyCubeBlock)_|
+|[SoundEmitter](Sandbox.Game.Entities.MyCubeBlock@SoundEmitter)|Gets sound emitter. This value is null on dedicated server.<br /><br />_Inherited from [MyCubeBlock](Sandbox.Game.Entities.MyCubeBlock)_|
 |[StopPhysicsActivation](VRage.ModAPI.IMyEntity@StopPhysicsActivation)|_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
 |[StopPhysicsActivation](VRage.Game.Entity.MyEntity@StopPhysicsActivation)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[Storage](VRage.ModAPI.IMyEntity@Storage)|Custom storage for mods. Shared with all mods.<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|

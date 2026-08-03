@@ -23,6 +23,7 @@ public abstract class MyObjectBuilder_ComponentBase: MyObjectBuilder_Base
 |Member|Description|
 |---|---|
 |[Remap(IMyRemapHelper)](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_ComponentBase@Remap)||
+|[SetupForGridPaste()](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_ComponentBase@SetupForGridPaste)||
 |[SetupForProjector()](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_ComponentBase@SetupForProjector)||
 |[Clone()](VRage.ObjectBuilders.MyObjectBuilder_Base@Clone)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
 |[Equals(MyObjectBuilder_Base)](VRage.ObjectBuilders.MyObjectBuilder_Base@Equals)|_Inherited from [MyObjectBuilder_Base](VRage.ObjectBuilders.MyObjectBuilder_Base)_|
@@ -93,6 +94,7 @@ public abstract class MyObjectBuilder_ComponentBase: MyObjectBuilder_Base
 * [MyObjectBuilder_ModStorageComponent](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_ModStorageComponent)  
 * [MyObjectBuilder_MultiTextPanelComponent](Sandbox.Common.ObjectBuilders.MyObjectBuilder_MultiTextPanelComponent)  
 * [MyObjectBuilder_NewSolarGameLogicComponent](Sandbox.Common.ObjectBuilders.MyObjectBuilder_NewSolarGameLogicComponent)  
+* [MyObjectBuilder_NpcAssetModifierComponent](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_NpcAssetModifierComponent)  
 * [MyObjectBuilder_OffensiveCombatCircleOrbit](Sandbox.Common.ObjectBuilders.MyObjectBuilder_OffensiveCombatCircleOrbit)  
 * [MyObjectBuilder_OffensiveCombatHitAndRun](Sandbox.Common.ObjectBuilders.MyObjectBuilder_OffensiveCombatHitAndRun)  
 * [MyObjectBuilder_OffensiveCombatIntercept](Sandbox.Common.ObjectBuilders.MyObjectBuilder_OffensiveCombatIntercept)  
@@ -103,6 +105,7 @@ public abstract class MyObjectBuilder_ComponentBase: MyObjectBuilder_Base
 * [MyObjectBuilder_RadiationSourceEntityComponent](Sandbox.Common.ObjectBuilders.MyObjectBuilder_RadiationSourceEntityComponent)  
 * [MyObjectBuilder_RandomCargoEntityComponent](Sandbox.Common.ObjectBuilders.MyObjectBuilder_RandomCargoEntityComponent)  
 * [MyObjectBuilder_RandomMovementSubpartComponent](Sandbox.Common.ObjectBuilders.MyObjectBuilder_RandomMovementSubpartComponent)  
+* [MyObjectBuilder_ReciprocatingSubpartComponent](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ReciprocatingSubpartComponent)  
 * [MyObjectBuilder_RepairServiceComponent](Sandbox.Common.ObjectBuilders.MyObjectBuilder_RepairServiceComponent)  
 * [MyObjectBuilder_ResourceSinkComponent](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_ResourceSinkComponent)  
 * [MyObjectBuilder_ResourceSourceComponent](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_ResourceSourceComponent)  

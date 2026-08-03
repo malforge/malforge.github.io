@@ -390,6 +390,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Engine.Physics.MyPhysics@ReinsertBodiesBatched.html">static ReinsertBodiesBatched(List<MyPhysicsBody>)</a></td>
+<td>Re-inserts moved bodies (physics already disabled by the caller) via the batch path, so every body re-enters the world before any of its constraints — a per-body re-enable would reject a constraint whose partner body is not back yet. Caller sets velocities and excludes welded bodies. Returns false if activation aborted (StopPhysicsActivation), leaving the move incomplete.</td>
+</tr>
+<tr>
 <td><a href="Sandbox.Engine.Physics.MyPhysics@RemoveObject.html">static RemoveObject(ulong)</a></td>
 <td>Remove object from world, remove also subspace if empty.</td>
 </tr>

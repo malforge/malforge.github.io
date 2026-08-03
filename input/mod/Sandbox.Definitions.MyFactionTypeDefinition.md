@@ -8,6 +8,8 @@ public class MyFactionTypeDefinition: MyDefinitionBase
 
 |Member|Description|
 |---|---|
+|[BotLootContainerType](Sandbox.Definitions.MyFactionTypeDefinition@BotLootContainerType)||
+|[BotSubtypes](Sandbox.Definitions.MyFactionTypeDefinition@BotSubtypes)||
 |[FriendsWith](Sandbox.Definitions.MyFactionTypeDefinition@FriendsWith)||
 |[PreferDeep](Sandbox.Definitions.MyFactionTypeDefinition@PreferDeep)||
 |[Relations](Sandbox.Definitions.MyFactionTypeDefinition@Relations)||
@@ -61,6 +63,7 @@ public class MyFactionTypeDefinition: MyDefinitionBase
 |[OrderPriceUpMultiplierMax](Sandbox.Definitions.MyFactionTypeDefinition@OrderPriceUpMultiplierMax)||
 |[OrderPriceUpMultiplierMin](Sandbox.Definitions.MyFactionTypeDefinition@OrderPriceUpMultiplierMin)||
 |[OrdersList](Sandbox.Definitions.MyFactionTypeDefinition@OrdersList)||
+|[Skins](Sandbox.Definitions.MyFactionTypeDefinition@Skins)||
 |[TypeDescription](Sandbox.Definitions.MyFactionTypeDefinition@TypeDescription)||
 |[TypeDescriptionVariants](Sandbox.Definitions.MyFactionTypeDefinition@TypeDescriptionVariants)||
 |[DescriptionText](VRage.Game.MyDefinitionBase@DescriptionText)|Use this property when showing description in GUI, as it takes into account more complex description construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|

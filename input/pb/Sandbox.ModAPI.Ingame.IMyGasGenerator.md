@@ -87,6 +87,7 @@ Describes Gas generator interface (H2/O2 block) (PB scripting interface)
 * MyObjectBuilder_OxygenGenerator/  
 * MyObjectBuilder_OxygenGenerator/IrrigationSystem  
 * MyObjectBuilder_OxygenGenerator/LargeBlockOxygenGeneratorLab  
+* MyObjectBuilder_OxygenGenerator/LargeBlockPrototechOxygenGenerator  
 * MyObjectBuilder_OxygenGenerator/OxygenGeneratorSmall  
 * MyObjectBuilder_OxygenGenerator/SmallBlockOxygenGeneratorLab
 

@@ -102,9 +102,12 @@ public class MyObjectBuilder_SessionSettings: MyObjectBuilder_Base
 |[GlobalEncounterRemovalTimeClock](VRage.Game.MyObjectBuilder_SessionSettings@GlobalEncounterRemovalTimeClock)||
 |[GlobalEncounterTimer](VRage.Game.MyObjectBuilder_SessionSettings@GlobalEncounterTimer)||
 |[GridStorageAllowsInventory](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageAllowsInventory)||
+|[GridStorageCombatCooldown](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageCombatCooldown)||
 |[GridStorageExpediteCostPerSecond](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageExpediteCostPerSecond)||
 |[GridStorageExpediteFactor](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageExpediteFactor)||
+|[GridStorageMaxDistance](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageMaxDistance)||
 |[GridStorageMaxPerPlayer](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageMaxPerPlayer)||
+|[GridStorageMinutesPerKm](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageMinutesPerKm)||
 |[GridStorageMinutesPerPCU](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageMinutesPerPCU)||
 |[GridStorageQueueLimit](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageQueueLimit)||
 |[GridStorageRetrievalTimeMaxMinutes](VRage.Game.MyObjectBuilder_SessionSettings@GridStorageRetrievalTimeMaxMinutes)||

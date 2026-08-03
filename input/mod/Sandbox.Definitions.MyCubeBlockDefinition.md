@@ -115,6 +115,7 @@ public class MyCubeBlockDefinition: MyPhysicalModelDefinition
 |[NotWorkingPriorityMultiplier](Sandbox.Definitions.MyCubeBlockDefinition@NotWorkingPriorityMultiplier)||
 |[PriorityModifier](Sandbox.Definitions.MyCubeBlockDefinition@PriorityModifier)||
 |[RandomRotation](Sandbox.Definitions.MyCubeBlockDefinition@RandomRotation)||
+|[Repairable](Sandbox.Definitions.MyCubeBlockDefinition@Repairable)||
 |[Rotation](Sandbox.Definitions.MyCubeBlockDefinition@Rotation)|Allowed cube block rotations.|
 |[SimpleUpdateVisualOnSkinChange](Sandbox.Definitions.MyCubeBlockDefinition@SimpleUpdateVisualOnSkinChange)||
 |[SymmetryX](Sandbox.Definitions.MyCubeBlockDefinition@SymmetryX)||

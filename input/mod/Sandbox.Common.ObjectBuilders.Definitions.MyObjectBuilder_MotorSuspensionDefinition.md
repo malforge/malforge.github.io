@@ -103,6 +103,7 @@ public class MyObjectBuilder_MotorSuspensionDefinition: MyObjectBuilder_MotorSta
 |[PriorityModifier](VRage.Game.MyObjectBuilder_CubeBlockDefinition@PriorityModifier)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Public](VRage.Game.MyObjectBuilder_DefinitionBase@Public)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[RandomRotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@RandomRotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
+|[Repairable](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Repairable)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[RequiredPowerInput](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MotorStatorDefinition@RequiredPowerInput)|_Inherited from [MyObjectBuilder_MotorStatorDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MotorStatorDefinition)_|
 |[ResourceSinkGroup](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MotorStatorDefinition@ResourceSinkGroup)|_Inherited from [MyObjectBuilder_MotorStatorDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MotorStatorDefinition)_|
 |[Rotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Rotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|

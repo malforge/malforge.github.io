@@ -8,6 +8,7 @@ public class MyObjectBuilder_ContractTypeDeliverDefinition: MyObjectBuilder_Cont
 
 |Member|Description|
 |---|---|
+|[CustomDescriptions](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDeliverDefinition@CustomDescriptions)||
 |[Duration_BaseTime](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDeliverDefinition@Duration_BaseTime)||
 |[Duration_TimePerJumpDist](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDeliverDefinition@Duration_TimePerJumpDist)||
 |[Duration_TimePerMeter](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ContractTypeDeliverDefinition@Duration_TimePerMeter)||

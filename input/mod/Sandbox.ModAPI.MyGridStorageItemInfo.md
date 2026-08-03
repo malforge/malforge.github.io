@@ -12,6 +12,7 @@ Data transfer object which aggregates properties of a grid in the context of gri
 |---|---|
 |[BlockCount](Sandbox.ModAPI.MyGridStorageItemInfo@BlockCount)|Total blocks count for this storage item|
 |[BlockLimits](Sandbox.ModAPI.MyGridStorageItemInfo@BlockLimits)|Block limits potentially occupied by this storage item|
+|[CombatCooldownRemainingMs](Sandbox.ModAPI.MyGridStorageItemInfo@CombatCooldownRemainingMs)|Remaining combat cooldown in milliseconds. Zero means the grid is not in combat.|
 |[DisplayName](Sandbox.ModAPI.MyGridStorageItemInfo@DisplayName)|Name of the stored item or the name of the root active grid|
 |[EntityId](Sandbox.ModAPI.MyGridStorageItemInfo@EntityId)|Entity id of a nearby grid which can be stored|
 |[GridType](Sandbox.ModAPI.MyGridStorageItemInfo@GridType)|Large or small grid|
@@ -19,6 +20,7 @@ Data transfer object which aggregates properties of a grid in the context of gri
 |[OwnerId](Sandbox.ModAPI.MyGridStorageItemInfo@OwnerId)|Identity of the original owner (for stored grids) or major owner (for active grids)|
 |[OwnershipKind](Sandbox.ModAPI.MyGridStorageItemInfo@OwnershipKind)|Sharing settings|
 |[PcuCount](Sandbox.ModAPI.MyGridStorageItemInfo@PcuCount)|PCU count of the whole grid group|
+|[StorageEntityPosition](Sandbox.ModAPI.MyGridStorageItemInfo@StorageEntityPosition)|World position of the Services Terminal block that stored this grid. Used to compute distance for the [TooFarFromStorageLocation](Sandbox.ModAPI.MyGridStorageRequestResult@TooFarFromStorageLocation) check.|
 
 ## Constructors
 

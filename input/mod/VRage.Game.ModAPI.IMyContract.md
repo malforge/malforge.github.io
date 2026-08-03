@@ -14,6 +14,7 @@ Describes contracts that player can take in contract block (mods interface)
 |[ContractCondition](VRage.Game.ModAPI.IMyContract@ContractCondition)|Gets contract condition. Condition has contract after is created, not in wrapper class. You have to get contract from the contract system.|
 |[Duration](VRage.Game.ModAPI.IMyContract@Duration)|Gets duration of contract in minutes|
 |[FailReputationPrice](VRage.Game.ModAPI.IMyContract@FailReputationPrice)|Gets reputation price when contract fails|
+|[Id](VRage.Game.ModAPI.IMyContract@Id)|Gets unique id of the contract. Pass it to IMyContractSystem methods such as RemoveContract or GetContractById.|
 |[MoneyReward](VRage.Game.ModAPI.IMyContract@MoneyReward)|Gets reward for completion of this contract|
 |[OnContractAcquired](VRage.Game.ModAPI.IMyContract@OnContractAcquired)|Gets or sets function that is triggered when contract is acquired by player. IdentityId is passed as an argument|
 |[OnContractFailed](VRage.Game.ModAPI.IMyContract@OnContractFailed)|Gets or sets function that is triggered when contract is failed|

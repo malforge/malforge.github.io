@@ -23,6 +23,7 @@ public enum MyGuiControlButtonStyleEnum
 |Decrease||
 |Default||
 |DepositAll||
+|DlcUpsaleLink||
 |Envelope||
 |Error||
 |Help||

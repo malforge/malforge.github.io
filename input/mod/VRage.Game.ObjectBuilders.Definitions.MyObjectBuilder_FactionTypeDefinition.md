@@ -9,6 +9,8 @@ public class MyObjectBuilder_FactionTypeDefinition: MyObjectBuilder_DefinitionBa
 |Member|Description|
 |---|---|
 |[BaseCostProductionSpeedMultiplier](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@BaseCostProductionSpeedMultiplier)||
+|[BotLootContainerType](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@BotLootContainerType)||
+|[BotSubtypes](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@BotSubtypes)||
 |[CanSellHydrogen](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@CanSellHydrogen)||
 |[CanSellOxygen](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@CanSellOxygen)||
 |[FriendsWith](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@FriendsWith)||
@@ -37,6 +39,7 @@ public class MyObjectBuilder_FactionTypeDefinition: MyObjectBuilder_DefinitionBa
 |[OrdersList](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@OrdersList)||
 |[PreferDeep](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@PreferDeep)||
 |[Relations](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Relations)||
+|[Skins](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Skins)||
 |[Station_Rule_Max_Deep](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Station_Rule_Max_Deep)||
 |[Station_Rule_Max_Orbit](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Station_Rule_Max_Orbit)||
 |[Station_Rule_Max_Outpost](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionTypeDefinition@Station_Rule_Max_Outpost)||

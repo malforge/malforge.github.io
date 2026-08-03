@@ -75,3 +75,24 @@ Result of the creation of the store item.
 ## Parameters
 
 * [MyObjectBuilder_StoreItem](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StoreItem) builder
+## Summary
+
+```csharp
+public IMyStoreItem CreateStoreItem(MyDefinitionId itemId, int amount, int pricePerUnit, StoreItemTypes storeItemType, ItemTypes itemType)
+```
+
+Creates a store item that sells an store item.
+
+## Returns
+
+[IMyStoreItem](VRage.Game.ModAPI.IMyStoreItem)
+
+
+
+## Parameters
+
+* [MyDefinitionId](VRage.Game.MyDefinitionId) itemId
+* [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) amount
+* [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) pricePerUnit
+* [StoreItemTypes](VRage.Game.ObjectBuilders.Definitions.StoreItemTypes) storeItemType
+* [ItemTypes](VRage.Game.ObjectBuilders.Definitions.ItemTypes) itemType

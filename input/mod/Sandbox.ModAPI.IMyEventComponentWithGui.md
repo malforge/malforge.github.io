@@ -26,6 +26,7 @@ Describes interface of event controller entity component, which requires UI in t
 |[AddBlocks(List<IMyTerminalBlock>)](Sandbox.ModAPI.IMyEventComponentWithGui@AddBlocks)|Adds the specified block to the monitoring of the event|
 |[IsBlockValidForList(IMyTerminalBlock)](Sandbox.ModAPI.IMyEventComponentWithGui@IsBlockValidForList)|Gets the information if the specified block is valid for the block list UI|
 |[NotifyValuesChanged()](Sandbox.ModAPI.IMyEventComponentWithGui@NotifyValuesChanged)|Notifies about change of some UI value, which is required for this event|
+|[RefreshDetailedInfo()](Sandbox.ModAPI.IMyEventComponentWithGui@RefreshDetailedInfo)|Rebuilds the detailed info from the current monitored block states. Called on the local machine after the selected-block list changes, so the display is updated without waiting for a separate server broadcast.|
 |[RemoveBlocks(IEnumerable<IMyTerminalBlock>)](Sandbox.ModAPI.IMyEventComponentWithGui@RemoveBlocks)|Removes the specified block from the monitoring|
 |[CreateTerminalInterfaceControls<T>()](Sandbox.ModAPI.IMyEventControllerEntityComponent@CreateTerminalInterfaceControls{T})|_Inherited from [IMyEventControllerEntityComponent](Sandbox.ModAPI.IMyEventControllerEntityComponent)_|
 

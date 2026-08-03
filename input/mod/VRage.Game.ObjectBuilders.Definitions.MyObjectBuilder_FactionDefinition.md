@@ -11,6 +11,7 @@ public class MyObjectBuilder_FactionDefinition: MyObjectBuilder_DefinitionBase
 |[AcceptHumans](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@AcceptHumans)||
 |[AutoAcceptMember](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@AutoAcceptMember)||
 |[BackgroundColor](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@BackgroundColor)||
+|[BotLootContainerType](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@BotLootContainerType)||
 |[DefaultRelation](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@DefaultRelation)|Default faction relation to the other factions. Enemies state is with highest prority and does not care if other faction want to be friend.|
 |[DiscoveredByDefault](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@DiscoveredByDefault)||
 |[EnableFriendlyFire](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@EnableFriendlyFire)||
@@ -20,10 +21,12 @@ public class MyObjectBuilder_FactionDefinition: MyObjectBuilder_DefinitionBase
 |[IconColor](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@IconColor)||
 |[IsDefault](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@IsDefault)|This value indicates if fraction should be created by default for every new world and its owner will be visible in Ownership dropdown.|
 |[Name](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@Name)||
+|[Skins](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@Skins)||
 |[StartingBalance](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@StartingBalance)|Starting balance of the faction.|
 |[StartingReputation](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@StartingReputation)||
 |[StaticReputation](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@StaticReputation)||
 |[StringType](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@StringType)||
+|[SuitColor](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@SuitColor)||
 |[Tag](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@Tag)||
 |[Type](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition@Type)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|

@@ -10,6 +10,8 @@ public struct CollisionLayers
 |---|---|
 |[static AmmoLayer](Sandbox.Engine.Physics.MyPhysics+CollisionLayers@AmmoLayer)||
 |[static BlockPlacementTestCollisionLayer](Sandbox.Engine.Physics.MyPhysics+CollisionLayers@BlockPlacementTestCollisionLayer)||
+|[static BotCharacterCollisionLayer](Sandbox.Engine.Physics.MyPhysics+CollisionLayers@BotCharacterCollisionLayer)||
+|[static BotSoftCharacterCollisionLayer](Sandbox.Engine.Physics.MyPhysics+CollisionLayers@BotSoftCharacterCollisionLayer)||
 |[static CharacterCollisionLayer](Sandbox.Engine.Physics.MyPhysics+CollisionLayers@CharacterCollisionLayer)||
 |[static CharacterNetworkCollisionLayer](Sandbox.Engine.Physics.MyPhysics+CollisionLayers@CharacterNetworkCollisionLayer)||
 |[static CollectorCollisionLayer](Sandbox.Engine.Physics.MyPhysics+CollisionLayers@CollectorCollisionLayer)||

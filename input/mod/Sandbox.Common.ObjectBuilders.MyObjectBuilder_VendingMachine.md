@@ -31,6 +31,7 @@ public class MyObjectBuilder_VendingMachine: MyObjectBuilder_StoreBlock
 |[NumberInGrid](VRage.Game.MyObjectBuilder_TerminalBlock@NumberInGrid)|_Inherited from [MyObjectBuilder_TerminalBlock](VRage.Game.MyObjectBuilder_TerminalBlock)_|
 |[Owner](VRage.Game.MyObjectBuilder_CubeBlock@Owner)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[PlayerItems](Sandbox.Common.ObjectBuilders.MyObjectBuilder_StoreBlock@PlayerItems)|_Inherited from [MyObjectBuilder_StoreBlock](Sandbox.Common.ObjectBuilders.MyObjectBuilder_StoreBlock)_|
+|[Searchable](Sandbox.Common.ObjectBuilders.MyObjectBuilder_StoreBlock@Searchable)|_Inherited from [MyObjectBuilder_StoreBlock](Sandbox.Common.ObjectBuilders.MyObjectBuilder_StoreBlock)_|
 |[ShareMode](VRage.Game.MyObjectBuilder_CubeBlock@ShareMode)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[ShowInInventory](VRage.Game.MyObjectBuilder_TerminalBlock@ShowInInventory)|_Inherited from [MyObjectBuilder_TerminalBlock](VRage.Game.MyObjectBuilder_TerminalBlock)_|
 |[ShowInTerminal](VRage.Game.MyObjectBuilder_TerminalBlock@ShowInTerminal)|_Inherited from [MyObjectBuilder_TerminalBlock](VRage.Game.MyObjectBuilder_TerminalBlock)_|

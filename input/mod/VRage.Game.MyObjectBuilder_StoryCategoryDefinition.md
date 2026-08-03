@@ -8,6 +8,7 @@ public class MyObjectBuilder_StoryCategoryDefinition: MyObjectBuilder_Definition
 
 |Member|Description|
 |---|---|
+|[GpsColor](VRage.Game.MyObjectBuilder_StoryCategoryDefinition@GpsColor)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[Description](VRage.Game.MyObjectBuilder_DefinitionBase@Description)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[DescriptionArgs](VRage.Game.MyObjectBuilder_DefinitionBase@DescriptionArgs)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|

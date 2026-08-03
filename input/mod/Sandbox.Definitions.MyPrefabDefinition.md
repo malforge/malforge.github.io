@@ -28,6 +28,8 @@ public class MyPrefabDefinition: MyDefinitionBase
 |[BoundingSphere](Sandbox.Definitions.MyPrefabDefinition@BoundingSphere)||
 |[CubeGrids](Sandbox.Definitions.MyPrefabDefinition@CubeGrids)||
 |[EnvironmentType](Sandbox.Definitions.MyPrefabDefinition@EnvironmentType)||
+|[MaxNPCCount](Sandbox.Definitions.MyPrefabDefinition@MaxNPCCount)||
+|[NPCSpawnPointsOverride](Sandbox.Definitions.MyPrefabDefinition@NPCSpawnPointsOverride)||
 |[TooltipImage](Sandbox.Definitions.MyPrefabDefinition@TooltipImage)||
 |[DescriptionText](VRage.Game.MyDefinitionBase@DescriptionText)|Use this property when showing description in GUI, as it takes into account more complex description construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|

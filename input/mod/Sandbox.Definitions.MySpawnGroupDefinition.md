@@ -37,6 +37,7 @@ public class MySpawnGroupDefinition: MyDefinitionBase
 
 |Member|Description|
 |---|---|
+|[ConsoleCompatible](Sandbox.Definitions.MySpawnGroupDefinition@ConsoleCompatible)||
 |[FactionSubtypeIds](Sandbox.Definitions.MySpawnGroupDefinition@FactionSubtypeIds)||
 |[FactionTypesSubtypeIds](Sandbox.Definitions.MySpawnGroupDefinition@FactionTypesSubtypeIds)||
 |[HasContractTrigger](Sandbox.Definitions.MySpawnGroupDefinition@HasContractTrigger)||

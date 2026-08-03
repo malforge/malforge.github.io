@@ -95,6 +95,7 @@ public abstract sealed class MyPlatformGameSettings
 |[static LIMIT_VIEW_DISTANCE](Sandbox.Game.MyPlatformGameSettings@LIMIT_VIEW_DISTANCE)||
 |[static LIMIT_VIEW_DISTANCE_MAX](Sandbox.Game.MyPlatformGameSettings@LIMIT_VIEW_DISTANCE_MAX)||
 |[static LIMITED_MAIN_MENU](Sandbox.Game.MyPlatformGameSettings@LIMITED_MAIN_MENU)||
+|[static LOAD_GAME_ON_EXISTING_WORKER](Sandbox.Game.MyPlatformGameSettings@LOAD_GAME_ON_EXISTING_WORKER)||
 |[static LOBBY_MAX_PLAYERS](Sandbox.Game.MyPlatformGameSettings@LOBBY_MAX_PLAYERS)||
 |[static LOBBY_TOTAL_PCU_MAX](Sandbox.Game.MyPlatformGameSettings@LOBBY_TOTAL_PCU_MAX)||
 |[static MAX_SUB_ENCOUNTER_COUNT](Sandbox.Game.MyPlatformGameSettings@MAX_SUB_ENCOUNTER_COUNT)||
@@ -105,6 +106,7 @@ public abstract sealed class MyPlatformGameSettings
 |[static MODIO_PORTAL](Sandbox.Game.MyPlatformGameSettings@MODIO_PORTAL)||
 |[static MODIO_TEST_APIKEY](Sandbox.Game.MyPlatformGameSettings@MODIO_TEST_APIKEY)||
 |[static MODIO_TEST_GAMEID](Sandbox.Game.MyPlatformGameSettings@MODIO_TEST_GAMEID)||
+|[static NAVMESH_CELL_SIZE](Sandbox.Game.MyPlatformGameSettings@NAVMESH_CELL_SIZE)|Recast horizontal cell size. Smaller = finer navmesh detail (narrow stairs become traversable) at quadratic memory/CPU cost.|
 |[static NEED_TO_CONVERT_IDS](Sandbox.Game.MyPlatformGameSettings@NEED_TO_CONVERT_IDS)||
 |[static OFFLINE_TOTAL_PCU_MAX](Sandbox.Game.MyPlatformGameSettings@OFFLINE_TOTAL_PCU_MAX)||
 |[static PREFER_ONLINE](Sandbox.Game.MyPlatformGameSettings@PREFER_ONLINE)||

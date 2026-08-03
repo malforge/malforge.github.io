@@ -89,11 +89,13 @@ Describes gas tank block (PB scripting interface)
 * MyObjectBuilder_OxygenTank/  
 * MyObjectBuilder_OxygenTank/LargeBlockOxygenTankLab  
 * MyObjectBuilder_OxygenTank/LargeHydrogenTank  
+* MyObjectBuilder_OxygenTank/LargeHydrogenTankBulk  
 * MyObjectBuilder_OxygenTank/LargeHydrogenTankIndustrial  
 * MyObjectBuilder_OxygenTank/LargeHydrogenTankSmall  
 * MyObjectBuilder_OxygenTank/LargeHydrogenTankSmallLab  
 * MyObjectBuilder_OxygenTank/OxygenTankSmall  
 * MyObjectBuilder_OxygenTank/SmallHydrogenTank  
+* MyObjectBuilder_OxygenTank/SmallHydrogenTankBulk  
 * MyObjectBuilder_OxygenTank/SmallHydrogenTankLab  
 * MyObjectBuilder_OxygenTank/SmallHydrogenTankSmall  
 * MyObjectBuilder_OxygenTank/SmallOxygenTankSmall

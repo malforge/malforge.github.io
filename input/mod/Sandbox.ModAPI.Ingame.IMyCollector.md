@@ -86,5 +86,6 @@ Describes collector block (PB scripting interface)
 
 **Type Definitions:**  
 * MyObjectBuilder_Collector/Collector  
+* MyObjectBuilder_Collector/CollectorFlat  
 * MyObjectBuilder_Collector/CollectorSmall
 

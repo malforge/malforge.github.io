@@ -92,9 +92,12 @@ Describes power producer block (PB scripting interface)
 **Type Definitions:**  
 * MyObjectBuilder_BatteryBlock/LargeBlockBatteryBlock  
 * MyObjectBuilder_BatteryBlock/LargeBlockBatteryBlockWarfare2  
+* MyObjectBuilder_BatteryBlock/LargeBlockBatteryReskin  
+* MyObjectBuilder_BatteryBlock/LargeBlockBatteryReskinOffset  
 * MyObjectBuilder_BatteryBlock/LargeBlockPrototechBattery  
 * MyObjectBuilder_BatteryBlock/SmallBlockBatteryBlock  
 * MyObjectBuilder_BatteryBlock/SmallBlockBatteryBlockWarfare2  
+* MyObjectBuilder_BatteryBlock/SmallBlockBatteryReskin  
 * MyObjectBuilder_BatteryBlock/SmallBlockPrototechBattery  
 * MyObjectBuilder_BatteryBlock/SmallBlockSmallBatteryBlock  
 * MyObjectBuilder_Reactor/LargeBlockLargeGenerator  

@@ -23,6 +23,8 @@ public class MyObjectBuilder_ShipBlueprintDefinition: MyObjectBuilder_PrefabDefi
 |[EnvironmentType](VRage.Game.MyObjectBuilder_PrefabDefinition@EnvironmentType)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|
 |[Icons](VRage.Game.MyObjectBuilder_DefinitionBase@Icons)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[Id](VRage.Game.MyObjectBuilder_DefinitionBase@Id)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+|[MaxNPCCount](VRage.Game.MyObjectBuilder_PrefabDefinition@MaxNPCCount)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|
+|[NPCSpawnPointsOverride](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCSpawnPointsOverride)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|
 |[PrefabPath](VRage.Game.MyObjectBuilder_PrefabDefinition@PrefabPath)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|
 |[Public](VRage.Game.MyObjectBuilder_DefinitionBase@Public)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[RespawnShip](VRage.Game.MyObjectBuilder_PrefabDefinition@RespawnShip)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|

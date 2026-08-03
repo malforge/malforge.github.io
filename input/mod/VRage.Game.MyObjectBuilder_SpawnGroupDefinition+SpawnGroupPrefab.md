@@ -12,6 +12,8 @@ public class SpawnGroupPrefab
 |[Behaviour](VRage.Game.MyObjectBuilder_SpawnGroupDefinition+SpawnGroupPrefab@Behaviour)||
 |[BehaviourActivationDistance](VRage.Game.MyObjectBuilder_SpawnGroupDefinition+SpawnGroupPrefab@BehaviourActivationDistance)||
 |[GpsGrid](VRage.Game.MyObjectBuilder_SpawnGroupDefinition+SpawnGroupPrefab@GpsGrid)||
+|[MaxNPCCount](VRage.Game.MyObjectBuilder_SpawnGroupDefinition+SpawnGroupPrefab@MaxNPCCount)||
+|[NPCSpawnPointsOverride](VRage.Game.MyObjectBuilder_SpawnGroupDefinition+SpawnGroupPrefab@NPCSpawnPointsOverride)||
 |[PlaceToGridOrigin](VRage.Game.MyObjectBuilder_SpawnGroupDefinition+SpawnGroupPrefab@PlaceToGridOrigin)||
 |[Position](VRage.Game.MyObjectBuilder_SpawnGroupDefinition+SpawnGroupPrefab@Position)||
 |[ResetOwnership](VRage.Game.MyObjectBuilder_SpawnGroupDefinition+SpawnGroupPrefab@ResetOwnership)||

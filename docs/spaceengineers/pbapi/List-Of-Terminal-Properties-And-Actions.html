@@ -51,84 +51,98 @@
             <h1>List&#160;Of&#160;Terminal&#160;Properties&#160;And&#160;Actions</h1>
 <h2 id="overview">Overview</h2>
 <p><strong>Note: Terminal actions and properties are for all intents and purposes obsolete since all vanilla block interfaces now contain proper API access to <em>most of</em> this information. It is highly recommended you use those for less overhead.</strong></p>
-<p><a href="#imyairtighthangardoor">IMyAirtightHangarDoor</a><br />
-<a href="#imyairtightslidedoor">IMyAirtightSlideDoor</a><br />
-<a href="#imyairvent">IMyAirVent</a><br />
-<a href="#imyartificialmassblock">IMyArtificialMassBlock</a><br />
-<a href="#imyassembler">IMyAssembler</a><br />
-<a href="#imybasicmissionblock">IMyBasicMissionBlock</a><br />
-<a href="#imybatteryblock">IMyBatteryBlock</a><br />
-<a href="#imybeacon">IMyBeacon</a><br />
-<a href="#imybroadcastcontroller">IMyBroadcastController</a><br />
-<a href="#imybuttonpanel">IMyButtonPanel</a><br />
-<a href="#imycamerablock">IMyCameraBlock</a><br />
-<a href="#imycargocontainer">IMyCargoContainer</a><br />
-<a href="#imycockpit">IMyCockpit</a><br />
-<a href="#imycollector">IMyCollector</a><br />
-<a href="#imyconveyorsorter">IMyConveyorSorter</a><br />
-<a href="#imycryochamber">IMyCryoChamber</a><br />
-<a href="#imydecoy">IMyDecoy</a><br />
-<a href="#imydefensivecombatblock">IMyDefensiveCombatBlock</a><br />
-<a href="#imydoor">IMyDoor</a><br />
-<a href="#imyemotioncontrollerblock">IMyEmotionControllerBlock</a><br />
-<a href="#imyeventcontrollerblock">IMyEventControllerBlock</a><br />
-<a href="#imyextendedpistonbase">IMyExtendedPistonBase</a><br />
-<a href="#imyflightmovementblock">IMyFlightMovementBlock</a><br />
-<a href="#imyfunctionalblock">IMyFunctionalBlock</a><br />
-<a href="#imygasgenerator">IMyGasGenerator</a><br />
-<a href="#imygastank">IMyGasTank</a><br />
-<a href="#imygravitygenerator">IMyGravityGenerator</a><br />
-<a href="#imygravitygeneratorsphere">IMyGravityGeneratorSphere</a><br />
-<a href="#imygyro">IMyGyro</a><br />
-<a href="#imyheatvent">IMyHeatVent</a><br />
-<a href="#imyinteriorlight">IMyInteriorLight</a><br />
-<a href="#imyjumpdrive">IMyJumpDrive</a><br />
-<a href="#imylandinggear">IMyLandingGear</a><br />
-<a href="#imylargegatlingturret">IMyLargeGatlingTurret</a><br />
-<a href="#imylargeinteriorturret">IMyLargeInteriorTurret</a><br />
-<a href="#imylaserantenna">IMyLaserAntenna</a><br />
-<a href="#imymedicalroom">IMyMedicalRoom</a><br />
-<a href="#imymotoradvancedstator">IMyMotorAdvancedStator</a><br />
-<a href="#imymotorsuspension">IMyMotorSuspension</a><br />
-<a href="#imyoffensivecombatblock">IMyOffensiveCombatBlock</a><br />
-<a href="#imyoredetector">IMyOreDetector</a><br />
-<a href="#imyoxygenfarm">IMyOxygenFarm</a><br />
-<a href="#imyparachute">IMyParachute</a><br />
-<a href="#imypathrecorderblock">IMyPathRecorderBlock</a><br />
-<a href="#imypistonbase">IMyPistonBase</a><br />
-<a href="#imyprogrammableblock">IMyProgrammableBlock</a><br />
-<a href="#imyprojector">IMyProjector</a><br />
-<a href="#imyradioantenna">IMyRadioAntenna</a><br />
-<a href="#imyreactor">IMyReactor</a><br />
-<a href="#imyrefinery">IMyRefinery</a><br />
-<a href="#imyreflectorlight">IMyReflectorLight</a><br />
-<a href="#imyremotecontrol">IMyRemoteControl</a><br />
-<a href="#imysafezoneblock">IMySafeZoneBlock</a><br />
-<a href="#imysearchlight">IMySearchlight</a><br />
-<a href="#imysensorblock">IMySensorBlock</a><br />
-<a href="#imyshipconnector">IMyShipConnector</a><br />
-<a href="#imyshipdrill">IMyShipDrill</a><br />
-<a href="#imyshipgrinder">IMyShipGrinder</a><br />
-<a href="#imyshipmergeblock">IMyShipMergeBlock</a><br />
-<a href="#imyshipwelder">IMyShipWelder</a><br />
-<a href="#imysmallgatlinggun">IMySmallGatlingGun</a><br />
-<a href="#imysmallmissilelauncher">IMySmallMissileLauncher</a><br />
-<a href="#imysmallmissilelauncherreload">IMySmallMissileLauncherReload</a><br />
-<a href="#imysolarpanel">IMySolarPanel</a><br />
-<a href="#imysoundblock">IMySoundBlock</a><br />
-<a href="#imyspaceball">IMySpaceBall</a><br />
-<a href="#imystoreblock">IMyStoreBlock</a><br />
-<a href="#imytargetdummyblock">IMyTargetDummyBlock</a><br />
-<a href="#imyterminalblock">IMyTerminalBlock</a><br />
-<a href="#imytextpanel">IMyTextPanel</a><br />
-<a href="#imythrust">IMyThrust</a><br />
-<a href="#imytimerblock">IMyTimerBlock</a><br />
-<a href="#imytransponder">IMyTransponder</a><br />
-<a href="#imyturretcontrolblock">IMyTurretControlBlock</a><br />
-<a href="#imyupgrademodule">IMyUpgradeModule</a><br />
-<a href="#imywarhead">IMyWarhead</a><br />
-<a href="#imywindturbine">IMyWindTurbine</a></p>
-<h2 id="imyairtighthangardoor">IMyAirtightHangarDoor</h2>
+<p>Blocks are listed by their type definition. A block can be fetched through any of the interfaces listed beneath it, so the same actions and properties apply to every one of them.</p>
+<p><a href="#airtighthangardoor">AirtightHangarDoor</a><br />
+<a href="#airtightslidedoor">AirtightSlideDoor</a><br />
+<a href="#airvent">AirVent</a><br />
+<a href="#assembler">Assembler</a><br />
+<a href="#basicmissionblock">BasicMissionBlock</a><br />
+<a href="#batteryblock">BatteryBlock</a><br />
+<a href="#beacon">Beacon</a><br />
+<a href="#broadcastcontroller">BroadcastController</a><br />
+<a href="#buttonpanel">ButtonPanel</a><br />
+<a href="#camerablock">CameraBlock</a><br />
+<a href="#cargocontainer">CargoContainer</a><br />
+<a href="#cockpit">Cockpit</a><br />
+<a href="#collector">Collector</a><br />
+<a href="#contractblock">ContractBlock</a><br />
+<a href="#conveyorsorter">ConveyorSorter</a><br />
+<a href="#cryochamber">CryoChamber</a><br />
+<a href="#debugsphere1">DebugSphere1</a><br />
+<a href="#debugsphere2">DebugSphere2</a><br />
+<a href="#debugsphere3">DebugSphere3</a><br />
+<a href="#decoy">Decoy</a><br />
+<a href="#defensivecombatblock">DefensiveCombatBlock</a><br />
+<a href="#door">Door</a><br />
+<a href="#drill">Drill</a><br />
+<a href="#emotioncontrollerblock">EmotionControllerBlock</a><br />
+<a href="#eventcontrollerblock">EventControllerBlock</a><br />
+<a href="#exhaustblock">ExhaustBlock</a><br />
+<a href="#extendedpistonbase">ExtendedPistonBase</a><br />
+<a href="#flightmovementblock">FlightMovementBlock</a><br />
+<a href="#functionalblock">FunctionalBlock</a><br />
+<a href="#gravitygenerator">GravityGenerator</a><br />
+<a href="#gravitygeneratorsphere">GravityGeneratorSphere</a><br />
+<a href="#gyro">Gyro</a><br />
+<a href="#heatventblock">HeatVentBlock</a><br />
+<a href="#hydrogenengine">HydrogenEngine</a><br />
+<a href="#interiorlight">InteriorLight</a><br />
+<a href="#interiorturret">InteriorTurret</a><br />
+<a href="#jukebox">Jukebox</a><br />
+<a href="#jumpdrive">JumpDrive</a><br />
+<a href="#landinggear">LandingGear</a><br />
+<a href="#largegatlingturret">LargeGatlingTurret</a><br />
+<a href="#largemissileturret">LargeMissileTurret</a><br />
+<a href="#laserantenna">LaserAntenna</a><br />
+<a href="#lcdpanelsblock">LCDPanelsBlock</a><br />
+<a href="#medicalroom">MedicalRoom</a><br />
+<a href="#mergeblock">MergeBlock</a><br />
+<a href="#motoradvancedstator">MotorAdvancedStator</a><br />
+<a href="#motorstator">MotorStator</a><br />
+<a href="#motorsuspension">MotorSuspension</a><br />
+<a href="#myprogrammableblock">MyProgrammableBlock</a><br />
+<a href="#offensivecombatblock">OffensiveCombatBlock</a><br />
+<a href="#oredetector">OreDetector</a><br />
+<a href="#oxygenfarm">OxygenFarm</a><br />
+<a href="#oxygengenerator">OxygenGenerator</a><br />
+<a href="#oxygentank">OxygenTank</a><br />
+<a href="#parachute">Parachute</a><br />
+<a href="#pathrecorderblock">PathRecorderBlock</a><br />
+<a href="#pistonbase">PistonBase</a><br />
+<a href="#projector">Projector</a><br />
+<a href="#radioantenna">RadioAntenna</a><br />
+<a href="#reactor">Reactor</a><br />
+<a href="#refinery">Refinery</a><br />
+<a href="#reflectorlight">ReflectorLight</a><br />
+<a href="#remotecontrol">RemoteControl</a><br />
+<a href="#safezoneblock">SafeZoneBlock</a><br />
+<a href="#searchlight">Searchlight</a><br />
+<a href="#sensorblock">SensorBlock</a><br />
+<a href="#shipconnector">ShipConnector</a><br />
+<a href="#shipgrinder">ShipGrinder</a><br />
+<a href="#shipwelder">ShipWelder</a><br />
+<a href="#smallgatlinggun">SmallGatlingGun</a><br />
+<a href="#smallmissilelauncher">SmallMissileLauncher</a><br />
+<a href="#smallmissilelauncherreload">SmallMissileLauncherReload</a><br />
+<a href="#solarpanel">SolarPanel</a><br />
+<a href="#soundblock">SoundBlock</a><br />
+<a href="#spaceball">SpaceBall</a><br />
+<a href="#storeblock">StoreBlock</a><br />
+<a href="#survivalkit">SurvivalKit</a><br />
+<a href="#targetdummyblock">TargetDummyBlock</a><br />
+<a href="#terminalblock">TerminalBlock</a><br />
+<a href="#textpanel">TextPanel</a><br />
+<a href="#thrust">Thrust</a><br />
+<a href="#timerblock">TimerBlock</a><br />
+<a href="#transponderblock">TransponderBlock</a><br />
+<a href="#turretcontrolblock">TurretControlBlock</a><br />
+<a href="#upgrademodule">UpgradeModule</a><br />
+<a href="#vendingmachine">VendingMachine</a><br />
+<a href="#virtualmass">VirtualMass</a><br />
+<a href="#warhead">Warhead</a><br />
+<a href="#windturbine">WindTurbine</a></p>
+<h2 id="airtighthangardoor">AirtightHangarDoor</h2>
+<p>Available as: <code>IMyAirtightDoorBase</code>, <code>IMyAirtightHangarDoor</code>, <code>IMyDoor</code>, <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
 <h3 id="actions">Actions</h3>
 <table>
 <thead>
@@ -295,7 +309,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyairtightslidedoor">IMyAirtightSlideDoor</h2>
+<h2 id="airtightslidedoor">AirtightSlideDoor</h2>
+<p>Available as: <code>IMyAirtightDoorBase</code>, <code>IMyAirtightSlideDoor</code>, <code>IMyDoor</code>, <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
 <h3 id="actions-1">Actions</h3>
 <table>
 <thead>
@@ -462,7 +477,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyairvent">IMyAirVent</h2>
+<h2 id="airvent">AirVent</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyAirVent</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
 <h3 id="actions-2">Actions</h3>
 <table>
 <thead>
@@ -621,7 +637,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyartificialmassblock">IMyArtificialMassBlock</h2>
+<h2 id="assembler">Assembler</h2>
+<p>Available as: <code>IMyAssembler</code>, <code>IMyFunctionalBlock</code>, <code>IMyProductionBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
 <h3 id="actions-3">Actions</h3>
 <table>
 <thead>
@@ -682,6 +699,14 @@
 <tr>
 <td>ShowOnHUD_On</td>
 <td>Show on HUD On</td>
+</tr>
+<tr>
+<td>slaveMode</td>
+<td>Cooperative Mode On/Off</td>
+</tr>
+<tr>
+<td>UseConveyor</td>
+<td>Automatic Push/Pull On/Off</td>
 </tr>
 </tbody>
 </table>
@@ -759,172 +784,22 @@
 <td>bool</td>
 </tr>
 <tr>
+<td>slaveMode</td>
+<td>bool</td>
+</tr>
+<tr>
 <td>TextPaddingSlider</td>
 <td>float</td>
 </tr>
+<tr>
+<td>UseConveyor</td>
+<td>bool</td>
+</tr>
 </tbody>
 </table>
-<h2 id="imyassembler">IMyAssembler</h2>
+<h2 id="basicmissionblock">BasicMissionBlock</h2>
+<p>Available as: <code>IMyBasicMissionBlock</code>, <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
 <h3 id="actions-4">Actions</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DecreaseChangeIntervalSlider</td>
-<td>Decrease Image change interval</td>
-</tr>
-<tr>
-<td>DecreaseFontSize</td>
-<td>Decrease Font Size</td>
-</tr>
-<tr>
-<td>DecreaseTextPaddingSlider</td>
-<td>Decrease Text Padding</td>
-</tr>
-<tr>
-<td>IncreaseChangeIntervalSlider</td>
-<td>Increase Image change interval</td>
-</tr>
-<tr>
-<td>IncreaseFontSize</td>
-<td>Increase Font Size</td>
-</tr>
-<tr>
-<td>IncreaseTextPaddingSlider</td>
-<td>Increase Text Padding</td>
-</tr>
-<tr>
-<td>OnOff</td>
-<td>Toggle block On/Off</td>
-</tr>
-<tr>
-<td>OnOff_Off</td>
-<td>Toggle block Off</td>
-</tr>
-<tr>
-<td>OnOff_On</td>
-<td>Toggle block On</td>
-</tr>
-<tr>
-<td>PreserveAspectRatio</td>
-<td>Preserve aspect ratio On/Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD</td>
-<td>Show on HUD On/Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD_Off</td>
-<td>Show on HUD Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD_On</td>
-<td>Show on HUD On</td>
-</tr>
-<tr>
-<td>slaveMode</td>
-<td>Cooperative Mode On/Off</td>
-</tr>
-<tr>
-<td>UseConveyor</td>
-<td>Automatic Push/Pull On/Off</td>
-</tr>
-</tbody>
-</table>
-<h3 id="properties-4">Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>alignment</td>
-<td>long</td>
-</tr>
-<tr>
-<td>BackgroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ChangeIntervalSlider</td>
-<td>float</td>
-</tr>
-<tr>
-<td>Content</td>
-<td>long</td>
-</tr>
-<tr>
-<td>Font</td>
-<td>long</td>
-</tr>
-<tr>
-<td>FontColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>FontSize</td>
-<td>float</td>
-</tr>
-<tr>
-<td>Name</td>
-<td>StringBuilder</td>
-</tr>
-<tr>
-<td>OnOff</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>PreserveAspectRatio</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ScriptBackgroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ScriptForegroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ShowInInventory</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowInTerminal</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowInToolbarConfig</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowOnHUD</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>slaveMode</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>TextPaddingSlider</td>
-<td>float</td>
-</tr>
-<tr>
-<td>UseConveyor</td>
-<td>bool</td>
-</tr>
-</tbody>
-</table>
-<h2 id="imybasicmissionblock">IMyBasicMissionBlock</h2>
-<h3 id="actions-5">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -1043,7 +918,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-5">Properties</h3>
+<h3 id="properties-4">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -1150,8 +1025,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imybatteryblock">IMyBatteryBlock</h2>
-<h3 id="actions-6">Actions</h3>
+<h2 id="batteryblock">BatteryBlock</h2>
+<p>Available as: <code>IMyBatteryBlock</code>, <code>IMyFunctionalBlock</code>, <code>IMyPowerProducer</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-5">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -1242,7 +1118,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-6">Properties</h3>
+<h3 id="properties-5">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -1325,8 +1201,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imybeacon">IMyBeacon</h2>
-<h3 id="actions-7">Actions</h3>
+<h2 id="beacon">Beacon</h2>
+<p>Available as: <code>IMyBeacon</code>, <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-6">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -1405,7 +1282,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-7">Properties</h3>
+<h3 id="properties-6">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -1492,8 +1369,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imybroadcastcontroller">IMyBroadcastController</h2>
-<h3 id="actions-8">Actions</h3>
+<h2 id="broadcastcontroller">BroadcastController</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyBroadcastController</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-7">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -1612,7 +1490,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-8">Properties</h3>
+<h3 id="properties-7">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -1735,8 +1613,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imybuttonpanel">IMyButtonPanel</h2>
-<h3 id="actions-9">Actions</h3>
+<h2 id="buttonpanel">ButtonPanel</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyButtonPanel</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-8">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -1803,7 +1682,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-9">Properties</h3>
+<h3 id="properties-8">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -1890,8 +1769,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imycamerablock">IMyCameraBlock</h2>
-<h3 id="actions-10">Actions</h3>
+<h2 id="camerablock">CameraBlock</h2>
+<p>Available as: <code>IMyCameraBlock</code>, <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-9">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -1954,7 +1834,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-10">Properties</h3>
+<h3 id="properties-9">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -2033,8 +1913,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imycargocontainer">IMyCargoContainer</h2>
-<h3 id="actions-11">Actions</h3>
+<h2 id="cargocontainer">CargoContainer</h2>
+<p>Available as: <code>IMyCargoContainer</code>, <code>IMyTerminalBlock</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-10">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -2057,7 +1938,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-11">Properties</h3>
+<h3 id="properties-10">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -2088,8 +1969,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imycockpit">IMyCockpit</h2>
-<h3 id="actions-12">Actions</h3>
+<h2 id="cockpit">Cockpit</h2>
+<p>Available as: <code>IMyCockpit</code>, <code>IMyShipController</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-11">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -2176,7 +2058,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-12">Properties</h3>
+<h3 id="properties-11">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -2287,8 +2169,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imycollector">IMyCollector</h2>
-<h3 id="actions-13">Actions</h3>
+<h2 id="collector">Collector</h2>
+<p>Available as: <code>IMyCollector</code>, <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-12">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -2355,7 +2238,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-13">Properties</h3>
+<h3 id="properties-12">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -2438,7 +2321,160 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyconveyorsorter">IMyConveyorSorter</h2>
+<h2 id="contractblock">ContractBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-13">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AnyoneCanUse</td>
+<td>Anyone Can Use On/Off</td>
+</tr>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-13">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>AnyoneCanUse</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="conveyorsorter">ConveyorSorter</h2>
+<p>Available as: <code>IMyConveyorSorter</code>, <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
 <h3 id="actions-14">Actions</h3>
 <table>
 <thead>
@@ -2605,7 +2641,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imycryochamber">IMyCryoChamber</h2>
+<h2 id="cryochamber">CryoChamber</h2>
+<p>Available as: <code>IMyCockpit</code>, <code>IMyCryoChamber</code>, <code>IMyShipController</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
 <h3 id="actions-15">Actions</h3>
 <table>
 <thead>
@@ -2804,7 +2841,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imydecoy">IMyDecoy</h2>
+<h2 id="debugsphere1">DebugSphere1</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
 <h3 id="actions-16">Actions</h3>
 <table>
 <thead>
@@ -2947,8 +2985,441 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imydefensivecombatblock">IMyDefensiveCombatBlock</h2>
+<h2 id="debugsphere2">DebugSphere2</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
 <h3 id="actions-17">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-17">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="debugsphere3">DebugSphere3</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-18">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-18">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="decoy">Decoy</h2>
+<p>Available as: <code>IMyDecoy</code>, <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-19">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-19">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="defensivecombatblock">DefensiveCombatBlock</h2>
+<p>Available as: <code>IMyDefensiveCombatBlock</code>, <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-20">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -3095,7 +3566,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-17">Properties</h3>
+<h3 id="properties-20">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -3222,8 +3693,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imydoor">IMyDoor</h2>
-<h3 id="actions-18">Actions</h3>
+<h2 id="door">Door</h2>
+<p>Available as: <code>IMyDoor</code>, <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-21">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -3302,7 +3774,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-18">Properties</h3>
+<h3 id="properties-21">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -3389,8 +3861,177 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyemotioncontrollerblock">IMyEmotionControllerBlock</h2>
-<h3 id="actions-19">Actions</h3>
+<h2 id="drill">Drill</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyShipDrill</code>, <code>IMyShipToolBase</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-22">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+<tr>
+<td>TerrainClearingMode</td>
+<td>Terrain Clearing Mode On/Off</td>
+</tr>
+<tr>
+<td>TerrainClearingMode_Off</td>
+<td>Terrain Clearing Mode Off</td>
+</tr>
+<tr>
+<td>TerrainClearingMode_On</td>
+<td>Terrain Clearing Mode On</td>
+</tr>
+<tr>
+<td>UseConveyor</td>
+<td>Automatic Push/Pull On/Off</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-22">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TerrainClearingMode</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>UseConveyor</td>
+<td>bool</td>
+</tr>
+</tbody>
+</table>
+<h2 id="emotioncontrollerblock">EmotionControllerBlock</h2>
+<p>Available as: <code>IMyEmotionControllerBlock</code>, <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-23">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -3517,7 +4158,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-19">Properties</h3>
+<h3 id="properties-23">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -3596,8 +4237,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyeventcontrollerblock">IMyEventControllerBlock</h2>
-<h3 id="actions-20">Actions</h3>
+<h2 id="eventcontrollerblock">EventControllerBlock</h2>
+<p>Available as: <code>IMyEventControllerBlock</code>, <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-24">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -3720,7 +4362,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-20">Properties</h3>
+<h3 id="properties-24">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -3839,8 +4481,169 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyextendedpistonbase">IMyExtendedPistonBase</h2>
-<h3 id="actions-21">Actions</h3>
+<h2 id="exhaustblock">ExhaustBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-25">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreasePowerDependency</td>
+<td>Decrease Power Dependency</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreasePowerDependency</td>
+<td>Increase Power Dependency</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-25">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>EffectsCombo</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PowerDependency</td>
+<td>float</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="extendedpistonbase">ExtendedPistonBase</h2>
+<p>Available as: <code>IMyExtendedPistonBase</code>, <code>IMyFunctionalBlock</code>, <code>IMyMechanicalConnectionBlock</code>, <code>IMyPistonBase</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-26">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -3995,7 +4798,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-21">Properties</h3>
+<h3 id="properties-26">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -4110,8 +4913,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyflightmovementblock">IMyFlightMovementBlock</h2>
-<h3 id="actions-22">Actions</h3>
+<h2 id="flightmovementblock">FlightMovementBlock</h2>
+<p>Available as: <code>IMyFlightMovementBlock</code>, <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-27">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -4258,7 +5062,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-22">Properties</h3>
+<h3 id="properties-27">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -4369,8 +5173,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyfunctionalblock">IMyFunctionalBlock</h2>
-<h3 id="actions-23">Actions</h3>
+<h2 id="functionalblock">FunctionalBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-28">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -4433,7 +5238,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-23">Properties</h3>
+<h3 id="properties-28">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -4512,342 +5317,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imygasgenerator">IMyGasGenerator</h2>
-<h3 id="actions-24">Actions</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Auto-Refill</td>
-<td>Auto-Refill On/Off</td>
-</tr>
-<tr>
-<td>DecreaseChangeIntervalSlider</td>
-<td>Decrease Image change interval</td>
-</tr>
-<tr>
-<td>DecreaseFontSize</td>
-<td>Decrease Font Size</td>
-</tr>
-<tr>
-<td>DecreaseTextPaddingSlider</td>
-<td>Decrease Text Padding</td>
-</tr>
-<tr>
-<td>IncreaseChangeIntervalSlider</td>
-<td>Increase Image change interval</td>
-</tr>
-<tr>
-<td>IncreaseFontSize</td>
-<td>Increase Font Size</td>
-</tr>
-<tr>
-<td>IncreaseTextPaddingSlider</td>
-<td>Increase Text Padding</td>
-</tr>
-<tr>
-<td>OnOff</td>
-<td>Toggle block On/Off</td>
-</tr>
-<tr>
-<td>OnOff_Off</td>
-<td>Toggle block Off</td>
-</tr>
-<tr>
-<td>OnOff_On</td>
-<td>Toggle block On</td>
-</tr>
-<tr>
-<td>PreserveAspectRatio</td>
-<td>Preserve aspect ratio On/Off</td>
-</tr>
-<tr>
-<td>Refill</td>
-<td>Refill Bottles</td>
-</tr>
-<tr>
-<td>ShowOnHUD</td>
-<td>Show on HUD On/Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD_Off</td>
-<td>Show on HUD Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD_On</td>
-<td>Show on HUD On</td>
-</tr>
-<tr>
-<td>UseConveyor</td>
-<td>Automatic Push/Pull On/Off</td>
-</tr>
-</tbody>
-</table>
-<h3 id="properties-24">Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>alignment</td>
-<td>long</td>
-</tr>
-<tr>
-<td>Auto-Refill</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>BackgroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ChangeIntervalSlider</td>
-<td>float</td>
-</tr>
-<tr>
-<td>Content</td>
-<td>long</td>
-</tr>
-<tr>
-<td>Font</td>
-<td>long</td>
-</tr>
-<tr>
-<td>FontColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>FontSize</td>
-<td>float</td>
-</tr>
-<tr>
-<td>Name</td>
-<td>StringBuilder</td>
-</tr>
-<tr>
-<td>OnOff</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>PreserveAspectRatio</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ScriptBackgroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ScriptForegroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ShowInInventory</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowInTerminal</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowInToolbarConfig</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowOnHUD</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>TextPaddingSlider</td>
-<td>float</td>
-</tr>
-<tr>
-<td>UseConveyor</td>
-<td>bool</td>
-</tr>
-</tbody>
-</table>
-<h2 id="imygastank">IMyGasTank</h2>
-<h3 id="actions-25">Actions</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Auto-Refill</td>
-<td>Auto-Refill On/Off</td>
-</tr>
-<tr>
-<td>DecreaseChangeIntervalSlider</td>
-<td>Decrease Image change interval</td>
-</tr>
-<tr>
-<td>DecreaseFontSize</td>
-<td>Decrease Font Size</td>
-</tr>
-<tr>
-<td>DecreaseTextPaddingSlider</td>
-<td>Decrease Text Padding</td>
-</tr>
-<tr>
-<td>IncreaseChangeIntervalSlider</td>
-<td>Increase Image change interval</td>
-</tr>
-<tr>
-<td>IncreaseFontSize</td>
-<td>Increase Font Size</td>
-</tr>
-<tr>
-<td>IncreaseTextPaddingSlider</td>
-<td>Increase Text Padding</td>
-</tr>
-<tr>
-<td>OnOff</td>
-<td>Toggle block On/Off</td>
-</tr>
-<tr>
-<td>OnOff_Off</td>
-<td>Toggle block Off</td>
-</tr>
-<tr>
-<td>OnOff_On</td>
-<td>Toggle block On</td>
-</tr>
-<tr>
-<td>PreserveAspectRatio</td>
-<td>Preserve aspect ratio On/Off</td>
-</tr>
-<tr>
-<td>Refill</td>
-<td>Refill Bottles</td>
-</tr>
-<tr>
-<td>ShowOnHUD</td>
-<td>Show on HUD On/Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD_Off</td>
-<td>Show on HUD Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD_On</td>
-<td>Show on HUD On</td>
-</tr>
-<tr>
-<td>Stockpile</td>
-<td>Stockpile On/Off</td>
-</tr>
-<tr>
-<td>Stockpile_Off</td>
-<td>Stockpile Off</td>
-</tr>
-<tr>
-<td>Stockpile_On</td>
-<td>Stockpile On</td>
-</tr>
-</tbody>
-</table>
-<h3 id="properties-25">Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>alignment</td>
-<td>long</td>
-</tr>
-<tr>
-<td>Auto-Refill</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>BackgroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ChangeIntervalSlider</td>
-<td>float</td>
-</tr>
-<tr>
-<td>Content</td>
-<td>long</td>
-</tr>
-<tr>
-<td>Font</td>
-<td>long</td>
-</tr>
-<tr>
-<td>FontColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>FontSize</td>
-<td>float</td>
-</tr>
-<tr>
-<td>Name</td>
-<td>StringBuilder</td>
-</tr>
-<tr>
-<td>OnOff</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>PreserveAspectRatio</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ScriptBackgroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ScriptForegroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ShowInInventory</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowInTerminal</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowInToolbarConfig</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowOnHUD</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>Stockpile</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>TextPaddingSlider</td>
-<td>float</td>
-</tr>
-</tbody>
-</table>
-<h2 id="imygravitygenerator">IMyGravityGenerator</h2>
-<h3 id="actions-26">Actions</h3>
+<h2 id="gravitygenerator">GravityGenerator</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyGravityGenerator</code>, <code>IMyGravityGeneratorBase</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-29">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -4946,7 +5418,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-26">Properties</h3>
+<h3 id="properties-29">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -5041,8 +5513,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imygravitygeneratorsphere">IMyGravityGeneratorSphere</h2>
-<h3 id="actions-27">Actions</h3>
+<h2 id="gravitygeneratorsphere">GravityGeneratorSphere</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyGravityGeneratorBase</code>, <code>IMyGravityGeneratorSphere</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-30">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -5125,7 +5598,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-27">Properties</h3>
+<h3 id="properties-30">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -5212,8 +5685,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imygyro">IMyGyro</h2>
-<h3 id="actions-28">Actions</h3>
+<h2 id="gyro">Gyro</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyGyro</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-31">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -5336,7 +5810,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-28">Properties</h3>
+<h3 id="properties-31">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -5435,8 +5909,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyheatvent">IMyHeatVent</h2>
-<h3 id="actions-29">Actions</h3>
+<h2 id="heatventblock">HeatVentBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyHeatVent</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-32">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -5547,7 +6022,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-29">Properties</h3>
+<h3 id="properties-32">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -5654,8 +6129,153 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyinteriorlight">IMyInteriorLight</h2>
-<h3 id="actions-30">Actions</h3>
+<h2 id="hydrogenengine">HydrogenEngine</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyPowerProducer</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-33">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-33">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="interiorlight">InteriorLight</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyLightingBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyInteriorLight</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-34">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -5786,7 +6406,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-30">Properties</h3>
+<h3 id="properties-34">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -5897,8 +6517,565 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyjumpdrive">IMyJumpDrive</h2>
-<h3 id="actions-31">Actions</h3>
+<h2 id="interiorturret">InteriorTurret</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyLargeTurretBase</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyUserControllableGun</code>, <code>IMyLargeInteriorTurret</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-35">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseRange</td>
+<td>Decrease AI aiming radius</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>EnableIdleMovement</td>
+<td>Enable idle movement On/Off</td>
+</tr>
+<tr>
+<td>EnableIdleMovement_Off</td>
+<td>Enable idle movement Off</td>
+</tr>
+<tr>
+<td>EnableIdleMovement_On</td>
+<td>Enable idle movement On</td>
+</tr>
+<tr>
+<td>EnableTargetLocking</td>
+<td>Enable target locking On/Off</td>
+</tr>
+<tr>
+<td>FocusLockedTarget</td>
+<td>Focus Locked Target</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseRange</td>
+<td>Increase AI aiming radius</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>Shoot</td>
+<td>Shoot On/Off</td>
+</tr>
+<tr>
+<td>Shoot_Off</td>
+<td>Shoot Off</td>
+</tr>
+<tr>
+<td>Shoot_On</td>
+<td>Shoot On</td>
+</tr>
+<tr>
+<td>ShootOnce</td>
+<td>Shoot once</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+<tr>
+<td>TargetCharacters</td>
+<td>Target characters On/Off</td>
+</tr>
+<tr>
+<td>TargetCharacters_Off</td>
+<td>Target characters Off</td>
+</tr>
+<tr>
+<td>TargetCharacters_On</td>
+<td>Target characters On</td>
+</tr>
+<tr>
+<td>TargetEnemies</td>
+<td>Target Enemies On/Off</td>
+</tr>
+<tr>
+<td>TargetEnemies_Off</td>
+<td>Target Enemies Off</td>
+</tr>
+<tr>
+<td>TargetEnemies_On</td>
+<td>Target Enemies On</td>
+</tr>
+<tr>
+<td>TargetFriends</td>
+<td>Target Friends On/Off</td>
+</tr>
+<tr>
+<td>TargetFriends_Off</td>
+<td>Target Friends Off</td>
+</tr>
+<tr>
+<td>TargetFriends_On</td>
+<td>Target Friends On</td>
+</tr>
+<tr>
+<td>TargetingGroup_CycleSubsystems</td>
+<td>Cycle Subsystems</td>
+</tr>
+<tr>
+<td>TargetingGroup_PowerSystems</td>
+<td>Target Power systems</td>
+</tr>
+<tr>
+<td>TargetingGroup_Propulsion</td>
+<td>Target Propulsion</td>
+</tr>
+<tr>
+<td>TargetingGroup_Weapons</td>
+<td>Target Weapons</td>
+</tr>
+<tr>
+<td>TargetLargeShips</td>
+<td>Target large ships On/Off</td>
+</tr>
+<tr>
+<td>TargetLargeShips_Off</td>
+<td>Target large ships Off</td>
+</tr>
+<tr>
+<td>TargetLargeShips_On</td>
+<td>Target large ships On</td>
+</tr>
+<tr>
+<td>TargetMeteors</td>
+<td>Target meteors On/Off</td>
+</tr>
+<tr>
+<td>TargetMeteors_Off</td>
+<td>Target meteors Off</td>
+</tr>
+<tr>
+<td>TargetMeteors_On</td>
+<td>Target meteors On</td>
+</tr>
+<tr>
+<td>TargetMissiles</td>
+<td>Target rockets On/Off</td>
+</tr>
+<tr>
+<td>TargetMissiles_Off</td>
+<td>Target rockets Off</td>
+</tr>
+<tr>
+<td>TargetMissiles_On</td>
+<td>Target rockets On</td>
+</tr>
+<tr>
+<td>TargetNeutrals</td>
+<td>Target neutrals On/Off</td>
+</tr>
+<tr>
+<td>TargetNeutrals_Off</td>
+<td>Target neutrals Off</td>
+</tr>
+<tr>
+<td>TargetNeutrals_On</td>
+<td>Target neutrals On</td>
+</tr>
+<tr>
+<td>TargetSmallShips</td>
+<td>Target small ships On/Off</td>
+</tr>
+<tr>
+<td>TargetSmallShips_Off</td>
+<td>Target small ships Off</td>
+</tr>
+<tr>
+<td>TargetSmallShips_On</td>
+<td>Target small ships On</td>
+</tr>
+<tr>
+<td>TargetStations</td>
+<td>Target stations On/Off</td>
+</tr>
+<tr>
+<td>TargetStations_Off</td>
+<td>Target stations Off</td>
+</tr>
+<tr>
+<td>TargetStations_On</td>
+<td>Target stations On</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-35">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>EnableIdleMovement</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>EnableTargetLocking</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>float</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>Shoot</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TargetCharacters</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TargetEnemies</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TargetFriends</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TargetingGroup_Selector</td>
+<td>long</td>
+</tr>
+<tr>
+<td>TargetLargeShips</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TargetMeteors</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TargetMissiles</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TargetNeutrals</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TargetSmallShips</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TargetStations</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="jukebox">Jukebox</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMySoundBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-36">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseLoopableSlider</td>
+<td>Decrease Loop time</td>
+</tr>
+<tr>
+<td>DecreaseRangeSlider</td>
+<td>Decrease Range</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>DecreaseVolumeSlider</td>
+<td>Decrease Volume</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseLoopableSlider</td>
+<td>Increase Loop time</td>
+</tr>
+<tr>
+<td>IncreaseRangeSlider</td>
+<td>Increase Range</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseVolumeSlider</td>
+<td>Increase Volume</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PlaySound</td>
+<td>Play</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+<tr>
+<td>StopSound</td>
+<td>Stop</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-36">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>LoopableSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>RangeSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>VolumeSlider</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="jumpdrive">JumpDrive</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyJumpDrive</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-37">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -5985,7 +7162,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-31">Properties</h3>
+<h3 id="properties-37">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -6076,8 +7253,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imylandinggear">IMyLandingGear</h2>
-<h3 id="actions-32">Actions</h3>
+<h2 id="landinggear">LandingGear</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyLandingGear</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-38">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -6160,7 +7338,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-32">Properties</h3>
+<h3 id="properties-38">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -6247,8 +7425,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imylargegatlingturret">IMyLargeGatlingTurret</h2>
-<h3 id="actions-33">Actions</h3>
+<h2 id="largegatlingturret">LargeGatlingTurret</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyLargeTurretBase</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyUserControllableGun</code>, <code>IMyLargeConveyorTurretBase</code>, <code>IMyLargeGatlingTurret</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-39">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -6483,7 +7662,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-33">Properties</h3>
+<h3 id="properties-39">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -6622,8 +7801,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imylargeinteriorturret">IMyLargeInteriorTurret</h2>
-<h3 id="actions-34">Actions</h3>
+<h2 id="largemissileturret">LargeMissileTurret</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyLargeTurretBase</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyUserControllableGun</code>, <code>IMyLargeConveyorTurretBase</code>, <code>IMyLargeMissileTurret</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-40">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -6852,9 +8032,13 @@
 <td>TargetStations_On</td>
 <td>Target stations On</td>
 </tr>
+<tr>
+<td>UseConveyor</td>
+<td>Automatic Push/Pull On/Off</td>
+</tr>
 </tbody>
 </table>
-<h3 id="properties-34">Properties</h3>
+<h3 id="properties-40">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -6987,10 +8171,15 @@
 <td>TextPaddingSlider</td>
 <td>float</td>
 </tr>
+<tr>
+<td>UseConveyor</td>
+<td>bool</td>
+</tr>
 </tbody>
 </table>
-<h2 id="imylaserantenna">IMyLaserAntenna</h2>
-<h3 id="actions-35">Actions</h3>
+<h2 id="laserantenna">LaserAntenna</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyLaserAntenna</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-41">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -7077,7 +8266,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-35">Properties</h3>
+<h3 id="properties-41">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -7168,8 +8357,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imymedicalroom">IMyMedicalRoom</h2>
-<h3 id="actions-36">Actions</h3>
+<h2 id="lcdpanelsblock">LCDPanelsBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-42">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -7232,7 +8422,151 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-36">Properties</h3>
+<h3 id="properties-42">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="medicalroom">MedicalRoom</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyMedicalRoom</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-43">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-43">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -7323,8 +8657,153 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imymotoradvancedstator">IMyMotorAdvancedStator</h2>
-<h3 id="actions-37">Actions</h3>
+<h2 id="mergeblock">MergeBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyShipMergeBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-44">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-44">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="motoradvancedstator">MotorAdvancedStator</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyMechanicalConnectionBlock</code>, <code>IMyMotorAdvancedStator</code>, <code>IMyMotorBase</code>, <code>IMyMotorStator</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-45">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -7539,7 +9018,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-37">Properties</h3>
+<h3 id="properties-45">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -7666,8 +9145,353 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imymotorsuspension">IMyMotorSuspension</h2>
-<h3 id="actions-38">Actions</h3>
+<h2 id="motorstator">MotorStator</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyMechanicalConnectionBlock</code>, <code>IMyMotorBase</code>, <code>IMyMotorStator</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-46">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AddHingeTopPart</td>
+<td>Add Hinge Head</td>
+</tr>
+<tr>
+<td>AddMediumHingeTopPart</td>
+<td>Add Medium Head</td>
+</tr>
+<tr>
+<td>AddMediumRotorTopPart</td>
+<td>Add Medium Head</td>
+</tr>
+<tr>
+<td>AddRotorTopPart</td>
+<td>Add Rotor Head</td>
+</tr>
+<tr>
+<td>AddSmallHingeTopPart</td>
+<td>Add Small Head</td>
+</tr>
+<tr>
+<td>AddSmallRotorTopPart</td>
+<td>Add Small Head</td>
+</tr>
+<tr>
+<td>Attach</td>
+<td>Attach</td>
+</tr>
+<tr>
+<td>DecreaseBrakingTorque</td>
+<td>Decrease Braking torque</td>
+</tr>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseDisplacement</td>
+<td>Decrease Rotor displacement</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseLowerLimit</td>
+<td>Decrease Lower limit</td>
+</tr>
+<tr>
+<td>DecreaseSafetyDetach</td>
+<td>Decrease Safety detach</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>DecreaseTorque</td>
+<td>Decrease Torque</td>
+</tr>
+<tr>
+<td>DecreaseUpperLimit</td>
+<td>Decrease Upper limit</td>
+</tr>
+<tr>
+<td>DecreaseVelocity</td>
+<td>Decrease Velocity</td>
+</tr>
+<tr>
+<td>DecreaseWeld speed</td>
+<td>Decrease Safety lock speed</td>
+</tr>
+<tr>
+<td>Detach</td>
+<td>Detach</td>
+</tr>
+<tr>
+<td>Force weld</td>
+<td>Safety lock override On/Off</td>
+</tr>
+<tr>
+<td>HingeLock</td>
+<td>Hinge lock On/Off</td>
+</tr>
+<tr>
+<td>HingeLock_Off</td>
+<td>Hinge lock Off</td>
+</tr>
+<tr>
+<td>HingeLock_On</td>
+<td>Hinge lock On</td>
+</tr>
+<tr>
+<td>IncreaseBrakingTorque</td>
+<td>Increase Braking torque</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseDisplacement</td>
+<td>Increase Rotor displacement</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseLowerLimit</td>
+<td>Increase Lower limit</td>
+</tr>
+<tr>
+<td>IncreaseSafetyDetach</td>
+<td>Increase Safety detach</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseTorque</td>
+<td>Increase Torque</td>
+</tr>
+<tr>
+<td>IncreaseUpperLimit</td>
+<td>Increase Upper limit</td>
+</tr>
+<tr>
+<td>IncreaseVelocity</td>
+<td>Increase Velocity</td>
+</tr>
+<tr>
+<td>IncreaseWeld speed</td>
+<td>Increase Safety lock speed</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>ResetVelocity</td>
+<td>Reset Velocity</td>
+</tr>
+<tr>
+<td>Reverse</td>
+<td>Reverse</td>
+</tr>
+<tr>
+<td>RotateToAngle</td>
+<td>Rotate To Angle</td>
+</tr>
+<tr>
+<td>RotorLock</td>
+<td>Rotor lock On/Off</td>
+</tr>
+<tr>
+<td>RotorLock_Off</td>
+<td>Rotor lock Off</td>
+</tr>
+<tr>
+<td>RotorLock_On</td>
+<td>Rotor lock On</td>
+</tr>
+<tr>
+<td>SetLowerLimit</td>
+<td>Set Lower Limit</td>
+</tr>
+<tr>
+<td>SetUpperLimit</td>
+<td>Set Upper Limit</td>
+</tr>
+<tr>
+<td>SetVelocity</td>
+<td>Set Velocity</td>
+</tr>
+<tr>
+<td>ShareInertiaTensor</td>
+<td>Share inertia tensor On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-46">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>BrakingTorque</td>
+<td>float</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Displacement</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Force weld</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>HingeLock</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>LowerLimit</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>RotorLock</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>SafetyDetach</td>
+<td>float</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShareInertiaTensor</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Torque</td>
+<td>float</td>
+</tr>
+<tr>
+<td>UpperLimit</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Velocity</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Weld speed</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="motorsuspension">MotorSuspension</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyMechanicalConnectionBlock</code>, <code>IMyMotorBase</code>, <code>IMyMotorSuspension</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-47">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -7882,7 +9706,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-38">Properties</h3>
+<h3 id="properties-47">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -8037,8 +9861,165 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyoffensivecombatblock">IMyOffensiveCombatBlock</h2>
-<h3 id="actions-39">Actions</h3>
+<h2 id="myprogrammableblock">MyProgrammableBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyProgrammableBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-48">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>Run</td>
+<td>Run</td>
+</tr>
+<tr>
+<td>RunWithDefaultArgument</td>
+<td>Run with default argument</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-48">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>ConsoleCommand</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="offensivecombatblock">OffensiveCombatBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyOffensiveCombatBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-49">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -8273,7 +10254,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-39">Properties</h3>
+<h3 id="properties-49">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -8480,8 +10461,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyoredetector">IMyOreDetector</h2>
-<h3 id="actions-40">Actions</h3>
+<h2 id="oredetector">OreDetector</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyOreDetector</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-50">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -8548,7 +10530,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-40">Properties</h3>
+<h3 id="properties-50">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -8635,8 +10617,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyoxygenfarm">IMyOxygenFarm</h2>
-<h3 id="actions-41">Actions</h3>
+<h2 id="oxygenfarm">OxygenFarm</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMySolarOccludable</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyOxygenFarm</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-51">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -8699,7 +10682,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-41">Properties</h3>
+<h3 id="properties-51">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -8778,8 +10761,353 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyparachute">IMyParachute</h2>
-<h3 id="actions-42">Actions</h3>
+<h2 id="oxygengenerator">OxygenGenerator</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyGasGenerator</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-52">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AutomaticallyPullBottles</td>
+<td>Automatically Pull Bottles On/Off</td>
+</tr>
+<tr>
+<td>Auto-Refill</td>
+<td>Auto-Refill On/Off</td>
+</tr>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>Refill</td>
+<td>Refill Bottles</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+<tr>
+<td>UseConveyor</td>
+<td>Automatic Push/Pull On/Off</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-52">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>AutomaticallyPullBottles</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>Auto-Refill</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>UseConveyor</td>
+<td>bool</td>
+</tr>
+</tbody>
+</table>
+<h2 id="oxygentank">OxygenTank</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyGasTank</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-53">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto-Refill</td>
+<td>Auto-Refill On/Off</td>
+</tr>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>Refill</td>
+<td>Refill Bottles</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+<tr>
+<td>Stockpile</td>
+<td>Stockpile On/Off</td>
+</tr>
+<tr>
+<td>Stockpile_Off</td>
+<td>Stockpile Off</td>
+</tr>
+<tr>
+<td>Stockpile_On</td>
+<td>Stockpile On</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-53">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Auto-Refill</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>Stockpile</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="parachute">Parachute</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyParachute</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-54">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -8795,6 +11123,14 @@
 <tr>
 <td>AutoDeploy</td>
 <td>Auto deploy On/Off</td>
+</tr>
+<tr>
+<td>AutoDeploy_Off</td>
+<td>Auto deploy Off</td>
+</tr>
+<tr>
+<td>AutoDeploy_On</td>
+<td>Auto deploy On</td>
 </tr>
 <tr>
 <td>DecreaseChangeIntervalSlider</td>
@@ -8862,7 +11198,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-42">Properties</h3>
+<h3 id="properties-54">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -8957,8 +11293,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imypathrecorderblock">IMyPathRecorderBlock</h2>
-<h3 id="actions-43">Actions</h3>
+<h2 id="pathrecorderblock">PathRecorderBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyPathRecorderBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-55">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -9093,7 +11430,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-43">Properties</h3>
+<h3 id="properties-55">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -9204,8 +11541,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imypistonbase">IMyPistonBase</h2>
-<h3 id="actions-44">Actions</h3>
+<h2 id="pistonbase">PistonBase</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyMechanicalConnectionBlock</code>, <code>IMyPistonBase</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-56">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -9360,7 +11698,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-44">Properties</h3>
+<h3 id="properties-56">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -9475,163 +11813,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyprogrammableblock">IMyProgrammableBlock</h2>
-<h3 id="actions-45">Actions</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DecreaseChangeIntervalSlider</td>
-<td>Decrease Image change interval</td>
-</tr>
-<tr>
-<td>DecreaseFontSize</td>
-<td>Decrease Font Size</td>
-</tr>
-<tr>
-<td>DecreaseTextPaddingSlider</td>
-<td>Decrease Text Padding</td>
-</tr>
-<tr>
-<td>IncreaseChangeIntervalSlider</td>
-<td>Increase Image change interval</td>
-</tr>
-<tr>
-<td>IncreaseFontSize</td>
-<td>Increase Font Size</td>
-</tr>
-<tr>
-<td>IncreaseTextPaddingSlider</td>
-<td>Increase Text Padding</td>
-</tr>
-<tr>
-<td>OnOff</td>
-<td>Toggle block On/Off</td>
-</tr>
-<tr>
-<td>OnOff_Off</td>
-<td>Toggle block Off</td>
-</tr>
-<tr>
-<td>OnOff_On</td>
-<td>Toggle block On</td>
-</tr>
-<tr>
-<td>PreserveAspectRatio</td>
-<td>Preserve aspect ratio On/Off</td>
-</tr>
-<tr>
-<td>Run</td>
-<td>Run</td>
-</tr>
-<tr>
-<td>RunWithDefaultArgument</td>
-<td>Run with default argument</td>
-</tr>
-<tr>
-<td>ShowOnHUD</td>
-<td>Show on HUD On/Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD_Off</td>
-<td>Show on HUD Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD_On</td>
-<td>Show on HUD On</td>
-</tr>
-</tbody>
-</table>
-<h3 id="properties-45">Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>alignment</td>
-<td>long</td>
-</tr>
-<tr>
-<td>BackgroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ChangeIntervalSlider</td>
-<td>float</td>
-</tr>
-<tr>
-<td>ConsoleCommand</td>
-<td>StringBuilder</td>
-</tr>
-<tr>
-<td>Content</td>
-<td>long</td>
-</tr>
-<tr>
-<td>Font</td>
-<td>long</td>
-</tr>
-<tr>
-<td>FontColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>FontSize</td>
-<td>float</td>
-</tr>
-<tr>
-<td>Name</td>
-<td>StringBuilder</td>
-</tr>
-<tr>
-<td>OnOff</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>PreserveAspectRatio</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ScriptBackgroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ScriptForegroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ShowInInventory</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowInTerminal</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowInToolbarConfig</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowOnHUD</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>TextPaddingSlider</td>
-<td>float</td>
-</tr>
-</tbody>
-</table>
-<h2 id="imyprojector">IMyProjector</h2>
-<h3 id="actions-46">Actions</h3>
+<h2 id="projector">Projector</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyProjector</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-57">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -9758,7 +11942,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-46">Properties</h3>
+<h3 id="properties-57">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -9897,8 +12081,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyradioantenna">IMyRadioAntenna</h2>
-<h3 id="actions-47">Actions</h3>
+<h2 id="radioantenna">RadioAntenna</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyRadioAntenna</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-58">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -9973,7 +12158,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-47">Properties</h3>
+<h3 id="properties-58">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -10060,8 +12245,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyreactor">IMyReactor</h2>
-<h3 id="actions-48">Actions</h3>
+<h2 id="reactor">Reactor</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyPowerProducer</code>, <code>IMyReactor</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-59">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -10128,7 +12314,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-48">Properties</h3>
+<h3 id="properties-59">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -10211,8 +12397,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyrefinery">IMyRefinery</h2>
-<h3 id="actions-49">Actions</h3>
+<h2 id="refinery">Refinery</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyProductionBlock</code>, <code>IMyRefinery</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-60">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -10279,7 +12466,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-49">Properties</h3>
+<h3 id="properties-60">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -10362,8 +12549,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyreflectorlight">IMyReflectorLight</h2>
-<h3 id="actions-50">Actions</h3>
+<h2 id="reflectorlight">ReflectorLight</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyLightingBlock</code>, <code>IMyReflectorLight</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-61">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -10502,7 +12690,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-50">Properties</h3>
+<h3 id="properties-61">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -10617,8 +12805,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyremotecontrol">IMyRemoteControl</h2>
-<h3 id="actions-51">Actions</h3>
+<h2 id="remotecontrol">RemoteControl</h2>
+<p>Available as: <code>IMyRemoteControl</code>, <code>IMyShipController</code>, <code>IMyTerminalBlock</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-62">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -10765,7 +12954,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-51">Properties</h3>
+<h3 id="properties-62">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -10864,8 +13053,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imysafezoneblock">IMySafeZoneBlock</h2>
-<h3 id="actions-52">Actions</h3>
+<h2 id="safezoneblock">SafeZoneBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMySafeZoneBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-63">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -10932,7 +13122,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-52">Properties</h3>
+<h3 id="properties-63">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -11087,8 +13277,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imysearchlight">IMySearchlight</h2>
-<h3 id="actions-53">Actions</h3>
+<h2 id="searchlight">Searchlight</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMySearchlight</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-64">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -11371,7 +13562,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-53">Properties</h3>
+<h3 id="properties-64">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -11534,8 +13725,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imysensorblock">IMySensorBlock</h2>
-<h3 id="actions-54">Actions</h3>
+<h2 id="sensorblock">SensorBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMySensorBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-65">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -11802,7 +13994,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-54">Properties</h3>
+<h3 id="properties-65">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -11953,8 +14145,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyshipconnector">IMyShipConnector</h2>
-<h3 id="actions-55">Actions</h3>
+<h2 id="shipconnector">ShipConnector</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyShipConnector</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-66">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -12097,7 +14290,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-55">Properties</h3>
+<h3 id="properties-66">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -12204,175 +14397,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyshipdrill">IMyShipDrill</h2>
-<h3 id="actions-56">Actions</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DecreaseChangeIntervalSlider</td>
-<td>Decrease Image change interval</td>
-</tr>
-<tr>
-<td>DecreaseFontSize</td>
-<td>Decrease Font Size</td>
-</tr>
-<tr>
-<td>DecreaseTextPaddingSlider</td>
-<td>Decrease Text Padding</td>
-</tr>
-<tr>
-<td>IncreaseChangeIntervalSlider</td>
-<td>Increase Image change interval</td>
-</tr>
-<tr>
-<td>IncreaseFontSize</td>
-<td>Increase Font Size</td>
-</tr>
-<tr>
-<td>IncreaseTextPaddingSlider</td>
-<td>Increase Text Padding</td>
-</tr>
-<tr>
-<td>OnOff</td>
-<td>Toggle block On/Off</td>
-</tr>
-<tr>
-<td>OnOff_Off</td>
-<td>Toggle block Off</td>
-</tr>
-<tr>
-<td>OnOff_On</td>
-<td>Toggle block On</td>
-</tr>
-<tr>
-<td>PreserveAspectRatio</td>
-<td>Preserve aspect ratio On/Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD</td>
-<td>Show on HUD On/Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD_Off</td>
-<td>Show on HUD Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD_On</td>
-<td>Show on HUD On</td>
-</tr>
-<tr>
-<td>TerrainClearingMode</td>
-<td>Terrain Clearing Mode On/Off</td>
-</tr>
-<tr>
-<td>TerrainClearingMode_Off</td>
-<td>Terrain Clearing Mode Off</td>
-</tr>
-<tr>
-<td>TerrainClearingMode_On</td>
-<td>Terrain Clearing Mode On</td>
-</tr>
-<tr>
-<td>UseConveyor</td>
-<td>Automatic Push/Pull On/Off</td>
-</tr>
-</tbody>
-</table>
-<h3 id="properties-56">Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>alignment</td>
-<td>long</td>
-</tr>
-<tr>
-<td>BackgroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ChangeIntervalSlider</td>
-<td>float</td>
-</tr>
-<tr>
-<td>Content</td>
-<td>long</td>
-</tr>
-<tr>
-<td>Font</td>
-<td>long</td>
-</tr>
-<tr>
-<td>FontColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>FontSize</td>
-<td>float</td>
-</tr>
-<tr>
-<td>Name</td>
-<td>StringBuilder</td>
-</tr>
-<tr>
-<td>OnOff</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>PreserveAspectRatio</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ScriptBackgroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ScriptForegroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ShowInInventory</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowInTerminal</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowInToolbarConfig</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowOnHUD</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>TerrainClearingMode</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>TextPaddingSlider</td>
-<td>float</td>
-</tr>
-<tr>
-<td>UseConveyor</td>
-<td>bool</td>
-</tr>
-</tbody>
-</table>
-<h2 id="imyshipgrinder">IMyShipGrinder</h2>
-<h3 id="actions-57">Actions</h3>
+<h2 id="shipgrinder">ShipGrinder</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyShipGrinder</code>, <code>IMyShipToolBase</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-67">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -12439,7 +14466,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-57">Properties</h3>
+<h3 id="properties-67">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -12522,8 +14549,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyshipmergeblock">IMyShipMergeBlock</h2>
-<h3 id="actions-58">Actions</h3>
+<h2 id="shipwelder">ShipWelder</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyShipToolBase</code>, <code>IMyShipWelder</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-68">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -12543,153 +14571,6 @@
 <tr>
 <td>DecreaseTextPaddingSlider</td>
 <td>Decrease Text Padding</td>
-</tr>
-<tr>
-<td>IncreaseChangeIntervalSlider</td>
-<td>Increase Image change interval</td>
-</tr>
-<tr>
-<td>IncreaseFontSize</td>
-<td>Increase Font Size</td>
-</tr>
-<tr>
-<td>IncreaseTextPaddingSlider</td>
-<td>Increase Text Padding</td>
-</tr>
-<tr>
-<td>OnOff</td>
-<td>Toggle block On/Off</td>
-</tr>
-<tr>
-<td>OnOff_Off</td>
-<td>Toggle block Off</td>
-</tr>
-<tr>
-<td>OnOff_On</td>
-<td>Toggle block On</td>
-</tr>
-<tr>
-<td>PreserveAspectRatio</td>
-<td>Preserve aspect ratio On/Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD</td>
-<td>Show on HUD On/Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD_Off</td>
-<td>Show on HUD Off</td>
-</tr>
-<tr>
-<td>ShowOnHUD_On</td>
-<td>Show on HUD On</td>
-</tr>
-</tbody>
-</table>
-<h3 id="properties-58">Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>alignment</td>
-<td>long</td>
-</tr>
-<tr>
-<td>BackgroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ChangeIntervalSlider</td>
-<td>float</td>
-</tr>
-<tr>
-<td>Content</td>
-<td>long</td>
-</tr>
-<tr>
-<td>Font</td>
-<td>long</td>
-</tr>
-<tr>
-<td>FontColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>FontSize</td>
-<td>float</td>
-</tr>
-<tr>
-<td>Name</td>
-<td>StringBuilder</td>
-</tr>
-<tr>
-<td>OnOff</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>PreserveAspectRatio</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ScriptBackgroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ScriptForegroundColor</td>
-<td>Color</td>
-</tr>
-<tr>
-<td>ShowInInventory</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowInTerminal</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowInToolbarConfig</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>ShowOnHUD</td>
-<td>bool</td>
-</tr>
-<tr>
-<td>TextPaddingSlider</td>
-<td>float</td>
-</tr>
-</tbody>
-</table>
-<h2 id="imyshipwelder">IMyShipWelder</h2>
-<h3 id="actions-59">Actions</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DecreaseChangeIntervalSlider</td>
-<td>Decrease Image change interval</td>
-</tr>
-<tr>
-<td>DecreaseFontSize</td>
-<td>Decrease Font Size</td>
-</tr>
-<tr>
-<td>DecreaseTextPaddingSlider</td>
-<td>Decrease Text Padding</td>
-</tr>
-<tr>
-<td>helpOthers</td>
-<td>Help Others On/Off</td>
 </tr>
 <tr>
 <td>IncreaseChangeIntervalSlider</td>
@@ -12737,7 +14618,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-59">Properties</h3>
+<h3 id="properties-68">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -12773,10 +14654,6 @@
 <tr>
 <td>FontSize</td>
 <td>float</td>
-</tr>
-<tr>
-<td>helpOthers</td>
-<td>bool</td>
 </tr>
 <tr>
 <td>Name</td>
@@ -12824,8 +14701,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imysmallgatlinggun">IMySmallGatlingGun</h2>
-<h3 id="actions-60">Actions</h3>
+<h2 id="smallgatlinggun">SmallGatlingGun</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMySmallGatlingGun</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyUserControllableGun</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-69">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -12908,7 +14786,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-60">Properties</h3>
+<h3 id="properties-69">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -12995,8 +14873,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imysmallmissilelauncher">IMySmallMissileLauncher</h2>
-<h3 id="actions-61">Actions</h3>
+<h2 id="smallmissilelauncher">SmallMissileLauncher</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMySmallMissileLauncher</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyUserControllableGun</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-70">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -13079,7 +14958,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-61">Properties</h3>
+<h3 id="properties-70">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -13166,8 +15045,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imysmallmissilelauncherreload">IMySmallMissileLauncherReload</h2>
-<h3 id="actions-62">Actions</h3>
+<h2 id="smallmissilelauncherreload">SmallMissileLauncherReload</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMySmallMissileLauncher</code>, <code>IMySmallMissileLauncherReload</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyUserControllableGun</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-71">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -13254,7 +15134,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-62">Properties</h3>
+<h3 id="properties-71">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -13345,8 +15225,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imysolarpanel">IMySolarPanel</h2>
-<h3 id="actions-63">Actions</h3>
+<h2 id="solarpanel">SolarPanel</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyPowerProducer</code>, <code>IMySolarOccludable</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMySolarPanel</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-72">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -13409,7 +15290,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-63">Properties</h3>
+<h3 id="properties-72">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -13488,8 +15369,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imysoundblock">IMySoundBlock</h2>
-<h3 id="actions-64">Actions</h3>
+<h2 id="soundblock">SoundBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMySoundBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-73">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -13584,7 +15466,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-64">Properties</h3>
+<h3 id="properties-73">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -13675,8 +15557,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyspaceball">IMySpaceBall</h2>
-<h3 id="actions-65">Actions</h3>
+<h2 id="spaceball">SpaceBall</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMySpaceBall</code>, <code>IMyVirtualMass</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-74">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -13751,7 +15634,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-65">Properties</h3>
+<h3 id="properties-74">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -13838,8 +15721,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imystoreblock">IMyStoreBlock</h2>
-<h3 id="actions-66">Actions</h3>
+<h2 id="storeblock">StoreBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyStoreBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-75">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -13893,6 +15777,10 @@
 <td>Preserve aspect ratio On/Off</td>
 </tr>
 <tr>
+<td>Searchable</td>
+<td>Searchable On/Off</td>
+</tr>
+<tr>
 <td>ShowOnHUD</td>
 <td>Show on HUD On/Off</td>
 </tr>
@@ -13910,7 +15798,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-66">Properties</h3>
+<h3 id="properties-75">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -13926,6 +15814,166 @@
 <tr>
 <td>AnyoneCanUse</td>
 <td>bool</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>Searchable</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>UseConveyor</td>
+<td>bool</td>
+</tr>
+</tbody>
+</table>
+<h2 id="survivalkit">SurvivalKit</h2>
+<p>Available as: <code>IMyAssembler</code>, <code>IMyFunctionalBlock</code>, <code>IMyProductionBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-76">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+<tr>
+<td>slaveMode</td>
+<td>Cooperative Mode On/Off</td>
+</tr>
+<tr>
+<td>UseConveyor</td>
+<td>Automatic Push/Pull On/Off</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-76">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
 </tr>
 <tr>
 <td>BackgroundColor</td>
@@ -13988,6 +16036,14 @@
 <td>bool</td>
 </tr>
 <tr>
+<td>slaveMode</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>SpawnName</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
 <td>TextPaddingSlider</td>
 <td>float</td>
 </tr>
@@ -13997,8 +16053,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imytargetdummyblock">IMyTargetDummyBlock</h2>
-<h3 id="actions-67">Actions</h3>
+<h2 id="targetdummyblock">TargetDummyBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-77">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -14069,7 +16126,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-67">Properties</h3>
+<h3 id="properties-77">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -14156,8 +16213,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyterminalblock">IMyTerminalBlock</h2>
-<h3 id="actions-68">Actions</h3>
+<h2 id="terminalblock">TerminalBlock</h2>
+<p>Available as: <code>IMyTerminalBlock</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-78">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -14180,7 +16238,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-68">Properties</h3>
+<h3 id="properties-78">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -14211,8 +16269,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imytextpanel">IMyTextPanel</h2>
-<h3 id="actions-69">Actions</h3>
+<h2 id="textpanel">TextPanel</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextPanel</code>, <code>IMyTextSurface</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-79">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -14311,7 +16370,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-69">Properties</h3>
+<h3 id="properties-79">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -14442,8 +16501,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imythrust">IMyThrust</h2>
-<h3 id="actions-70">Actions</h3>
+<h2 id="thrust">Thrust</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyThrust</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-80">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -14518,7 +16578,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-70">Properties</h3>
+<h3 id="properties-80">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -14601,8 +16661,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imytimerblock">IMyTimerBlock</h2>
-<h3 id="actions-71">Actions</h3>
+<h2 id="timerblock">TimerBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyTimerBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-81">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -14689,7 +16750,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-71">Properties</h3>
+<h3 id="properties-81">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -14776,8 +16837,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imytransponder">IMyTransponder</h2>
-<h3 id="actions-72">Actions</h3>
+<h2 id="transponderblock">TransponderBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyTransponder</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-82">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -14872,7 +16934,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-72">Properties</h3>
+<h3 id="properties-82">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -14959,8 +17021,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyturretcontrolblock">IMyTurretControlBlock</h2>
-<h3 id="actions-73">Actions</h3>
+<h2 id="turretcontrolblock">TurretControlBlock</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyTurretControlBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-83">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -15227,7 +17290,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-73">Properties</h3>
+<h3 id="properties-83">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -15390,8 +17453,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imyupgrademodule">IMyUpgradeModule</h2>
-<h3 id="actions-74">Actions</h3>
+<h2 id="upgrademodule">UpgradeModule</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyUpgradeModule</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-84">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -15454,7 +17518,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-74">Properties</h3>
+<h3 id="properties-84">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -15533,8 +17597,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="imywarhead">IMyWarhead</h2>
-<h3 id="actions-75">Actions</h3>
+<h2 id="vendingmachine">VendingMachine</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyStoreBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code>, <code>IMyInventoryOwner</code></p>
+<h3 id="actions-85">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -15544,28 +17609,52 @@
 </thead>
 <tbody>
 <tr>
-<td>DecreaseDetonationTime</td>
-<td>Decrease Detonation time</td>
+<td>AnyoneCanUse</td>
+<td>Anyone Can Use On/Off</td>
 </tr>
 <tr>
-<td>Detonate</td>
-<td>Detonate</td>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
 </tr>
 <tr>
-<td>IncreaseDetonationTime</td>
-<td>Increase Detonation time</td>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
 </tr>
 <tr>
-<td>Safety</td>
-<td>Arm warhead On/Off</td>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
 </tr>
 <tr>
-<td>Safety_Off</td>
-<td>Arm warhead Off</td>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
 </tr>
 <tr>
-<td>Safety_On</td>
-<td>Arm warhead On</td>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>Searchable</td>
+<td>Searchable On/Off</td>
 </tr>
 <tr>
 <td>ShowOnHUD</td>
@@ -15580,16 +17669,12 @@
 <td>Show on HUD On</td>
 </tr>
 <tr>
-<td>StartCountdown</td>
-<td>Start countdown</td>
-</tr>
-<tr>
-<td>StopCountdown</td>
-<td>Stop countdown</td>
+<td>UseConveyor</td>
+<td>Automatic Push/Pull On/Off</td>
 </tr>
 </tbody>
 </table>
-<h3 id="properties-75">Properties</h3>
+<h3 id="properties-85">Properties</h3>
 <table>
 <thead>
 <tr>
@@ -15599,7 +17684,35 @@
 </thead>
 <tbody>
 <tr>
-<td>DetonationTime</td>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>AnyoneCanUse</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
 <td>float</td>
 </tr>
 <tr>
@@ -15607,7 +17720,23 @@
 <td>StringBuilder</td>
 </tr>
 <tr>
-<td>Safety</td>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>Searchable</td>
 <td>bool</td>
 </tr>
 <tr>
@@ -15626,10 +17755,19 @@
 <td>ShowOnHUD</td>
 <td>bool</td>
 </tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>UseConveyor</td>
+<td>bool</td>
+</tr>
 </tbody>
 </table>
-<h2 id="imywindturbine">IMyWindTurbine</h2>
-<h3 id="actions-76">Actions</h3>
+<h2 id="virtualmass">VirtualMass</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyArtificialMassBlock</code>, <code>IMyVirtualMass</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-86">Actions</h3>
 <table>
 <thead>
 <tr>
@@ -15692,7 +17830,247 @@
 </tr>
 </tbody>
 </table>
-<h3 id="properties-76">Properties</h3>
+<h3 id="properties-86">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment</td>
+<td>long</td>
+</tr>
+<tr>
+<td>BackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ChangeIntervalSlider</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>long</td>
+</tr>
+<tr>
+<td>Font</td>
+<td>long</td>
+</tr>
+<tr>
+<td>FontColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>FontSize</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ScriptBackgroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ScriptForegroundColor</td>
+<td>Color</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>TextPaddingSlider</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
+<h2 id="warhead">Warhead</h2>
+<p>Available as: <code>IMyTerminalBlock</code>, <code>IMyUpgradableBlock</code>, <code>IMyWarhead</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-87">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseDetonationTime</td>
+<td>Decrease Detonation time</td>
+</tr>
+<tr>
+<td>Detonate</td>
+<td>Detonate</td>
+</tr>
+<tr>
+<td>IncreaseDetonationTime</td>
+<td>Increase Detonation time</td>
+</tr>
+<tr>
+<td>Safety</td>
+<td>Arm warhead On/Off</td>
+</tr>
+<tr>
+<td>Safety_Off</td>
+<td>Arm warhead Off</td>
+</tr>
+<tr>
+<td>Safety_On</td>
+<td>Arm warhead On</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+<tr>
+<td>StartCountdown</td>
+<td>Start countdown</td>
+</tr>
+<tr>
+<td>StopCountdown</td>
+<td>Stop countdown</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-87">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DetonationTime</td>
+<td>float</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>StringBuilder</td>
+</tr>
+<tr>
+<td>Safety</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInInventory</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInTerminal</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowInToolbarConfig</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>bool</td>
+</tr>
+</tbody>
+</table>
+<h2 id="windturbine">WindTurbine</h2>
+<p>Available as: <code>IMyFunctionalBlock</code>, <code>IMyPowerProducer</code>, <code>IMyTerminalBlock</code>, <code>IMyTextSurfaceProvider</code>, <code>IMyUpgradableBlock</code>, <code>IMyWindTurbine</code>, <code>IMyCubeBlock</code>, <code>IMyEntity</code></p>
+<h3 id="actions-88">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DecreaseChangeIntervalSlider</td>
+<td>Decrease Image change interval</td>
+</tr>
+<tr>
+<td>DecreaseFontSize</td>
+<td>Decrease Font Size</td>
+</tr>
+<tr>
+<td>DecreaseTextPaddingSlider</td>
+<td>Decrease Text Padding</td>
+</tr>
+<tr>
+<td>IncreaseChangeIntervalSlider</td>
+<td>Increase Image change interval</td>
+</tr>
+<tr>
+<td>IncreaseFontSize</td>
+<td>Increase Font Size</td>
+</tr>
+<tr>
+<td>IncreaseTextPaddingSlider</td>
+<td>Increase Text Padding</td>
+</tr>
+<tr>
+<td>OnOff</td>
+<td>Toggle block On/Off</td>
+</tr>
+<tr>
+<td>OnOff_Off</td>
+<td>Toggle block Off</td>
+</tr>
+<tr>
+<td>OnOff_On</td>
+<td>Toggle block On</td>
+</tr>
+<tr>
+<td>PreserveAspectRatio</td>
+<td>Preserve aspect ratio On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD</td>
+<td>Show on HUD On/Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_Off</td>
+<td>Show on HUD Off</td>
+</tr>
+<tr>
+<td>ShowOnHUD_On</td>
+<td>Show on HUD On</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-88">Properties</h3>
 <table>
 <thead>
 <tr>

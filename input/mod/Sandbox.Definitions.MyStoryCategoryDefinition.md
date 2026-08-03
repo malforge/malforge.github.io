@@ -8,6 +8,7 @@ public class MyStoryCategoryDefinition: MyDefinitionBase
 
 |Member|Description|
 |---|---|
+|[GpsColor](Sandbox.Definitions.MyStoryCategoryDefinition@GpsColor)||
 |[AvailableInSurvival](VRage.Game.MyDefinitionBase@AvailableInSurvival)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Context](VRage.Game.MyDefinitionBase@Context)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DescriptionArgs](VRage.Game.MyDefinitionBase@DescriptionArgs)|String used for shortcuts used in description<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|

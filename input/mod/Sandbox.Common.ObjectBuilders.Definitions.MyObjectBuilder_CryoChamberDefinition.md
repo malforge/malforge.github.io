@@ -109,6 +109,7 @@ public class MyObjectBuilder_CryoChamberDefinition: MyObjectBuilder_CockpitDefin
 |[Public](VRage.Game.MyObjectBuilder_DefinitionBase@Public)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[RandomRotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@RandomRotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[RaycastOffset](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_ShipControllerDefinition@RaycastOffset)|_Inherited from [MyObjectBuilder_ShipControllerDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_ShipControllerDefinition)_|
+|[Repairable](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Repairable)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Rotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Rotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[ScreenAreas](VRage.Game.MyObjectBuilder_FunctionalBlockDefinition@ScreenAreas)|_Inherited from [MyObjectBuilder_FunctionalBlockDefinition](VRage.Game.MyObjectBuilder_FunctionalBlockDefinition)_|
 |[SilenceableByShipSoundSystem](VRage.Game.MyObjectBuilder_CubeBlockDefinition@SilenceableByShipSoundSystem)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|

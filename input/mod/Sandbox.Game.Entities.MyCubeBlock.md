@@ -28,7 +28,6 @@ public class MyCubeBlock: MyEntity, IMyEntity, IMyEntity, IMyComponentOwner<MyID
 |[InitSkinUpdateHandled](Sandbox.Game.Entities.MyCubeBlock@InitSkinUpdateHandled)||
 |[IsBeingRemoved](Sandbox.Game.Entities.MyCubeBlock@IsBeingRemoved)||
 |[IsSilenced](Sandbox.Game.Entities.MyCubeBlock@IsSilenced)||
-|[m_soundEmitter](Sandbox.Game.Entities.MyCubeBlock@m_soundEmitter)||
 |[SilenceInChange](Sandbox.Game.Entities.MyCubeBlock@SilenceInChange)||
 |[SlimBlock](Sandbox.Game.Entities.MyCubeBlock@SlimBlock)||
 |[UsedUpdateEveryFrame](Sandbox.Game.Entities.MyCubeBlock@UsedUpdateEveryFrame)||
@@ -110,6 +109,7 @@ public class MyCubeBlock: MyEntity, IMyEntity, IMyEntity, IMyComponentOwner<MyID
 |[Physics](Sandbox.Game.Entities.MyCubeBlock@Physics)||
 |[Position](Sandbox.Game.Entities.MyCubeBlock@Position)||
 |[ResourceSink](Sandbox.Game.Entities.MyCubeBlock@ResourceSink)||
+|[SoundEmitter](Sandbox.Game.Entities.MyCubeBlock@SoundEmitter)|Gets sound emitter. This value is null on dedicated server.|
 |[SubBlockName](Sandbox.Game.Entities.MyCubeBlock@SubBlockName)|Name of subblock (key in the owner's subblocks map).|
 |[UpgradeValues](Sandbox.Game.Entities.MyCubeBlock@UpgradeValues)||
 |[UseObjectsComponent](Sandbox.Game.Entities.MyCubeBlock@UseObjectsComponent)||

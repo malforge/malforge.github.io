@@ -8,6 +8,7 @@ public class MyObjectBuilder_OxygenGenerator: MyObjectBuilder_FunctionalBlock
 
 |Member|Description|
 |---|---|
+|[AutomaticallyPullBottles](Sandbox.Common.ObjectBuilders.MyObjectBuilder_OxygenGenerator@AutomaticallyPullBottles)||
 |[AutoRefill](Sandbox.Common.ObjectBuilders.MyObjectBuilder_OxygenGenerator@AutoRefill)||
 |[Inventory](Sandbox.Common.ObjectBuilders.MyObjectBuilder_OxygenGenerator@Inventory)||
 |[UseConveyorSystem](Sandbox.Common.ObjectBuilders.MyObjectBuilder_OxygenGenerator@UseConveyorSystem)||

@@ -91,6 +91,7 @@ public class MyObjectBuilder_AirtightSlideDoorDefinition: MyObjectBuilder_Airtig
 |[PriorityModifier](VRage.Game.MyObjectBuilder_CubeBlockDefinition@PriorityModifier)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Public](VRage.Game.MyObjectBuilder_DefinitionBase@Public)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[RandomRotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@RandomRotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
+|[Repairable](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Repairable)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[ResourceSinkGroup](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_AirtightDoorGenericDefinition@ResourceSinkGroup)|_Inherited from [MyObjectBuilder_AirtightDoorGenericDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_AirtightDoorGenericDefinition)_|
 |[Rotation](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Rotation)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[ScreenAreas](VRage.Game.MyObjectBuilder_FunctionalBlockDefinition@ScreenAreas)|_Inherited from [MyObjectBuilder_FunctionalBlockDefinition](VRage.Game.MyObjectBuilder_FunctionalBlockDefinition)_|

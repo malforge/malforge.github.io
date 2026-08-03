@@ -14,6 +14,7 @@ public class MyObjectBuilder_ControlBinding: MyObjectBuilder_Base
 |[ControlType](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ControlBinding@ControlType)||
 |[GamepadAxes](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ControlBinding@GamepadAxes)||
 |[Id](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ControlBinding@Id)||
+|[IgnorePriorityMap](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ControlBinding@IgnorePriorityMap)||
 |[Modifiers](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ControlBinding@Modifiers)||
 
 ## Properties

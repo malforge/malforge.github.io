@@ -179,3 +179,7 @@ else {
     Write-Host "The game data was already up to date. Nothing to regenerate." -ForegroundColor Green
 }
 Write-Host ""
+
+# Explicit, so a caller can test $LASTEXITCODE. The download path runs no native command, which would otherwise
+# leave $LASTEXITCODE unset, and $null -ne 0 reads as a failure.
+exit 0

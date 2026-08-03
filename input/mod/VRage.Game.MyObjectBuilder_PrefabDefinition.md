@@ -11,6 +11,8 @@ public class MyObjectBuilder_PrefabDefinition: MyObjectBuilder_DefinitionBase
 |[CubeGrid](VRage.Game.MyObjectBuilder_PrefabDefinition@CubeGrid)||
 |[CubeGrids](VRage.Game.MyObjectBuilder_PrefabDefinition@CubeGrids)||
 |[EnvironmentType](VRage.Game.MyObjectBuilder_PrefabDefinition@EnvironmentType)||
+|[MaxNPCCount](VRage.Game.MyObjectBuilder_PrefabDefinition@MaxNPCCount)||
+|[NPCSpawnPointsOverride](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCSpawnPointsOverride)||
 |[PrefabPath](VRage.Game.MyObjectBuilder_PrefabDefinition@PrefabPath)||
 |[RespawnShip](VRage.Game.MyObjectBuilder_PrefabDefinition@RespawnShip)||
 |[TooltipImage](VRage.Game.MyObjectBuilder_PrefabDefinition@TooltipImage)||

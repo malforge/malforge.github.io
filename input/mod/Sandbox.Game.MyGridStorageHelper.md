@@ -14,7 +14,7 @@ public class MyGridStorageHelper
 
 |Member|Description|
 |---|---|
-|[CopyGridFilesTo(string)](Sandbox.Game.MyGridStorageHelper@CopyGridFilesTo)||
+|[CopyGridFilesTo(string, List<MyCloudFile>)](Sandbox.Game.MyGridStorageHelper@CopyGridFilesTo)||
 |[Delete(Guid)](Sandbox.Game.MyGridStorageHelper@Delete)||
 |[GetDetails(List<Guid>)](Sandbox.Game.MyGridStorageHelper@GetDetails)||
 |[LoadGrid(Guid, Quaternion, Vector3D, Vector3D, float, long, Action<MyGridLoadFuture>)](Sandbox.Game.MyGridStorageHelper@LoadGrid)||
