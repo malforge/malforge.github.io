@@ -22,11 +22,27 @@ namespace DocGen.Services
 
         public static async Task Update(string fileName, string output, Action<string> updateStatusFn)
         {
-            // Check if regeneration is needed (simple timestamp check)
-            if (File.Exists(output) && File.GetLastWriteTimeUtc(output) >= File.GetLastWriteTimeUtc(fileName))
+            // Regenerate when either the data or this generator is newer than the output. Comparing against the
+            // data alone meant a fix to the generator produced nothing at all until the data happened to change,
+            // which is silent and very easy to mistake for the fix not working.
+            if (File.Exists(output))
             {
-                updateStatusFn?.Invoke("Skipping (output up-to-date)");
-                return;
+                var outputWritten = File.GetLastWriteTimeUtc(output);
+                var newestInput = File.GetLastWriteTimeUtc(fileName);
+
+                var generator = typeof(Terminals).Assembly.Location;
+                if (!string.IsNullOrEmpty(generator) && File.Exists(generator))
+                {
+                    var generatorBuilt = File.GetLastWriteTimeUtc(generator);
+                    if (generatorBuilt > newestInput)
+                        newestInput = generatorBuilt;
+                }
+
+                if (outputWritten >= newestInput)
+                {
+                    updateStatusFn?.Invoke("Skipping (output up-to-date)");
+                    return;
+                }
             }
             
             updateStatusFn?.Invoke("Loading cache...");
@@ -67,10 +83,16 @@ namespace DocGen.Services
                 document.AppendLine($"## {GetDisplayName(block)}");
                 document.AppendLine();
 
-                var interfaces = GetFetchableAs(block);
-                if (interfaces.Any())
+                // Only what the game itself states. The interface is reported when the game declares one for the
+                // block and left out otherwise: a dozen blocks carry no such declaration, and working one out
+                // from the type hierarchy produced answers that looked authoritative without being so.
+                //
+                // The sampled subtype is deliberately not shown. A type id covers many subtypes and the extractor
+                // reads the actions and properties off whichever one it happened to spawn, so naming it would
+                // suggest the entry applies to that subtype alone when it applies to all of them.
+                if (!string.IsNullOrEmpty(block.BlockInterfaceType))
                 {
-                    document.AppendLine("Available as: " + string.Join(", ", interfaces.Select(i => $"`{i}`")));
+                    document.AppendLine($"Interface: `{GetBlockName(block.BlockInterfaceType)}`");
                     document.AppendLine();
                 }
 
@@ -156,27 +178,6 @@ namespace DocGen.Services
             if (endPt >= 0)
                 return name.Substring(endPt + 1);
             return name;
-        }
-
-        const string TerminalBlockInterface = "IMyTerminalBlock";
-
-        /// <summary>
-        ///     The interfaces worth telling someone about: the ones they can actually fetch the block through.
-        /// </summary>
-        /// <remarks>
-        ///     Only interfaces descending from <c>IMyTerminalBlock</c> qualify, which drops the cross-cutting ones
-        ///     such as <c>IMyCubeBlock</c>, <c>IMyEntity</c> and <c>IMyInventoryOwner</c> that every block carries
-        ///     and none of which help you find it. <c>IMyTerminalBlock</c> itself is left out because it is true of
-        ///     everything, unless a block has nothing else, in which case it is the honest answer.
-        /// </remarks>
-        List<string> GetFetchableAs(BlockInfo block)
-        {
-            var interfaces = block.TerminalInterfaces
-                .Select(GetBlockName)
-                .Where(name => name != TerminalBlockInterface)
-                .ToList();
-
-            return interfaces.Count > 0 ? interfaces : new List<string> { TerminalBlockInterface };
         }
 
         /// <summary>

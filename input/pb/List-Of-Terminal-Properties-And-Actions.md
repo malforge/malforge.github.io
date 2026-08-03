@@ -91,7 +91,7 @@ Blocks are listed by their type definition. A block can be fetched through any o
 
 ## AirtightHangarDoor
 
-Available as: `IMyAirtightDoorBase`, `IMyAirtightHangarDoor`, `IMyDoor`, `IMyFunctionalBlock`
+Interface: `IMyAirtightHangarDoor`
 
 ### Actions
 
@@ -141,7 +141,7 @@ Available as: `IMyAirtightDoorBase`, `IMyAirtightHangarDoor`, `IMyDoor`, `IMyFun
 
 ## AirtightSlideDoor
 
-Available as: `IMyAirtightDoorBase`, `IMyAirtightSlideDoor`, `IMyDoor`, `IMyFunctionalBlock`
+Interface: `IMyAirtightSlideDoor`
 
 ### Actions
 
@@ -191,7 +191,7 @@ Available as: `IMyAirtightDoorBase`, `IMyAirtightSlideDoor`, `IMyDoor`, `IMyFunc
 
 ## AirVent
 
-Available as: `IMyFunctionalBlock`, `IMyAirVent`
+Interface: `IMyAirVent`
 
 ### Actions
 
@@ -239,7 +239,7 @@ Available as: `IMyFunctionalBlock`, `IMyAirVent`
 
 ## Assembler
 
-Available as: `IMyAssembler`, `IMyFunctionalBlock`, `IMyProductionBlock`
+Interface: `IMyAssembler`
 
 ### Actions
 
@@ -287,7 +287,7 @@ Available as: `IMyAssembler`, `IMyFunctionalBlock`, `IMyProductionBlock`
 
 ## BasicMissionBlock
 
-Available as: `IMyBasicMissionBlock`, `IMyFunctionalBlock`
+Interface: `IMyBasicMissionBlock`
 
 ### Actions
 
@@ -352,7 +352,7 @@ Available as: `IMyBasicMissionBlock`, `IMyFunctionalBlock`
 
 ## BatteryBlock
 
-Available as: `IMyBatteryBlock`, `IMyFunctionalBlock`, `IMyPowerProducer`
+Interface: `IMyBatteryBlock`
 
 ### Actions
 
@@ -404,7 +404,7 @@ Available as: `IMyBatteryBlock`, `IMyFunctionalBlock`, `IMyPowerProducer`
 
 ## Beacon
 
-Available as: `IMyBeacon`, `IMyFunctionalBlock`
+Interface: `IMyBeacon`
 
 ### Actions
 
@@ -454,7 +454,7 @@ Available as: `IMyBeacon`, `IMyFunctionalBlock`
 
 ## BroadcastController
 
-Available as: `IMyFunctionalBlock`, `IMyBroadcastController`
+Interface: `IMyBroadcastController`
 
 ### Actions
 
@@ -523,7 +523,7 @@ Available as: `IMyFunctionalBlock`, `IMyBroadcastController`
 
 ## ButtonPanel
 
-Available as: `IMyFunctionalBlock`, `IMyButtonPanel`
+Interface: `IMyButtonPanel`
 
 ### Actions
 
@@ -570,7 +570,7 @@ Available as: `IMyFunctionalBlock`, `IMyButtonPanel`
 
 ## CameraBlock
 
-Available as: `IMyCameraBlock`, `IMyFunctionalBlock`
+Interface: `IMyCameraBlock`
 
 ### Actions
 
@@ -614,7 +614,7 @@ Available as: `IMyCameraBlock`, `IMyFunctionalBlock`
 
 ## CargoContainer
 
-Available as: `IMyCargoContainer`
+Interface: `IMyCargoContainer`
 
 ### Actions
 
@@ -636,7 +636,7 @@ Available as: `IMyCargoContainer`
 
 ## Cockpit
 
-Available as: `IMyCockpit`, `IMyShipController`
+Interface: `IMyCockpit`
 
 ### Actions
 
@@ -694,7 +694,7 @@ Available as: `IMyCockpit`, `IMyShipController`
 
 ## Collector
 
-Available as: `IMyCollector`, `IMyFunctionalBlock`
+Interface: `IMyCollector`
 
 ### Actions
 
@@ -740,8 +740,6 @@ Available as: `IMyCollector`, `IMyFunctionalBlock`
 
 ## ContractBlock
 
-Available as: `IMyFunctionalBlock`
-
 ### Actions
 
 |Name|Description|
@@ -786,7 +784,7 @@ Available as: `IMyFunctionalBlock`
 
 ## ConveyorSorter
 
-Available as: `IMyConveyorSorter`, `IMyFunctionalBlock`
+Interface: `IMyConveyorSorter`
 
 ### Actions
 
@@ -836,7 +834,7 @@ Available as: `IMyConveyorSorter`, `IMyFunctionalBlock`
 
 ## CryoChamber
 
-Available as: `IMyCockpit`, `IMyCryoChamber`, `IMyShipController`
+Interface: `IMyCryoChamber`
 
 ### Actions
 
@@ -894,7 +892,7 @@ Available as: `IMyCockpit`, `IMyCryoChamber`, `IMyShipController`
 
 ## Decoy
 
-Available as: `IMyDecoy`, `IMyFunctionalBlock`
+Interface: `IMyDecoy`
 
 ### Actions
 
@@ -938,7 +936,7 @@ Available as: `IMyDecoy`, `IMyFunctionalBlock`
 
 ## DefensiveCombatBlock
 
-Available as: `IMyDefensiveCombatBlock`, `IMyFunctionalBlock`
+Interface: `IMyDefensiveCombatBlock`
 
 ### Actions
 
@@ -1015,7 +1013,7 @@ Available as: `IMyDefensiveCombatBlock`, `IMyFunctionalBlock`
 
 ## Door
 
-Available as: `IMyDoor`, `IMyFunctionalBlock`
+Interface: `IMyDoor`
 
 ### Actions
 
@@ -1065,7 +1063,7 @@ Available as: `IMyDoor`, `IMyFunctionalBlock`
 
 ## Drill
 
-Available as: `IMyFunctionalBlock`, `IMyShipDrill`, `IMyShipToolBase`
+Interface: `IMyShipDrill`
 
 ### Actions
 
@@ -1115,7 +1113,7 @@ Available as: `IMyFunctionalBlock`, `IMyShipDrill`, `IMyShipToolBase`
 
 ## EmotionControllerBlock
 
-Available as: `IMyEmotionControllerBlock`, `IMyFunctionalBlock`
+Interface: `IMyEmotionControllerBlock`
 
 ### Actions
 
@@ -1175,7 +1173,7 @@ Available as: `IMyEmotionControllerBlock`, `IMyFunctionalBlock`
 
 ## EventControllerBlock
 
-Available as: `IMyEventControllerBlock`, `IMyFunctionalBlock`
+Interface: `IMyEventControllerBlock`
 
 ### Actions
 
@@ -1244,8 +1242,6 @@ Available as: `IMyEventControllerBlock`, `IMyFunctionalBlock`
 
 ## ExhaustBlock
 
-Available as: `IMyFunctionalBlock`
-
 ### Actions
 
 |Name|Description|
@@ -1292,7 +1288,7 @@ Available as: `IMyFunctionalBlock`
 
 ## ExtendedPistonBase
 
-Available as: `IMyExtendedPistonBase`, `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyPistonBase`
+Interface: `IMyExtendedPistonBase`
 
 ### Actions
 
@@ -1368,7 +1364,7 @@ Available as: `IMyExtendedPistonBase`, `IMyFunctionalBlock`, `IMyMechanicalConne
 
 ## FlightMovementBlock
 
-Available as: `IMyFlightMovementBlock`, `IMyFunctionalBlock`
+Interface: `IMyFlightMovementBlock`
 
 ### Actions
 
@@ -1441,7 +1437,7 @@ Available as: `IMyFlightMovementBlock`, `IMyFunctionalBlock`
 
 ## FunctionalBlock
 
-Available as: `IMyFunctionalBlock`
+Interface: `IMyFunctionalBlock`
 
 ### Actions
 
@@ -1485,7 +1481,7 @@ Available as: `IMyFunctionalBlock`
 
 ## GravityGenerator
 
-Available as: `IMyFunctionalBlock`, `IMyGravityGenerator`, `IMyGravityGeneratorBase`
+Interface: `IMyGravityGenerator`
 
 ### Actions
 
@@ -1542,7 +1538,7 @@ Available as: `IMyFunctionalBlock`, `IMyGravityGenerator`, `IMyGravityGeneratorB
 
 ## GravityGeneratorSphere
 
-Available as: `IMyFunctionalBlock`, `IMyGravityGeneratorBase`, `IMyGravityGeneratorSphere`
+Interface: `IMyGravityGeneratorSphere`
 
 ### Actions
 
@@ -1593,7 +1589,7 @@ Available as: `IMyFunctionalBlock`, `IMyGravityGeneratorBase`, `IMyGravityGenera
 
 ## Gyro
 
-Available as: `IMyFunctionalBlock`, `IMyGyro`
+Interface: `IMyGyro`
 
 ### Actions
 
@@ -1657,7 +1653,7 @@ Available as: `IMyFunctionalBlock`, `IMyGyro`
 
 ## HeatVentBlock
 
-Available as: `IMyFunctionalBlock`, `IMyHeatVent`
+Interface: `IMyHeatVent`
 
 ### Actions
 
@@ -1720,8 +1716,6 @@ Available as: `IMyFunctionalBlock`, `IMyHeatVent`
 
 ## HydrogenEngine
 
-Available as: `IMyFunctionalBlock`, `IMyPowerProducer`
-
 ### Actions
 
 |Name|Description|
@@ -1764,7 +1758,7 @@ Available as: `IMyFunctionalBlock`, `IMyPowerProducer`
 
 ## InteriorLight
 
-Available as: `IMyFunctionalBlock`, `IMyLightingBlock`, `IMyInteriorLight`
+Interface: `IMyInteriorLight`
 
 ### Actions
 
@@ -1833,7 +1827,7 @@ Available as: `IMyFunctionalBlock`, `IMyLightingBlock`, `IMyInteriorLight`
 
 ## InteriorTurret
 
-Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyUserControllableGun`, `IMyLargeInteriorTurret`
+Interface: `IMyLargeInteriorTurret`
 
 ### Actions
 
@@ -1933,8 +1927,6 @@ Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyUserControllableGu
 
 ## Jukebox
 
-Available as: `IMyFunctionalBlock`, `IMySoundBlock`
-
 ### Actions
 
 |Name|Description|
@@ -1988,7 +1980,7 @@ Available as: `IMyFunctionalBlock`, `IMySoundBlock`
 
 ## JumpDrive
 
-Available as: `IMyFunctionalBlock`, `IMyJumpDrive`
+Interface: `IMyJumpDrive`
 
 ### Actions
 
@@ -2041,7 +2033,7 @@ Available as: `IMyFunctionalBlock`, `IMyJumpDrive`
 
 ## LandingGear
 
-Available as: `IMyFunctionalBlock`, `IMyLandingGear`
+Interface: `IMyLandingGear`
 
 ### Actions
 
@@ -2092,7 +2084,7 @@ Available as: `IMyFunctionalBlock`, `IMyLandingGear`
 
 ## LargeGatlingTurret
 
-Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyUserControllableGun`, `IMyLargeConveyorTurretBase`, `IMyLargeGatlingTurret`
+Interface: `IMyLargeGatlingTurret`
 
 ### Actions
 
@@ -2194,8 +2186,6 @@ Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyUserControllableGu
 
 ## LargeMissileTurret
 
-Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyUserControllableGun`, `IMyLargeConveyorTurretBase`, `IMyLargeMissileTurret`
-
 ### Actions
 
 |Name|Description|
@@ -2296,7 +2286,7 @@ Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyUserControllableGu
 
 ## LaserAntenna
 
-Available as: `IMyFunctionalBlock`, `IMyLaserAntenna`
+Interface: `IMyLaserAntenna`
 
 ### Actions
 
@@ -2349,8 +2339,6 @@ Available as: `IMyFunctionalBlock`, `IMyLaserAntenna`
 
 ## LCDPanelsBlock
 
-Available as: `IMyFunctionalBlock`
-
 ### Actions
 
 |Name|Description|
@@ -2393,7 +2381,7 @@ Available as: `IMyFunctionalBlock`
 
 ## MedicalRoom
 
-Available as: `IMyFunctionalBlock`, `IMyMedicalRoom`
+Interface: `IMyMedicalRoom`
 
 ### Actions
 
@@ -2440,7 +2428,7 @@ Available as: `IMyFunctionalBlock`, `IMyMedicalRoom`
 
 ## MergeBlock
 
-Available as: `IMyFunctionalBlock`, `IMyShipMergeBlock`
+Interface: `IMyShipMergeBlock`
 
 ### Actions
 
@@ -2484,7 +2472,7 @@ Available as: `IMyFunctionalBlock`, `IMyShipMergeBlock`
 
 ## MotorAdvancedStator
 
-Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorAdvancedStator`, `IMyMotorBase`, `IMyMotorStator`
+Interface: `IMyMotorAdvancedStator`
 
 ### Actions
 
@@ -2578,8 +2566,6 @@ Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorAdv
 
 ## MotorStator
 
-Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorBase`, `IMyMotorStator`
-
 ### Actions
 
 |Name|Description|
@@ -2672,7 +2658,7 @@ Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorBas
 
 ## MotorSuspension
 
-Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorBase`, `IMyMotorSuspension`
+Interface: `IMyMotorSuspension`
 
 ### Actions
 
@@ -2773,7 +2759,7 @@ Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorBas
 
 ## MyProgrammableBlock
 
-Available as: `IMyFunctionalBlock`, `IMyProgrammableBlock`
+Interface: `IMyProgrammableBlock`
 
 ### Actions
 
@@ -2820,7 +2806,7 @@ Available as: `IMyFunctionalBlock`, `IMyProgrammableBlock`
 
 ## OffensiveCombatBlock
 
-Available as: `IMyFunctionalBlock`, `IMyOffensiveCombatBlock`
+Interface: `IMyOffensiveCombatBlock`
 
 ### Actions
 
@@ -2939,7 +2925,7 @@ Available as: `IMyFunctionalBlock`, `IMyOffensiveCombatBlock`
 
 ## OreDetector
 
-Available as: `IMyFunctionalBlock`, `IMyOreDetector`
+Interface: `IMyOreDetector`
 
 ### Actions
 
@@ -2986,7 +2972,7 @@ Available as: `IMyFunctionalBlock`, `IMyOreDetector`
 
 ## OxygenFarm
 
-Available as: `IMyFunctionalBlock`, `IMyOxygenFarm`
+Interface: `IMyOxygenFarm`
 
 ### Actions
 
@@ -3030,7 +3016,7 @@ Available as: `IMyFunctionalBlock`, `IMyOxygenFarm`
 
 ## OxygenGenerator
 
-Available as: `IMyFunctionalBlock`, `IMyGasGenerator`
+Interface: `IMyGasGenerator`
 
 ### Actions
 
@@ -3079,7 +3065,7 @@ Available as: `IMyFunctionalBlock`, `IMyGasGenerator`
 
 ## OxygenTank
 
-Available as: `IMyFunctionalBlock`, `IMyGasTank`
+Interface: `IMyGasTank`
 
 ### Actions
 
@@ -3130,7 +3116,7 @@ Available as: `IMyFunctionalBlock`, `IMyGasTank`
 
 ## Parachute
 
-Available as: `IMyFunctionalBlock`, `IMyParachute`
+Interface: `IMyParachute`
 
 ### Actions
 
@@ -3183,7 +3169,7 @@ Available as: `IMyFunctionalBlock`, `IMyParachute`
 
 ## PathRecorderBlock
 
-Available as: `IMyFunctionalBlock`, `IMyPathRecorderBlock`
+Interface: `IMyPathRecorderBlock`
 
 ### Actions
 
@@ -3253,7 +3239,7 @@ Available as: `IMyFunctionalBlock`, `IMyPathRecorderBlock`
 
 ## Projector
 
-Available as: `IMyFunctionalBlock`, `IMyProjector`
+Interface: `IMyProjector`
 
 ### Actions
 
@@ -3328,7 +3314,7 @@ Available as: `IMyFunctionalBlock`, `IMyProjector`
 
 ## RadioAntenna
 
-Available as: `IMyFunctionalBlock`, `IMyRadioAntenna`
+Interface: `IMyRadioAntenna`
 
 ### Actions
 
@@ -3377,7 +3363,7 @@ Available as: `IMyFunctionalBlock`, `IMyRadioAntenna`
 
 ## Reactor
 
-Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyReactor`
+Interface: `IMyReactor`
 
 ### Actions
 
@@ -3423,7 +3409,7 @@ Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyReactor`
 
 ## Refinery
 
-Available as: `IMyFunctionalBlock`, `IMyProductionBlock`, `IMyRefinery`
+Interface: `IMyRefinery`
 
 ### Actions
 
@@ -3469,7 +3455,7 @@ Available as: `IMyFunctionalBlock`, `IMyProductionBlock`, `IMyRefinery`
 
 ## ReflectorLight
 
-Available as: `IMyFunctionalBlock`, `IMyLightingBlock`, `IMyReflectorLight`
+Interface: `IMyReflectorLight`
 
 ### Actions
 
@@ -3541,7 +3527,7 @@ Available as: `IMyFunctionalBlock`, `IMyLightingBlock`, `IMyReflectorLight`
 
 ## RemoteControl
 
-Available as: `IMyRemoteControl`, `IMyShipController`
+Interface: `IMyRemoteControl`
 
 ### Actions
 
@@ -3611,7 +3597,7 @@ Available as: `IMyRemoteControl`, `IMyShipController`
 
 ## SafeZoneBlock
 
-Available as: `IMyFunctionalBlock`, `IMySafeZoneBlock`
+Interface: `IMySafeZoneBlock`
 
 ### Actions
 
@@ -3675,7 +3661,7 @@ Available as: `IMyFunctionalBlock`, `IMySafeZoneBlock`
 
 ## Searchlight
 
-Available as: `IMyFunctionalBlock`, `IMySearchlight`
+Interface: `IMySearchlight`
 
 ### Actions
 
@@ -3795,7 +3781,7 @@ Available as: `IMyFunctionalBlock`, `IMySearchlight`
 
 ## SensorBlock
 
-Available as: `IMyFunctionalBlock`, `IMySensorBlock`
+Interface: `IMySensorBlock`
 
 ### Actions
 
@@ -3908,7 +3894,7 @@ Available as: `IMyFunctionalBlock`, `IMySensorBlock`
 
 ## ShipConnector
 
-Available as: `IMyFunctionalBlock`, `IMyShipConnector`
+Interface: `IMyShipConnector`
 
 ### Actions
 
@@ -3979,7 +3965,7 @@ Available as: `IMyFunctionalBlock`, `IMyShipConnector`
 
 ## ShipGrinder
 
-Available as: `IMyFunctionalBlock`, `IMyShipGrinder`, `IMyShipToolBase`
+Interface: `IMyShipGrinder`
 
 ### Actions
 
@@ -4025,7 +4011,7 @@ Available as: `IMyFunctionalBlock`, `IMyShipGrinder`, `IMyShipToolBase`
 
 ## ShipWelder
 
-Available as: `IMyFunctionalBlock`, `IMyShipToolBase`, `IMyShipWelder`
+Interface: `IMyShipWelder`
 
 ### Actions
 
@@ -4073,7 +4059,7 @@ Available as: `IMyFunctionalBlock`, `IMyShipToolBase`, `IMyShipWelder`
 
 ## SmallGatlingGun
 
-Available as: `IMyFunctionalBlock`, `IMySmallGatlingGun`, `IMyUserControllableGun`
+Interface: `IMySmallGatlingGun`
 
 ### Actions
 
@@ -4124,7 +4110,7 @@ Available as: `IMyFunctionalBlock`, `IMySmallGatlingGun`, `IMyUserControllableGu
 
 ## SmallMissileLauncher
 
-Available as: `IMyFunctionalBlock`, `IMySmallMissileLauncher`, `IMyUserControllableGun`
+Interface: `IMySmallMissileLauncher`
 
 ### Actions
 
@@ -4175,7 +4161,7 @@ Available as: `IMyFunctionalBlock`, `IMySmallMissileLauncher`, `IMyUserControlla
 
 ## SmallMissileLauncherReload
 
-Available as: `IMyFunctionalBlock`, `IMySmallMissileLauncher`, `IMySmallMissileLauncherReload`, `IMyUserControllableGun`
+Interface: `IMySmallMissileLauncherReload`
 
 ### Actions
 
@@ -4228,7 +4214,7 @@ Available as: `IMyFunctionalBlock`, `IMySmallMissileLauncher`, `IMySmallMissileL
 
 ## SolarPanel
 
-Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMySolarPanel`
+Interface: `IMySolarPanel`
 
 ### Actions
 
@@ -4272,7 +4258,7 @@ Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMySolarPanel`
 
 ## SoundBlock
 
-Available as: `IMyFunctionalBlock`, `IMySoundBlock`
+Interface: `IMySoundBlock`
 
 ### Actions
 
@@ -4327,7 +4313,7 @@ Available as: `IMyFunctionalBlock`, `IMySoundBlock`
 
 ## SpaceBall
 
-Available as: `IMyFunctionalBlock`, `IMySpaceBall`, `IMyVirtualMass`
+Interface: `IMySpaceBall`
 
 ### Actions
 
@@ -4376,7 +4362,7 @@ Available as: `IMyFunctionalBlock`, `IMySpaceBall`, `IMyVirtualMass`
 
 ## StoreBlock
 
-Available as: `IMyFunctionalBlock`, `IMyStoreBlock`
+Interface: `IMyStoreBlock`
 
 ### Actions
 
@@ -4423,8 +4409,6 @@ Available as: `IMyFunctionalBlock`, `IMyStoreBlock`
 |UseConveyor|bool|
 
 ## SurvivalKit
-
-Available as: `IMyAssembler`, `IMyFunctionalBlock`, `IMyProductionBlock`
 
 ### Actions
 
@@ -4473,7 +4457,7 @@ Available as: `IMyAssembler`, `IMyFunctionalBlock`, `IMyProductionBlock`
 
 ## TargetDummyBlock
 
-Available as: `IMyFunctionalBlock`
+Interface: `IMyTargetDummyBlock`
 
 ### Actions
 
@@ -4521,7 +4505,7 @@ Available as: `IMyFunctionalBlock`
 
 ## TerminalBlock
 
-Available as: `IMyTerminalBlock`
+Interface: `IMyTerminalBlock`
 
 ### Actions
 
@@ -4543,7 +4527,7 @@ Available as: `IMyTerminalBlock`
 
 ## TextPanel
 
-Available as: `IMyFunctionalBlock`, `IMyTextPanel`
+Interface: `IMyTextPanel`
 
 ### Actions
 
@@ -4609,7 +4593,7 @@ Available as: `IMyFunctionalBlock`, `IMyTextPanel`
 
 ## Thrust
 
-Available as: `IMyFunctionalBlock`, `IMyThrust`
+Interface: `IMyThrust`
 
 ### Actions
 
@@ -4657,7 +4641,7 @@ Available as: `IMyFunctionalBlock`, `IMyThrust`
 
 ## TimerBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTimerBlock`
+Interface: `IMyTimerBlock`
 
 ### Actions
 
@@ -4709,7 +4693,7 @@ Available as: `IMyFunctionalBlock`, `IMyTimerBlock`
 
 ## TransponderBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTransponder`
+Interface: `IMyTransponder`
 
 ### Actions
 
@@ -4763,7 +4747,7 @@ Available as: `IMyFunctionalBlock`, `IMyTransponder`
 
 ## TurretControlBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTurretControlBlock`
+Interface: `IMyTurretControlBlock`
 
 ### Actions
 
@@ -4879,7 +4863,7 @@ Available as: `IMyFunctionalBlock`, `IMyTurretControlBlock`
 
 ## UpgradeModule
 
-Available as: `IMyFunctionalBlock`, `IMyUpgradeModule`
+Interface: `IMyUpgradeModule`
 
 ### Actions
 
@@ -4922,8 +4906,6 @@ Available as: `IMyFunctionalBlock`, `IMyUpgradeModule`
 |TextPaddingSlider|float|
 
 ## VendingMachine
-
-Available as: `IMyFunctionalBlock`, `IMyStoreBlock`
 
 ### Actions
 
@@ -4971,7 +4953,7 @@ Available as: `IMyFunctionalBlock`, `IMyStoreBlock`
 
 ## VirtualMass
 
-Available as: `IMyFunctionalBlock`, `IMyArtificialMassBlock`, `IMyVirtualMass`
+Interface: `IMyArtificialMassBlock`
 
 ### Actions
 
@@ -5015,7 +4997,7 @@ Available as: `IMyFunctionalBlock`, `IMyArtificialMassBlock`, `IMyVirtualMass`
 
 ## Warhead
 
-Available as: `IMyWarhead`
+Interface: `IMyWarhead`
 
 ### Actions
 
@@ -5047,7 +5029,7 @@ Available as: `IMyWarhead`
 
 ## WindTurbine
 
-Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyWindTurbine`
+Interface: `IMyWindTurbine`
 
 ### Actions
 
