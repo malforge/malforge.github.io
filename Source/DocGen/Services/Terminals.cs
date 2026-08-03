@@ -67,9 +67,10 @@ namespace DocGen.Services
                 document.AppendLine($"## {GetDisplayName(block)}");
                 document.AppendLine();
 
-                if (block.IngameInterfaces.Any())
+                var interfaces = GetFetchableAs(block);
+                if (interfaces.Any())
                 {
-                    document.AppendLine("Available as: " + string.Join(", ", block.IngameInterfaces.Select(i => $"`{GetBlockName(i)}`")));
+                    document.AppendLine("Available as: " + string.Join(", ", interfaces.Select(i => $"`{i}`")));
                     document.AppendLine();
                 }
 
@@ -157,6 +158,27 @@ namespace DocGen.Services
             return name;
         }
 
+        const string TerminalBlockInterface = "IMyTerminalBlock";
+
+        /// <summary>
+        ///     The interfaces worth telling someone about: the ones they can actually fetch the block through.
+        /// </summary>
+        /// <remarks>
+        ///     Only interfaces descending from <c>IMyTerminalBlock</c> qualify, which drops the cross-cutting ones
+        ///     such as <c>IMyCubeBlock</c>, <c>IMyEntity</c> and <c>IMyInventoryOwner</c> that every block carries
+        ///     and none of which help you find it. <c>IMyTerminalBlock</c> itself is left out because it is true of
+        ///     everything, unless a block has nothing else, in which case it is the honest answer.
+        /// </remarks>
+        List<string> GetFetchableAs(BlockInfo block)
+        {
+            var interfaces = block.TerminalInterfaces
+                .Select(GetBlockName)
+                .Where(name => name != TerminalBlockInterface)
+                .ToList();
+
+            return interfaces.Count > 0 ? interfaces : new List<string> { TerminalBlockInterface };
+        }
+
         /// <summary>
         ///     What a block is listed under. The type definition, because it is the one thing every block has:
         ///     a dozen block classes carry no terminal interface attribute, so the interface name is blank for
@@ -197,11 +219,16 @@ namespace DocGen.Services
                 BlockInterfaceType = (string)element.Attribute("type");
                 Subtype = (string)element.Attribute("subtype");
                 ClassName = (string)element.Attribute("class");
+                var ingameInterfaces = element.Elements("interface")
+                    .Where(i => !string.IsNullOrEmpty((string)i.Attribute("name")))
+                    .OrderBy(i => (string)i.Attribute("name"), StringComparer.Ordinal)
+                    .ToList();
                 IngameInterfaces = new ReadOnlyCollection<string>(
-                    element.Elements("interface")
+                    ingameInterfaces.Select(i => (string)i.Attribute("name")).ToList());
+                TerminalInterfaces = new ReadOnlyCollection<string>(
+                    ingameInterfaces
+                        .Where(i => string.Equals((string)i.Attribute("terminal"), "true", StringComparison.OrdinalIgnoreCase))
                         .Select(i => (string)i.Attribute("name"))
-                        .Where(n => !string.IsNullOrEmpty(n))
-                        .OrderBy(n => n, StringComparer.Ordinal)
                         .ToList());
                 var actions = new List<TerminalAction>();
                 var elements = element.Elements("action");
@@ -230,8 +257,15 @@ namespace DocGen.Services
             /// <summary>The runtime block class, for tracing an entry back to the game.</summary>
             public string ClassName { get; }
 
-            /// <summary>Every ingame interface the block implements, and so every interface it can be fetched through.</summary>
+            /// <summary>Every ingame interface the block implements.</summary>
             public ReadOnlyCollection<string> IngameInterfaces { get; }
+
+            /// <summary>
+            ///     Those of <see cref="IngameInterfaces" /> descending from <c>IMyTerminalBlock</c>, which are the
+            ///     ones a script can actually fetch the block through. The extractor marks these, since only it
+            ///     has the type hierarchy to hand.
+            /// </summary>
+            public ReadOnlyCollection<string> TerminalInterfaces { get; }
 
             public ReadOnlyCollection<TerminalProperty> Properties { get; set; }
 

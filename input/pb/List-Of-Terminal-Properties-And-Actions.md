@@ -19,9 +19,6 @@ Blocks are listed by their type definition. A block can be fetched through any o
 [ContractBlock](#contractblock)  
 [ConveyorSorter](#conveyorsorter)  
 [CryoChamber](#cryochamber)  
-[DebugSphere1](#debugsphere1)  
-[DebugSphere2](#debugsphere2)  
-[DebugSphere3](#debugsphere3)  
 [Decoy](#decoy)  
 [DefensiveCombatBlock](#defensivecombatblock)  
 [Door](#door)  
@@ -59,7 +56,6 @@ Blocks are listed by their type definition. A block can be fetched through any o
 [OxygenTank](#oxygentank)  
 [Parachute](#parachute)  
 [PathRecorderBlock](#pathrecorderblock)  
-[PistonBase](#pistonbase)  
 [Projector](#projector)  
 [RadioAntenna](#radioantenna)  
 [Reactor](#reactor)  
@@ -95,7 +91,7 @@ Blocks are listed by their type definition. A block can be fetched through any o
 
 ## AirtightHangarDoor
 
-Available as: `IMyAirtightDoorBase`, `IMyAirtightHangarDoor`, `IMyDoor`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyAirtightDoorBase`, `IMyAirtightHangarDoor`, `IMyDoor`, `IMyFunctionalBlock`
 
 ### Actions
 
@@ -145,7 +141,7 @@ Available as: `IMyAirtightDoorBase`, `IMyAirtightHangarDoor`, `IMyDoor`, `IMyFun
 
 ## AirtightSlideDoor
 
-Available as: `IMyAirtightDoorBase`, `IMyAirtightSlideDoor`, `IMyDoor`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyAirtightDoorBase`, `IMyAirtightSlideDoor`, `IMyDoor`, `IMyFunctionalBlock`
 
 ### Actions
 
@@ -195,7 +191,7 @@ Available as: `IMyAirtightDoorBase`, `IMyAirtightSlideDoor`, `IMyDoor`, `IMyFunc
 
 ## AirVent
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyAirVent`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyAirVent`
 
 ### Actions
 
@@ -243,7 +239,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## Assembler
 
-Available as: `IMyAssembler`, `IMyFunctionalBlock`, `IMyProductionBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyAssembler`, `IMyFunctionalBlock`, `IMyProductionBlock`
 
 ### Actions
 
@@ -291,7 +287,7 @@ Available as: `IMyAssembler`, `IMyFunctionalBlock`, `IMyProductionBlock`, `IMyTe
 
 ## BasicMissionBlock
 
-Available as: `IMyBasicMissionBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyBasicMissionBlock`, `IMyFunctionalBlock`
 
 ### Actions
 
@@ -356,7 +352,7 @@ Available as: `IMyBasicMissionBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, 
 
 ## BatteryBlock
 
-Available as: `IMyBatteryBlock`, `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyBatteryBlock`, `IMyFunctionalBlock`, `IMyPowerProducer`
 
 ### Actions
 
@@ -408,7 +404,7 @@ Available as: `IMyBatteryBlock`, `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyT
 
 ## Beacon
 
-Available as: `IMyBeacon`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyBeacon`, `IMyFunctionalBlock`
 
 ### Actions
 
@@ -458,7 +454,7 @@ Available as: `IMyBeacon`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSur
 
 ## BroadcastController
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyBroadcastController`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyBroadcastController`
 
 ### Actions
 
@@ -527,7 +523,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## ButtonPanel
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyButtonPanel`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyButtonPanel`
 
 ### Actions
 
@@ -574,7 +570,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## CameraBlock
 
-Available as: `IMyCameraBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyCameraBlock`, `IMyFunctionalBlock`
 
 ### Actions
 
@@ -618,7 +614,7 @@ Available as: `IMyCameraBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTe
 
 ## CargoContainer
 
-Available as: `IMyCargoContainer`, `IMyTerminalBlock`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyCargoContainer`
 
 ### Actions
 
@@ -640,7 +636,7 @@ Available as: `IMyCargoContainer`, `IMyTerminalBlock`, `IMyUpgradableBlock`, `IM
 
 ## Cockpit
 
-Available as: `IMyCockpit`, `IMyShipController`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyCockpit`, `IMyShipController`
 
 ### Actions
 
@@ -698,7 +694,7 @@ Available as: `IMyCockpit`, `IMyShipController`, `IMyTerminalBlock`, `IMyTextSur
 
 ## Collector
 
-Available as: `IMyCollector`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyCollector`, `IMyFunctionalBlock`
 
 ### Actions
 
@@ -744,7 +740,7 @@ Available as: `IMyCollector`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyText
 
 ## ContractBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`
 
 ### Actions
 
@@ -790,7 +786,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## ConveyorSorter
 
-Available as: `IMyConveyorSorter`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyConveyorSorter`, `IMyFunctionalBlock`
 
 ### Actions
 
@@ -840,7 +836,7 @@ Available as: `IMyConveyorSorter`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IM
 
 ## CryoChamber
 
-Available as: `IMyCockpit`, `IMyCryoChamber`, `IMyShipController`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyCockpit`, `IMyCryoChamber`, `IMyShipController`
 
 ### Actions
 
@@ -896,141 +892,9 @@ Available as: `IMyCockpit`, `IMyCryoChamber`, `IMyShipController`, `IMyTerminalB
 |TargetLocking|bool|
 |TextPaddingSlider|float|
 
-## DebugSphere1
-
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
-
-### Actions
-
-|Name|Description|
-|-|-|
-|DecreaseChangeIntervalSlider|Decrease Image change interval|
-|DecreaseFontSize|Decrease Font Size|
-|DecreaseTextPaddingSlider|Decrease Text Padding|
-|IncreaseChangeIntervalSlider|Increase Image change interval|
-|IncreaseFontSize|Increase Font Size|
-|IncreaseTextPaddingSlider|Increase Text Padding|
-|OnOff|Toggle block On/Off|
-|OnOff_Off|Toggle block Off|
-|OnOff_On|Toggle block On|
-|PreserveAspectRatio|Preserve aspect ratio On/Off|
-|ShowOnHUD|Show on HUD On/Off|
-|ShowOnHUD_Off|Show on HUD Off|
-|ShowOnHUD_On|Show on HUD On|
-
-### Properties
-
-|Name|Type|
-|-|-|
-|alignment|long|
-|BackgroundColor|Color|
-|ChangeIntervalSlider|float|
-|Content|long|
-|Font|long|
-|FontColor|Color|
-|FontSize|float|
-|Name|StringBuilder|
-|OnOff|bool|
-|PreserveAspectRatio|bool|
-|ScriptBackgroundColor|Color|
-|ScriptForegroundColor|Color|
-|ShowInInventory|bool|
-|ShowInTerminal|bool|
-|ShowInToolbarConfig|bool|
-|ShowOnHUD|bool|
-|TextPaddingSlider|float|
-
-## DebugSphere2
-
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
-
-### Actions
-
-|Name|Description|
-|-|-|
-|DecreaseChangeIntervalSlider|Decrease Image change interval|
-|DecreaseFontSize|Decrease Font Size|
-|DecreaseTextPaddingSlider|Decrease Text Padding|
-|IncreaseChangeIntervalSlider|Increase Image change interval|
-|IncreaseFontSize|Increase Font Size|
-|IncreaseTextPaddingSlider|Increase Text Padding|
-|OnOff|Toggle block On/Off|
-|OnOff_Off|Toggle block Off|
-|OnOff_On|Toggle block On|
-|PreserveAspectRatio|Preserve aspect ratio On/Off|
-|ShowOnHUD|Show on HUD On/Off|
-|ShowOnHUD_Off|Show on HUD Off|
-|ShowOnHUD_On|Show on HUD On|
-
-### Properties
-
-|Name|Type|
-|-|-|
-|alignment|long|
-|BackgroundColor|Color|
-|ChangeIntervalSlider|float|
-|Content|long|
-|Font|long|
-|FontColor|Color|
-|FontSize|float|
-|Name|StringBuilder|
-|OnOff|bool|
-|PreserveAspectRatio|bool|
-|ScriptBackgroundColor|Color|
-|ScriptForegroundColor|Color|
-|ShowInInventory|bool|
-|ShowInTerminal|bool|
-|ShowInToolbarConfig|bool|
-|ShowOnHUD|bool|
-|TextPaddingSlider|float|
-
-## DebugSphere3
-
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
-
-### Actions
-
-|Name|Description|
-|-|-|
-|DecreaseChangeIntervalSlider|Decrease Image change interval|
-|DecreaseFontSize|Decrease Font Size|
-|DecreaseTextPaddingSlider|Decrease Text Padding|
-|IncreaseChangeIntervalSlider|Increase Image change interval|
-|IncreaseFontSize|Increase Font Size|
-|IncreaseTextPaddingSlider|Increase Text Padding|
-|OnOff|Toggle block On/Off|
-|OnOff_Off|Toggle block Off|
-|OnOff_On|Toggle block On|
-|PreserveAspectRatio|Preserve aspect ratio On/Off|
-|ShowOnHUD|Show on HUD On/Off|
-|ShowOnHUD_Off|Show on HUD Off|
-|ShowOnHUD_On|Show on HUD On|
-
-### Properties
-
-|Name|Type|
-|-|-|
-|alignment|long|
-|BackgroundColor|Color|
-|ChangeIntervalSlider|float|
-|Content|long|
-|Font|long|
-|FontColor|Color|
-|FontSize|float|
-|Name|StringBuilder|
-|OnOff|bool|
-|PreserveAspectRatio|bool|
-|ScriptBackgroundColor|Color|
-|ScriptForegroundColor|Color|
-|ShowInInventory|bool|
-|ShowInTerminal|bool|
-|ShowInToolbarConfig|bool|
-|ShowOnHUD|bool|
-|TextPaddingSlider|float|
-
 ## Decoy
 
-Available as: `IMyDecoy`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyDecoy`, `IMyFunctionalBlock`
 
 ### Actions
 
@@ -1074,7 +938,7 @@ Available as: `IMyDecoy`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurf
 
 ## DefensiveCombatBlock
 
-Available as: `IMyDefensiveCombatBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyDefensiveCombatBlock`, `IMyFunctionalBlock`
 
 ### Actions
 
@@ -1151,7 +1015,7 @@ Available as: `IMyDefensiveCombatBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock
 
 ## Door
 
-Available as: `IMyDoor`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyDoor`, `IMyFunctionalBlock`
 
 ### Actions
 
@@ -1201,7 +1065,7 @@ Available as: `IMyDoor`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfa
 
 ## Drill
 
-Available as: `IMyFunctionalBlock`, `IMyShipDrill`, `IMyShipToolBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMyShipDrill`, `IMyShipToolBase`
 
 ### Actions
 
@@ -1251,7 +1115,7 @@ Available as: `IMyFunctionalBlock`, `IMyShipDrill`, `IMyShipToolBase`, `IMyTermi
 
 ## EmotionControllerBlock
 
-Available as: `IMyEmotionControllerBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyEmotionControllerBlock`, `IMyFunctionalBlock`
 
 ### Actions
 
@@ -1311,7 +1175,7 @@ Available as: `IMyEmotionControllerBlock`, `IMyFunctionalBlock`, `IMyTerminalBlo
 
 ## EventControllerBlock
 
-Available as: `IMyEventControllerBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyEventControllerBlock`, `IMyFunctionalBlock`
 
 ### Actions
 
@@ -1380,7 +1244,7 @@ Available as: `IMyEventControllerBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock
 
 ## ExhaustBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`
 
 ### Actions
 
@@ -1428,7 +1292,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## ExtendedPistonBase
 
-Available as: `IMyExtendedPistonBase`, `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyPistonBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyExtendedPistonBase`, `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyPistonBase`
 
 ### Actions
 
@@ -1504,7 +1368,7 @@ Available as: `IMyExtendedPistonBase`, `IMyFunctionalBlock`, `IMyMechanicalConne
 
 ## FlightMovementBlock
 
-Available as: `IMyFlightMovementBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFlightMovementBlock`, `IMyFunctionalBlock`
 
 ### Actions
 
@@ -1577,7 +1441,7 @@ Available as: `IMyFlightMovementBlock`, `IMyFunctionalBlock`, `IMyTerminalBlock`
 
 ## FunctionalBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`
 
 ### Actions
 
@@ -1621,7 +1485,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## GravityGenerator
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyGravityGenerator`, `IMyGravityGeneratorBase`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyGravityGenerator`, `IMyGravityGeneratorBase`
 
 ### Actions
 
@@ -1678,7 +1542,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## GravityGeneratorSphere
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyGravityGeneratorBase`, `IMyGravityGeneratorSphere`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyGravityGeneratorBase`, `IMyGravityGeneratorSphere`
 
 ### Actions
 
@@ -1729,7 +1593,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## Gyro
 
-Available as: `IMyFunctionalBlock`, `IMyGyro`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyGyro`
 
 ### Actions
 
@@ -1793,7 +1657,7 @@ Available as: `IMyFunctionalBlock`, `IMyGyro`, `IMyTerminalBlock`, `IMyTextSurfa
 
 ## HeatVentBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyHeatVent`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyHeatVent`
 
 ### Actions
 
@@ -1856,7 +1720,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## HydrogenEngine
 
-Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyPowerProducer`
 
 ### Actions
 
@@ -1900,7 +1764,7 @@ Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyTerminalBlock`, `IMy
 
 ## InteriorLight
 
-Available as: `IMyFunctionalBlock`, `IMyLightingBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyInteriorLight`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyLightingBlock`, `IMyInteriorLight`
 
 ### Actions
 
@@ -1969,7 +1833,7 @@ Available as: `IMyFunctionalBlock`, `IMyLightingBlock`, `IMyTerminalBlock`, `IMy
 
 ## InteriorTurret
 
-Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUserControllableGun`, `IMyLargeInteriorTurret`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyUserControllableGun`, `IMyLargeInteriorTurret`
 
 ### Actions
 
@@ -2069,7 +1933,7 @@ Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyTerminalBlock`, `I
 
 ## Jukebox
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMySoundBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMySoundBlock`
 
 ### Actions
 
@@ -2124,7 +1988,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## JumpDrive
 
-Available as: `IMyFunctionalBlock`, `IMyJumpDrive`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyJumpDrive`
 
 ### Actions
 
@@ -2177,7 +2041,7 @@ Available as: `IMyFunctionalBlock`, `IMyJumpDrive`, `IMyTerminalBlock`, `IMyText
 
 ## LandingGear
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyLandingGear`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyLandingGear`
 
 ### Actions
 
@@ -2228,7 +2092,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## LargeGatlingTurret
 
-Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUserControllableGun`, `IMyLargeConveyorTurretBase`, `IMyLargeGatlingTurret`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyUserControllableGun`, `IMyLargeConveyorTurretBase`, `IMyLargeGatlingTurret`
 
 ### Actions
 
@@ -2330,7 +2194,7 @@ Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyTerminalBlock`, `I
 
 ## LargeMissileTurret
 
-Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUserControllableGun`, `IMyLargeConveyorTurretBase`, `IMyLargeMissileTurret`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyUserControllableGun`, `IMyLargeConveyorTurretBase`, `IMyLargeMissileTurret`
 
 ### Actions
 
@@ -2432,7 +2296,7 @@ Available as: `IMyFunctionalBlock`, `IMyLargeTurretBase`, `IMyTerminalBlock`, `I
 
 ## LaserAntenna
 
-Available as: `IMyFunctionalBlock`, `IMyLaserAntenna`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyLaserAntenna`
 
 ### Actions
 
@@ -2485,7 +2349,7 @@ Available as: `IMyFunctionalBlock`, `IMyLaserAntenna`, `IMyTerminalBlock`, `IMyT
 
 ## LCDPanelsBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`
 
 ### Actions
 
@@ -2529,7 +2393,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## MedicalRoom
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyMedicalRoom`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyMedicalRoom`
 
 ### Actions
 
@@ -2576,7 +2440,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## MergeBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyShipMergeBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyShipMergeBlock`
 
 ### Actions
 
@@ -2620,7 +2484,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## MotorAdvancedStator
 
-Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorAdvancedStator`, `IMyMotorBase`, `IMyMotorStator`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorAdvancedStator`, `IMyMotorBase`, `IMyMotorStator`
 
 ### Actions
 
@@ -2714,7 +2578,7 @@ Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorAdv
 
 ## MotorStator
 
-Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorBase`, `IMyMotorStator`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorBase`, `IMyMotorStator`
 
 ### Actions
 
@@ -2808,7 +2672,7 @@ Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorBas
 
 ## MotorSuspension
 
-Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorBase`, `IMyMotorSuspension`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorBase`, `IMyMotorSuspension`
 
 ### Actions
 
@@ -2909,7 +2773,7 @@ Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyMotorBas
 
 ## MyProgrammableBlock
 
-Available as: `IMyFunctionalBlock`, `IMyProgrammableBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyProgrammableBlock`
 
 ### Actions
 
@@ -2956,7 +2820,7 @@ Available as: `IMyFunctionalBlock`, `IMyProgrammableBlock`, `IMyTerminalBlock`, 
 
 ## OffensiveCombatBlock
 
-Available as: `IMyFunctionalBlock`, `IMyOffensiveCombatBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyOffensiveCombatBlock`
 
 ### Actions
 
@@ -3075,7 +2939,7 @@ Available as: `IMyFunctionalBlock`, `IMyOffensiveCombatBlock`, `IMyTerminalBlock
 
 ## OreDetector
 
-Available as: `IMyFunctionalBlock`, `IMyOreDetector`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyOreDetector`
 
 ### Actions
 
@@ -3122,7 +2986,7 @@ Available as: `IMyFunctionalBlock`, `IMyOreDetector`, `IMyTerminalBlock`, `IMyTe
 
 ## OxygenFarm
 
-Available as: `IMyFunctionalBlock`, `IMySolarOccludable`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyOxygenFarm`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyOxygenFarm`
 
 ### Actions
 
@@ -3166,13 +3030,12 @@ Available as: `IMyFunctionalBlock`, `IMySolarOccludable`, `IMyTerminalBlock`, `I
 
 ## OxygenGenerator
 
-Available as: `IMyFunctionalBlock`, `IMyGasGenerator`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMyGasGenerator`
 
 ### Actions
 
 |Name|Description|
 |-|-|
-|AutomaticallyPullBottles|Automatically Pull Bottles On/Off|
 |Auto-Refill|Auto-Refill On/Off|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
@@ -3195,7 +3058,6 @@ Available as: `IMyFunctionalBlock`, `IMyGasGenerator`, `IMyTerminalBlock`, `IMyT
 |Name|Type|
 |-|-|
 |alignment|long|
-|AutomaticallyPullBottles|bool|
 |Auto-Refill|bool|
 |BackgroundColor|Color|
 |ChangeIntervalSlider|float|
@@ -3217,7 +3079,7 @@ Available as: `IMyFunctionalBlock`, `IMyGasGenerator`, `IMyTerminalBlock`, `IMyT
 
 ## OxygenTank
 
-Available as: `IMyFunctionalBlock`, `IMyGasTank`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMyGasTank`
 
 ### Actions
 
@@ -3268,7 +3130,7 @@ Available as: `IMyFunctionalBlock`, `IMyGasTank`, `IMyTerminalBlock`, `IMyTextSu
 
 ## Parachute
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyParachute`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyParachute`
 
 ### Actions
 
@@ -3276,8 +3138,6 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 |-|-|
 |AnyoneCanUse|Anyone Can Use On/Off|
 |AutoDeploy|Auto deploy On/Off|
-|AutoDeploy_Off|Auto deploy Off|
-|AutoDeploy_On|Auto deploy On|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
@@ -3323,7 +3183,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## PathRecorderBlock
 
-Available as: `IMyFunctionalBlock`, `IMyPathRecorderBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyPathRecorderBlock`
 
 ### Actions
 
@@ -3391,85 +3251,9 @@ Available as: `IMyFunctionalBlock`, `IMyPathRecorderBlock`, `IMyTerminalBlock`, 
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
 
-## PistonBase
-
-Available as: `IMyFunctionalBlock`, `IMyMechanicalConnectionBlock`, `IMyPistonBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
-
-### Actions
-
-|Name|Description|
-|-|-|
-|Add Top Part|Add Piston Head|
-|DecreaseChangeIntervalSlider|Decrease Image change interval|
-|DecreaseFontSize|Decrease Font Size|
-|DecreaseLowerLimit|Decrease Minimum distance|
-|DecreaseMaxImpulseAxis|Decrease Max Impulse Axis|
-|DecreaseMaxImpulseNonAxis|Decrease Max Impulse NonAxis|
-|DecreaseSafetyDetach|Decrease Safety detach|
-|DecreaseTextPaddingSlider|Decrease Text Padding|
-|DecreaseUpperLimit|Decrease Maximum distance|
-|DecreaseVelocity|Decrease Velocity|
-|DecreaseWeld speed|Decrease Safety lock speed|
-|Extend|Extend|
-|Force weld|Safety lock override On/Off|
-|IncreaseChangeIntervalSlider|Increase Image change interval|
-|IncreaseFontSize|Increase Font Size|
-|IncreaseLowerLimit|Increase Minimum distance|
-|IncreaseMaxImpulseAxis|Increase Max Impulse Axis|
-|IncreaseMaxImpulseNonAxis|Increase Max Impulse NonAxis|
-|IncreaseSafetyDetach|Increase Safety detach|
-|IncreaseTextPaddingSlider|Increase Text Padding|
-|IncreaseUpperLimit|Increase Maximum distance|
-|IncreaseVelocity|Increase Velocity|
-|IncreaseWeld speed|Increase Safety lock speed|
-|OnOff|Toggle block On/Off|
-|OnOff_Off|Toggle block Off|
-|OnOff_On|Toggle block On|
-|PreserveAspectRatio|Preserve aspect ratio On/Off|
-|ResetVelocity|Reset Velocity|
-|Retract|Retract|
-|Reverse|Reverse|
-|SetAndMove|Set And Move|
-|SetVelocity|Set Velocity|
-|ShareInertiaTensor|Share inertia tensor On/Off|
-|ShowOnHUD|Show on HUD On/Off|
-|ShowOnHUD_Off|Show on HUD Off|
-|ShowOnHUD_On|Show on HUD On|
-
-### Properties
-
-|Name|Type|
-|-|-|
-|alignment|long|
-|BackgroundColor|Color|
-|ChangeIntervalSlider|float|
-|Content|long|
-|Font|long|
-|FontColor|Color|
-|FontSize|float|
-|Force weld|bool|
-|LowerLimit|float|
-|MaxImpulseAxis|float|
-|MaxImpulseNonAxis|float|
-|Name|StringBuilder|
-|OnOff|bool|
-|PreserveAspectRatio|bool|
-|SafetyDetach|float|
-|ScriptBackgroundColor|Color|
-|ScriptForegroundColor|Color|
-|ShareInertiaTensor|bool|
-|ShowInInventory|bool|
-|ShowInTerminal|bool|
-|ShowInToolbarConfig|bool|
-|ShowOnHUD|bool|
-|TextPaddingSlider|float|
-|UpperLimit|float|
-|Velocity|float|
-|Weld speed|float|
-
 ## Projector
 
-Available as: `IMyFunctionalBlock`, `IMyProjector`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyProjector`
 
 ### Actions
 
@@ -3544,7 +3328,7 @@ Available as: `IMyFunctionalBlock`, `IMyProjector`, `IMyTerminalBlock`, `IMyText
 
 ## RadioAntenna
 
-Available as: `IMyFunctionalBlock`, `IMyRadioAntenna`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyRadioAntenna`
 
 ### Actions
 
@@ -3593,7 +3377,7 @@ Available as: `IMyFunctionalBlock`, `IMyRadioAntenna`, `IMyTerminalBlock`, `IMyT
 
 ## Reactor
 
-Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyReactor`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyReactor`
 
 ### Actions
 
@@ -3639,7 +3423,7 @@ Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyReactor`, `IMyTermin
 
 ## Refinery
 
-Available as: `IMyFunctionalBlock`, `IMyProductionBlock`, `IMyRefinery`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMyProductionBlock`, `IMyRefinery`
 
 ### Actions
 
@@ -3685,7 +3469,7 @@ Available as: `IMyFunctionalBlock`, `IMyProductionBlock`, `IMyRefinery`, `IMyTer
 
 ## ReflectorLight
 
-Available as: `IMyFunctionalBlock`, `IMyLightingBlock`, `IMyReflectorLight`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyLightingBlock`, `IMyReflectorLight`
 
 ### Actions
 
@@ -3757,7 +3541,7 @@ Available as: `IMyFunctionalBlock`, `IMyLightingBlock`, `IMyReflectorLight`, `IM
 
 ## RemoteControl
 
-Available as: `IMyRemoteControl`, `IMyShipController`, `IMyTerminalBlock`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyRemoteControl`, `IMyShipController`
 
 ### Actions
 
@@ -3827,7 +3611,7 @@ Available as: `IMyRemoteControl`, `IMyShipController`, `IMyTerminalBlock`, `IMyU
 
 ## SafeZoneBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMySafeZoneBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMySafeZoneBlock`
 
 ### Actions
 
@@ -3835,9 +3619,11 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 |-|-|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
+|DecreaseSafeZoneXSlider|Decrease Set Width|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
+|IncreaseSafeZoneXSlider|Increase Set Width|
 |IncreaseTextPaddingSlider|Increase Text Padding|
 |OnOff|Toggle block On/Off|
 |OnOff_Off|Toggle block Off|
@@ -3846,7 +3632,6 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
 |ShowOnHUD_On|Show on HUD On|
-|UseConveyor|Automatic Push/Pull On/Off|
 
 ### Properties
 
@@ -3887,11 +3672,10 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 |ShowInToolbarConfig|bool|
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
-|UseConveyor|bool|
 
 ## Searchlight
 
-Available as: `IMyFunctionalBlock`, `IMySearchlight`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMySearchlight`
 
 ### Actions
 
@@ -4011,7 +3795,7 @@ Available as: `IMyFunctionalBlock`, `IMySearchlight`, `IMyTerminalBlock`, `IMyTe
 
 ## SensorBlock
 
-Available as: `IMyFunctionalBlock`, `IMySensorBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMySensorBlock`
 
 ### Actions
 
@@ -4124,7 +3908,7 @@ Available as: `IMyFunctionalBlock`, `IMySensorBlock`, `IMyTerminalBlock`, `IMyTe
 
 ## ShipConnector
 
-Available as: `IMyFunctionalBlock`, `IMyShipConnector`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMyShipConnector`
 
 ### Actions
 
@@ -4195,7 +3979,7 @@ Available as: `IMyFunctionalBlock`, `IMyShipConnector`, `IMyTerminalBlock`, `IMy
 
 ## ShipGrinder
 
-Available as: `IMyFunctionalBlock`, `IMyShipGrinder`, `IMyShipToolBase`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMyShipGrinder`, `IMyShipToolBase`
 
 ### Actions
 
@@ -4241,7 +4025,7 @@ Available as: `IMyFunctionalBlock`, `IMyShipGrinder`, `IMyShipToolBase`, `IMyTer
 
 ## ShipWelder
 
-Available as: `IMyFunctionalBlock`, `IMyShipToolBase`, `IMyShipWelder`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMyShipToolBase`, `IMyShipWelder`
 
 ### Actions
 
@@ -4250,6 +4034,7 @@ Available as: `IMyFunctionalBlock`, `IMyShipToolBase`, `IMyShipWelder`, `IMyTerm
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
+|helpOthers|Help Others On/Off|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseTextPaddingSlider|Increase Text Padding|
@@ -4273,6 +4058,7 @@ Available as: `IMyFunctionalBlock`, `IMyShipToolBase`, `IMyShipWelder`, `IMyTerm
 |Font|long|
 |FontColor|Color|
 |FontSize|float|
+|helpOthers|bool|
 |Name|StringBuilder|
 |OnOff|bool|
 |PreserveAspectRatio|bool|
@@ -4287,7 +4073,7 @@ Available as: `IMyFunctionalBlock`, `IMyShipToolBase`, `IMyShipWelder`, `IMyTerm
 
 ## SmallGatlingGun
 
-Available as: `IMyFunctionalBlock`, `IMySmallGatlingGun`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUserControllableGun`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMySmallGatlingGun`, `IMyUserControllableGun`
 
 ### Actions
 
@@ -4338,7 +4124,7 @@ Available as: `IMyFunctionalBlock`, `IMySmallGatlingGun`, `IMyTerminalBlock`, `I
 
 ## SmallMissileLauncher
 
-Available as: `IMyFunctionalBlock`, `IMySmallMissileLauncher`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUserControllableGun`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMySmallMissileLauncher`, `IMyUserControllableGun`
 
 ### Actions
 
@@ -4389,7 +4175,7 @@ Available as: `IMyFunctionalBlock`, `IMySmallMissileLauncher`, `IMyTerminalBlock
 
 ## SmallMissileLauncherReload
 
-Available as: `IMyFunctionalBlock`, `IMySmallMissileLauncher`, `IMySmallMissileLauncherReload`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUserControllableGun`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMySmallMissileLauncher`, `IMySmallMissileLauncherReload`, `IMyUserControllableGun`
 
 ### Actions
 
@@ -4442,7 +4228,7 @@ Available as: `IMyFunctionalBlock`, `IMySmallMissileLauncher`, `IMySmallMissileL
 
 ## SolarPanel
 
-Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMySolarOccludable`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMySolarPanel`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMySolarPanel`
 
 ### Actions
 
@@ -4486,7 +4272,7 @@ Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMySolarOccludable`, `I
 
 ## SoundBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMySoundBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMySoundBlock`
 
 ### Actions
 
@@ -4541,7 +4327,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## SpaceBall
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMySpaceBall`, `IMyVirtualMass`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMySpaceBall`, `IMyVirtualMass`
 
 ### Actions
 
@@ -4590,7 +4376,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## StoreBlock
 
-Available as: `IMyFunctionalBlock`, `IMyStoreBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMyStoreBlock`
 
 ### Actions
 
@@ -4607,7 +4393,6 @@ Available as: `IMyFunctionalBlock`, `IMyStoreBlock`, `IMyTerminalBlock`, `IMyTex
 |OnOff_Off|Toggle block Off|
 |OnOff_On|Toggle block On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
-|Searchable|Searchable On/Off|
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
 |ShowOnHUD_On|Show on HUD On|
@@ -4630,7 +4415,6 @@ Available as: `IMyFunctionalBlock`, `IMyStoreBlock`, `IMyTerminalBlock`, `IMyTex
 |PreserveAspectRatio|bool|
 |ScriptBackgroundColor|Color|
 |ScriptForegroundColor|Color|
-|Searchable|bool|
 |ShowInInventory|bool|
 |ShowInTerminal|bool|
 |ShowInToolbarConfig|bool|
@@ -4640,7 +4424,7 @@ Available as: `IMyFunctionalBlock`, `IMyStoreBlock`, `IMyTerminalBlock`, `IMyTex
 
 ## SurvivalKit
 
-Available as: `IMyAssembler`, `IMyFunctionalBlock`, `IMyProductionBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyAssembler`, `IMyFunctionalBlock`, `IMyProductionBlock`
 
 ### Actions
 
@@ -4689,7 +4473,7 @@ Available as: `IMyAssembler`, `IMyFunctionalBlock`, `IMyProductionBlock`, `IMyTe
 
 ## TargetDummyBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`
 
 ### Actions
 
@@ -4737,7 +4521,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## TerminalBlock
 
-Available as: `IMyTerminalBlock`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyTerminalBlock`
 
 ### Actions
 
@@ -4759,7 +4543,7 @@ Available as: `IMyTerminalBlock`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEnti
 
 ## TextPanel
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextPanel`, `IMyTextSurface`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyTextPanel`
 
 ### Actions
 
@@ -4825,7 +4609,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextPanel`, `IMyText
 
 ## Thrust
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyThrust`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyThrust`
 
 ### Actions
 
@@ -4873,7 +4657,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## TimerBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyTimerBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyTimerBlock`
 
 ### Actions
 
@@ -4925,7 +4709,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## TransponderBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyTransponder`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyTransponder`
 
 ### Actions
 
@@ -4979,7 +4763,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## TurretControlBlock
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyTurretControlBlock`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyTurretControlBlock`
 
 ### Actions
 
@@ -5095,7 +4879,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## UpgradeModule
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyUpgradeModule`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyUpgradeModule`
 
 ### Actions
 
@@ -5139,7 +4923,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## VendingMachine
 
-Available as: `IMyFunctionalBlock`, `IMyStoreBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyCubeBlock`, `IMyEntity`, `IMyInventoryOwner`
+Available as: `IMyFunctionalBlock`, `IMyStoreBlock`
 
 ### Actions
 
@@ -5156,7 +4940,6 @@ Available as: `IMyFunctionalBlock`, `IMyStoreBlock`, `IMyTerminalBlock`, `IMyTex
 |OnOff_Off|Toggle block Off|
 |OnOff_On|Toggle block On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
-|Searchable|Searchable On/Off|
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
 |ShowOnHUD_On|Show on HUD On|
@@ -5179,7 +4962,6 @@ Available as: `IMyFunctionalBlock`, `IMyStoreBlock`, `IMyTerminalBlock`, `IMyTex
 |PreserveAspectRatio|bool|
 |ScriptBackgroundColor|Color|
 |ScriptForegroundColor|Color|
-|Searchable|bool|
 |ShowInInventory|bool|
 |ShowInTerminal|bool|
 |ShowInToolbarConfig|bool|
@@ -5189,7 +4971,7 @@ Available as: `IMyFunctionalBlock`, `IMyStoreBlock`, `IMyTerminalBlock`, `IMyTex
 
 ## VirtualMass
 
-Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyArtificialMassBlock`, `IMyVirtualMass`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyArtificialMassBlock`, `IMyVirtualMass`
 
 ### Actions
 
@@ -5233,7 +5015,7 @@ Available as: `IMyFunctionalBlock`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`
 
 ## Warhead
 
-Available as: `IMyTerminalBlock`, `IMyUpgradableBlock`, `IMyWarhead`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyWarhead`
 
 ### Actions
 
@@ -5265,7 +5047,7 @@ Available as: `IMyTerminalBlock`, `IMyUpgradableBlock`, `IMyWarhead`, `IMyCubeBl
 
 ## WindTurbine
 
-Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyTerminalBlock`, `IMyTextSurfaceProvider`, `IMyUpgradableBlock`, `IMyWindTurbine`, `IMyCubeBlock`, `IMyEntity`
+Available as: `IMyFunctionalBlock`, `IMyPowerProducer`, `IMyWindTurbine`
 
 ### Actions
 
