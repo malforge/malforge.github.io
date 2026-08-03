@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <terminals>
-  <block type="Sandbox.ModAPI.Ingame.IMyShipDrill" typedefinition="Drill">
+  <block typedefinition="Drill" subtype="LargeBlockDrillReskin" class="Sandbox.Game.Weapons.MyShipDrill" type="Sandbox.ModAPI.Ingame.IMyShipDrill">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyShipDrill" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyShipToolBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -38,7 +47,16 @@
     <property name="UseConveyor" type="Boolean" />
     <property name="TerrainClearingMode" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyShipGrinder" typedefinition="ShipGrinder">
+  <block typedefinition="ShipGrinder" subtype="LargeShipGrinderReskin" class="Sandbox.Game.Weapons.MyShipGrinder" type="Sandbox.ModAPI.Ingame.IMyShipGrinder">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyShipGrinder" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyShipToolBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -72,7 +90,16 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyShipWelder" typedefinition="ShipWelder">
+  <block typedefinition="ShipWelder" subtype="LargeShipWelderReskin" class="SpaceEngineers.Game.Entities.Blocks.MyShipWelder" type="Sandbox.ModAPI.Ingame.IMyShipWelder">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyShipToolBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyShipWelder" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -87,7 +114,6 @@
     <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
     <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
     <action name="UseConveyor" text="Automatic Push/Pull On/Off" />
-    <action name="helpOthers" text="Help Others On/Off" />
     <property name="OnOff" type="Boolean" />
     <property name="ShowInTerminal" type="Boolean" />
     <property name="ShowInInventory" type="Boolean" />
@@ -106,9 +132,14 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
-    <property name="helpOthers" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" typedefinition="FunctionalBlock">
+  <block typedefinition="FunctionalBlock" subtype="LargeBlockAlgaeFarmReskin" class="Sandbox.Game.Entities.Cube.MyFunctionalBlock" type="Sandbox.ModAPI.Ingame.IMyFunctionalBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -140,7 +171,15 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyOxygenFarm" typedefinition="OxygenFarm">
+  <block typedefinition="OxygenFarm" subtype="LargeBlockOxygenFarmReskin" class="SpaceEngineers.Game.Entities.Blocks.MyOxygenFarm" type="SpaceEngineers.Game.ModAPI.Ingame.IMyOxygenFarm">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMySolarOccludable" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyOxygenFarm" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -172,7 +211,15 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyInteriorLight" typedefinition="InteriorLight">
+  <block typedefinition="InteriorLight" subtype="LargeBlockInsetTerrariumDesert" class="SpaceEngineers.Game.Entities.Blocks.MyInteriorLight" type="SpaceEngineers.Game.ModAPI.Ingame.IMyInteriorLight">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyLightingBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyInteriorLight" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -229,7 +276,60 @@
     <property name="Blink Lenght" type="Single" />
     <property name="Blink Offset" type="Single" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyOreDetector" typedefinition="OreDetector">
+  <block typedefinition="SurvivalKit" subtype="SurvivalKitLargeReskin" class="SpaceEngineers.Game.Entities.Blocks.MySurvivalKit" type="">
+    <interface name="Sandbox.ModAPI.Ingame.IMyAssembler" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyProductionBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
+    <action name="OnOff" text="Toggle block On/Off" />
+    <action name="OnOff_On" text="Toggle block On" />
+    <action name="OnOff_Off" text="Toggle block Off" />
+    <action name="ShowOnHUD" text="Show on HUD On/Off" />
+    <action name="ShowOnHUD_On" text="Show on HUD On" />
+    <action name="ShowOnHUD_Off" text="Show on HUD Off" />
+    <action name="IncreaseFontSize" text="Increase Font Size" />
+    <action name="DecreaseFontSize" text="Decrease Font Size" />
+    <action name="IncreaseTextPaddingSlider" text="Increase Text Padding" />
+    <action name="DecreaseTextPaddingSlider" text="Decrease Text Padding" />
+    <action name="IncreaseChangeIntervalSlider" text="Increase Image change interval" />
+    <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
+    <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
+    <action name="UseConveyor" text="Automatic Push/Pull On/Off" />
+    <action name="slaveMode" text="Cooperative Mode On/Off" />
+    <property name="OnOff" type="Boolean" />
+    <property name="ShowInTerminal" type="Boolean" />
+    <property name="ShowInInventory" type="Boolean" />
+    <property name="ShowInToolbarConfig" type="Boolean" />
+    <property name="Name" type="StringBuilder" />
+    <property name="ShowOnHUD" type="Boolean" />
+    <property name="Content" type="Int64" />
+    <property name="ScriptForegroundColor" type="Color" />
+    <property name="ScriptBackgroundColor" type="Color" />
+    <property name="Font" type="Int64" />
+    <property name="FontSize" type="Single" />
+    <property name="FontColor" type="Color" />
+    <property name="alignment" type="Int64" />
+    <property name="TextPaddingSlider" type="Single" />
+    <property name="BackgroundColor" type="Color" />
+    <property name="ChangeIntervalSlider" type="Single" />
+    <property name="PreserveAspectRatio" type="Boolean" />
+    <property name="UseConveyor" type="Boolean" />
+    <property name="slaveMode" type="Boolean" />
+    <property name="SpawnName" type="StringBuilder" />
+  </block>
+  <block typedefinition="OreDetector" subtype="LargeOreDetectorReskin" class="Sandbox.Game.Entities.Cube.MyOreDetector" type="Sandbox.ModAPI.Ingame.IMyOreDetector">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyOreDetector" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -264,7 +364,14 @@
     <property name="Range" type="Single" />
     <property name="BroadcastUsingAntennas" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyProgrammableBlock" typedefinition="MyProgrammableBlock">
+  <block typedefinition="MyProgrammableBlock" subtype="LargeProgrammableBlock" class="Sandbox.Game.Entities.Blocks.MyProgrammableBlock" type="Sandbox.ModAPI.Ingame.IMyProgrammableBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyProgrammableBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -299,7 +406,14 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="ConsoleCommand" type="StringBuilder" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyProjector" typedefinition="Projector">
+  <block typedefinition="Projector" subtype="LargeProjector" class="Entities.Blocks.MySpaceProjector" type="Sandbox.ModAPI.Ingame.IMyProjector">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyProjector" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -362,7 +476,14 @@
     <property name="NumberOfProjections" type="Single" />
     <property name="NumberOfBlocks" type="Single" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMySensorBlock" typedefinition="SensorBlock">
+  <block typedefinition="SensorBlock" subtype="LargeBlockSensor" class="Sandbox.Game.Entities.Blocks.MySensorBlock" type="Sandbox.ModAPI.Ingame.IMySensorBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMySensorBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -463,7 +584,14 @@
     <property name="Detect Neutral" type="Boolean" />
     <property name="Detect Enemy" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyTargetDummyBlock" typedefinition="TargetDummyBlock">
+  <block typedefinition="TargetDummyBlock" subtype="TargetDummy" class="Sandbox.Game.Entities.Blocks.MyTargetDummyBlock" type="Sandbox.ModAPI.Ingame.IMyTargetDummyBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -499,7 +627,14 @@
     <property name="Delay" type="Single" />
     <property name="Enable Restoration" type="Boolean" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMySoundBlock" typedefinition="SoundBlock">
+  <block typedefinition="SoundBlock" subtype="LargeBlockSoundBlock" class="SpaceEngineers.Game.Entities.Blocks.MySoundBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMySoundBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMySoundBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -542,7 +677,14 @@
     <property name="RangeSlider" type="Single" />
     <property name="LoopableSlider" type="Single" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyButtonPanel" typedefinition="ButtonPanel">
+  <block typedefinition="ButtonPanel" subtype="ButtonPanelLarge" class="SpaceEngineers.Game.Entities.Blocks.MyButtonPanel" type="SpaceEngineers.Game.ModAPI.Ingame.IMyButtonPanel">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyButtonPanel" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -577,7 +719,14 @@
     <property name="AnyoneCanUse" type="Boolean" />
     <property name="ButtonName" type="StringBuilder" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyTimerBlock" typedefinition="TimerBlock">
+  <block typedefinition="TimerBlock" subtype="TimerBlockLarge" class="SpaceEngineers.Game.Entities.Blocks.MyTimerBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyTimerBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyTimerBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -617,7 +766,14 @@
     <property name="Silent" type="Boolean" />
     <property name="TriggerDelay" type="Single" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyTurretControlBlock" typedefinition="TurretControlBlock">
+  <block typedefinition="TurretControlBlock" subtype="LargeTurretControlBlock" class="SpaceEngineers.Game.Entities.Blocks.MyTurretControlBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyTurretControlBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyTurretControlBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -721,7 +877,14 @@
     <property name="EnableTargetLocking" type="Boolean" />
     <property name="TargetingGroup_Selector" type="Int64" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyEventControllerBlock" typedefinition="EventControllerBlock">
+  <block typedefinition="EventControllerBlock" subtype="EventControllerLarge" class="SpaceEngineers.Game.Entities.Blocks.MyEventControllerBlock" type="Sandbox.ModAPI.Ingame.IMyEventControllerBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyEventControllerBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -778,7 +941,14 @@
     <property name="SearchBox" type="StringBuilder" />
     <property name="ANDCheckbox" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyPathRecorderBlock" typedefinition="PathRecorderBlock">
+  <block typedefinition="PathRecorderBlock" subtype="LargePathRecorderBlock" class="SpaceEngineers.Game.Entities.Blocks.MyPathRecorderBlock" type="Sandbox.ModAPI.Ingame.IMyPathRecorderBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyPathRecorderBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -836,7 +1006,14 @@
     <property name="ID_RECORD_STEPS_SLIDER" type="Single" />
     <property name="ID_MINIMAL_DISTANCE_SLIDER" type="Single" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyBasicMissionBlock" typedefinition="BasicMissionBlock">
+  <block typedefinition="BasicMissionBlock" subtype="LargeBasicMission" class="SpaceEngineers.Game.Entities.Blocks.MyBasicMissionBlock" type="Sandbox.ModAPI.Ingame.IMyBasicMissionBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyBasicMissionBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -889,7 +1066,14 @@
     <property name="FollowDistance" type="Single" />
     <property name="ID_MODE_SELECTOR_COMBOBOX" type="Int64" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyFlightMovementBlock" typedefinition="FlightMovementBlock">
+  <block typedefinition="FlightMovementBlock" subtype="LargeFlightMovement" class="SpaceEngineers.Game.Entities.Blocks.MyFlightMovementBlock" type="Sandbox.ModAPI.Ingame.IMyFlightMovementBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFlightMovementBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -950,7 +1134,14 @@
     <property name="MaxPitchAngle" type="Single" />
     <property name="MaxRollAngle" type="Single" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyDefensiveCombatBlock" typedefinition="DefensiveCombatBlock">
+  <block typedefinition="DefensiveCombatBlock" subtype="LargeDefensiveCombat" class="SpaceEngineers.Game.Entities.Blocks.MyDefensiveCombatBlock" type="Sandbox.ModAPI.Ingame.IMyDefensiveCombatBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyDefensiveCombatBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1015,7 +1206,14 @@
     <property name="EvasiveManeuverIntervalRange" type="Single" />
     <property name="EvasiveManeuvers" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyOffensiveCombatBlock" typedefinition="OffensiveCombatBlock">
+  <block typedefinition="OffensiveCombatBlock" subtype="LargeOffensiveCombat" class="SpaceEngineers.Game.Entities.Blocks.MyOffensiveCombatBlock" type="Sandbox.ModAPI.Ingame.IMyOffensiveCombatBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyOffensiveCombatBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1122,7 +1320,14 @@
     <property name="OffensiveCombatIntercept_GuidanceType" type="Int64" />
     <property name="OffensiveCombatIntercept_OverrideCollisionAvoidance" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyRadioAntenna" typedefinition="RadioAntenna">
+  <block typedefinition="RadioAntenna" subtype="LargeBlockRadioAntenna" class="Sandbox.Game.Entities.Cube.MyRadioAntenna" type="Sandbox.ModAPI.Ingame.IMyRadioAntenna">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyRadioAntenna" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1159,7 +1364,14 @@
     <property name="EnableBroadCast" type="Boolean" />
     <property name="ShowShipName" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyBeacon" typedefinition="Beacon">
+  <block typedefinition="Beacon" subtype="LargeBlockBeacon" class="Sandbox.Game.Entities.Cube.MyBeacon" type="Sandbox.ModAPI.Ingame.IMyBeacon">
+    <interface name="Sandbox.ModAPI.Ingame.IMyBeacon" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1197,7 +1409,13 @@
     <property name="HudText" type="StringBuilder" />
     <property name="Radius" type="Single" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyRemoteControl" typedefinition="RemoteControl">
+  <block typedefinition="RemoteControl" subtype="LargeBlockRemoteControl" class="Sandbox.Game.Entities.MyRemoteControl" type="Sandbox.ModAPI.Ingame.IMyRemoteControl">
+    <interface name="Sandbox.ModAPI.Ingame.IMyRemoteControl" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyShipController" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="ShowOnHUD" text="Show on HUD On/Off" />
     <action name="ShowOnHUD_On" text="Show on HUD On" />
     <action name="ShowOnHUD_Off" text="Show on HUD Off" />
@@ -1255,7 +1473,14 @@
     <property name="Direction" type="Int64" />
     <property name="SpeedLimit" type="Single" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyLaserAntenna" typedefinition="LaserAntenna">
+  <block typedefinition="LaserAntenna" subtype="LargeBlockLaserAntenna" class="Sandbox.Game.Entities.Cube.MyLaserAntenna" type="Sandbox.ModAPI.Ingame.IMyLaserAntenna">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyLaserAntenna" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1296,7 +1521,14 @@
     <property name="gpsCoords" type="StringBuilder" />
     <property name="isPerm" type="Boolean" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyBroadcastController" typedefinition="BroadcastController">
+  <block typedefinition="BroadcastController" subtype="LargeBlockBroadcastController" class="SpaceEngineers.Game.Entities.Blocks.MyBroadcastController" type="SpaceEngineers.Game.ModAPI.Ingame.IMyBroadcastController">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyBroadcastController" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1353,7 +1585,14 @@
     <property name="Message6" type="StringBuilder" />
     <property name="Message7" type="StringBuilder" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyTransponder" typedefinition="TransponderBlock">
+  <block typedefinition="TransponderBlock" subtype="LargeBlockTransponder" class="SpaceEngineers.Game.Entities.Blocks.MyTransponderBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyTransponder">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyTransponder" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1395,7 +1634,16 @@
     <property name="Channel" type="Single" />
     <property name="ReceiveFrom" type="Int64" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyExtendedPistonBase" typedefinition="ExtendedPistonBase">
+  <block typedefinition="ExtendedPistonBase" subtype="LargePistonBaseReskin" class="Sandbox.Game.Entities.Blocks.MyExtendedPistonBase" type="Sandbox.ModAPI.Ingame.IMyExtendedPistonBase">
+    <interface name="Sandbox.ModAPI.Ingame.IMyExtendedPistonBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyPistonBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1459,7 +1707,14 @@
     <property name="MaxImpulseAxis" type="Single" />
     <property name="MaxImpulseNonAxis" type="Single" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyDoor" typedefinition="Door">
+  <block typedefinition="Door" subtype="LargeBlockSmallGate" class="Sandbox.Game.Entities.MyDoor" type="Sandbox.ModAPI.Ingame.IMyDoor">
+    <interface name="Sandbox.ModAPI.Ingame.IMyDoor" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1497,7 +1752,14 @@
     <property name="Open" type="Boolean" />
     <property name="AnyoneCanUse" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyCockpit" typedefinition="Cockpit">
+  <block typedefinition="Cockpit" subtype="LargeBlockModularBridgeCockpit" class="Sandbox.Game.Entities.MyCockpit" type="Sandbox.ModAPI.Ingame.IMyCockpit">
+    <interface name="Sandbox.ModAPI.Ingame.IMyCockpit" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyShipController" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="ShowOnHUD" text="Show on HUD On/Off" />
     <action name="ShowOnHUD_On" text="Show on HUD On" />
     <action name="ShowOnHUD_Off" text="Show on HUD Off" />
@@ -1543,7 +1805,15 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyReflectorLight" typedefinition="ReflectorLight">
+  <block typedefinition="ReflectorLight" subtype="LargeBlockFloodlight" class="Sandbox.Game.Entities.MyReflectorLight" type="Sandbox.ModAPI.Ingame.IMyReflectorLight">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyLightingBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyReflectorLight" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1603,7 +1873,18 @@
     <property name="Blink Offset" type="Single" />
     <property name="RotationSpeed" type="Single" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyLargeGatlingTurret" typedefinition="LargeGatlingTurret">
+  <block typedefinition="LargeMissileTurret" subtype="LargeMissileTurretReskin" class="SpaceEngineers.Game.Entities.Weapons.MyLargeMissileTurret" type="">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyLargeTurretBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUserControllableGun" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyLargeConveyorTurretBase" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyLargeMissileTurret" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1693,7 +1974,162 @@
     <property name="TargetingGroup_Selector" type="Int64" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyTerminalBlock" typedefinition="TerminalBlock">
+  <block typedefinition="LargeGatlingTurret" subtype="LargeGatlingTurretReskin" class="SpaceEngineers.Game.Entities.Weapons.MyLargeGatlingTurret" type="SpaceEngineers.Game.ModAPI.Ingame.IMyLargeGatlingTurret">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyLargeTurretBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUserControllableGun" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyLargeConveyorTurretBase" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyLargeGatlingTurret" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
+    <action name="OnOff" text="Toggle block On/Off" />
+    <action name="OnOff_On" text="Toggle block On" />
+    <action name="OnOff_Off" text="Toggle block Off" />
+    <action name="ShowOnHUD" text="Show on HUD On/Off" />
+    <action name="ShowOnHUD_On" text="Show on HUD On" />
+    <action name="ShowOnHUD_Off" text="Show on HUD Off" />
+    <action name="IncreaseFontSize" text="Increase Font Size" />
+    <action name="DecreaseFontSize" text="Decrease Font Size" />
+    <action name="IncreaseTextPaddingSlider" text="Increase Text Padding" />
+    <action name="DecreaseTextPaddingSlider" text="Decrease Text Padding" />
+    <action name="IncreaseChangeIntervalSlider" text="Increase Image change interval" />
+    <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
+    <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
+    <action name="ShootOnce" text="Shoot once" />
+    <action name="Shoot" text="Shoot On/Off" />
+    <action name="Shoot_On" text="Shoot On" />
+    <action name="Shoot_Off" text="Shoot Off" />
+    <action name="IncreaseRange" text="Increase AI aiming radius" />
+    <action name="DecreaseRange" text="Decrease AI aiming radius" />
+    <action name="EnableIdleMovement" text="Enable idle movement On/Off" />
+    <action name="EnableIdleMovement_On" text="Enable idle movement On" />
+    <action name="EnableIdleMovement_Off" text="Enable idle movement Off" />
+    <action name="TargetMeteors" text="Target meteors On/Off" />
+    <action name="TargetMeteors_On" text="Target meteors On" />
+    <action name="TargetMeteors_Off" text="Target meteors Off" />
+    <action name="TargetMissiles" text="Target rockets On/Off" />
+    <action name="TargetMissiles_On" text="Target rockets On" />
+    <action name="TargetMissiles_Off" text="Target rockets Off" />
+    <action name="TargetSmallShips" text="Target small ships On/Off" />
+    <action name="TargetSmallShips_On" text="Target small ships On" />
+    <action name="TargetSmallShips_Off" text="Target small ships Off" />
+    <action name="TargetLargeShips" text="Target large ships On/Off" />
+    <action name="TargetLargeShips_On" text="Target large ships On" />
+    <action name="TargetLargeShips_Off" text="Target large ships Off" />
+    <action name="TargetCharacters" text="Target characters On/Off" />
+    <action name="TargetCharacters_On" text="Target characters On" />
+    <action name="TargetCharacters_Off" text="Target characters Off" />
+    <action name="TargetStations" text="Target stations On/Off" />
+    <action name="TargetStations_On" text="Target stations On" />
+    <action name="TargetStations_Off" text="Target stations Off" />
+    <action name="TargetNeutrals" text="Target neutrals On/Off" />
+    <action name="TargetNeutrals_On" text="Target neutrals On" />
+    <action name="TargetNeutrals_Off" text="Target neutrals Off" />
+    <action name="TargetFriends" text="Target Friends On/Off" />
+    <action name="TargetFriends_On" text="Target Friends On" />
+    <action name="TargetFriends_Off" text="Target Friends Off" />
+    <action name="TargetEnemies" text="Target Enemies On/Off" />
+    <action name="TargetEnemies_On" text="Target Enemies On" />
+    <action name="TargetEnemies_Off" text="Target Enemies Off" />
+    <action name="EnableTargetLocking" text="Enable target locking On/Off" />
+    <action name="TargetingGroup_Weapons" text="Target Weapons" />
+    <action name="TargetingGroup_Propulsion" text="Target Propulsion" />
+    <action name="TargetingGroup_PowerSystems" text="Target Power systems" />
+    <action name="TargetingGroup_CycleSubsystems" text="Cycle Subsystems" />
+    <action name="FocusLockedTarget" text="Focus Locked Target" />
+    <action name="UseConveyor" text="Automatic Push/Pull On/Off" />
+    <property name="OnOff" type="Boolean" />
+    <property name="ShowInTerminal" type="Boolean" />
+    <property name="ShowInInventory" type="Boolean" />
+    <property name="ShowInToolbarConfig" type="Boolean" />
+    <property name="Name" type="StringBuilder" />
+    <property name="ShowOnHUD" type="Boolean" />
+    <property name="Content" type="Int64" />
+    <property name="ScriptForegroundColor" type="Color" />
+    <property name="ScriptBackgroundColor" type="Color" />
+    <property name="Font" type="Int64" />
+    <property name="FontSize" type="Single" />
+    <property name="FontColor" type="Color" />
+    <property name="alignment" type="Int64" />
+    <property name="TextPaddingSlider" type="Single" />
+    <property name="BackgroundColor" type="Color" />
+    <property name="ChangeIntervalSlider" type="Single" />
+    <property name="PreserveAspectRatio" type="Boolean" />
+    <property name="Shoot" type="Boolean" />
+    <property name="Range" type="Single" />
+    <property name="EnableIdleMovement" type="Boolean" />
+    <property name="TargetMeteors" type="Boolean" />
+    <property name="TargetMissiles" type="Boolean" />
+    <property name="TargetSmallShips" type="Boolean" />
+    <property name="TargetLargeShips" type="Boolean" />
+    <property name="TargetCharacters" type="Boolean" />
+    <property name="TargetStations" type="Boolean" />
+    <property name="TargetNeutrals" type="Boolean" />
+    <property name="TargetFriends" type="Boolean" />
+    <property name="TargetEnemies" type="Boolean" />
+    <property name="EnableTargetLocking" type="Boolean" />
+    <property name="TargetingGroup_Selector" type="Int64" />
+    <property name="UseConveyor" type="Boolean" />
+  </block>
+  <block typedefinition="Jukebox" subtype="Jukebox" class="SpaceEngineers.Game.Entities.Blocks.MyJukebox" type="">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMySoundBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <action name="OnOff" text="Toggle block On/Off" />
+    <action name="OnOff_On" text="Toggle block On" />
+    <action name="OnOff_Off" text="Toggle block Off" />
+    <action name="ShowOnHUD" text="Show on HUD On/Off" />
+    <action name="ShowOnHUD_On" text="Show on HUD On" />
+    <action name="ShowOnHUD_Off" text="Show on HUD Off" />
+    <action name="IncreaseFontSize" text="Increase Font Size" />
+    <action name="DecreaseFontSize" text="Decrease Font Size" />
+    <action name="IncreaseTextPaddingSlider" text="Increase Text Padding" />
+    <action name="DecreaseTextPaddingSlider" text="Decrease Text Padding" />
+    <action name="IncreaseChangeIntervalSlider" text="Increase Image change interval" />
+    <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
+    <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
+    <action name="IncreaseVolumeSlider" text="Increase Volume" />
+    <action name="DecreaseVolumeSlider" text="Decrease Volume" />
+    <action name="IncreaseRangeSlider" text="Increase Range" />
+    <action name="DecreaseRangeSlider" text="Decrease Range" />
+    <action name="PlaySound" text="Play" />
+    <action name="StopSound" text="Stop" />
+    <action name="IncreaseLoopableSlider" text="Increase Loop time" />
+    <action name="DecreaseLoopableSlider" text="Decrease Loop time" />
+    <property name="OnOff" type="Boolean" />
+    <property name="ShowInTerminal" type="Boolean" />
+    <property name="ShowInInventory" type="Boolean" />
+    <property name="ShowInToolbarConfig" type="Boolean" />
+    <property name="Name" type="StringBuilder" />
+    <property name="ShowOnHUD" type="Boolean" />
+    <property name="Content" type="Int64" />
+    <property name="ScriptForegroundColor" type="Color" />
+    <property name="ScriptBackgroundColor" type="Color" />
+    <property name="Font" type="Int64" />
+    <property name="FontSize" type="Single" />
+    <property name="FontColor" type="Color" />
+    <property name="alignment" type="Int64" />
+    <property name="TextPaddingSlider" type="Single" />
+    <property name="BackgroundColor" type="Color" />
+    <property name="ChangeIntervalSlider" type="Single" />
+    <property name="PreserveAspectRatio" type="Boolean" />
+    <property name="VolumeSlider" type="Single" />
+    <property name="RangeSlider" type="Single" />
+    <property name="LoopableSlider" type="Single" />
+  </block>
+  <block typedefinition="TerminalBlock" subtype="ControlPanel" class="Sandbox.Game.Entities.Cube.MyTerminalBlock" type="Sandbox.ModAPI.Ingame.IMyTerminalBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="ShowOnHUD" text="Show on HUD On/Off" />
     <action name="ShowOnHUD_On" text="Show on HUD On" />
     <action name="ShowOnHUD_Off" text="Show on HUD Off" />
@@ -1703,7 +2139,15 @@
     <property name="Name" type="StringBuilder" />
     <property name="ShowOnHUD" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyCryoChamber" typedefinition="CryoChamber">
+  <block typedefinition="CryoChamber" subtype="LargeBlockBed" class="Sandbox.Game.Entities.Blocks.MyCryoChamber" type="Sandbox.ModAPI.Ingame.IMyCryoChamber">
+    <interface name="Sandbox.ModAPI.Ingame.IMyCockpit" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyCryoChamber" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyShipController" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="ShowOnHUD" text="Show on HUD On/Off" />
     <action name="ShowOnHUD_On" text="Show on HUD On" />
     <action name="ShowOnHUD_Off" text="Show on HUD Off" />
@@ -1749,7 +2193,13 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyCargoContainer" typedefinition="CargoContainer">
+  <block typedefinition="CargoContainer" subtype="LargeBlockLockerRoom" class="Sandbox.Game.Entities.MyCargoContainer" type="Sandbox.ModAPI.Ingame.IMyCargoContainer">
+    <interface name="Sandbox.ModAPI.Ingame.IMyCargoContainer" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="ShowOnHUD" text="Show on HUD On/Off" />
     <action name="ShowOnHUD_On" text="Show on HUD On" />
     <action name="ShowOnHUD_Off" text="Show on HUD Off" />
@@ -1759,7 +2209,14 @@
     <property name="Name" type="StringBuilder" />
     <property name="ShowOnHUD" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyGyro" typedefinition="Gyro">
+  <block typedefinition="Gyro" subtype="LargeBlockGyro" class="Sandbox.Game.Entities.MyGyro" type="Sandbox.ModAPI.Ingame.IMyGyro">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyGyro" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1811,7 +2268,53 @@
     <property name="Pitch" type="Single" />
     <property name="Roll" type="Single" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyJumpDrive" typedefinition="JumpDrive">
+  <block typedefinition="HydrogenEngine" subtype="LargeHydrogenEngineReskin" class="SpaceEngineers.Game.Entities.Blocks.MyHydrogenEngine" type="">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyPowerProducer" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <action name="OnOff" text="Toggle block On/Off" />
+    <action name="OnOff_On" text="Toggle block On" />
+    <action name="OnOff_Off" text="Toggle block Off" />
+    <action name="ShowOnHUD" text="Show on HUD On/Off" />
+    <action name="ShowOnHUD_On" text="Show on HUD On" />
+    <action name="ShowOnHUD_Off" text="Show on HUD Off" />
+    <action name="IncreaseFontSize" text="Increase Font Size" />
+    <action name="DecreaseFontSize" text="Decrease Font Size" />
+    <action name="IncreaseTextPaddingSlider" text="Increase Text Padding" />
+    <action name="DecreaseTextPaddingSlider" text="Decrease Text Padding" />
+    <action name="IncreaseChangeIntervalSlider" text="Increase Image change interval" />
+    <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
+    <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
+    <property name="OnOff" type="Boolean" />
+    <property name="ShowInTerminal" type="Boolean" />
+    <property name="ShowInInventory" type="Boolean" />
+    <property name="ShowInToolbarConfig" type="Boolean" />
+    <property name="Name" type="StringBuilder" />
+    <property name="ShowOnHUD" type="Boolean" />
+    <property name="Content" type="Int64" />
+    <property name="ScriptForegroundColor" type="Color" />
+    <property name="ScriptBackgroundColor" type="Color" />
+    <property name="Font" type="Int64" />
+    <property name="FontSize" type="Single" />
+    <property name="FontColor" type="Color" />
+    <property name="alignment" type="Int64" />
+    <property name="TextPaddingSlider" type="Single" />
+    <property name="BackgroundColor" type="Color" />
+    <property name="ChangeIntervalSlider" type="Single" />
+    <property name="PreserveAspectRatio" type="Boolean" />
+  </block>
+  <block typedefinition="JumpDrive" subtype="LargeJumpDriveReskin" class="Sandbox.Game.Entities.MyJumpDrive" type="Sandbox.ModAPI.Ingame.IMyJumpDrive">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyJumpDrive" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1852,7 +2355,14 @@
     <property name="JumpDistance" type="Single" />
     <property name="SearchField" type="StringBuilder" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyThrust" typedefinition="Thrust">
+  <block typedefinition="Thrust" subtype="LargeBlockLargeHydrogenThrustReskin" class="Sandbox.Game.Entities.MyThrust" type="Sandbox.ModAPI.Ingame.IMyThrust">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyThrust" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1888,7 +2398,14 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="Override" type="Single" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyLandingGear" typedefinition="LandingGear">
+  <block typedefinition="LandingGear" subtype="LargeBlockLandingGearReskin" class="SpaceEngineers.Game.Entities.Blocks.MyLandingGear" type="SpaceEngineers.Game.ModAPI.Ingame.IMyLandingGear">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyLandingGear" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1927,7 +2444,99 @@
     <property name="Autolock" type="Boolean" />
     <property name="EnableParking" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyTextPanel" typedefinition="TextPanel">
+  <block typedefinition="VendingMachine" subtype="FoodDispenser" class="Sandbox.Game.Entities.Blocks.MyVendingMachine" type="">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyStoreBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
+    <action name="OnOff" text="Toggle block On/Off" />
+    <action name="OnOff_On" text="Toggle block On" />
+    <action name="OnOff_Off" text="Toggle block Off" />
+    <action name="ShowOnHUD" text="Show on HUD On/Off" />
+    <action name="ShowOnHUD_On" text="Show on HUD On" />
+    <action name="ShowOnHUD_Off" text="Show on HUD Off" />
+    <action name="IncreaseFontSize" text="Increase Font Size" />
+    <action name="DecreaseFontSize" text="Decrease Font Size" />
+    <action name="IncreaseTextPaddingSlider" text="Increase Text Padding" />
+    <action name="DecreaseTextPaddingSlider" text="Decrease Text Padding" />
+    <action name="IncreaseChangeIntervalSlider" text="Increase Image change interval" />
+    <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
+    <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
+    <action name="AnyoneCanUse" text="Anyone Can Use On/Off" />
+    <action name="Searchable" text="Searchable On/Off" />
+    <action name="UseConveyor" text="Automatic Push/Pull On/Off" />
+    <property name="OnOff" type="Boolean" />
+    <property name="ShowInTerminal" type="Boolean" />
+    <property name="ShowInInventory" type="Boolean" />
+    <property name="ShowInToolbarConfig" type="Boolean" />
+    <property name="Name" type="StringBuilder" />
+    <property name="ShowOnHUD" type="Boolean" />
+    <property name="Content" type="Int64" />
+    <property name="ScriptForegroundColor" type="Color" />
+    <property name="ScriptBackgroundColor" type="Color" />
+    <property name="Font" type="Int64" />
+    <property name="FontSize" type="Single" />
+    <property name="FontColor" type="Color" />
+    <property name="alignment" type="Int64" />
+    <property name="TextPaddingSlider" type="Single" />
+    <property name="BackgroundColor" type="Color" />
+    <property name="ChangeIntervalSlider" type="Single" />
+    <property name="PreserveAspectRatio" type="Boolean" />
+    <property name="AnyoneCanUse" type="Boolean" />
+    <property name="Searchable" type="Boolean" />
+    <property name="UseConveyor" type="Boolean" />
+  </block>
+  <block typedefinition="LCDPanelsBlock" subtype="LabEquipment" class="Sandbox.Game.Entities.Blocks.MyLCDPanelsBlock" type="">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <action name="OnOff" text="Toggle block On/Off" />
+    <action name="OnOff_On" text="Toggle block On" />
+    <action name="OnOff_Off" text="Toggle block Off" />
+    <action name="ShowOnHUD" text="Show on HUD On/Off" />
+    <action name="ShowOnHUD_On" text="Show on HUD On" />
+    <action name="ShowOnHUD_Off" text="Show on HUD Off" />
+    <action name="IncreaseFontSize" text="Increase Font Size" />
+    <action name="DecreaseFontSize" text="Decrease Font Size" />
+    <action name="IncreaseTextPaddingSlider" text="Increase Text Padding" />
+    <action name="DecreaseTextPaddingSlider" text="Decrease Text Padding" />
+    <action name="IncreaseChangeIntervalSlider" text="Increase Image change interval" />
+    <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
+    <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
+    <property name="OnOff" type="Boolean" />
+    <property name="ShowInTerminal" type="Boolean" />
+    <property name="ShowInInventory" type="Boolean" />
+    <property name="ShowInToolbarConfig" type="Boolean" />
+    <property name="Name" type="StringBuilder" />
+    <property name="ShowOnHUD" type="Boolean" />
+    <property name="Content" type="Int64" />
+    <property name="ScriptForegroundColor" type="Color" />
+    <property name="ScriptBackgroundColor" type="Color" />
+    <property name="Font" type="Int64" />
+    <property name="FontSize" type="Single" />
+    <property name="FontColor" type="Color" />
+    <property name="alignment" type="Int64" />
+    <property name="TextPaddingSlider" type="Single" />
+    <property name="BackgroundColor" type="Color" />
+    <property name="ChangeIntervalSlider" type="Single" />
+    <property name="PreserveAspectRatio" type="Boolean" />
+  </block>
+  <block typedefinition="TextPanel" subtype="TransparentLCDLarge" class="Sandbox.Game.Entities.Blocks.MyTextPanel" type="Sandbox.ModAPI.Ingame.IMyTextPanel">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextPanel" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurface" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -1981,7 +2590,16 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMySolarPanel" typedefinition="SolarPanel">
+  <block typedefinition="SolarPanel" subtype="LargeBlockColorableSolarPanel" class="SpaceEngineers.Game.Entities.Blocks.MySolarPanel" type="SpaceEngineers.Game.ModAPI.Ingame.IMySolarPanel">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyPowerProducer" />
+    <interface name="Sandbox.ModAPI.Ingame.IMySolarOccludable" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMySolarPanel" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2013,7 +2631,15 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyWindTurbine" typedefinition="WindTurbine">
+  <block typedefinition="WindTurbine" subtype="LargeBlockWindTurbineReskin" class="SpaceEngineers.Game.Entities.Blocks.MyWindTurbine" type="Sandbox.ModAPI.Ingame.IMyWindTurbine">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyPowerProducer" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyWindTurbine" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2045,7 +2671,14 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyMedicalRoom" typedefinition="MedicalRoom">
+  <block typedefinition="MedicalRoom" subtype="LargeMedicalRoomReskin" class="SpaceEngineers.Game.Entities.Blocks.MyMedicalRoom" type="SpaceEngineers.Game.ModAPI.Ingame.IMyMedicalRoom">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyMedicalRoom" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2080,7 +2713,12 @@
     <property name="TakeOwnership" type="Boolean" />
     <property name="SetFaction" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyWarhead" typedefinition="Warhead">
+  <block typedefinition="Warhead" subtype="LargeExplosiveBarrel" class="Sandbox.Game.Entities.Cube.MyWarhead" type="Sandbox.ModAPI.Ingame.IMyWarhead">
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyWarhead" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="ShowOnHUD" text="Show on HUD On/Off" />
     <action name="ShowOnHUD_On" text="Show on HUD On" />
     <action name="ShowOnHUD_Off" text="Show on HUD Off" />
@@ -2100,7 +2738,16 @@
     <property name="DetonationTime" type="Single" />
     <property name="Safety" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyAirtightHangarDoor" typedefinition="AirtightHangarDoor">
+  <block typedefinition="AirtightHangarDoor" subtype="" class="Sandbox.Game.Entities.MyAirtightHangarDoor" type="Sandbox.ModAPI.Ingame.IMyAirtightHangarDoor">
+    <interface name="Sandbox.ModAPI.Ingame.IMyAirtightDoorBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyAirtightHangarDoor" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyDoor" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2138,7 +2785,16 @@
     <property name="Open" type="Boolean" />
     <property name="AnyoneCanUse" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyAirtightSlideDoor" typedefinition="AirtightSlideDoor">
+  <block typedefinition="AirtightSlideDoor" subtype="LargeBlockSlideDoor" class="Sandbox.Game.Entities.MyAirtightSlideDoor" type="Sandbox.ModAPI.Ingame.IMyAirtightSlideDoor">
+    <interface name="Sandbox.ModAPI.Ingame.IMyAirtightDoorBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyAirtightSlideDoor" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyDoor" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2176,7 +2832,15 @@
     <property name="Open" type="Boolean" />
     <property name="AnyoneCanUse" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyStoreBlock" typedefinition="StoreBlock">
+  <block typedefinition="StoreBlock" subtype="StoreBlock" class="Sandbox.Game.Entities.Blocks.MyStoreBlock" type="Sandbox.ModAPI.Ingame.IMyStoreBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyStoreBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2191,6 +2855,7 @@
     <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
     <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
     <action name="AnyoneCanUse" text="Anyone Can Use On/Off" />
+    <action name="Searchable" text="Searchable On/Off" />
     <action name="UseConveyor" text="Automatic Push/Pull On/Off" />
     <property name="OnOff" type="Boolean" />
     <property name="ShowInTerminal" type="Boolean" />
@@ -2210,9 +2875,18 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="AnyoneCanUse" type="Boolean" />
+    <property name="Searchable" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMySafeZoneBlock" typedefinition="SafeZoneBlock">
+  <block typedefinition="SafeZoneBlock" subtype="SafeZoneBlock" class="SpaceEngineers.Game.Entities.Blocks.SafeZone.MySafeZoneBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMySafeZoneBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMySafeZoneBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2264,7 +2938,55 @@
     <property name="SafeZoneColor" type="Color" />
     <property name="SafeZoneTextureCombo" type="Int64" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyBatteryBlock" typedefinition="BatteryBlock">
+  <block typedefinition="ContractBlock" subtype="ContractBlock" class="Sandbox.Game.Entities.Blocks.MyContractBlock" type="">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <action name="OnOff" text="Toggle block On/Off" />
+    <action name="OnOff_On" text="Toggle block On" />
+    <action name="OnOff_Off" text="Toggle block Off" />
+    <action name="ShowOnHUD" text="Show on HUD On/Off" />
+    <action name="ShowOnHUD_On" text="Show on HUD On" />
+    <action name="ShowOnHUD_Off" text="Show on HUD Off" />
+    <action name="IncreaseFontSize" text="Increase Font Size" />
+    <action name="DecreaseFontSize" text="Decrease Font Size" />
+    <action name="IncreaseTextPaddingSlider" text="Increase Text Padding" />
+    <action name="DecreaseTextPaddingSlider" text="Decrease Text Padding" />
+    <action name="IncreaseChangeIntervalSlider" text="Increase Image change interval" />
+    <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
+    <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
+    <action name="AnyoneCanUse" text="Anyone Can Use On/Off" />
+    <property name="OnOff" type="Boolean" />
+    <property name="ShowInTerminal" type="Boolean" />
+    <property name="ShowInInventory" type="Boolean" />
+    <property name="ShowInToolbarConfig" type="Boolean" />
+    <property name="Name" type="StringBuilder" />
+    <property name="ShowOnHUD" type="Boolean" />
+    <property name="Content" type="Int64" />
+    <property name="ScriptForegroundColor" type="Color" />
+    <property name="ScriptBackgroundColor" type="Color" />
+    <property name="Font" type="Int64" />
+    <property name="FontSize" type="Single" />
+    <property name="FontColor" type="Color" />
+    <property name="alignment" type="Int64" />
+    <property name="TextPaddingSlider" type="Single" />
+    <property name="BackgroundColor" type="Color" />
+    <property name="ChangeIntervalSlider" type="Single" />
+    <property name="PreserveAspectRatio" type="Boolean" />
+    <property name="AnyoneCanUse" type="Boolean" />
+  </block>
+  <block typedefinition="BatteryBlock" subtype="LargeBlockBatteryBlock" class="Sandbox.Game.Entities.MyBatteryBlock" type="Sandbox.ModAPI.Ingame.IMyBatteryBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyBatteryBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyPowerProducer" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2304,7 +3026,16 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="ChargeMode" type="Int64" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyReactor" typedefinition="Reactor">
+  <block typedefinition="Reactor" subtype="LargeBlockSmallGenerator" class="Sandbox.Game.Entities.MyReactor" type="Sandbox.ModAPI.Ingame.IMyReactor">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyPowerProducer" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyReactor" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2338,7 +3069,129 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyGasTank" typedefinition="OxygenTank">
+  <block typedefinition="DebugSphere1" subtype="DebugSphereLarge" class="Sandbox.Game.Entities.MyDebugSphere1" type="">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <action name="OnOff" text="Toggle block On/Off" />
+    <action name="OnOff_On" text="Toggle block On" />
+    <action name="OnOff_Off" text="Toggle block Off" />
+    <action name="ShowOnHUD" text="Show on HUD On/Off" />
+    <action name="ShowOnHUD_On" text="Show on HUD On" />
+    <action name="ShowOnHUD_Off" text="Show on HUD Off" />
+    <action name="IncreaseFontSize" text="Increase Font Size" />
+    <action name="DecreaseFontSize" text="Decrease Font Size" />
+    <action name="IncreaseTextPaddingSlider" text="Increase Text Padding" />
+    <action name="DecreaseTextPaddingSlider" text="Decrease Text Padding" />
+    <action name="IncreaseChangeIntervalSlider" text="Increase Image change interval" />
+    <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
+    <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
+    <property name="OnOff" type="Boolean" />
+    <property name="ShowInTerminal" type="Boolean" />
+    <property name="ShowInInventory" type="Boolean" />
+    <property name="ShowInToolbarConfig" type="Boolean" />
+    <property name="Name" type="StringBuilder" />
+    <property name="ShowOnHUD" type="Boolean" />
+    <property name="Content" type="Int64" />
+    <property name="ScriptForegroundColor" type="Color" />
+    <property name="ScriptBackgroundColor" type="Color" />
+    <property name="Font" type="Int64" />
+    <property name="FontSize" type="Single" />
+    <property name="FontColor" type="Color" />
+    <property name="alignment" type="Int64" />
+    <property name="TextPaddingSlider" type="Single" />
+    <property name="BackgroundColor" type="Color" />
+    <property name="ChangeIntervalSlider" type="Single" />
+    <property name="PreserveAspectRatio" type="Boolean" />
+  </block>
+  <block typedefinition="DebugSphere2" subtype="DebugSphereLarge" class="Sandbox.Game.Entities.MyDebugSphere2" type="">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <action name="OnOff" text="Toggle block On/Off" />
+    <action name="OnOff_On" text="Toggle block On" />
+    <action name="OnOff_Off" text="Toggle block Off" />
+    <action name="ShowOnHUD" text="Show on HUD On/Off" />
+    <action name="ShowOnHUD_On" text="Show on HUD On" />
+    <action name="ShowOnHUD_Off" text="Show on HUD Off" />
+    <action name="IncreaseFontSize" text="Increase Font Size" />
+    <action name="DecreaseFontSize" text="Decrease Font Size" />
+    <action name="IncreaseTextPaddingSlider" text="Increase Text Padding" />
+    <action name="DecreaseTextPaddingSlider" text="Decrease Text Padding" />
+    <action name="IncreaseChangeIntervalSlider" text="Increase Image change interval" />
+    <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
+    <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
+    <property name="OnOff" type="Boolean" />
+    <property name="ShowInTerminal" type="Boolean" />
+    <property name="ShowInInventory" type="Boolean" />
+    <property name="ShowInToolbarConfig" type="Boolean" />
+    <property name="Name" type="StringBuilder" />
+    <property name="ShowOnHUD" type="Boolean" />
+    <property name="Content" type="Int64" />
+    <property name="ScriptForegroundColor" type="Color" />
+    <property name="ScriptBackgroundColor" type="Color" />
+    <property name="Font" type="Int64" />
+    <property name="FontSize" type="Single" />
+    <property name="FontColor" type="Color" />
+    <property name="alignment" type="Int64" />
+    <property name="TextPaddingSlider" type="Single" />
+    <property name="BackgroundColor" type="Color" />
+    <property name="ChangeIntervalSlider" type="Single" />
+    <property name="PreserveAspectRatio" type="Boolean" />
+  </block>
+  <block typedefinition="DebugSphere3" subtype="DebugSphereLarge" class="Sandbox.Game.Entities.MyDebugSphere3" type="">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <action name="OnOff" text="Toggle block On/Off" />
+    <action name="OnOff_On" text="Toggle block On" />
+    <action name="OnOff_Off" text="Toggle block Off" />
+    <action name="ShowOnHUD" text="Show on HUD On/Off" />
+    <action name="ShowOnHUD_On" text="Show on HUD On" />
+    <action name="ShowOnHUD_Off" text="Show on HUD Off" />
+    <action name="IncreaseFontSize" text="Increase Font Size" />
+    <action name="DecreaseFontSize" text="Decrease Font Size" />
+    <action name="IncreaseTextPaddingSlider" text="Increase Text Padding" />
+    <action name="DecreaseTextPaddingSlider" text="Decrease Text Padding" />
+    <action name="IncreaseChangeIntervalSlider" text="Increase Image change interval" />
+    <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
+    <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
+    <property name="OnOff" type="Boolean" />
+    <property name="ShowInTerminal" type="Boolean" />
+    <property name="ShowInInventory" type="Boolean" />
+    <property name="ShowInToolbarConfig" type="Boolean" />
+    <property name="Name" type="StringBuilder" />
+    <property name="ShowOnHUD" type="Boolean" />
+    <property name="Content" type="Int64" />
+    <property name="ScriptForegroundColor" type="Color" />
+    <property name="ScriptBackgroundColor" type="Color" />
+    <property name="Font" type="Int64" />
+    <property name="FontSize" type="Single" />
+    <property name="FontColor" type="Color" />
+    <property name="alignment" type="Int64" />
+    <property name="TextPaddingSlider" type="Single" />
+    <property name="BackgroundColor" type="Color" />
+    <property name="ChangeIntervalSlider" type="Single" />
+    <property name="PreserveAspectRatio" type="Boolean" />
+  </block>
+  <block typedefinition="OxygenTank" subtype="LargeHydrogenTankSmallLab" class="Sandbox.Game.Entities.Blocks.MyGasTank" type="Sandbox.ModAPI.Ingame.IMyGasTank">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyGasTank" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2377,7 +3230,15 @@
     <property name="Stockpile" type="Boolean" />
     <property name="Auto-Refill" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyGasGenerator" typedefinition="OxygenGenerator">
+  <block typedefinition="OxygenGenerator" subtype="LargeBlockOxygenGeneratorLab" class="Sandbox.Game.Entities.Blocks.MyGasGenerator" type="Sandbox.ModAPI.Ingame.IMyGasGenerator">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyGasGenerator" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2394,6 +3255,7 @@
     <action name="UseConveyor" text="Automatic Push/Pull On/Off" />
     <action name="Refill" text="Refill Bottles" />
     <action name="Auto-Refill" text="Auto-Refill On/Off" />
+    <action name="AutomaticallyPullBottles" text="Automatically Pull Bottles On/Off" />
     <property name="OnOff" type="Boolean" />
     <property name="ShowInTerminal" type="Boolean" />
     <property name="ShowInInventory" type="Boolean" />
@@ -2413,8 +3275,59 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
     <property name="Auto-Refill" type="Boolean" />
+    <property name="AutomaticallyPullBottles" type="Boolean" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGenerator" typedefinition="GravityGenerator">
+  <block typedefinition="ExhaustBlock" subtype="LargeExhaustCap" class="Sandbox.Game.Entities.Blocks.MyExhaustBlock" type="">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <action name="OnOff" text="Toggle block On/Off" />
+    <action name="OnOff_On" text="Toggle block On" />
+    <action name="OnOff_Off" text="Toggle block Off" />
+    <action name="ShowOnHUD" text="Show on HUD On/Off" />
+    <action name="ShowOnHUD_On" text="Show on HUD On" />
+    <action name="ShowOnHUD_Off" text="Show on HUD Off" />
+    <action name="IncreaseFontSize" text="Increase Font Size" />
+    <action name="DecreaseFontSize" text="Decrease Font Size" />
+    <action name="IncreaseTextPaddingSlider" text="Increase Text Padding" />
+    <action name="DecreaseTextPaddingSlider" text="Decrease Text Padding" />
+    <action name="IncreaseChangeIntervalSlider" text="Increase Image change interval" />
+    <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
+    <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
+    <action name="IncreasePowerDependency" text="Increase Power Dependency" />
+    <action name="DecreasePowerDependency" text="Decrease Power Dependency" />
+    <property name="OnOff" type="Boolean" />
+    <property name="ShowInTerminal" type="Boolean" />
+    <property name="ShowInInventory" type="Boolean" />
+    <property name="ShowInToolbarConfig" type="Boolean" />
+    <property name="Name" type="StringBuilder" />
+    <property name="ShowOnHUD" type="Boolean" />
+    <property name="Content" type="Int64" />
+    <property name="ScriptForegroundColor" type="Color" />
+    <property name="ScriptBackgroundColor" type="Color" />
+    <property name="Font" type="Int64" />
+    <property name="FontSize" type="Single" />
+    <property name="FontColor" type="Color" />
+    <property name="alignment" type="Int64" />
+    <property name="TextPaddingSlider" type="Single" />
+    <property name="BackgroundColor" type="Color" />
+    <property name="ChangeIntervalSlider" type="Single" />
+    <property name="PreserveAspectRatio" type="Boolean" />
+    <property name="EffectsCombo" type="Int64" />
+    <property name="PowerDependency" type="Single" />
+  </block>
+  <block typedefinition="GravityGenerator" subtype="" class="SpaceEngineers.Game.Entities.Blocks.MyGravityGenerator" type="SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGenerator">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGenerator" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGeneratorBase" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2459,7 +3372,15 @@
     <property name="Depth" type="Single" />
     <property name="Gravity" type="Single" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGeneratorSphere" typedefinition="GravityGeneratorSphere">
+  <block typedefinition="GravityGeneratorSphere" subtype="" class="SpaceEngineers.Game.Entities.Blocks.MyGravityGeneratorSphere" type="SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGeneratorSphere">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGeneratorBase" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGeneratorSphere" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2498,7 +3419,15 @@
     <property name="Radius" type="Single" />
     <property name="Gravity" type="Single" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyArtificialMassBlock" typedefinition="VirtualMass">
+  <block typedefinition="VirtualMass" subtype="VirtualMassLarge" class="SpaceEngineers.Game.Entities.Blocks.MyVirtualMass" type="SpaceEngineers.Game.ModAPI.Ingame.IMyArtificialMassBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyArtificialMassBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyVirtualMass" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2530,7 +3459,15 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMySpaceBall" typedefinition="SpaceBall">
+  <block typedefinition="SpaceBall" subtype="SpaceBallLarge" class="SpaceEngineers.Game.Entities.Blocks.MySpaceBall" type="SpaceEngineers.Game.ModAPI.Ingame.IMySpaceBall">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMySpaceBall" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyVirtualMass" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2567,7 +3504,14 @@
     <property name="VirtualMass" type="Single" />
     <property name="EnableBroadCast" type="Boolean" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyAirVent" typedefinition="AirVent">
+  <block typedefinition="AirVent" subtype="AirVentFan" class="SpaceEngineers.Game.Entities.Blocks.MyAirVent" type="SpaceEngineers.Game.ModAPI.Ingame.IMyAirVent">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyAirVent" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2603,7 +3547,14 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="Depressurize" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyCameraBlock" typedefinition="CameraBlock">
+  <block typedefinition="CameraBlock" subtype="LargeCameraTopMounted" class="Sandbox.Game.Entities.MyCameraBlock" type="Sandbox.ModAPI.Ingame.IMyCameraBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyCameraBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2635,7 +3586,14 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyEmotionControllerBlock" typedefinition="EmotionControllerBlock">
+  <block typedefinition="EmotionControllerBlock" subtype="EmotionControllerLarge" class="SpaceEngineers.Game.Entities.Blocks.MyEmotionControllerBlock" type="Sandbox.ModAPI.Ingame.IMyEmotionControllerBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyEmotionControllerBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2683,7 +3641,16 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyAssembler" typedefinition="Assembler">
+  <block typedefinition="Assembler" subtype="LargeAssemblerIndustrial" class="Sandbox.Game.Entities.Cube.MyAssembler" type="Sandbox.ModAPI.Ingame.IMyAssembler">
+    <interface name="Sandbox.ModAPI.Ingame.IMyAssembler" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyProductionBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2719,7 +3686,16 @@
     <property name="UseConveyor" type="Boolean" />
     <property name="slaveMode" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyRefinery" typedefinition="Refinery">
+  <block typedefinition="Refinery" subtype="LargeRefineryIndustrial" class="Sandbox.Game.Entities.Cube.MyRefinery" type="Sandbox.ModAPI.Ingame.IMyRefinery">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyProductionBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyRefinery" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2753,7 +3729,15 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyConveyorSorter" typedefinition="ConveyorSorter">
+  <block typedefinition="ConveyorSorter" subtype="LargeBlockConveyorSorterIndustrial" class="Sandbox.Game.Entities.MyConveyorSorter" type="Sandbox.ModAPI.Ingame.IMyConveyorSorter">
+    <interface name="Sandbox.ModAPI.Ingame.IMyConveyorSorter" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2791,7 +3775,15 @@
     <property name="blacklistWhitelist" type="Int64" />
     <property name="SearchField" type="StringBuilder" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyCollector" typedefinition="Collector">
+  <block typedefinition="Collector" subtype="Collector" class="Sandbox.Game.Entities.Blocks.MyCollector" type="Sandbox.ModAPI.Ingame.IMyCollector">
+    <interface name="Sandbox.ModAPI.Ingame.IMyCollector" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2825,7 +3817,15 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyShipConnector" typedefinition="ShipConnector">
+  <block typedefinition="ShipConnector" subtype="Connector" class="Sandbox.Game.Entities.Cube.MyShipConnector" type="Sandbox.ModAPI.Ingame.IMyShipConnector">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyShipConnector" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2884,7 +3884,15 @@
     <property name="EnableParking" type="Boolean" />
     <property name="Strength" type="Single" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyPistonBase" typedefinition="PistonBase">
+  <block typedefinition="PistonBase" subtype="LargePistonBase" class="Sandbox.Game.Entities.Blocks.MyPistonBase" type="Sandbox.ModAPI.Ingame.IMyPistonBase">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyPistonBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -2948,7 +3956,16 @@
     <property name="MaxImpulseAxis" type="Single" />
     <property name="MaxImpulseNonAxis" type="Single" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyMotorAdvancedStator" typedefinition="MotorAdvancedStator">
+  <block typedefinition="MotorStator" subtype="LargeStator" class="Sandbox.Game.Entities.Cube.MyMotorStator" type="">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyMotorBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyMotorStator" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -3030,7 +4047,106 @@
     <property name="UpperLimit" type="Single" />
     <property name="Displacement" type="Single" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyUpgradeModule" typedefinition="UpgradeModule">
+  <block typedefinition="MotorAdvancedStator" subtype="LargeAdvancedStator" class="Sandbox.Game.Entities.Cube.MyMotorAdvancedStator" type="Sandbox.ModAPI.Ingame.IMyMotorAdvancedStator">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyMotorAdvancedStator" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyMotorBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyMotorStator" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <action name="OnOff" text="Toggle block On/Off" />
+    <action name="OnOff_On" text="Toggle block On" />
+    <action name="OnOff_Off" text="Toggle block Off" />
+    <action name="ShowOnHUD" text="Show on HUD On/Off" />
+    <action name="ShowOnHUD_On" text="Show on HUD On" />
+    <action name="ShowOnHUD_Off" text="Show on HUD Off" />
+    <action name="IncreaseFontSize" text="Increase Font Size" />
+    <action name="DecreaseFontSize" text="Decrease Font Size" />
+    <action name="IncreaseTextPaddingSlider" text="Increase Text Padding" />
+    <action name="DecreaseTextPaddingSlider" text="Decrease Text Padding" />
+    <action name="IncreaseChangeIntervalSlider" text="Increase Image change interval" />
+    <action name="DecreaseChangeIntervalSlider" text="Decrease Image change interval" />
+    <action name="PreserveAspectRatio" text="Preserve aspect ratio On/Off" />
+    <action name="IncreaseWeld speed" text="Increase Safety lock speed" />
+    <action name="DecreaseWeld speed" text="Decrease Safety lock speed" />
+    <action name="Force weld" text="Safety lock override On/Off" />
+    <action name="IncreaseSafetyDetach" text="Increase Safety detach" />
+    <action name="DecreaseSafetyDetach" text="Decrease Safety detach" />
+    <action name="ShareInertiaTensor" text="Share inertia tensor On/Off" />
+    <action name="AddRotorTopPart" text="Add Rotor Head" />
+    <action name="AddMediumRotorTopPart" text="Add Medium Head" />
+    <action name="AddSmallRotorTopPart" text="Add Small Head" />
+    <action name="AddHingeTopPart" text="Add Hinge Head" />
+    <action name="AddMediumHingeTopPart" text="Add Medium Head" />
+    <action name="AddSmallHingeTopPart" text="Add Small Head" />
+    <action name="Reverse" text="Reverse" />
+    <action name="Detach" text="Detach" />
+    <action name="Attach" text="Attach" />
+    <action name="RotorLock" text="Rotor lock On/Off" />
+    <action name="RotorLock_On" text="Rotor lock On" />
+    <action name="RotorLock_Off" text="Rotor lock Off" />
+    <action name="HingeLock" text="Hinge lock On/Off" />
+    <action name="HingeLock_On" text="Hinge lock On" />
+    <action name="HingeLock_Off" text="Hinge lock Off" />
+    <action name="IncreaseTorque" text="Increase Torque" />
+    <action name="DecreaseTorque" text="Decrease Torque" />
+    <action name="IncreaseBrakingTorque" text="Increase Braking torque" />
+    <action name="DecreaseBrakingTorque" text="Decrease Braking torque" />
+    <action name="IncreaseVelocity" text="Increase Velocity" />
+    <action name="DecreaseVelocity" text="Decrease Velocity" />
+    <action name="ResetVelocity" text="Reset Velocity" />
+    <action name="RotateToAngle" text="Rotate To Angle" />
+    <action name="SetVelocity" text="Set Velocity" />
+    <action name="IncreaseLowerLimit" text="Increase Lower limit" />
+    <action name="DecreaseLowerLimit" text="Decrease Lower limit" />
+    <action name="SetLowerLimit" text="Set Lower Limit" />
+    <action name="IncreaseUpperLimit" text="Increase Upper limit" />
+    <action name="DecreaseUpperLimit" text="Decrease Upper limit" />
+    <action name="SetUpperLimit" text="Set Upper Limit" />
+    <action name="IncreaseDisplacement" text="Increase Rotor displacement" />
+    <action name="DecreaseDisplacement" text="Decrease Rotor displacement" />
+    <property name="OnOff" type="Boolean" />
+    <property name="ShowInTerminal" type="Boolean" />
+    <property name="ShowInInventory" type="Boolean" />
+    <property name="ShowInToolbarConfig" type="Boolean" />
+    <property name="Name" type="StringBuilder" />
+    <property name="ShowOnHUD" type="Boolean" />
+    <property name="Content" type="Int64" />
+    <property name="ScriptForegroundColor" type="Color" />
+    <property name="ScriptBackgroundColor" type="Color" />
+    <property name="Font" type="Int64" />
+    <property name="FontSize" type="Single" />
+    <property name="FontColor" type="Color" />
+    <property name="alignment" type="Int64" />
+    <property name="TextPaddingSlider" type="Single" />
+    <property name="BackgroundColor" type="Color" />
+    <property name="ChangeIntervalSlider" type="Single" />
+    <property name="PreserveAspectRatio" type="Boolean" />
+    <property name="Weld speed" type="Single" />
+    <property name="Force weld" type="Boolean" />
+    <property name="SafetyDetach" type="Single" />
+    <property name="ShareInertiaTensor" type="Boolean" />
+    <property name="RotorLock" type="Boolean" />
+    <property name="HingeLock" type="Boolean" />
+    <property name="Torque" type="Single" />
+    <property name="BrakingTorque" type="Single" />
+    <property name="Velocity" type="Single" />
+    <property name="LowerLimit" type="Single" />
+    <property name="UpperLimit" type="Single" />
+    <property name="Displacement" type="Single" />
+  </block>
+  <block typedefinition="UpgradeModule" subtype="LargeProductivityModule" class="SpaceEngineers.Game.Entities.Blocks.MyUpgradeModule" type="Sandbox.ModAPI.Ingame.IMyUpgradeModule">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradeModule" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -3062,7 +4178,16 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyMotorSuspension" typedefinition="MotorSuspension">
+  <block typedefinition="MotorSuspension" subtype="OffroadSuspension3x3" class="Sandbox.Game.Entities.Cube.MyMotorSuspension" type="Sandbox.ModAPI.Ingame.IMyMotorSuspension">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyMotorBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyMotorSuspension" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -3151,7 +4276,14 @@
     <property name="Propulsion override" type="Single" />
     <property name="Steer override" type="Single" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMyDecoy" typedefinition="Decoy">
+  <block typedefinition="Decoy" subtype="TrussPillarDecoy" class="Sandbox.Game.Entities.Blocks.MyDecoy" type="Sandbox.ModAPI.Ingame.IMyDecoy">
+    <interface name="Sandbox.ModAPI.Ingame.IMyDecoy" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -3183,7 +4315,14 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyShipMergeBlock" typedefinition="MergeBlock">
+  <block typedefinition="MergeBlock" subtype="LargeShipMergeBlock" class="SpaceEngineers.Game.Entities.Blocks.MyShipMergeBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyShipMergeBlock">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyShipMergeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -3215,7 +4354,14 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyParachute" typedefinition="Parachute">
+  <block typedefinition="Parachute" subtype="LgParachute" class="SpaceEngineers.Game.Entities.Blocks.MyParachute" type="SpaceEngineers.Game.ModAPI.Ingame.IMyParachute">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyParachute" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -3234,6 +4380,8 @@
     <action name="Open_Off" text=" Closed" />
     <action name="AnyoneCanUse" text="Anyone Can Use On/Off" />
     <action name="AutoDeploy" text="Auto deploy On/Off" />
+    <action name="AutoDeploy_On" text="Auto deploy On" />
+    <action name="AutoDeploy_Off" text="Auto deploy Off" />
     <property name="OnOff" type="Boolean" />
     <property name="ShowInTerminal" type="Boolean" />
     <property name="ShowInInventory" type="Boolean" />
@@ -3256,7 +4404,16 @@
     <property name="AutoDeploy" type="Boolean" />
     <property name="AutoDeployHeight" type="Single" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMySmallMissileLauncher" typedefinition="SmallMissileLauncher">
+  <block typedefinition="SmallMissileLauncher" subtype="LargeMissileLauncher" class="Sandbox.Game.Weapons.MySmallMissileLauncher" type="Sandbox.ModAPI.Ingame.IMySmallMissileLauncher">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMySmallMissileLauncher" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUserControllableGun" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -3295,7 +4452,14 @@
     <property name="Shoot" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMySearchlight" typedefinition="Searchlight">
+  <block typedefinition="Searchlight" subtype="LargeSearchlight" class="SpaceEngineers.Game.Entities.Blocks.MySearchlight" type="Sandbox.ModAPI.Ingame.IMySearchlight">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMySearchlight" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -3403,7 +4567,14 @@
     <property name="Blink Lenght" type="Single" />
     <property name="Blink Offset" type="Single" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyHeatVent" typedefinition="HeatVentBlock">
+  <block typedefinition="HeatVentBlock" subtype="LargeHeatVentBlock" class="SpaceEngineers.Game.Entities.Blocks.MyHeatVentBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyHeatVent">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyHeatVent" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -3454,7 +4625,17 @@
     <property name="Offset" type="Single" />
     <property name="PowerDependency" type="Single" />
   </block>
-  <block type="SpaceEngineers.Game.ModAPI.Ingame.IMyLargeInteriorTurret" typedefinition="InteriorTurret">
+  <block typedefinition="InteriorTurret" subtype="LargeInteriorTurret" class="SpaceEngineers.Game.Entities.Weapons.MyLargeInteriorTurret" type="SpaceEngineers.Game.ModAPI.Ingame.IMyLargeInteriorTurret">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyLargeTurretBase" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUserControllableGun" />
+    <interface name="SpaceEngineers.Game.ModAPI.Ingame.IMyLargeInteriorTurret" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -3542,7 +4723,17 @@
     <property name="EnableTargetLocking" type="Boolean" />
     <property name="TargetingGroup_Selector" type="Int64" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMySmallMissileLauncherReload" typedefinition="SmallMissileLauncherReload">
+  <block typedefinition="SmallMissileLauncherReload" subtype="LargeRailgun" class="Sandbox.Game.Weapons.MySmallMissileLauncherReload" type="Sandbox.ModAPI.Ingame.IMySmallMissileLauncherReload">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMySmallMissileLauncher" />
+    <interface name="Sandbox.ModAPI.Ingame.IMySmallMissileLauncherReload" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUserControllableGun" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />
@@ -3583,7 +4774,16 @@
     <property name="UseConveyor" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block type="Sandbox.ModAPI.Ingame.IMySmallGatlingGun" typedefinition="SmallGatlingGun">
+  <block typedefinition="SmallGatlingGun" subtype="SmallBlockAutocannon" class="Sandbox.Game.Weapons.MySmallGatlingGun" type="Sandbox.ModAPI.Ingame.IMySmallGatlingGun">
+    <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMySmallGatlingGun" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" />
+    <interface name="Sandbox.ModAPI.Ingame.IMyUserControllableGun" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyEntity" />
+    <interface name="VRage.Game.ModAPI.Ingame.IMyInventoryOwner" />
     <action name="OnOff" text="Toggle block On/Off" />
     <action name="OnOff_On" text="Toggle block On" />
     <action name="OnOff_Off" text="Toggle block Off" />

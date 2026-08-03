@@ -47,14 +47,16 @@ namespace DocGen.Services
         public void Save(string fileName)
         {
             var document = new StringBuilder();
-            var blocks = Blocks.OrderBy(b => GetBlockName(b.BlockInterfaceType)).ToList();
+            var blocks = Blocks.OrderBy(GetDisplayName, StringComparer.OrdinalIgnoreCase).ToList();
             document.AppendLine("## Overview");
             document.AppendLine("**Note: Terminal actions and properties are for all intents and purposes obsolete since all vanilla block interfaces now contain proper API access to _most of_ this information. It is highly recommended you use those for less overhead.**");
+            document.AppendLine();
+            document.AppendLine("Blocks are listed by their type definition. A block can be fetched through any of the interfaces listed beneath it, so the same actions and properties apply to every one of them.");
             document.AppendLine();
 
             foreach (var block in blocks)
             {
-                var name = GetBlockName(block.BlockInterfaceType);
+                var name = GetDisplayName(block);
                 document.AppendLine($"[{name}](#{name.ToLower()})  ");
             }
 
@@ -62,8 +64,15 @@ namespace DocGen.Services
 
             foreach (var block in blocks)
             {
-                document.AppendLine($"## {GetBlockName(block.BlockInterfaceType)}");
+                document.AppendLine($"## {GetDisplayName(block)}");
                 document.AppendLine();
+
+                if (block.IngameInterfaces.Any())
+                {
+                    document.AppendLine("Available as: " + string.Join(", ", block.IngameInterfaces.Select(i => $"`{GetBlockName(i)}`")));
+                    document.AppendLine();
+                }
+
                 var actions = block.Actions.OrderBy(a => a.Name).ToList();
                 if (actions.Any())
                 {
@@ -148,6 +157,14 @@ namespace DocGen.Services
             return name;
         }
 
+        /// <summary>
+        ///     What a block is listed under. The type definition, because it is the one thing every block has:
+        ///     a dozen block classes carry no terminal interface attribute, so the interface name is blank for
+        ///     them. Falls back to the interface name for older cache files that predate the type definition.
+        /// </summary>
+        string GetDisplayName(BlockInfo block) =>
+            !string.IsNullOrEmpty(block.TypeId) ? block.TypeId : GetBlockName(block.BlockInterfaceType);
+
         public readonly struct TerminalAction
         {
             public readonly string Name;
@@ -178,6 +195,14 @@ namespace DocGen.Services
             {
                 TypeId = (string)element.Attribute("typedefinition");
                 BlockInterfaceType = (string)element.Attribute("type");
+                Subtype = (string)element.Attribute("subtype");
+                ClassName = (string)element.Attribute("class");
+                IngameInterfaces = new ReadOnlyCollection<string>(
+                    element.Elements("interface")
+                        .Select(i => (string)i.Attribute("name"))
+                        .Where(n => !string.IsNullOrEmpty(n))
+                        .OrderBy(n => n, StringComparer.Ordinal)
+                        .ToList());
                 var actions = new List<TerminalAction>();
                 var elements = element.Elements("action");
                 foreach (var action in elements)
@@ -190,8 +215,23 @@ namespace DocGen.Services
                 Properties = new ReadOnlyCollection<TerminalProperty>(properties);
             }
 
+            /// <summary>The block's object builder type without its prefix. The key a block is listed under.</summary>
             public string TypeId { get; }
+
+            /// <summary>
+            ///     The ingame interface the game declares for this block. Empty for the blocks the game never
+            ///     annotated, so it cannot be relied on.
+            /// </summary>
             public string BlockInterfaceType { get; }
+
+            /// <summary>Which subtype the extractor sampled to produce these actions and properties.</summary>
+            public string Subtype { get; }
+
+            /// <summary>The runtime block class, for tracing an entry back to the game.</summary>
+            public string ClassName { get; }
+
+            /// <summary>Every ingame interface the block implements, and so every interface it can be fetched through.</summary>
+            public ReadOnlyCollection<string> IngameInterfaces { get; }
 
             public ReadOnlyCollection<TerminalProperty> Properties { get; set; }
 
@@ -213,7 +253,13 @@ namespace DocGen.Services
 
             public XElement ToXElement()
             {
-                var root = new XElement("block", new XAttribute("type", BlockInterfaceType ?? ""), new XAttribute("typedefinition", TypeId ?? ""));
+                var root = new XElement("block",
+                    new XAttribute("typedefinition", TypeId ?? ""),
+                    new XAttribute("subtype", Subtype ?? ""),
+                    new XAttribute("class", ClassName ?? ""),
+                    new XAttribute("type", BlockInterfaceType ?? ""));
+                foreach (var ingameInterface in IngameInterfaces)
+                    root.Add(new XElement("interface", new XAttribute("name", ingameInterface)));
                 foreach (var action in Actions)
                     root.Add(new XElement("action", new XAttribute("name", action.Name), new XAttribute("text", action.Text)));
                 foreach (var property in Properties)

@@ -1,6 +1,11 @@
 # API Index Generator - Generate Script
 # Generates documentation and API index for both PB and Mod APIs
 
+param(
+    # Use the game data already in the repository instead of fetching the current published data first.
+    [switch] $SkipDataUpdate
+)
+
 $pbDocgenOutput = "$PSScriptRoot\input\pb"
 $modDocgenOutput = "$PSScriptRoot\input\mod"
 $mdkDocsInput = "$PSScriptRoot\input\mdk2"
@@ -8,12 +13,32 @@ $pbApiOutput = "$PSScriptRoot\docs\spaceengineers\pbapi"
 $modApiOutput = "$PSScriptRoot\docs\spaceengineers\modapi"
 $mdkDocsOutput = "$PSScriptRoot\docs\spaceengineers\mdk2"
 
+# Passed to DocGen explicitly rather than relying on it finding them in the current directory, so this script
+# works from anywhere.
+$pbWhitelist = "$PSScriptRoot\pbwhitelist.dat"
+$modWhitelist = "$PSScriptRoot\modwhitelist.dat"
+$terminals = "$PSScriptRoot\terminal.dat"
+
+if (-not $SkipDataUpdate) {
+    Write-Host "Step 0: Updating game data..." -ForegroundColor Cyan
+    Write-Host ""
+
+    & "$PSScriptRoot\update-gamedata.ps1"
+
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host ""
+        Write-Host "Game data update failed!" -ForegroundColor Red
+        exit 1
+    }
+    Write-Host ""
+}
+
 Write-Host "Step 1: Generating PB API documentation with DocGen..." -ForegroundColor Cyan
-Write-Host "Whitelist: pbwhitelist.dat" -ForegroundColor Gray
+Write-Host "Whitelist: $pbWhitelist" -ForegroundColor Gray
 Write-Host "Output:    $pbDocgenOutput" -ForegroundColor Gray
 Write-Host ""
 
-& "$PSScriptRoot\bin\DocGen\docgen.exe" api,terminals,sprites,types,json --whitelist pbwhitelist.dat --output $pbDocgenOutput
+& "$PSScriptRoot\bin\DocGen\docgen.exe" api,terminals,sprites,types,json --whitelist $pbWhitelist --terminal $terminals --output $pbDocgenOutput
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host ""
@@ -23,11 +48,11 @@ if ($LASTEXITCODE -ne 0) {
 
 Write-Host ""
 Write-Host "Step 2: Generating Mod API documentation with DocGen..." -ForegroundColor Cyan
-Write-Host "Whitelist: modwhitelist.dat" -ForegroundColor Gray
+Write-Host "Whitelist: $modWhitelist" -ForegroundColor Gray
 Write-Host "Output:    $modDocgenOutput" -ForegroundColor Gray
 Write-Host ""
 
-& "$PSScriptRoot\bin\DocGen\docgen.exe" api,types,json --whitelist modwhitelist.dat --output $modDocgenOutput
+& "$PSScriptRoot\bin\DocGen\docgen.exe" api,types,json --whitelist $modWhitelist --terminal $terminals --output $modDocgenOutput
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host ""
