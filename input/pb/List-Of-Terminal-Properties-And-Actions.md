@@ -93,6 +93,8 @@ Blocks are listed by their type definition, and the actions and properties shown
 
 Interface: `IMyAirtightHangarDoor`
 
+Subtypes: `AirtightHangarDoorWarfare2A`, `AirtightHangarDoorWarfare2B`, `AirtightHangarDoorWarfare2C`
+
 ### Actions
 
 |Name|Description|
@@ -142,6 +144,8 @@ Interface: `IMyAirtightHangarDoor`
 ## AirtightSlideDoor
 
 Interface: `IMyAirtightSlideDoor`
+
+Subtypes: `LargeBlockSlideDoor`
 
 ### Actions
 
@@ -193,6 +197,8 @@ Interface: `IMyAirtightSlideDoor`
 
 Interface: `IMyAirVent`
 
+Subtypes: `AirVentFan`, `AirVentFanFull`, `AirVentFull`, `SmallAirVent`, `SmallAirVentFan`, `SmallAirVentFanFull`, `SmallAirVentFull`
+
 ### Actions
 
 |Name|Description|
@@ -241,6 +247,8 @@ Interface: `IMyAirVent`
 
 Interface: `IMyAssembler`
 
+Subtypes: `BasicAssembler`, `FoodProcessor`, `LargeAssembler`, `LargeAssemblerIndustrial`, `LargePrototechAssembler`
+
 ### Actions
 
 |Name|Description|
@@ -288,6 +296,8 @@ Interface: `IMyAssembler`
 ## BasicMissionBlock
 
 Interface: `IMyBasicMissionBlock`
+
+Subtypes: `LargeBasicMission`, `SmallBasicMission`
 
 ### Actions
 
@@ -354,6 +364,8 @@ Interface: `IMyBasicMissionBlock`
 
 Interface: `IMyBatteryBlock`
 
+Subtypes: `LargeBlockBatteryBlock`, `LargeBlockBatteryBlockWarfare2`, `LargeBlockPrototechBattery`, `SmallBlockBatteryBlock`, `SmallBlockBatteryBlockWarfare2`, `SmallBlockPrototechBattery`, `SmallBlockSmallBatteryBlock`
+
 ### Actions
 
 |Name|Description|
@@ -406,6 +418,8 @@ Interface: `IMyBatteryBlock`
 
 Interface: `IMyBeacon`
 
+Subtypes: `LargeBlockBeacon`, `LargeBlockBeaconReskin`, `SmallBlockBeacon`, `SmallBlockBeaconReskin`
+
 ### Actions
 
 |Name|Description|
@@ -455,6 +469,8 @@ Interface: `IMyBeacon`
 ## BroadcastController
 
 Interface: `IMyBroadcastController`
+
+Subtypes: `LargeBlockBroadcastController`, `SmallBlockBroadcastController`
 
 ### Actions
 
@@ -525,6 +541,8 @@ Interface: `IMyBroadcastController`
 
 Interface: `IMyButtonPanel`
 
+Subtypes: `ButtonPanelLarge`, `ButtonPanelSmall`, `LargeBlockAccessPanel3`, `LargeBlockConsoleModuleButtons`, `LargeBlockInsetButtonPanel`, `LargeBlockModularBridgeButtonPanel`, `LargeButtonPanelPedestal`, `LargeSciFiButtonPanel`, `LargeSciFiButtonTerminal`, `SmallBlockConsoleModuleButtons`, `SmallButtonPanelPedestal`, `VerticalButtonPanelLarge`, `VerticalButtonPanelSmall`
+
 ### Actions
 
 |Name|Description|
@@ -572,6 +590,8 @@ Interface: `IMyButtonPanel`
 
 Interface: `IMyCameraBlock`
 
+Subtypes: `LargeCameraBlock`, `LargeCameraTopMounted`, `SmallCameraBlock`, `SmallCameraTopMounted`
+
 ### Actions
 
 |Name|Description|
@@ -616,6 +636,8 @@ Interface: `IMyCameraBlock`
 
 Interface: `IMyCargoContainer`
 
+Subtypes: `LargeBlockCargoTerminal`, `LargeBlockCargoTerminalHalf`, `LargeBlockInsetBookshelf`, `LargeBlockLabCabinet`, `LargeBlockLabCornerDesk`, `LargeBlockLargeContainer`, `LargeBlockLargeIndustrialContainer`, `LargeBlockLockerRoom`, `LargeBlockLockerRoomCorner`, `LargeBlockLockers`, `LargeBlockSmallContainer`, `LargeBlockWeaponRack`, `SmallBlockLargeContainer`, `SmallBlockMediumContainer`, `SmallBlockModularContainer`, `SmallBlockSmallContainer`, `SmallBlockWeaponRack`
+
 ### Actions
 
 |Name|Description|
@@ -637,6 +659,8 @@ Interface: `IMyCargoContainer`
 ## Cockpit
 
 Interface: `IMyCockpit`
+
+Subtypes: `BuggyCockpit`, `CockpitOpen`, `DBSmallBlockFighterCockpit`, `LargeBlockBathroom`, `LargeBlockBathroomOpen`, `LargeBlockCaptainDesk`, `LargeBlockCockpit`, `LargeBlockCockpitIndustrial`, `LargeBlockCockpitSeat`, `LargeBlockConsoleModuleInvertedCorner`, `LargeBlockConsoleModuleScreens`, `LargeBlockCouch`, `LargeBlockCouchCorner`, `LargeBlockDesk`, `LargeBlockDeskCorner`, `LargeBlockDeskCornerInv`, `LargeBlockInsetPlantCouch`, `LargeBlockLabDeskSeat`, `LargeBlockModularBridgeCockpit`, `LargeBlockStandingCockpit`, `LargeBlockSuspendedControlSeat`, `LargeBlockSuspendedControlSeatB`, `LargeBlockToilet`, `OpenCockpitLarge`, `OpenCockpitSmall`, `PassengerBench`, `PassengerSeatLarge`, `PassengerSeatSmallNew`, `PassengerSeatSmallOffset`, `RoverCockpit`, `SmallBlockCapCockpit`, `SmallBlockCockpit`, `SmallBlockCockpitIndustrial`, `SmallBlockFlushCockpit`, `SmallBlockStandingCockpit`, `SmallBlockSuspendedControlSeat`, `SmallBlockSuspendedControlSeatB`, `SpeederCockpit`, `SpeederCockpitCompact`
 
 ### Actions
 
@@ -696,6 +720,8 @@ Interface: `IMyCockpit`
 
 Interface: `IMyCollector`
 
+Subtypes: `Collector`, `CollectorSmall`
+
 ### Actions
 
 |Name|Description|
@@ -739,6 +765,8 @@ Interface: `IMyCollector`
 |UseConveyor|bool|
 
 ## ContractBlock
+
+Subtypes: `ContractBlock`
 
 ### Actions
 
@@ -785,6 +813,8 @@ Interface: `IMyCollector`
 ## ConveyorSorter
 
 Interface: `IMyConveyorSorter`
+
+Subtypes: `LargeBlockConveyorSorter`, `LargeBlockConveyorSorterIndustrial`, `MediumBlockConveyorSorter`, `SmallBlockConveyorSorter`
 
 ### Actions
 
@@ -835,6 +865,8 @@ Interface: `IMyConveyorSorter`
 ## CryoChamber
 
 Interface: `IMyCryoChamber`
+
+Subtypes: `LargeBlockBed`, `LargeBlockBedFree`, `LargeBlockCryoChamber`, `LargeBlockCryoLabVat`, `LargeBlockCryoRoom`, `LargeBlockHalfBed`, `LargeBlockHalfBedOffset`, `LargeBlockInsetBed`, `SmallBlockBunkBed`, `SmallBlockCryoChamber`
 
 ### Actions
 
@@ -894,6 +926,8 @@ Interface: `IMyCryoChamber`
 
 Interface: `IMyDecoy`
 
+Subtypes: `LargeDecoy`, `SmallDecoy`, `TrussPillarDecoy`
+
 ### Actions
 
 |Name|Description|
@@ -937,6 +971,8 @@ Interface: `IMyDecoy`
 ## DefensiveCombatBlock
 
 Interface: `IMyDefensiveCombatBlock`
+
+Subtypes: `LargeDefensiveCombat`, `SmallDefensiveCombat`
 
 ### Actions
 
@@ -1015,6 +1051,8 @@ Interface: `IMyDefensiveCombatBlock`
 
 Interface: `IMyDoor`
 
+Subtypes: `CorridorRoundDoor`, `CorridorRoundDoorInv`, `LargeBlockCentredDoor`, `LargeBlockCentredDoorGlass`, `LargeBlockEvenWideDoor`, `LargeBlockGate`, `LargeBlockHalfCentredDoor`, `LargeBlockHalfCentredDoorGlass`, `LargeBlockLabDoor`, `LargeBlockLabDoorInv`, `LargeBlockNarrowDoor`, `LargeBlockNarrowDoorHalf`, `LargeBlockOffsetDoor`, `LargeBlockSmallGate`, `SlidingHatchDoor`, `SlidingHatchDoorHalf`, `SmallBlockCentredDoor`, `SmallBlockCentredDoorGlass`, `SmallDoor`, `SmallSideDoor`
+
 ### Actions
 
 |Name|Description|
@@ -1065,6 +1103,8 @@ Interface: `IMyDoor`
 
 Interface: `IMyShipDrill`
 
+Subtypes: `LargeBlockDrill`, `LargeBlockDrillReskin`, `LargeBlockPrototechDrill`, `SmallBlockDrill`, `SmallBlockDrillReskin`
+
 ### Actions
 
 |Name|Description|
@@ -1114,6 +1154,8 @@ Interface: `IMyShipDrill`
 ## EmotionControllerBlock
 
 Interface: `IMyEmotionControllerBlock`
+
+Subtypes: `EmotionControllerLarge`, `EmotionControllerSmall`
 
 ### Actions
 
@@ -1174,6 +1216,8 @@ Interface: `IMyEmotionControllerBlock`
 ## EventControllerBlock
 
 Interface: `IMyEventControllerBlock`
+
+Subtypes: `EventControllerLarge`, `EventControllerSmall`
 
 ### Actions
 
@@ -1242,6 +1286,8 @@ Interface: `IMyEventControllerBlock`
 
 ## ExhaustBlock
 
+Subtypes: `LargeExhaustCap`, `LargeExhaustPipe`, `SmallExhaustCap`, `SmallExhaustPipe`
+
 ### Actions
 
 |Name|Description|
@@ -1289,6 +1335,8 @@ Interface: `IMyEventControllerBlock`
 ## ExtendedPistonBase
 
 Interface: `IMyExtendedPistonBase`
+
+Subtypes: `LargePistonBase`, `LargePistonBaseReskin`, `SmallPistonBase`, `SmallPistonBaseReskin`
 
 ### Actions
 
@@ -1366,6 +1414,8 @@ Interface: `IMyExtendedPistonBase`
 
 Interface: `IMyFlightMovementBlock`
 
+Subtypes: `LargeFlightMovement`, `SmallFlightMovement`
+
 ### Actions
 
 |Name|Description|
@@ -1438,6 +1488,8 @@ Interface: `IMyFlightMovementBlock`
 ## FunctionalBlock
 
 Interface: `IMyFunctionalBlock`
+
+Subtypes: `LargeBlockAlgaeFarm`, `LargeBlockAlgaeFarmReskin`, `LargeBlockConduitDamaged`, `LargeBlockFarmPlot`
 
 ### Actions
 
@@ -1591,6 +1643,8 @@ Interface: `IMyGravityGeneratorSphere`
 
 Interface: `IMyGyro`
 
+Subtypes: `LargeBlockGyro`, `LargeBlockPrototechGyro`, `SmallBlockGyro`, `SmallBlockPrototechGyro`
+
 ### Actions
 
 |Name|Description|
@@ -1655,6 +1709,8 @@ Interface: `IMyGyro`
 
 Interface: `IMyHeatVent`
 
+Subtypes: `LargeHeatVentBlock`, `SmallHeatVentBlock`
+
 ### Actions
 
 |Name|Description|
@@ -1716,6 +1772,8 @@ Interface: `IMyHeatVent`
 
 ## HydrogenEngine
 
+Subtypes: `LargeHydrogenEngine`, `LargeHydrogenEngineReskin`, `LargePrototechReactor`, `SmallHydrogenEngine`, `SmallHydrogenEngineReskin`
+
 ### Actions
 
 |Name|Description|
@@ -1759,6 +1817,8 @@ Interface: `IMyHeatVent`
 ## InteriorLight
 
 Interface: `IMyInteriorLight`
+
+Subtypes: `AirDuctLight`, `CorridorLight`, `CorridorNarrowStowage`, `CorridorRoundLight`, `LabEquipment2`, `LargeBlockConduitLight`, `LargeBlockConduitLightInv`, `LargeBlockHalfTrofferLight`, `LargeBlockHalfTrofferLightInv`, `LargeBlockInsetAquarium`, `LargeBlockInsetKitchen`, `LargeBlockInsetLight`, `LargeBlockInsetTerrariumDesert`, `LargeBlockInsetTerrariumForest`, `LargeBlockInsetWallLight`, `LargeBlockLight_1corner`, `LargeBlockLight_2corner`, `LargeBlockTrofferLight`, `LargeInsetPlanter`, `LargeLightPanel`, `OffsetLight`, `PassageSciFiLight`, `SmallBlockInsetLight`, `SmallBlockLight_1corner`, `SmallBlockLight_2corner`, `SmallBlockSmallLight`, `SmallLight`, `SmallLightPanel`, `TrussPillarLight`, `TrussPillarLightSmall`
 
 ### Actions
 
@@ -1828,6 +1888,8 @@ Interface: `IMyInteriorLight`
 ## InteriorTurret
 
 Interface: `IMyLargeInteriorTurret`
+
+Subtypes: `LargeInteriorTurret`
 
 ### Actions
 
@@ -1927,6 +1989,8 @@ Interface: `IMyLargeInteriorTurret`
 
 ## Jukebox
 
+Subtypes: `Jukebox`, `LargeBlockInsetEntertainmentCorner`, `SmallBlockJukeboxReskin`
+
 ### Actions
 
 |Name|Description|
@@ -1982,6 +2046,8 @@ Interface: `IMyLargeInteriorTurret`
 
 Interface: `IMyJumpDrive`
 
+Subtypes: `LargeJumpDrive`, `LargeJumpDriveReskin`, `LargePrototechJumpDrive`, `SmallPrototechJumpDrive`
+
 ### Actions
 
 |Name|Description|
@@ -2035,6 +2101,8 @@ Interface: `IMyJumpDrive`
 
 Interface: `IMyLandingGear`
 
+Subtypes: `LargeBlockLandingGear`, `LargeBlockLandingGearReskin`, `LargeBlockMagneticPlate`, `LargeBlockSmallMagneticPlate`, `SmallBlockLandingGear`, `SmallBlockLandingGearReskin`, `SmallBlockMagneticPlate`, `SmallBlockSmallMagneticPlate`
+
 ### Actions
 
 |Name|Description|
@@ -2085,6 +2153,8 @@ Interface: `IMyLandingGear`
 ## LargeGatlingTurret
 
 Interface: `IMyLargeGatlingTurret`
+
+Subtypes: `AutoCannonTurret`, `LargeGatlingTurretReskin`, `SmallGatlingTurret`, `SmallGatlingTurretReskin`
 
 ### Actions
 
@@ -2185,6 +2255,8 @@ Interface: `IMyLargeGatlingTurret`
 |UseConveyor|bool|
 
 ## LargeMissileTurret
+
+Subtypes: `LargeBlockMediumCalibreTurret`, `LargeCalibreTurret`, `LargeMissileTurretReskin`, `SmallBlockMediumCalibreTurret`, `SmallMissileTurret`, `SmallMissileTurretReskin`
 
 ### Actions
 
@@ -2288,6 +2360,8 @@ Interface: `IMyLargeGatlingTurret`
 
 Interface: `IMyLaserAntenna`
 
+Subtypes: `LargeBlockLaserAntenna`, `SmallBlockLaserAntenna`
+
 ### Actions
 
 |Name|Description|
@@ -2339,6 +2413,8 @@ Interface: `IMyLaserAntenna`
 
 ## LCDPanelsBlock
 
+Subtypes: `LabEquipment`, `LabEquipment1`, `LabEquipment3`, `LargeBlockLabDeskMicroscope`, `MedicalStation`
+
 ### Actions
 
 |Name|Description|
@@ -2382,6 +2458,8 @@ Interface: `IMyLaserAntenna`
 ## MedicalRoom
 
 Interface: `IMyMedicalRoom`
+
+Subtypes: `InsetRefillStation`, `LargeMedicalRoom`, `LargeMedicalRoomReskin`, `LargeRefillStation`, `SmallRefillStation`
 
 ### Actions
 
@@ -2430,6 +2508,8 @@ Interface: `IMyMedicalRoom`
 
 Interface: `IMyShipMergeBlock`
 
+Subtypes: `LargeShipMergeBlock`, `SmallShipMergeBlock`, `SmallShipSmallMergeBlock`
+
 ### Actions
 
 |Name|Description|
@@ -2473,6 +2553,8 @@ Interface: `IMyShipMergeBlock`
 ## MotorAdvancedStator
 
 Interface: `IMyMotorAdvancedStator`
+
+Subtypes: `LargeAdvancedStator`, `LargeHinge`, `MediumHinge`, `SmallAdvancedStator`, `SmallAdvancedStatorSmall`, `SmallHinge`
 
 ### Actions
 
@@ -2565,6 +2647,8 @@ Interface: `IMyMotorAdvancedStator`
 |Weld speed|float|
 
 ## MotorStator
+
+Subtypes: `LargeStator`, `SmallStator`
 
 ### Actions
 
@@ -2659,6 +2743,8 @@ Interface: `IMyMotorAdvancedStator`
 ## MotorSuspension
 
 Interface: `IMyMotorSuspension`
+
+Subtypes: `OffroadShortSuspension1x1`, `OffroadShortSuspension1x1mirrored`, `OffroadShortSuspension2x2`, `OffroadShortSuspension2x2Mirrored`, `OffroadShortSuspension3x3`, `OffroadShortSuspension3x3mirrored`, `OffroadShortSuspension5x5`, `OffroadShortSuspension5x5mirrored`, `OffroadSmallShortSuspension1x1`, `OffroadSmallShortSuspension1x1mirrored`, `OffroadSmallShortSuspension2x2`, `OffroadSmallShortSuspension2x2Mirrored`, `OffroadSmallShortSuspension3x3`, `OffroadSmallShortSuspension3x3mirrored`, `OffroadSmallShortSuspension5x5`, `OffroadSmallShortSuspension5x5mirrored`, `OffroadSmallSuspension1x1`, `OffroadSmallSuspension1x1mirrored`, `OffroadSmallSuspension2x2`, `OffroadSmallSuspension2x2Mirrored`, `OffroadSmallSuspension3x3`, `OffroadSmallSuspension3x3mirrored`, `OffroadSmallSuspension5x5`, `OffroadSmallSuspension5x5mirrored`, `OffroadSuspension1x1`, `OffroadSuspension1x1mirrored`, `OffroadSuspension2x2`, `OffroadSuspension2x2Mirrored`, `OffroadSuspension3x3`, `OffroadSuspension3x3mirrored`, `OffroadSuspension5x5`, `OffroadSuspension5x5mirrored`, `ShortSuspension1x1`, `ShortSuspension1x1mirrored`, `ShortSuspension2x2`, `ShortSuspension2x2Mirrored`, `ShortSuspension3x3`, `ShortSuspension3x3mirrored`, `ShortSuspension5x5`, `ShortSuspension5x5mirrored`, `SmallShortSuspension1x1`, `SmallShortSuspension1x1mirrored`, `SmallShortSuspension2x2`, `SmallShortSuspension2x2Mirrored`, `SmallShortSuspension3x3`, `SmallShortSuspension3x3mirrored`, `SmallShortSuspension5x5`, `SmallShortSuspension5x5mirrored`, `SmallSuspension1x1`, `SmallSuspension1x1mirrored`, `SmallSuspension2x2`, `SmallSuspension2x2Mirrored`, `SmallSuspension3x3`, `SmallSuspension3x3mirrored`, `SmallSuspension5x5`, `SmallSuspension5x5mirrored`, `Suspension1x1`, `Suspension1x1mirrored`, `Suspension2x2`, `Suspension2x2Mirrored`, `Suspension3x3`, `Suspension3x3mirrored`, `Suspension5x5`, `Suspension5x5mirrored`
 
 ### Actions
 
@@ -2761,6 +2847,8 @@ Interface: `IMyMotorSuspension`
 
 Interface: `IMyProgrammableBlock`
 
+Subtypes: `LargeProgrammableBlock`, `LargeProgrammableBlockReskin`, `SmallProgrammableBlock`, `SmallProgrammableBlockReskin`
+
 ### Actions
 
 |Name|Description|
@@ -2807,6 +2895,8 @@ Interface: `IMyProgrammableBlock`
 ## OffensiveCombatBlock
 
 Interface: `IMyOffensiveCombatBlock`
+
+Subtypes: `LargeOffensiveCombat`, `SmallOffensiveCombat`
 
 ### Actions
 
@@ -2927,6 +3017,8 @@ Interface: `IMyOffensiveCombatBlock`
 
 Interface: `IMyOreDetector`
 
+Subtypes: `LargeOreDetector`, `LargeOreDetectorReskin`, `SmallBlockOreDetector`, `SmallOreDetectorReskin`
+
 ### Actions
 
 |Name|Description|
@@ -2974,6 +3066,8 @@ Interface: `IMyOreDetector`
 
 Interface: `IMyOxygenFarm`
 
+Subtypes: `LargeBlockOxygenFarm`, `LargeBlockOxygenFarmReskin`
+
 ### Actions
 
 |Name|Description|
@@ -3017,6 +3111,8 @@ Interface: `IMyOxygenFarm`
 ## OxygenGenerator
 
 Interface: `IMyGasGenerator`
+
+Subtypes: `IrrigationSystem`, `LargeBlockOxygenGeneratorLab`, `OxygenGeneratorSmall`, `SmallBlockOxygenGeneratorLab`
 
 ### Actions
 
@@ -3066,6 +3162,8 @@ Interface: `IMyGasGenerator`
 ## OxygenTank
 
 Interface: `IMyGasTank`
+
+Subtypes: `LargeBlockOxygenTankLab`, `LargeHydrogenTank`, `LargeHydrogenTankIndustrial`, `LargeHydrogenTankSmall`, `LargeHydrogenTankSmallLab`, `OxygenTankSmall`, `SmallHydrogenTank`, `SmallHydrogenTankLab`, `SmallHydrogenTankSmall`, `SmallOxygenTankSmall`
 
 ### Actions
 
@@ -3117,6 +3215,8 @@ Interface: `IMyGasTank`
 ## Parachute
 
 Interface: `IMyParachute`
+
+Subtypes: `LgParachute`, `SmParachute`
 
 ### Actions
 
@@ -3170,6 +3270,8 @@ Interface: `IMyParachute`
 ## PathRecorderBlock
 
 Interface: `IMyPathRecorderBlock`
+
+Subtypes: `LargePathRecorderBlock`, `SmallPathRecorderBlock`
 
 ### Actions
 
@@ -3240,6 +3342,8 @@ Interface: `IMyPathRecorderBlock`
 ## Projector
 
 Interface: `IMyProjector`
+
+Subtypes: `LargeBlockConsole`, `LargeProjector`, `SmallProjector`
 
 ### Actions
 
@@ -3316,6 +3420,8 @@ Interface: `IMyProjector`
 
 Interface: `IMyRadioAntenna`
 
+Subtypes: `LargeBlockCompactRadioAntenna`, `LargeBlockCompactRadioAntennaReskin`, `LargeBlockRadioAntenna`, `LargeBlockRadioAntennaDish`, `SmallBlockCompactRadioAntennaReskin`, `SmallBlockRadioAntenna`
+
 ### Actions
 
 |Name|Description|
@@ -3365,6 +3471,8 @@ Interface: `IMyRadioAntenna`
 
 Interface: `IMyReactor`
 
+Subtypes: `LargeBlockLargeGenerator`, `LargeBlockLargeGeneratorWarfare2`, `LargeBlockSmallGenerator`, `LargeBlockSmallGeneratorWarfare2`, `SmallBlockLargeGenerator`, `SmallBlockLargeGeneratorWarfare2`, `SmallBlockSmallGenerator`, `SmallBlockSmallGeneratorWarfare2`
+
 ### Actions
 
 |Name|Description|
@@ -3411,6 +3519,8 @@ Interface: `IMyReactor`
 
 Interface: `IMyRefinery`
 
+Subtypes: `Blast Furnace`, `LargePrototechRefinery`, `LargeRefinery`, `LargeRefineryIndustrial`, `SmallPrototechRefinery`
+
 ### Actions
 
 |Name|Description|
@@ -3456,6 +3566,8 @@ Interface: `IMyRefinery`
 ## ReflectorLight
 
 Interface: `IMyReflectorLight`
+
+Subtypes: `LargeBlockFloodlight`, `LargeBlockFloodlightAngled`, `LargeBlockFloodlightCornerL`, `LargeBlockFloodlightCornerR`, `LargeBlockFrontLight`, `OffsetSpotlight`, `RotatingLightLarge`, `RotatingLightSmall`, `SmallBlockFloodlight`, `SmallBlockFloodlightAngled`, `SmallBlockFloodlightAngledRotated`, `SmallBlockFloodlightCornerL`, `SmallBlockFloodlightCornerR`, `SmallBlockFloodlightDown`, `SmallBlockFrontLight`
 
 ### Actions
 
@@ -3529,6 +3641,8 @@ Interface: `IMyReflectorLight`
 
 Interface: `IMyRemoteControl`
 
+Subtypes: `LargeBlockRemoteControl`, `SmallBlockRemoteControl`
+
 ### Actions
 
 |Name|Description|
@@ -3599,6 +3713,8 @@ Interface: `IMyRemoteControl`
 
 Interface: `IMySafeZoneBlock`
 
+Subtypes: `SafeZoneBlock`
+
 ### Actions
 
 |Name|Description|
@@ -3662,6 +3778,8 @@ Interface: `IMySafeZoneBlock`
 ## Searchlight
 
 Interface: `IMySearchlight`
+
+Subtypes: `LargeSearchlight`, `SmallSearchlight`
 
 ### Actions
 
@@ -3783,6 +3901,8 @@ Interface: `IMySearchlight`
 
 Interface: `IMySensorBlock`
 
+Subtypes: `LargeBlockSensor`, `LargeBlockSensorReskin`, `SmallBlockSensor`, `SmallBlockSensorReskin`
+
 ### Actions
 
 |Name|Description|
@@ -3896,6 +4016,8 @@ Interface: `IMySensorBlock`
 
 Interface: `IMyShipConnector`
 
+Subtypes: `Connector`, `ConnectorMedium`, `ConnectorSmall`, `LargeBlockInsetConnector`, `LargeBlockInsetConnectorSmall`, `SmallBlockInsetConnector`, `SmallBlockInsetConnectorMedium`
+
 ### Actions
 
 |Name|Description|
@@ -3967,6 +4089,8 @@ Interface: `IMyShipConnector`
 
 Interface: `IMyShipGrinder`
 
+Subtypes: `LargeShipGrinder`, `LargeShipGrinderReskin`, `SmallShipGrinder`, `SmallShipGrinderReskin`
+
 ### Actions
 
 |Name|Description|
@@ -4012,6 +4136,8 @@ Interface: `IMyShipGrinder`
 ## ShipWelder
 
 Interface: `IMyShipWelder`
+
+Subtypes: `LargeShipWelder`, `LargeShipWelderReskin`, `SmallShipWelder`, `SmallShipWelderReskin`
 
 ### Actions
 
@@ -4060,6 +4186,8 @@ Interface: `IMyShipWelder`
 ## SmallGatlingGun
 
 Interface: `IMySmallGatlingGun`
+
+Subtypes: `SmallBlockAutocannon`, `SmallGatlingGunWarfare2`
 
 ### Actions
 
@@ -4112,6 +4240,8 @@ Interface: `IMySmallGatlingGun`
 
 Interface: `IMySmallMissileLauncher`
 
+Subtypes: `LargeBlockLargeCalibreGun`, `LargeFlareLauncher`, `LargeMissileLauncher`, `SmallFlareLauncher`, `SmallMissileLauncherWarfare2`
+
 ### Actions
 
 |Name|Description|
@@ -4162,6 +4292,8 @@ Interface: `IMySmallMissileLauncher`
 ## SmallMissileLauncherReload
 
 Interface: `IMySmallMissileLauncherReload`
+
+Subtypes: `LargeRailgun`, `SmallBlockMediumCalibreGun`, `SmallRailgun`, `SmallRocketLauncherReload`
 
 ### Actions
 
@@ -4216,6 +4348,8 @@ Interface: `IMySmallMissileLauncherReload`
 
 Interface: `IMySolarPanel`
 
+Subtypes: `LargeBlockColorableSolarPanel`, `LargeBlockColorableSolarPanelCorner`, `LargeBlockColorableSolarPanelCornerInverted`, `LargeBlockSolarPanel`, `SmallBlockColorableSolarPanel`, `SmallBlockColorableSolarPanelCorner`, `SmallBlockColorableSolarPanelCornerInverted`, `SmallBlockSolarPanel`
+
 ### Actions
 
 |Name|Description|
@@ -4259,6 +4393,8 @@ Interface: `IMySolarPanel`
 ## SoundBlock
 
 Interface: `IMySoundBlock`
+
+Subtypes: `LargeBlockSoundBlock`, `SmallBlockSoundBlock`
 
 ### Actions
 
@@ -4315,6 +4451,8 @@ Interface: `IMySoundBlock`
 
 Interface: `IMySpaceBall`
 
+Subtypes: `SpaceBallLarge`, `SpaceBallSmall`
+
 ### Actions
 
 |Name|Description|
@@ -4364,6 +4502,8 @@ Interface: `IMySpaceBall`
 
 Interface: `IMyStoreBlock`
 
+Subtypes: `AtmBlock`, `StoreBlock`
+
 ### Actions
 
 |Name|Description|
@@ -4409,6 +4549,8 @@ Interface: `IMyStoreBlock`
 |UseConveyor|bool|
 
 ## SurvivalKit
+
+Subtypes: `SurvivalKit`, `SurvivalKitLarge`, `SurvivalKitLargeReskin`, `SurvivalKitSmallReskin`
 
 ### Actions
 
@@ -4459,6 +4601,8 @@ Interface: `IMyStoreBlock`
 
 Interface: `IMyTargetDummyBlock`
 
+Subtypes: `TargetDummy`
+
 ### Actions
 
 |Name|Description|
@@ -4507,6 +4651,8 @@ Interface: `IMyTargetDummyBlock`
 
 Interface: `IMyTerminalBlock`
 
+Subtypes: `ControlPanel`, `LargeBlockAccessPanel1`, `LargeBlockAccessPanel2`, `LargeBlockAccessPanel4`, `LargeBlockSciFiTerminal`, `LargeControlPanelPedestal`, `LargeCrate`, `LargeFreezer`, `SmallBlockAccessPanel1`, `SmallBlockAccessPanel2`, `SmallBlockAccessPanel3`, `SmallBlockAccessPanel4`, `SmallBlockFirstAidCabinet`, `SmallBlockKitchenFridge`, `SmallBlockKitchenMicrowave`, `SmallBlockKitchenOven`, `SmallControlPanel`, `SmallControlPanelPedestal`
+
 ### Actions
 
 |Name|Description|
@@ -4528,6 +4674,8 @@ Interface: `IMyTerminalBlock`
 ## TextPanel
 
 Interface: `IMyTextPanel`
+
+Subtypes: `HoloLCDLarge`, `HoloLCDSmall`, `LargeBlockCorner_LCD_1`, `LargeBlockCorner_LCD_2`, `LargeBlockCorner_LCD_Flat_1`, `LargeBlockCorner_LCD_Flat_2`, `LargeCurvedLCDPanel`, `LargeDiagonalLCDPanel`, `LargeFullBlockLCDPanel`, `LargeLCDPanel`, `LargeLCDPanel3x3`, `LargeLCDPanel5x3`, `LargeLCDPanel5x5`, `LargeLCDPanelWide`, `LargeTextPanel`, `SmallBlockConsoleModuleScreens`, `SmallBlockCorner_LCD_1`, `SmallBlockCorner_LCD_2`, `SmallBlockCorner_LCD_Flat_1`, `SmallBlockCorner_LCD_Flat_2`, `SmallCurvedLCDPanel`, `SmallDiagonalLCDPanel`, `SmallFullBlockLCDPanel`, `SmallLCDPanel`, `SmallLCDPanelWide`, `SmallTextPanel`, `TransparentLCDLarge`, `TransparentLCDSmall`
 
 ### Actions
 
@@ -4595,6 +4743,8 @@ Interface: `IMyTextPanel`
 
 Interface: `IMyThrust`
 
+Subtypes: `LargeBlockLargeAtmosphericThrust`, `LargeBlockLargeAtmosphericThrustSciFi`, `LargeBlockLargeFlatAtmosphericThrust`, `LargeBlockLargeFlatAtmosphericThrustDShape`, `LargeBlockLargeHydrogenThrust`, `LargeBlockLargeHydrogenThrustIndustrial`, `LargeBlockLargeHydrogenThrustReskin`, `LargeBlockLargeModularThruster`, `LargeBlockLargeThrust`, `LargeBlockLargeThrustSciFi`, `LargeBlockPrototechThruster`, `LargeBlockSmallAtmosphericThrust`, `LargeBlockSmallAtmosphericThrustSciFi`, `LargeBlockSmallFlatAtmosphericThrust`, `LargeBlockSmallFlatAtmosphericThrustDShape`, `LargeBlockSmallHydrogenThrust`, `LargeBlockSmallHydrogenThrustIndustrial`, `LargeBlockSmallHydrogenThrustReskin`, `LargeBlockSmallModularThruster`, `LargeBlockSmallThrust`, `LargeBlockSmallThrustSciFi`, `SmallBlockLargeAtmosphericThrust`, `SmallBlockLargeAtmosphericThrustSciFi`, `SmallBlockLargeFlatAtmosphericThrust`, `SmallBlockLargeFlatAtmosphericThrustDShape`, `SmallBlockLargeHydrogenThrust`, `SmallBlockLargeHydrogenThrustIndustrial`, `SmallBlockLargeHydrogenThrustReskin`, `SmallBlockLargeModularThruster`, `SmallBlockLargeThrust`, `SmallBlockLargeThrustSciFi`, `SmallBlockPrototechThruster`, `SmallBlockSmallAtmosphericThrust`, `SmallBlockSmallAtmosphericThrustSciFi`, `SmallBlockSmallFlatAtmosphericThrust`, `SmallBlockSmallFlatAtmosphericThrustDShape`, `SmallBlockSmallHydrogenThrust`, `SmallBlockSmallHydrogenThrustIndustrial`, `SmallBlockSmallHydrogenThrustReskin`, `SmallBlockSmallModularThruster`, `SmallBlockSmallThrust`, `SmallBlockSmallThrustSciFi`
+
 ### Actions
 
 |Name|Description|
@@ -4642,6 +4792,8 @@ Interface: `IMyThrust`
 ## TimerBlock
 
 Interface: `IMyTimerBlock`
+
+Subtypes: `TimerBlockLarge`, `TimerBlockReskinLarge`, `TimerBlockReskinSmall`, `TimerBlockSmall`
 
 ### Actions
 
@@ -4694,6 +4846,8 @@ Interface: `IMyTimerBlock`
 ## TransponderBlock
 
 Interface: `IMyTransponder`
+
+Subtypes: `LargeBlockTransponder`, `SmallBlockTransponder`
 
 ### Actions
 
@@ -4748,6 +4902,8 @@ Interface: `IMyTransponder`
 ## TurretControlBlock
 
 Interface: `IMyTurretControlBlock`
+
+Subtypes: `LargeTurretControlBlock`, `SmallTurretControlBlock`
 
 ### Actions
 
@@ -4865,6 +5021,8 @@ Interface: `IMyTurretControlBlock`
 
 Interface: `IMyUpgradeModule`
 
+Subtypes: `LargeEffectivenessModule`, `LargeEnergyModule`, `LargeProductivityModule`
+
 ### Actions
 
 |Name|Description|
@@ -4906,6 +5064,8 @@ Interface: `IMyUpgradeModule`
 |TextPaddingSlider|float|
 
 ## VendingMachine
+
+Subtypes: `FoodDispenser`, `VendingMachine`
 
 ### Actions
 
@@ -4955,6 +5115,8 @@ Interface: `IMyUpgradeModule`
 
 Interface: `IMyArtificialMassBlock`
 
+Subtypes: `VirtualMassLarge`, `VirtualMassSmall`
+
 ### Actions
 
 |Name|Description|
@@ -4999,6 +5161,8 @@ Interface: `IMyArtificialMassBlock`
 
 Interface: `IMyWarhead`
 
+Subtypes: `LargeExplosiveBarrel`, `LargeWarhead`, `SmallExplosiveBarrel`, `SmallWarhead`
+
 ### Actions
 
 |Name|Description|
@@ -5030,6 +5194,8 @@ Interface: `IMyWarhead`
 ## WindTurbine
 
 Interface: `IMyWindTurbine`
+
+Subtypes: `LargeBlockWindTurbine`, `LargeBlockWindTurbineReskin`
 
 ### Actions
 

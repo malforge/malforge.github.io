@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <terminals>
-  <block typedefinition="Drill" subtype="LargeBlockDrillReskin" class="Sandbox.Game.Weapons.MyShipDrill" type="Sandbox.ModAPI.Ingame.IMyShipDrill">
+  <block typedefinition="Drill" sampledsubtype="LargeBlockDrillReskin" class="Sandbox.Game.Weapons.MyShipDrill" type="Sandbox.ModAPI.Ingame.IMyShipDrill">
+    <subtype name="LargeBlockDrill" />
+    <subtype name="LargeBlockDrillReskin" />
+    <subtype name="LargeBlockPrototechDrill" />
+    <subtype name="SmallBlockDrill" />
+    <subtype name="SmallBlockDrillReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyShipDrill" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyShipToolBase" terminal="true" />
@@ -47,7 +52,11 @@
     <property name="UseConveyor" type="Boolean" />
     <property name="TerrainClearingMode" type="Boolean" />
   </block>
-  <block typedefinition="ShipGrinder" subtype="LargeShipGrinderReskin" class="Sandbox.Game.Weapons.MyShipGrinder" type="Sandbox.ModAPI.Ingame.IMyShipGrinder">
+  <block typedefinition="ShipGrinder" sampledsubtype="LargeShipGrinderReskin" class="Sandbox.Game.Weapons.MyShipGrinder" type="Sandbox.ModAPI.Ingame.IMyShipGrinder">
+    <subtype name="LargeShipGrinder" />
+    <subtype name="LargeShipGrinderReskin" />
+    <subtype name="SmallShipGrinder" />
+    <subtype name="SmallShipGrinderReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyShipGrinder" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyShipToolBase" terminal="true" />
@@ -90,7 +99,11 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block typedefinition="ShipWelder" subtype="LargeShipWelderReskin" class="SpaceEngineers.Game.Entities.Blocks.MyShipWelder" type="Sandbox.ModAPI.Ingame.IMyShipWelder">
+  <block typedefinition="ShipWelder" sampledsubtype="LargeShipWelderReskin" class="SpaceEngineers.Game.Entities.Blocks.MyShipWelder" type="Sandbox.ModAPI.Ingame.IMyShipWelder">
+    <subtype name="LargeShipWelder" />
+    <subtype name="LargeShipWelderReskin" />
+    <subtype name="SmallShipWelder" />
+    <subtype name="SmallShipWelderReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyShipToolBase" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyShipWelder" terminal="true" />
@@ -135,7 +148,11 @@
     <property name="UseConveyor" type="Boolean" />
     <property name="helpOthers" type="Boolean" />
   </block>
-  <block typedefinition="FunctionalBlock" subtype="LargeBlockAlgaeFarmReskin" class="Sandbox.Game.Entities.Cube.MyFunctionalBlock" type="Sandbox.ModAPI.Ingame.IMyFunctionalBlock">
+  <block typedefinition="FunctionalBlock" sampledsubtype="LargeBlockAlgaeFarmReskin" class="Sandbox.Game.Entities.Cube.MyFunctionalBlock" type="Sandbox.ModAPI.Ingame.IMyFunctionalBlock">
+    <subtype name="LargeBlockAlgaeFarm" />
+    <subtype name="LargeBlockAlgaeFarmReskin" />
+    <subtype name="LargeBlockConduitDamaged" />
+    <subtype name="LargeBlockFarmPlot" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -173,7 +190,9 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="OxygenFarm" subtype="LargeBlockOxygenFarmReskin" class="SpaceEngineers.Game.Entities.Blocks.MyOxygenFarm" type="SpaceEngineers.Game.ModAPI.Ingame.IMyOxygenFarm">
+  <block typedefinition="OxygenFarm" sampledsubtype="LargeBlockOxygenFarmReskin" class="SpaceEngineers.Game.Entities.Blocks.MyOxygenFarm" type="SpaceEngineers.Game.ModAPI.Ingame.IMyOxygenFarm">
+    <subtype name="LargeBlockOxygenFarm" />
+    <subtype name="LargeBlockOxygenFarmReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMySolarOccludable" terminal="false" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -213,7 +232,37 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="InteriorLight" subtype="LargeBlockInsetTerrariumDesert" class="SpaceEngineers.Game.Entities.Blocks.MyInteriorLight" type="SpaceEngineers.Game.ModAPI.Ingame.IMyInteriorLight">
+  <block typedefinition="InteriorLight" sampledsubtype="LargeBlockInsetTerrariumDesert" class="SpaceEngineers.Game.Entities.Blocks.MyInteriorLight" type="SpaceEngineers.Game.ModAPI.Ingame.IMyInteriorLight">
+    <subtype name="AirDuctLight" />
+    <subtype name="CorridorLight" />
+    <subtype name="CorridorNarrowStowage" />
+    <subtype name="CorridorRoundLight" />
+    <subtype name="LabEquipment2" />
+    <subtype name="LargeBlockConduitLight" />
+    <subtype name="LargeBlockConduitLightInv" />
+    <subtype name="LargeBlockHalfTrofferLight" />
+    <subtype name="LargeBlockHalfTrofferLightInv" />
+    <subtype name="LargeBlockInsetAquarium" />
+    <subtype name="LargeBlockInsetKitchen" />
+    <subtype name="LargeBlockInsetLight" />
+    <subtype name="LargeBlockInsetTerrariumDesert" />
+    <subtype name="LargeBlockInsetTerrariumForest" />
+    <subtype name="LargeBlockInsetWallLight" />
+    <subtype name="LargeBlockLight_1corner" />
+    <subtype name="LargeBlockLight_2corner" />
+    <subtype name="LargeBlockTrofferLight" />
+    <subtype name="LargeInsetPlanter" />
+    <subtype name="LargeLightPanel" />
+    <subtype name="OffsetLight" />
+    <subtype name="PassageSciFiLight" />
+    <subtype name="SmallBlockInsetLight" />
+    <subtype name="SmallBlockLight_1corner" />
+    <subtype name="SmallBlockLight_2corner" />
+    <subtype name="SmallBlockSmallLight" />
+    <subtype name="SmallLight" />
+    <subtype name="SmallLightPanel" />
+    <subtype name="TrussPillarLight" />
+    <subtype name="TrussPillarLightSmall" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyLightingBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -278,7 +327,11 @@
     <property name="Blink Lenght" type="Single" />
     <property name="Blink Offset" type="Single" />
   </block>
-  <block typedefinition="SurvivalKit" subtype="SurvivalKitLargeReskin" class="SpaceEngineers.Game.Entities.Blocks.MySurvivalKit" type="">
+  <block typedefinition="SurvivalKit" sampledsubtype="SurvivalKitLargeReskin" class="SpaceEngineers.Game.Entities.Blocks.MySurvivalKit" type="">
+    <subtype name="SurvivalKit" />
+    <subtype name="SurvivalKitLarge" />
+    <subtype name="SurvivalKitLargeReskin" />
+    <subtype name="SurvivalKitSmallReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyAssembler" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyProductionBlock" terminal="true" />
@@ -324,7 +377,11 @@
     <property name="slaveMode" type="Boolean" />
     <property name="SpawnName" type="StringBuilder" />
   </block>
-  <block typedefinition="OreDetector" subtype="LargeOreDetectorReskin" class="Sandbox.Game.Entities.Cube.MyOreDetector" type="Sandbox.ModAPI.Ingame.IMyOreDetector">
+  <block typedefinition="OreDetector" sampledsubtype="LargeOreDetectorReskin" class="Sandbox.Game.Entities.Cube.MyOreDetector" type="Sandbox.ModAPI.Ingame.IMyOreDetector">
+    <subtype name="LargeOreDetector" />
+    <subtype name="LargeOreDetectorReskin" />
+    <subtype name="SmallBlockOreDetector" />
+    <subtype name="SmallOreDetectorReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyOreDetector" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -366,7 +423,11 @@
     <property name="Range" type="Single" />
     <property name="BroadcastUsingAntennas" type="Boolean" />
   </block>
-  <block typedefinition="MyProgrammableBlock" subtype="LargeProgrammableBlock" class="Sandbox.Game.Entities.Blocks.MyProgrammableBlock" type="Sandbox.ModAPI.Ingame.IMyProgrammableBlock">
+  <block typedefinition="MyProgrammableBlock" sampledsubtype="LargeProgrammableBlock" class="Sandbox.Game.Entities.Blocks.MyProgrammableBlock" type="Sandbox.ModAPI.Ingame.IMyProgrammableBlock">
+    <subtype name="LargeProgrammableBlock" />
+    <subtype name="LargeProgrammableBlockReskin" />
+    <subtype name="SmallProgrammableBlock" />
+    <subtype name="SmallProgrammableBlockReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyProgrammableBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -408,7 +469,10 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="ConsoleCommand" type="StringBuilder" />
   </block>
-  <block typedefinition="Projector" subtype="LargeProjector" class="Entities.Blocks.MySpaceProjector" type="Sandbox.ModAPI.Ingame.IMyProjector">
+  <block typedefinition="Projector" sampledsubtype="LargeProjector" class="Entities.Blocks.MySpaceProjector" type="Sandbox.ModAPI.Ingame.IMyProjector">
+    <subtype name="LargeBlockConsole" />
+    <subtype name="LargeProjector" />
+    <subtype name="SmallProjector" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyProjector" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -478,7 +542,11 @@
     <property name="NumberOfProjections" type="Single" />
     <property name="NumberOfBlocks" type="Single" />
   </block>
-  <block typedefinition="SensorBlock" subtype="LargeBlockSensor" class="Sandbox.Game.Entities.Blocks.MySensorBlock" type="Sandbox.ModAPI.Ingame.IMySensorBlock">
+  <block typedefinition="SensorBlock" sampledsubtype="LargeBlockSensor" class="Sandbox.Game.Entities.Blocks.MySensorBlock" type="Sandbox.ModAPI.Ingame.IMySensorBlock">
+    <subtype name="LargeBlockSensor" />
+    <subtype name="LargeBlockSensorReskin" />
+    <subtype name="SmallBlockSensor" />
+    <subtype name="SmallBlockSensorReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMySensorBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -586,7 +654,8 @@
     <property name="Detect Neutral" type="Boolean" />
     <property name="Detect Enemy" type="Boolean" />
   </block>
-  <block typedefinition="TargetDummyBlock" subtype="TargetDummy" class="Sandbox.Game.Entities.Blocks.MyTargetDummyBlock" type="Sandbox.ModAPI.Ingame.IMyTargetDummyBlock">
+  <block typedefinition="TargetDummyBlock" sampledsubtype="TargetDummy" class="Sandbox.Game.Entities.Blocks.MyTargetDummyBlock" type="Sandbox.ModAPI.Ingame.IMyTargetDummyBlock">
+    <subtype name="TargetDummy" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -629,7 +698,9 @@
     <property name="Delay" type="Single" />
     <property name="Enable Restoration" type="Boolean" />
   </block>
-  <block typedefinition="SoundBlock" subtype="LargeBlockSoundBlock" class="SpaceEngineers.Game.Entities.Blocks.MySoundBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMySoundBlock">
+  <block typedefinition="SoundBlock" sampledsubtype="LargeBlockSoundBlock" class="SpaceEngineers.Game.Entities.Blocks.MySoundBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMySoundBlock">
+    <subtype name="LargeBlockSoundBlock" />
+    <subtype name="SmallBlockSoundBlock" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -679,7 +750,20 @@
     <property name="RangeSlider" type="Single" />
     <property name="LoopableSlider" type="Single" />
   </block>
-  <block typedefinition="ButtonPanel" subtype="ButtonPanelLarge" class="SpaceEngineers.Game.Entities.Blocks.MyButtonPanel" type="SpaceEngineers.Game.ModAPI.Ingame.IMyButtonPanel">
+  <block typedefinition="ButtonPanel" sampledsubtype="ButtonPanelLarge" class="SpaceEngineers.Game.Entities.Blocks.MyButtonPanel" type="SpaceEngineers.Game.ModAPI.Ingame.IMyButtonPanel">
+    <subtype name="ButtonPanelLarge" />
+    <subtype name="ButtonPanelSmall" />
+    <subtype name="LargeBlockAccessPanel3" />
+    <subtype name="LargeBlockConsoleModuleButtons" />
+    <subtype name="LargeBlockInsetButtonPanel" />
+    <subtype name="LargeBlockModularBridgeButtonPanel" />
+    <subtype name="LargeButtonPanelPedestal" />
+    <subtype name="LargeSciFiButtonPanel" />
+    <subtype name="LargeSciFiButtonTerminal" />
+    <subtype name="SmallBlockConsoleModuleButtons" />
+    <subtype name="SmallButtonPanelPedestal" />
+    <subtype name="VerticalButtonPanelLarge" />
+    <subtype name="VerticalButtonPanelSmall" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -721,7 +805,11 @@
     <property name="AnyoneCanUse" type="Boolean" />
     <property name="ButtonName" type="StringBuilder" />
   </block>
-  <block typedefinition="TimerBlock" subtype="TimerBlockLarge" class="SpaceEngineers.Game.Entities.Blocks.MyTimerBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyTimerBlock">
+  <block typedefinition="TimerBlock" sampledsubtype="TimerBlockLarge" class="SpaceEngineers.Game.Entities.Blocks.MyTimerBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyTimerBlock">
+    <subtype name="TimerBlockLarge" />
+    <subtype name="TimerBlockReskinLarge" />
+    <subtype name="TimerBlockReskinSmall" />
+    <subtype name="TimerBlockSmall" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -768,7 +856,9 @@
     <property name="Silent" type="Boolean" />
     <property name="TriggerDelay" type="Single" />
   </block>
-  <block typedefinition="TurretControlBlock" subtype="LargeTurretControlBlock" class="SpaceEngineers.Game.Entities.Blocks.MyTurretControlBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyTurretControlBlock">
+  <block typedefinition="TurretControlBlock" sampledsubtype="LargeTurretControlBlock" class="SpaceEngineers.Game.Entities.Blocks.MyTurretControlBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyTurretControlBlock">
+    <subtype name="LargeTurretControlBlock" />
+    <subtype name="SmallTurretControlBlock" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -879,7 +969,9 @@
     <property name="EnableTargetLocking" type="Boolean" />
     <property name="TargetingGroup_Selector" type="Int64" />
   </block>
-  <block typedefinition="EventControllerBlock" subtype="EventControllerLarge" class="SpaceEngineers.Game.Entities.Blocks.MyEventControllerBlock" type="Sandbox.ModAPI.Ingame.IMyEventControllerBlock">
+  <block typedefinition="EventControllerBlock" sampledsubtype="EventControllerLarge" class="SpaceEngineers.Game.Entities.Blocks.MyEventControllerBlock" type="Sandbox.ModAPI.Ingame.IMyEventControllerBlock">
+    <subtype name="EventControllerLarge" />
+    <subtype name="EventControllerSmall" />
     <interface name="Sandbox.ModAPI.Ingame.IMyEventControllerBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -943,7 +1035,9 @@
     <property name="SearchBox" type="StringBuilder" />
     <property name="ANDCheckbox" type="Boolean" />
   </block>
-  <block typedefinition="PathRecorderBlock" subtype="LargePathRecorderBlock" class="SpaceEngineers.Game.Entities.Blocks.MyPathRecorderBlock" type="Sandbox.ModAPI.Ingame.IMyPathRecorderBlock">
+  <block typedefinition="PathRecorderBlock" sampledsubtype="LargePathRecorderBlock" class="SpaceEngineers.Game.Entities.Blocks.MyPathRecorderBlock" type="Sandbox.ModAPI.Ingame.IMyPathRecorderBlock">
+    <subtype name="LargePathRecorderBlock" />
+    <subtype name="SmallPathRecorderBlock" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyPathRecorderBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -1008,7 +1102,9 @@
     <property name="ID_RECORD_STEPS_SLIDER" type="Single" />
     <property name="ID_MINIMAL_DISTANCE_SLIDER" type="Single" />
   </block>
-  <block typedefinition="BasicMissionBlock" subtype="LargeBasicMission" class="SpaceEngineers.Game.Entities.Blocks.MyBasicMissionBlock" type="Sandbox.ModAPI.Ingame.IMyBasicMissionBlock">
+  <block typedefinition="BasicMissionBlock" sampledsubtype="LargeBasicMission" class="SpaceEngineers.Game.Entities.Blocks.MyBasicMissionBlock" type="Sandbox.ModAPI.Ingame.IMyBasicMissionBlock">
+    <subtype name="LargeBasicMission" />
+    <subtype name="SmallBasicMission" />
     <interface name="Sandbox.ModAPI.Ingame.IMyBasicMissionBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -1068,7 +1164,9 @@
     <property name="FollowDistance" type="Single" />
     <property name="ID_MODE_SELECTOR_COMBOBOX" type="Int64" />
   </block>
-  <block typedefinition="FlightMovementBlock" subtype="LargeFlightMovement" class="SpaceEngineers.Game.Entities.Blocks.MyFlightMovementBlock" type="Sandbox.ModAPI.Ingame.IMyFlightMovementBlock">
+  <block typedefinition="FlightMovementBlock" sampledsubtype="LargeFlightMovement" class="SpaceEngineers.Game.Entities.Blocks.MyFlightMovementBlock" type="Sandbox.ModAPI.Ingame.IMyFlightMovementBlock">
+    <subtype name="LargeFlightMovement" />
+    <subtype name="SmallFlightMovement" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFlightMovementBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -1136,7 +1234,9 @@
     <property name="MaxPitchAngle" type="Single" />
     <property name="MaxRollAngle" type="Single" />
   </block>
-  <block typedefinition="DefensiveCombatBlock" subtype="LargeDefensiveCombat" class="SpaceEngineers.Game.Entities.Blocks.MyDefensiveCombatBlock" type="Sandbox.ModAPI.Ingame.IMyDefensiveCombatBlock">
+  <block typedefinition="DefensiveCombatBlock" sampledsubtype="LargeDefensiveCombat" class="SpaceEngineers.Game.Entities.Blocks.MyDefensiveCombatBlock" type="Sandbox.ModAPI.Ingame.IMyDefensiveCombatBlock">
+    <subtype name="LargeDefensiveCombat" />
+    <subtype name="SmallDefensiveCombat" />
     <interface name="Sandbox.ModAPI.Ingame.IMyDefensiveCombatBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -1208,7 +1308,9 @@
     <property name="EvasiveManeuverIntervalRange" type="Single" />
     <property name="EvasiveManeuvers" type="Boolean" />
   </block>
-  <block typedefinition="OffensiveCombatBlock" subtype="LargeOffensiveCombat" class="SpaceEngineers.Game.Entities.Blocks.MyOffensiveCombatBlock" type="Sandbox.ModAPI.Ingame.IMyOffensiveCombatBlock">
+  <block typedefinition="OffensiveCombatBlock" sampledsubtype="LargeOffensiveCombat" class="SpaceEngineers.Game.Entities.Blocks.MyOffensiveCombatBlock" type="Sandbox.ModAPI.Ingame.IMyOffensiveCombatBlock">
+    <subtype name="LargeOffensiveCombat" />
+    <subtype name="SmallOffensiveCombat" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyOffensiveCombatBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -1322,7 +1424,13 @@
     <property name="OffensiveCombatIntercept_GuidanceType" type="Int64" />
     <property name="OffensiveCombatIntercept_OverrideCollisionAvoidance" type="Boolean" />
   </block>
-  <block typedefinition="RadioAntenna" subtype="LargeBlockRadioAntenna" class="Sandbox.Game.Entities.Cube.MyRadioAntenna" type="Sandbox.ModAPI.Ingame.IMyRadioAntenna">
+  <block typedefinition="RadioAntenna" sampledsubtype="LargeBlockRadioAntenna" class="Sandbox.Game.Entities.Cube.MyRadioAntenna" type="Sandbox.ModAPI.Ingame.IMyRadioAntenna">
+    <subtype name="LargeBlockCompactRadioAntenna" />
+    <subtype name="LargeBlockCompactRadioAntennaReskin" />
+    <subtype name="LargeBlockRadioAntenna" />
+    <subtype name="LargeBlockRadioAntennaDish" />
+    <subtype name="SmallBlockCompactRadioAntennaReskin" />
+    <subtype name="SmallBlockRadioAntenna" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyRadioAntenna" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -1366,7 +1474,11 @@
     <property name="EnableBroadCast" type="Boolean" />
     <property name="ShowShipName" type="Boolean" />
   </block>
-  <block typedefinition="Beacon" subtype="LargeBlockBeacon" class="Sandbox.Game.Entities.Cube.MyBeacon" type="Sandbox.ModAPI.Ingame.IMyBeacon">
+  <block typedefinition="Beacon" sampledsubtype="LargeBlockBeacon" class="Sandbox.Game.Entities.Cube.MyBeacon" type="Sandbox.ModAPI.Ingame.IMyBeacon">
+    <subtype name="LargeBlockBeacon" />
+    <subtype name="LargeBlockBeaconReskin" />
+    <subtype name="SmallBlockBeacon" />
+    <subtype name="SmallBlockBeaconReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyBeacon" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -1411,7 +1523,9 @@
     <property name="HudText" type="StringBuilder" />
     <property name="Radius" type="Single" />
   </block>
-  <block typedefinition="RemoteControl" subtype="LargeBlockRemoteControl" class="Sandbox.Game.Entities.MyRemoteControl" type="Sandbox.ModAPI.Ingame.IMyRemoteControl">
+  <block typedefinition="RemoteControl" sampledsubtype="LargeBlockRemoteControl" class="Sandbox.Game.Entities.MyRemoteControl" type="Sandbox.ModAPI.Ingame.IMyRemoteControl">
+    <subtype name="LargeBlockRemoteControl" />
+    <subtype name="SmallBlockRemoteControl" />
     <interface name="Sandbox.ModAPI.Ingame.IMyRemoteControl" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyShipController" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -1475,7 +1589,9 @@
     <property name="Direction" type="Int64" />
     <property name="SpeedLimit" type="Single" />
   </block>
-  <block typedefinition="LaserAntenna" subtype="LargeBlockLaserAntenna" class="Sandbox.Game.Entities.Cube.MyLaserAntenna" type="Sandbox.ModAPI.Ingame.IMyLaserAntenna">
+  <block typedefinition="LaserAntenna" sampledsubtype="LargeBlockLaserAntenna" class="Sandbox.Game.Entities.Cube.MyLaserAntenna" type="Sandbox.ModAPI.Ingame.IMyLaserAntenna">
+    <subtype name="LargeBlockLaserAntenna" />
+    <subtype name="SmallBlockLaserAntenna" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyLaserAntenna" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -1523,7 +1639,9 @@
     <property name="gpsCoords" type="StringBuilder" />
     <property name="isPerm" type="Boolean" />
   </block>
-  <block typedefinition="BroadcastController" subtype="LargeBlockBroadcastController" class="SpaceEngineers.Game.Entities.Blocks.MyBroadcastController" type="SpaceEngineers.Game.ModAPI.Ingame.IMyBroadcastController">
+  <block typedefinition="BroadcastController" sampledsubtype="LargeBlockBroadcastController" class="SpaceEngineers.Game.Entities.Blocks.MyBroadcastController" type="SpaceEngineers.Game.ModAPI.Ingame.IMyBroadcastController">
+    <subtype name="LargeBlockBroadcastController" />
+    <subtype name="SmallBlockBroadcastController" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -1587,7 +1705,9 @@
     <property name="Message6" type="StringBuilder" />
     <property name="Message7" type="StringBuilder" />
   </block>
-  <block typedefinition="TransponderBlock" subtype="LargeBlockTransponder" class="SpaceEngineers.Game.Entities.Blocks.MyTransponderBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyTransponder">
+  <block typedefinition="TransponderBlock" sampledsubtype="LargeBlockTransponder" class="SpaceEngineers.Game.Entities.Blocks.MyTransponderBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyTransponder">
+    <subtype name="LargeBlockTransponder" />
+    <subtype name="SmallBlockTransponder" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -1636,7 +1756,11 @@
     <property name="Channel" type="Single" />
     <property name="ReceiveFrom" type="Int64" />
   </block>
-  <block typedefinition="ExtendedPistonBase" subtype="LargePistonBaseReskin" class="Sandbox.Game.Entities.Blocks.MyExtendedPistonBase" type="Sandbox.ModAPI.Ingame.IMyExtendedPistonBase">
+  <block typedefinition="ExtendedPistonBase" sampledsubtype="LargePistonBaseReskin" class="Sandbox.Game.Entities.Blocks.MyExtendedPistonBase" type="Sandbox.ModAPI.Ingame.IMyExtendedPistonBase">
+    <subtype name="LargePistonBase" />
+    <subtype name="LargePistonBaseReskin" />
+    <subtype name="SmallPistonBase" />
+    <subtype name="SmallPistonBaseReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyExtendedPistonBase" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock" terminal="true" />
@@ -1709,7 +1833,27 @@
     <property name="MaxImpulseAxis" type="Single" />
     <property name="MaxImpulseNonAxis" type="Single" />
   </block>
-  <block typedefinition="Door" subtype="LargeBlockSmallGate" class="Sandbox.Game.Entities.MyDoor" type="Sandbox.ModAPI.Ingame.IMyDoor">
+  <block typedefinition="Door" sampledsubtype="LargeBlockSmallGate" class="Sandbox.Game.Entities.MyDoor" type="Sandbox.ModAPI.Ingame.IMyDoor">
+    <subtype name="CorridorRoundDoor" />
+    <subtype name="CorridorRoundDoorInv" />
+    <subtype name="LargeBlockCentredDoor" />
+    <subtype name="LargeBlockCentredDoorGlass" />
+    <subtype name="LargeBlockEvenWideDoor" />
+    <subtype name="LargeBlockGate" />
+    <subtype name="LargeBlockHalfCentredDoor" />
+    <subtype name="LargeBlockHalfCentredDoorGlass" />
+    <subtype name="LargeBlockLabDoor" />
+    <subtype name="LargeBlockLabDoorInv" />
+    <subtype name="LargeBlockNarrowDoor" />
+    <subtype name="LargeBlockNarrowDoorHalf" />
+    <subtype name="LargeBlockOffsetDoor" />
+    <subtype name="LargeBlockSmallGate" />
+    <subtype name="SlidingHatchDoor" />
+    <subtype name="SlidingHatchDoorHalf" />
+    <subtype name="SmallBlockCentredDoor" />
+    <subtype name="SmallBlockCentredDoorGlass" />
+    <subtype name="SmallDoor" />
+    <subtype name="SmallSideDoor" />
     <interface name="Sandbox.ModAPI.Ingame.IMyDoor" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -1754,7 +1898,46 @@
     <property name="Open" type="Boolean" />
     <property name="AnyoneCanUse" type="Boolean" />
   </block>
-  <block typedefinition="Cockpit" subtype="LargeBlockModularBridgeCockpit" class="Sandbox.Game.Entities.MyCockpit" type="Sandbox.ModAPI.Ingame.IMyCockpit">
+  <block typedefinition="Cockpit" sampledsubtype="LargeBlockModularBridgeCockpit" class="Sandbox.Game.Entities.MyCockpit" type="Sandbox.ModAPI.Ingame.IMyCockpit">
+    <subtype name="BuggyCockpit" />
+    <subtype name="CockpitOpen" />
+    <subtype name="DBSmallBlockFighterCockpit" />
+    <subtype name="LargeBlockBathroom" />
+    <subtype name="LargeBlockBathroomOpen" />
+    <subtype name="LargeBlockCaptainDesk" />
+    <subtype name="LargeBlockCockpit" />
+    <subtype name="LargeBlockCockpitIndustrial" />
+    <subtype name="LargeBlockCockpitSeat" />
+    <subtype name="LargeBlockConsoleModuleInvertedCorner" />
+    <subtype name="LargeBlockConsoleModuleScreens" />
+    <subtype name="LargeBlockCouch" />
+    <subtype name="LargeBlockCouchCorner" />
+    <subtype name="LargeBlockDesk" />
+    <subtype name="LargeBlockDeskCorner" />
+    <subtype name="LargeBlockDeskCornerInv" />
+    <subtype name="LargeBlockInsetPlantCouch" />
+    <subtype name="LargeBlockLabDeskSeat" />
+    <subtype name="LargeBlockModularBridgeCockpit" />
+    <subtype name="LargeBlockStandingCockpit" />
+    <subtype name="LargeBlockSuspendedControlSeat" />
+    <subtype name="LargeBlockSuspendedControlSeatB" />
+    <subtype name="LargeBlockToilet" />
+    <subtype name="OpenCockpitLarge" />
+    <subtype name="OpenCockpitSmall" />
+    <subtype name="PassengerBench" />
+    <subtype name="PassengerSeatLarge" />
+    <subtype name="PassengerSeatSmallNew" />
+    <subtype name="PassengerSeatSmallOffset" />
+    <subtype name="RoverCockpit" />
+    <subtype name="SmallBlockCapCockpit" />
+    <subtype name="SmallBlockCockpit" />
+    <subtype name="SmallBlockCockpitIndustrial" />
+    <subtype name="SmallBlockFlushCockpit" />
+    <subtype name="SmallBlockStandingCockpit" />
+    <subtype name="SmallBlockSuspendedControlSeat" />
+    <subtype name="SmallBlockSuspendedControlSeatB" />
+    <subtype name="SpeederCockpit" />
+    <subtype name="SpeederCockpitCompact" />
     <interface name="Sandbox.ModAPI.Ingame.IMyCockpit" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyShipController" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -1807,7 +1990,22 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="ReflectorLight" subtype="LargeBlockFloodlight" class="Sandbox.Game.Entities.MyReflectorLight" type="Sandbox.ModAPI.Ingame.IMyReflectorLight">
+  <block typedefinition="ReflectorLight" sampledsubtype="LargeBlockFloodlight" class="Sandbox.Game.Entities.MyReflectorLight" type="Sandbox.ModAPI.Ingame.IMyReflectorLight">
+    <subtype name="LargeBlockFloodlight" />
+    <subtype name="LargeBlockFloodlightAngled" />
+    <subtype name="LargeBlockFloodlightCornerL" />
+    <subtype name="LargeBlockFloodlightCornerR" />
+    <subtype name="LargeBlockFrontLight" />
+    <subtype name="OffsetSpotlight" />
+    <subtype name="RotatingLightLarge" />
+    <subtype name="RotatingLightSmall" />
+    <subtype name="SmallBlockFloodlight" />
+    <subtype name="SmallBlockFloodlightAngled" />
+    <subtype name="SmallBlockFloodlightAngledRotated" />
+    <subtype name="SmallBlockFloodlightCornerL" />
+    <subtype name="SmallBlockFloodlightCornerR" />
+    <subtype name="SmallBlockFloodlightDown" />
+    <subtype name="SmallBlockFrontLight" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyLightingBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyReflectorLight" terminal="true" />
@@ -1875,7 +2073,13 @@
     <property name="Blink Offset" type="Single" />
     <property name="RotationSpeed" type="Single" />
   </block>
-  <block typedefinition="LargeMissileTurret" subtype="LargeMissileTurretReskin" class="SpaceEngineers.Game.Entities.Weapons.MyLargeMissileTurret" type="">
+  <block typedefinition="LargeMissileTurret" sampledsubtype="LargeMissileTurretReskin" class="SpaceEngineers.Game.Entities.Weapons.MyLargeMissileTurret" type="">
+    <subtype name="LargeBlockMediumCalibreTurret" />
+    <subtype name="LargeCalibreTurret" />
+    <subtype name="LargeMissileTurretReskin" />
+    <subtype name="SmallBlockMediumCalibreTurret" />
+    <subtype name="SmallMissileTurret" />
+    <subtype name="SmallMissileTurretReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyLargeTurretBase" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -1976,7 +2180,11 @@
     <property name="TargetingGroup_Selector" type="Int64" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block typedefinition="LargeGatlingTurret" subtype="LargeGatlingTurretReskin" class="SpaceEngineers.Game.Entities.Weapons.MyLargeGatlingTurret" type="SpaceEngineers.Game.ModAPI.Ingame.IMyLargeGatlingTurret">
+  <block typedefinition="LargeGatlingTurret" sampledsubtype="LargeGatlingTurretReskin" class="SpaceEngineers.Game.Entities.Weapons.MyLargeGatlingTurret" type="SpaceEngineers.Game.ModAPI.Ingame.IMyLargeGatlingTurret">
+    <subtype name="AutoCannonTurret" />
+    <subtype name="LargeGatlingTurretReskin" />
+    <subtype name="SmallGatlingTurret" />
+    <subtype name="SmallGatlingTurretReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyLargeTurretBase" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -2077,7 +2285,10 @@
     <property name="TargetingGroup_Selector" type="Int64" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block typedefinition="Jukebox" subtype="Jukebox" class="SpaceEngineers.Game.Entities.Blocks.MyJukebox" type="">
+  <block typedefinition="Jukebox" sampledsubtype="Jukebox" class="SpaceEngineers.Game.Entities.Blocks.MyJukebox" type="">
+    <subtype name="Jukebox" />
+    <subtype name="LargeBlockInsetEntertainmentCorner" />
+    <subtype name="SmallBlockJukeboxReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -2127,7 +2338,25 @@
     <property name="RangeSlider" type="Single" />
     <property name="LoopableSlider" type="Single" />
   </block>
-  <block typedefinition="TerminalBlock" subtype="ControlPanel" class="Sandbox.Game.Entities.Cube.MyTerminalBlock" type="Sandbox.ModAPI.Ingame.IMyTerminalBlock">
+  <block typedefinition="TerminalBlock" sampledsubtype="ControlPanel" class="Sandbox.Game.Entities.Cube.MyTerminalBlock" type="Sandbox.ModAPI.Ingame.IMyTerminalBlock">
+    <subtype name="ControlPanel" />
+    <subtype name="LargeBlockAccessPanel1" />
+    <subtype name="LargeBlockAccessPanel2" />
+    <subtype name="LargeBlockAccessPanel4" />
+    <subtype name="LargeBlockSciFiTerminal" />
+    <subtype name="LargeControlPanelPedestal" />
+    <subtype name="LargeCrate" />
+    <subtype name="LargeFreezer" />
+    <subtype name="SmallBlockAccessPanel1" />
+    <subtype name="SmallBlockAccessPanel2" />
+    <subtype name="SmallBlockAccessPanel3" />
+    <subtype name="SmallBlockAccessPanel4" />
+    <subtype name="SmallBlockFirstAidCabinet" />
+    <subtype name="SmallBlockKitchenFridge" />
+    <subtype name="SmallBlockKitchenMicrowave" />
+    <subtype name="SmallBlockKitchenOven" />
+    <subtype name="SmallControlPanel" />
+    <subtype name="SmallControlPanelPedestal" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" terminal="false" />
     <interface name="VRage.Game.ModAPI.Ingame.IMyCubeBlock" terminal="false" />
@@ -2141,7 +2370,17 @@
     <property name="Name" type="StringBuilder" />
     <property name="ShowOnHUD" type="Boolean" />
   </block>
-  <block typedefinition="CryoChamber" subtype="LargeBlockBed" class="Sandbox.Game.Entities.Blocks.MyCryoChamber" type="Sandbox.ModAPI.Ingame.IMyCryoChamber">
+  <block typedefinition="CryoChamber" sampledsubtype="LargeBlockBed" class="Sandbox.Game.Entities.Blocks.MyCryoChamber" type="Sandbox.ModAPI.Ingame.IMyCryoChamber">
+    <subtype name="LargeBlockBed" />
+    <subtype name="LargeBlockBedFree" />
+    <subtype name="LargeBlockCryoChamber" />
+    <subtype name="LargeBlockCryoLabVat" />
+    <subtype name="LargeBlockCryoRoom" />
+    <subtype name="LargeBlockHalfBed" />
+    <subtype name="LargeBlockHalfBedOffset" />
+    <subtype name="LargeBlockInsetBed" />
+    <subtype name="SmallBlockBunkBed" />
+    <subtype name="SmallBlockCryoChamber" />
     <interface name="Sandbox.ModAPI.Ingame.IMyCockpit" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyCryoChamber" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyShipController" terminal="true" />
@@ -2195,7 +2434,24 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="CargoContainer" subtype="LargeBlockLockerRoom" class="Sandbox.Game.Entities.MyCargoContainer" type="Sandbox.ModAPI.Ingame.IMyCargoContainer">
+  <block typedefinition="CargoContainer" sampledsubtype="LargeBlockLockerRoom" class="Sandbox.Game.Entities.MyCargoContainer" type="Sandbox.ModAPI.Ingame.IMyCargoContainer">
+    <subtype name="LargeBlockCargoTerminal" />
+    <subtype name="LargeBlockCargoTerminalHalf" />
+    <subtype name="LargeBlockInsetBookshelf" />
+    <subtype name="LargeBlockLabCabinet" />
+    <subtype name="LargeBlockLabCornerDesk" />
+    <subtype name="LargeBlockLargeContainer" />
+    <subtype name="LargeBlockLargeIndustrialContainer" />
+    <subtype name="LargeBlockLockerRoom" />
+    <subtype name="LargeBlockLockerRoomCorner" />
+    <subtype name="LargeBlockLockers" />
+    <subtype name="LargeBlockSmallContainer" />
+    <subtype name="LargeBlockWeaponRack" />
+    <subtype name="SmallBlockLargeContainer" />
+    <subtype name="SmallBlockMediumContainer" />
+    <subtype name="SmallBlockModularContainer" />
+    <subtype name="SmallBlockSmallContainer" />
+    <subtype name="SmallBlockWeaponRack" />
     <interface name="Sandbox.ModAPI.Ingame.IMyCargoContainer" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" terminal="false" />
@@ -2211,7 +2467,11 @@
     <property name="Name" type="StringBuilder" />
     <property name="ShowOnHUD" type="Boolean" />
   </block>
-  <block typedefinition="Gyro" subtype="LargeBlockGyro" class="Sandbox.Game.Entities.MyGyro" type="Sandbox.ModAPI.Ingame.IMyGyro">
+  <block typedefinition="Gyro" sampledsubtype="LargeBlockGyro" class="Sandbox.Game.Entities.MyGyro" type="Sandbox.ModAPI.Ingame.IMyGyro">
+    <subtype name="LargeBlockGyro" />
+    <subtype name="LargeBlockPrototechGyro" />
+    <subtype name="SmallBlockGyro" />
+    <subtype name="SmallBlockPrototechGyro" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyGyro" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -2270,7 +2530,12 @@
     <property name="Pitch" type="Single" />
     <property name="Roll" type="Single" />
   </block>
-  <block typedefinition="HydrogenEngine" subtype="LargeHydrogenEngineReskin" class="SpaceEngineers.Game.Entities.Blocks.MyHydrogenEngine" type="">
+  <block typedefinition="HydrogenEngine" sampledsubtype="LargeHydrogenEngineReskin" class="SpaceEngineers.Game.Entities.Blocks.MyHydrogenEngine" type="">
+    <subtype name="LargeHydrogenEngine" />
+    <subtype name="LargeHydrogenEngineReskin" />
+    <subtype name="LargePrototechReactor" />
+    <subtype name="SmallHydrogenEngine" />
+    <subtype name="SmallHydrogenEngineReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyPowerProducer" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -2309,7 +2574,11 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="JumpDrive" subtype="LargeJumpDriveReskin" class="Sandbox.Game.Entities.MyJumpDrive" type="Sandbox.ModAPI.Ingame.IMyJumpDrive">
+  <block typedefinition="JumpDrive" sampledsubtype="LargeJumpDriveReskin" class="Sandbox.Game.Entities.MyJumpDrive" type="Sandbox.ModAPI.Ingame.IMyJumpDrive">
+    <subtype name="LargeJumpDrive" />
+    <subtype name="LargeJumpDriveReskin" />
+    <subtype name="LargePrototechJumpDrive" />
+    <subtype name="SmallPrototechJumpDrive" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyJumpDrive" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -2357,7 +2626,49 @@
     <property name="JumpDistance" type="Single" />
     <property name="SearchField" type="StringBuilder" />
   </block>
-  <block typedefinition="Thrust" subtype="LargeBlockLargeHydrogenThrustReskin" class="Sandbox.Game.Entities.MyThrust" type="Sandbox.ModAPI.Ingame.IMyThrust">
+  <block typedefinition="Thrust" sampledsubtype="LargeBlockLargeHydrogenThrustReskin" class="Sandbox.Game.Entities.MyThrust" type="Sandbox.ModAPI.Ingame.IMyThrust">
+    <subtype name="LargeBlockLargeAtmosphericThrust" />
+    <subtype name="LargeBlockLargeAtmosphericThrustSciFi" />
+    <subtype name="LargeBlockLargeFlatAtmosphericThrust" />
+    <subtype name="LargeBlockLargeFlatAtmosphericThrustDShape" />
+    <subtype name="LargeBlockLargeHydrogenThrust" />
+    <subtype name="LargeBlockLargeHydrogenThrustIndustrial" />
+    <subtype name="LargeBlockLargeHydrogenThrustReskin" />
+    <subtype name="LargeBlockLargeModularThruster" />
+    <subtype name="LargeBlockLargeThrust" />
+    <subtype name="LargeBlockLargeThrustSciFi" />
+    <subtype name="LargeBlockPrototechThruster" />
+    <subtype name="LargeBlockSmallAtmosphericThrust" />
+    <subtype name="LargeBlockSmallAtmosphericThrustSciFi" />
+    <subtype name="LargeBlockSmallFlatAtmosphericThrust" />
+    <subtype name="LargeBlockSmallFlatAtmosphericThrustDShape" />
+    <subtype name="LargeBlockSmallHydrogenThrust" />
+    <subtype name="LargeBlockSmallHydrogenThrustIndustrial" />
+    <subtype name="LargeBlockSmallHydrogenThrustReskin" />
+    <subtype name="LargeBlockSmallModularThruster" />
+    <subtype name="LargeBlockSmallThrust" />
+    <subtype name="LargeBlockSmallThrustSciFi" />
+    <subtype name="SmallBlockLargeAtmosphericThrust" />
+    <subtype name="SmallBlockLargeAtmosphericThrustSciFi" />
+    <subtype name="SmallBlockLargeFlatAtmosphericThrust" />
+    <subtype name="SmallBlockLargeFlatAtmosphericThrustDShape" />
+    <subtype name="SmallBlockLargeHydrogenThrust" />
+    <subtype name="SmallBlockLargeHydrogenThrustIndustrial" />
+    <subtype name="SmallBlockLargeHydrogenThrustReskin" />
+    <subtype name="SmallBlockLargeModularThruster" />
+    <subtype name="SmallBlockLargeThrust" />
+    <subtype name="SmallBlockLargeThrustSciFi" />
+    <subtype name="SmallBlockPrototechThruster" />
+    <subtype name="SmallBlockSmallAtmosphericThrust" />
+    <subtype name="SmallBlockSmallAtmosphericThrustSciFi" />
+    <subtype name="SmallBlockSmallFlatAtmosphericThrust" />
+    <subtype name="SmallBlockSmallFlatAtmosphericThrustDShape" />
+    <subtype name="SmallBlockSmallHydrogenThrust" />
+    <subtype name="SmallBlockSmallHydrogenThrustIndustrial" />
+    <subtype name="SmallBlockSmallHydrogenThrustReskin" />
+    <subtype name="SmallBlockSmallModularThruster" />
+    <subtype name="SmallBlockSmallThrust" />
+    <subtype name="SmallBlockSmallThrustSciFi" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -2400,7 +2711,15 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="Override" type="Single" />
   </block>
-  <block typedefinition="LandingGear" subtype="LargeBlockLandingGearReskin" class="SpaceEngineers.Game.Entities.Blocks.MyLandingGear" type="SpaceEngineers.Game.ModAPI.Ingame.IMyLandingGear">
+  <block typedefinition="LandingGear" sampledsubtype="LargeBlockLandingGearReskin" class="SpaceEngineers.Game.Entities.Blocks.MyLandingGear" type="SpaceEngineers.Game.ModAPI.Ingame.IMyLandingGear">
+    <subtype name="LargeBlockLandingGear" />
+    <subtype name="LargeBlockLandingGearReskin" />
+    <subtype name="LargeBlockMagneticPlate" />
+    <subtype name="LargeBlockSmallMagneticPlate" />
+    <subtype name="SmallBlockLandingGear" />
+    <subtype name="SmallBlockLandingGearReskin" />
+    <subtype name="SmallBlockMagneticPlate" />
+    <subtype name="SmallBlockSmallMagneticPlate" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -2446,7 +2765,9 @@
     <property name="Autolock" type="Boolean" />
     <property name="EnableParking" type="Boolean" />
   </block>
-  <block typedefinition="VendingMachine" subtype="FoodDispenser" class="Sandbox.Game.Entities.Blocks.MyVendingMachine" type="">
+  <block typedefinition="VendingMachine" sampledsubtype="FoodDispenser" class="Sandbox.Game.Entities.Blocks.MyVendingMachine" type="">
+    <subtype name="FoodDispenser" />
+    <subtype name="VendingMachine" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyStoreBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -2490,7 +2811,12 @@
     <property name="AnyoneCanUse" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block typedefinition="LCDPanelsBlock" subtype="LabEquipment" class="Sandbox.Game.Entities.Blocks.MyLCDPanelsBlock" type="">
+  <block typedefinition="LCDPanelsBlock" sampledsubtype="LabEquipment" class="Sandbox.Game.Entities.Blocks.MyLCDPanelsBlock" type="">
+    <subtype name="LabEquipment" />
+    <subtype name="LabEquipment1" />
+    <subtype name="LabEquipment3" />
+    <subtype name="LargeBlockLabDeskMicroscope" />
+    <subtype name="MedicalStation" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -2528,7 +2854,35 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="TextPanel" subtype="TransparentLCDLarge" class="Sandbox.Game.Entities.Blocks.MyTextPanel" type="Sandbox.ModAPI.Ingame.IMyTextPanel">
+  <block typedefinition="TextPanel" sampledsubtype="TransparentLCDLarge" class="Sandbox.Game.Entities.Blocks.MyTextPanel" type="Sandbox.ModAPI.Ingame.IMyTextPanel">
+    <subtype name="HoloLCDLarge" />
+    <subtype name="HoloLCDSmall" />
+    <subtype name="LargeBlockCorner_LCD_1" />
+    <subtype name="LargeBlockCorner_LCD_2" />
+    <subtype name="LargeBlockCorner_LCD_Flat_1" />
+    <subtype name="LargeBlockCorner_LCD_Flat_2" />
+    <subtype name="LargeCurvedLCDPanel" />
+    <subtype name="LargeDiagonalLCDPanel" />
+    <subtype name="LargeFullBlockLCDPanel" />
+    <subtype name="LargeLCDPanel" />
+    <subtype name="LargeLCDPanel3x3" />
+    <subtype name="LargeLCDPanel5x3" />
+    <subtype name="LargeLCDPanel5x5" />
+    <subtype name="LargeLCDPanelWide" />
+    <subtype name="LargeTextPanel" />
+    <subtype name="SmallBlockConsoleModuleScreens" />
+    <subtype name="SmallBlockCorner_LCD_1" />
+    <subtype name="SmallBlockCorner_LCD_2" />
+    <subtype name="SmallBlockCorner_LCD_Flat_1" />
+    <subtype name="SmallBlockCorner_LCD_Flat_2" />
+    <subtype name="SmallCurvedLCDPanel" />
+    <subtype name="SmallDiagonalLCDPanel" />
+    <subtype name="SmallFullBlockLCDPanel" />
+    <subtype name="SmallLCDPanel" />
+    <subtype name="SmallLCDPanelWide" />
+    <subtype name="SmallTextPanel" />
+    <subtype name="TransparentLCDLarge" />
+    <subtype name="TransparentLCDSmall" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextPanel" terminal="true" />
@@ -2590,7 +2944,15 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="SolarPanel" subtype="LargeBlockColorableSolarPanel" class="SpaceEngineers.Game.Entities.Blocks.MySolarPanel" type="SpaceEngineers.Game.ModAPI.Ingame.IMySolarPanel">
+  <block typedefinition="SolarPanel" sampledsubtype="LargeBlockColorableSolarPanel" class="SpaceEngineers.Game.Entities.Blocks.MySolarPanel" type="SpaceEngineers.Game.ModAPI.Ingame.IMySolarPanel">
+    <subtype name="LargeBlockColorableSolarPanel" />
+    <subtype name="LargeBlockColorableSolarPanelCorner" />
+    <subtype name="LargeBlockColorableSolarPanelCornerInverted" />
+    <subtype name="LargeBlockSolarPanel" />
+    <subtype name="SmallBlockColorableSolarPanel" />
+    <subtype name="SmallBlockColorableSolarPanelCorner" />
+    <subtype name="SmallBlockColorableSolarPanelCornerInverted" />
+    <subtype name="SmallBlockSolarPanel" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyPowerProducer" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMySolarOccludable" terminal="false" />
@@ -2631,7 +2993,9 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="WindTurbine" subtype="LargeBlockWindTurbineReskin" class="SpaceEngineers.Game.Entities.Blocks.MyWindTurbine" type="Sandbox.ModAPI.Ingame.IMyWindTurbine">
+  <block typedefinition="WindTurbine" sampledsubtype="LargeBlockWindTurbineReskin" class="SpaceEngineers.Game.Entities.Blocks.MyWindTurbine" type="Sandbox.ModAPI.Ingame.IMyWindTurbine">
+    <subtype name="LargeBlockWindTurbine" />
+    <subtype name="LargeBlockWindTurbineReskin" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyPowerProducer" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -2671,7 +3035,12 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="MedicalRoom" subtype="LargeMedicalRoomReskin" class="SpaceEngineers.Game.Entities.Blocks.MyMedicalRoom" type="SpaceEngineers.Game.ModAPI.Ingame.IMyMedicalRoom">
+  <block typedefinition="MedicalRoom" sampledsubtype="LargeMedicalRoomReskin" class="SpaceEngineers.Game.Entities.Blocks.MyMedicalRoom" type="SpaceEngineers.Game.ModAPI.Ingame.IMyMedicalRoom">
+    <subtype name="InsetRefillStation" />
+    <subtype name="LargeMedicalRoom" />
+    <subtype name="LargeMedicalRoomReskin" />
+    <subtype name="LargeRefillStation" />
+    <subtype name="SmallRefillStation" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -2713,7 +3082,11 @@
     <property name="TakeOwnership" type="Boolean" />
     <property name="SetFaction" type="Boolean" />
   </block>
-  <block typedefinition="Warhead" subtype="LargeExplosiveBarrel" class="Sandbox.Game.Entities.Cube.MyWarhead" type="Sandbox.ModAPI.Ingame.IMyWarhead">
+  <block typedefinition="Warhead" sampledsubtype="LargeExplosiveBarrel" class="Sandbox.Game.Entities.Cube.MyWarhead" type="Sandbox.ModAPI.Ingame.IMyWarhead">
+    <subtype name="LargeExplosiveBarrel" />
+    <subtype name="LargeWarhead" />
+    <subtype name="SmallExplosiveBarrel" />
+    <subtype name="SmallWarhead" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyUpgradableBlock" terminal="false" />
     <interface name="Sandbox.ModAPI.Ingame.IMyWarhead" terminal="true" />
@@ -2738,7 +3111,10 @@
     <property name="DetonationTime" type="Single" />
     <property name="Safety" type="Boolean" />
   </block>
-  <block typedefinition="AirtightHangarDoor" subtype="" class="Sandbox.Game.Entities.MyAirtightHangarDoor" type="Sandbox.ModAPI.Ingame.IMyAirtightHangarDoor">
+  <block typedefinition="AirtightHangarDoor" sampledsubtype="" class="Sandbox.Game.Entities.MyAirtightHangarDoor" type="Sandbox.ModAPI.Ingame.IMyAirtightHangarDoor">
+    <subtype name="AirtightHangarDoorWarfare2A" />
+    <subtype name="AirtightHangarDoorWarfare2B" />
+    <subtype name="AirtightHangarDoorWarfare2C" />
     <interface name="Sandbox.ModAPI.Ingame.IMyAirtightDoorBase" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyAirtightHangarDoor" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyDoor" terminal="true" />
@@ -2785,7 +3161,8 @@
     <property name="Open" type="Boolean" />
     <property name="AnyoneCanUse" type="Boolean" />
   </block>
-  <block typedefinition="AirtightSlideDoor" subtype="LargeBlockSlideDoor" class="Sandbox.Game.Entities.MyAirtightSlideDoor" type="Sandbox.ModAPI.Ingame.IMyAirtightSlideDoor">
+  <block typedefinition="AirtightSlideDoor" sampledsubtype="LargeBlockSlideDoor" class="Sandbox.Game.Entities.MyAirtightSlideDoor" type="Sandbox.ModAPI.Ingame.IMyAirtightSlideDoor">
+    <subtype name="LargeBlockSlideDoor" />
     <interface name="Sandbox.ModAPI.Ingame.IMyAirtightDoorBase" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyAirtightSlideDoor" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyDoor" terminal="true" />
@@ -2832,7 +3209,9 @@
     <property name="Open" type="Boolean" />
     <property name="AnyoneCanUse" type="Boolean" />
   </block>
-  <block typedefinition="StoreBlock" subtype="StoreBlock" class="Sandbox.Game.Entities.Blocks.MyStoreBlock" type="Sandbox.ModAPI.Ingame.IMyStoreBlock">
+  <block typedefinition="StoreBlock" sampledsubtype="StoreBlock" class="Sandbox.Game.Entities.Blocks.MyStoreBlock" type="Sandbox.ModAPI.Ingame.IMyStoreBlock">
+    <subtype name="AtmBlock" />
+    <subtype name="StoreBlock" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyStoreBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -2876,7 +3255,8 @@
     <property name="AnyoneCanUse" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block typedefinition="SafeZoneBlock" subtype="SafeZoneBlock" class="SpaceEngineers.Game.Entities.Blocks.SafeZone.MySafeZoneBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMySafeZoneBlock">
+  <block typedefinition="SafeZoneBlock" sampledsubtype="SafeZoneBlock" class="SpaceEngineers.Game.Entities.Blocks.SafeZone.MySafeZoneBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMySafeZoneBlock">
+    <subtype name="SafeZoneBlock" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -2935,7 +3315,8 @@
     <property name="SafeZoneColor" type="Color" />
     <property name="SafeZoneTextureCombo" type="Int64" />
   </block>
-  <block typedefinition="ContractBlock" subtype="ContractBlock" class="Sandbox.Game.Entities.Blocks.MyContractBlock" type="">
+  <block typedefinition="ContractBlock" sampledsubtype="ContractBlock" class="Sandbox.Game.Entities.Blocks.MyContractBlock" type="">
+    <subtype name="ContractBlock" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -2975,7 +3356,14 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="AnyoneCanUse" type="Boolean" />
   </block>
-  <block typedefinition="BatteryBlock" subtype="LargeBlockBatteryBlock" class="Sandbox.Game.Entities.MyBatteryBlock" type="Sandbox.ModAPI.Ingame.IMyBatteryBlock">
+  <block typedefinition="BatteryBlock" sampledsubtype="LargeBlockBatteryBlock" class="Sandbox.Game.Entities.MyBatteryBlock" type="Sandbox.ModAPI.Ingame.IMyBatteryBlock">
+    <subtype name="LargeBlockBatteryBlock" />
+    <subtype name="LargeBlockBatteryBlockWarfare2" />
+    <subtype name="LargeBlockPrototechBattery" />
+    <subtype name="SmallBlockBatteryBlock" />
+    <subtype name="SmallBlockBatteryBlockWarfare2" />
+    <subtype name="SmallBlockPrototechBattery" />
+    <subtype name="SmallBlockSmallBatteryBlock" />
     <interface name="Sandbox.ModAPI.Ingame.IMyBatteryBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyPowerProducer" terminal="true" />
@@ -3023,7 +3411,15 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="ChargeMode" type="Int64" />
   </block>
-  <block typedefinition="Reactor" subtype="LargeBlockSmallGenerator" class="Sandbox.Game.Entities.MyReactor" type="Sandbox.ModAPI.Ingame.IMyReactor">
+  <block typedefinition="Reactor" sampledsubtype="LargeBlockSmallGenerator" class="Sandbox.Game.Entities.MyReactor" type="Sandbox.ModAPI.Ingame.IMyReactor">
+    <subtype name="LargeBlockLargeGenerator" />
+    <subtype name="LargeBlockLargeGeneratorWarfare2" />
+    <subtype name="LargeBlockSmallGenerator" />
+    <subtype name="LargeBlockSmallGeneratorWarfare2" />
+    <subtype name="SmallBlockLargeGenerator" />
+    <subtype name="SmallBlockLargeGeneratorWarfare2" />
+    <subtype name="SmallBlockSmallGenerator" />
+    <subtype name="SmallBlockSmallGeneratorWarfare2" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyPowerProducer" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyReactor" terminal="true" />
@@ -3066,7 +3462,17 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block typedefinition="OxygenTank" subtype="LargeHydrogenTankSmallLab" class="Sandbox.Game.Entities.Blocks.MyGasTank" type="Sandbox.ModAPI.Ingame.IMyGasTank">
+  <block typedefinition="OxygenTank" sampledsubtype="LargeHydrogenTankSmallLab" class="Sandbox.Game.Entities.Blocks.MyGasTank" type="Sandbox.ModAPI.Ingame.IMyGasTank">
+    <subtype name="LargeBlockOxygenTankLab" />
+    <subtype name="LargeHydrogenTank" />
+    <subtype name="LargeHydrogenTankIndustrial" />
+    <subtype name="LargeHydrogenTankSmall" />
+    <subtype name="LargeHydrogenTankSmallLab" />
+    <subtype name="OxygenTankSmall" />
+    <subtype name="SmallHydrogenTank" />
+    <subtype name="SmallHydrogenTankLab" />
+    <subtype name="SmallHydrogenTankSmall" />
+    <subtype name="SmallOxygenTankSmall" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyGasTank" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -3113,7 +3519,11 @@
     <property name="Stockpile" type="Boolean" />
     <property name="Auto-Refill" type="Boolean" />
   </block>
-  <block typedefinition="OxygenGenerator" subtype="LargeBlockOxygenGeneratorLab" class="Sandbox.Game.Entities.Blocks.MyGasGenerator" type="Sandbox.ModAPI.Ingame.IMyGasGenerator">
+  <block typedefinition="OxygenGenerator" sampledsubtype="LargeBlockOxygenGeneratorLab" class="Sandbox.Game.Entities.Blocks.MyGasGenerator" type="Sandbox.ModAPI.Ingame.IMyGasGenerator">
+    <subtype name="IrrigationSystem" />
+    <subtype name="LargeBlockOxygenGeneratorLab" />
+    <subtype name="OxygenGeneratorSmall" />
+    <subtype name="SmallBlockOxygenGeneratorLab" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyGasGenerator" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -3158,7 +3568,11 @@
     <property name="UseConveyor" type="Boolean" />
     <property name="Auto-Refill" type="Boolean" />
   </block>
-  <block typedefinition="ExhaustBlock" subtype="LargeExhaustCap" class="Sandbox.Game.Entities.Blocks.MyExhaustBlock" type="">
+  <block typedefinition="ExhaustBlock" sampledsubtype="LargeExhaustCap" class="Sandbox.Game.Entities.Blocks.MyExhaustBlock" type="">
+    <subtype name="LargeExhaustCap" />
+    <subtype name="LargeExhaustPipe" />
+    <subtype name="SmallExhaustCap" />
+    <subtype name="SmallExhaustPipe" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -3200,7 +3614,7 @@
     <property name="EffectsCombo" type="Int64" />
     <property name="PowerDependency" type="Single" />
   </block>
-  <block typedefinition="GravityGenerator" subtype="" class="SpaceEngineers.Game.Entities.Blocks.MyGravityGenerator" type="SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGenerator">
+  <block typedefinition="GravityGenerator" sampledsubtype="" class="SpaceEngineers.Game.Entities.Blocks.MyGravityGenerator" type="SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGenerator">
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -3253,7 +3667,7 @@
     <property name="Depth" type="Single" />
     <property name="Gravity" type="Single" />
   </block>
-  <block typedefinition="GravityGeneratorSphere" subtype="" class="SpaceEngineers.Game.Entities.Blocks.MyGravityGeneratorSphere" type="SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGeneratorSphere">
+  <block typedefinition="GravityGeneratorSphere" sampledsubtype="" class="SpaceEngineers.Game.Entities.Blocks.MyGravityGeneratorSphere" type="SpaceEngineers.Game.ModAPI.Ingame.IMyGravityGeneratorSphere">
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -3300,7 +3714,9 @@
     <property name="Radius" type="Single" />
     <property name="Gravity" type="Single" />
   </block>
-  <block typedefinition="VirtualMass" subtype="VirtualMassLarge" class="SpaceEngineers.Game.Entities.Blocks.MyVirtualMass" type="SpaceEngineers.Game.ModAPI.Ingame.IMyArtificialMassBlock">
+  <block typedefinition="VirtualMass" sampledsubtype="VirtualMassLarge" class="SpaceEngineers.Game.Entities.Blocks.MyVirtualMass" type="SpaceEngineers.Game.ModAPI.Ingame.IMyArtificialMassBlock">
+    <subtype name="VirtualMassLarge" />
+    <subtype name="VirtualMassSmall" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -3340,7 +3756,9 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="SpaceBall" subtype="SpaceBallLarge" class="SpaceEngineers.Game.Entities.Blocks.MySpaceBall" type="SpaceEngineers.Game.ModAPI.Ingame.IMySpaceBall">
+  <block typedefinition="SpaceBall" sampledsubtype="SpaceBallLarge" class="SpaceEngineers.Game.Entities.Blocks.MySpaceBall" type="SpaceEngineers.Game.ModAPI.Ingame.IMySpaceBall">
+    <subtype name="SpaceBallLarge" />
+    <subtype name="SpaceBallSmall" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -3385,7 +3803,14 @@
     <property name="VirtualMass" type="Single" />
     <property name="EnableBroadCast" type="Boolean" />
   </block>
-  <block typedefinition="AirVent" subtype="AirVentFan" class="SpaceEngineers.Game.Entities.Blocks.MyAirVent" type="SpaceEngineers.Game.ModAPI.Ingame.IMyAirVent">
+  <block typedefinition="AirVent" sampledsubtype="AirVentFan" class="SpaceEngineers.Game.Entities.Blocks.MyAirVent" type="SpaceEngineers.Game.ModAPI.Ingame.IMyAirVent">
+    <subtype name="AirVentFan" />
+    <subtype name="AirVentFanFull" />
+    <subtype name="AirVentFull" />
+    <subtype name="SmallAirVent" />
+    <subtype name="SmallAirVentFan" />
+    <subtype name="SmallAirVentFanFull" />
+    <subtype name="SmallAirVentFull" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -3428,7 +3853,11 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="Depressurize" type="Boolean" />
   </block>
-  <block typedefinition="CameraBlock" subtype="LargeCameraTopMounted" class="Sandbox.Game.Entities.MyCameraBlock" type="Sandbox.ModAPI.Ingame.IMyCameraBlock">
+  <block typedefinition="CameraBlock" sampledsubtype="LargeCameraTopMounted" class="Sandbox.Game.Entities.MyCameraBlock" type="Sandbox.ModAPI.Ingame.IMyCameraBlock">
+    <subtype name="LargeCameraBlock" />
+    <subtype name="LargeCameraTopMounted" />
+    <subtype name="SmallCameraBlock" />
+    <subtype name="SmallCameraTopMounted" />
     <interface name="Sandbox.ModAPI.Ingame.IMyCameraBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -3467,7 +3896,9 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="EmotionControllerBlock" subtype="EmotionControllerLarge" class="SpaceEngineers.Game.Entities.Blocks.MyEmotionControllerBlock" type="Sandbox.ModAPI.Ingame.IMyEmotionControllerBlock">
+  <block typedefinition="EmotionControllerBlock" sampledsubtype="EmotionControllerLarge" class="SpaceEngineers.Game.Entities.Blocks.MyEmotionControllerBlock" type="Sandbox.ModAPI.Ingame.IMyEmotionControllerBlock">
+    <subtype name="EmotionControllerLarge" />
+    <subtype name="EmotionControllerSmall" />
     <interface name="Sandbox.ModAPI.Ingame.IMyEmotionControllerBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -3522,7 +3953,12 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="Assembler" subtype="LargeAssemblerIndustrial" class="Sandbox.Game.Entities.Cube.MyAssembler" type="Sandbox.ModAPI.Ingame.IMyAssembler">
+  <block typedefinition="Assembler" sampledsubtype="LargeAssemblerIndustrial" class="Sandbox.Game.Entities.Cube.MyAssembler" type="Sandbox.ModAPI.Ingame.IMyAssembler">
+    <subtype name="BasicAssembler" />
+    <subtype name="FoodProcessor" />
+    <subtype name="LargeAssembler" />
+    <subtype name="LargeAssemblerIndustrial" />
+    <subtype name="LargePrototechAssembler" />
     <interface name="Sandbox.ModAPI.Ingame.IMyAssembler" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyProductionBlock" terminal="true" />
@@ -3567,7 +4003,12 @@
     <property name="UseConveyor" type="Boolean" />
     <property name="slaveMode" type="Boolean" />
   </block>
-  <block typedefinition="Refinery" subtype="LargeRefineryIndustrial" class="Sandbox.Game.Entities.Cube.MyRefinery" type="Sandbox.ModAPI.Ingame.IMyRefinery">
+  <block typedefinition="Refinery" sampledsubtype="LargeRefineryIndustrial" class="Sandbox.Game.Entities.Cube.MyRefinery" type="Sandbox.ModAPI.Ingame.IMyRefinery">
+    <subtype name="Blast Furnace" />
+    <subtype name="LargePrototechRefinery" />
+    <subtype name="LargeRefinery" />
+    <subtype name="LargeRefineryIndustrial" />
+    <subtype name="SmallPrototechRefinery" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyProductionBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyRefinery" terminal="true" />
@@ -3610,7 +4051,11 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block typedefinition="ConveyorSorter" subtype="LargeBlockConveyorSorterIndustrial" class="Sandbox.Game.Entities.MyConveyorSorter" type="Sandbox.ModAPI.Ingame.IMyConveyorSorter">
+  <block typedefinition="ConveyorSorter" sampledsubtype="LargeBlockConveyorSorterIndustrial" class="Sandbox.Game.Entities.MyConveyorSorter" type="Sandbox.ModAPI.Ingame.IMyConveyorSorter">
+    <subtype name="LargeBlockConveyorSorter" />
+    <subtype name="LargeBlockConveyorSorterIndustrial" />
+    <subtype name="MediumBlockConveyorSorter" />
+    <subtype name="SmallBlockConveyorSorter" />
     <interface name="Sandbox.ModAPI.Ingame.IMyConveyorSorter" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -3656,7 +4101,9 @@
     <property name="blacklistWhitelist" type="Int64" />
     <property name="SearchField" type="StringBuilder" />
   </block>
-  <block typedefinition="Collector" subtype="Collector" class="Sandbox.Game.Entities.Blocks.MyCollector" type="Sandbox.ModAPI.Ingame.IMyCollector">
+  <block typedefinition="Collector" sampledsubtype="Collector" class="Sandbox.Game.Entities.Blocks.MyCollector" type="Sandbox.ModAPI.Ingame.IMyCollector">
+    <subtype name="Collector" />
+    <subtype name="CollectorSmall" />
     <interface name="Sandbox.ModAPI.Ingame.IMyCollector" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -3698,7 +4145,14 @@
     <property name="PreserveAspectRatio" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block typedefinition="ShipConnector" subtype="Connector" class="Sandbox.Game.Entities.Cube.MyShipConnector" type="Sandbox.ModAPI.Ingame.IMyShipConnector">
+  <block typedefinition="ShipConnector" sampledsubtype="Connector" class="Sandbox.Game.Entities.Cube.MyShipConnector" type="Sandbox.ModAPI.Ingame.IMyShipConnector">
+    <subtype name="Connector" />
+    <subtype name="ConnectorMedium" />
+    <subtype name="ConnectorSmall" />
+    <subtype name="LargeBlockInsetConnector" />
+    <subtype name="LargeBlockInsetConnectorSmall" />
+    <subtype name="SmallBlockInsetConnector" />
+    <subtype name="SmallBlockInsetConnectorMedium" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyShipConnector" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -3765,7 +4219,9 @@
     <property name="EnableParking" type="Boolean" />
     <property name="Strength" type="Single" />
   </block>
-  <block typedefinition="MotorStator" subtype="LargeStator" class="Sandbox.Game.Entities.Cube.MyMotorStator" type="">
+  <block typedefinition="MotorStator" sampledsubtype="LargeStator" class="Sandbox.Game.Entities.Cube.MyMotorStator" type="">
+    <subtype name="LargeStator" />
+    <subtype name="SmallStator" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyMotorBase" terminal="true" />
@@ -3856,7 +4312,13 @@
     <property name="UpperLimit" type="Single" />
     <property name="Displacement" type="Single" />
   </block>
-  <block typedefinition="MotorAdvancedStator" subtype="LargeAdvancedStator" class="Sandbox.Game.Entities.Cube.MyMotorAdvancedStator" type="Sandbox.ModAPI.Ingame.IMyMotorAdvancedStator">
+  <block typedefinition="MotorAdvancedStator" sampledsubtype="LargeAdvancedStator" class="Sandbox.Game.Entities.Cube.MyMotorAdvancedStator" type="Sandbox.ModAPI.Ingame.IMyMotorAdvancedStator">
+    <subtype name="LargeAdvancedStator" />
+    <subtype name="LargeHinge" />
+    <subtype name="MediumHinge" />
+    <subtype name="SmallAdvancedStator" />
+    <subtype name="SmallAdvancedStatorSmall" />
+    <subtype name="SmallHinge" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyMotorAdvancedStator" terminal="true" />
@@ -3948,7 +4410,10 @@
     <property name="UpperLimit" type="Single" />
     <property name="Displacement" type="Single" />
   </block>
-  <block typedefinition="UpgradeModule" subtype="LargeProductivityModule" class="SpaceEngineers.Game.Entities.Blocks.MyUpgradeModule" type="Sandbox.ModAPI.Ingame.IMyUpgradeModule">
+  <block typedefinition="UpgradeModule" sampledsubtype="LargeProductivityModule" class="SpaceEngineers.Game.Entities.Blocks.MyUpgradeModule" type="Sandbox.ModAPI.Ingame.IMyUpgradeModule">
+    <subtype name="LargeEffectivenessModule" />
+    <subtype name="LargeEnergyModule" />
+    <subtype name="LargeProductivityModule" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -3987,7 +4452,71 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="MotorSuspension" subtype="OffroadSuspension3x3" class="Sandbox.Game.Entities.Cube.MyMotorSuspension" type="Sandbox.ModAPI.Ingame.IMyMotorSuspension">
+  <block typedefinition="MotorSuspension" sampledsubtype="OffroadSuspension3x3" class="Sandbox.Game.Entities.Cube.MyMotorSuspension" type="Sandbox.ModAPI.Ingame.IMyMotorSuspension">
+    <subtype name="OffroadShortSuspension1x1" />
+    <subtype name="OffroadShortSuspension1x1mirrored" />
+    <subtype name="OffroadShortSuspension2x2" />
+    <subtype name="OffroadShortSuspension2x2Mirrored" />
+    <subtype name="OffroadShortSuspension3x3" />
+    <subtype name="OffroadShortSuspension3x3mirrored" />
+    <subtype name="OffroadShortSuspension5x5" />
+    <subtype name="OffroadShortSuspension5x5mirrored" />
+    <subtype name="OffroadSmallShortSuspension1x1" />
+    <subtype name="OffroadSmallShortSuspension1x1mirrored" />
+    <subtype name="OffroadSmallShortSuspension2x2" />
+    <subtype name="OffroadSmallShortSuspension2x2Mirrored" />
+    <subtype name="OffroadSmallShortSuspension3x3" />
+    <subtype name="OffroadSmallShortSuspension3x3mirrored" />
+    <subtype name="OffroadSmallShortSuspension5x5" />
+    <subtype name="OffroadSmallShortSuspension5x5mirrored" />
+    <subtype name="OffroadSmallSuspension1x1" />
+    <subtype name="OffroadSmallSuspension1x1mirrored" />
+    <subtype name="OffroadSmallSuspension2x2" />
+    <subtype name="OffroadSmallSuspension2x2Mirrored" />
+    <subtype name="OffroadSmallSuspension3x3" />
+    <subtype name="OffroadSmallSuspension3x3mirrored" />
+    <subtype name="OffroadSmallSuspension5x5" />
+    <subtype name="OffroadSmallSuspension5x5mirrored" />
+    <subtype name="OffroadSuspension1x1" />
+    <subtype name="OffroadSuspension1x1mirrored" />
+    <subtype name="OffroadSuspension2x2" />
+    <subtype name="OffroadSuspension2x2Mirrored" />
+    <subtype name="OffroadSuspension3x3" />
+    <subtype name="OffroadSuspension3x3mirrored" />
+    <subtype name="OffroadSuspension5x5" />
+    <subtype name="OffroadSuspension5x5mirrored" />
+    <subtype name="ShortSuspension1x1" />
+    <subtype name="ShortSuspension1x1mirrored" />
+    <subtype name="ShortSuspension2x2" />
+    <subtype name="ShortSuspension2x2Mirrored" />
+    <subtype name="ShortSuspension3x3" />
+    <subtype name="ShortSuspension3x3mirrored" />
+    <subtype name="ShortSuspension5x5" />
+    <subtype name="ShortSuspension5x5mirrored" />
+    <subtype name="SmallShortSuspension1x1" />
+    <subtype name="SmallShortSuspension1x1mirrored" />
+    <subtype name="SmallShortSuspension2x2" />
+    <subtype name="SmallShortSuspension2x2Mirrored" />
+    <subtype name="SmallShortSuspension3x3" />
+    <subtype name="SmallShortSuspension3x3mirrored" />
+    <subtype name="SmallShortSuspension5x5" />
+    <subtype name="SmallShortSuspension5x5mirrored" />
+    <subtype name="SmallSuspension1x1" />
+    <subtype name="SmallSuspension1x1mirrored" />
+    <subtype name="SmallSuspension2x2" />
+    <subtype name="SmallSuspension2x2Mirrored" />
+    <subtype name="SmallSuspension3x3" />
+    <subtype name="SmallSuspension3x3mirrored" />
+    <subtype name="SmallSuspension5x5" />
+    <subtype name="SmallSuspension5x5mirrored" />
+    <subtype name="Suspension1x1" />
+    <subtype name="Suspension1x1mirrored" />
+    <subtype name="Suspension2x2" />
+    <subtype name="Suspension2x2Mirrored" />
+    <subtype name="Suspension3x3" />
+    <subtype name="Suspension3x3mirrored" />
+    <subtype name="Suspension5x5" />
+    <subtype name="Suspension5x5mirrored" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyMotorBase" terminal="true" />
@@ -4085,7 +4614,10 @@
     <property name="Propulsion override" type="Single" />
     <property name="Steer override" type="Single" />
   </block>
-  <block typedefinition="Decoy" subtype="TrussPillarDecoy" class="Sandbox.Game.Entities.Blocks.MyDecoy" type="Sandbox.ModAPI.Ingame.IMyDecoy">
+  <block typedefinition="Decoy" sampledsubtype="TrussPillarDecoy" class="Sandbox.Game.Entities.Blocks.MyDecoy" type="Sandbox.ModAPI.Ingame.IMyDecoy">
+    <subtype name="LargeDecoy" />
+    <subtype name="SmallDecoy" />
+    <subtype name="TrussPillarDecoy" />
     <interface name="Sandbox.ModAPI.Ingame.IMyDecoy" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -4124,7 +4656,10 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="MergeBlock" subtype="LargeShipMergeBlock" class="SpaceEngineers.Game.Entities.Blocks.MyShipMergeBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyShipMergeBlock">
+  <block typedefinition="MergeBlock" sampledsubtype="LargeShipMergeBlock" class="SpaceEngineers.Game.Entities.Blocks.MyShipMergeBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyShipMergeBlock">
+    <subtype name="LargeShipMergeBlock" />
+    <subtype name="SmallShipMergeBlock" />
+    <subtype name="SmallShipSmallMergeBlock" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -4163,7 +4698,9 @@
     <property name="ChangeIntervalSlider" type="Single" />
     <property name="PreserveAspectRatio" type="Boolean" />
   </block>
-  <block typedefinition="Parachute" subtype="LgParachute" class="SpaceEngineers.Game.Entities.Blocks.MyParachute" type="SpaceEngineers.Game.ModAPI.Ingame.IMyParachute">
+  <block typedefinition="Parachute" sampledsubtype="LgParachute" class="SpaceEngineers.Game.Entities.Blocks.MyParachute" type="SpaceEngineers.Game.ModAPI.Ingame.IMyParachute">
+    <subtype name="LgParachute" />
+    <subtype name="SmParachute" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -4211,7 +4748,12 @@
     <property name="AutoDeploy" type="Boolean" />
     <property name="AutoDeployHeight" type="Single" />
   </block>
-  <block typedefinition="SmallMissileLauncher" subtype="LargeMissileLauncher" class="Sandbox.Game.Weapons.MySmallMissileLauncher" type="Sandbox.ModAPI.Ingame.IMySmallMissileLauncher">
+  <block typedefinition="SmallMissileLauncher" sampledsubtype="LargeMissileLauncher" class="Sandbox.Game.Weapons.MySmallMissileLauncher" type="Sandbox.ModAPI.Ingame.IMySmallMissileLauncher">
+    <subtype name="LargeBlockLargeCalibreGun" />
+    <subtype name="LargeFlareLauncher" />
+    <subtype name="LargeMissileLauncher" />
+    <subtype name="SmallFlareLauncher" />
+    <subtype name="SmallMissileLauncherWarfare2" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMySmallMissileLauncher" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -4259,7 +4801,9 @@
     <property name="Shoot" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block typedefinition="Searchlight" subtype="LargeSearchlight" class="SpaceEngineers.Game.Entities.Blocks.MySearchlight" type="Sandbox.ModAPI.Ingame.IMySearchlight">
+  <block typedefinition="Searchlight" sampledsubtype="LargeSearchlight" class="SpaceEngineers.Game.Entities.Blocks.MySearchlight" type="Sandbox.ModAPI.Ingame.IMySearchlight">
+    <subtype name="LargeSearchlight" />
+    <subtype name="SmallSearchlight" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMySearchlight" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -4374,7 +4918,9 @@
     <property name="Blink Lenght" type="Single" />
     <property name="Blink Offset" type="Single" />
   </block>
-  <block typedefinition="HeatVentBlock" subtype="LargeHeatVentBlock" class="SpaceEngineers.Game.Entities.Blocks.MyHeatVentBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyHeatVent">
+  <block typedefinition="HeatVentBlock" sampledsubtype="LargeHeatVentBlock" class="SpaceEngineers.Game.Entities.Blocks.MyHeatVentBlock" type="SpaceEngineers.Game.ModAPI.Ingame.IMyHeatVent">
+    <subtype name="LargeHeatVentBlock" />
+    <subtype name="SmallHeatVentBlock" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider" terminal="false" />
@@ -4432,7 +4978,8 @@
     <property name="Offset" type="Single" />
     <property name="PowerDependency" type="Single" />
   </block>
-  <block typedefinition="InteriorTurret" subtype="LargeInteriorTurret" class="SpaceEngineers.Game.Entities.Weapons.MyLargeInteriorTurret" type="SpaceEngineers.Game.ModAPI.Ingame.IMyLargeInteriorTurret">
+  <block typedefinition="InteriorTurret" sampledsubtype="LargeInteriorTurret" class="SpaceEngineers.Game.Entities.Weapons.MyLargeInteriorTurret" type="SpaceEngineers.Game.ModAPI.Ingame.IMyLargeInteriorTurret">
+    <subtype name="LargeInteriorTurret" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyLargeTurretBase" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />
@@ -4530,7 +5077,11 @@
     <property name="EnableTargetLocking" type="Boolean" />
     <property name="TargetingGroup_Selector" type="Int64" />
   </block>
-  <block typedefinition="SmallMissileLauncherReload" subtype="LargeRailgun" class="Sandbox.Game.Weapons.MySmallMissileLauncherReload" type="Sandbox.ModAPI.Ingame.IMySmallMissileLauncherReload">
+  <block typedefinition="SmallMissileLauncherReload" sampledsubtype="LargeRailgun" class="Sandbox.Game.Weapons.MySmallMissileLauncherReload" type="Sandbox.ModAPI.Ingame.IMySmallMissileLauncherReload">
+    <subtype name="LargeRailgun" />
+    <subtype name="SmallBlockMediumCalibreGun" />
+    <subtype name="SmallRailgun" />
+    <subtype name="SmallRocketLauncherReload" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMySmallMissileLauncher" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMySmallMissileLauncherReload" terminal="true" />
@@ -4581,7 +5132,9 @@
     <property name="UseConveyor" type="Boolean" />
     <property name="UseConveyor" type="Boolean" />
   </block>
-  <block typedefinition="SmallGatlingGun" subtype="SmallBlockAutocannon" class="Sandbox.Game.Weapons.MySmallGatlingGun" type="Sandbox.ModAPI.Ingame.IMySmallGatlingGun">
+  <block typedefinition="SmallGatlingGun" sampledsubtype="SmallBlockAutocannon" class="Sandbox.Game.Weapons.MySmallGatlingGun" type="Sandbox.ModAPI.Ingame.IMySmallGatlingGun">
+    <subtype name="SmallBlockAutocannon" />
+    <subtype name="SmallGatlingGunWarfare2" />
     <interface name="Sandbox.ModAPI.Ingame.IMyFunctionalBlock" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMySmallGatlingGun" terminal="true" />
     <interface name="Sandbox.ModAPI.Ingame.IMyTerminalBlock" terminal="true" />

@@ -87,12 +87,17 @@ namespace DocGen.Services
                 // block and left out otherwise: a dozen blocks carry no such declaration, and working one out
                 // from the type hierarchy produced answers that looked authoritative without being so.
                 //
-                // The sampled subtype is deliberately not shown. A type id covers many subtypes and the extractor
-                // reads the actions and properties off whichever one it happened to spawn, so naming it would
-                // suggest the entry applies to that subtype alone when it applies to all of them.
                 if (!string.IsNullOrEmpty(block.BlockInterfaceType))
                 {
                     document.AppendLine($"Interface: `{GetBlockName(block.BlockInterfaceType)}`");
+                    document.AppendLine();
+                }
+
+                // Every subtype, not the one the extractor happened to sample. A few blocks have no subtype id
+                // at all, and those simply get no line.
+                if (block.Subtypes.Any())
+                {
+                    document.AppendLine("Subtypes: " + string.Join(", ", block.Subtypes.Select(s => $"`{s}`")));
                     document.AppendLine();
                 }
 
@@ -218,7 +223,12 @@ namespace DocGen.Services
             {
                 TypeId = (string)element.Attribute("typedefinition");
                 BlockInterfaceType = (string)element.Attribute("type");
-                Subtype = (string)element.Attribute("subtype");
+                Subtype = (string)element.Attribute("sampledsubtype");
+                Subtypes = new ReadOnlyCollection<string>(
+                    element.Elements("subtype")
+                        .Select(s => (string)s.Attribute("name"))
+                        .Where(n => !string.IsNullOrEmpty(n))
+                        .ToList());
                 ClassName = (string)element.Attribute("class");
                 var ingameInterfaces = element.Elements("interface")
                     .Where(i => !string.IsNullOrEmpty((string)i.Attribute("name")))
@@ -254,6 +264,12 @@ namespace DocGen.Services
 
             /// <summary>Which subtype the extractor sampled to produce these actions and properties.</summary>
             public string Subtype { get; }
+
+            /// <summary>
+            ///     Every subtype sharing this type definition. What the entry actually covers, as opposed to the
+            ///     one subtype that happened to be sampled.
+            /// </summary>
+            public ReadOnlyCollection<string> Subtypes { get; }
 
             /// <summary>The runtime block class, for tracing an entry back to the game.</summary>
             public string ClassName { get; }
