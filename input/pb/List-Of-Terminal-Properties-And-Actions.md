@@ -1,7 +1,7 @@
 ## Overview
 **Note: Terminal actions and properties are for all intents and purposes obsolete since all vanilla block interfaces now contain proper API access to _most of_ this information. It is highly recommended you use those for less overhead.**
 
-Blocks are listed by their type definition. A block can be fetched through any of the interfaces listed beneath it, so the same actions and properties apply to every one of them.
+Blocks are listed by their type definition, and the actions and properties shown apply to every subtype of that type. Where the game declares an ingame interface for a block it is named; some blocks do not have one.
 
 [AirtightHangarDoor](#airtighthangardoor)  
 [AirtightSlideDoor](#airtightslidedoor)  

@@ -67,7 +67,7 @@ namespace DocGen.Services
             document.AppendLine("## Overview");
             document.AppendLine("**Note: Terminal actions and properties are for all intents and purposes obsolete since all vanilla block interfaces now contain proper API access to _most of_ this information. It is highly recommended you use those for less overhead.**");
             document.AppendLine();
-            document.AppendLine("Blocks are listed by their type definition. A block can be fetched through any of the interfaces listed beneath it, so the same actions and properties apply to every one of them.");
+            document.AppendLine("Blocks are listed by their type definition, and the actions and properties shown apply to every subtype of that type. Where the game declares an ingame interface for a block it is named; some blocks do not have one.");
             document.AppendLine();
 
             foreach (var block in blocks)
