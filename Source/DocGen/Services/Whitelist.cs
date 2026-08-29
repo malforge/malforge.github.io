@@ -16,12 +16,31 @@ namespace DocGen.Services
         Whitelist(List<string> lines)
         {
             _entries = new List<WhitelistRule>();
-            foreach (var entry in lines.Where(line => !string.IsNullOrWhiteSpace(line)).Select(WhitelistRule.Parse))
+            var skippedCount = 0;
+            foreach (var line in lines.Where(l => !string.IsNullOrWhiteSpace(l)))
             {
+                WhitelistRule entry;
+                try
+                {
+                    entry = WhitelistRule.Parse(line);
+                }
+                // A member named in the whitelist no longer matches anything reflectable (e.g.
+                // renamed/removed API, or a whitelist entry that was never valid). Assembly-not-found and
+                // malformed-line failures are not caught here and still abort the whole load, since those
+                // indicate a broken environment/config rather than one stale line.
+                catch (WhitelistMemberNotFoundException)
+                {
+                    skippedCount++;
+                    continue;
+                }
+
                 if (entry is MemberRule memberRule && !_entries.Any(e => e is TypeRule typeRule && typeRule.Type == memberRule.MemberInfo.DeclaringType))
                     _entries.Add(new TypeRule(memberRule.MemberInfo.DeclaringType, false));
                 _entries.Add(entry);
             }
+
+            if (skippedCount > 0)
+                Console.WriteLine($"Warning: skipped {skippedCount} whitelist entr{(skippedCount == 1 ? "y" : "ies")} whose member no longer resolves");
 
             _assemblyNames = new HashSet<string>(_entries.Select(e => e.Assembly.GetName().Name).Distinct(StringComparer.OrdinalIgnoreCase), StringComparer.OrdinalIgnoreCase);
         }

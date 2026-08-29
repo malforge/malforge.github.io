@@ -126,10 +126,17 @@ namespace DocGen.Services
             var name = "";
             while (parts.Count > 0)
             {
-                if (name.Length > 0)
-                    name += ".";
-                name += Translate(parts.Dequeue());
-                var nextType = assembly.GetType(name);
+                var candidateName = name.Length > 0 ? name + "." + Translate(parts.Peek()) : Translate(parts.Peek());
+                var nextType = assembly.GetType(candidateName);
+
+                // Once a type has matched, a further failed extension means the remaining parts are
+                // the member name (plus its generic/parameter suffix), not more of the type's own path -
+                // leave them queued for the member-matching loop below instead of discarding them.
+                if (nextType == null && type != null)
+                    break;
+
+                parts.Dequeue();
+                name = candidateName;
                 if (nextType != null)
                     type = nextType;
             }
@@ -169,9 +176,9 @@ namespace DocGen.Services
                 }
 
                 if (members.Count == 0)
-                    throw new InvalidOperationException("No matches");
+                    throw new WhitelistMemberNotFoundException("No matches");
                 if (members.Count > 1)
-                    throw new InvalidOperationException("Too many matches");
+                    throw new WhitelistMemberNotFoundException("Too many matches");
                 if (members[0] is Type nestedType)
                 {
                     type = nestedType;
@@ -316,5 +323,18 @@ namespace DocGen.Services
         }
 
         public abstract bool IsMatch(MemberInfo memberInfo);
+    }
+
+    /// <summary>
+    ///     Thrown by <see cref="WhitelistRule.Parse" /> when a whitelist line names a specific member that
+    ///     can no longer be found (or is now ambiguous) on its declaring type - typically because the game's
+    ///     API drifted since the line was written. Callers may choose to skip just that line instead of
+    ///     aborting the whole whitelist load.
+    /// </summary>
+    internal class WhitelistMemberNotFoundException : InvalidOperationException
+    {
+        public WhitelistMemberNotFoundException(string message) : base(message)
+        {
+        }
     }
 }

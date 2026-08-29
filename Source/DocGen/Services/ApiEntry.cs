@@ -347,7 +347,7 @@ namespace DocGen.Services
             {
                 foreach (var item in DeclarersOf(constructorInfo.DeclaringType, true).Reverse())
                 {
-                    buffer.Append(Api.GetEntry(item).ToString(ForSubCalls(flags)));
+                    buffer.Append(Api.GetEntry(item, true).ToString(ForSubCalls(flags)));
                     buffer.Append(".");
                 }
             }
@@ -355,7 +355,7 @@ namespace DocGen.Services
             if (flags.HasFlag(ApiEntryStringFlags.CliNames))
                 buffer.Append(constructorInfo.Name);
             else
-                buffer.Append(Api.GetEntry(constructorInfo.DeclaringType).ToString(ApiEntryStringFlags.None));
+                buffer.Append(Api.GetEntry(constructorInfo.DeclaringType, true).ToString(ApiEntryStringFlags.None));
 
             if (flags.HasFlag(ApiEntryStringFlags.ParameterTypes) || flags.HasFlag(ApiEntryStringFlags.ParameterNames))
             {
@@ -381,6 +381,8 @@ namespace DocGen.Services
             {
                 if (methodInfo.ReturnType == typeof(void))
                     segments.Add("void");
+                else if (methodInfo.ReturnType.IsGenericParameter)
+                    segments.Add(methodInfo.ReturnType.Name);
                 else
                     segments.Add(Api.GetEntry(methodInfo.ReturnType, true).ToString(ForSubCalls(flags)));
             }
@@ -390,7 +392,7 @@ namespace DocGen.Services
             {
                 foreach (var item in DeclarersOf(methodInfo.DeclaringType, true).Reverse())
                 {
-                    buffer.Append(Api.GetEntry(item).ToString(ForSubCalls(flags)));
+                    buffer.Append(Api.GetEntry(item, true).ToString(ForSubCalls(flags)));
                     buffer.Append(".");
                 }
             }
@@ -408,7 +410,7 @@ namespace DocGen.Services
                 {
                     var genericArguments = methodInfo.GetGenericArguments();
                     buffer.Append("<");
-                    buffer.Append(string.Join(", ", genericArguments.Select(arg => Api.GetEntry(arg).ToString(ForSubCalls(flags)))));
+                    buffer.Append(string.Join(", ", genericArguments.Select(arg => arg.IsGenericParameter ? arg.Name : Api.GetEntry(arg)?.ToString(ForSubCalls(flags)) ?? arg.Name)));
                     buffer.Append(">");
                 }
             }
@@ -448,7 +450,7 @@ namespace DocGen.Services
             {
                 foreach (var item in DeclarersOf(propertyInfo.DeclaringType, true).Reverse())
                 {
-                    buffer.Append(Api.GetEntry(item).ToString(ForSubCalls(flags)));
+                    buffer.Append(Api.GetEntry(item, true).ToString(ForSubCalls(flags)));
                     buffer.Append(".");
                 }
             }
