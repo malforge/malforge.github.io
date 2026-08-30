@@ -1,5 +1,5 @@
 {
-  "GeneratedDate": "2026-08-30T08:07:47.4040649Z",
+  "GeneratedDate": "2026-08-30T08:43:01.7289928Z",
   "Types": [
     {
       "FullName": "Sandbox.Game.EntityComponents.MyResourceSinkComponent",
@@ -111679,9 +111679,9 @@
       },
       "Members": [],
       "BlockInfo": {
-        "DisplayName": "Warfare Hangar Door",
+        "DisplayName": "Airtight Hangar Door",
         "TypeId": "AirtightHangarDoor",
-        "SubtypeId": "AirtightHangarDoorWarfare2A",
+        "SubtypeId": "",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -112396,9 +112396,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Battery",
+        "DisplayName": "Prototech Battery",
         "TypeId": "BatteryBlock",
-        "SubtypeId": "LargeBlockBatteryBlock",
+        "SubtypeId": "LargeBlockPrototechBattery",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -113005,10 +113005,10 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Top Mounted Camera",
+        "DisplayName": "Camera",
         "TypeId": "CameraBlock",
-        "SubtypeId": "LargeCameraTopMounted",
-        "Size": "Large Grid",
+        "SubtypeId": "SmallCameraBlock",
+        "Size": "Small Grid",
         "Group": "Blocks"
       }
     },
@@ -113325,9 +113325,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Control Station",
+        "DisplayName": "Desk",
         "TypeId": "Cockpit",
-        "SubtypeId": "LargeBlockCockpit",
+        "SubtypeId": "LargeBlockDesk",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -113950,9 +113950,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Small Gate Tall",
+        "DisplayName": "Centered Door",
         "TypeId": "Door",
-        "SubtypeId": "LargeBlockSmallGate",
+        "SubtypeId": "LargeBlockCentredDoor",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -114082,9 +114082,9 @@
       },
       "Members": [],
       "BlockInfo": {
-        "DisplayName": "Square Piston",
+        "DisplayName": "Piston",
         "TypeId": "ExtendedPistonBase",
-        "SubtypeId": "LargePistonBaseReskin",
+        "SubtypeId": "LargePistonBase",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -114625,9 +114625,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Lab Small Hydrogen Tank",
+        "DisplayName": "Bulky Hydrogen Tank",
         "TypeId": "OxygenTank",
-        "SubtypeId": "LargeHydrogenTankSmallLab",
+        "SubtypeId": "LargeHydrogenTankBulk",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -115311,9 +115311,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Gyroscope",
+        "DisplayName": "Prototech Gyroscope",
         "TypeId": "Gyro",
-        "SubtypeId": "LargeBlockGyro",
+        "SubtypeId": "LargeBlockPrototechGyro",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -115698,9 +115698,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Jump Drive",
+        "DisplayName": "Jump Drive Type II",
         "TypeId": "JumpDrive",
-        "SubtypeId": "LargeJumpDrive",
+        "SubtypeId": "LargeJumpDriveReskin",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -117725,7 +117725,7 @@
           "Name": "Facing",
           "PageName": "Sandbox.ModAPI.Ingame.IMyOffensiveCombatCircleOrbit@Facing",
           "XmlDocKey": "P:Sandbox.ModAPI.Ingame.IMyOffensiveCombatCircleOrbit.Facing",
-          "Signature": "VRageMath.VRageMath.Base6Directions.DirectionFlags Sandbox.ModAPI.Ingame.IMyOffensiveCombatCircleOrbit.Facing",
+          "Signature": "VRageMath.Base6Directions.DirectionFlags Sandbox.ModAPI.Ingame.IMyOffensiveCombatCircleOrbit.Facing",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirectionFlags",
           "CanRead": true,
@@ -118029,7 +118029,7 @@
           "Name": "FacingPriority",
           "PageName": "Sandbox.ModAPI.Ingame.IMyOffensiveCombatStayAtRange@FacingPriority",
           "XmlDocKey": "P:Sandbox.ModAPI.Ingame.IMyOffensiveCombatStayAtRange.FacingPriority",
-          "Signature": "VRageMath.VRageMath.Base6Directions.DirectionFlags Sandbox.ModAPI.Ingame.IMyOffensiveCombatStayAtRange.FacingPriority",
+          "Signature": "VRageMath.Base6Directions.DirectionFlags Sandbox.ModAPI.Ingame.IMyOffensiveCombatStayAtRange.FacingPriority",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirectionFlags",
           "CanRead": true,
@@ -118119,9 +118119,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Ore Detector",
+        "DisplayName": "Ore Detector Type II",
         "TypeId": "OreDetector",
-        "SubtypeId": "LargeOreDetector",
+        "SubtypeId": "LargeOreDetectorReskin",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -119821,9 +119821,9 @@
       },
       "Members": [],
       "BlockInfo": {
-        "DisplayName": "Floodlight",
+        "DisplayName": "Spotlight",
         "TypeId": "ReflectorLight",
-        "SubtypeId": "LargeBlockFloodlight",
+        "SubtypeId": "LargeBlockFrontLight",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -119945,7 +119945,7 @@
           "Name": "Direction",
           "PageName": "Sandbox.ModAPI.Ingame.IMyRemoteControl@Direction",
           "XmlDocKey": "P:Sandbox.ModAPI.Ingame.IMyRemoteControl.Direction",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction Sandbox.ModAPI.Ingame.IMyRemoteControl.Direction",
+          "Signature": "VRageMath.Base6Directions.Direction Sandbox.ModAPI.Ingame.IMyRemoteControl.Direction",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "CanRead": true,
@@ -121569,10 +121569,10 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Drill",
+        "DisplayName": "Drill Type II",
         "TypeId": "Drill",
-        "SubtypeId": "SmallBlockDrill",
-        "Size": "Small Grid",
+        "SubtypeId": "LargeBlockDrillReskin",
+        "Size": "Large Grid",
         "Group": "Blocks"
       }
     },
@@ -121599,9 +121599,9 @@
       },
       "Members": [],
       "BlockInfo": {
-        "DisplayName": "Grinder",
+        "DisplayName": "Grinder Type II",
         "TypeId": "ShipGrinder",
-        "SubtypeId": "LargeShipGrinder",
+        "SubtypeId": "LargeShipGrinderReskin",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -121695,9 +121695,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Welder",
+        "DisplayName": "Welder Type II",
         "TypeId": "ShipWelder",
-        "SubtypeId": "LargeShipWelder",
+        "SubtypeId": "LargeShipWelderReskin",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -122082,9 +122082,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "ATM",
+        "DisplayName": "Store",
         "TypeId": "StoreBlock",
-        "SubtypeId": "AtmBlock",
+        "SubtypeId": "StoreBlock",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -122621,9 +122621,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Control Panel",
+        "DisplayName": "Server Rack B",
         "TypeId": "TerminalBlock",
-        "SubtypeId": "ControlPanel",
+        "SubtypeId": "LargeBlockServerRack2",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -122704,10 +122704,10 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Transparent LCD",
+        "DisplayName": "Text Panel",
         "TypeId": "TextPanel",
-        "SubtypeId": "TransparentLCDLarge",
-        "Size": "Large Grid",
+        "SubtypeId": "SmallTextPanel",
+        "Size": "Small Grid",
         "Group": "Blocks"
       }
     },
@@ -123641,9 +123641,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Industrial Large Hydrogen Thruster",
+        "DisplayName": "Sci-Fi Large Hydrogen Thruster",
         "TypeId": "Thrust",
-        "SubtypeId": "LargeBlockLargeHydrogenThrustIndustrial",
+        "SubtypeId": "LargeBlockLargeHydrogenThrustReskin",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -129030,9 +129030,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Landing Gear",
+        "DisplayName": "Landing Gear Type II",
         "TypeId": "LandingGear",
-        "SubtypeId": "LargeBlockLandingGear",
+        "SubtypeId": "LargeBlockLandingGearReskin",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -129092,9 +129092,9 @@
       ],
       "Members": [],
       "BlockInfo": {
-        "DisplayName": "Gatling Turret Type II",
+        "DisplayName": "Gatling Turret",
         "TypeId": "LargeGatlingTurret",
-        "SubtypeId": "LargeGatlingTurretReskin",
+        "SubtypeId": "",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -129168,9 +129168,9 @@
       ],
       "Members": [],
       "BlockInfo": {
-        "DisplayName": "Inset Refill Station",
+        "DisplayName": "Medical Room",
         "TypeId": "MedicalRoom",
-        "SubtypeId": "InsetRefillStation",
+        "SubtypeId": "LargeMedicalRoom",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -129218,9 +129218,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Oxygen Farm",
+        "DisplayName": "Half Oxygen Farm",
         "TypeId": "OxygenFarm",
-        "SubtypeId": "LargeBlockOxygenFarm",
+        "SubtypeId": "LargeBlockOxygenFarmReskin",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -133107,7 +133107,7 @@
           "Name": "CultureName",
           "PageName": "VRage.MyTexts\u002BMyLanguageDescription@CultureName",
           "XmlDocKey": "F:VRage.MyLanguageDescription.CultureName",
-          "Signature": "string VRage.MyTexts.VRage.VRage.MyTexts.MyLanguageDescription.CultureName",
+          "Signature": "string VRage.MyTexts.MyLanguageDescription.CultureName",
           "IsStatic": false,
           "ReturnType": "string",
           "IsReadOnly": true,
@@ -133118,7 +133118,7 @@
           "Name": "FullCultureName",
           "PageName": "VRage.MyTexts\u002BMyLanguageDescription@FullCultureName",
           "XmlDocKey": "F:VRage.MyLanguageDescription.FullCultureName",
-          "Signature": "string VRage.MyTexts.VRage.VRage.MyTexts.MyLanguageDescription.FullCultureName",
+          "Signature": "string VRage.MyTexts.MyLanguageDescription.FullCultureName",
           "IsStatic": false,
           "ReturnType": "string",
           "IsReadOnly": true,
@@ -133129,7 +133129,7 @@
           "Name": "GuiTextScale",
           "PageName": "VRage.MyTexts\u002BMyLanguageDescription@GuiTextScale",
           "XmlDocKey": "F:VRage.MyLanguageDescription.GuiTextScale",
-          "Signature": "float VRage.MyTexts.VRage.VRage.MyTexts.MyLanguageDescription.GuiTextScale",
+          "Signature": "float VRage.MyTexts.MyLanguageDescription.GuiTextScale",
           "IsStatic": false,
           "ReturnType": "float",
           "IsReadOnly": true,
@@ -133140,7 +133140,7 @@
           "Name": "Id",
           "PageName": "VRage.MyTexts\u002BMyLanguageDescription@Id",
           "XmlDocKey": "F:VRage.MyLanguageDescription.Id",
-          "Signature": "VRage.MyLanguagesEnum VRage.MyTexts.VRage.VRage.MyTexts.MyLanguageDescription.Id",
+          "Signature": "VRage.MyLanguagesEnum VRage.MyTexts.MyLanguageDescription.Id",
           "IsStatic": false,
           "ReturnType": "VRage.MyLanguagesEnum",
           "IsReadOnly": true,
@@ -133151,7 +133151,7 @@
           "Name": "IsCommunityLocalized",
           "PageName": "VRage.MyTexts\u002BMyLanguageDescription@IsCommunityLocalized",
           "XmlDocKey": "F:VRage.MyLanguageDescription.IsCommunityLocalized",
-          "Signature": "bool VRage.MyTexts.VRage.VRage.MyTexts.MyLanguageDescription.IsCommunityLocalized",
+          "Signature": "bool VRage.MyTexts.MyLanguageDescription.IsCommunityLocalized",
           "IsStatic": false,
           "ReturnType": "bool",
           "IsReadOnly": true,
@@ -133162,7 +133162,7 @@
           "Name": "Name",
           "PageName": "VRage.MyTexts\u002BMyLanguageDescription@Name",
           "XmlDocKey": "F:VRage.MyLanguageDescription.Name",
-          "Signature": "string VRage.MyTexts.VRage.VRage.MyTexts.MyLanguageDescription.Name",
+          "Signature": "string VRage.MyTexts.MyLanguageDescription.Name",
           "IsStatic": false,
           "ReturnType": "string",
           "IsReadOnly": true,
@@ -133173,7 +133173,7 @@
           "Name": "SubcultureName",
           "PageName": "VRage.MyTexts\u002BMyLanguageDescription@SubcultureName",
           "XmlDocKey": "F:VRage.MyLanguageDescription.SubcultureName",
-          "Signature": "string VRage.MyTexts.VRage.VRage.MyTexts.MyLanguageDescription.SubcultureName",
+          "Signature": "string VRage.MyTexts.MyLanguageDescription.SubcultureName",
           "IsStatic": false,
           "ReturnType": "string",
           "IsReadOnly": true,
@@ -134135,7 +134135,7 @@
           "Name": "Item1",
           "PageName": "VRage.MyTuple{T1}@Item1",
           "XmlDocKey": "F:VRage.MyTuple{T1}.Item1",
-          "Signature": "VRage.VRage.MyTuple\u003CT1\u003E.T1 VRage.MyTuple\u003CT1\u003E.Item1",
+          "Signature": "VRage.MyTuple\u003CT1\u003E.T1 VRage.MyTuple\u003CT1\u003E.Item1",
           "IsStatic": false,
           "ReturnType": "T1",
           "IsReadOnly": false,
@@ -134184,7 +134184,7 @@
           "Name": "Item1",
           "PageName": "VRage.MyTuple{T1,T2}@Item1",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2}.Item1",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2\u003E.T1 VRage.MyTuple\u003CT1, T2\u003E.Item1",
+          "Signature": "VRage.MyTuple\u003CT1, T2\u003E.T1 VRage.MyTuple\u003CT1, T2\u003E.Item1",
           "IsStatic": false,
           "ReturnType": "T1",
           "IsReadOnly": false,
@@ -134195,7 +134195,7 @@
           "Name": "Item2",
           "PageName": "VRage.MyTuple{T1,T2}@Item2",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2}.Item2",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2\u003E.T2 VRage.MyTuple\u003CT1, T2\u003E.Item2",
+          "Signature": "VRage.MyTuple\u003CT1, T2\u003E.T2 VRage.MyTuple\u003CT1, T2\u003E.Item2",
           "IsStatic": false,
           "ReturnType": "T2",
           "IsReadOnly": false,
@@ -134251,7 +134251,7 @@
           "Name": "Item1",
           "PageName": "VRage.MyTuple{T1,T2,T3}@Item1",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3}.Item1",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3\u003E.T1 VRage.MyTuple\u003CT1, T2, T3\u003E.Item1",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3\u003E.T1 VRage.MyTuple\u003CT1, T2, T3\u003E.Item1",
           "IsStatic": false,
           "ReturnType": "T1",
           "IsReadOnly": false,
@@ -134262,7 +134262,7 @@
           "Name": "Item2",
           "PageName": "VRage.MyTuple{T1,T2,T3}@Item2",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3}.Item2",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3\u003E.T2 VRage.MyTuple\u003CT1, T2, T3\u003E.Item2",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3\u003E.T2 VRage.MyTuple\u003CT1, T2, T3\u003E.Item2",
           "IsStatic": false,
           "ReturnType": "T2",
           "IsReadOnly": false,
@@ -134273,7 +134273,7 @@
           "Name": "Item3",
           "PageName": "VRage.MyTuple{T1,T2,T3}@Item3",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3}.Item3",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3\u003E.T3 VRage.MyTuple\u003CT1, T2, T3\u003E.Item3",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3\u003E.T3 VRage.MyTuple\u003CT1, T2, T3\u003E.Item3",
           "IsStatic": false,
           "ReturnType": "T3",
           "IsReadOnly": false,
@@ -134336,7 +134336,7 @@
           "Name": "Item1",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4}@Item1",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4}.Item1",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4\u003E.T1 VRage.MyTuple\u003CT1, T2, T3, T4\u003E.Item1",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4\u003E.T1 VRage.MyTuple\u003CT1, T2, T3, T4\u003E.Item1",
           "IsStatic": false,
           "ReturnType": "T1",
           "IsReadOnly": false,
@@ -134347,7 +134347,7 @@
           "Name": "Item2",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4}@Item2",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4}.Item2",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4\u003E.T2 VRage.MyTuple\u003CT1, T2, T3, T4\u003E.Item2",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4\u003E.T2 VRage.MyTuple\u003CT1, T2, T3, T4\u003E.Item2",
           "IsStatic": false,
           "ReturnType": "T2",
           "IsReadOnly": false,
@@ -134358,7 +134358,7 @@
           "Name": "Item3",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4}@Item3",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4}.Item3",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4\u003E.T3 VRage.MyTuple\u003CT1, T2, T3, T4\u003E.Item3",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4\u003E.T3 VRage.MyTuple\u003CT1, T2, T3, T4\u003E.Item3",
           "IsStatic": false,
           "ReturnType": "T3",
           "IsReadOnly": false,
@@ -134369,7 +134369,7 @@
           "Name": "Item4",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4}@Item4",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4}.Item4",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4\u003E.T4 VRage.MyTuple\u003CT1, T2, T3, T4\u003E.Item4",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4\u003E.T4 VRage.MyTuple\u003CT1, T2, T3, T4\u003E.Item4",
           "IsStatic": false,
           "ReturnType": "T4",
           "IsReadOnly": false,
@@ -134439,7 +134439,7 @@
           "Name": "Item1",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4,T5}@Item1",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4,T5}.Item1",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.T1 VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.Item1",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.T1 VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.Item1",
           "IsStatic": false,
           "ReturnType": "T1",
           "IsReadOnly": false,
@@ -134450,7 +134450,7 @@
           "Name": "Item2",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4,T5}@Item2",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4,T5}.Item2",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.T2 VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.Item2",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.T2 VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.Item2",
           "IsStatic": false,
           "ReturnType": "T2",
           "IsReadOnly": false,
@@ -134461,7 +134461,7 @@
           "Name": "Item3",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4,T5}@Item3",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4,T5}.Item3",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.T3 VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.Item3",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.T3 VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.Item3",
           "IsStatic": false,
           "ReturnType": "T3",
           "IsReadOnly": false,
@@ -134472,7 +134472,7 @@
           "Name": "Item4",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4,T5}@Item4",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4,T5}.Item4",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.T4 VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.Item4",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.T4 VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.Item4",
           "IsStatic": false,
           "ReturnType": "T4",
           "IsReadOnly": false,
@@ -134483,7 +134483,7 @@
           "Name": "Item5",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4,T5}@Item5",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4,T5}.Item5",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.T5 VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.Item5",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.T5 VRage.MyTuple\u003CT1, T2, T3, T4, T5\u003E.Item5",
           "IsStatic": false,
           "ReturnType": "T5",
           "IsReadOnly": false,
@@ -134560,7 +134560,7 @@
           "Name": "Item1",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4,T5,T6}@Item1",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4,T5,T6}.Item1",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.T1 VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.Item1",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.T1 VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.Item1",
           "IsStatic": false,
           "ReturnType": "T1",
           "IsReadOnly": false,
@@ -134571,7 +134571,7 @@
           "Name": "Item2",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4,T5,T6}@Item2",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4,T5,T6}.Item2",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.T2 VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.Item2",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.T2 VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.Item2",
           "IsStatic": false,
           "ReturnType": "T2",
           "IsReadOnly": false,
@@ -134582,7 +134582,7 @@
           "Name": "Item3",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4,T5,T6}@Item3",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4,T5,T6}.Item3",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.T3 VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.Item3",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.T3 VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.Item3",
           "IsStatic": false,
           "ReturnType": "T3",
           "IsReadOnly": false,
@@ -134593,7 +134593,7 @@
           "Name": "Item4",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4,T5,T6}@Item4",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4,T5,T6}.Item4",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.T4 VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.Item4",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.T4 VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.Item4",
           "IsStatic": false,
           "ReturnType": "T4",
           "IsReadOnly": false,
@@ -134604,7 +134604,7 @@
           "Name": "Item5",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4,T5,T6}@Item5",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4,T5,T6}.Item5",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.T5 VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.Item5",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.T5 VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.Item5",
           "IsStatic": false,
           "ReturnType": "T5",
           "IsReadOnly": false,
@@ -134615,7 +134615,7 @@
           "Name": "Item6",
           "PageName": "VRage.MyTuple{T1,T2,T3,T4,T5,T6}@Item6",
           "XmlDocKey": "F:VRage.MyTuple{T1,T2,T3,T4,T5,T6}.Item6",
-          "Signature": "VRage.VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.T6 VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.Item6",
+          "Signature": "VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.T6 VRage.MyTuple\u003CT1, T2, T3, T4, T5, T6\u003E.Item6",
           "IsStatic": false,
           "ReturnType": "T6",
           "IsReadOnly": false,
@@ -134821,7 +134821,7 @@
           "Name": "GetEnumerator",
           "PageName": "VRage.Collections.ListReader{T}@GetEnumerator",
           "XmlDocKey": "M:VRage.Collections.ListReader{T}.GetEnumerator",
-          "Signature": "System.Collections.Generic.System.Collections.Generic.List\u003CT\u003E.Enumerator\u003CT\u003E VRage.Collections.ListReader\u003CT\u003E.GetEnumerator()",
+          "Signature": "System.Collections.Generic.List\u003CT\u003E.Enumerator\u003CT\u003E VRage.Collections.ListReader\u003CT\u003E.GetEnumerator()",
           "IsStatic": false,
           "ReturnType": "System.Collections.Generic.Enumerator\u003CT\u003E"
         },
@@ -134848,7 +134848,7 @@
           "Name": "Item",
           "PageName": "VRage.Collections.ListReader{T}@Item",
           "XmlDocKey": "P:VRage.Collections.ListReader{T}.Item",
-          "Signature": "VRage.Collections.VRage.Collections.ListReader\u003CT\u003E.T VRage.Collections.ListReader\u003CT\u003E.Item",
+          "Signature": "VRage.Collections.ListReader\u003CT\u003E.T VRage.Collections.ListReader\u003CT\u003E.Item",
           "IsStatic": false,
           "ReturnType": "T",
           "CanRead": true,
@@ -134894,7 +134894,7 @@
           "Name": ".ctor",
           "PageName": "VRage.Game.MyDefinitionId\u002BDefinitionIdComparerType@.ctor",
           "XmlDocKey": "C:VRage.Game.DefinitionIdComparerType..ctor()",
-          "Signature": "VRage.Game.MyDefinitionId.VRage.Game.VRage.Game.MyDefinitionId.DefinitionIdComparerType.DefinitionIdComparerType()",
+          "Signature": "VRage.Game.MyDefinitionId.DefinitionIdComparerType.DefinitionIdComparerType()",
           "IsStatic": false
         },
         {
@@ -134902,7 +134902,7 @@
           "Name": "Equals",
           "PageName": "VRage.Game.MyDefinitionId\u002BDefinitionIdComparerType@Equals",
           "XmlDocKey": "M:VRage.Game.DefinitionIdComparerType.Equals(VRage.Game.MyDefinitionId,VRage.Game.MyDefinitionId)",
-          "Signature": "bool VRage.Game.MyDefinitionId.VRage.Game.VRage.Game.MyDefinitionId.DefinitionIdComparerType.Equals(x, y)",
+          "Signature": "bool VRage.Game.MyDefinitionId.DefinitionIdComparerType.Equals(x, y)",
           "IsStatic": false,
           "ReturnType": "bool",
           "Parameters": [
@@ -134927,7 +134927,7 @@
           "Name": "GetHashCode",
           "PageName": "VRage.Game.MyDefinitionId\u002BDefinitionIdComparerType@GetHashCode",
           "XmlDocKey": "M:VRage.Game.DefinitionIdComparerType.GetHashCode(VRage.Game.MyDefinitionId)",
-          "Signature": "int VRage.Game.MyDefinitionId.VRage.Game.VRage.Game.MyDefinitionId.DefinitionIdComparerType.GetHashCode(obj)",
+          "Signature": "int VRage.Game.MyDefinitionId.DefinitionIdComparerType.GetHashCode(obj)",
           "IsStatic": false,
           "ReturnType": "int",
           "Parameters": [
@@ -135092,7 +135092,7 @@
           "Name": "Comparer",
           "PageName": "VRage.Game.MyDefinitionId@Comparer",
           "XmlDocKey": "F:VRage.Game.MyDefinitionId.Comparer",
-          "Signature": "static VRage.Game.VRage.Game.MyDefinitionId.DefinitionIdComparerType VRage.Game.MyDefinitionId.Comparer",
+          "Signature": "static VRage.Game.MyDefinitionId.DefinitionIdComparerType VRage.Game.MyDefinitionId.Comparer",
           "IsStatic": true,
           "ReturnType": "VRage.Game.MyDefinitionId\u002BDefinitionIdComparerType",
           "IsReadOnly": true,
@@ -135880,7 +135880,7 @@
           "Name": ".ctor",
           "PageName": "VRage.Game.GUI.TextPanel.MySpriteDrawFrame\u002BClearClipToken@.ctor",
           "XmlDocKey": "C:VRage.Game.GUI.TextPanel.ClearClipToken..ctor(VRage.Game.GUI.TextPanel.MySpriteDrawFrame)",
-          "Signature": "VRage.Game.GUI.TextPanel.MySpriteDrawFrame.VRage.Game.GUI.TextPanel.VRage.Game.GUI.TextPanel.MySpriteDrawFrame.ClearClipToken.ClearClipToken(frame)",
+          "Signature": "VRage.Game.GUI.TextPanel.MySpriteDrawFrame.ClearClipToken.ClearClipToken(frame)",
           "IsStatic": false,
           "Parameters": [
             {
@@ -135897,7 +135897,7 @@
           "Name": "Dispose",
           "PageName": "VRage.Game.GUI.TextPanel.MySpriteDrawFrame\u002BClearClipToken@Dispose",
           "XmlDocKey": "M:VRage.Game.GUI.TextPanel.ClearClipToken.Dispose",
-          "Signature": "void VRage.Game.GUI.TextPanel.MySpriteDrawFrame.VRage.Game.GUI.TextPanel.VRage.Game.GUI.TextPanel.MySpriteDrawFrame.ClearClipToken.Dispose()",
+          "Signature": "void VRage.Game.GUI.TextPanel.MySpriteDrawFrame.ClearClipToken.Dispose()",
           "IsStatic": false,
           "ReturnType": "System.Void"
         }
@@ -136645,7 +136645,7 @@
           "Name": "Clip",
           "PageName": "VRage.Game.GUI.TextPanel.MySpriteDrawFrame@Clip",
           "XmlDocKey": "M:VRage.Game.GUI.TextPanel.MySpriteDrawFrame.Clip(System.Int32,System.Int32,System.Int32,System.Int32)",
-          "Signature": "VRage.Game.GUI.TextPanel.VRage.Game.GUI.TextPanel.MySpriteDrawFrame.ClearClipToken VRage.Game.GUI.TextPanel.MySpriteDrawFrame.Clip(x, y, width, height)",
+          "Signature": "VRage.Game.GUI.TextPanel.MySpriteDrawFrame.ClearClipToken VRage.Game.GUI.TextPanel.MySpriteDrawFrame.Clip(x, y, width, height)",
           "IsStatic": false,
           "ReturnType": "VRage.Game.GUI.TextPanel.MySpriteDrawFrame\u002BClearClipToken",
           "Parameters": [
@@ -140164,7 +140164,7 @@
           "Name": "Current",
           "PageName": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BEnumerator@Current",
           "XmlDocKey": "P:VRage.Game.ModAPI.Ingame.Utilities.Enumerator.Current",
-          "Signature": "string VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Enumerator.Current",
+          "Signature": "string VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Enumerator.Current",
           "IsStatic": false,
           "ReturnType": "string",
           "CanRead": true,
@@ -140175,7 +140175,7 @@
           "Name": "Dispose",
           "PageName": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BEnumerator@Dispose",
           "XmlDocKey": "M:VRage.Game.ModAPI.Ingame.Utilities.Enumerator.Dispose",
-          "Signature": "void VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Enumerator.Dispose()",
+          "Signature": "void VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Enumerator.Dispose()",
           "IsStatic": false,
           "ReturnType": "System.Void"
         },
@@ -140184,7 +140184,7 @@
           "Name": "MoveNext",
           "PageName": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BEnumerator@MoveNext",
           "XmlDocKey": "M:VRage.Game.ModAPI.Ingame.Utilities.Enumerator.MoveNext",
-          "Signature": "bool VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Enumerator.MoveNext()",
+          "Signature": "bool VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Enumerator.MoveNext()",
           "IsStatic": false,
           "ReturnType": "bool"
         }
@@ -140213,7 +140213,7 @@
           "Name": "Count",
           "PageName": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BItemCollection@Count",
           "XmlDocKey": "P:VRage.Game.ModAPI.Ingame.Utilities.ItemCollection.Count",
-          "Signature": "int VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.ItemCollection.Count",
+          "Signature": "int VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.ItemCollection.Count",
           "IsStatic": false,
           "ReturnType": "int",
           "CanRead": true,
@@ -140224,7 +140224,7 @@
           "Name": "GetEnumerator",
           "PageName": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BItemCollection@GetEnumerator",
           "XmlDocKey": "M:VRage.Game.ModAPI.Ingame.Utilities.ItemCollection.GetEnumerator",
-          "Signature": "VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Enumerator VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.ItemCollection.GetEnumerator()",
+          "Signature": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Enumerator VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.ItemCollection.GetEnumerator()",
           "IsStatic": false,
           "ReturnType": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BEnumerator"
         },
@@ -140233,7 +140233,7 @@
           "Name": "Item",
           "PageName": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BItemCollection@Item",
           "XmlDocKey": "P:VRage.Game.ModAPI.Ingame.Utilities.ItemCollection.Item",
-          "Signature": "string VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.ItemCollection.Item",
+          "Signature": "string VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.ItemCollection.Item",
           "IsStatic": false,
           "ReturnType": "string",
           "CanRead": true,
@@ -140321,7 +140321,7 @@
           "Name": "Items",
           "PageName": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine@Items",
           "XmlDocKey": "P:VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Items",
-          "Signature": "VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.ItemCollection VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Items",
+          "Signature": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.ItemCollection VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Items",
           "IsStatic": false,
           "ReturnType": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BItemCollection",
           "CanRead": true,
@@ -140397,7 +140397,7 @@
           "Name": "Switches",
           "PageName": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine@Switches",
           "XmlDocKey": "P:VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Switches",
-          "Signature": "VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchCollection VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Switches",
+          "Signature": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchCollection VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.Switches",
           "IsStatic": false,
           "ReturnType": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BSwitchCollection",
           "CanRead": true,
@@ -144339,7 +144339,7 @@
           "Name": "Count",
           "PageName": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BSwitchCollection@Count",
           "XmlDocKey": "P:VRage.Game.ModAPI.Ingame.Utilities.SwitchCollection.Count",
-          "Signature": "int VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchCollection.Count",
+          "Signature": "int VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchCollection.Count",
           "IsStatic": false,
           "ReturnType": "int",
           "CanRead": true,
@@ -144350,7 +144350,7 @@
           "Name": "GetEnumerator",
           "PageName": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BSwitchCollection@GetEnumerator",
           "XmlDocKey": "M:VRage.Game.ModAPI.Ingame.Utilities.SwitchCollection.GetEnumerator",
-          "Signature": "VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchEnumerator VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchCollection.GetEnumerator()",
+          "Signature": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchEnumerator VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchCollection.GetEnumerator()",
           "IsStatic": false,
           "ReturnType": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BSwitchEnumerator"
         }
@@ -144378,7 +144378,7 @@
           "Name": "Current",
           "PageName": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BSwitchEnumerator@Current",
           "XmlDocKey": "P:VRage.Game.ModAPI.Ingame.Utilities.SwitchEnumerator.Current",
-          "Signature": "string VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchEnumerator.Current",
+          "Signature": "string VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchEnumerator.Current",
           "IsStatic": false,
           "ReturnType": "string",
           "CanRead": true,
@@ -144389,7 +144389,7 @@
           "Name": "Dispose",
           "PageName": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BSwitchEnumerator@Dispose",
           "XmlDocKey": "M:VRage.Game.ModAPI.Ingame.Utilities.SwitchEnumerator.Dispose",
-          "Signature": "void VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchEnumerator.Dispose()",
+          "Signature": "void VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchEnumerator.Dispose()",
           "IsStatic": false,
           "ReturnType": "System.Void"
         },
@@ -144398,7 +144398,7 @@
           "Name": "MoveNext",
           "PageName": "VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine\u002BSwitchEnumerator@MoveNext",
           "XmlDocKey": "M:VRage.Game.ModAPI.Ingame.Utilities.SwitchEnumerator.MoveNext",
-          "Signature": "bool VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.VRage.Game.ModAPI.Ingame.Utilities.VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchEnumerator.MoveNext()",
+          "Signature": "bool VRage.Game.ModAPI.Ingame.Utilities.MyCommandLine.SwitchEnumerator.MoveNext()",
           "IsStatic": false,
           "ReturnType": "bool"
         }
@@ -145371,7 +145371,7 @@
           "Name": "Item",
           "PageName": "VRage.Scripting.MemorySafeTypes.MemorySafeDictionary{TKey,TValue}@Item",
           "XmlDocKey": "P:VRage.Scripting.MemorySafeTypes.MemorySafeDictionary{TKey,TValue}.Item",
-          "Signature": "VRage.Scripting.MemorySafeTypes.VRage.Scripting.MemorySafeTypes.MemorySafeDictionary\u003CTKey, TValue\u003E.TValue VRage.Scripting.MemorySafeTypes.MemorySafeDictionary\u003CTKey, TValue\u003E.Item",
+          "Signature": "VRage.Scripting.MemorySafeTypes.MemorySafeDictionary\u003CTKey, TValue\u003E.TValue VRage.Scripting.MemorySafeTypes.MemorySafeDictionary\u003CTKey, TValue\u003E.Item",
           "IsStatic": false,
           "ReturnType": "TValue",
           "CanRead": true,
@@ -146211,7 +146211,7 @@
           "Name": "CreateBuilder",
           "PageName": "VRage.Scripting.MemorySafeTypes.MemorySafeImmutableArray@CreateBuilder{T}",
           "XmlDocKey": "M:VRage.Scripting.MemorySafeTypes.MemorySafeImmutableArray.CreateBuilder{T}",
-          "Signature": "static System.Collections.Immutable.System.Collections.Immutable.ImmutableArray\u003CT\u003E.Builder\u003CT\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableArray.CreateBuilder\u003CT\u003E()",
+          "Signature": "static System.Collections.Immutable.ImmutableArray\u003CT\u003E.Builder\u003CT\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableArray.CreateBuilder\u003CT\u003E()",
           "IsStatic": true,
           "ReturnType": "System.Collections.Immutable.Builder\u003CT\u003E",
           "GenericParameters": [
@@ -146223,7 +146223,7 @@
           "Name": "CreateBuilder",
           "PageName": "VRage.Scripting.MemorySafeTypes.MemorySafeImmutableArray@CreateBuilder{T}",
           "XmlDocKey": "M:VRage.Scripting.MemorySafeTypes.MemorySafeImmutableArray.CreateBuilder{T}(System.Int32)",
-          "Signature": "static System.Collections.Immutable.System.Collections.Immutable.ImmutableArray\u003CT\u003E.Builder\u003CT\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableArray.CreateBuilder\u003CT\u003E(initialCapacity)",
+          "Signature": "static System.Collections.Immutable.ImmutableArray\u003CT\u003E.Builder\u003CT\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableArray.CreateBuilder\u003CT\u003E(initialCapacity)",
           "IsStatic": true,
           "ReturnType": "System.Collections.Immutable.Builder\u003CT\u003E",
           "Parameters": [
@@ -146524,7 +146524,7 @@
           "Name": "CreateBuilder",
           "PageName": "VRage.Scripting.MemorySafeTypes.MemorySafeImmutableDictionary@CreateBuilder{TKey,TValue}",
           "XmlDocKey": "M:VRage.Scripting.MemorySafeTypes.MemorySafeImmutableDictionary.CreateBuilder{TKey,TValue}",
-          "Signature": "static System.Collections.Immutable.System.Collections.Immutable.ImmutableDictionary\u003CTKey, TValue\u003E.Builder\u003CTKey, TValue\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableDictionary.CreateBuilder\u003CTKey, TValue\u003E()",
+          "Signature": "static System.Collections.Immutable.ImmutableDictionary\u003CTKey, TValue\u003E.Builder\u003CTKey, TValue\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableDictionary.CreateBuilder\u003CTKey, TValue\u003E()",
           "IsStatic": true,
           "ReturnType": "System.Collections.Immutable.Builder\u003CTKey, TValue\u003E",
           "GenericParameters": [
@@ -146537,7 +146537,7 @@
           "Name": "CreateBuilder",
           "PageName": "VRage.Scripting.MemorySafeTypes.MemorySafeImmutableDictionary@CreateBuilder{TKey,TValue}",
           "XmlDocKey": "M:VRage.Scripting.MemorySafeTypes.MemorySafeImmutableDictionary.CreateBuilder{TKey,TValue}(IEqualityComparer\u00601)",
-          "Signature": "static System.Collections.Immutable.System.Collections.Immutable.ImmutableDictionary\u003CTKey, TValue\u003E.Builder\u003CTKey, TValue\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableDictionary.CreateBuilder\u003CTKey, TValue\u003E(keyComparer)",
+          "Signature": "static System.Collections.Immutable.ImmutableDictionary\u003CTKey, TValue\u003E.Builder\u003CTKey, TValue\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableDictionary.CreateBuilder\u003CTKey, TValue\u003E(keyComparer)",
           "IsStatic": true,
           "ReturnType": "System.Collections.Immutable.Builder\u003CTKey, TValue\u003E",
           "Parameters": [
@@ -146559,7 +146559,7 @@
           "Name": "CreateBuilder",
           "PageName": "VRage.Scripting.MemorySafeTypes.MemorySafeImmutableDictionary@CreateBuilder{TKey,TValue}",
           "XmlDocKey": "M:VRage.Scripting.MemorySafeTypes.MemorySafeImmutableDictionary.CreateBuilder{TKey,TValue}(IEqualityComparer\u00601,IEqualityComparer\u00601)",
-          "Signature": "static System.Collections.Immutable.System.Collections.Immutable.ImmutableDictionary\u003CTKey, TValue\u003E.Builder\u003CTKey, TValue\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableDictionary.CreateBuilder\u003CTKey, TValue\u003E(keyComparer, valueComparer)",
+          "Signature": "static System.Collections.Immutable.ImmutableDictionary\u003CTKey, TValue\u003E.Builder\u003CTKey, TValue\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableDictionary.CreateBuilder\u003CTKey, TValue\u003E(keyComparer, valueComparer)",
           "IsStatic": true,
           "ReturnType": "System.Collections.Immutable.Builder\u003CTKey, TValue\u003E",
           "Parameters": [
@@ -147104,7 +147104,7 @@
           "Name": "CreateBuilder",
           "PageName": "VRage.Scripting.MemorySafeTypes.MemorySafeImmutableHashSet@CreateBuilder{T}",
           "XmlDocKey": "M:VRage.Scripting.MemorySafeTypes.MemorySafeImmutableHashSet.CreateBuilder{T}",
-          "Signature": "static System.Collections.Immutable.System.Collections.Immutable.ImmutableHashSet\u003CT\u003E.Builder\u003CT\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableHashSet.CreateBuilder\u003CT\u003E()",
+          "Signature": "static System.Collections.Immutable.ImmutableHashSet\u003CT\u003E.Builder\u003CT\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableHashSet.CreateBuilder\u003CT\u003E()",
           "IsStatic": true,
           "ReturnType": "System.Collections.Immutable.Builder\u003CT\u003E",
           "GenericParameters": [
@@ -147116,7 +147116,7 @@
           "Name": "CreateBuilder",
           "PageName": "VRage.Scripting.MemorySafeTypes.MemorySafeImmutableHashSet@CreateBuilder{T}",
           "XmlDocKey": "M:VRage.Scripting.MemorySafeTypes.MemorySafeImmutableHashSet.CreateBuilder{T}(IEqualityComparer\u00601)",
-          "Signature": "static System.Collections.Immutable.System.Collections.Immutable.ImmutableHashSet\u003CT\u003E.Builder\u003CT\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableHashSet.CreateBuilder\u003CT\u003E(equalityComparer)",
+          "Signature": "static System.Collections.Immutable.ImmutableHashSet\u003CT\u003E.Builder\u003CT\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableHashSet.CreateBuilder\u003CT\u003E(equalityComparer)",
           "IsStatic": true,
           "ReturnType": "System.Collections.Immutable.Builder\u003CT\u003E",
           "Parameters": [
@@ -147303,7 +147303,7 @@
           "Name": "CreateBuilder",
           "PageName": "VRage.Scripting.MemorySafeTypes.MemorySafeImmutableList@CreateBuilder{T}",
           "XmlDocKey": "M:VRage.Scripting.MemorySafeTypes.MemorySafeImmutableList.CreateBuilder{T}",
-          "Signature": "static System.Collections.Immutable.System.Collections.Immutable.ImmutableList\u003CT\u003E.Builder\u003CT\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableList.CreateBuilder\u003CT\u003E()",
+          "Signature": "static System.Collections.Immutable.ImmutableList\u003CT\u003E.Builder\u003CT\u003E VRage.Scripting.MemorySafeTypes.MemorySafeImmutableList.CreateBuilder\u003CT\u003E()",
           "IsStatic": true,
           "ReturnType": "System.Collections.Immutable.Builder\u003CT\u003E",
           "GenericParameters": [
@@ -148169,7 +148169,7 @@
           "Name": "Item",
           "PageName": "VRage.Scripting.MemorySafeTypes.MemorySafeSortedDictionary{TKey,TValue}@Item",
           "XmlDocKey": "P:VRage.Scripting.MemorySafeTypes.MemorySafeSortedDictionary{TKey,TValue}.Item",
-          "Signature": "VRage.Scripting.MemorySafeTypes.VRage.Scripting.MemorySafeTypes.MemorySafeSortedDictionary\u003CTKey, TValue\u003E.TValue VRage.Scripting.MemorySafeTypes.MemorySafeSortedDictionary\u003CTKey, TValue\u003E.Item",
+          "Signature": "VRage.Scripting.MemorySafeTypes.MemorySafeSortedDictionary\u003CTKey, TValue\u003E.TValue VRage.Scripting.MemorySafeTypes.MemorySafeSortedDictionary\u003CTKey, TValue\u003E.Item",
           "IsStatic": false,
           "ReturnType": "TValue",
           "CanRead": true,
@@ -148501,7 +148501,7 @@
           "Name": "Item",
           "PageName": "VRage.Scripting.MemorySafeTypes.MemorySafeSortedList{TKey,TValue}@Item",
           "XmlDocKey": "P:VRage.Scripting.MemorySafeTypes.MemorySafeSortedList{TKey,TValue}.Item",
-          "Signature": "VRage.Scripting.MemorySafeTypes.VRage.Scripting.MemorySafeTypes.MemorySafeSortedList\u003CTKey, TValue\u003E.TValue VRage.Scripting.MemorySafeTypes.MemorySafeSortedList\u003CTKey, TValue\u003E.Item",
+          "Signature": "VRage.Scripting.MemorySafeTypes.MemorySafeSortedList\u003CTKey, TValue\u003E.TValue VRage.Scripting.MemorySafeTypes.MemorySafeSortedList\u003CTKey, TValue\u003E.Item",
           "IsStatic": false,
           "ReturnType": "TValue",
           "CanRead": true,
@@ -152535,7 +152535,7 @@
           "Name": "FixedElementField",
           "PageName": "VRageMath.BoxCornerEnumerator\u002B_m_minMax_e__FixedBuffer@FixedElementField",
           "XmlDocKey": "F:VRageMath.\u003Cm_minMax\u003Ee__FixedBuffer.FixedElementField",
-          "Signature": "float VRageMath.BoxCornerEnumerator.VRageMath.VRageMath.BoxCornerEnumerator.\u003Cm_minMax\u003Ee__FixedBuffer.FixedElementField",
+          "Signature": "float VRageMath.BoxCornerEnumerator.\u003Cm_minMax\u003Ee__FixedBuffer.FixedElementField",
           "IsStatic": false,
           "ReturnType": "float",
           "IsReadOnly": false,
@@ -152560,7 +152560,7 @@
           "Name": "ForwardBackward",
           "PageName": "VRageMath.Base6Directions\u002BAxis@ForwardBackward",
           "XmlDocKey": "F:VRageMath.Axis.ForwardBackward",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Axis VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.Axis.ForwardBackward",
+          "Signature": "VRageMath.Base6Directions.Axis VRageMath.Base6Directions.Axis.ForwardBackward",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BAxis",
           "IsReadOnly": false,
@@ -152572,7 +152572,7 @@
           "Name": "LeftRight",
           "PageName": "VRageMath.Base6Directions\u002BAxis@LeftRight",
           "XmlDocKey": "F:VRageMath.Axis.LeftRight",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Axis VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.Axis.LeftRight",
+          "Signature": "VRageMath.Base6Directions.Axis VRageMath.Base6Directions.Axis.LeftRight",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BAxis",
           "IsReadOnly": false,
@@ -152584,7 +152584,7 @@
           "Name": "UpDown",
           "PageName": "VRageMath.Base6Directions\u002BAxis@UpDown",
           "XmlDocKey": "F:VRageMath.Axis.UpDown",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Axis VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.Axis.UpDown",
+          "Signature": "VRageMath.Base6Directions.Axis VRageMath.Base6Directions.Axis.UpDown",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BAxis",
           "IsReadOnly": false,
@@ -152645,7 +152645,7 @@
           "Name": "GetDirection",
           "PageName": "VRageMath.Base27Directions@GetDirection",
           "XmlDocKey": "M:VRageMath.Base27Directions.GetDirection(VRageMath.Vector3)",
-          "Signature": "static VRageMath.VRageMath.Base27Directions.Direction VRageMath.Base27Directions.GetDirection(vec)",
+          "Signature": "static VRageMath.Base27Directions.Direction VRageMath.Base27Directions.GetDirection(vec)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base27Directions\u002BDirection",
           "Parameters": [
@@ -152666,7 +152666,7 @@
           "Name": "GetDirection",
           "PageName": "VRageMath.Base27Directions@GetDirection",
           "XmlDocKey": "M:VRageMath.Base27Directions.GetDirection(VRageMath.Vector3I)",
-          "Signature": "static VRageMath.VRageMath.Base27Directions.Direction VRageMath.Base27Directions.GetDirection(vec)",
+          "Signature": "static VRageMath.Base27Directions.Direction VRageMath.Base27Directions.GetDirection(vec)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base27Directions\u002BDirection",
           "Parameters": [
@@ -152691,7 +152691,7 @@
           "Name": "GetDirection",
           "PageName": "VRageMath.Base27Directions@GetDirection",
           "XmlDocKey": "M:VRageMath.Base27Directions.GetDirection(VRageMath.Vector3@)",
-          "Signature": "static VRageMath.VRageMath.Base27Directions.Direction VRageMath.Base27Directions.GetDirection(vec)",
+          "Signature": "static VRageMath.Base27Directions.Direction VRageMath.Base27Directions.GetDirection(vec)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base27Directions\u002BDirection",
           "Parameters": [
@@ -152716,7 +152716,7 @@
           "Name": "GetDirection",
           "PageName": "VRageMath.Base27Directions@GetDirection",
           "XmlDocKey": "M:VRageMath.Base27Directions.GetDirection(VRageMath.Vector3I@)",
-          "Signature": "static VRageMath.VRageMath.Base27Directions.Direction VRageMath.Base27Directions.GetDirection(vec)",
+          "Signature": "static VRageMath.Base27Directions.Direction VRageMath.Base27Directions.GetDirection(vec)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base27Directions\u002BDirection",
           "Parameters": [
@@ -152741,7 +152741,7 @@
           "Name": "GetForward",
           "PageName": "VRageMath.Base27Directions@GetForward",
           "XmlDocKey": "M:VRageMath.Base27Directions.GetForward(VRageMath.Quaternion@)",
-          "Signature": "static VRageMath.VRageMath.Base27Directions.Direction VRageMath.Base27Directions.GetForward(rot)",
+          "Signature": "static VRageMath.Base27Directions.Direction VRageMath.Base27Directions.GetForward(rot)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base27Directions\u002BDirection",
           "Parameters": [
@@ -152766,7 +152766,7 @@
           "Name": "GetUp",
           "PageName": "VRageMath.Base27Directions@GetUp",
           "XmlDocKey": "M:VRageMath.Base27Directions.GetUp(VRageMath.Quaternion@)",
-          "Signature": "static VRageMath.VRageMath.Base27Directions.Direction VRageMath.Base27Directions.GetUp(rot)",
+          "Signature": "static VRageMath.Base27Directions.Direction VRageMath.Base27Directions.GetUp(rot)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base27Directions\u002BDirection",
           "Parameters": [
@@ -152995,7 +152995,7 @@
           "Name": "GetAxis",
           "PageName": "VRageMath.Base6Directions@GetAxis",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetAxis(VRageMath.Direction)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Axis VRageMath.Base6Directions.GetAxis(direction)",
+          "Signature": "static VRageMath.Base6Directions.Axis VRageMath.Base6Directions.GetAxis(direction)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BAxis",
           "Parameters": [
@@ -153013,7 +153013,7 @@
           "Name": "GetBaseAxisDirection",
           "PageName": "VRageMath.Base6Directions@GetBaseAxisDirection",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetBaseAxisDirection(VRageMath.Axis)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetBaseAxisDirection(axis)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetBaseAxisDirection(axis)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153031,7 +153031,7 @@
           "Name": "GetClosestDirection",
           "PageName": "VRageMath.Base6Directions@GetClosestDirection",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetClosestDirection(VRageMath.Vector3)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetClosestDirection(vec)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetClosestDirection(vec)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153056,7 +153056,7 @@
           "Name": "GetClosestDirection",
           "PageName": "VRageMath.Base6Directions@GetClosestDirection",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetClosestDirection(VRageMath.Vector3@)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetClosestDirection(vec)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetClosestDirection(vec)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153081,7 +153081,7 @@
           "Name": "GetCross",
           "PageName": "VRageMath.Base6Directions@GetCross",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetCross(VRageMath.Direction,VRageMath.Direction)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetCross(dir1, dir2)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetCross(dir1, dir2)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153106,7 +153106,7 @@
           "Name": "GetDirection",
           "PageName": "VRageMath.Base6Directions@GetDirection",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetDirection(VRageMath.Vector3)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetDirection(vec)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetDirection(vec)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153131,7 +153131,7 @@
           "Name": "GetDirection",
           "PageName": "VRageMath.Base6Directions@GetDirection",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetDirection(VRageMath.Vector3@)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetDirection(vec)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetDirection(vec)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153156,7 +153156,7 @@
           "Name": "GetDirection",
           "PageName": "VRageMath.Base6Directions@GetDirection",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetDirection(VRageMath.Vector3I)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetDirection(vec)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetDirection(vec)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153181,7 +153181,7 @@
           "Name": "GetDirection",
           "PageName": "VRageMath.Base6Directions@GetDirection",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetDirection(VRageMath.Vector3I@)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetDirection(vec)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetDirection(vec)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153206,7 +153206,7 @@
           "Name": "GetDirectionFlag",
           "PageName": "VRageMath.Base6Directions@GetDirectionFlag",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetDirectionFlag(VRageMath.Direction)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.GetDirectionFlag(dir)",
+          "Signature": "static VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.GetDirectionFlag(dir)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirectionFlags",
           "Parameters": [
@@ -153224,7 +153224,7 @@
           "Name": "GetDirectionInAxis",
           "PageName": "VRageMath.Base6Directions@GetDirectionInAxis",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetDirectionInAxis(VRageMath.Vector3,VRageMath.Axis)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetDirectionInAxis(vec, axis)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetDirectionInAxis(vec, axis)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153249,7 +153249,7 @@
           "Name": "GetDirectionInAxis",
           "PageName": "VRageMath.Base6Directions@GetDirectionInAxis",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetDirectionInAxis(VRageMath.Vector3@,VRageMath.Axis)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetDirectionInAxis(vec, axis)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetDirectionInAxis(vec, axis)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153274,7 +153274,7 @@
           "Name": "GetFlippedDirection",
           "PageName": "VRageMath.Base6Directions@GetFlippedDirection",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetFlippedDirection(VRageMath.Direction)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetFlippedDirection(toFlip)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetFlippedDirection(toFlip)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153292,7 +153292,7 @@
           "Name": "GetForward",
           "PageName": "VRageMath.Base6Directions@GetForward",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetForward(VRageMath.Quaternion)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetForward(rot)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetForward(rot)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153317,7 +153317,7 @@
           "Name": "GetForward",
           "PageName": "VRageMath.Base6Directions@GetForward",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetForward(VRageMath.Quaternion@)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetForward(rot)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetForward(rot)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153342,7 +153342,7 @@
           "Name": "GetForward",
           "PageName": "VRageMath.Base6Directions@GetForward",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetForward(VRageMath.Matrix@)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetForward(rotation)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetForward(rotation)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153410,7 +153410,7 @@
           "Name": "GetLeft",
           "PageName": "VRageMath.Base6Directions@GetLeft",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetLeft(VRageMath.Direction,VRageMath.Direction)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetLeft(up, forward)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetLeft(up, forward)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153435,7 +153435,7 @@
           "Name": "GetOppositeDirection",
           "PageName": "VRageMath.Base6Directions@GetOppositeDirection",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetOppositeDirection(VRageMath.Direction)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetOppositeDirection(dir)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetOppositeDirection(dir)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153478,7 +153478,7 @@
           "Name": "GetPerpendicular",
           "PageName": "VRageMath.Base6Directions@GetPerpendicular",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetPerpendicular(VRageMath.Direction)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetPerpendicular(dir)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetPerpendicular(dir)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153496,7 +153496,7 @@
           "Name": "GetUp",
           "PageName": "VRageMath.Base6Directions@GetUp",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetUp(VRageMath.Quaternion)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetUp(rot)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetUp(rot)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153521,7 +153521,7 @@
           "Name": "GetUp",
           "PageName": "VRageMath.Base6Directions@GetUp",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetUp(VRageMath.Quaternion@)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetUp(rot)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetUp(rot)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153546,7 +153546,7 @@
           "Name": "GetUp",
           "PageName": "VRageMath.Base6Directions@GetUp",
           "XmlDocKey": "M:VRageMath.Base6Directions.GetUp(VRageMath.Matrix@)",
-          "Signature": "static VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetUp(rotation)",
+          "Signature": "static VRageMath.Base6Directions.Direction VRageMath.Base6Directions.GetUp(rotation)",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -153843,7 +153843,7 @@
           "Name": "Comparer",
           "PageName": "VRageMath.BoundingBox@Comparer",
           "XmlDocKey": "F:VRageMath.BoundingBox.Comparer",
-          "Signature": "static VRageMath.VRageMath.BoundingBox.ComparerType VRageMath.BoundingBox.Comparer",
+          "Signature": "static VRageMath.BoundingBox.ComparerType VRageMath.BoundingBox.Comparer",
           "IsStatic": true,
           "ReturnType": "VRageMath.BoundingBox\u002BComparerType",
           "IsReadOnly": true,
@@ -159127,7 +159127,7 @@
           "Name": "Comparer",
           "PageName": "VRageMath.BoundingBoxD@Comparer",
           "XmlDocKey": "F:VRageMath.BoundingBoxD.Comparer",
-          "Signature": "static VRageMath.VRageMath.BoundingBoxD.ComparerType VRageMath.BoundingBoxD.Comparer",
+          "Signature": "static VRageMath.BoundingBoxD.ComparerType VRageMath.BoundingBoxD.Comparer",
           "IsStatic": true,
           "ReturnType": "VRageMath.BoundingBoxD\u002BComparerType",
           "IsReadOnly": true,
@@ -170386,7 +170386,7 @@
           "Name": ".ctor",
           "PageName": "VRageMath.Vector2I\u002BComparerClass@.ctor",
           "XmlDocKey": "C:VRageMath.ComparerClass..ctor()",
-          "Signature": "VRageMath.Vector2I.VRageMath.VRageMath.Vector2I.ComparerClass.ComparerClass()",
+          "Signature": "VRageMath.Vector2I.ComparerClass.ComparerClass()",
           "IsStatic": false
         },
         {
@@ -170394,7 +170394,7 @@
           "Name": "Equals",
           "PageName": "VRageMath.Vector2I\u002BComparerClass@Equals",
           "XmlDocKey": "M:VRageMath.ComparerClass.Equals(VRageMath.Vector2I,VRageMath.Vector2I)",
-          "Signature": "bool VRageMath.Vector2I.VRageMath.VRageMath.Vector2I.ComparerClass.Equals(x, y)",
+          "Signature": "bool VRageMath.Vector2I.ComparerClass.Equals(x, y)",
           "IsStatic": false,
           "ReturnType": "bool",
           "Parameters": [
@@ -170419,7 +170419,7 @@
           "Name": "GetHashCode",
           "PageName": "VRageMath.Vector2I\u002BComparerClass@GetHashCode",
           "XmlDocKey": "M:VRageMath.ComparerClass.GetHashCode(VRageMath.Vector2I)",
-          "Signature": "int VRageMath.Vector2I.VRageMath.VRageMath.Vector2I.ComparerClass.GetHashCode(obj)",
+          "Signature": "int VRageMath.Vector2I.ComparerClass.GetHashCode(obj)",
           "IsStatic": false,
           "ReturnType": "int",
           "Parameters": [
@@ -170454,7 +170454,7 @@
           "Name": ".ctor",
           "PageName": "VRageMath.BoundingBox\u002BComparerType@.ctor",
           "XmlDocKey": "C:VRageMath.ComparerType..ctor()",
-          "Signature": "VRageMath.BoundingBox.VRageMath.VRageMath.BoundingBox.ComparerType.ComparerType()",
+          "Signature": "VRageMath.BoundingBox.ComparerType.ComparerType()",
           "IsStatic": false
         },
         {
@@ -170462,7 +170462,7 @@
           "Name": "Equals",
           "PageName": "VRageMath.BoundingBox\u002BComparerType@Equals",
           "XmlDocKey": "M:VRageMath.ComparerType.Equals(VRageMath.BoundingBoxD,VRageMath.BoundingBoxD)",
-          "Signature": "bool VRageMath.BoundingBox.VRageMath.VRageMath.BoundingBox.ComparerType.Equals(x, y)",
+          "Signature": "bool VRageMath.BoundingBox.ComparerType.Equals(x, y)",
           "IsStatic": false,
           "ReturnType": "bool",
           "Parameters": [
@@ -170487,7 +170487,7 @@
           "Name": "GetHashCode",
           "PageName": "VRageMath.BoundingBox\u002BComparerType@GetHashCode",
           "XmlDocKey": "M:VRageMath.ComparerType.GetHashCode(VRageMath.BoundingBoxD)",
-          "Signature": "int VRageMath.BoundingBox.VRageMath.VRageMath.BoundingBox.ComparerType.GetHashCode(obj)",
+          "Signature": "int VRageMath.BoundingBox.ComparerType.GetHashCode(obj)",
           "IsStatic": false,
           "ReturnType": "int",
           "Parameters": [
@@ -170522,7 +170522,7 @@
           "Name": ".ctor",
           "PageName": "VRageMath.BoundingBoxD\u002BComparerType@.ctor",
           "XmlDocKey": "C:VRageMath.ComparerType..ctor()",
-          "Signature": "VRageMath.BoundingBoxD.VRageMath.VRageMath.BoundingBoxD.ComparerType.ComparerType()",
+          "Signature": "VRageMath.BoundingBoxD.ComparerType.ComparerType()",
           "IsStatic": false
         },
         {
@@ -170530,7 +170530,7 @@
           "Name": "Equals",
           "PageName": "VRageMath.BoundingBoxD\u002BComparerType@Equals",
           "XmlDocKey": "M:VRageMath.ComparerType.Equals(VRageMath.BoundingBox,VRageMath.BoundingBox)",
-          "Signature": "bool VRageMath.BoundingBoxD.VRageMath.VRageMath.BoundingBoxD.ComparerType.Equals(x, y)",
+          "Signature": "bool VRageMath.BoundingBoxD.ComparerType.Equals(x, y)",
           "IsStatic": false,
           "ReturnType": "bool",
           "Parameters": [
@@ -170555,7 +170555,7 @@
           "Name": "GetHashCode",
           "PageName": "VRageMath.BoundingBoxD\u002BComparerType@GetHashCode",
           "XmlDocKey": "M:VRageMath.ComparerType.GetHashCode(VRageMath.BoundingBox)",
-          "Signature": "int VRageMath.BoundingBoxD.VRageMath.VRageMath.BoundingBoxD.ComparerType.GetHashCode(obj)",
+          "Signature": "int VRageMath.BoundingBoxD.ComparerType.GetHashCode(obj)",
           "IsStatic": false,
           "ReturnType": "int",
           "Parameters": [
@@ -171919,7 +171919,7 @@
           "Name": "Backward",
           "PageName": "VRageMath.Base27Directions\u002BDirection@Backward",
           "XmlDocKey": "F:VRageMath.Direction.Backward",
-          "Signature": "VRageMath.VRageMath.Base27Directions.Direction VRageMath.Base27Directions.VRageMath.VRageMath.Base27Directions.Direction.Backward",
+          "Signature": "VRageMath.Base27Directions.Direction VRageMath.Base27Directions.Direction.Backward",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base27Directions\u002BDirection",
           "IsReadOnly": false,
@@ -171931,7 +171931,7 @@
           "Name": "Down",
           "PageName": "VRageMath.Base27Directions\u002BDirection@Down",
           "XmlDocKey": "F:VRageMath.Direction.Down",
-          "Signature": "VRageMath.VRageMath.Base27Directions.Direction VRageMath.Base27Directions.VRageMath.VRageMath.Base27Directions.Direction.Down",
+          "Signature": "VRageMath.Base27Directions.Direction VRageMath.Base27Directions.Direction.Down",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base27Directions\u002BDirection",
           "IsReadOnly": false,
@@ -171943,7 +171943,7 @@
           "Name": "Forward",
           "PageName": "VRageMath.Base27Directions\u002BDirection@Forward",
           "XmlDocKey": "F:VRageMath.Direction.Forward",
-          "Signature": "VRageMath.VRageMath.Base27Directions.Direction VRageMath.Base27Directions.VRageMath.VRageMath.Base27Directions.Direction.Forward",
+          "Signature": "VRageMath.Base27Directions.Direction VRageMath.Base27Directions.Direction.Forward",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base27Directions\u002BDirection",
           "IsReadOnly": false,
@@ -171955,7 +171955,7 @@
           "Name": "Left",
           "PageName": "VRageMath.Base27Directions\u002BDirection@Left",
           "XmlDocKey": "F:VRageMath.Direction.Left",
-          "Signature": "VRageMath.VRageMath.Base27Directions.Direction VRageMath.Base27Directions.VRageMath.VRageMath.Base27Directions.Direction.Left",
+          "Signature": "VRageMath.Base27Directions.Direction VRageMath.Base27Directions.Direction.Left",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base27Directions\u002BDirection",
           "IsReadOnly": false,
@@ -171967,7 +171967,7 @@
           "Name": "Right",
           "PageName": "VRageMath.Base27Directions\u002BDirection@Right",
           "XmlDocKey": "F:VRageMath.Direction.Right",
-          "Signature": "VRageMath.VRageMath.Base27Directions.Direction VRageMath.Base27Directions.VRageMath.VRageMath.Base27Directions.Direction.Right",
+          "Signature": "VRageMath.Base27Directions.Direction VRageMath.Base27Directions.Direction.Right",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base27Directions\u002BDirection",
           "IsReadOnly": false,
@@ -171979,7 +171979,7 @@
           "Name": "Up",
           "PageName": "VRageMath.Base27Directions\u002BDirection@Up",
           "XmlDocKey": "F:VRageMath.Direction.Up",
-          "Signature": "VRageMath.VRageMath.Base27Directions.Direction VRageMath.Base27Directions.VRageMath.VRageMath.Base27Directions.Direction.Up",
+          "Signature": "VRageMath.Base27Directions.Direction VRageMath.Base27Directions.Direction.Up",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base27Directions\u002BDirection",
           "IsReadOnly": false,
@@ -172005,7 +172005,7 @@
           "Name": "Backward",
           "PageName": "VRageMath.Base6Directions\u002BDirection@Backward",
           "XmlDocKey": "F:VRageMath.Direction.Backward",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.Direction.Backward",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.Base6Directions.Direction.Backward",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "IsReadOnly": false,
@@ -172017,7 +172017,7 @@
           "Name": "Down",
           "PageName": "VRageMath.Base6Directions\u002BDirection@Down",
           "XmlDocKey": "F:VRageMath.Direction.Down",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.Direction.Down",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.Base6Directions.Direction.Down",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "IsReadOnly": false,
@@ -172029,7 +172029,7 @@
           "Name": "Forward",
           "PageName": "VRageMath.Base6Directions\u002BDirection@Forward",
           "XmlDocKey": "F:VRageMath.Direction.Forward",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.Direction.Forward",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.Base6Directions.Direction.Forward",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "IsReadOnly": false,
@@ -172041,7 +172041,7 @@
           "Name": "Left",
           "PageName": "VRageMath.Base6Directions\u002BDirection@Left",
           "XmlDocKey": "F:VRageMath.Direction.Left",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.Direction.Left",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.Base6Directions.Direction.Left",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "IsReadOnly": false,
@@ -172053,7 +172053,7 @@
           "Name": "Right",
           "PageName": "VRageMath.Base6Directions\u002BDirection@Right",
           "XmlDocKey": "F:VRageMath.Direction.Right",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.Direction.Right",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.Base6Directions.Direction.Right",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "IsReadOnly": false,
@@ -172065,7 +172065,7 @@
           "Name": "Up",
           "PageName": "VRageMath.Base6Directions\u002BDirection@Up",
           "XmlDocKey": "F:VRageMath.Direction.Up",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.Direction.Up",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.Base6Directions.Direction.Up",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "IsReadOnly": false,
@@ -172091,7 +172091,7 @@
           "Name": "All",
           "PageName": "VRageMath.Base6Directions\u002BDirectionFlags@All",
           "XmlDocKey": "F:VRageMath.DirectionFlags.All",
-          "Signature": "VRageMath.VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.DirectionFlags.All",
+          "Signature": "VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.DirectionFlags.All",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirectionFlags",
           "IsReadOnly": false,
@@ -172103,7 +172103,7 @@
           "Name": "Backward",
           "PageName": "VRageMath.Base6Directions\u002BDirectionFlags@Backward",
           "XmlDocKey": "F:VRageMath.DirectionFlags.Backward",
-          "Signature": "VRageMath.VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.DirectionFlags.Backward",
+          "Signature": "VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.DirectionFlags.Backward",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirectionFlags",
           "IsReadOnly": false,
@@ -172115,7 +172115,7 @@
           "Name": "Down",
           "PageName": "VRageMath.Base6Directions\u002BDirectionFlags@Down",
           "XmlDocKey": "F:VRageMath.DirectionFlags.Down",
-          "Signature": "VRageMath.VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.DirectionFlags.Down",
+          "Signature": "VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.DirectionFlags.Down",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirectionFlags",
           "IsReadOnly": false,
@@ -172127,7 +172127,7 @@
           "Name": "Forward",
           "PageName": "VRageMath.Base6Directions\u002BDirectionFlags@Forward",
           "XmlDocKey": "F:VRageMath.DirectionFlags.Forward",
-          "Signature": "VRageMath.VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.DirectionFlags.Forward",
+          "Signature": "VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.DirectionFlags.Forward",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirectionFlags",
           "IsReadOnly": false,
@@ -172139,7 +172139,7 @@
           "Name": "Left",
           "PageName": "VRageMath.Base6Directions\u002BDirectionFlags@Left",
           "XmlDocKey": "F:VRageMath.DirectionFlags.Left",
-          "Signature": "VRageMath.VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.DirectionFlags.Left",
+          "Signature": "VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.DirectionFlags.Left",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirectionFlags",
           "IsReadOnly": false,
@@ -172151,7 +172151,7 @@
           "Name": "Right",
           "PageName": "VRageMath.Base6Directions\u002BDirectionFlags@Right",
           "XmlDocKey": "F:VRageMath.DirectionFlags.Right",
-          "Signature": "VRageMath.VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.DirectionFlags.Right",
+          "Signature": "VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.DirectionFlags.Right",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirectionFlags",
           "IsReadOnly": false,
@@ -172163,7 +172163,7 @@
           "Name": "Up",
           "PageName": "VRageMath.Base6Directions\u002BDirectionFlags@Up",
           "XmlDocKey": "F:VRageMath.DirectionFlags.Up",
-          "Signature": "VRageMath.VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.VRageMath.VRageMath.Base6Directions.DirectionFlags.Up",
+          "Signature": "VRageMath.Base6Directions.DirectionFlags VRageMath.Base6Directions.DirectionFlags.Up",
           "IsStatic": true,
           "ReturnType": "VRageMath.Base6Directions\u002BDirectionFlags",
           "IsReadOnly": false,
@@ -172189,7 +172189,7 @@
           "Name": ".ctor",
           "PageName": "VRageMath.MyDynamicAABBTree\u002BDynamicTreeNode@.ctor",
           "XmlDocKey": "C:VRageMath.DynamicTreeNode..ctor()",
-          "Signature": "VRageMath.MyDynamicAABBTree.VRageMath.VRageMath.MyDynamicAABBTree.DynamicTreeNode.DynamicTreeNode()",
+          "Signature": "VRageMath.MyDynamicAABBTree.DynamicTreeNode.DynamicTreeNode()",
           "IsStatic": false
         },
         {
@@ -172197,7 +172197,7 @@
           "Name": "Aabb",
           "PageName": "VRageMath.MyDynamicAABBTree\u002BDynamicTreeNode@Aabb",
           "XmlDocKey": "F:VRageMath.DynamicTreeNode.Aabb",
-          "Signature": "VRageMath.BoundingBox VRageMath.MyDynamicAABBTree.VRageMath.VRageMath.MyDynamicAABBTree.DynamicTreeNode.Aabb",
+          "Signature": "VRageMath.BoundingBox VRageMath.MyDynamicAABBTree.DynamicTreeNode.Aabb",
           "IsStatic": false,
           "ReturnType": "VRageMath.BoundingBox",
           "IsReadOnly": false,
@@ -172208,7 +172208,7 @@
           "Name": "Child1",
           "PageName": "VRageMath.MyDynamicAABBTree\u002BDynamicTreeNode@Child1",
           "XmlDocKey": "F:VRageMath.DynamicTreeNode.Child1",
-          "Signature": "int VRageMath.MyDynamicAABBTree.VRageMath.VRageMath.MyDynamicAABBTree.DynamicTreeNode.Child1",
+          "Signature": "int VRageMath.MyDynamicAABBTree.DynamicTreeNode.Child1",
           "IsStatic": false,
           "ReturnType": "int",
           "IsReadOnly": false,
@@ -172219,7 +172219,7 @@
           "Name": "Child2",
           "PageName": "VRageMath.MyDynamicAABBTree\u002BDynamicTreeNode@Child2",
           "XmlDocKey": "F:VRageMath.DynamicTreeNode.Child2",
-          "Signature": "int VRageMath.MyDynamicAABBTree.VRageMath.VRageMath.MyDynamicAABBTree.DynamicTreeNode.Child2",
+          "Signature": "int VRageMath.MyDynamicAABBTree.DynamicTreeNode.Child2",
           "IsStatic": false,
           "ReturnType": "int",
           "IsReadOnly": false,
@@ -172230,7 +172230,7 @@
           "Name": "Height",
           "PageName": "VRageMath.MyDynamicAABBTree\u002BDynamicTreeNode@Height",
           "XmlDocKey": "F:VRageMath.DynamicTreeNode.Height",
-          "Signature": "int VRageMath.MyDynamicAABBTree.VRageMath.VRageMath.MyDynamicAABBTree.DynamicTreeNode.Height",
+          "Signature": "int VRageMath.MyDynamicAABBTree.DynamicTreeNode.Height",
           "IsStatic": false,
           "ReturnType": "int",
           "IsReadOnly": false,
@@ -172241,7 +172241,7 @@
           "Name": "IsLeaf",
           "PageName": "VRageMath.MyDynamicAABBTree\u002BDynamicTreeNode@IsLeaf",
           "XmlDocKey": "M:VRageMath.DynamicTreeNode.IsLeaf",
-          "Signature": "bool VRageMath.MyDynamicAABBTree.VRageMath.VRageMath.MyDynamicAABBTree.DynamicTreeNode.IsLeaf()",
+          "Signature": "bool VRageMath.MyDynamicAABBTree.DynamicTreeNode.IsLeaf()",
           "IsStatic": false,
           "ReturnType": "bool"
         },
@@ -172250,7 +172250,7 @@
           "Name": "ParentOrNext",
           "PageName": "VRageMath.MyDynamicAABBTree\u002BDynamicTreeNode@ParentOrNext",
           "XmlDocKey": "F:VRageMath.DynamicTreeNode.ParentOrNext",
-          "Signature": "int VRageMath.MyDynamicAABBTree.VRageMath.VRageMath.MyDynamicAABBTree.DynamicTreeNode.ParentOrNext",
+          "Signature": "int VRageMath.MyDynamicAABBTree.DynamicTreeNode.ParentOrNext",
           "IsStatic": false,
           "ReturnType": "int",
           "IsReadOnly": false,
@@ -172261,7 +172261,7 @@
           "Name": "UserData",
           "PageName": "VRageMath.MyDynamicAABBTree\u002BDynamicTreeNode@UserData",
           "XmlDocKey": "F:VRageMath.DynamicTreeNode.UserData",
-          "Signature": "object VRageMath.MyDynamicAABBTree.VRageMath.VRageMath.MyDynamicAABBTree.DynamicTreeNode.UserData",
+          "Signature": "object VRageMath.MyDynamicAABBTree.DynamicTreeNode.UserData",
           "IsStatic": false,
           "ReturnType": "object",
           "IsReadOnly": false,
@@ -172272,7 +172272,7 @@
           "Name": "UserFlag",
           "PageName": "VRageMath.MyDynamicAABBTree\u002BDynamicTreeNode@UserFlag",
           "XmlDocKey": "F:VRageMath.DynamicTreeNode.UserFlag",
-          "Signature": "uint VRageMath.MyDynamicAABBTree.VRageMath.VRageMath.MyDynamicAABBTree.DynamicTreeNode.UserFlag",
+          "Signature": "uint VRageMath.MyDynamicAABBTree.DynamicTreeNode.UserFlag",
           "IsStatic": false,
           "ReturnType": "uint",
           "IsReadOnly": false,
@@ -172301,7 +172301,7 @@
           "Name": ".ctor",
           "PageName": "VRageMath.Vector3I\u002BEqualityComparer@.ctor",
           "XmlDocKey": "C:VRageMath.EqualityComparer..ctor()",
-          "Signature": "VRageMath.Vector3I.VRageMath.VRageMath.Vector3I.EqualityComparer.EqualityComparer()",
+          "Signature": "VRageMath.Vector3I.EqualityComparer.EqualityComparer()",
           "IsStatic": false
         },
         {
@@ -172309,7 +172309,7 @@
           "Name": "Compare",
           "PageName": "VRageMath.Vector3I\u002BEqualityComparer@Compare",
           "XmlDocKey": "M:VRageMath.EqualityComparer.Compare(VRageMath.Vector3I,VRageMath.Vector3I)",
-          "Signature": "int VRageMath.Vector3I.VRageMath.VRageMath.Vector3I.EqualityComparer.Compare(x, y)",
+          "Signature": "int VRageMath.Vector3I.EqualityComparer.Compare(x, y)",
           "IsStatic": false,
           "ReturnType": "int",
           "Parameters": [
@@ -172334,7 +172334,7 @@
           "Name": "Equals",
           "PageName": "VRageMath.Vector3I\u002BEqualityComparer@Equals",
           "XmlDocKey": "M:VRageMath.EqualityComparer.Equals(VRageMath.Vector3I,VRageMath.Vector3I)",
-          "Signature": "bool VRageMath.Vector3I.VRageMath.VRageMath.Vector3I.EqualityComparer.Equals(x, y)",
+          "Signature": "bool VRageMath.Vector3I.EqualityComparer.Equals(x, y)",
           "IsStatic": false,
           "ReturnType": "bool",
           "Parameters": [
@@ -172359,7 +172359,7 @@
           "Name": "GetHashCode",
           "PageName": "VRageMath.Vector3I\u002BEqualityComparer@GetHashCode",
           "XmlDocKey": "M:VRageMath.EqualityComparer.GetHashCode(VRageMath.Vector3I)",
-          "Signature": "int VRageMath.Vector3I.VRageMath.VRageMath.Vector3I.EqualityComparer.GetHashCode(obj)",
+          "Signature": "int VRageMath.Vector3I.EqualityComparer.GetHashCode(obj)",
           "IsStatic": false,
           "ReturnType": "int",
           "Parameters": [
@@ -172395,7 +172395,7 @@
           "Name": ".ctor",
           "PageName": "VRageMath.Vector3L\u002BEqualityComparer@.ctor",
           "XmlDocKey": "C:VRageMath.EqualityComparer..ctor()",
-          "Signature": "VRageMath.Vector3L.VRageMath.VRageMath.Vector3L.EqualityComparer.EqualityComparer()",
+          "Signature": "VRageMath.Vector3L.EqualityComparer.EqualityComparer()",
           "IsStatic": false
         },
         {
@@ -172403,7 +172403,7 @@
           "Name": "Compare",
           "PageName": "VRageMath.Vector3L\u002BEqualityComparer@Compare",
           "XmlDocKey": "M:VRageMath.EqualityComparer.Compare(VRageMath.Vector3L,VRageMath.Vector3L)",
-          "Signature": "int VRageMath.Vector3L.VRageMath.VRageMath.Vector3L.EqualityComparer.Compare(x, y)",
+          "Signature": "int VRageMath.Vector3L.EqualityComparer.Compare(x, y)",
           "IsStatic": false,
           "ReturnType": "int",
           "Parameters": [
@@ -172428,7 +172428,7 @@
           "Name": "Equals",
           "PageName": "VRageMath.Vector3L\u002BEqualityComparer@Equals",
           "XmlDocKey": "M:VRageMath.EqualityComparer.Equals(VRageMath.Vector3L,VRageMath.Vector3L)",
-          "Signature": "bool VRageMath.Vector3L.VRageMath.VRageMath.Vector3L.EqualityComparer.Equals(x, y)",
+          "Signature": "bool VRageMath.Vector3L.EqualityComparer.Equals(x, y)",
           "IsStatic": false,
           "ReturnType": "bool",
           "Parameters": [
@@ -172453,7 +172453,7 @@
           "Name": "GetHashCode",
           "PageName": "VRageMath.Vector3L\u002BEqualityComparer@GetHashCode",
           "XmlDocKey": "M:VRageMath.EqualityComparer.GetHashCode(VRageMath.Vector3L)",
-          "Signature": "int VRageMath.Vector3L.VRageMath.VRageMath.Vector3L.EqualityComparer.GetHashCode(obj)",
+          "Signature": "int VRageMath.Vector3L.EqualityComparer.GetHashCode(obj)",
           "IsStatic": false,
           "ReturnType": "int",
           "Parameters": [
@@ -172489,7 +172489,7 @@
           "Name": ".ctor",
           "PageName": "VRageMath.Vector3UByte\u002BEqualityComparer@.ctor",
           "XmlDocKey": "C:VRageMath.EqualityComparer..ctor()",
-          "Signature": "VRageMath.Vector3UByte.VRageMath.VRageMath.Vector3UByte.EqualityComparer.EqualityComparer()",
+          "Signature": "VRageMath.Vector3UByte.EqualityComparer.EqualityComparer()",
           "IsStatic": false
         },
         {
@@ -172497,7 +172497,7 @@
           "Name": "Compare",
           "PageName": "VRageMath.Vector3UByte\u002BEqualityComparer@Compare",
           "XmlDocKey": "M:VRageMath.EqualityComparer.Compare(VRageMath.Vector3UByte,VRageMath.Vector3UByte)",
-          "Signature": "int VRageMath.Vector3UByte.VRageMath.VRageMath.Vector3UByte.EqualityComparer.Compare(a, b)",
+          "Signature": "int VRageMath.Vector3UByte.EqualityComparer.Compare(a, b)",
           "IsStatic": false,
           "ReturnType": "int",
           "Parameters": [
@@ -172522,7 +172522,7 @@
           "Name": "Equals",
           "PageName": "VRageMath.Vector3UByte\u002BEqualityComparer@Equals",
           "XmlDocKey": "M:VRageMath.EqualityComparer.Equals(VRageMath.Vector3UByte,VRageMath.Vector3UByte)",
-          "Signature": "bool VRageMath.Vector3UByte.VRageMath.VRageMath.Vector3UByte.EqualityComparer.Equals(x, y)",
+          "Signature": "bool VRageMath.Vector3UByte.EqualityComparer.Equals(x, y)",
           "IsStatic": false,
           "ReturnType": "bool",
           "Parameters": [
@@ -172547,7 +172547,7 @@
           "Name": "GetHashCode",
           "PageName": "VRageMath.Vector3UByte\u002BEqualityComparer@GetHashCode",
           "XmlDocKey": "M:VRageMath.EqualityComparer.GetHashCode(VRageMath.Vector3UByte)",
-          "Signature": "int VRageMath.Vector3UByte.VRageMath.VRageMath.Vector3UByte.EqualityComparer.GetHashCode(obj)",
+          "Signature": "int VRageMath.Vector3UByte.EqualityComparer.GetHashCode(obj)",
           "IsStatic": false,
           "ReturnType": "int",
           "Parameters": [
@@ -172583,7 +172583,7 @@
           "Name": ".ctor",
           "PageName": "VRageMath.Vector4I\u002BEqualityComparer@.ctor",
           "XmlDocKey": "C:VRageMath.EqualityComparer..ctor()",
-          "Signature": "VRageMath.Vector4I.VRageMath.VRageMath.Vector4I.EqualityComparer.EqualityComparer()",
+          "Signature": "VRageMath.Vector4I.EqualityComparer.EqualityComparer()",
           "IsStatic": false
         },
         {
@@ -172591,7 +172591,7 @@
           "Name": "Compare",
           "PageName": "VRageMath.Vector4I\u002BEqualityComparer@Compare",
           "XmlDocKey": "M:VRageMath.EqualityComparer.Compare(VRageMath.Vector4I,VRageMath.Vector4I)",
-          "Signature": "int VRageMath.Vector4I.VRageMath.VRageMath.Vector4I.EqualityComparer.Compare(x, y)",
+          "Signature": "int VRageMath.Vector4I.EqualityComparer.Compare(x, y)",
           "IsStatic": false,
           "ReturnType": "int",
           "Parameters": [
@@ -172616,7 +172616,7 @@
           "Name": "Equals",
           "PageName": "VRageMath.Vector4I\u002BEqualityComparer@Equals",
           "XmlDocKey": "M:VRageMath.EqualityComparer.Equals(VRageMath.Vector4I,VRageMath.Vector4I)",
-          "Signature": "bool VRageMath.Vector4I.VRageMath.VRageMath.Vector4I.EqualityComparer.Equals(x, y)",
+          "Signature": "bool VRageMath.Vector4I.EqualityComparer.Equals(x, y)",
           "IsStatic": false,
           "ReturnType": "bool",
           "Parameters": [
@@ -172641,7 +172641,7 @@
           "Name": "GetHashCode",
           "PageName": "VRageMath.Vector4I\u002BEqualityComparer@GetHashCode",
           "XmlDocKey": "M:VRageMath.EqualityComparer.GetHashCode(VRageMath.Vector4I)",
-          "Signature": "int VRageMath.Vector4I.VRageMath.VRageMath.Vector4I.EqualityComparer.GetHashCode(obj)",
+          "Signature": "int VRageMath.Vector4I.EqualityComparer.GetHashCode(obj)",
           "IsStatic": false,
           "ReturnType": "int",
           "Parameters": [
@@ -179767,7 +179767,7 @@
           "Name": "GetClosestDirection",
           "PageName": "VRageMath.Matrix@GetClosestDirection",
           "XmlDocKey": "M:VRageMath.Matrix.GetClosestDirection(VRageMath.Vector3)",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.Matrix.GetClosestDirection(referenceVector)",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.Matrix.GetClosestDirection(referenceVector)",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -179785,7 +179785,7 @@
           "Name": "GetClosestDirection",
           "PageName": "VRageMath.Matrix@GetClosestDirection",
           "XmlDocKey": "M:VRageMath.Matrix.GetClosestDirection(VRageMath.Vector3@)",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.Matrix.GetClosestDirection(referenceVector)",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.Matrix.GetClosestDirection(referenceVector)",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -182805,7 +182805,7 @@
           "Name": "GetClosestDirection",
           "PageName": "VRageMath.Matrix3x3@GetClosestDirection",
           "XmlDocKey": "M:VRageMath.Matrix3x3.GetClosestDirection(VRageMath.Vector3)",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.Matrix3x3.GetClosestDirection(referenceVector)",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.Matrix3x3.GetClosestDirection(referenceVector)",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -182823,7 +182823,7 @@
           "Name": "GetClosestDirection",
           "PageName": "VRageMath.Matrix3x3@GetClosestDirection",
           "XmlDocKey": "M:VRageMath.Matrix3x3.GetClosestDirection(VRageMath.Vector3@)",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.Matrix3x3.GetClosestDirection(referenceVector)",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.Matrix3x3.GetClosestDirection(referenceVector)",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -187065,7 +187065,7 @@
           "Name": "GetClosestDirection",
           "PageName": "VRageMath.MatrixD@GetClosestDirection",
           "XmlDocKey": "M:VRageMath.MatrixD.GetClosestDirection(VRageMath.Vector3D)",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MatrixD.GetClosestDirection(referenceVector)",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MatrixD.GetClosestDirection(referenceVector)",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -187083,7 +187083,7 @@
           "Name": "GetClosestDirection",
           "PageName": "VRageMath.MatrixD@GetClosestDirection",
           "XmlDocKey": "M:VRageMath.MatrixD.GetClosestDirection(VRageMath.Vector3D@)",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MatrixD.GetClosestDirection(referenceVector)",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MatrixD.GetClosestDirection(referenceVector)",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -189055,7 +189055,7 @@
           "Name": "Backward",
           "PageName": "VRageMath.MatrixI@Backward",
           "XmlDocKey": "F:VRageMath.MatrixI.Backward",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MatrixI.Backward",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MatrixI.Backward",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "IsReadOnly": false,
@@ -189116,7 +189116,7 @@
           "Name": "Down",
           "PageName": "VRageMath.MatrixI@Down",
           "XmlDocKey": "P:VRageMath.MatrixI.Down",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MatrixI.Down",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MatrixI.Down",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "CanRead": true,
@@ -189138,7 +189138,7 @@
           "Name": "Forward",
           "PageName": "VRageMath.MatrixI@Forward",
           "XmlDocKey": "P:VRageMath.MatrixI.Forward",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MatrixI.Forward",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MatrixI.Forward",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "CanRead": true,
@@ -189169,7 +189169,7 @@
           "Name": "GetDirection",
           "PageName": "VRageMath.MatrixI@GetDirection",
           "XmlDocKey": "M:VRageMath.MatrixI.GetDirection(VRageMath.Direction)",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MatrixI.GetDirection(direction)",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MatrixI.GetDirection(direction)",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -189221,7 +189221,7 @@
           "Name": "Left",
           "PageName": "VRageMath.MatrixI@Left",
           "XmlDocKey": "P:VRageMath.MatrixI.Left",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MatrixI.Left",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MatrixI.Left",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "CanRead": true,
@@ -189275,7 +189275,7 @@
           "Name": "Right",
           "PageName": "VRageMath.MatrixI@Right",
           "XmlDocKey": "F:VRageMath.MatrixI.Right",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MatrixI.Right",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MatrixI.Right",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "IsReadOnly": false,
@@ -189358,7 +189358,7 @@
           "Name": "Up",
           "PageName": "VRageMath.MatrixI@Up",
           "XmlDocKey": "F:VRageMath.MatrixI.Up",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MatrixI.Up",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MatrixI.Up",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "IsReadOnly": false,
@@ -189470,7 +189470,7 @@
           "Name": "Forward",
           "PageName": "VRageMath.MyBlockOrientation@Forward",
           "XmlDocKey": "F:VRageMath.MyBlockOrientation.Forward",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MyBlockOrientation.Forward",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MyBlockOrientation.Forward",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "IsReadOnly": false,
@@ -189548,7 +189548,7 @@
           "Name": "Left",
           "PageName": "VRageMath.MyBlockOrientation@Left",
           "XmlDocKey": "P:VRageMath.MyBlockOrientation.Left",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MyBlockOrientation.Left",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MyBlockOrientation.Left",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "CanRead": true,
@@ -189568,7 +189568,7 @@
           "Name": "TransformDirection",
           "PageName": "VRageMath.MyBlockOrientation@TransformDirection",
           "XmlDocKey": "M:VRageMath.MyBlockOrientation.TransformDirection(VRageMath.Direction)",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MyBlockOrientation.TransformDirection(baseDirection)",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MyBlockOrientation.TransformDirection(baseDirection)",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -189586,7 +189586,7 @@
           "Name": "TransformDirectionInverse",
           "PageName": "VRageMath.MyBlockOrientation@TransformDirectionInverse",
           "XmlDocKey": "M:VRageMath.MyBlockOrientation.TransformDirectionInverse(VRageMath.Direction)",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MyBlockOrientation.TransformDirectionInverse(baseDirection)",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MyBlockOrientation.TransformDirectionInverse(baseDirection)",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "Parameters": [
@@ -189604,7 +189604,7 @@
           "Name": "Up",
           "PageName": "VRageMath.MyBlockOrientation@Up",
           "XmlDocKey": "F:VRageMath.MyBlockOrientation.Up",
-          "Signature": "VRageMath.VRageMath.Base6Directions.Direction VRageMath.MyBlockOrientation.Up",
+          "Signature": "VRageMath.Base6Directions.Direction VRageMath.MyBlockOrientation.Up",
           "IsStatic": false,
           "ReturnType": "VRageMath.Base6Directions\u002BDirection",
           "IsReadOnly": false,
@@ -190345,7 +190345,7 @@
           "Name": "Leaves",
           "PageName": "VRageMath.MyDynamicAABBTree@Leaves",
           "XmlDocKey": "P:VRageMath.MyDynamicAABBTree.Leaves",
-          "Signature": "VRage.Collections.DictionaryValuesReader\u003Cint, VRageMath.VRageMath.MyDynamicAABBTree.DynamicTreeNode\u003E VRageMath.MyDynamicAABBTree.Leaves",
+          "Signature": "VRage.Collections.DictionaryValuesReader\u003Cint, VRageMath.MyDynamicAABBTree.DynamicTreeNode\u003E VRageMath.MyDynamicAABBTree.Leaves",
           "IsStatic": false,
           "ReturnType": "VRage.Collections.DictionaryValuesReader\u003Cint, VRageMath.MyDynamicAABBTree\u002BDynamicTreeNode\u003E",
           "CanRead": true,
@@ -190406,7 +190406,7 @@
           "Name": "Nodes",
           "PageName": "VRageMath.MyDynamicAABBTree@Nodes",
           "XmlDocKey": "P:VRageMath.MyDynamicAABBTree.Nodes",
-          "Signature": "System.ReadOnlySpan\u003CVRageMath.VRageMath.MyDynamicAABBTree.DynamicTreeNode\u003E VRageMath.MyDynamicAABBTree.Nodes",
+          "Signature": "System.ReadOnlySpan\u003CVRageMath.MyDynamicAABBTree.DynamicTreeNode\u003E VRageMath.MyDynamicAABBTree.Nodes",
           "IsStatic": false,
           "ReturnType": "System.ReadOnlySpan\u003CVRageMath.MyDynamicAABBTree\u002BDynamicTreeNode\u003E",
           "CanRead": true,
@@ -192293,7 +192293,7 @@
           "Name": "DistanceComparer",
           "PageName": "VRageMath.MyLineSegmentOverlapResult{T}@DistanceComparer",
           "XmlDocKey": "F:VRageMath.MyLineSegmentOverlapResult{T}.DistanceComparer",
-          "Signature": "static VRageMath.VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.MyLineSegmentOverlapResultComparer\u003CT\u003E VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.DistanceComparer",
+          "Signature": "static VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.MyLineSegmentOverlapResultComparer\u003CT\u003E VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.DistanceComparer",
           "IsStatic": true,
           "ReturnType": "VRageMath.MyLineSegmentOverlapResultComparer\u003CT\u003E",
           "IsReadOnly": false,
@@ -192304,7 +192304,7 @@
           "Name": "Element",
           "PageName": "VRageMath.MyLineSegmentOverlapResult{T}@Element",
           "XmlDocKey": "F:VRageMath.MyLineSegmentOverlapResult{T}.Element",
-          "Signature": "VRageMath.VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.T VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.Element",
+          "Signature": "VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.T VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.Element",
           "IsStatic": false,
           "ReturnType": "T",
           "IsReadOnly": false,
@@ -192332,7 +192332,7 @@
           "Name": ".ctor",
           "PageName": "VRageMath.MyLineSegmentOverlapResult{T}\u002BMyLineSegmentOverlapResultComparer@.ctor",
           "XmlDocKey": "C:VRageMath.MyLineSegmentOverlapResultComparer{T}..ctor()",
-          "Signature": "VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.VRageMath.VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.MyLineSegmentOverlapResultComparer\u003CT\u003E.MyLineSegmentOverlapResultComparer()",
+          "Signature": "VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.MyLineSegmentOverlapResultComparer\u003CT\u003E.MyLineSegmentOverlapResultComparer()",
           "IsStatic": false
         },
         {
@@ -192340,7 +192340,7 @@
           "Name": "Compare",
           "PageName": "VRageMath.MyLineSegmentOverlapResult{T}\u002BMyLineSegmentOverlapResultComparer@Compare",
           "XmlDocKey": "M:VRageMath.MyLineSegmentOverlapResultComparer{T}.Compare(MyLineSegmentOverlapResult\u00601,MyLineSegmentOverlapResult\u00601)",
-          "Signature": "int VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.VRageMath.VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.MyLineSegmentOverlapResultComparer\u003CT\u003E.Compare(x, y)",
+          "Signature": "int VRageMath.MyLineSegmentOverlapResult\u003CT\u003E.MyLineSegmentOverlapResultComparer\u003CT\u003E.Compare(x, y)",
           "IsStatic": false,
           "ReturnType": "int",
           "Parameters": [
@@ -210233,7 +210233,7 @@
           "Name": "Comparer",
           "PageName": "VRageMath.Vector2I@Comparer",
           "XmlDocKey": "F:VRageMath.Vector2I.Comparer",
-          "Signature": "static VRageMath.VRageMath.Vector2I.ComparerClass VRageMath.Vector2I.Comparer",
+          "Signature": "static VRageMath.Vector2I.ComparerClass VRageMath.Vector2I.Comparer",
           "IsStatic": true,
           "ReturnType": "VRageMath.Vector2I\u002BComparerClass",
           "IsReadOnly": true,
@@ -221916,7 +221916,7 @@
           "Name": "Comparer",
           "PageName": "VRageMath.Vector3I@Comparer",
           "XmlDocKey": "F:VRageMath.Vector3I.Comparer",
-          "Signature": "static VRageMath.VRageMath.Vector3I.EqualityComparer VRageMath.Vector3I.Comparer",
+          "Signature": "static VRageMath.Vector3I.EqualityComparer VRageMath.Vector3I.Comparer",
           "IsStatic": true,
           "ReturnType": "VRageMath.Vector3I\u002BEqualityComparer",
           "IsReadOnly": true,
@@ -224058,7 +224058,7 @@
           "Name": "Comparer",
           "PageName": "VRageMath.Vector3L@Comparer",
           "XmlDocKey": "F:VRageMath.Vector3L.Comparer",
-          "Signature": "static VRageMath.VRageMath.Vector3L.EqualityComparer VRageMath.Vector3L.Comparer",
+          "Signature": "static VRageMath.Vector3L.EqualityComparer VRageMath.Vector3L.Comparer",
           "IsStatic": true,
           "ReturnType": "VRageMath.Vector3L\u002BEqualityComparer",
           "IsReadOnly": true,
@@ -225853,7 +225853,7 @@
           "Name": "Comparer",
           "PageName": "VRageMath.Vector3UByte@Comparer",
           "XmlDocKey": "F:VRageMath.Vector3UByte.Comparer",
-          "Signature": "static VRageMath.VRageMath.Vector3UByte.EqualityComparer VRageMath.Vector3UByte.Comparer",
+          "Signature": "static VRageMath.Vector3UByte.EqualityComparer VRageMath.Vector3UByte.Comparer",
           "IsStatic": true,
           "ReturnType": "VRageMath.Vector3UByte\u002BEqualityComparer",
           "IsReadOnly": true,
@@ -232450,7 +232450,7 @@
           "Name": "Comparer",
           "PageName": "VRageMath.Vector4I@Comparer",
           "XmlDocKey": "F:VRageMath.Vector4I.Comparer",
-          "Signature": "static VRageMath.VRageMath.Vector4I.EqualityComparer VRageMath.Vector4I.Comparer",
+          "Signature": "static VRageMath.Vector4I.EqualityComparer VRageMath.Vector4I.Comparer",
           "IsStatic": true,
           "ReturnType": "VRageMath.Vector4I\u002BEqualityComparer",
           "IsReadOnly": true,
