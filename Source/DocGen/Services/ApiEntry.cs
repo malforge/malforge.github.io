@@ -225,7 +225,7 @@ namespace DocGen.Services
             }
         }
 
-        static string ToSafeFileName(string path)
+        internal static string ToSafeFileName(string path)
         {
             var builder = new StringBuilder(path);
             for (var i = 0; i < builder.Length; i++)

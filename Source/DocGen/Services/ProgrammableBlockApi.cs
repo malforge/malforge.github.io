@@ -29,6 +29,12 @@ namespace DocGen.Services
 
         public ReadOnlyCollection<ApiEntry> Entries { get; }
 
+        /// <summary>
+        ///     Types a script can obtain through the permitted API but may not name, each with the
+        ///     permitted types it can be held as instead.
+        /// </summary>
+        public IReadOnlyList<ProhibitedType> ProhibitedTypes { get; private set; } = new List<ProhibitedType>();
+
         static Assembly LoadAssembly(string dllFile)
         {
             try
@@ -149,6 +155,7 @@ namespace DocGen.Services
                     entry.ResolveLinks();
 
                 DisambiguatePageNames(api.Entries);
+                api.ProhibitedTypes = ProhibitedTypeFinder.Find(api);
             });
 
             return api;
@@ -302,7 +309,8 @@ namespace DocGen.Services
             {
                 new TypeGenerator(typeDefinitions, typeOverrides),
                 new MemberGenerator(),
-                new NamespaceGenerator()
+                new NamespaceGenerator(),
+                new ProhibitedTypeGenerator()
             };
 
             var directory = new DirectoryInfo(path);

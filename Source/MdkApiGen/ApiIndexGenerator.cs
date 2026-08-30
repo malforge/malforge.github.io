@@ -1427,7 +1427,10 @@ class ApiIndexGenerator
                     kind = type.Kind,
                     ns = type.Namespace,
                     path = typePath,
-                    summary = type.Documentation?.Summary
+                    summary = type.Documentation?.Summary,
+                    // Marked so the result can be labelled. Finding one of these in search is the point:
+                    // it is where a reader learns the type is off limits and what to reach for instead.
+                    prohibited = type.Prohibited == true ? true : (bool?)null
                 });
                 
                 // Check if this type has an override message (which means members are suppressed)
@@ -1611,6 +1614,7 @@ class TypeJsonData
 {
     public string FullName { get; set; } = string.Empty;
     public string? PageName { get; set; }
+    public bool? Prohibited { get; set; }
     public string Name { get; set; } = string.Empty;
     public string Namespace { get; set; } = string.Empty;
     public string Kind { get; set; } = string.Empty;

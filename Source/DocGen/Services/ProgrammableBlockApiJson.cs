@@ -136,7 +136,57 @@ namespace DocGen.Services
                 result.Namespaces.Add(namespaceData);
             }
 
+            AddProhibitedTypes(api, result);
+
             return result;
+        }
+
+        /// <summary>
+        ///     Adds the types a script can obtain but not name. They are flagged rather than merely present:
+        ///     an entry with no members is already what a permitted type with no permitted members looks
+        ///     like, so absence of members cannot also mean "prohibited". BaseType and Interfaces are left
+        ///     off, because a prohibited type's real ancestors include other prohibited types that have no
+        ///     entry here - AccessibleAs carries only the ancestors a script may actually name.
+        /// </summary>
+        static void AddProhibitedTypes(ProgrammableBlockApi api, ApiJsonData result)
+        {
+            var byNamespace = result.Namespaces.ToDictionary(n => n.Name, StringComparer.Ordinal);
+
+            foreach (var prohibited in api.ProhibitedTypes)
+            {
+                var entry = prohibited.Entry;
+                var type = (Type)entry.Member;
+
+                result.Types.Add(new TypeJsonData
+                {
+                    FullName = entry.FullName,
+                    PageName = Path.GetFileNameWithoutExtension(prohibited.SuggestedFileName),
+                    Name = entry.Name,
+                    Namespace = entry.NamespaceName,
+                    Assembly = entry.AssemblyName,
+                    XmlDocKey = entry.XmlDocKey,
+                    Kind = GetTypeKind(type),
+                    Modifiers = type.GetModifiers().ToCodeString(),
+                    Signature = entry.ToString(ApiEntryStringFlags.Modifiers | ApiEntryStringFlags.GenericParameters),
+                    IsStatic = entry.IsStatic,
+                    Prohibited = true,
+                    AccessibleAs = prohibited.AccessibleAs.Select(a => a.FullName).ToList(),
+                    Members = new List<MemberJsonData>()
+                });
+
+                if (!byNamespace.TryGetValue(entry.NamespaceName, out var namespaceData))
+                {
+                    namespaceData = new NamespaceJsonData { Name = entry.NamespaceName, Types = new List<string>() };
+                    byNamespace[entry.NamespaceName] = namespaceData;
+                    result.Namespaces.Add(namespaceData);
+                }
+
+                namespaceData.Types.Add(entry.FullName);
+            }
+
+            result.Types = result.Types.OrderBy(t => t.Namespace, StringComparer.Ordinal)
+                .ThenBy(t => t.Name, StringComparer.Ordinal).ToList();
+            result.Namespaces = result.Namespaces.OrderBy(n => n.Name, StringComparer.Ordinal).ToList();
         }
 
         static string GetTypeKind(Type type)
@@ -362,6 +412,19 @@ namespace DocGen.Services
         public string Modifiers { get; set; }
         public string Signature { get; set; }
         public bool IsStatic { get; set; }
+
+        /// <summary>
+        ///     Set when a script can obtain a value of this type but may not name it. Such an entry
+        ///     documents nothing itself - see <see cref="AccessibleAs" /> for what to write instead.
+        /// </summary>
+        public bool? Prohibited { get; set; }
+
+        /// <summary>
+        ///     Only on prohibited entries: the nearest permitted types this one may be held as, most
+        ///     derived first.
+        /// </summary>
+        public List<string> AccessibleAs { get; set; }
+
         public string BaseType { get; set; }
         public List<string> Interfaces { get; set; }
         public DocumentationJsonData Documentation { get; set; }

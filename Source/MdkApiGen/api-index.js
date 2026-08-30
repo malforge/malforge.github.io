@@ -1,4 +1,4 @@
-// Load and inject sidebar tree
+﻿// Load and inject sidebar tree
 async function loadSidebarTree() {
     const sidebarNav = document.querySelector('.sidebar-nav');
     const currentPage = sidebarNav.dataset.currentPage;
@@ -359,7 +359,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (item.type === 'namespace') {
                 prefix = 'Namespace';
             } else if (item.type === 'type') {
-                prefix = 'Type';
+                prefix = item.prohibited ? 'Prohibited type' : 'Type';
             } else if (item.type === 'member') {
                 prefix = 'Member';
             }
