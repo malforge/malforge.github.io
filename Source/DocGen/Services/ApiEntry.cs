@@ -345,11 +345,10 @@ namespace DocGen.Services
 
             if (flags.HasFlag(ApiEntryStringFlags.DeclaringTypes))
             {
-                foreach (var item in DeclarersOf(constructorInfo.DeclaringType, true).Reverse())
-                {
-                    buffer.Append(Api.GetEntry(item, true).ToString(ForSubCalls(flags)));
-                    buffer.Append(".");
-                }
+                // The declaring type renders its own namespace and nesting, so walking the chain
+                // here as well emitted every ancestor a second time.
+                buffer.Append(Api.GetEntry(constructorInfo.DeclaringType, true).ToString(ForSubCalls(flags)));
+                buffer.Append(".");
             }
 
             if (flags.HasFlag(ApiEntryStringFlags.CliNames))
@@ -390,11 +389,10 @@ namespace DocGen.Services
             var buffer = new StringBuilder();
             if (flags.HasFlag(ApiEntryStringFlags.DeclaringTypes))
             {
-                foreach (var item in DeclarersOf(methodInfo.DeclaringType, true).Reverse())
-                {
-                    buffer.Append(Api.GetEntry(item, true).ToString(ForSubCalls(flags)));
-                    buffer.Append(".");
-                }
+                // The declaring type renders its own namespace and nesting, so walking the chain
+                // here as well emitted every ancestor a second time.
+                buffer.Append(Api.GetEntry(methodInfo.DeclaringType, true).ToString(ForSubCalls(flags)));
+                buffer.Append(".");
             }
 
             if (flags.HasFlag(ApiEntryStringFlags.CliNames) || (!methodInfo.IsGenericMethodDefinition && !methodInfo.IsGenericMethod))
@@ -448,11 +446,10 @@ namespace DocGen.Services
             var buffer = new StringBuilder();
             if (flags.HasFlag(ApiEntryStringFlags.DeclaringTypes))
             {
-                foreach (var item in DeclarersOf(propertyInfo.DeclaringType, true).Reverse())
-                {
-                    buffer.Append(Api.GetEntry(item, true).ToString(ForSubCalls(flags)));
-                    buffer.Append(".");
-                }
+                // The declaring type renders its own namespace and nesting, so walking the chain
+                // here as well emitted every ancestor a second time.
+                buffer.Append(Api.GetEntry(propertyInfo.DeclaringType, true).ToString(ForSubCalls(flags)));
+                buffer.Append(".");
             }
 
             buffer.Append(propertyInfo.Name);
@@ -501,11 +498,10 @@ namespace DocGen.Services
             var buffer = new StringBuilder();
             if (flags.HasFlag(ApiEntryStringFlags.DeclaringTypes))
             {
-                foreach (var item in DeclarersOf(fieldInfo.DeclaringType, true).Reverse())
-                {
-                    buffer.Append(Api.GetEntry(item, true).ToString(ForSubCalls(flags)));
-                    buffer.Append(".");
-                }
+                // The declaring type renders its own namespace and nesting, so walking the chain
+                // here as well emitted every ancestor a second time.
+                buffer.Append(Api.GetEntry(fieldInfo.DeclaringType, true).ToString(ForSubCalls(flags)));
+                buffer.Append(".");
             }
 
             buffer.Append(fieldInfo.Name);
@@ -533,11 +529,10 @@ namespace DocGen.Services
             var buffer = new StringBuilder();
             if (flags.HasFlag(ApiEntryStringFlags.DeclaringTypes))
             {
-                foreach (var item in DeclarersOf(eventInfo.DeclaringType, true).Reverse())
-                {
-                    buffer.Append(Api.GetEntry(item, true).ToString(ForSubCalls(flags)));
-                    buffer.Append(".");
-                }
+                // The declaring type renders its own namespace and nesting, so walking the chain
+                // here as well emitted every ancestor a second time.
+                buffer.Append(Api.GetEntry(eventInfo.DeclaringType, true).ToString(ForSubCalls(flags)));
+                buffer.Append(".");
             }
 
             buffer.Append(eventInfo.Name);
@@ -569,8 +564,11 @@ namespace DocGen.Services
 
             if (flags.HasFlag(ApiEntryStringFlags.DeclaringTypes))
             {
+                // Each link is a bare name: the namespace is already the first segment, and a link's
+                // own nesting is spelled out by the links before it. Rendering links with the
+                // namespace still set produced VRage.VRage.MyTexts.MyLanguageDescription.
                 foreach (var item in DeclarersOf(type, false).Reverse())
-                    segments.Add(Api.GetEntry(item, true).ToString(ForSubCalls(flags)));
+                    segments.Add(Api.GetEntry(item, true).ToString(ForDeclaringChain(flags)));
             }
 
             if (flags.HasFlag(ApiEntryStringFlags.CliNames) || (!type.IsGenericType && !type.IsGenericTypeDefinition))
@@ -626,6 +624,15 @@ namespace DocGen.Services
         ApiEntryStringFlags ForSubCalls(ApiEntryStringFlags flags)
         {
             return ApiEntryStringFlags.GenericParameters | flags & ~(ApiEntryStringFlags.Accessors | ApiEntryStringFlags.Inheritance | ApiEntryStringFlags.Modifiers);
+        }
+
+        /// <summary>
+        ///     Flags for a link in a declaring-type chain. The namespace belongs to the whole name, not to
+        ///     each link, and a link's nesting is already spelled out by the links before it.
+        /// </summary>
+        ApiEntryStringFlags ForDeclaringChain(ApiEntryStringFlags flags)
+        {
+            return ForSubCalls(flags) & ~(ApiEntryStringFlags.Namespaces | ApiEntryStringFlags.DeclaringTypes);
         }
 
         public void ResolveLinks()
