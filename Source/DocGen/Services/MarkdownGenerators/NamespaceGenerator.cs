@@ -16,7 +16,7 @@ namespace DocGen.Services.MarkdownGenerators
 
         async Task GenerateNamespaceDoc(DirectoryInfo directory, IGrouping<string, ApiEntry> ns)
         {
-            var fileName = Path.Combine(directory.FullName, ToMdFileName(ns.Key));
+            var fileName = FileHelpers.ToLongPathSafe(Path.Combine(directory.FullName, ToMdFileName(ns.Key)));
             using (var file = File.CreateText(fileName))
             {
                 var writer = new MarkdownWriter(file);

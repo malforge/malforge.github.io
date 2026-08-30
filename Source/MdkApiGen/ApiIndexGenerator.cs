@@ -1,4 +1,4 @@
-using Markdig;
+﻿using Markdig;
 using System.Net;
 using System.Text;
 using System.Text.Json;
@@ -679,7 +679,7 @@ class ApiIndexGenerator
                 continue;
             }
             
-            var markdownContent = File.ReadAllText(file.FullPath);
+            var markdownContent = File.ReadAllText(ToLongPathSafe(file.FullPath));
 
             string htmlContent;
             try
@@ -995,11 +995,33 @@ class ApiIndexGenerator
                content.Contains(jsToken, StringComparison.Ordinal);
     }
 
+    /// <summary>
+    /// Rewrites a path so Windows accepts it beyond MAX_PATH (260 characters). The \\?\ prefix
+    /// bypasses the Win32 path parser, which is the only way to reach long paths without the machine-wide
+    /// LongPathsEnabled setting - off by default, so without this an over-long page is silently skipped.
+    /// Left alone on Linux and macOS, which have no such limit.
+    /// </summary>
+    private static string ToLongPathSafe(string path)
+    {
+        if (string.IsNullOrEmpty(path))
+            return path;
+
+        if (Path.DirectorySeparatorChar != '\\' || path.StartsWith(@"\\?\", StringComparison.Ordinal))
+            return path;
+
+        var fullPath = Path.GetFullPath(path);
+        if (fullPath.StartsWith(@"\\", StringComparison.Ordinal))
+            return @"\\?\UNC\" + fullPath.Substring(2);
+
+        return @"\\?\" + fullPath;
+    }
+
     private bool WriteAllTextIfChanged(string outputPath, string content)
     {
-        if (File.Exists(outputPath))
+        var safePath = ToLongPathSafe(outputPath);
+        if (File.Exists(safePath))
         {
-            var existing = File.ReadAllText(outputPath);
+            var existing = File.ReadAllText(safePath);
             if (string.Equals(existing, content, StringComparison.Ordinal))
                 return false;
         }
@@ -1008,7 +1030,7 @@ class ApiIndexGenerator
         if (!string.IsNullOrEmpty(directory))
             Directory.CreateDirectory(directory);
 
-        File.WriteAllText(outputPath, content);
+        File.WriteAllText(safePath, content);
         return true;
     }
 
@@ -1029,7 +1051,7 @@ class ApiIndexGenerator
         if (!string.IsNullOrEmpty(directory))
             Directory.CreateDirectory(directory);
 
-        File.Copy(sourcePath, outputPath, overwrite: true);
+        File.Copy(ToLongPathSafe(sourcePath), ToLongPathSafe(outputPath), overwrite: true);
         return true;
     }
 
@@ -1367,18 +1389,35 @@ class ApiIndexGenerator
             }
             
             // Build a set of existing files from the current index for quick lookup
-            var existingFiles = new HashSet<string>(_allFiles.Select(f => f.FileName), StringComparer.OrdinalIgnoreCase);
+            // Case-sensitive on purpose. GitHub Pages serves case-sensitively, but Windows generates the
+            // files case-insensitively, so two members differing only in case (a "w" field beside a "W"
+            // property) share one file - the last one written wins. An ignore-case lookup would happily
+            // report the loser's page as present and emit a URL that 404s once published.
+            var existingFiles = new HashSet<string>(_allFiles.Select(f => f.FileName), StringComparer.Ordinal);
             
             var searchItems = new List<object>();
             int skippedMembers = 0;
             var skippedTypes = new List<string>();
+            int unresolvedTypes = 0;
+            int unresolvedNamespaces = 0;
             
             // Add all types
             foreach (var type in apiData.Types)
             {
                 // Files are flat in the output directory with dots in the filename
                 // Example: Sandbox.ModAPI.Ingame.ChargeMode.html
-                var typePath = type.FullName + ".html";
+                // PageName is the generated page's basename; FullName is not (it drops the declaring
+                // type of a nested type and the arity of a generic one). Older api-data.json files have
+                // no PageName, so fall back to the previous behaviour for those.
+                var typeBaseName = !string.IsNullOrEmpty(type.PageName) ? type.PageName! : type.FullName;
+                if (!existingFiles.Contains(typeBaseName))
+                {
+                    // No page was generated for this type - a search hit would 404, so leave it out.
+                    unresolvedTypes++;
+                    continue;
+                }
+
+                var typePath = typeBaseName + ".html";
                 
                 searchItems.Add(new
                 {
@@ -1400,19 +1439,24 @@ class ApiIndexGenerator
                     foreach (var member in type.Members)
                     {
                         // Check if this member has its own file (uses @ separator)
-                        var memberFileName = $"{type.FullName}@{member.Name}";
+                        var memberFileName = !string.IsNullOrEmpty(member.PageName)
+                            ? member.PageName!
+                            : $"{typeBaseName}@{member.Name}";
                         bool hasOwnFile = existingFiles.Contains(memberFileName);
                         
                         string memberPath;
                         if (hasOwnFile)
                         {
                             // Member has its own page: TypeName@MemberName.html
-                            memberPath = type.FullName + "@" + member.Name + ".html";
+                            memberPath = memberFileName + ".html";
                         }
                         else
                         {
-                            // Member is on the type's page with an anchor
-                            memberPath = type.FullName + ".html#" + member.Name;
+                            // No page of its own - most often because another member differs from it
+                            // only by case and the two share one file on Windows. Type pages carry
+                            // section anchors but not per-member ones, so aim at the section: a
+                            // "#W" fragment would silently do nothing.
+                            memberPath = typeBaseName + ".html#" + SectionAnchorFor(member.Kind);
                         }
                         
                         searchItems.Add(new
@@ -1441,6 +1485,14 @@ class ApiIndexGenerator
             {
                 foreach (var ns in apiData.Namespaces)
                 {
+                    // Namespaces have no generated page, so an entry here would only ever 404.
+                    // Restore these once namespace pages exist.
+                    if (!existingFiles.Contains(ns.Name))
+                    {
+                        unresolvedNamespaces++;
+                        continue;
+                    }
+
                     var nsPath = ns.Name + ".html";
                     
                     searchItems.Add(new
@@ -1465,12 +1517,19 @@ class ApiIndexGenerator
             // Track generated file
             _generatedPaths.Add(Path.GetRelativePath(outputDir.FullName, outputPath));
             
-            var memberCount = searchItems.Count - apiData.Types.Count - (apiData.Namespaces?.Count ?? 0);
-            Console.WriteLine($"Generated search index with {searchItems.Count} items ({apiData.Types.Count} types, {memberCount} members, {apiData.Namespaces?.Count ?? 0} namespaces)");
+            var typeCount = apiData.Types.Count - unresolvedTypes;
+            var namespaceCount = (apiData.Namespaces?.Count ?? 0) - unresolvedNamespaces;
+            var memberCount = searchItems.Count - typeCount - namespaceCount;
+            Console.WriteLine($"Generated search index with {searchItems.Count} items ({typeCount} types, {memberCount} members, {namespaceCount} namespaces)");
             
             if (skippedMembers > 0)
             {
                 Console.WriteLine($"  Skipped {skippedMembers} members from {skippedTypes.Count} overridden type(s): {string.Join(", ", skippedTypes.Select(t => t.Split('.').Last()))}");
+            }
+            
+            if (unresolvedTypes > 0 || unresolvedNamespaces > 0)
+            {
+                Console.WriteLine($"  Left out {unresolvedTypes} type(s) and {unresolvedNamespaces} namespace(s) with no generated page");
             }
         }
         catch (Exception ex)
@@ -1479,6 +1538,16 @@ class ApiIndexGenerator
         }
     }
     
+    private static string SectionAnchorFor(string kind) => kind switch
+    {
+        "constructor" => "constructors",
+        "method" => "methods",
+        "field" => "fields",
+        "property" => "properties",
+        "event" => "events",
+        _ => "members"
+    };
+
     private ApiNode? FindNodeByFileName(string fileName)
     {
         // Simple lookup - navigate the tree to find the node
@@ -1541,6 +1610,7 @@ class NamespaceJsonData
 class TypeJsonData
 {
     public string FullName { get; set; } = string.Empty;
+    public string? PageName { get; set; }
     public string Name { get; set; } = string.Empty;
     public string Namespace { get; set; } = string.Empty;
     public string Kind { get; set; } = string.Empty;
@@ -1557,6 +1627,7 @@ class BlockInfoJsonData
 class MemberJsonData
 {
     public string Kind { get; set; } = string.Empty;
+    public string? PageName { get; set; }
     public string Name { get; set; } = string.Empty;
     public bool IsStatic { get; set; }
     public DocumentationJsonData? Documentation { get; set; }

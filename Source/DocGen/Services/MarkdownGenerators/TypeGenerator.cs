@@ -29,7 +29,7 @@ namespace DocGen.Services.MarkdownGenerators
 
         async Task GeneratePage(ProgrammableBlockApi api, DirectoryInfo directory, ApiEntry entry)
         {
-            var fileName = Path.Combine(directory.FullName, entry.SuggestedFileName);
+            var fileName = FileHelpers.ToLongPathSafe(Path.Combine(directory.FullName, entry.SuggestedFileName));
             using (var file = File.CreateText(fileName))
             {
                 var writer = new MarkdownWriter(file);

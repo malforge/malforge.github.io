@@ -121,7 +121,7 @@ namespace DocGen.Services.MarkdownGenerators
 
         async Task GeneratePage(ProgrammableBlockApi api, DirectoryInfo directory, IGrouping<string, ApiEntry> entries)
         {
-            var fileName = Path.Combine(directory.FullName, entries.Key);
+            var fileName = FileHelpers.ToLongPathSafe(Path.Combine(directory.FullName, entries.Key));
             // Try creating the file. If we're not allowed to share, wait a bit and try again, for a while.
             StreamWriter file = null;
             var attempts = 0;

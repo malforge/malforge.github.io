@@ -11,7 +11,7 @@ namespace DocGen.Services.MarkdownGenerators
     {
         public override async Task Generate(DirectoryInfo directory, ProgrammableBlockApi api)
         {
-            var fileName = Path.Combine(directory.FullName, "Namespace-Index.md");
+            var fileName = FileHelpers.ToLongPathSafe(Path.Combine(directory.FullName, "Namespace-Index.md"));
             using (var file = File.CreateText(fileName))
             {
                 var writer = new MarkdownWriter(file);

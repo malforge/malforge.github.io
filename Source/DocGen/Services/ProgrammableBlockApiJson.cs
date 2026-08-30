@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -92,6 +92,7 @@ namespace DocGen.Services
                     var typeData = new TypeJsonData
                     {
                         FullName = entry.FullName,
+                        PageName = Path.GetFileNameWithoutExtension(entry.SuggestedFileName),
                         Name = entry.Name,
                         Namespace = entry.NamespaceName,
                         Assembly = entry.AssemblyName,
@@ -182,6 +183,7 @@ namespace DocGen.Services
             var data = new MemberJsonData
             {
                 Name = entry.Name,
+                PageName = Path.GetFileNameWithoutExtension(entry.SuggestedFileName),
                 XmlDocKey = entry.XmlDocKey,
                 IsStatic = entry.IsStatic,
                 Signature = entry.ToString(ApiEntryStringFlags.Default),
@@ -339,7 +341,17 @@ namespace DocGen.Services
 
     internal class TypeJsonData
     {
+        /// <summary>
+        ///     Namespace plus short name. Not unique: nested types drop their declaring type, so
+        ///     BoundingBox+ComparerType and BoundingBoxD+ComparerType both land on VRageMath.ComparerType.
+        ///     Use <see cref="PageName" /> when a stable identity or a link target is needed.
+        /// </summary>
         public string FullName { get; set; }
+
+        /// <summary>
+        ///     The name this entry's generated page uses - unique, and the basename of its .md/.html file.
+        /// </summary>
+        public string PageName { get; set; }
         public string Name { get; set; }
         public string Namespace { get; set; }
         public string Assembly { get; set; }
@@ -369,6 +381,12 @@ namespace DocGen.Services
     {
         public string Kind { get; set; }
         public string Name { get; set; }
+
+        /// <summary>
+        ///     The name this member's generated page uses, if it has its own page - the basename of its
+        ///     .md/.html file. See <see cref="TypeJsonData.PageName" />.
+        /// </summary>
+        public string PageName { get; set; }
         public string XmlDocKey { get; set; }
         public string Signature { get; set; }
         public bool IsStatic { get; set; }

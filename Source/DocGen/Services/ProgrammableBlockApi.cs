@@ -146,9 +146,49 @@ namespace DocGen.Services
 
                 foreach (var entry in api.Entries)
                     entry.ResolveLinks();
+
+                DisambiguatePageNames(api.Entries);
             });
 
             return api;
+        }
+
+        /// <summary>
+        ///     Makes page names unique regardless of whether the filesystem is case sensitive.
+        ///     A "Type@w.md" beside a "Type@W.md" is two files on Linux but one on Windows, where the second
+        ///     write keeps the first file's name and the second file's content - so the same source produced
+        ///     a different, quietly wrong site depending on the machine that generated it. Renaming the
+        ///     clashes here means every platform emits the same set of files.
+        ///     Entries sharing a name exactly - method overloads - are meant to share one page, so they are
+        ///     left alone; only names that differ purely by case are separated.
+        /// </summary>
+        static void DisambiguatePageNames(IEnumerable<ApiEntry> entries)
+        {
+            var collisions = entries
+                .GroupBy(e => e.SuggestedFileName, StringComparer.OrdinalIgnoreCase)
+                .Where(g => g.Select(e => e.SuggestedFileName).Distinct(StringComparer.Ordinal).Count() > 1)
+                .ToList();
+
+            foreach (var collision in collisions)
+            {
+                // Ordinal ordering, so the result never depends on the machine's culture.
+                var names = collision.Select(e => e.SuggestedFileName)
+                    .Distinct(StringComparer.Ordinal)
+                    .OrderBy(name => name, StringComparer.Ordinal)
+                    .ToList();
+
+                // The first name is kept; the others are suffixed. A member name cannot contain a hyphen,
+                // so a suffixed name can never collide with a genuine one.
+                for (var index = 1; index < names.Count; index++)
+                {
+                    var original = names[index];
+                    var renamed = Path.GetFileNameWithoutExtension(original) + "-" + (index + 1) + Path.GetExtension(original);
+                    foreach (var entry in collision.Where(e => string.Equals(e.SuggestedFileName, original, StringComparison.Ordinal)))
+                        entry.SuggestedFileName = renamed;
+
+                    Console.WriteLine($"Warning: page name {original} differs from {names[0]} only by case; renamed to {renamed}");
+                }
+            }
         }
 
         static void Visit(Whitelist whitelist, Assembly assembly, List<MemberInfo> members)
