@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,9 +21,9 @@ namespace DocGen.Services
         /// <summary>
         /// Checks if regeneration is needed by comparing current state against manifest
         /// </summary>
-        public static bool NeedsRegeneration(string outputPath, string whitelistPath, string terminalPath, string gameBinPath)
+        public static bool NeedsRegeneration(string outputPath, string whitelistPath, string terminalPath, string gameBinPath, string artifact)
         {
-            var manifestPath = Path.Combine(outputPath, ".docgen-manifest.json");
+            var manifestPath = ManifestPathFor(outputPath, artifact);
             
             // If manifest doesn't exist, we need to regenerate
             if (!File.Exists(manifestPath))
@@ -139,9 +139,9 @@ namespace DocGen.Services
         /// <summary>
         /// Saves the manifest to the output directory
         /// </summary>
-        public static void SaveManifest(DependencyManifest manifest, string outputPath)
+        public static void SaveManifest(DependencyManifest manifest, string outputPath, string artifact)
         {
-            var manifestPath = Path.Combine(outputPath, ".docgen-manifest.json");
+            var manifestPath = ManifestPathFor(outputPath, artifact);
             var json = JsonSerializer.Serialize(manifest, new JsonSerializerOptions
             {
                 WriteIndented = true
@@ -151,6 +151,18 @@ namespace DocGen.Services
             Console.WriteLine($"Saved dependency manifest to {manifestPath}");
         }
         
+        /// <summary>
+        /// Each generated artifact tracks its dependencies separately. They used to share one manifest, so
+        /// running "api,...,json" in a single invocation meant api saved the manifest and json then found it
+        /// fresh and quietly skipped - leaving api-data.json stale on every run while still reporting success.
+        /// </summary>
+        private static string ManifestPathFor(string outputPath, string artifact)
+        {
+            // "api" keeps the original file name so existing manifests stay valid.
+            var fileName = artifact == "api" ? ".docgen-manifest.json" : $".docgen-manifest-{artifact}.json";
+            return Path.Combine(outputPath, fileName);
+        }
+
         private static string ComputeFileHash(string filePath)
         {
             if (!File.Exists(filePath))

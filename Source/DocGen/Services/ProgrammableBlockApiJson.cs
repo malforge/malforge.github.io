@@ -13,7 +13,7 @@ namespace DocGen.Services
 {
     internal static class ProgrammableBlockApiJson
     {
-        public static async Task Export(string terminalsCacheFileName, string whitelistCacheFileName, string outputPath, bool forceRegeneration = false)
+        public static async Task<bool> Export(string terminalsCacheFileName, string whitelistCacheFileName, string outputPath, bool forceRegeneration = false)
         {
             var spaceEngineers = new SpaceEngineers();
             var gameBinPath = Path.Combine(spaceEngineers.GetInstallPath(), "bin64");
@@ -21,10 +21,10 @@ namespace DocGen.Services
             
             // Check if regeneration is needed
             if (!forceRegeneration && !string.IsNullOrEmpty(outputDir) && 
-                !DependencyManifest.NeedsRegeneration(outputDir, whitelistCacheFileName, terminalsCacheFileName, gameBinPath))
+                !DependencyManifest.NeedsRegeneration(outputDir, whitelistCacheFileName, terminalsCacheFileName, gameBinPath, "json"))
             {
                 Console.WriteLine("✓ Skipping JSON generation (dependencies unchanged)");
-                return;
+                return false;
             }
             
             if (forceRegeneration)
@@ -57,8 +57,10 @@ namespace DocGen.Services
             if (!string.IsNullOrEmpty(outputDir))
             {
                 var manifest = DependencyManifest.BuildManifest(whitelistCacheFileName, terminalsCacheFileName, gameBinPath);
-                DependencyManifest.SaveManifest(manifest, outputDir);
+                DependencyManifest.SaveManifest(manifest, outputDir, "json");
             }
+
+            return true;
         }
 
         static ApiJsonData BuildJsonData(ProgrammableBlockApi api, TypeDefinitions typeDefinitions, TypeOverridesConfig typeOverrides)

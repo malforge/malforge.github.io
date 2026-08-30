@@ -54,16 +54,16 @@ namespace DocGen.Services
             }
         }
 
-        public static async Task Update(string terminalsCacheFileName, string whitelistCacheFileName, string output, bool forceRegeneration = false)
+        public static async Task<bool> Update(string terminalsCacheFileName, string whitelistCacheFileName, string output, bool forceRegeneration = false)
         {
             var spaceEngineers = new SpaceEngineers();
             var gameBinPath = Path.Combine(spaceEngineers.GetInstallPath(), "bin64");
             
             // Check if regeneration is needed
-            if (!forceRegeneration && !DependencyManifest.NeedsRegeneration(output, whitelistCacheFileName, terminalsCacheFileName, gameBinPath))
+            if (!forceRegeneration && !DependencyManifest.NeedsRegeneration(output, whitelistCacheFileName, terminalsCacheFileName, gameBinPath, "api"))
             {
                 Console.WriteLine("✓ Skipping API generation (dependencies unchanged)");
-                return;
+                return false;
             }
             
             if (forceRegeneration)
@@ -78,7 +78,8 @@ namespace DocGen.Services
             
             // Save manifest after successful generation
             var manifest = DependencyManifest.BuildManifest(whitelistCacheFileName, terminalsCacheFileName, gameBinPath);
-            DependencyManifest.SaveManifest(manifest, output);
+            DependencyManifest.SaveManifest(manifest, output, "api");
+            return true;
         }
 
         public static async Task<ProgrammableBlockApi> LoadAsync(string whitelistCacheFileName)

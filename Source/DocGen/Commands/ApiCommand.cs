@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -55,8 +55,9 @@ namespace DocGen.Commands
 
             try
             {
-                await ProgrammableBlockApi.Update(terminalPath, whitelistPath, outputPath, forceRegeneration);
-                Console.WriteLine("✓ API documentation generated successfully");
+                var generated = await ProgrammableBlockApi.Update(terminalPath, whitelistPath, outputPath, forceRegeneration);
+                if (generated)
+                    Console.WriteLine("✓ API documentation generated successfully");
                 return 0;
             }
             catch (Exception ex)

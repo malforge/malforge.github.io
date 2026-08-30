@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -61,8 +61,9 @@ namespace DocGen.Commands
 
             try
             {
-                await ProgrammableBlockApiJson.Export(terminalPath, whitelistPath, outputPath, forceRegeneration);
-                Console.WriteLine("✓ JSON API data generated successfully");
+                var generated = await ProgrammableBlockApiJson.Export(terminalPath, whitelistPath, outputPath, forceRegeneration);
+                if (generated)
+                    Console.WriteLine("✓ JSON API data generated successfully");
                 return 0;
             }
             catch (Exception ex)
