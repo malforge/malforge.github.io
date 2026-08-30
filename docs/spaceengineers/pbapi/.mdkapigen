@@ -1,5 +1,5 @@
 {
-  "Generated": "2026-08-30T07:45:00.9499161Z",
+  "Generated": "2026-08-30T08:10:06.8123781Z",
   "Files": [
     "api-index.js",
     "build-info.json",
@@ -1418,6 +1418,7 @@
     "VRage.Game.Components.Interfaces.IMyComponentContainer@Has{T}.html",
     "VRage.Game.Components.Interfaces.IMyComponentContainer@TryGet.html",
     "VRage.Game.Components.Interfaces.IMyComponentContainer@TryGet{T}.html",
+    "VRage.Game.Components.Interfaces.IMyEntityComponentContainer.html",
     "VRage.Game.Components.MyComponentBase.html",
     "VRage.Game.Components.MyComponentBase@ContainerBase.html",
     "VRage.Game.Components.MyComponentBase@GetAs{T}.html",
@@ -1805,6 +1806,7 @@
     "VRage.Game.MyDefinitionId\u002BDefinitionIdComparerType@.ctor.html",
     "VRage.Game.MyDefinitionId\u002BDefinitionIdComparerType@Equals.html",
     "VRage.Game.MyDefinitionId\u002BDefinitionIdComparerType@GetHashCode.html",
+    "VRage.Game.MyObjectBuilder_ToolbarItemActionParameter.html",
     "VRage.Game.MyRelationsBetweenPlayerAndBlock.html",
     "VRage.Game.MyRelationsBetweenPlayerAndBlockExtensions.html",
     "VRage.Game.MyRelationsBetweenPlayerAndBlockExtensions@IsFriendly.html",

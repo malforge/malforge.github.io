@@ -1,5 +1,5 @@
 {
-  "GeneratedDate": "2026-08-30T07:43:21.8653673Z",
+  "GeneratedDate": "2026-08-30T08:07:47.4040649Z",
   "Types": [
     {
       "FullName": "Sandbox.Game.EntityComponents.MyResourceSinkComponent",
@@ -111679,9 +111679,9 @@
       },
       "Members": [],
       "BlockInfo": {
-        "DisplayName": "Airtight Hangar Door",
+        "DisplayName": "Warfare Hangar Door",
         "TypeId": "AirtightHangarDoor",
-        "SubtypeId": "",
+        "SubtypeId": "AirtightHangarDoorWarfare2A",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -111811,9 +111811,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Prototech Assembler",
+        "DisplayName": "Assembler",
         "TypeId": "Assembler",
-        "SubtypeId": "LargePrototechAssembler",
+        "SubtypeId": "LargeAssembler",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -113950,9 +113950,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Door",
+        "DisplayName": "Small Gate Tall",
         "TypeId": "Door",
-        "SubtypeId": "",
+        "SubtypeId": "LargeBlockSmallGate",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -114455,9 +114455,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Half Algae Farm",
+        "DisplayName": "Services Terminal",
         "TypeId": "FunctionalBlock",
-        "SubtypeId": "LargeBlockAlgaeFarmReskin",
+        "SubtypeId": "ServicesTerminal",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -114527,9 +114527,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Lab O2/H2 Generator",
+        "DisplayName": "O2/H2 Generator",
         "TypeId": "OxygenGenerator",
-        "SubtypeId": "LargeBlockOxygenGeneratorLab",
+        "SubtypeId": "",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -115698,9 +115698,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Jump Drive Type II",
+        "DisplayName": "Jump Drive",
         "TypeId": "JumpDrive",
-        "SubtypeId": "LargeJumpDriveReskin",
+        "SubtypeId": "LargeJumpDrive",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -117478,9 +117478,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Wheel Suspension 3x3 Right",
+        "DisplayName": "Offroad Wheel Suspension 3x3 Right",
         "TypeId": "MotorSuspension",
-        "SubtypeId": "Suspension3x3",
+        "SubtypeId": "OffroadSuspension3x3",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -118119,9 +118119,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Ore Detector Type II",
+        "DisplayName": "Ore Detector",
         "TypeId": "OreDetector",
-        "SubtypeId": "LargeOreDetectorReskin",
+        "SubtypeId": "LargeOreDetector",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -119716,9 +119716,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Parabolic Antenna",
+        "DisplayName": "Antenna",
         "TypeId": "RadioAntenna",
-        "SubtypeId": "LargeBlockCompactRadioAntennaReskin",
+        "SubtypeId": "LargeBlockRadioAntenna",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -119791,9 +119791,9 @@
       },
       "Members": [],
       "BlockInfo": {
-        "DisplayName": "Prototech Refinery",
+        "DisplayName": "Refinery",
         "TypeId": "Refinery",
-        "SubtypeId": "LargePrototechRefinery",
+        "SubtypeId": "LargeRefinery",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -121569,10 +121569,10 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Drill Type II",
+        "DisplayName": "Drill",
         "TypeId": "Drill",
-        "SubtypeId": "LargeBlockDrillReskin",
-        "Size": "Large Grid",
+        "SubtypeId": "SmallBlockDrill",
+        "Size": "Small Grid",
         "Group": "Blocks"
       }
     },
@@ -121599,9 +121599,9 @@
       },
       "Members": [],
       "BlockInfo": {
-        "DisplayName": "Grinder Type II",
+        "DisplayName": "Grinder",
         "TypeId": "ShipGrinder",
-        "SubtypeId": "LargeShipGrinderReskin",
+        "SubtypeId": "LargeShipGrinder",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -121695,9 +121695,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Welder Type II",
+        "DisplayName": "Welder",
         "TypeId": "ShipWelder",
-        "SubtypeId": "LargeShipWelderReskin",
+        "SubtypeId": "LargeShipWelder",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -123641,9 +123641,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Sci-Fi Large Hydrogen Thruster",
+        "DisplayName": "Industrial Large Hydrogen Thruster",
         "TypeId": "Thrust",
-        "SubtypeId": "LargeBlockLargeHydrogenThrustReskin",
+        "SubtypeId": "LargeBlockLargeHydrogenThrustIndustrial",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -128650,9 +128650,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Bridge Button Panel",
+        "DisplayName": "Button Panel",
         "TypeId": "ButtonPanel",
-        "SubtypeId": "LargeBlockModularBridgeButtonPanel",
+        "SubtypeId": "ButtonPanelLarge",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -128887,9 +128887,9 @@
       ],
       "Members": [],
       "BlockInfo": {
-        "DisplayName": "Inset Terrarium Desert",
+        "DisplayName": "Interior Light",
         "TypeId": "InteriorLight",
-        "SubtypeId": "LargeBlockInsetTerrariumDesert",
+        "SubtypeId": "SmallLight",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -129030,9 +129030,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Landing Gear Type II",
+        "DisplayName": "Landing Gear",
         "TypeId": "LandingGear",
-        "SubtypeId": "LargeBlockLandingGearReskin",
+        "SubtypeId": "LargeBlockLandingGear",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -129168,9 +129168,9 @@
       ],
       "Members": [],
       "BlockInfo": {
-        "DisplayName": "Medical Room",
+        "DisplayName": "Inset Refill Station",
         "TypeId": "MedicalRoom",
-        "SubtypeId": "LargeMedicalRoom",
+        "SubtypeId": "InsetRefillStation",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -129218,9 +129218,9 @@
         }
       ],
       "BlockInfo": {
-        "DisplayName": "Half Oxygen Farm",
+        "DisplayName": "Oxygen Farm",
         "TypeId": "OxygenFarm",
-        "SubtypeId": "LargeBlockOxygenFarmReskin",
+        "SubtypeId": "LargeBlockOxygenFarm",
         "Size": "Large Grid",
         "Group": "Blocks"
       }
@@ -135330,6 +135330,23 @@
       ]
     },
     {
+      "FullName": "VRage.Game.MyObjectBuilder_ToolbarItemActionParameter",
+      "PageName": "VRage.Game.MyObjectBuilder_ToolbarItemActionParameter",
+      "Name": "MyObjectBuilder_ToolbarItemActionParameter",
+      "Namespace": "VRage.Game",
+      "Assembly": "VRage.Game",
+      "XmlDocKey": "T:VRage.Game.MyObjectBuilder_ToolbarItemActionParameter",
+      "Kind": "class",
+      "Modifiers": "public",
+      "Signature": "public class MyObjectBuilder_ToolbarItemActionParameter",
+      "IsStatic": false,
+      "Prohibited": true,
+      "AccessibleAs": [
+        "VRage.ObjectBuilders.MyObjectBuilder_Base"
+      ],
+      "Members": []
+    },
+    {
       "FullName": "VRage.Game.MyRelationsBetweenPlayerAndBlock",
       "PageName": "VRage.Game.MyRelationsBetweenPlayerAndBlock",
       "Name": "MyRelationsBetweenPlayerAndBlock",
@@ -135825,6 +135842,23 @@
           ]
         }
       ]
+    },
+    {
+      "FullName": "VRage.Game.Components.Interfaces.IMyEntityComponentContainer",
+      "PageName": "VRage.Game.Components.Interfaces.IMyEntityComponentContainer",
+      "Name": "IMyEntityComponentContainer",
+      "Namespace": "VRage.Game.Components.Interfaces",
+      "Assembly": "VRage.Game",
+      "XmlDocKey": "T:VRage.Game.Components.Interfaces.IMyEntityComponentContainer",
+      "Kind": "interface",
+      "Modifiers": "public",
+      "Signature": "public interface IMyEntityComponentContainer",
+      "IsStatic": false,
+      "Prohibited": true,
+      "AccessibleAs": [
+        "VRage.Game.Components.Interfaces.IMyComponentContainer"
+      ],
+      "Members": []
     },
     {
       "FullName": "VRage.Game.GUI.TextPanel.ClearClipToken",
@@ -223385,6 +223419,77 @@
       ]
     },
     {
+      "FullName": "VRageMath.Vector3INormalEqualityComparer",
+      "PageName": "VRageMath.Vector3INormalEqualityComparer",
+      "Name": "Vector3INormalEqualityComparer",
+      "Namespace": "VRageMath",
+      "Assembly": "VRage.Math",
+      "XmlDocKey": "T:VRageMath.Vector3INormalEqualityComparer",
+      "Kind": "class",
+      "Modifiers": "public",
+      "Signature": "public class Vector3INormalEqualityComparer",
+      "IsStatic": false,
+      "Interfaces": [
+        "System.Collections.Generic.IEqualityComparer"
+      ],
+      "Documentation": {
+        "Summary": "This can be used only to compare normal vectors of Vector3I, where X, Y and Z has values -1, 0 or 1"
+      },
+      "Members": [
+        {
+          "Kind": "constructor",
+          "Name": ".ctor",
+          "PageName": "VRageMath.Vector3INormalEqualityComparer@.ctor",
+          "XmlDocKey": "C:VRageMath.Vector3INormalEqualityComparer..ctor()",
+          "Signature": "VRageMath.Vector3INormalEqualityComparer.Vector3INormalEqualityComparer()",
+          "IsStatic": false
+        },
+        {
+          "Kind": "method",
+          "Name": "Equals",
+          "PageName": "VRageMath.Vector3INormalEqualityComparer@Equals",
+          "XmlDocKey": "M:VRageMath.Vector3INormalEqualityComparer.Equals(VRageMath.Vector3I,VRageMath.Vector3I)",
+          "Signature": "bool VRageMath.Vector3INormalEqualityComparer.Equals(x, y)",
+          "IsStatic": false,
+          "ReturnType": "bool",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "VRageMath.Vector3I",
+              "IsOut": false,
+              "IsRef": false,
+              "HasDefaultValue": false
+            },
+            {
+              "Name": "y",
+              "Type": "VRageMath.Vector3I",
+              "IsOut": false,
+              "IsRef": false,
+              "HasDefaultValue": false
+            }
+          ]
+        },
+        {
+          "Kind": "method",
+          "Name": "GetHashCode",
+          "PageName": "VRageMath.Vector3INormalEqualityComparer@GetHashCode",
+          "XmlDocKey": "M:VRageMath.Vector3INormalEqualityComparer.GetHashCode(VRageMath.Vector3I)",
+          "Signature": "int VRageMath.Vector3INormalEqualityComparer.GetHashCode(x)",
+          "IsStatic": false,
+          "ReturnType": "int",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "VRageMath.Vector3I",
+              "IsOut": false,
+              "IsRef": false,
+              "HasDefaultValue": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "FullName": "VRageMath.Vector3I_RangeIterator",
       "PageName": "VRageMath.Vector3I_RangeIterator",
       "Name": "Vector3I_RangeIterator",
@@ -223472,77 +223577,6 @@
           "Signature": "void VRageMath.Vector3I_RangeIterator.MoveNext()",
           "IsStatic": false,
           "ReturnType": "System.Void"
-        }
-      ]
-    },
-    {
-      "FullName": "VRageMath.Vector3INormalEqualityComparer",
-      "PageName": "VRageMath.Vector3INormalEqualityComparer",
-      "Name": "Vector3INormalEqualityComparer",
-      "Namespace": "VRageMath",
-      "Assembly": "VRage.Math",
-      "XmlDocKey": "T:VRageMath.Vector3INormalEqualityComparer",
-      "Kind": "class",
-      "Modifiers": "public",
-      "Signature": "public class Vector3INormalEqualityComparer",
-      "IsStatic": false,
-      "Interfaces": [
-        "System.Collections.Generic.IEqualityComparer"
-      ],
-      "Documentation": {
-        "Summary": "This can be used only to compare normal vectors of Vector3I, where X, Y and Z has values -1, 0 or 1"
-      },
-      "Members": [
-        {
-          "Kind": "constructor",
-          "Name": ".ctor",
-          "PageName": "VRageMath.Vector3INormalEqualityComparer@.ctor",
-          "XmlDocKey": "C:VRageMath.Vector3INormalEqualityComparer..ctor()",
-          "Signature": "VRageMath.Vector3INormalEqualityComparer.Vector3INormalEqualityComparer()",
-          "IsStatic": false
-        },
-        {
-          "Kind": "method",
-          "Name": "Equals",
-          "PageName": "VRageMath.Vector3INormalEqualityComparer@Equals",
-          "XmlDocKey": "M:VRageMath.Vector3INormalEqualityComparer.Equals(VRageMath.Vector3I,VRageMath.Vector3I)",
-          "Signature": "bool VRageMath.Vector3INormalEqualityComparer.Equals(x, y)",
-          "IsStatic": false,
-          "ReturnType": "bool",
-          "Parameters": [
-            {
-              "Name": "x",
-              "Type": "VRageMath.Vector3I",
-              "IsOut": false,
-              "IsRef": false,
-              "HasDefaultValue": false
-            },
-            {
-              "Name": "y",
-              "Type": "VRageMath.Vector3I",
-              "IsOut": false,
-              "IsRef": false,
-              "HasDefaultValue": false
-            }
-          ]
-        },
-        {
-          "Kind": "method",
-          "Name": "GetHashCode",
-          "PageName": "VRageMath.Vector3INormalEqualityComparer@GetHashCode",
-          "XmlDocKey": "M:VRageMath.Vector3INormalEqualityComparer.GetHashCode(VRageMath.Vector3I)",
-          "Signature": "int VRageMath.Vector3INormalEqualityComparer.GetHashCode(x)",
-          "IsStatic": false,
-          "ReturnType": "int",
-          "Parameters": [
-            {
-              "Name": "x",
-              "Type": "VRageMath.Vector3I",
-              "IsOut": false,
-              "IsRef": false,
-              "HasDefaultValue": false
-            }
-          ]
         }
       ]
     },
@@ -225330,6 +225364,77 @@
       ]
     },
     {
+      "FullName": "VRageMath.Vector3LNormalEqualityComparer",
+      "PageName": "VRageMath.Vector3LNormalEqualityComparer",
+      "Name": "Vector3LNormalEqualityComparer",
+      "Namespace": "VRageMath",
+      "Assembly": "VRage.Math",
+      "XmlDocKey": "T:VRageMath.Vector3LNormalEqualityComparer",
+      "Kind": "class",
+      "Modifiers": "public",
+      "Signature": "public class Vector3LNormalEqualityComparer",
+      "IsStatic": false,
+      "Interfaces": [
+        "System.Collections.Generic.IEqualityComparer"
+      ],
+      "Documentation": {
+        "Summary": "This can be used only to compare normal vectors of Vector3L, where X, Y and Z has values -1, 0 or 1"
+      },
+      "Members": [
+        {
+          "Kind": "constructor",
+          "Name": ".ctor",
+          "PageName": "VRageMath.Vector3LNormalEqualityComparer@.ctor",
+          "XmlDocKey": "C:VRageMath.Vector3LNormalEqualityComparer..ctor()",
+          "Signature": "VRageMath.Vector3LNormalEqualityComparer.Vector3LNormalEqualityComparer()",
+          "IsStatic": false
+        },
+        {
+          "Kind": "method",
+          "Name": "Equals",
+          "PageName": "VRageMath.Vector3LNormalEqualityComparer@Equals",
+          "XmlDocKey": "M:VRageMath.Vector3LNormalEqualityComparer.Equals(VRageMath.Vector3L,VRageMath.Vector3L)",
+          "Signature": "bool VRageMath.Vector3LNormalEqualityComparer.Equals(x, y)",
+          "IsStatic": false,
+          "ReturnType": "bool",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "VRageMath.Vector3L",
+              "IsOut": false,
+              "IsRef": false,
+              "HasDefaultValue": false
+            },
+            {
+              "Name": "y",
+              "Type": "VRageMath.Vector3L",
+              "IsOut": false,
+              "IsRef": false,
+              "HasDefaultValue": false
+            }
+          ]
+        },
+        {
+          "Kind": "method",
+          "Name": "GetHashCode",
+          "PageName": "VRageMath.Vector3LNormalEqualityComparer@GetHashCode",
+          "XmlDocKey": "M:VRageMath.Vector3LNormalEqualityComparer.GetHashCode(VRageMath.Vector3L)",
+          "Signature": "int VRageMath.Vector3LNormalEqualityComparer.GetHashCode(x)",
+          "IsStatic": false,
+          "ReturnType": "int",
+          "Parameters": [
+            {
+              "Name": "x",
+              "Type": "VRageMath.Vector3L",
+              "IsOut": false,
+              "IsRef": false,
+              "HasDefaultValue": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "FullName": "VRageMath.Vector3L_RangeIterator",
       "PageName": "VRageMath.Vector3L_RangeIterator",
       "Name": "Vector3L_RangeIterator",
@@ -225417,77 +225522,6 @@
           "Signature": "void VRageMath.Vector3L_RangeIterator.MoveNext()",
           "IsStatic": false,
           "ReturnType": "System.Void"
-        }
-      ]
-    },
-    {
-      "FullName": "VRageMath.Vector3LNormalEqualityComparer",
-      "PageName": "VRageMath.Vector3LNormalEqualityComparer",
-      "Name": "Vector3LNormalEqualityComparer",
-      "Namespace": "VRageMath",
-      "Assembly": "VRage.Math",
-      "XmlDocKey": "T:VRageMath.Vector3LNormalEqualityComparer",
-      "Kind": "class",
-      "Modifiers": "public",
-      "Signature": "public class Vector3LNormalEqualityComparer",
-      "IsStatic": false,
-      "Interfaces": [
-        "System.Collections.Generic.IEqualityComparer"
-      ],
-      "Documentation": {
-        "Summary": "This can be used only to compare normal vectors of Vector3L, where X, Y and Z has values -1, 0 or 1"
-      },
-      "Members": [
-        {
-          "Kind": "constructor",
-          "Name": ".ctor",
-          "PageName": "VRageMath.Vector3LNormalEqualityComparer@.ctor",
-          "XmlDocKey": "C:VRageMath.Vector3LNormalEqualityComparer..ctor()",
-          "Signature": "VRageMath.Vector3LNormalEqualityComparer.Vector3LNormalEqualityComparer()",
-          "IsStatic": false
-        },
-        {
-          "Kind": "method",
-          "Name": "Equals",
-          "PageName": "VRageMath.Vector3LNormalEqualityComparer@Equals",
-          "XmlDocKey": "M:VRageMath.Vector3LNormalEqualityComparer.Equals(VRageMath.Vector3L,VRageMath.Vector3L)",
-          "Signature": "bool VRageMath.Vector3LNormalEqualityComparer.Equals(x, y)",
-          "IsStatic": false,
-          "ReturnType": "bool",
-          "Parameters": [
-            {
-              "Name": "x",
-              "Type": "VRageMath.Vector3L",
-              "IsOut": false,
-              "IsRef": false,
-              "HasDefaultValue": false
-            },
-            {
-              "Name": "y",
-              "Type": "VRageMath.Vector3L",
-              "IsOut": false,
-              "IsRef": false,
-              "HasDefaultValue": false
-            }
-          ]
-        },
-        {
-          "Kind": "method",
-          "Name": "GetHashCode",
-          "PageName": "VRageMath.Vector3LNormalEqualityComparer@GetHashCode",
-          "XmlDocKey": "M:VRageMath.Vector3LNormalEqualityComparer.GetHashCode(VRageMath.Vector3L)",
-          "Signature": "int VRageMath.Vector3LNormalEqualityComparer.GetHashCode(x)",
-          "IsStatic": false,
-          "ReturnType": "int",
-          "Parameters": [
-            {
-              "Name": "x",
-              "Type": "VRageMath.Vector3L",
-              "IsOut": false,
-              "IsRef": false,
-              "HasDefaultValue": false
-            }
-          ]
         }
       ]
     },
@@ -232947,7 +232981,8 @@
         "VRage.Game.MyCubeSize",
         "VRage.Game.MyDefinitionId",
         "VRage.Game.MyRelationsBetweenPlayerAndBlock",
-        "VRage.Game.MyRelationsBetweenPlayerAndBlockExtensions"
+        "VRage.Game.MyRelationsBetweenPlayerAndBlockExtensions",
+        "VRage.Game.MyObjectBuilder_ToolbarItemActionParameter"
       ]
     },
     {
@@ -232961,7 +232996,8 @@
     {
       "Name": "VRage.Game.Components.Interfaces",
       "Types": [
-        "VRage.Game.Components.Interfaces.IMyComponentContainer"
+        "VRage.Game.Components.Interfaces.IMyComponentContainer",
+        "VRage.Game.Components.Interfaces.IMyEntityComponentContainer"
       ]
     },
     {

@@ -359,7 +359,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (item.type === 'namespace') {
                 prefix = 'Namespace';
             } else if (item.type === 'type') {
-                prefix = 'Type';
+                prefix = item.prohibited ? 'Prohibited type' : 'Type';
             } else if (item.type === 'member') {
                 prefix = 'Member';
             }
