@@ -17,10 +17,10 @@ public struct SerializableQuaternion
 
 |Member|Description|
 |---|---|
-|[w](VRage.SerializableQuaternion@w)||
-|[x](VRage.SerializableQuaternion@x)||
-|[y](VRage.SerializableQuaternion@y)||
-|[z](VRage.SerializableQuaternion@z)||
+|[w](VRage.SerializableQuaternion@w-2)||
+|[x](VRage.SerializableQuaternion@x-2)||
+|[y](VRage.SerializableQuaternion@y-2)||
+|[z](VRage.SerializableQuaternion@z-2)||
 
 ## Constructors
 

@@ -1,0 +1,13 @@
+{
+  "Generated": "2026-08-30T07:44:59.405497Z",
+  "WhitelistHash": "166d2080c245110792d9a8d2eb27aff90fa325022b8d124b2195d8d1e9869ade",
+  "TerminalHash": "4a3a56000d0fabf06dfee5024519c6a5d57030d69bc063880df09bfe29e2e733",
+  "GameBinaryHashes": {
+    "Sandbox.Common.dll": "eac978813c906c4c055ef8a9bf86bd71065ece91fd3da8866a3d810d81bd4d24",
+    "Sandbox.Game.dll": "de04e9162bcf87fc07cec377213d99533bcfe1c34c9e1e2231168144c9d67edf",
+    "VRage.dll": "ec2410b3d916adbd7404c3082ccc25a70c8baec89bacb57001c67597068e24ca",
+    "VRage.Game.dll": "f0970c2b60335f7690e158a485cd528703717c8c5002f2713556e04f09c508e1",
+    "VRage.Math.dll": "953ed575327ffec5a72baf13c893843c26f7d248cd1ece1372ec34d650618f1c",
+    "VRage.Scripting.dll": "57579dcd5742e85dadc67d8fb890260daa0f90d82062a8f971341dcf236abf97"
+  }
+}

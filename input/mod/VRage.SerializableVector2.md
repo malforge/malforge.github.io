@@ -15,8 +15,8 @@ public struct SerializableVector2
 
 |Member|Description|
 |---|---|
-|[x](VRage.SerializableVector2@x)||
-|[y](VRage.SerializableVector2@y)||
+|[x](VRage.SerializableVector2@x-2)||
+|[y](VRage.SerializableVector2@y-2)||
 
 ## Constructors
 

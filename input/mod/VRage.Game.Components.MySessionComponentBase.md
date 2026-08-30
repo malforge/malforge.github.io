@@ -69,6 +69,5 @@ public abstract class MySessionComponentBase: IMyUserInputComponent
 * [MyLights](Sandbox.Game.Lights.MyLights)  
 * [MyMeteorShower](Sandbox.Game.Entities.MyMeteorShower)  
 * [MyParticlesManager](VRage.Game.MyParticlesManager)  
-* [MyPhysics](Sandbox.Engine.Physics.MyPhysics)  
 * [MySessionComponentSafeZones](Sandbox.Game.Entities.MySessionComponentSafeZones)
 

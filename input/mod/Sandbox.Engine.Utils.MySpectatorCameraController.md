@@ -27,6 +27,7 @@ public class MySpectatorCameraController: MySpectator, IMyCameraController
 
 |Member|Description|
 |---|---|
+|[IsLightOn](Sandbox.Engine.Utils.MySpectatorCameraController@IsLightOn)||
 |[AllowCubeBuilding](VRage.Game.ModAPI.Interfaces.IMyCameraController@AllowCubeBuilding)|Gets if player block building enabled<br /><br />_Inherited from [IMyCameraController](VRage.Game.ModAPI.Interfaces.IMyCameraController)_|
 |[EnableFirstPersonView](VRage.Game.ModAPI.Interfaces.IMyCameraController@EnableFirstPersonView)|Gets or set if player can use first person view<br /><br />_Inherited from [IMyCameraController](VRage.Game.ModAPI.Interfaces.IMyCameraController)_|
 |[Entity](VRage.Game.ModAPI.Interfaces.IMyCameraController@Entity)|Gets Entity to which it is attached<br /><br />_Inherited from [IMyCameraController](VRage.Game.ModAPI.Interfaces.IMyCameraController)_|

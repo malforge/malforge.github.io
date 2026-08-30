@@ -16,6 +16,7 @@ public class InitEntityData: WorkData
 |---|---|
 |[CallInitEntity(bool)](Sandbox.Game.Entities.MyEntities+InitEntityData@CallInitEntity)||
 |[OnEntityInitialized()](Sandbox.Game.Entities.MyEntities+InitEntityData@OnEntityInitialized)||
+|[FlagAsFailed()](ParallelTasks.WorkData@FlagAsFailed)|_Inherited from [WorkData](ParallelTasks.WorkData)_|
 
 **Inheritance:**   [WorkData](ParallelTasks.WorkData)
 

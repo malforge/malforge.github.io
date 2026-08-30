@@ -8,6 +8,7 @@ public class MyHud: MySessionComponentBase, IMyUserInputComponent
 
 |Member|Description|
 |---|---|
+|[static BlockInfo](Sandbox.Game.Gui.MyHud@BlockInfo)||
 |[ComponentType](VRage.Game.Components.MySessionComponentBase@ComponentType)|_Inherited from [MySessionComponentBase](VRage.Game.Components.MySessionComponentBase)_|
 |[DebugName](VRage.Game.Components.MySessionComponentBase@DebugName)|_Inherited from [MySessionComponentBase](VRage.Game.Components.MySessionComponentBase)_|
 |[Priority](VRage.Game.Components.MySessionComponentBase@Priority)|_Inherited from [MySessionComponentBase](VRage.Game.Components.MySessionComponentBase)_|

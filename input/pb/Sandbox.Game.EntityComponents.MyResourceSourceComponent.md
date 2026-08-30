@@ -4,6 +4,18 @@
 public class MyResourceSourceComponent: MyResourceSourceComponentBase, IMyComponentBase, IMyEntityComponentBase
 ```
 
+## Properties
+
+|Member|Description|
+|---|---|
+|[CurrentOutput](Sandbox.Game.EntityComponents.MyResourceSourceComponent@CurrentOutput)||
+|[DefinedOutput](Sandbox.Game.EntityComponents.MyResourceSourceComponent@DefinedOutput)||
+|[HasCapacityRemaining](Sandbox.Game.EntityComponents.MyResourceSourceComponent@HasCapacityRemaining)||
+|[MaxOutput](Sandbox.Game.EntityComponents.MyResourceSourceComponent@MaxOutput)||
+|[ProductionEnabled](Sandbox.Game.EntityComponents.MyResourceSourceComponent@ProductionEnabled)||
+|[RemainingCapacity](Sandbox.Game.EntityComponents.MyResourceSourceComponent@RemainingCapacity)||
+|[ResourceTypes](Sandbox.Game.EntityComponents.MyResourceSourceComponent@ResourceTypes)||
+
 ## Methods
 
 |Member|Description|

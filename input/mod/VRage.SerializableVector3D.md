@@ -17,9 +17,9 @@ public struct SerializableVector3D
 |Member|Description|
 |---|---|
 |[IsZero](VRage.SerializableVector3D@IsZero)||
-|[x](VRage.SerializableVector3D@x)||
-|[y](VRage.SerializableVector3D@y)||
-|[z](VRage.SerializableVector3D@z)||
+|[x](VRage.SerializableVector3D@x-2)||
+|[y](VRage.SerializableVector3D@y-2)||
+|[z](VRage.SerializableVector3D@z-2)||
 
 ## Constructors
 

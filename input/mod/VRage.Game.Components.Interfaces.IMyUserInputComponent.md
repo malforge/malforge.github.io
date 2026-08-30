@@ -20,7 +20,6 @@ public interface IMyUserInputComponent
 * [MyLights](Sandbox.Game.Lights.MyLights)  
 * [MyMeteorShower](Sandbox.Game.Entities.MyMeteorShower)  
 * [MyParticlesManager](VRage.Game.MyParticlesManager)  
-* [MyPhysics](Sandbox.Engine.Physics.MyPhysics)  
 * [MySessionComponentBase](VRage.Game.Components.MySessionComponentBase)  
 * [MySessionComponentSafeZones](Sandbox.Game.Entities.MySessionComponentSafeZones)
 

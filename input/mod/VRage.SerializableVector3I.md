@@ -16,9 +16,9 @@ public struct SerializableVector3I
 
 |Member|Description|
 |---|---|
-|[x](VRage.SerializableVector3I@x)||
-|[y](VRage.SerializableVector3I@y)||
-|[z](VRage.SerializableVector3I@z)||
+|[x](VRage.SerializableVector3I@x-2)||
+|[y](VRage.SerializableVector3I@y-2)||
+|[z](VRage.SerializableVector3I@z-2)||
 
 ## Constructors
 

@@ -16,9 +16,9 @@ public struct SerializableVector3UByte
 
 |Member|Description|
 |---|---|
-|[x](VRage.SerializableVector3UByte@x)||
-|[y](VRage.SerializableVector3UByte@y)||
-|[z](VRage.SerializableVector3UByte@z)||
+|[x](VRage.SerializableVector3UByte@x-2)||
+|[y](VRage.SerializableVector3UByte@y-2)||
+|[z](VRage.SerializableVector3UByte@z-2)||
 
 ## Constructors
 

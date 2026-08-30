@@ -13,6 +13,3 @@ public interface IHitInfo
 |[Normal](VRage.Game.ModAPI.IHitInfo@Normal)|The direction vector of the hit surface.|
 |[Position](VRage.Game.ModAPI.IHitInfo@Position)|The position where the raycast hit.|
 
-**Inheritors:**  
-* [HitInfo](Sandbox.Engine.Physics.MyPhysics+HitInfo)
-

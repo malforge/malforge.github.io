@@ -6,5 +6,5 @@ public virtual void EndInvoke(ref MyContactPointEvent evt, IAsyncResult result)
 
 ## Parameters
 
-* [MyContactPointEvent](Sandbox.Engine.Physics.MyPhysics+MyContactPointEvent) evt
+* MyContactPointEvent <sub>prohibited</sub> evt
 * IAsyncResult <sub>prohibited</sub> result

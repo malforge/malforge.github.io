@@ -54,7 +54,7 @@ public sealed class MyGamePruningStructure: MySessionComponentBase, IMyUserInput
 |[static GetClosestPlanet(Vector3D)](Sandbox.Game.Entities.MyGamePruningStructure@GetClosestPlanet)|Get the closest planet overlapping a position. This will not return anything if the position is not within the bounding box of the planet.|
 |[static GetClosestPlanet(ref BoundingBoxD)](Sandbox.Game.Entities.MyGamePruningStructure@GetClosestPlanet)||
 |[static GetEntityAABB(MyEntity)](Sandbox.Game.Entities.MyGamePruningStructure@GetEntityAABB)||
-|[static GetTopmostEntitiesInBox(ref BoundingBoxD, List<MyEntity>, MyEntityQueryType)](Sandbox.Game.Entities.MyGamePruningStructure@GetTopmostEntitiesInBox)||
+|[static GetTopmostEntitiesInBox(ref BoundingBoxD, List<MyEntity>, MyEntityQueryType)](Sandbox.Game.Entities.MyGamePruningStructure@GetTopmostEntitiesInBox-2)||
 |[static GetTopMostEntitiesInBox(ref BoundingBoxD, List<MyEntity>, MyEntityQueryType)](Sandbox.Game.Entities.MyGamePruningStructure@GetTopMostEntitiesInBox)||
 |[static GetTopmostEntitiesOverlappingRay(ref LineD, List<MyLineSegmentOverlapResult<MyEntity>>, MyEntityQueryType)](Sandbox.Game.Entities.MyGamePruningStructure@GetTopmostEntitiesOverlappingRay)||
 |[static GetVoxelMapsOverlappingRay(ref LineD, List<MyLineSegmentOverlapResult<MyVoxelBase>>)](Sandbox.Game.Entities.MyGamePruningStructure@GetVoxelMapsOverlappingRay)||

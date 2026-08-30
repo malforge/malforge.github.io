@@ -12,6 +12,6 @@ IAsyncResult <sub>prohibited</sub>
 
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) itemId
 * [MyEntity](VRage.Game.Entity.MyEntity) other
-* [MyContactPointEvent](Sandbox.Engine.Physics.MyPhysics+MyContactPointEvent) evt
+* MyContactPointEvent <sub>prohibited</sub> evt
 * AsyncCallback <sub>prohibited</sub> callback
 * [object](https://docs.microsoft.com/en-us/dotnet/api/System.Object?view=netframework-4.6) object
