@@ -9,8 +9,10 @@ namespace DocGen.Services.MarkdownGenerators
 {
     internal class NamespaceIndexGenerator : DocumentGenerator
     {
-        public override async Task Generate(DirectoryInfo directory, ProgrammableBlockApi api)
+        public override async Task Generate(DirectoryInfo directory, ProgrammableBlockApi api, Func<string, bool> includesPage)
         {
+            if (!includesPage("Namespace-Index.md"))
+                return;
             var fileName = FileHelpers.ToLongPathSafe(Path.Combine(directory.FullName, "Namespace-Index.md"));
             using (var file = File.CreateText(fileName))
             {

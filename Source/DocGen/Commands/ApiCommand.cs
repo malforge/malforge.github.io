@@ -20,6 +20,7 @@ namespace DocGen.Commands
             var whitelistPath = GetArgValue(args, "--whitelist");
             var outputPath = GetArgValue(args, "--output");
             var forceRegeneration = args.Contains("--force");
+            var onlyPages = GetArgValue(args, "--only")?.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
 
             // Auto-detect terminal file if not specified
             if (string.IsNullOrEmpty(terminalPath)) terminalPath = FileHelpers.FindDefaultFile("terminal.dat");
@@ -55,7 +56,7 @@ namespace DocGen.Commands
 
             try
             {
-                var generated = await ProgrammableBlockApi.Update(terminalPath, whitelistPath, outputPath, forceRegeneration);
+                var generated = await ProgrammableBlockApi.Update(terminalPath, whitelistPath, outputPath, forceRegeneration, onlyPages);
                 if (generated)
                     Console.WriteLine("✓ API documentation generated successfully");
                 return 0;
@@ -71,13 +72,14 @@ namespace DocGen.Commands
         {
             Console.WriteLine("Generate API documentation from whitelist");
             Console.WriteLine();
-            Console.WriteLine("Usage: docgen api --output <directory> [--terminal <file>] [--whitelist <file>] [--force]");
+            Console.WriteLine("Usage: docgen api --output <directory> [--terminal <file>] [--whitelist <file>] [--force] [--only <page>[,<page>...]]");
             Console.WriteLine();
             Console.WriteLine("Options:");
             Console.WriteLine("  --output     Output directory for API documentation (required)");
             Console.WriteLine("  --terminal   Path to terminal.dat cache file (default: current dir, fallback: exe dir)");
             Console.WriteLine("  --whitelist  Path to pbwhitelist.dat file (default: current dir, fallback: exe dir)");
             Console.WriteLine("  --force      Force regeneration, ignoring dependency checks");
+            Console.WriteLine("  --only       Write only these pages, named without .md (always regenerates, leaves the manifest alone)");
         }
 
         static string GetArgValue(string[] args, string flag)

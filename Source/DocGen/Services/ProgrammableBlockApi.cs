@@ -60,28 +60,40 @@ namespace DocGen.Services
             }
         }
 
-        public static async Task<bool> Update(string terminalsCacheFileName, string whitelistCacheFileName, string output, bool forceRegeneration = false)
+        /// <summary>
+        ///     Writes the API pages into <paramref name="output" />, or only the pages named in
+        ///     <paramref name="onlyPages" /> when it is given.
+        /// </summary>
+        /// <remarks>
+        ///     A run limited by <paramref name="onlyPages" /> always generates and never records the dependency
+        ///     manifest, so the next full run is not skipped.
+        /// </remarks>
+        public static async Task<bool> Update(string terminalsCacheFileName, string whitelistCacheFileName, string output, bool forceRegeneration = false, IReadOnlyCollection<string> onlyPages = null)
         {
             var spaceEngineers = new SpaceEngineers();
             var gameBinPath = Path.Combine(spaceEngineers.GetInstallPath(), "bin64");
-            
+
+            var pageNames = onlyPages == null ? null : new HashSet<string>(onlyPages, StringComparer.OrdinalIgnoreCase);
+
             // Check if regeneration is needed
-            if (!forceRegeneration && !DependencyManifest.NeedsRegeneration(output, whitelistCacheFileName, terminalsCacheFileName, gameBinPath, "api"))
+            if (pageNames == null && !forceRegeneration && !DependencyManifest.NeedsRegeneration(output, whitelistCacheFileName, terminalsCacheFileName, gameBinPath, "api"))
             {
                 Console.WriteLine("✓ Skipping API generation (dependencies unchanged)");
                 return false;
             }
-            
+
             if (forceRegeneration)
             {
                 Console.WriteLine("Force regeneration enabled");
             }
-            
+
             var api = await LoadAsync(whitelistCacheFileName);
             var typeDefinitions = await TypeDefinitions.LoadAsync(terminalsCacheFileName, spaceEngineers.GetInstallPath("Content\\Data"));
 
-            await api.SaveAsync(typeDefinitions, output);
-            
+            await api.SaveAsync(typeDefinitions, output, fileName => pageNames == null || pageNames.Contains(Path.GetFileNameWithoutExtension(fileName)));
+            if (pageNames != null)
+                return true;
+
             // Save manifest after successful generation
             var manifest = DependencyManifest.BuildManifest(whitelistCacheFileName, terminalsCacheFileName, gameBinPath);
             DependencyManifest.SaveManifest(manifest, output, "api");
@@ -297,7 +309,7 @@ namespace DocGen.Services
             return includeBlacklisted ? entry : null;
         }
 
-        public async Task SaveAsync(TypeDefinitions typeDefinitions, string path)
+        public async Task SaveAsync(TypeDefinitions typeDefinitions, string path, Func<string, bool> includesPage)
         {
             // Load type overrides config if it exists
             var configPath = FileHelpers.FindDefaultFile("docgen-overrides.txt");
@@ -316,7 +328,7 @@ namespace DocGen.Services
             var directory = new DirectoryInfo(path);
             if (!directory.Exists)
                 directory.Create();
-            await Task.Run(() => { Task.WaitAll(generators.Select(g => g.Generate(directory, this)).ToArray()); });
+            await Task.Run(() => { Task.WaitAll(generators.Select(g => g.Generate(directory, this, includesPage)).ToArray()); });
         }
 
         public bool IsAdditionalEntry(ApiEntry entry)

@@ -166,6 +166,10 @@ namespace DocGen.Services.MarkdownGenerators
             return null;
         }
 
-        public abstract Task Generate(DirectoryInfo directory, ProgrammableBlockApi api);
+        /// <summary>
+        ///     Writes this generator's pages into <paramref name="directory" />, skipping any page whose file name
+        ///     <paramref name="includesPage" /> rejects.
+        /// </summary>
+        public abstract Task Generate(DirectoryInfo directory, ProgrammableBlockApi api, Func<string, bool> includesPage);
     }
 }

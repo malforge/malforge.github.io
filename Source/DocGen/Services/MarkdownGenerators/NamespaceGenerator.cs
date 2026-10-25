@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using DocGen.Services.Markdown;
@@ -7,7 +8,7 @@ namespace DocGen.Services.MarkdownGenerators
 {
     internal class NamespaceGenerator : DocumentGenerator
     {
-        public override async Task Generate(DirectoryInfo directory, ProgrammableBlockApi api)
+        public override async Task Generate(DirectoryInfo directory, ProgrammableBlockApi api, Func<string, bool> includesPage)
         {
             await Task.CompletedTask;
             // var namespaces = api.Entries.GroupBy(e => e.NamespaceName);

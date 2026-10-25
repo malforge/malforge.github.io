@@ -59,23 +59,6 @@ namespace DocGen.Services.MarkdownGenerators
                     return text + " <sub>prohibited</sub>";
             }
 
-            // Debug logging for GridLinkTypeEnum
-            if (entry.FullName?.Contains("GridLinkTypeEnum") == true)
-            {
-                var debugInfo = "=== DEBUG: GridLinkTypeEnum Reference ===\n" +
-                                $"Text: {text}\n" +
-                                $"FullName: {entry.FullName}\n" +
-                                $"Member: {entry.Member}\n" +
-                                $"Member Type: {entry.Member?.GetType()}\n" +
-                                $"Declaring Type: {entry.Member?.DeclaringType}\n" +
-                                $"Assembly: {entry.Member?.GetAssembly()?.FullName}\n" +
-                                $"Assembly Company: {entry.Member?.GetAssembly()?.GetCustomAttribute<AssemblyCompanyAttribute>()?.Company}\n" +
-                                $"IsMsType Result: {MicrosoftLink.IsMsType(entry.Member)}\n" +
-                                $"IsWhitelisted: {entry.IsWhitelisted}\n" +
-                                "==========================================\n\n";
-                File.AppendAllText("C:\\Temp\\docgen-debug.log", debugInfo);
-            }
-
             if (MicrosoftLink.IsMsType(entry.Member))
             {
                 var type = entry.Member as Type;
@@ -108,11 +91,12 @@ namespace DocGen.Services.MarkdownGenerators
             return IgnoreReason.No;
         }
 
-        public override async Task Generate(DirectoryInfo directory, ProgrammableBlockApi api)
+        public override async Task Generate(DirectoryInfo directory, ProgrammableBlockApi api, Func<string, bool> includesPage)
         {
             var groups = api.Entries
                 .Where(e => !(e.Member is Type) && ShouldBeIgnored(e) == IgnoreReason.No)
                 .GroupBy(e => e.SuggestedFileName)
+                .Where(g => includesPage(g.Key))
                 .ToList(); // Materialize to check for issues
 
             var tasks = groups.Select(g => GeneratePage(api, directory, g));
@@ -174,12 +158,67 @@ namespace DocGen.Services.MarkdownGenerators
             }
         }
 
-        string GetTypeInfo(ProgrammableBlockApi api, Type type)
+        /// <summary>
+        ///     Returns a type reference with the type, each of its generic arguments and its array element type
+        ///     linked separately.
+        /// </summary>
+        static string LinkToType(ProgrammableBlockApi api, Type type) => LinkToType(api, type, "");
+
+        /// <summary>
+        ///     Returns a type reference with <paramref name="suffix" />, the nullable mark and array brackets, written
+        ///     straight after the type name, ahead of any prohibited marker.
+        /// </summary>
+        static string LinkToType(ProgrammableBlockApi api, Type type, string suffix)
         {
-            var entry = api.GetEntry(type);
-            if (entry == null)
-                return type.GetHumanReadableName();
-            return LinkTo(entry.ToString(ApiEntryStringFlags.ShortDisplayName), entry);
+            if (type.IsGenericParameter)
+                return type.Name + suffix;
+            if (type.IsByRef)
+                return LinkToType(api, type.GetElementType(), suffix);
+            if (type.IsArray)
+                return LinkToType(api, type.GetElementType(), $"[{new string(',', type.GetArrayRank() - 1)}]{suffix}");
+            var nullableBase = Nullable.GetUnderlyingType(type);
+            if (nullableBase != null)
+                return LinkToType(api, nullableBase, "?" + suffix);
+
+            if (!type.IsGenericType)
+            {
+                var entry = api.GetEntry(type, true);
+                return entry == null ? type.Name + suffix : LinkTo(entry.ToString(ApiEntryStringFlags.ShortDisplayName) + suffix, entry);
+            }
+
+            var definition = type.GetGenericTypeDefinition();
+            var definitionEntry = api.GetEntry(definition, true);
+            var name = LinkToGenericName(api, definition, type.GetGenericArguments());
+            if (definitionEntry != null && ShouldBeIgnored(definitionEntry) == IgnoreReason.Prohibited)
+                return $"{name}{suffix} <sub>prohibited</sub>";
+            return name + suffix;
+        }
+
+        /// <summary>
+        ///     Returns the name of a constructed generic type, preceded by its generic declaring type, each linked to the
+        ///     page of its definition unless prohibited.
+        /// </summary>
+        static string LinkToGenericName(ProgrammableBlockApi api, Type definition, Type[] arguments)
+        {
+            // A type nested in a generic type carries the declaring type's arguments ahead of its own.
+            var prefix = "";
+            var declaringType = definition.DeclaringType;
+            if (declaringType != null && declaringType.IsGenericTypeDefinition)
+            {
+                var declaringCount = declaringType.GetGenericArguments().Length;
+                prefix = LinkToGenericName(api, declaringType, arguments.Take(declaringCount).ToArray()) + ".";
+                arguments = arguments.Skip(declaringCount).ToArray();
+            }
+
+            var entry = api.GetEntry(definition, true);
+            var name = entry?.ToString(ApiEntryStringFlags.ShortDisplayName & ~ApiEntryStringFlags.GenericParameters) ?? definition.Name.Split('`')[0];
+            if (entry != null && ShouldBeIgnored(entry) != IgnoreReason.Prohibited)
+                name = LinkTo(name, entry);
+            if (arguments.Length == 0)
+                return prefix + name;
+
+            // The angle brackets are encoded because the browser takes a raw <Name> for an HTML tag and drops it.
+            return $"{prefix}{name}&lt;{string.Join(", ", arguments.Select(argument => LinkToType(api, argument)))}&gt;";
         }
 
         async Task WriteMethod(ProgrammableBlockApi api, ApiEntry overload, MarkdownWriter writer, MethodInfo methodInfo)
@@ -192,9 +231,8 @@ namespace DocGen.Services.MarkdownGenerators
             if (methodInfo.ReturnType != typeof(void))
             {
                 await writer.WriteHeaderAsync(2, "Returns");
-                var returnEntry = api.GetEntry(methodInfo.ReturnType, true);
                 await writer.BeginParagraphAsync();
-                await writer.WriteAsync(LinkTo(returnEntry.ToString(ApiEntryStringFlags.ShortDisplayName), returnEntry));
+                await writer.WriteAsync(LinkToType(api, methodInfo.ReturnType));
                 await writer.EndParagraphAsync();
                 if (overload.Documentation?.Returns != null)
                     await WriteDocumentation(api, overload.Documentation?.Returns, writer);
@@ -206,9 +244,8 @@ namespace DocGen.Services.MarkdownGenerators
                 await writer.WriteHeaderAsync(2, "Parameters");
                 foreach (var parameter in parameters)
                 {
-                    var returnEntry = api.GetEntry(parameter.GetActualParameterType(), true);
                     await writer.WriteAsync("* ");
-                    await writer.WriteAsync(LinkTo(returnEntry.ToString(ApiEntryStringFlags.ShortDisplayName), returnEntry));
+                    await writer.WriteAsync(LinkToType(api, parameter.GetActualParameterType()));
                     await writer.WriteAsync(" ");
                     await writer.WriteAsync(parameter.Name);
                     await writer.WriteLineAsync();
@@ -236,10 +273,8 @@ namespace DocGen.Services.MarkdownGenerators
             if (overload.Documentation?.Summary != null)
                 await WriteDocumentation(api, overload.Documentation?.Summary, writer);
             await writer.WriteHeaderAsync(2, "Returns");
-            var returnEntry = api.GetEntry(propertyInfo.PropertyType, true);
             await writer.BeginParagraphAsync();
-            if (returnEntry != null)
-                await writer.WriteAsync(LinkTo(returnEntry.ToString(ApiEntryStringFlags.ShortDisplayName), returnEntry));
+            await writer.WriteAsync(LinkToType(api, propertyInfo.PropertyType));
             await writer.EndParagraphAsync();
             if (overload.Documentation?.Returns != null)
                 await WriteDocumentation(api, overload.Documentation?.Returns, writer);
@@ -265,9 +300,8 @@ namespace DocGen.Services.MarkdownGenerators
             if (overload.Documentation?.Summary != null)
                 await WriteDocumentation(api, overload.Documentation?.Summary, writer);
             await writer.WriteHeaderAsync(2, "Returns");
-            var returnEntry = api.GetEntry(eventInfo.EventHandlerType, true);
             await writer.BeginParagraphAsync();
-            await writer.WriteAsync(LinkTo(returnEntry.ToString(ApiEntryStringFlags.ShortDisplayName), returnEntry));
+            await writer.WriteAsync(LinkToType(api, eventInfo.EventHandlerType));
             await writer.EndParagraphAsync();
             if (overload.Documentation?.Returns != null)
                 await WriteDocumentation(api, overload.Documentation?.Returns, writer);
@@ -299,9 +333,8 @@ namespace DocGen.Services.MarkdownGenerators
                 await writer.WriteHeaderAsync(2, "Parameters");
                 foreach (var parameter in parameters)
                 {
-                    var returnEntry = api.GetEntry(parameter.GetActualParameterType(), true);
                     await writer.WriteAsync("* ");
-                    await writer.WriteAsync(LinkTo(returnEntry.ToString(ApiEntryStringFlags.ShortDisplayName), returnEntry));
+                    await writer.WriteAsync(LinkToType(api, parameter.GetActualParameterType()));
                     await writer.WriteAsync(" ");
                     await writer.WriteAsync(parameter.Name);
                     await writer.WriteLineAsync();
@@ -329,9 +362,8 @@ namespace DocGen.Services.MarkdownGenerators
             if (overload.Documentation?.Summary != null)
                 await WriteDocumentation(api, overload.Documentation?.Summary, writer);
             await writer.WriteHeaderAsync(2, "Returns");
-            var returnEntry = api.GetEntry(fieldInfo.FieldType, true);
             await writer.BeginParagraphAsync();
-            await writer.WriteAsync(LinkTo(returnEntry.ToString(ApiEntryStringFlags.ShortDisplayName), returnEntry));
+            await writer.WriteAsync(LinkToType(api, fieldInfo.FieldType));
             await writer.EndParagraphAsync();
             if (overload.Documentation?.Returns != null)
                 await WriteDocumentation(api, overload.Documentation?.Returns, writer);

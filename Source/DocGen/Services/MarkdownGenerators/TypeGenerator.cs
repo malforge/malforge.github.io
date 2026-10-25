@@ -21,9 +21,9 @@ namespace DocGen.Services.MarkdownGenerators
             _overrides = overrides ?? new TypeOverridesConfig();
         }
 
-        public override async Task Generate(DirectoryInfo directory, ProgrammableBlockApi api)
+        public override async Task Generate(DirectoryInfo directory, ProgrammableBlockApi api, Func<string, bool> includesPage)
         {
-            var tasks = api.Entries.Where(e => e.DeclaringEntry == null || e.Member.MemberType == MemberTypes.NestedType).Select(g => GeneratePage(api, directory, g));
+            var tasks = api.Entries.Where(e => (e.DeclaringEntry == null || e.Member.MemberType == MemberTypes.NestedType) && includesPage(e.SuggestedFileName)).Select(g => GeneratePage(api, directory, g));
             await Task.WhenAll(tasks);
         }
 

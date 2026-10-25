@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,9 +14,9 @@ namespace DocGen.Services.MarkdownGenerators
     /// </summary>
     internal class ProhibitedTypeGenerator : DocumentGenerator
     {
-        public override async Task Generate(DirectoryInfo directory, ProgrammableBlockApi api)
+        public override async Task Generate(DirectoryInfo directory, ProgrammableBlockApi api, Func<string, bool> includesPage)
         {
-            var tasks = api.ProhibitedTypes.Select(prohibited => GeneratePage(directory, prohibited));
+            var tasks = api.ProhibitedTypes.Where(prohibited => includesPage(prohibited.SuggestedFileName)).Select(prohibited => GeneratePage(directory, prohibited));
             await Task.WhenAll(tasks);
         }
 
