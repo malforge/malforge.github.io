@@ -6,5 +6,5 @@ public SpawnGroupVoxel[] Voxels
 
 ## Returns
 
-[SpawnGroupVoxel[]](VRage.Game.SpawnGroupVoxel[])
+[SpawnGroupVoxel[]](VRage.Game.MyObjectBuilder_SpawnGroupDefinition+SpawnGroupVoxel)
 

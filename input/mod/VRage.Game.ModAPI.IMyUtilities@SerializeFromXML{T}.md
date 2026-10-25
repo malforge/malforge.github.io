@@ -6,7 +6,7 @@ public T SerializeFromXML<T>(string buffer)
 
 ## Returns
 
-[T](VRage.Game.ModAPI.IMyUtilities+T)
+T
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Used to update billboards. It iterates over each MyBillBoard. Use [ApplyActionOn
 
 ## Parameters
 
-* [Action<MyBillboard>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6) action
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[MyBillboard](VRageRender.MyBillboard)&gt; action
 ## Summary
 
 ```csharp

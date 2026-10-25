@@ -6,5 +6,5 @@ public MyObjectBuilder_BlueprintDefinition[] Blueprints
 
 ## Returns
 
-[MyObjectBuilder_BlueprintDefinition[]](VRage.Game.MyObjectBuilder_BlueprintDefinition[])
+[MyObjectBuilder_BlueprintDefinition[]](VRage.Game.MyObjectBuilder_BlueprintDefinition)
 

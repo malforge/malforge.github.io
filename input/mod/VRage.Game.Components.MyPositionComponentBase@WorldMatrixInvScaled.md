@@ -6,5 +6,5 @@ public WorldMatrixInvScaled { get; }
 
 ## Returns
 
-
+[MatrixD](VRageMath.MatrixD)
 

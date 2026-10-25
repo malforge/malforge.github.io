@@ -15,7 +15,7 @@ public static void AddBillboardOriented(MyStringId material, Vector4 color, Vect
 * [BlendTypeEnum](VRageRender.MyBillboard+BlendTypeEnum) blendType
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) customViewProjection
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) reflection
-* [List<MyBillboard>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) persistentBillboards
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyBillboard](VRageRender.MyBillboard)&gt; persistentBillboards
 ## Summary
 
 ```csharp
@@ -31,7 +31,7 @@ public static void AddBillboardOriented(MyStringId material, Vector4 color, Vect
 * [Vector3](VRageMath.Vector3) upVector
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) width
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) height
-* [List<MyBillboard>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) persistentBillboards
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyBillboard](VRageRender.MyBillboard)&gt; persistentBillboards
 ## Summary
 
 ```csharp
@@ -48,7 +48,7 @@ public static void AddBillboardOriented(MyStringId material, Vector4 color, Vect
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) radius
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) customProjection
 * [BlendTypeEnum](VRageRender.MyBillboard+BlendTypeEnum) blendType
-* [List<MyBillboard>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) persistentBillboards
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyBillboard](VRageRender.MyBillboard)&gt; persistentBillboards
 ## Summary
 
 ```csharp
@@ -68,4 +68,4 @@ public static void AddBillboardOriented(MyStringId material, Vector4 color, Vect
 * [BlendTypeEnum](VRageRender.MyBillboard+BlendTypeEnum) blendType
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) customViewProjection
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) reflection
-* [List<MyBillboard>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) persistentBillboards
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyBillboard](VRageRender.MyBillboard)&gt; persistentBillboards

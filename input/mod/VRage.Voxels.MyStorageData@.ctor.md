@@ -22,5 +22,5 @@ public MyStorageData(Vector3I size, Byte[] content, Byte[] material)
 ## Parameters
 
 * [Vector3I](VRageMath.Vector3I) size
-* Byte[] <sub>prohibited</sub> content
-* Byte[] <sub>prohibited</sub> material
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) content
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) material

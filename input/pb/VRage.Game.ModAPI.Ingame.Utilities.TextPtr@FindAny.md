@@ -14,4 +14,4 @@ Finds one of the given characters
 
 ## Parameters
 
-* Char[] <sub>prohibited</sub> chs
+* [char[]](https://docs.microsoft.com/en-us/dotnet/api/System.Char?view=netframework-4.6) chs

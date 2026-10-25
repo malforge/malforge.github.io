@@ -8,7 +8,7 @@ Gets available (inactive) contracts for station. This list contains only NPC fac
 
 ## Returns
 
-[ListReader<IMyContract>](VRage.Collections.ListReader{IMyContract})
+[ListReader](VRage.Collections.ListReader{T})&lt;[IMyContract](VRage.Game.ModAPI.IMyContract)&gt;
 
 
 

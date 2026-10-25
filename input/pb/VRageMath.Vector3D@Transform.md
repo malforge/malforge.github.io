@@ -53,9 +53,9 @@ Transforms a source array of Vector3s by a specified Matrix and writes the resul
 
 ## Parameters
 
-* [Vector3D[]](VRageMath.Vector3D[]) sourceArray
+* [Vector3D[]](VRageMath.Vector3D) sourceArray
 * [MatrixD](VRageMath.MatrixD) matrix
-* [Vector3D[]](VRageMath.Vector3D[]) destinationArray
+* [Vector3D[]](VRageMath.Vector3D) destinationArray
 ## Summary
 
 ```csharp
@@ -64,7 +64,7 @@ public static void Transform(Vector3D[] sourceArray, ref MatrixD matrix, *Vecto
 
 ## Parameters
 
-* [Vector3D[]](VRageMath.Vector3D[]) sourceArray
+* [Vector3D[]](VRageMath.Vector3D) sourceArray
 * [MatrixD](VRageMath.MatrixD) matrix
 * [Vector3D](VRageMath.Vector3D) destinationArray
 ## Summary
@@ -77,10 +77,10 @@ Applies a specified transform Matrix to a specified range of an array of Vector3
 
 ## Parameters
 
-* [Vector3D[]](VRageMath.Vector3D[]) sourceArray
+* [Vector3D[]](VRageMath.Vector3D) sourceArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceIndex
 * [Matrix](VRageMath.Matrix) matrix
-* [Vector3D[]](VRageMath.Vector3D[]) destinationArray
+* [Vector3D[]](VRageMath.Vector3D) destinationArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) destinationIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length
 ## Summary
@@ -93,9 +93,9 @@ Transforms a source array of Vector3s by a specified Quaternion rotation and wri
 
 ## Parameters
 
-* [Vector3D[]](VRageMath.Vector3D[]) sourceArray
+* [Vector3D[]](VRageMath.Vector3D) sourceArray
 * [Quaternion](VRageMath.Quaternion) rotation
-* [Vector3D[]](VRageMath.Vector3D[]) destinationArray
+* [Vector3D[]](VRageMath.Vector3D) destinationArray
 ## Summary
 
 ```csharp
@@ -106,10 +106,10 @@ Applies a specified Quaternion rotation to a specified range of an array of Vect
 
 ## Parameters
 
-* [Vector3D[]](VRageMath.Vector3D[]) sourceArray
+* [Vector3D[]](VRageMath.Vector3D) sourceArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceIndex
 * [Quaternion](VRageMath.Quaternion) rotation
-* [Vector3D[]](VRageMath.Vector3D[]) destinationArray
+* [Vector3D[]](VRageMath.Vector3D) destinationArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) destinationIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length
 ## Summary

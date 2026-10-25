@@ -8,4 +8,4 @@ public static void GetItemsInAabb(this MyEnvironmentSector sector, ref Boundin
 
 * [MyEnvironmentSector](Sandbox.Game.WorldEnvironment.MyEnvironmentSector) sector
 * [BoundingBoxD](VRageMath.BoundingBoxD) aabb
-* [List<int>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) itemsInBox
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6)&gt; itemsInBox

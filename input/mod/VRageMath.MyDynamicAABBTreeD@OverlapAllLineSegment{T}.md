@@ -7,7 +7,7 @@ public void OverlapAllLineSegment<T>(ref LineD line, List<MyLineSegmentOverlapR
 ## Parameters
 
 * [LineD](VRageMath.LineD) line
-* [List<MyLineSegmentOverlapResult<T>>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) elementsList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyLineSegmentOverlapResult](VRageMath.MyLineSegmentOverlapResult{T})&lt;T&gt;&gt; elementsList
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) clear
 ## Summary
 
@@ -18,6 +18,6 @@ public void OverlapAllLineSegment<T>(ref LineD line, List<MyLineSegmentOverlapR
 ## Parameters
 
 * [LineD](VRageMath.LineD) line
-* [List<MyLineSegmentOverlapResult<T>>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) elementsList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyLineSegmentOverlapResult](VRageMath.MyLineSegmentOverlapResult{T})&lt;T&gt;&gt; elementsList
 * [uint](https://docs.microsoft.com/en-us/dotnet/api/System.UInt32?view=netframework-4.6) requiredFlags
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) clear

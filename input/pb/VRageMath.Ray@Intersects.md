@@ -8,7 +8,7 @@ Checks whether the Ray intersects a specified BoundingBox.
 
 ## Returns
 
-[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)
 
 ## Parameters
 
@@ -24,7 +24,7 @@ Checks whether the current Ray intersects a BoundingBox.
 ## Parameters
 
 * [BoundingBox](VRageMath.BoundingBox) box
-* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) result
+* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) result
 ## Summary
 
 ```csharp
@@ -35,7 +35,7 @@ Checks whether the Ray intersects a specified BoundingFrustum.
 
 ## Returns
 
-[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)
 
 ## Parameters
 
@@ -50,7 +50,7 @@ Determines whether this Ray intersects a specified Plane.
 
 ## Returns
 
-[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)
 
 ## Parameters
 
@@ -66,7 +66,7 @@ Determines whether this Ray intersects a specified Plane.
 ## Parameters
 
 * [Plane](VRageMath.Plane) plane
-* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) result
+* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) result
 ## Summary
 
 ```csharp
@@ -77,7 +77,7 @@ Checks whether the Ray intersects a specified BoundingSphere.
 
 ## Returns
 
-[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)
 
 ## Parameters
 
@@ -93,4 +93,4 @@ Checks whether the current Ray intersects a BoundingSphere.
 ## Parameters
 
 * [BoundingSphere](VRageMath.BoundingSphere) sphere
-* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) result
+* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) result

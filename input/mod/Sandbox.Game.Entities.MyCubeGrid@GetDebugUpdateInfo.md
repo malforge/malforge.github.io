@@ -6,4 +6,4 @@ public void GetDebugUpdateInfo(List<DebugUpdateRecord> gridDebugUpdateInfo)
 
 ## Parameters
 
-* [List<DebugUpdateRecord>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) gridDebugUpdateInfo
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[DebugUpdateRecord](Sandbox.Game.Entities.MyCubeGrid+DebugUpdateRecord)&gt; gridDebugUpdateInfo

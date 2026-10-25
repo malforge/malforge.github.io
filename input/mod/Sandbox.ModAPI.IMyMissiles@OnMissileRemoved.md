@@ -8,5 +8,5 @@ Called when missile was removed
 
 ## Returns
 
-[Action<IMyMissile>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[IMyMissile](Sandbox.ModAPI.IMyMissile)&gt;
 

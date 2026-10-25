@@ -6,5 +6,5 @@ public static MyStringId[] CHARACTER_CONTROLS_JOYSTICK
 
 ## Returns
 
-[MyStringId[]](VRage.Utils.MyStringId[])
+[MyStringId[]](VRage.Utils.MyStringId)
 

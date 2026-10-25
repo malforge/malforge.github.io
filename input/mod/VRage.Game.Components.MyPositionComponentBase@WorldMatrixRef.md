@@ -8,5 +8,5 @@ World matrix of this physic object. Use it whenever you want to do world-matrix 
 
 ## Returns
 
-
+[MatrixD](VRageMath.MatrixD)
 

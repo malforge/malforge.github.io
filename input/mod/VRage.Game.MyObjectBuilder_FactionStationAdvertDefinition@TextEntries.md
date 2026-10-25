@@ -6,5 +6,5 @@ public AdvertTextEntry[] TextEntries
 
 ## Returns
 
-[AdvertTextEntry[]](VRage.Game.AdvertTextEntry[])
+[AdvertTextEntry[]](VRage.Game.MyObjectBuilder_FactionStationAdvertDefinition+AdvertTextEntry)
 

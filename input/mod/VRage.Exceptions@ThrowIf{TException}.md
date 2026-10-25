@@ -37,4 +37,4 @@ public static void ThrowIf<TException>(bool condition, Object[] args)
 ## Parameters
 
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) condition
-* Object[] <sub>prohibited</sub> args
+* [object[]](https://docs.microsoft.com/en-us/dotnet/api/System.Object?view=netframework-4.6) args

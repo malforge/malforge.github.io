@@ -6,5 +6,5 @@ public MyContractChancePair[] ChancesPerFactionType
 
 ## Returns
 
-[MyContractChancePair[]](VRage.Game.ObjectBuilders.Definitions.MyContractChancePair[])
+[MyContractChancePair[]](VRage.Game.ObjectBuilders.Definitions.MyContractChancePair)
 

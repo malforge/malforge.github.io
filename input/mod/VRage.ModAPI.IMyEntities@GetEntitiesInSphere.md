@@ -8,7 +8,7 @@ Returns list of entities that intersects with sphere. This function will return 
 
 ## Returns
 
-[List<IMyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMyEntity](VRage.ModAPI.IMyEntity)&gt;
 
 New list of entities
 

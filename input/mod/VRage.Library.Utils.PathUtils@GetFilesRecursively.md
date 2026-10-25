@@ -8,7 +8,7 @@ Gets Files Recursively from specified path with specified search pattern. Method
 
 ## Returns
 
-String[] <sub>prohibited</sub>
+[string[]](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6)
 
 array of names of the files
 

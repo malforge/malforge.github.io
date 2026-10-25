@@ -112,7 +112,7 @@ Checks whether the current BoundingBox intersects a Ray.
 
 ## Returns
 
-[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)
 
 ## Parameters
 
@@ -128,7 +128,7 @@ Checks whether the current BoundingBox intersects a Ray.
 ## Parameters
 
 * [Ray](VRageMath.Ray) ray
-* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) result
+* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) result
 ## Summary
 
 ```csharp

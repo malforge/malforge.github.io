@@ -6,5 +6,5 @@ public StartingPhysicalItem[] CreativeModePhysicalItems
 
 ## Returns
 
-[StartingPhysicalItem[]](VRage.Game.StartingPhysicalItem[])
+[StartingPhysicalItem[]](VRage.Game.MyObjectBuilder_ScenarioDefinition+StartingPhysicalItem)
 

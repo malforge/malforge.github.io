@@ -6,5 +6,5 @@ public V Item { get; }
 
 ## Returns
 
-[V](VRage.Collections.DictionaryValuesReader{K,V}+V)
+V
 

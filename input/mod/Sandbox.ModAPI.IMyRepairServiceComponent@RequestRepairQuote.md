@@ -9,4 +9,4 @@ Gets quote data for given cube grid
 ## Parameters
 
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) gridEntityId
-* [Action<MyObjectBuilder_ServiceQuoteData>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6) resultCallback
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[MyObjectBuilder_ServiceQuoteData](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_ServiceQuoteData)&gt; resultCallback

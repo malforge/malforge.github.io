@@ -6,5 +6,5 @@ public MyMaterialEnvironmentItem[] Items
 
 ## Returns
 
-[MyMaterialEnvironmentItem[]](Sandbox.Definitions.MyMaterialEnvironmentItem[])
+[MyMaterialEnvironmentItem[]](Sandbox.Definitions.MyMaterialEnvironmentItem)
 

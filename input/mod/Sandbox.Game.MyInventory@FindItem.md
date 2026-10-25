@@ -6,7 +6,7 @@ public MyPhysicalInventoryItem? FindItem(MyDefinitionId contentId)
 
 ## Returns
 
-[MyPhysicalInventoryItem?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[MyPhysicalInventoryItem?](VRage.Game.Entity.MyPhysicalInventoryItem)
 
 ## Parameters
 
@@ -19,8 +19,8 @@ public MyPhysicalInventoryItem? FindItem(Func<MyPhysicalInventoryItem, bool> pre
 
 ## Returns
 
-[MyPhysicalInventoryItem?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[MyPhysicalInventoryItem?](VRage.Game.Entity.MyPhysicalInventoryItem)
 
 ## Parameters
 
-* [Func<MyPhysicalInventoryItem, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) predicate
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[MyPhysicalInventoryItem](VRage.Game.Entity.MyPhysicalInventoryItem), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; predicate

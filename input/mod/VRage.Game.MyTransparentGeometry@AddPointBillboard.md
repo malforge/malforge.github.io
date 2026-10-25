@@ -13,7 +13,7 @@ public static void AddPointBillboard(MyStringId material, Vector4 color, Vector3
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) angle
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) customViewProjection
 * [BlendTypeEnum](VRageRender.MyBillboard+BlendTypeEnum) blendType
-* [List<MyBillboard>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) persistentBillboards
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyBillboard](VRageRender.MyBillboard)&gt; persistentBillboards
 ## Summary
 
 ```csharp
@@ -32,4 +32,4 @@ public static void AddPointBillboard(MyStringId material, Vector4 color, Vector3
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) customViewProjection
 * [BlendTypeEnum](VRageRender.MyBillboard+BlendTypeEnum) blendType
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) intensity
-* [List<MyBillboard>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) persistentBillboards
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyBillboard](VRageRender.MyBillboard)&gt; persistentBillboards

@@ -6,5 +6,5 @@ public SerializableDefinitionId[] BlockVariants
 
 ## Returns
 
-[SerializableDefinitionId[]](VRage.ObjectBuilders.SerializableDefinitionId[])
+[SerializableDefinitionId[]](VRage.ObjectBuilders.SerializableDefinitionId)
 

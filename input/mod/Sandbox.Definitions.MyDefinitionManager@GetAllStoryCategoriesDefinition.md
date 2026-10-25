@@ -8,7 +8,7 @@ Get all story categories id
 
 ## Returns
 
-[DictionaryReader<MyDefinitionId, MyStoryCategoryDefinition>](VRage.Collections.DictionaryReader{MyDefinitionId,MyStoryCategoryDefinition})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyStoryCategoryDefinition](Sandbox.Definitions.MyStoryCategoryDefinition)&gt;
 
 Dictionary of story definitions or empty list
 

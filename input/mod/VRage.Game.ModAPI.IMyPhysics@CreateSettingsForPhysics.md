@@ -20,4 +20,4 @@ Used for create physics with collisions
 * [ushort](https://docs.microsoft.com/en-us/dotnet/api/System.UInt16?view=netframework-4.6) collisionLayer
 * [RigidBodyFlag](VRage.Game.Components.RigidBodyFlag) rigidBodyFlags
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) isPhantom
-* [ModAPIMass?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) mass
+* [ModAPIMass?](VRage.ModAPI.ModAPIMass) mass

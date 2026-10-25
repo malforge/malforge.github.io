@@ -6,5 +6,5 @@ public SerializableDictionary<ulong, List<long>> ContainerGridIds
 
 ## Returns
 
-[SerializableDictionary<ulong, List<long>>](VRage.Serialization.SerializableDictionary{UInt64,List`1})
+[SerializableDictionary](VRage.Serialization.SerializableDictionary{T,U})&lt;[ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6), [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt;&gt;
 

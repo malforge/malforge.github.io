@@ -14,5 +14,5 @@ Tries to merge this grid with any other grid Merges grids only when both are sta
 
 * MySlimBlock <sub>prohibited</sub> block
 * [MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid) ignore
-* [List<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) nearEntities
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt; nearEntities
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) newGrid

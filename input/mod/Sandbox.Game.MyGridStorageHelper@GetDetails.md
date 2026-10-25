@@ -6,8 +6,8 @@ public Dictionary<Guid, MyObjectBuilder_SavedGridDetails> GetDetails(List<Guid> 
 
 ## Returns
 
-[Dictionary<Guid, MyObjectBuilder_SavedGridDetails>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)
+[Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;[Guid](https://docs.microsoft.com/en-us/dotnet/api/System.Guid?view=netframework-4.6), MyObjectBuilder_SavedGridDetails <sub>prohibited</sub>&gt;
 
 ## Parameters
 
-* [List<Guid>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) selector
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[Guid](https://docs.microsoft.com/en-us/dotnet/api/System.Guid?view=netframework-4.6)&gt; selector

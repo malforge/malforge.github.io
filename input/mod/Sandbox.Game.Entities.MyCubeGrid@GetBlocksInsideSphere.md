@@ -7,5 +7,5 @@ public void GetBlocksInsideSphere(ref BoundingSphereD sphere, HashSet<MySlimBlo
 ## Parameters
 
 * [BoundingSphereD](VRageMath.BoundingSphereD) sphere
-* [HashSet<MySlimBlock>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6) blocks
+* [HashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)&lt;MySlimBlock <sub>prohibited</sub>&gt; blocks
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) checkTriangles

@@ -6,4 +6,4 @@ public MyTerminalInterfaceAttribute(Type[] linkedTypes)
 
 ## Parameters
 
-* Type[] <sub>prohibited</sub> linkedTypes
+* [Type[]](https://docs.microsoft.com/en-us/dotnet/api/System.Type?view=netframework-4.6) linkedTypes

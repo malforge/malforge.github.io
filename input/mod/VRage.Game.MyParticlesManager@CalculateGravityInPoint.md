@@ -6,5 +6,5 @@ public static Func<Vector3D, Vector3> CalculateGravityInPoint
 
 ## Returns
 
-[Func<Vector3D, Vector3>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)
+[Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[Vector3D](VRageMath.Vector3D), [Vector3](VRageMath.Vector3)&gt;
 

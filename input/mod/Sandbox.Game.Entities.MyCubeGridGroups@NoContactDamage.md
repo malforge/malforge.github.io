@@ -6,5 +6,5 @@ public MyGroups<MyCubeGrid, MyGridNoDamageGroupData> NoContactDamage
 
 ## Returns
 
-MyGroups<MyCubeGrid, MyGridNoDamageGroupData> <sub>prohibited</sub>
+MyGroups&lt;[MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid), MyGridNoDamageGroupData <sub>prohibited</sub>&gt; <sub>prohibited</sub>
 

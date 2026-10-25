@@ -12,5 +12,5 @@ Shows mission screen
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) currentObjectivePrefix
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) currentObjective
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) screenDescription
-* [Action<ResultEnum>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6) callback
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[ResultEnum](VRage.Game.ModAPI.ResultEnum)&gt; callback
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) okButtonCaption

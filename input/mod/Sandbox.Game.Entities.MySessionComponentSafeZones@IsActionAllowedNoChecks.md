@@ -10,7 +10,7 @@ public static bool IsActionAllowedNoChecks(List<MySafeZone> safeZones, Vector3D 
 
 ## Parameters
 
-* [List<MySafeZone>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) safeZones
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MySafeZone](Sandbox.Game.Entities.MySafeZone)&gt; safeZones
 * [Vector3D](VRageMath.Vector3D) point
 * [MySafeZoneAction](VRage.Game.ObjectBuilders.Components.MySafeZoneAction) action
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) sourceEntityId

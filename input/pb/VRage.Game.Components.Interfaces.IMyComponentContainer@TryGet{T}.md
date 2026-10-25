@@ -10,4 +10,4 @@ public bool TryGet<T>(out T component)
 
 ## Parameters
 
-* T <sub>prohibited</sub> component
+* T component

@@ -8,5 +8,5 @@ Gets or sets administrators It may contain ids in 2 different formats: First - s
 
 ## Returns
 
-[List<string>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6)&gt;
 

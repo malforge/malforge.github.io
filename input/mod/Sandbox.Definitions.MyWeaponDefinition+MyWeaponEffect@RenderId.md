@@ -6,5 +6,5 @@ public uint? RenderId
 
 ## Returns
 
-[uint?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[uint?](https://docs.microsoft.com/en-us/dotnet/api/System.UInt32?view=netframework-4.6)
 

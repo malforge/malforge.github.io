@@ -6,5 +6,5 @@ public ListReader<MyPhysicalMaterialDefinition> GetPhysicalMaterialDefinitions()
 
 ## Returns
 
-[ListReader<MyPhysicalMaterialDefinition>](VRage.Collections.ListReader{MyPhysicalMaterialDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyPhysicalMaterialDefinition](Sandbox.Definitions.MyPhysicalMaterialDefinition)&gt;
 

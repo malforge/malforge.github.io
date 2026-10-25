@@ -6,5 +6,5 @@ public AdvertTextEntry[] TextEntries
 
 ## Returns
 
-[AdvertTextEntry[]](Sandbox.Definitions.AdvertTextEntry[])
+[AdvertTextEntry[]](Sandbox.Definitions.MyFactionStationAdvertDefinition+AdvertTextEntry)
 

@@ -10,5 +10,5 @@ public bool RemoveWhere(Func<T, bool> predicate, out T item)
 
 ## Parameters
 
-* [Func<T, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) predicate
-* [T](VRage.Collections.MyQueue{T}+T) item
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;T, [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; predicate
+* T item

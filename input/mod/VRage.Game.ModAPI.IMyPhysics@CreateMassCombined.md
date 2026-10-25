@@ -14,4 +14,4 @@ Combined mass
 
 ## Parameters
 
-* [ICollection<ModAPIMassElement>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=netframework-4.6) massElements
+* [ICollection](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=netframework-4.6)&lt;[ModAPIMassElement](VRage.ModAPI.ModAPIMassElement)&gt; massElements

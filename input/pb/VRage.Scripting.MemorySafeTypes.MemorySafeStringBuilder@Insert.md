@@ -53,7 +53,7 @@ public MemorySafeStringBuilder Insert(int index, Char[] value)
 ## Parameters
 
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) index
-* Char[] <sub>prohibited</sub> value
+* [char[]](https://docs.microsoft.com/en-us/dotnet/api/System.Char?view=netframework-4.6) value
 ## Summary
 
 ```csharp
@@ -67,7 +67,7 @@ public MemorySafeStringBuilder Insert(int index, Char[] value, int startIndex, i
 ## Parameters
 
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) index
-* Char[] <sub>prohibited</sub> value
+* [char[]](https://docs.microsoft.com/en-us/dotnet/api/System.Char?view=netframework-4.6) value
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) startIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) charCount
 ## Summary

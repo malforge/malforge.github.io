@@ -6,5 +6,5 @@ public SerializableDefinitionId[] OffersList { get; set; }
 
 ## Returns
 
-[SerializableDefinitionId[]](VRage.ObjectBuilders.SerializableDefinitionId[])
+[SerializableDefinitionId[]](VRage.ObjectBuilders.SerializableDefinitionId)
 

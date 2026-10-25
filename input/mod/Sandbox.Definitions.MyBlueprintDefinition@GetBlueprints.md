@@ -10,4 +10,4 @@ public virtual int GetBlueprints(List<ProductionInfo> blueprints)
 
 ## Parameters
 
-* [List<ProductionInfo>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) blueprints
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[ProductionInfo](Sandbox.Definitions.MyBlueprintDefinitionBase+ProductionInfo)&gt; blueprints

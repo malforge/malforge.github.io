@@ -12,4 +12,4 @@ public bool SendUnicastMessage<TData>(long addressee, string tag, TData data)
 
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) addressee
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) tag
-* [TData](Sandbox.ModAPI.Ingame.IMyIntergridCommunicationSystem+TData) data
+* TData data

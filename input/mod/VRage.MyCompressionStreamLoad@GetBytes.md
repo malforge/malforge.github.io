@@ -11,4 +11,4 @@ public int GetBytes(int bytes, Byte[] output)
 ## Parameters
 
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) bytes
-* Byte[] <sub>prohibited</sub> output
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) output

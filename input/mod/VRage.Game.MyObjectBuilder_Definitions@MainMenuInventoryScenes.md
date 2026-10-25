@@ -6,5 +6,5 @@ public MyObjectBuilder_MainMenuInventorySceneDefinition[] MainMenuInventoryScene
 
 ## Returns
 
-[MyObjectBuilder_MainMenuInventorySceneDefinition[]](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_MainMenuInventorySceneDefinition[])
+[MyObjectBuilder_MainMenuInventorySceneDefinition[]](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_MainMenuInventorySceneDefinition)
 

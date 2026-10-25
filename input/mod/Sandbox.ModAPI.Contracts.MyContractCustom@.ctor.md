@@ -15,4 +15,4 @@ public MyContractCustom(MyDefinitionId contractTypeDefinitionId, long startBlock
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) description
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) reputationReward
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) failReputationPrice
-* [long?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) endBlockId
+* [long?](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) endBlockId

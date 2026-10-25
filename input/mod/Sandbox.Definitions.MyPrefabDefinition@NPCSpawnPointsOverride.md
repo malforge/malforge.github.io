@@ -6,5 +6,5 @@ public NPCSpawnPoint[] NPCSpawnPointsOverride { get; }
 
 ## Returns
 
-[NPCSpawnPoint[]](VRage.Game.NPCSpawnPoint[])
+[NPCSpawnPoint[]](VRage.Game.MyObjectBuilder_PrefabDefinition+NPCSpawnPoint)
 

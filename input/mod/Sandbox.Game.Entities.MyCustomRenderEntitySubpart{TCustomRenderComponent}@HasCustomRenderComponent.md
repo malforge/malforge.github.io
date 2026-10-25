@@ -10,4 +10,4 @@ public bool HasCustomRenderComponent(out TCustomRenderComponent render)
 
 ## Parameters
 
-* [TCustomRenderComponent](Sandbox.Game.Entities.MyCustomRenderEntitySubpart{TCustomRenderComponent}+TCustomRenderComponent) render
+* TCustomRenderComponent render

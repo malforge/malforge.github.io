@@ -6,5 +6,5 @@ public MySerializableList<SerializableDefinitionId> IDs
 
 ## Returns
 
-MySerializableList<SerializableDefinitionId> <sub>prohibited</sub>
+MySerializableList&lt;[SerializableDefinitionId](VRage.ObjectBuilders.SerializableDefinitionId)&gt; <sub>prohibited</sub>
 

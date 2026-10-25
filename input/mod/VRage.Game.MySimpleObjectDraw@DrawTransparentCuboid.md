@@ -11,4 +11,4 @@ public static void DrawTransparentCuboid(ref MatrixD worldMatrix, MyCuboid cubo
 * [Vector4](VRageMath.Vector4) vctColor
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) bWireFramed
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) thickness
-* [MyStringId?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) lineMaterial
+* [MyStringId?](VRage.Utils.MyStringId) lineMaterial

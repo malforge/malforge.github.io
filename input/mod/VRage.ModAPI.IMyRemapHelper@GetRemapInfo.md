@@ -8,7 +8,7 @@ Key - old, value - new id Used to track if id is still existing
 
 ## Returns
 
-[Dictionary<long, long>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)
+[Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;[long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6), [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt;
 
 Dictionary of remapping
 

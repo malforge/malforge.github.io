@@ -14,4 +14,4 @@ public static bool TryParseWithSuffix(this string text, NumberStyles numberStyl
 * [NumberStyles](https://docs.microsoft.com/en-us/dotnet/api/System.Globalization.NumberStyles?view=netframework-4.6) numberStyle
 * IFormatProvider <sub>prohibited</sub> formatProvider
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) value
-* Tuple`2[] <sub>prohibited</sub> suffix
+* Tuple&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)&gt;[] <sub>prohibited</sub> suffix

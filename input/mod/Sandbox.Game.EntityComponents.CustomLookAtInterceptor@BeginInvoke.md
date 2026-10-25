@@ -10,6 +10,6 @@ IAsyncResult <sub>prohibited</sub>
 
 ## Parameters
 
-* [Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) current
+* [Vector3D?](VRageMath.Vector3D) current
 * AsyncCallback <sub>prohibited</sub> callback
 * [object](https://docs.microsoft.com/en-us/dotnet/api/System.Object?view=netframework-4.6) object

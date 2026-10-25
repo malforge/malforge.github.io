@@ -6,5 +6,5 @@ public ListReader<MyVoxelMapStorageDefinition> GetVoxelMapStorageDefinitionsForP
 
 ## Returns
 
-[ListReader<MyVoxelMapStorageDefinition>](VRage.Collections.ListReader{MyVoxelMapStorageDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyVoxelMapStorageDefinition](Sandbox.Definitions.MyVoxelMapStorageDefinition)&gt;
 

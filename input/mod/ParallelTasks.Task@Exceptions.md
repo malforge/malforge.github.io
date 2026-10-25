@@ -8,5 +8,5 @@ Gets an array containing any exceptions thrown by this task.
 
 ## Returns
 
-Exception[] <sub>prohibited</sub>
+[Exception[]](https://docs.microsoft.com/en-us/dotnet/api/System.Exception?view=netframework-4.6)
 

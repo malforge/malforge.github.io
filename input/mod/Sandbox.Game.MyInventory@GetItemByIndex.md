@@ -6,7 +6,7 @@ public MyPhysicalInventoryItem? GetItemByIndex(int id)
 
 ## Returns
 
-[MyPhysicalInventoryItem?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[MyPhysicalInventoryItem?](VRage.Game.Entity.MyPhysicalInventoryItem)
 
 ## Parameters
 

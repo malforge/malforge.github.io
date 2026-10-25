@@ -6,5 +6,5 @@ public UInt32[] RenderObjectIDs { get; }
 
 ## Returns
 
-UInt32[] <sub>prohibited</sub>
+[uint[]](https://docs.microsoft.com/en-us/dotnet/api/System.UInt32?view=netframework-4.6)
 

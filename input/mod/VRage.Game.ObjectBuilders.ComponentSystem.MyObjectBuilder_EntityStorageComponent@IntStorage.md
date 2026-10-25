@@ -6,5 +6,5 @@ public SerializableDictionary<string, int> IntStorage
 
 ## Returns
 
-[SerializableDictionary<string, int>](VRage.Serialization.SerializableDictionary{String,Int32})
+[SerializableDictionary](VRage.Serialization.SerializableDictionary{T,U})&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6)&gt;
 

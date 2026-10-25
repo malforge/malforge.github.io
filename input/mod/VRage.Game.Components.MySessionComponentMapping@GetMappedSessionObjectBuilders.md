@@ -6,8 +6,8 @@ public static Dictionary<Type, MyObjectBuilder_SessionComponent> GetMappedSessio
 
 ## Returns
 
-[Dictionary<Type, MyObjectBuilder_SessionComponent>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)
+[Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;[Type](https://docs.microsoft.com/en-us/dotnet/api/System.Type?view=netframework-4.6), [MyObjectBuilder_SessionComponent](VRage.Game.MyObjectBuilder_SessionComponent)&gt;
 
 ## Parameters
 
-* [List<MyObjectBuilder_SessionComponent>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) objectBuilders
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyObjectBuilder_SessionComponent](VRage.Game.MyObjectBuilder_SessionComponent)&gt; objectBuilders

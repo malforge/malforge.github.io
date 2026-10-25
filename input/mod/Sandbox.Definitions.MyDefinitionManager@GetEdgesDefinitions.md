@@ -6,5 +6,5 @@ public ListReader<MyEdgesDefinition> GetEdgesDefinitions()
 
 ## Returns
 
-[ListReader<MyEdgesDefinition>](VRage.Collections.ListReader{MyEdgesDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyEdgesDefinition](Sandbox.Definitions.MyEdgesDefinition)&gt;
 

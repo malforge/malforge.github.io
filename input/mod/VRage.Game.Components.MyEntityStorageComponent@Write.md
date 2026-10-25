@@ -95,7 +95,7 @@ public bool Write(string variableName, List<int> value)
 ## Parameters
 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) variableName
-* [List<int>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) value
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6)&gt; value
 ## Summary
 
 ```csharp
@@ -109,7 +109,7 @@ public bool Write(string variableName, List<long> value)
 ## Parameters
 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) variableName
-* [List<long>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) value
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt; value
 ## Summary
 
 ```csharp
@@ -123,7 +123,7 @@ public bool Write(string variableName, List<bool> value)
 ## Parameters
 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) variableName
-* [List<bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) value
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; value
 ## Summary
 
 ```csharp
@@ -137,7 +137,7 @@ public bool Write(string variableName, List<float> value)
 ## Parameters
 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) variableName
-* [List<float>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) value
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)&gt; value
 ## Summary
 
 ```csharp
@@ -151,7 +151,7 @@ public bool Write(string variableName, List<string> value)
 ## Parameters
 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) variableName
-* [List<string>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) value
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6)&gt; value
 ## Summary
 
 ```csharp
@@ -165,4 +165,4 @@ public bool Write(string variableName, List<Vector3D> value)
 ## Parameters
 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) variableName
-* [List<Vector3D>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) value
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[Vector3D](VRageMath.Vector3D)&gt; value

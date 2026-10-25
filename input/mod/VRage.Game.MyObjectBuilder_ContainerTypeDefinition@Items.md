@@ -6,5 +6,5 @@ public ContainerTypeItem[] Items
 
 ## Returns
 
-[ContainerTypeItem[]](VRage.Game.ContainerTypeItem[])
+[ContainerTypeItem[]](VRage.Game.MyObjectBuilder_ContainerTypeDefinition+ContainerTypeItem)
 

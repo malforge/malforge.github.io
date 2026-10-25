@@ -20,4 +20,4 @@ Applies action on the block with specific action parameters
 ## Parameters
 
 * [IMyCubeBlock](VRage.Game.ModAPI.Ingame.IMyCubeBlock) block
-* [ListReader<TerminalActionParameter>](VRage.Collections.ListReader{TerminalActionParameter}) terminalActionParameters
+* [ListReader](VRage.Collections.ListReader{T})&lt;[TerminalActionParameter](Sandbox.ModAPI.Ingame.TerminalActionParameter)&gt; terminalActionParameters

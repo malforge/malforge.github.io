@@ -6,5 +6,5 @@ public ListReader<T> ItemList { get; }
 
 ## Returns
 
-[ListReader<T>](VRage.Collections.ListReader{T})
+[ListReader](VRage.Collections.ListReader{T})&lt;T&gt;
 

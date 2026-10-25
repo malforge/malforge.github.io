@@ -8,5 +8,5 @@ List of upgrades provided by block [MyUpgradeModuleInfo](VRage.Game.ObjectBuilde
 
 ## Returns
 
-[MyUpgradeModuleInfo[]](VRage.Game.ObjectBuilders.Definitions.MyUpgradeModuleInfo[])
+[MyUpgradeModuleInfo[]](VRage.Game.ObjectBuilders.Definitions.MyUpgradeModuleInfo)
 

@@ -6,7 +6,7 @@ public ListReader<Matrix> GetDetectors(string detectorName)
 
 ## Returns
 
-[ListReader<Matrix>](VRage.Collections.ListReader{Matrix})
+[ListReader](VRage.Collections.ListReader{T})&lt;[Matrix](VRageMath.Matrix)&gt;
 
 ## Parameters
 

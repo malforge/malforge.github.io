@@ -8,7 +8,7 @@ When the rotor head is attached or detached from the base
 
 ## Returns
 
-[Action<IMyMotorBase>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[IMyMotorBase](Sandbox.ModAPI.IMyMotorBase)&gt;
 
 ## Remarks
 

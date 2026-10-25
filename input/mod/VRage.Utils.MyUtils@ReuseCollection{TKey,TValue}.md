@@ -6,8 +6,8 @@ public static ClearCollectionToken<Dictionary<TKey, TValue>, KeyValuePair<TKey, 
 
 ## Returns
 
-[ClearCollectionToken<Dictionary<TKey, TValue>, KeyValuePair<TKey, TValue>>](VRage.Utils.MyUtils+ClearCollectionToken{Dictionary`2,KeyValuePair`2})
+[ClearCollectionToken](VRage.Utils.MyUtils+ClearCollectionToken{TCollection,TElement})&lt;[Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;TKey, TValue&gt;, [KeyValuePair](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2?view=netframework-4.6)&lt;TKey, TValue&gt;&gt;
 
 ## Parameters
 
-* [Dictionary<TKey, TValue>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6) collection
+* [Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;TKey, TValue&gt; collection

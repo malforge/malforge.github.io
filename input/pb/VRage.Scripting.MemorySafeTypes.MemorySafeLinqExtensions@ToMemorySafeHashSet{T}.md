@@ -6,8 +6,8 @@ public static MemorySafeHashSet<T> ToMemorySafeHashSet<T>(this IEnumerable<T> s
 
 ## Returns
 
-[MemorySafeHashSet<T>](VRage.Scripting.MemorySafeTypes.MemorySafeHashSet{T})
+[MemorySafeHashSet](VRage.Scripting.MemorySafeTypes.MemorySafeHashSet{T})&lt;T&gt;
 
 ## Parameters
 
-* [IEnumerable<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) source
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;T&gt; source

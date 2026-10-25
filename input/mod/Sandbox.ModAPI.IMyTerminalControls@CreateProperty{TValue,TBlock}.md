@@ -6,7 +6,7 @@ public IMyTerminalControlProperty<TValue> CreateProperty<TValue, TBlock>(string 
 
 ## Returns
 
-[IMyTerminalControlProperty<TValue>](Sandbox.ModAPI.Interfaces.Terminal.IMyTerminalControlProperty{TValue})
+[IMyTerminalControlProperty](Sandbox.ModAPI.Interfaces.Terminal.IMyTerminalControlProperty{TValue})&lt;TValue&gt;
 
 ## Parameters
 

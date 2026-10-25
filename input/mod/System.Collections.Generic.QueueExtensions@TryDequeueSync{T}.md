@@ -10,5 +10,5 @@ public static bool TryDequeueSync<T>(this Queue<T> queue, out T result)
 
 ## Parameters
 
-* [Queue<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Queue-1?view=netframework-4.6) queue
-* [T](System.Collections.Generic.QueueExtensions+T) result
+* [Queue](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Queue-1?view=netframework-4.6)&lt;T&gt; queue
+* T result

@@ -8,5 +8,5 @@ This allows you to set the content of the combo box itself.
 
 ## Returns
 
-[Action<List<MyTerminalControlComboBoxItem>>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyTerminalControlComboBoxItem](VRage.ModAPI.MyTerminalControlComboBoxItem)&gt;&gt;
 

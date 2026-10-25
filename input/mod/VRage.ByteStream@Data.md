@@ -6,5 +6,5 @@ public Byte[] Data { get; }
 
 ## Returns
 
-Byte[] <sub>prohibited</sub>
+[byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6)
 

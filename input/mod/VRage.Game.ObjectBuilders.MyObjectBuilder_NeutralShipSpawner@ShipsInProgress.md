@@ -6,5 +6,5 @@ public List<ShipTimePair> ShipsInProgress
 
 ## Returns
 
-[List<ShipTimePair>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[ShipTimePair](VRage.Game.ObjectBuilders.MyObjectBuilder_NeutralShipSpawner+ShipTimePair)&gt;
 

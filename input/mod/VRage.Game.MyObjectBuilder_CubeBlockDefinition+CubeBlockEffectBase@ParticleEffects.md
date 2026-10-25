@@ -6,5 +6,5 @@ public CubeBlockEffect[] ParticleEffects
 
 ## Returns
 
-[CubeBlockEffect[]](VRage.Game.CubeBlockEffect[])
+[CubeBlockEffect[]](VRage.Game.MyObjectBuilder_CubeBlockDefinition+CubeBlockEffect)
 

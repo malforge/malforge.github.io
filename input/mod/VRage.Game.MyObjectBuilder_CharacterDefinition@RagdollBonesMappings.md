@@ -6,5 +6,5 @@ public MyRagdollBoneSetDefinition[] RagdollBonesMappings
 
 ## Returns
 
-[MyRagdollBoneSetDefinition[]](VRage.Game.MyRagdollBoneSetDefinition[])
+[MyRagdollBoneSetDefinition[]](VRage.Game.MyRagdollBoneSetDefinition)
 

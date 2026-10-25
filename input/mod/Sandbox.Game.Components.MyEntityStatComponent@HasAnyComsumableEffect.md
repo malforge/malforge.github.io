@@ -10,4 +10,4 @@ public bool HasAnyComsumableEffect(IEnumerable<MyEntityStatRegenEffect> ignored)
 
 ## Parameters
 
-* [IEnumerable<MyEntityStatRegenEffect>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) ignored
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;[MyEntityStatRegenEffect](Sandbox.Game.Entities.MyEntityStatRegenEffect)&gt; ignored

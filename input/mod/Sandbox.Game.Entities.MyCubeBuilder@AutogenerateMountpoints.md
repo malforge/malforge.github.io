@@ -6,7 +6,7 @@ public static MountPoint[] AutogenerateMountpoints(MyModel model, float gridSize
 
 ## Returns
 
-[MountPoint[]](Sandbox.Definitions.MountPoint[])
+[MountPoint[]](Sandbox.Definitions.MyCubeBlockDefinition+MountPoint)
 
 ## Parameters
 
@@ -20,7 +20,7 @@ public static MountPoint[] AutogenerateMountpoints(HkShape[] shapes, float gridS
 
 ## Returns
 
-[MountPoint[]](Sandbox.Definitions.MountPoint[])
+[MountPoint[]](Sandbox.Definitions.MyCubeBlockDefinition+MountPoint)
 
 ## Parameters
 

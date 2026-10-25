@@ -10,4 +10,4 @@ public bool TryGetDebugRenderComponent<T>(out T debugComponent)
 
 ## Parameters
 
-* [T](VRage.Game.Entity.MyEntity+T) debugComponent
+* T debugComponent

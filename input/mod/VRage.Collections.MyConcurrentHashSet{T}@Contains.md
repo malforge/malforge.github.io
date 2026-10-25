@@ -10,4 +10,4 @@ public bool Contains(T value)
 
 ## Parameters
 
-* [T](VRage.Collections.MyConcurrentHashSet{T}+T) value
+* T value

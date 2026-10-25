@@ -10,4 +10,4 @@ public int IndexOf(T item)
 
 ## Parameters
 
-* [T](VRage.Collections.ListReader{T}+T) item
+* T item

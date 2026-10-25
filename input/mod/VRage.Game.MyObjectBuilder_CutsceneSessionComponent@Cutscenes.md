@@ -6,5 +6,5 @@ public Cutscene[] Cutscenes
 
 ## Returns
 
-[Cutscene[]](VRage.Game.Cutscene[])
+[Cutscene[]](VRage.Game.Cutscene)
 

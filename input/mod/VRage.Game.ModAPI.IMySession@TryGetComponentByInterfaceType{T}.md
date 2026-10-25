@@ -10,4 +10,4 @@ public bool TryGetComponentByInterfaceType<T>(out T sessionComponent)
 
 ## Parameters
 
-* [T](VRage.Game.ModAPI.IMySession+T) sessionComponent
+* T sessionComponent

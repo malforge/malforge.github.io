@@ -7,7 +7,7 @@ public void BuildBlocksClient(MyBlockVisuals visuals, HashSet<MyBlockLocation> l
 ## Parameters
 
 * [MyBlockVisuals](Sandbox.Game.Entities.MyCubeGrid+MyBlockVisuals) visuals
-* [HashSet<MyBlockLocation>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6) locations
+* [HashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)&lt;[MyBlockLocation](Sandbox.Game.Entities.MyCubeGrid+MyBlockLocation)&gt; locations
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) builderEntityId
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) instantBuild
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) ownerId

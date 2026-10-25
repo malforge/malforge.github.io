@@ -6,5 +6,5 @@ public MyObjectBuilder_RespawnShipDefinition[] RespawnShips
 
 ## Returns
 
-[MyObjectBuilder_RespawnShipDefinition[]](VRage.Game.MyObjectBuilder_RespawnShipDefinition[])
+[MyObjectBuilder_RespawnShipDefinition[]](VRage.Game.MyObjectBuilder_RespawnShipDefinition)
 

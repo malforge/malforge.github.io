@@ -6,5 +6,5 @@ public MyObjectBuilder_DecalDefinition[] Decals
 
 ## Returns
 
-[MyObjectBuilder_DecalDefinition[]](VRage.Game.MyObjectBuilder_DecalDefinition[])
+[MyObjectBuilder_DecalDefinition[]](VRage.Game.MyObjectBuilder_DecalDefinition)
 

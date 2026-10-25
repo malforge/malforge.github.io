@@ -6,5 +6,5 @@ public static InstanceComparer<T> Default
 
 ## Returns
 
-[InstanceComparer<T>](VRage.InstanceComparer{T})
+[InstanceComparer](VRage.InstanceComparer{T})&lt;T&gt;
 

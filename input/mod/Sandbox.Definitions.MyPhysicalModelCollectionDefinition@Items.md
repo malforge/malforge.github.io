@@ -6,5 +6,5 @@ public MyDiscreteSampler<MyDefinitionId> Items
 
 ## Returns
 
-[MyDiscreteSampler<MyDefinitionId>](VRage.Utils.MyDiscreteSampler{MyDefinitionId})
+[MyDiscreteSampler](VRage.Utils.MyDiscreteSampler{T})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId)&gt;
 

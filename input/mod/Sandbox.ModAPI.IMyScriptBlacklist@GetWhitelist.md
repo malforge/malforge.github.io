@@ -8,7 +8,7 @@ Gets the entries that have been whitelisted by the system. Each entry may repres
 
 ## Returns
 
-[DictionaryReader<string, MyWhitelistTarget>](VRage.Collections.DictionaryReader{String,MyWhitelistTarget})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), MyWhitelistTarget <sub>prohibited</sub>&gt;
 
 
 

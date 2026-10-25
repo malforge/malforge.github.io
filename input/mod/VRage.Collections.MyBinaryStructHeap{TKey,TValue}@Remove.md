@@ -6,12 +6,12 @@ public TValue Remove(TValue value, IEqualityComparer<TValue> comparer)
 
 ## Returns
 
-[TValue](VRage.Collections.MyBinaryStructHeap{TKey,TValue}+TValue)
+TValue
 
 ## Parameters
 
-* [TValue](VRage.Collections.MyBinaryStructHeap{TKey,TValue}+TValue) value
-* [IEqualityComparer<TValue>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6) comparer
+* TValue value
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6)&lt;TValue&gt; comparer
 ## Summary
 
 ```csharp
@@ -20,8 +20,8 @@ public TValue Remove(TKey key)
 
 ## Returns
 
-[TValue](VRage.Collections.MyBinaryStructHeap{TKey,TValue}+TValue)
+TValue
 
 ## Parameters
 
-* [TKey](VRage.Collections.MyBinaryStructHeap{TKey,TValue}+TKey) key
+* TKey key

@@ -6,5 +6,5 @@ public Vector3[] Pivots
 
 ## Returns
 
-[Vector3[]](VRageMath.Vector3[])
+[Vector3[]](VRageMath.Vector3)
 

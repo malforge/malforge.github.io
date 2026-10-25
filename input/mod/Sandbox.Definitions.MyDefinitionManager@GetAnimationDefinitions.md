@@ -6,7 +6,7 @@ public ListReader<MyAnimationDefinition> GetAnimationDefinitions()
 
 ## Returns
 
-[ListReader<MyAnimationDefinition>](VRage.Collections.ListReader{MyAnimationDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;MyAnimationDefinition <sub>prohibited</sub>&gt;
 
 ## Summary
 
@@ -16,7 +16,7 @@ public Dictionary<string, MyAnimationDefinition> GetAnimationDefinitions(string 
 
 ## Returns
 
-[Dictionary<string, MyAnimationDefinition>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)
+[Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), MyAnimationDefinition <sub>prohibited</sub>&gt;
 
 ## Parameters
 

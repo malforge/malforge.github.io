@@ -6,5 +6,5 @@ public Enumerator<T> GetEnumerator()
 
 ## Returns
 
-[Enumerator<T>](VRage.Collections.MyQueue{T}+Enumerator)
+[MyQueue](VRage.Collections.MyQueue{T})&lt;T&gt;.[Enumerator](VRage.Collections.MyQueue{T}+Enumerator)
 

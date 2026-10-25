@@ -6,5 +6,5 @@ public MyEdgeDefinition[] Edges
 
 ## Returns
 
-[MyEdgeDefinition[]](Sandbox.Definitions.MyEdgeDefinition[])
+[MyEdgeDefinition[]](Sandbox.Definitions.MyEdgeDefinition)
 

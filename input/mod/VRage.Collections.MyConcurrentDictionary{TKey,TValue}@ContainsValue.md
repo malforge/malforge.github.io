@@ -10,4 +10,4 @@ public bool ContainsValue(TValue value)
 
 ## Parameters
 
-* [TValue](VRage.Collections.MyConcurrentDictionary{TKey,TValue}+TValue) value
+* TValue value

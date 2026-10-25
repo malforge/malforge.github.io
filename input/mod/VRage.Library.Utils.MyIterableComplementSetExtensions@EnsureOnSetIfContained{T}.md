@@ -6,5 +6,5 @@ public static void EnsureOnSetIfContained<T>(this MyIterableComplementSet<T> se
 
 ## Parameters
 
-* [MyIterableComplementSet<T>](VRage.Library.Utils.MyIterableComplementSet{T}) self
-* [T](VRage.Library.Utils.MyIterableComplementSetExtensions+T) item
+* [MyIterableComplementSet](VRage.Library.Utils.MyIterableComplementSet{T})&lt;T&gt; self
+* T item

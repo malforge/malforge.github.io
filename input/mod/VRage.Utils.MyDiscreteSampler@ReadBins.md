@@ -8,7 +8,7 @@ Get a copy of the internal bins.
 
 ## Returns
 
-[SamplingBin[]](VRage.Utils.SamplingBin[])
+[SamplingBin[]](VRage.Utils.MyDiscreteSampler+SamplingBin)
 
 
 

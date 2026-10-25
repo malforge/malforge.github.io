@@ -6,5 +6,5 @@ public MountPoint[] MountPoints
 
 ## Returns
 
-[MountPoint[]](VRage.Game.MountPoint[])
+[MountPoint[]](VRage.Game.MyObjectBuilder_CubeBlockDefinition+MountPoint)
 

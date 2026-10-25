@@ -6,5 +6,5 @@ public Dictionary<SerializableDefinitionId, float> ChancesPerFactionType { get; 
 
 ## Returns
 
-[Dictionary<SerializableDefinitionId, float>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)
+[Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;[SerializableDefinitionId](VRage.ObjectBuilders.SerializableDefinitionId), [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)&gt;
 

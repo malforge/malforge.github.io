@@ -19,4 +19,4 @@ Returns true if damage should be inflicted upon the block normally.
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) attackerId
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) realHitEntityId
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) shouldDetonateAmmo
-* [MyStringHash?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) extraInfo
+* [MyStringHash?](VRage.Utils.MyStringHash) extraInfo

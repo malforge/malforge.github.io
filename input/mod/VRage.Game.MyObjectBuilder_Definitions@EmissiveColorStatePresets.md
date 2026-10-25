@@ -6,5 +6,5 @@ public MyObjectBuilder_EmissiveColorStatePresetDefinition[] EmissiveColorStatePr
 
 ## Returns
 
-[MyObjectBuilder_EmissiveColorStatePresetDefinition[]](VRage.Game.MyObjectBuilder_EmissiveColorStatePresetDefinition[])
+[MyObjectBuilder_EmissiveColorStatePresetDefinition[]](VRage.Game.MyObjectBuilder_EmissiveColorStatePresetDefinition)
 

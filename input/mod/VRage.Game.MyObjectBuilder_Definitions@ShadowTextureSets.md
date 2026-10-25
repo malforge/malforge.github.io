@@ -6,5 +6,5 @@ public MyObjectBuilder_ShadowTextureSetDefinition[] ShadowTextureSets
 
 ## Returns
 
-[MyObjectBuilder_ShadowTextureSetDefinition[]](VRage.Game.MyObjectBuilder_ShadowTextureSetDefinition[])
+[MyObjectBuilder_ShadowTextureSetDefinition[]](VRage.Game.MyObjectBuilder_ShadowTextureSetDefinition)
 

@@ -6,5 +6,5 @@ public MyObjectBuilder_TransparentMaterialDefinition[] TransparentMaterials
 
 ## Returns
 
-[MyObjectBuilder_TransparentMaterialDefinition[]](VRage.Game.MyObjectBuilder_TransparentMaterialDefinition[])
+[MyObjectBuilder_TransparentMaterialDefinition[]](VRage.Game.MyObjectBuilder_TransparentMaterialDefinition)
 

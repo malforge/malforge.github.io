@@ -6,5 +6,5 @@ public static void RemoveIfContained<T>(this MyIterableComplementSet<T> self, T
 
 ## Parameters
 
-* [MyIterableComplementSet<T>](VRage.Library.Utils.MyIterableComplementSet{T}) self
-* [T](VRage.Library.Utils.MyIterableComplementSetExtensions+T) item
+* [MyIterableComplementSet](VRage.Library.Utils.MyIterableComplementSet{T})&lt;T&gt; self
+* T item

@@ -11,4 +11,4 @@ public bool TryGetDefinition<T>(MyDefinitionId defId, out T definition)
 ## Parameters
 
 * [MyDefinitionId](VRage.Game.MyDefinitionId) defId
-* [T](Sandbox.Definitions.MyDefinitionManager+T) definition
+* T definition

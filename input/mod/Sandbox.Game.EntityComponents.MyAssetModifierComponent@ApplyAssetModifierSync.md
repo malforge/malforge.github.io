@@ -7,7 +7,7 @@ public static void ApplyAssetModifierSync(long entityId, Byte[] checkData, bool 
 ## Parameters
 
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) entityId
-* Byte[] <sub>prohibited</sub> checkData
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) checkData
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) addToList
 ## Summary
 

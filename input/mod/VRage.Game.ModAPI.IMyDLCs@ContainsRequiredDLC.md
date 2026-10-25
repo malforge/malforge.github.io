@@ -15,4 +15,4 @@ if the definition has no DLCs specified, or all the DLCs specified indefinitiona
 ## Parameters
 
 * [MyDefinitionBase](VRage.Game.MyDefinitionBase) definition
-* [List<ulong>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) dlcs
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6)&gt; dlcs

@@ -6,5 +6,5 @@ public Line[] Lines
 
 ## Returns
 
-[Line[]](VRageMath.Line[])
+[Line[]](VRageMath.Line)
 

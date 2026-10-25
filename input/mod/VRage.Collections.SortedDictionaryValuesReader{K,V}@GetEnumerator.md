@@ -6,5 +6,5 @@ public Enumerator<K, V> GetEnumerator()
 
 ## Returns
 
-[Enumerator<K, V>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.SortedDictionary-2+ValueCollection+Enumerator?view=netframework-4.6)
+[SortedDictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.SortedDictionary-2?view=netframework-4.6)&lt;K, V&gt;.[ValueCollection](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.SortedDictionary-2+ValueCollection?view=netframework-4.6).[Enumerator](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.SortedDictionary-2+ValueCollection+Enumerator?view=netframework-4.6)
 

@@ -8,7 +8,7 @@ Property type cast
 
 ## Returns
 
-[ITerminalProperty<bool>](Sandbox.ModAPI.Interfaces.ITerminalProperty{Boolean})
+[ITerminalProperty](Sandbox.ModAPI.Interfaces.ITerminalProperty{TValue})&lt;[bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt;
 
 reference to `ITerminalProperty<TValue>`<sub>prohibited</sub> value of specified type (bool)
 

@@ -6,5 +6,5 @@ public ListReader<MyLCDTextureDefinition> GetLCDTexturesDefinitions()
 
 ## Returns
 
-[ListReader<MyLCDTextureDefinition>](VRage.Collections.ListReader{MyLCDTextureDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyLCDTextureDefinition](Sandbox.Definitions.MyLCDTextureDefinition)&gt;
 

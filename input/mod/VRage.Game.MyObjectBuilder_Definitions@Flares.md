@@ -6,5 +6,5 @@ public MyObjectBuilder_FlareDefinition[] Flares
 
 ## Returns
 
-[MyObjectBuilder_FlareDefinition[]](VRage.Game.MyObjectBuilder_FlareDefinition[])
+[MyObjectBuilder_FlareDefinition[]](VRage.Game.MyObjectBuilder_FlareDefinition)
 

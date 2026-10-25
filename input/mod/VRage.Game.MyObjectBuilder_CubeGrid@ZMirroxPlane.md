@@ -6,5 +6,5 @@ public SerializableVector3I? ZMirroxPlane
 
 ## Returns
 
-[SerializableVector3I?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[SerializableVector3I?](VRage.SerializableVector3I)
 

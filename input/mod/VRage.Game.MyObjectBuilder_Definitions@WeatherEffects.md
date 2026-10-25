@@ -6,5 +6,5 @@ public MyObjectBuilder_WeatherEffectDefinition[] WeatherEffects
 
 ## Returns
 
-[MyObjectBuilder_WeatherEffectDefinition[]](VRage.Game.MyObjectBuilder_WeatherEffectDefinition[])
+[MyObjectBuilder_WeatherEffectDefinition[]](VRage.Game.MyObjectBuilder_WeatherEffectDefinition)
 

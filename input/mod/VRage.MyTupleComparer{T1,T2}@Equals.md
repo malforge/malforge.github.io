@@ -10,5 +10,5 @@ public bool Equals(MyTuple<T1, T2> x, MyTuple<T1, T2> y)
 
 ## Parameters
 
-* [MyTuple<T1, T2>](VRage.MyTuple{T1,T2}) x
-* [MyTuple<T1, T2>](VRage.MyTuple{T1,T2}) y
+* [MyTuple](VRage.MyTuple{T1,T2})&lt;T1, T2&gt; x
+* [MyTuple](VRage.MyTuple{T1,T2})&lt;T1, T2&gt; y

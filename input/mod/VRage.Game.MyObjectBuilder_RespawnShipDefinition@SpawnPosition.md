@@ -6,5 +6,5 @@ public SerializableVector3D? SpawnPosition
 
 ## Returns
 
-[SerializableVector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[SerializableVector3D?](VRage.SerializableVector3D)
 

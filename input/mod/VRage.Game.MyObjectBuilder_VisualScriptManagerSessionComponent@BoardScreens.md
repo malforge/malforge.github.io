@@ -6,5 +6,5 @@ public MyObjectBuilder_BoardScreen[] BoardScreens
 
 ## Returns
 
-[MyObjectBuilder_BoardScreen[]](VRage.Game.MyObjectBuilder_BoardScreen[])
+[MyObjectBuilder_BoardScreen[]](VRage.Game.MyObjectBuilder_BoardScreen)
 

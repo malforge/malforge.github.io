@@ -6,5 +6,5 @@ public MyStringId[] SurvivalModeWeapons
 
 ## Returns
 
-[MyStringId[]](VRage.Utils.MyStringId[])
+[MyStringId[]](VRage.Utils.MyStringId)
 

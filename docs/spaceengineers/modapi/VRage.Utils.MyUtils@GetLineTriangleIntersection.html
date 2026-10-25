@@ -57,7 +57,7 @@
 </code></pre>
 <p>Checks whether a ray intersects a triangleVertexes. This uses the algorithm developed by Tomas Moller and Ben Trumbore, which was published in the Journal of Graphics Tools, pitch 2, &quot;Fast, Minimum Storage Ray-Triangle Intersection&quot;. This method is implemented using the pass-by-reference versions of the XNA math functions. Using these overloads is generally not recommended, because they make the code less readable than the normal pass-by-value versions. This method can be called very frequently in a tight inner loop, however, so in this particular case the performance benefits from passing everything by reference outweigh the loss of readability.</p>
 <h2 id="returns">Returns</h2>
-<p><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6">float?</a></p>
+<p><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6">float?</a></p>
 <h2 id="parameters">Parameters</h2>
 <ul>
 <li><a href="VRageMath.Line.html">Line</a> line</li>

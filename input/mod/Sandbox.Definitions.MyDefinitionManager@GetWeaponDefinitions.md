@@ -6,5 +6,5 @@ public ListReader<MyPhysicalItemDefinition> GetWeaponDefinitions()
 
 ## Returns
 
-[ListReader<MyPhysicalItemDefinition>](VRage.Collections.ListReader{MyPhysicalItemDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)&gt;
 

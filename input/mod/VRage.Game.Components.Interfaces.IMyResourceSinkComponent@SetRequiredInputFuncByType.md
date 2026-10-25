@@ -8,9 +8,9 @@ Change the required input function (callback) for given type of resource. It doe
 
 ## Returns
 
-[Func<float>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6)
+[Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6)&lt;[float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)&gt;
 
 ## Parameters
 
 * [MyDefinitionId](VRage.Game.MyDefinitionId) resourceTypeId
-* [Func<float>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6) newRequiredInputFunc
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6)&lt;[float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)&gt; newRequiredInputFunc

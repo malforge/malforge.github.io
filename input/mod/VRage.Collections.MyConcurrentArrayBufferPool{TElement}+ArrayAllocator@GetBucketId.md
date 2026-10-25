@@ -10,4 +10,4 @@ public int GetBucketId(TElement[] instance)
 
 ## Parameters
 
-* [TElement[]](VRage.Collections.TElement[]) instance
+* TElement[] instance

@@ -6,5 +6,5 @@ public Entry[] DictionaryEntryProp { get; set; }
 
 ## Returns
 
-Entry[] <sub>prohibited</sub>
+[SerializableDictionary](VRage.Serialization.SerializableDictionary{T,U})&lt;T, U&gt;.[Entry](VRage.Serialization.SerializableDictionary{T,U}+Entry)[]
 

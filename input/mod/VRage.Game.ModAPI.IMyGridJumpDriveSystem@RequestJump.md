@@ -11,9 +11,9 @@ Requests the pilot or local player to jump (Prompts the pilot with the jump UI, 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) destinationName
 * [Vector3D](VRageMath.Vector3D) destination
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) userId
-* [BoundingBoxD?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) shipBox
+* [BoundingBoxD?](VRageMath.BoundingBoxD) shipBox
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) jumpDriveDelay
-* [long?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) driveEntityId
+* [long?](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) driveEntityId
 ## Summary
 
 ```csharp
@@ -27,4 +27,4 @@ Requests the pilot or local player to jump (Prompts the pilot with the jump UI, 
 * [Vector3D](VRageMath.Vector3D) jumpTarget
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) userId
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) jumpDriveDelay
-* [long?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) driveEntityId
+* [long?](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) driveEntityId

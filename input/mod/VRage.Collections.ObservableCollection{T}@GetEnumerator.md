@@ -6,5 +6,5 @@ public Enumerator<T> GetEnumerator()
 
 ## Returns
 
-[Enumerator<T>](VRage.Collections.ObservableCollection{T}+Enumerator)
+[ObservableCollection](VRage.Collections.ObservableCollection{T})&lt;T&gt;.[Enumerator](VRage.Collections.ObservableCollection{T}+Enumerator)
 

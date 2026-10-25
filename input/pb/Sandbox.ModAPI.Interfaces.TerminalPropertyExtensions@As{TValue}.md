@@ -6,7 +6,7 @@ public static ITerminalProperty<TValue> As<TValue>(this ITerminalProperty prope
 
 ## Returns
 
-[ITerminalProperty<TValue>](Sandbox.ModAPI.Interfaces.ITerminalProperty{TValue})
+[ITerminalProperty](Sandbox.ModAPI.Interfaces.ITerminalProperty{TValue})&lt;TValue&gt;
 
 ## Parameters
 

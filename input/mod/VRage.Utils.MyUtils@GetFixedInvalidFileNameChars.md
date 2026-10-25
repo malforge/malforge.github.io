@@ -6,5 +6,5 @@ public static Char[] GetFixedInvalidFileNameChars()
 
 ## Returns
 
-Char[] <sub>prohibited</sub>
+[char[]](https://docs.microsoft.com/en-us/dotnet/api/System.Char?view=netframework-4.6)
 

@@ -8,7 +8,7 @@ Calculates intersection between line and bounding box and if found, distance is 
 
 ## Returns
 
-[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)
 
 ## Parameters
 

@@ -6,4 +6,4 @@ public void NextBytes(Byte[] buffer)
 
 ## Parameters
 
-* Byte[] <sub>prohibited</sub> buffer
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) buffer

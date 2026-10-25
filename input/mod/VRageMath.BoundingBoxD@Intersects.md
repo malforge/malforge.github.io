@@ -141,7 +141,7 @@ public double? Intersects(Ray ray)
 
 ## Returns
 
-[double?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[double?](https://docs.microsoft.com/en-us/dotnet/api/System.Double?view=netframework-4.6)
 
 
 
@@ -158,7 +158,7 @@ Checks whether the current BoundingBox intersects a Ray.
 
 ## Returns
 
-[double?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[double?](https://docs.microsoft.com/en-us/dotnet/api/System.Double?view=netframework-4.6)
 
 ## Parameters
 
@@ -174,7 +174,7 @@ Checks whether the current BoundingBox intersects a Ray.
 ## Parameters
 
 * [RayD](VRageMath.RayD) ray
-* [double?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) result
+* [double?](https://docs.microsoft.com/en-us/dotnet/api/System.Double?view=netframework-4.6) result
 ## Summary
 
 ```csharp

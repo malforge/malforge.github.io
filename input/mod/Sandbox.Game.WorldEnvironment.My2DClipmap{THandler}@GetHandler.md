@@ -6,7 +6,7 @@ public THandler GetHandler(Vector2D point)
 
 ## Returns
 
-[THandler](Sandbox.Game.WorldEnvironment.My2DClipmap{THandler}+THandler)
+THandler
 
 ## Parameters
 

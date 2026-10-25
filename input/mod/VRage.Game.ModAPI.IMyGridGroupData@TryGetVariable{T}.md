@@ -11,4 +11,4 @@ public bool TryGetVariable<T>(Guid key, out T variable)
 ## Parameters
 
 * [Guid](https://docs.microsoft.com/en-us/dotnet/api/System.Guid?view=netframework-4.6) key
-* [T](VRage.Game.ModAPI.IMyGridGroupData+T) variable
+* T variable

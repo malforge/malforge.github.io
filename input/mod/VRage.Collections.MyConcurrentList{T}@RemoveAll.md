@@ -6,4 +6,4 @@ public void RemoveAll(Predicate<T> callback)
 
 ## Parameters
 
-* Predicate<T> <sub>prohibited</sub> callback
+* Predicate&lt;T&gt; <sub>prohibited</sub> callback

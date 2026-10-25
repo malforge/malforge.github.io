@@ -6,5 +6,5 @@ public MySprite[] Sprites
 
 ## Returns
 
-[MySprite[]](VRage.Game.GUI.TextPanel.MySprite[])
+[MySprite[]](VRage.Game.GUI.TextPanel.MySprite)
 

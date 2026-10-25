@@ -6,5 +6,5 @@ public static MyLineSegmentOverlapResultComparer<T> DistanceComparer
 
 ## Returns
 
-[MyLineSegmentOverlapResultComparer<T>](VRageMath.MyLineSegmentOverlapResult{T}+MyLineSegmentOverlapResultComparer)
+[MyLineSegmentOverlapResult](VRageMath.MyLineSegmentOverlapResult{T})&lt;T&gt;.[MyLineSegmentOverlapResultComparer](VRageMath.MyLineSegmentOverlapResult{T}+MyLineSegmentOverlapResultComparer)
 

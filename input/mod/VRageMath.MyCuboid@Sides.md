@@ -6,5 +6,5 @@ public MyCuboidSide[] Sides
 
 ## Returns
 
-[MyCuboidSide[]](VRageMath.MyCuboidSide[])
+[MyCuboidSide[]](VRageMath.MyCuboidSide)
 

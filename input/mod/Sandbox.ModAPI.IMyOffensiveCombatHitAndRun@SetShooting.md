@@ -8,5 +8,5 @@ Gets or sets function that is called per block requesting it start or stop shoot
 
 ## Returns
 
-[Action<IMyTerminalBlock, bool, double, Vector3D?, Direction>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-5?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-5?view=netframework-4.6)&lt;[IMyTerminalBlock](Sandbox.ModAPI.IMyTerminalBlock), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6), [double](https://docs.microsoft.com/en-us/dotnet/api/System.Double?view=netframework-4.6), [Vector3D?](VRageMath.Vector3D), [Direction](VRageMath.Base6Directions+Direction)&gt;
 

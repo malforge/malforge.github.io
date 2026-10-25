@@ -6,8 +6,8 @@ public static ClearRangeToken<TElement> ReuseCollectionNested<TElement>(ref Lis
 
 ## Returns
 
-[ClearRangeToken<TElement>](VRage.Utils.MyUtils+ClearRangeToken{TElement})
+[ClearRangeToken](VRage.Utils.MyUtils+ClearRangeToken{T})&lt;TElement&gt;
 
 ## Parameters
 
-* [List<TElement>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) collection
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;TElement&gt; collection

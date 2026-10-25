@@ -23,4 +23,4 @@ Task <sub>prohibited</sub>
 
 ## Parameters
 
-* [Func<Task>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6) func
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6)&lt;Task <sub>prohibited</sub>&gt; func

@@ -6,7 +6,7 @@ public static ImmutableDictionary<TKey, TValue> Create<TKey, TValue>()
 
 ## Returns
 
-[ImmutableDictionary<TKey, TValue>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableDictionary-2?view=netframework-4.6)
+[ImmutableDictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableDictionary-2?view=netframework-4.6)&lt;TKey, TValue&gt;
 
 ## Summary
 
@@ -16,11 +16,11 @@ public static ImmutableDictionary<TKey, TValue> Create<TKey, TValue>(IEqualityCo
 
 ## Returns
 
-[ImmutableDictionary<TKey, TValue>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableDictionary-2?view=netframework-4.6)
+[ImmutableDictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableDictionary-2?view=netframework-4.6)&lt;TKey, TValue&gt;
 
 ## Parameters
 
-* [IEqualityComparer<TKey>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6) keyComparer
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6)&lt;TKey&gt; keyComparer
 ## Summary
 
 ```csharp
@@ -29,9 +29,9 @@ public static ImmutableDictionary<TKey, TValue> Create<TKey, TValue>(IEqualityCo
 
 ## Returns
 
-[ImmutableDictionary<TKey, TValue>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableDictionary-2?view=netframework-4.6)
+[ImmutableDictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableDictionary-2?view=netframework-4.6)&lt;TKey, TValue&gt;
 
 ## Parameters
 
-* [IEqualityComparer<TKey>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6) keyComparer
-* [IEqualityComparer<TValue>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6) valueComparer
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6)&lt;TKey&gt; keyComparer
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6)&lt;TValue&gt; valueComparer

@@ -8,8 +8,8 @@ public void AddFastBuildModels(MatrixD baseMatrix, ref Matrix localMatrixAdd, L
 
 * [MatrixD](VRageMath.MatrixD) baseMatrix
 * [Matrix](VRageMath.Matrix) localMatrixAdd
-* [List<MatrixD>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) matrices
-* [List<string>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) models
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MatrixD](VRageMath.MatrixD)&gt; matrices
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6)&gt; models
 * [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition) definition
-* [Vector3I?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) startBuild
-* [Vector3I?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) continueBuild
+* [Vector3I?](VRageMath.Vector3I) startBuild
+* [Vector3I?](VRageMath.Vector3I) continueBuild

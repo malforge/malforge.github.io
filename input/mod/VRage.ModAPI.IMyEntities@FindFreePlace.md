@@ -8,7 +8,7 @@ Use to find place that doesn't have any voxels, grids, or physical bodies. If or
 
 ## Returns
 
-[Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[Vector3D?](VRageMath.Vector3D)
 
 Position that can doesn't have voxels, grids and other HkBodies in provided radius
 

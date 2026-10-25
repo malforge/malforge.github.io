@@ -10,4 +10,4 @@ Creates object asynchronously and adds it into scene. DoneHandler is invoked fro
 
 * [MyObjectBuilder_EntityBase](VRage.ObjectBuilders.MyObjectBuilder_EntityBase) objectBuilder
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) addToScene
-* [Action<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6) doneHandler
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt; doneHandler

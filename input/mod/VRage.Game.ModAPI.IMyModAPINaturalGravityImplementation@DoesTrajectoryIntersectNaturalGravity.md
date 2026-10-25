@@ -8,7 +8,7 @@ Checks if the specified trajectory intersects any natural gravity wells.
 
 ## Returns
 
-[double?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[double?](https://docs.microsoft.com/en-us/dotnet/api/System.Double?view=netframework-4.6)
 
 Null if doesn't intersect, double if
 

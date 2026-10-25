@@ -10,5 +10,5 @@ public static RectangleF Min(RectangleF? rectangle, RectangleF? scissors)
 
 ## Parameters
 
-* [RectangleF?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) rectangle
-* [RectangleF?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) scissors
+* [RectangleF?](VRageMath.RectangleF) rectangle
+* [RectangleF?](VRageMath.RectangleF) scissors

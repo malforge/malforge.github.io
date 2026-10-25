@@ -15,4 +15,4 @@ Should return true if line intersects detector
 ## Parameters
 
 * [LineD](VRageMath.LineD) line
-* [Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) hit
+* [Vector3D?](VRageMath.Vector3D) hit

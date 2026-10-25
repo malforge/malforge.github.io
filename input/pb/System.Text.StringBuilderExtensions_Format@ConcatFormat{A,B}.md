@@ -12,6 +12,6 @@ public static StringBuilder ConcatFormat<A, B>(this StringBuilder string_builde
 
 * [StringBuilder](https://docs.microsoft.com/en-us/dotnet/api/System.Text.StringBuilder?view=netframework-4.6) string_builder
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) format_string
-* [A](System.Text.StringBuilderExtensions_Format+A) arg1
-* [B](System.Text.StringBuilderExtensions_Format+B) arg2
+* A arg1
+* B arg2
 * [NumberFormatInfo](https://docs.microsoft.com/en-us/dotnet/api/System.Globalization.NumberFormatInfo?view=netframework-4.6) numberFormat

@@ -10,5 +10,5 @@ public bool Equals(T x, T y)
 
 ## Parameters
 
-* [T](VRage.InstanceComparer{T}+T) x
-* [T](VRage.InstanceComparer{T}+T) y
+* T x
+* T y

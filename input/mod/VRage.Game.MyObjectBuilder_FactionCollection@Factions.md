@@ -6,5 +6,5 @@ public List<MyObjectBuilder_Faction> Factions
 
 ## Returns
 
-[List<MyObjectBuilder_Faction>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyObjectBuilder_Faction](VRage.Game.MyObjectBuilder_Faction)&gt;
 

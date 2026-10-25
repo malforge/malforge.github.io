@@ -6,5 +6,5 @@ public DictionaryValuesReader<MyDefinitionId, MyPlanetPrefabDefinition> GetPlane
 
 ## Returns
 
-[DictionaryValuesReader<MyDefinitionId, MyPlanetPrefabDefinition>](VRage.Collections.DictionaryValuesReader{MyDefinitionId,MyPlanetPrefabDefinition})
+[DictionaryValuesReader](VRage.Collections.DictionaryValuesReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyPlanetPrefabDefinition](Sandbox.Definitions.MyPlanetPrefabDefinition)&gt;
 

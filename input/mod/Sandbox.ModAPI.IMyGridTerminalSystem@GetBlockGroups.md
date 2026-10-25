@@ -8,4 +8,4 @@ Fills the provided list with the block groups reachable by this grid terminal sy
 
 ## Parameters
 
-* [List<IMyBlockGroup>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) blockGroups
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMyBlockGroup](Sandbox.ModAPI.IMyBlockGroup)&gt; blockGroups

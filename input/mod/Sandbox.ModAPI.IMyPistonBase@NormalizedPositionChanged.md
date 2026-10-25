@@ -8,5 +8,5 @@ Notifies when normalized position is changed
 
 ## Returns
 
-[Action<IMyPistonBase, float, float>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-3?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-3?view=netframework-4.6)&lt;[IMyPistonBase](Sandbox.ModAPI.IMyPistonBase), [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6), [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)&gt;
 

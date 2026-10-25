@@ -6,5 +6,5 @@ public MyPlanetMaterialGroup[] MaterialGroups
 
 ## Returns
 
-[MyPlanetMaterialGroup[]](VRage.Game.MyPlanetMaterialGroup[])
+[MyPlanetMaterialGroup[]](VRage.Game.MyPlanetMaterialGroup)
 

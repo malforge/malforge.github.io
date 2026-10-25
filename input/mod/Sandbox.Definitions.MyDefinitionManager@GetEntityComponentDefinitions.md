@@ -6,5 +6,5 @@ public ListReader<MyComponentDefinitionBase> GetEntityComponentDefinitions()
 
 ## Returns
 
-[ListReader<MyComponentDefinitionBase>](VRage.Collections.ListReader{MyComponentDefinitionBase})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyComponentDefinitionBase](VRage.Game.MyComponentDefinitionBase)&gt;
 

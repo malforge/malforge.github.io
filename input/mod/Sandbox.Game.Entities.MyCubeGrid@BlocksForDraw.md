@@ -6,5 +6,5 @@ public ConcurrentCachingHashSet<MyCubeBlock> BlocksForDraw { get; }
 
 ## Returns
 
-[ConcurrentCachingHashSet<MyCubeBlock>](VRage.Collections.ConcurrentCachingHashSet{MyCubeBlock})
+[ConcurrentCachingHashSet](VRage.Collections.ConcurrentCachingHashSet{T})&lt;[MyCubeBlock](Sandbox.Game.Entities.MyCubeBlock)&gt;
 

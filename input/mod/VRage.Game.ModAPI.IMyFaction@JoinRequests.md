@@ -8,5 +8,5 @@ Gets all faction join requests.
 
 ## Returns
 
-[DictionaryReader<long, MyFactionMember>](VRage.Collections.DictionaryReader{Int64,MyFactionMember})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;[long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6), [MyFactionMember](VRage.Game.MyFactionMember)&gt;
 

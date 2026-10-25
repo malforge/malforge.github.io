@@ -6,5 +6,5 @@ public static DictionaryReader<K, V> Empty
 
 ## Returns
 
-[DictionaryReader<K, V>](VRage.Collections.DictionaryReader{K,V})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;K, V&gt;
 

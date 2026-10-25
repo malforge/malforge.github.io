@@ -6,5 +6,5 @@ public HashSetReader<MyCubeBlock> UnsafeBlocks { get; }
 
 ## Returns
 
-[HashSetReader<MyCubeBlock>](VRage.Collections.HashSetReader{MyCubeBlock})
+[HashSetReader](VRage.Collections.HashSetReader{T})&lt;[MyCubeBlock](Sandbox.Game.Entities.MyCubeBlock)&gt;
 

@@ -6,5 +6,5 @@ public Item[] Results
 
 ## Returns
 
-[Item[]](Sandbox.Definitions.Item[])
+[Item[]](Sandbox.Definitions.MyBlueprintDefinitionBase+Item)
 

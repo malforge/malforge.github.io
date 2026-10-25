@@ -66,9 +66,9 @@ Transforms an array of Vector2s by a specified Matrix.
 
 ## Parameters
 
-* [Vector2[]](VRageMath.Vector2[]) sourceArray
+* [Vector2[]](VRageMath.Vector2) sourceArray
 * [Matrix](VRageMath.Matrix) matrix
-* [Vector2[]](VRageMath.Vector2[]) destinationArray
+* [Vector2[]](VRageMath.Vector2) destinationArray
 ## Summary
 
 ```csharp
@@ -79,10 +79,10 @@ Transforms a specified range in an array of Vector2s by a specified Matrix and p
 
 ## Parameters
 
-* [Vector2[]](VRageMath.Vector2[]) sourceArray
+* [Vector2[]](VRageMath.Vector2) sourceArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceIndex
 * [Matrix](VRageMath.Matrix) matrix
-* [Vector2[]](VRageMath.Vector2[]) destinationArray
+* [Vector2[]](VRageMath.Vector2) destinationArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) destinationIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length
 ## Summary
@@ -95,9 +95,9 @@ Transforms an array of Vector2s by a specified Quaternion.
 
 ## Parameters
 
-* [Vector2[]](VRageMath.Vector2[]) sourceArray
+* [Vector2[]](VRageMath.Vector2) sourceArray
 * [Quaternion](VRageMath.Quaternion) rotation
-* [Vector2[]](VRageMath.Vector2[]) destinationArray
+* [Vector2[]](VRageMath.Vector2) destinationArray
 ## Summary
 
 ```csharp
@@ -108,9 +108,9 @@ Transforms a specified range in an array of Vector2s by a specified Quaternion a
 
 ## Parameters
 
-* [Vector2[]](VRageMath.Vector2[]) sourceArray
+* [Vector2[]](VRageMath.Vector2) sourceArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceIndex
 * [Quaternion](VRageMath.Quaternion) rotation
-* [Vector2[]](VRageMath.Vector2[]) destinationArray
+* [Vector2[]](VRageMath.Vector2) destinationArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) destinationIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length

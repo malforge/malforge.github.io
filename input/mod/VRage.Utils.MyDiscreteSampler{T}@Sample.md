@@ -6,7 +6,7 @@ public T Sample(MyRandom rng)
 
 ## Returns
 
-[T](VRage.Utils.MyDiscreteSampler{T}+T)
+T
 
 ## Parameters
 
@@ -19,7 +19,7 @@ public T Sample(float sample)
 
 ## Returns
 
-[T](VRage.Utils.MyDiscreteSampler{T}+T)
+T
 
 ## Parameters
 
@@ -32,5 +32,5 @@ public T Sample()
 
 ## Returns
 
-[T](VRage.Utils.MyDiscreteSampler{T}+T)
+T
 

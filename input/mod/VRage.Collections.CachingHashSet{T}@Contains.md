@@ -10,4 +10,4 @@ public bool Contains(T item)
 
 ## Parameters
 
-* [T](VRage.Collections.CachingHashSet{T}+T) item
+* T item

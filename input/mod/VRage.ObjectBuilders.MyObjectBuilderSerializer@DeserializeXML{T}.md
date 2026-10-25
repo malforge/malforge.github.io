@@ -11,7 +11,7 @@ public static bool DeserializeXML<T>(string path, out T objectBuilder)
 ## Parameters
 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) path
-* [T](VRage.ObjectBuilders.MyObjectBuilderSerializer+T) objectBuilder
+* T objectBuilder
 ## Summary
 
 ```csharp
@@ -25,7 +25,7 @@ public static bool DeserializeXML<T>(string path, out T objectBuilder, out ulo
 ## Parameters
 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) path
-* [T](VRage.ObjectBuilders.MyObjectBuilderSerializer+T) objectBuilder
+* T objectBuilder
 * [ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6) fileSize
 ## Summary
 
@@ -39,6 +39,6 @@ public static bool DeserializeXML<T>(Byte[] xmlData, out T objectBuilder, out 
 
 ## Parameters
 
-* Byte[] <sub>prohibited</sub> xmlData
-* [T](VRage.ObjectBuilders.MyObjectBuilderSerializer+T) objectBuilder
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) xmlData
+* T objectBuilder
 * [ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6) fileSize

@@ -6,7 +6,7 @@ public TValue GetMininum(IMyCubeBlock block)
 
 ## Returns
 
-[TValue](Sandbox.ModAPI.Interfaces.ITerminalProperty{TValue}+TValue)
+TValue
 
 ## Parameters
 

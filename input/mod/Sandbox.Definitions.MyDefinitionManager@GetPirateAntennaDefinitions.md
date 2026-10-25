@@ -6,5 +6,5 @@ public DictionaryValuesReader<MyDefinitionId, MyPirateAntennaDefinition> GetPira
 
 ## Returns
 
-[DictionaryValuesReader<MyDefinitionId, MyPirateAntennaDefinition>](VRage.Collections.DictionaryValuesReader{MyDefinitionId,MyPirateAntennaDefinition})
+[DictionaryValuesReader](VRage.Collections.DictionaryValuesReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyPirateAntennaDefinition](Sandbox.Definitions.MyPirateAntennaDefinition)&gt;
 

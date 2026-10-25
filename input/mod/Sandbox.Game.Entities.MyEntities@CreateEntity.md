@@ -13,6 +13,6 @@ public static MyEntity CreateEntity(MyDefinitionId entityContainerId, bool fadeI
 * [MyDefinitionId](VRage.Game.MyDefinitionId) entityContainerId
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) fadeIn
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) setPosAndRot
-* [Vector3?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) position
-* [Vector3?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) up
-* [Vector3?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) forward
+* [Vector3?](VRageMath.Vector3) position
+* [Vector3?](VRageMath.Vector3) up
+* [Vector3?](VRageMath.Vector3) forward

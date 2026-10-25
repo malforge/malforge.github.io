@@ -12,5 +12,5 @@ public static MyDetectedEntityInfo Create(MyEntity entity, long sensorOwner, Vec
 
 * [MyEntity](VRage.Game.Entity.MyEntity) entity
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) sensorOwner
-* [Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) hitPosition
-* [HitInfo?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) hitInfo
+* [Vector3D?](VRageMath.Vector3D) hitPosition
+* HitInfo? <sub>prohibited</sub> hitInfo

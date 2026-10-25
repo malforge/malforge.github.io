@@ -8,5 +8,5 @@ Called when new block group was added. Warning, on grid disconnects, you would n
 
 ## Returns
 
-[Action<IMyBlockGroup>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[IMyBlockGroup](Sandbox.ModAPI.IMyBlockGroup)&gt;
 

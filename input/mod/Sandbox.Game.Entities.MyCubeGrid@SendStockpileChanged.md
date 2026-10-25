@@ -7,4 +7,4 @@ public void SendStockpileChanged(MySlimBlock mySlimBlock, List<MyStockpileItem> 
 ## Parameters
 
 * MySlimBlock <sub>prohibited</sub> mySlimBlock
-* [List<MyStockpileItem>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) list
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyStockpileItem](Sandbox.Game.Entities.MyStockpileItem)&gt; list

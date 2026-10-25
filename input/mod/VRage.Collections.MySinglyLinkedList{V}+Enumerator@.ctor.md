@@ -6,4 +6,4 @@ public Enumerator(MySinglyLinkedList<V> parentList)
 
 ## Parameters
 
-* [MySinglyLinkedList<V>](VRage.Collections.MySinglyLinkedList{V}) parentList
+* [MySinglyLinkedList](VRage.Collections.MySinglyLinkedList{V})&lt;V&gt; parentList

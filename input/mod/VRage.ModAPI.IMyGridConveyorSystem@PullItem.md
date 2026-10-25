@@ -15,7 +15,7 @@ amount of item pulled
 ## Parameters
 
 * [MyDefinitionId](VRage.Game.MyDefinitionId) itemDefinitionId
-* [MyFixedPoint?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) amount
+* [MyFixedPoint?](VRage.MyFixedPoint) amount
 * [IMyEntity](VRage.ModAPI.IMyEntity) startingBlock
 * [IMyInventory](VRage.Game.ModAPI.IMyInventory) destinationInventory
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) remove

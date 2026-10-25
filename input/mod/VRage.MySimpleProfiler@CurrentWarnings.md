@@ -6,5 +6,5 @@ public static Dictionary<MySimpleProfilingBlock, PerformanceWarning> CurrentWarn
 
 ## Returns
 
-[Dictionary<MySimpleProfilingBlock, PerformanceWarning>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)
+[Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;[MySimpleProfilingBlock](VRage.MySimpleProfiler+MySimpleProfilingBlock), [PerformanceWarning](VRage.MySimpleProfiler+PerformanceWarning)&gt;
 

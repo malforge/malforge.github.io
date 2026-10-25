@@ -6,5 +6,5 @@ public ListReader<MyFactionStationAdvertDefinition> GetFactionStationAdvertDefin
 
 ## Returns
 
-[ListReader<MyFactionStationAdvertDefinition>](VRage.Collections.ListReader{MyFactionStationAdvertDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyFactionStationAdvertDefinition](Sandbox.Definitions.MyFactionStationAdvertDefinition)&gt;
 

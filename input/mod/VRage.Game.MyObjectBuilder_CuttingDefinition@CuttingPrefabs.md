@@ -6,5 +6,5 @@ public MyCuttingPrefab[] CuttingPrefabs
 
 ## Returns
 
-[MyCuttingPrefab[]](VRage.Game.MyCuttingPrefab[])
+[MyCuttingPrefab[]](VRage.Game.MyObjectBuilder_CuttingDefinition+MyCuttingPrefab)
 

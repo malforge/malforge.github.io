@@ -6,5 +6,5 @@ public BlueprintItem[] Prerequisites
 
 ## Returns
 
-[BlueprintItem[]](VRage.Game.BlueprintItem[])
+[BlueprintItem[]](VRage.Game.BlueprintItem)
 

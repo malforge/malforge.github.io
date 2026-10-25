@@ -6,5 +6,5 @@ public MyPlanetDistortionDefinition[] DistortionTable
 
 ## Returns
 
-[MyPlanetDistortionDefinition[]](VRage.Game.MyPlanetDistortionDefinition[])
+[MyPlanetDistortionDefinition[]](VRage.Game.MyPlanetDistortionDefinition)
 

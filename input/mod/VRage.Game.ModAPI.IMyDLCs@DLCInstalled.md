@@ -8,7 +8,7 @@ Called when a new DLC is installed by a client. On the client, this only reports
 
 ## Returns
 
-[Action<ulong, uint>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)&lt;[ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6), [uint](https://docs.microsoft.com/en-us/dotnet/api/System.UInt32?view=netframework-4.6)&gt;
 
 ## Remarks
 

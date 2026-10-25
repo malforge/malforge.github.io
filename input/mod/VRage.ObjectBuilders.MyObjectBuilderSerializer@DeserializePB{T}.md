@@ -11,7 +11,7 @@ public static bool DeserializePB<T>(string path, out T objectBuilder)
 ## Parameters
 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) path
-* [T](VRage.ObjectBuilders.MyObjectBuilderSerializer+T) objectBuilder
+* T objectBuilder
 ## Summary
 
 ```csharp
@@ -25,7 +25,7 @@ public static bool DeserializePB<T>(string path, out T objectBuilder, out ulon
 ## Parameters
 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) path
-* [T](VRage.ObjectBuilders.MyObjectBuilderSerializer+T) objectBuilder
+* T objectBuilder
 * [ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6) fileSize
 ## Summary
 
@@ -39,6 +39,6 @@ public static bool DeserializePB<T>(Byte[] data, out T objectBuilder, out ulon
 
 ## Parameters
 
-* Byte[] <sub>prohibited</sub> data
-* [T](VRage.ObjectBuilders.MyObjectBuilderSerializer+T) objectBuilder
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) data
+* T objectBuilder
 * [ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6) fileSize

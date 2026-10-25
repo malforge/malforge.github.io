@@ -6,7 +6,7 @@ public T ItemAt(int index)
 
 ## Returns
 
-[T](VRage.Collections.ListReader{T}+T)
+T
 
 ## Parameters
 

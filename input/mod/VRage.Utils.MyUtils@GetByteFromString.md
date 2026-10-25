@@ -6,7 +6,7 @@ public static byte? GetByteFromString(string s)
 
 ## Returns
 
-[byte?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[byte?](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6)
 
 ## Parameters
 

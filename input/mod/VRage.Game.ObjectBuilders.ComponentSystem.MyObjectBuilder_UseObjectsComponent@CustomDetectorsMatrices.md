@@ -6,5 +6,5 @@ public Matrix[] CustomDetectorsMatrices
 
 ## Returns
 
-[Matrix[]](VRageMath.Matrix[])
+[Matrix[]](VRageMath.Matrix)
 

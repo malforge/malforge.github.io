@@ -6,5 +6,5 @@ public DictionaryReader<MyDefinitionId, MyFactionNameDefinition> GetFactionNameD
 
 ## Returns
 
-[DictionaryReader<MyDefinitionId, MyFactionNameDefinition>](VRage.Collections.DictionaryReader{MyDefinitionId,MyFactionNameDefinition})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyFactionNameDefinition](Sandbox.Definitions.MyFactionNameDefinition)&gt;
 

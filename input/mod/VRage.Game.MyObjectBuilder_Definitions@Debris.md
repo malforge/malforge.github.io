@@ -6,5 +6,5 @@ public MyObjectBuilder_DebrisDefinition[] Debris
 
 ## Returns
 
-[MyObjectBuilder_DebrisDefinition[]](VRage.Game.MyObjectBuilder_DebrisDefinition[])
+[MyObjectBuilder_DebrisDefinition[]](VRage.Game.MyObjectBuilder_DebrisDefinition)
 

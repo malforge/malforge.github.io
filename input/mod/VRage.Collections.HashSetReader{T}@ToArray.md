@@ -6,5 +6,5 @@ public T[] ToArray()
 
 ## Returns
 
-[T[]](VRage.Collections.T[])
+T[]
 

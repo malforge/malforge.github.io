@@ -6,5 +6,5 @@ public LootBagDefinition[] LootBags
 
 ## Returns
 
-[LootBagDefinition[]](VRage.Game.LootBagDefinition[])
+[LootBagDefinition[]](VRage.Game.MyObjectBuilder_Configuration+LootBagDefinition)
 

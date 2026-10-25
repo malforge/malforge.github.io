@@ -6,7 +6,7 @@ public static T GetDefaultValue<T>(Type type)
 
 ## Returns
 
-[T](VRage.MyStructDefault+T)
+T
 
 ## Parameters
 

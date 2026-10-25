@@ -6,5 +6,5 @@ public SyncValidate<T> Validate { get; set; }
 
 ## Returns
 
-SyncValidate<T> <sub>prohibited</sub>
+SyncValidate&lt;T&gt; <sub>prohibited</sub>
 

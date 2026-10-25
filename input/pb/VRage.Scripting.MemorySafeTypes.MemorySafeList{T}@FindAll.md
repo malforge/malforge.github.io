@@ -6,8 +6,8 @@ public MemorySafeList<T> FindAll(Predicate<T> match)
 
 ## Returns
 
-[MemorySafeList<T>](VRage.Scripting.MemorySafeTypes.MemorySafeList{T})
+[MemorySafeList](VRage.Scripting.MemorySafeTypes.MemorySafeList{T})&lt;T&gt;
 
 ## Parameters
 
-* Predicate<T> <sub>prohibited</sub> match
+* Predicate&lt;T&gt; <sub>prohibited</sub> match

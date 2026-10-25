@@ -6,5 +6,5 @@ public StartingItem[] CreativeModeComponents
 
 ## Returns
 
-[StartingItem[]](Sandbox.Definitions.StartingItem[])
+[StartingItem[]](Sandbox.Definitions.MyScenarioDefinition+StartingItem)
 

@@ -8,7 +8,7 @@ Iterate every cell contained in {left} - {right}, where we interpret {box} as th
 
 ## Returns
 
-[IEnumerable<Vector3I>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;[Vector3I](VRageMath.Vector3I)&gt;
 
 
 

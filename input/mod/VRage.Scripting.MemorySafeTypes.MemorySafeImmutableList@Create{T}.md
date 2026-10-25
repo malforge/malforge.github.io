@@ -6,7 +6,7 @@ public static ImmutableList<T> Create<T>()
 
 ## Returns
 
-[ImmutableList<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableList-1?view=netframework-4.6)
+[ImmutableList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableList-1?view=netframework-4.6)&lt;T&gt;
 
 ## Summary
 
@@ -16,11 +16,11 @@ public static ImmutableList<T> Create<T>(T item)
 
 ## Returns
 
-[ImmutableList<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableList-1?view=netframework-4.6)
+[ImmutableList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableList-1?view=netframework-4.6)&lt;T&gt;
 
 ## Parameters
 
-* [T](VRage.Scripting.MemorySafeTypes.MemorySafeImmutableList+T) item
+* T item
 ## Summary
 
 ```csharp
@@ -29,8 +29,8 @@ public static ImmutableList<T> Create<T>(T[] items)
 
 ## Returns
 
-[ImmutableList<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableList-1?view=netframework-4.6)
+[ImmutableList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableList-1?view=netframework-4.6)&lt;T&gt;
 
 ## Parameters
 
-* [T[]](VRage.Scripting.MemorySafeTypes.T[]) items
+* T[] items

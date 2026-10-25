@@ -6,5 +6,5 @@ public static Action<MyEntity, List<MyEntity>> MyWeldingGroupsGetGroupNodesExtCa
 
 ## Returns
 
-[Action<MyEntity, List<MyEntity>>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity), [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt;&gt;
 

@@ -6,8 +6,8 @@ public static Ref<T> Create<T>(T value)
 
 ## Returns
 
-[Ref<T>](VRage.Ref{T})
+[Ref](VRage.Ref{T})&lt;T&gt;
 
 ## Parameters
 
-* [T](VRage.Ref+T) value
+* T value

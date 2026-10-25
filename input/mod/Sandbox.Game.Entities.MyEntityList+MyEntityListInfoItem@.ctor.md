@@ -15,7 +15,7 @@ public MyEntityListInfoItem(string displayName, long entityId, int blockCount, i
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) displayName
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) entityId
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) blockCount
-* [int?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) pcu
+* [int?](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) pcu
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) mass
 * [Vector3D](VRageMath.Vector3D) position
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) speed
@@ -23,8 +23,8 @@ public MyEntityListInfoItem(string displayName, long entityId, int blockCount, i
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) ownerName
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) owner
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) ownerLogin
-* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) ownerLogout
+* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) ownerLogout
 * [MyUpdateTiersPlayerPresence](VRage.Game.ModAPI.MyUpdateTiersPlayerPresence) playerPresenceTier
 * [MyUpdateTiersGridPresence](VRage.Game.ModAPI.MyUpdateTiersGridPresence) gridPresenceTier
-* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) isReplicated
+* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) isReplicated
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) isGrid

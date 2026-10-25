@@ -6,5 +6,5 @@ public MyObjectBuilder_WorldGeneratorPlayerStartingState[] PossibleStartingState
 
 ## Returns
 
-[MyObjectBuilder_WorldGeneratorPlayerStartingState[]](VRage.Game.MyObjectBuilder_WorldGeneratorPlayerStartingState[])
+[MyObjectBuilder_WorldGeneratorPlayerStartingState[]](VRage.Game.MyObjectBuilder_WorldGeneratorPlayerStartingState)
 

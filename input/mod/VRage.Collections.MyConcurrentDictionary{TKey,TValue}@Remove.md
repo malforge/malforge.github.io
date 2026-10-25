@@ -10,4 +10,4 @@ public bool Remove(TKey key)
 
 ## Parameters
 
-* [TKey](VRage.Collections.MyConcurrentDictionary{TKey,TValue}+TKey) key
+* TKey key

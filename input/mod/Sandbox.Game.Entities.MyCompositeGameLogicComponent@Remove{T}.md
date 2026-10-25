@@ -10,4 +10,4 @@ public bool Remove<T>(T component)
 
 ## Parameters
 
-* [T](Sandbox.Game.Entities.MyCompositeGameLogicComponent+T) component
+* T component

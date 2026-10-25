@@ -14,4 +14,4 @@ copied hierarchy
 
 ## Parameters
 
-* [HashSet<MyObjectBuilder_AnimationTreeNode>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6) selectedNodes
+* [HashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)&lt;[MyObjectBuilder_AnimationTreeNode](VRage.Game.ObjectBuilders.MyObjectBuilder_AnimationTreeNode)&gt; selectedNodes

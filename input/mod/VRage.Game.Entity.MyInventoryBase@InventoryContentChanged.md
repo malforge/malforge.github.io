@@ -6,5 +6,5 @@ public Action<MyInventoryBase, MyPhysicalInventoryItem, MyFixedPoint> event Inve
 
 ## Returns
 
-[Action<MyInventoryBase, MyPhysicalInventoryItem, MyFixedPoint>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-3?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-3?view=netframework-4.6)&lt;[MyInventoryBase](VRage.Game.Entity.MyInventoryBase), [MyPhysicalInventoryItem](VRage.Game.Entity.MyPhysicalInventoryItem), [MyFixedPoint](VRage.MyFixedPoint)&gt;
 

@@ -10,4 +10,4 @@ public bool Add(T item)
 
 ## Parameters
 
-* [T](VRage.Collections.MyUniqueList{T}+T) item
+* T item

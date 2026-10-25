@@ -6,5 +6,5 @@ public ListReader<MyScenarioCategoryDefinition> GetScenarioCategoryDefinitions()
 
 ## Returns
 
-[ListReader<MyScenarioCategoryDefinition>](VRage.Collections.ListReader{MyScenarioCategoryDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyScenarioCategoryDefinition](VRage.Game.Definitions.MyScenarioCategoryDefinition)&gt;
 

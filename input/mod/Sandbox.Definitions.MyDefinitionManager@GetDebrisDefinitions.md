@@ -6,5 +6,5 @@ public ListReader<MyDebrisDefinition> GetDebrisDefinitions()
 
 ## Returns
 
-[ListReader<MyDebrisDefinition>](VRage.Collections.ListReader{MyDebrisDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyDebrisDefinition](Sandbox.Definitions.MyDebrisDefinition)&gt;
 

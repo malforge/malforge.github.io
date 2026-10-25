@@ -6,5 +6,5 @@ public MyWeaponAmmoData[] WeaponAmmoDatas
 
 ## Returns
 
-[MyWeaponAmmoData[]](Sandbox.Definitions.MyWeaponAmmoData[])
+[MyWeaponAmmoData[]](Sandbox.Definitions.MyWeaponDefinition+MyWeaponAmmoData)
 

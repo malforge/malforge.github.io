@@ -6,5 +6,5 @@ public ConditionBase[] Terms
 
 ## Returns
 
-[ConditionBase[]](VRage.Game.ObjectBuilders.Definitions.ConditionBase[])
+[ConditionBase[]](VRage.Game.ObjectBuilders.Definitions.ConditionBase)
 

@@ -6,7 +6,7 @@ public V GetItem(int index)
 
 ## Returns
 
-[V](VRage.Collections.MyBinaryHeap{K,V}+V)
+V
 
 ## Parameters
 

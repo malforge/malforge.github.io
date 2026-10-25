@@ -10,4 +10,4 @@ public int GetBucketId(T instance)
 
 ## Parameters
 
-* [T](VRage.Collections.IMyElementAllocator{T}+T) instance
+* T instance

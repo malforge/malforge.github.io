@@ -14,8 +14,8 @@ public static void DrawAttachedTransparentBox(ref MatrixD worldMatrix, ref Bou
 * [MySimpleObjectRasterizer](VRage.Game.MySimpleObjectRasterizer) rasterization
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) wireDivideRatio
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) lineWidth
-* [MyStringId?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) faceMaterial
-* [MyStringId?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) lineMaterial
+* [MyStringId?](VRage.Utils.MyStringId) faceMaterial
+* [MyStringId?](VRage.Utils.MyStringId) lineMaterial
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) onlyFrontFaces
 ## Summary
 
@@ -33,7 +33,7 @@ public static void DrawAttachedTransparentBox(ref MatrixD worldMatrix, ref Bou
 * [MySimpleObjectRasterizer](VRage.Game.MySimpleObjectRasterizer) rasterization
 * [Vector3I](VRageMath.Vector3I) wireDivideRatio
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) lineWidth
-* [MyStringId?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) faceMaterial
-* [MyStringId?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) lineMaterial
+* [MyStringId?](VRage.Utils.MyStringId) faceMaterial
+* [MyStringId?](VRage.Utils.MyStringId) lineMaterial
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) onlyFrontFaces
 * [BlendTypeEnum](VRageRender.MyBillboard+BlendTypeEnum) blendType

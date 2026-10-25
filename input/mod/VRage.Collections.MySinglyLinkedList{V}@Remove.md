@@ -10,4 +10,4 @@ public bool Remove(V item)
 
 ## Parameters
 
-* [V](VRage.Collections.MySinglyLinkedList{V}+V) item
+* V item

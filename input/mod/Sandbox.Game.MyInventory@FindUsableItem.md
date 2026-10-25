@@ -8,7 +8,7 @@ This will try to find the first item that can be use. This means, if durability 
 
 ## Returns
 
-[MyPhysicalInventoryItem?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[MyPhysicalInventoryItem?](VRage.Game.Entity.MyPhysicalInventoryItem)
 
 item that has durability > 0 if found
 

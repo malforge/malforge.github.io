@@ -6,5 +6,5 @@ public MyPhysicalModelItem[] Items
 
 ## Returns
 
-[MyPhysicalModelItem[]](VRage.Game.MyPhysicalModelItem[])
+[MyPhysicalModelItem[]](VRage.Game.MyPhysicalModelItem)
 

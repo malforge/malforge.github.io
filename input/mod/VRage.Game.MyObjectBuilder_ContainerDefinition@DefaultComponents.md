@@ -6,5 +6,5 @@ public DefaultComponentBuilder[] DefaultComponents
 
 ## Returns
 
-[DefaultComponentBuilder[]](VRage.Game.DefaultComponentBuilder[])
+[DefaultComponentBuilder[]](VRage.Game.MyObjectBuilder_ContainerDefinition+DefaultComponentBuilder)
 

@@ -6,4 +6,4 @@ public UniqueListReader(MyUniqueList<T> list)
 
 ## Parameters
 
-* [MyUniqueList<T>](VRage.Collections.MyUniqueList{T}) list
+* [MyUniqueList](VRage.Collections.MyUniqueList{T})&lt;T&gt; list

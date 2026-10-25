@@ -19,6 +19,6 @@ Razes blocks (unbuild) user is used only if locally invoked, if invoked from cli
 
 ## Parameters
 
-* [List<Vector3I>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) locations
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[Vector3I](VRageMath.Vector3I)&gt; locations
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) builderEntityId
 * [ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6) user

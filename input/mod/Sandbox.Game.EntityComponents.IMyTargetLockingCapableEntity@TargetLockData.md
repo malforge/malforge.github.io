@@ -6,5 +6,5 @@ public Sync<MyTargetData, FromServer> TargetLockData { get; }
 
 ## Returns
 
-Sync<MyTargetData, FromServer> <sub>prohibited</sub>
+Sync&lt;MyTargetData <sub>prohibited</sub>, [FromServer](VRage.Sync.SyncDirection+FromServer)&gt; <sub>prohibited</sub>
 

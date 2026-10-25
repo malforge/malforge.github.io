@@ -8,7 +8,7 @@ Fills a list with individual string segments representing the lines of text with
 
 ## Parameters
 
-* [List<StringSegment>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) lines
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[StringSegment](VRage.Game.ModAPI.Ingame.Utilities.StringSegment)&gt; lines
 ## Summary
 
 ```csharp
@@ -19,4 +19,4 @@ Fills a list with individual strings representing the lines of text within this 
 
 ## Parameters
 
-* [List<string>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) lines
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6)&gt; lines

@@ -6,7 +6,7 @@ public void ExecuteOperationFast<TVoxelOperator>(ref TVoxelOperator voxelOperat
 
 ## Parameters
 
-* [TVoxelOperator](VRage.ModAPI.IMyStorage+TVoxelOperator) voxelOperator
+* TVoxelOperator voxelOperator
 * [MyStorageDataTypeFlags](VRage.Voxels.MyStorageDataTypeFlags) dataToWrite
 * [Vector3I](VRageMath.Vector3I) voxelRangeMin
 * [Vector3I](VRageMath.Vector3I) voxelRangeMax

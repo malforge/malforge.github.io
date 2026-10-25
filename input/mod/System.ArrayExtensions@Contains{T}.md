@@ -10,5 +10,5 @@ public static bool Contains<T>(this T[] array, T element)
 
 ## Parameters
 
-* T[] <sub>prohibited</sub> array
-* T <sub>prohibited</sub> element
+* T[] array
+* T element

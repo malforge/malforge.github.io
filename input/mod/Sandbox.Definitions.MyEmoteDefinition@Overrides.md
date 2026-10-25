@@ -6,5 +6,5 @@ public DictionaryReader<MyDefinitionId, MyDefinitionId> Overrides { get; }
 
 ## Returns
 
-[DictionaryReader<MyDefinitionId, MyDefinitionId>](VRage.Collections.DictionaryReader{MyDefinitionId,MyDefinitionId})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyDefinitionId](VRage.Game.MyDefinitionId)&gt;
 

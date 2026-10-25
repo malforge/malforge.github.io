@@ -6,5 +6,5 @@ public Vector4[] ButtonColors
 
 ## Returns
 
-[Vector4[]](VRageMath.Vector4[])
+[Vector4[]](VRageMath.Vector4)
 

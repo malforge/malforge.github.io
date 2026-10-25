@@ -6,5 +6,5 @@ public T Get()
 
 ## Returns
 
-[T](VRage.Utils.MyTickTimedItem{T}+T)
+T
 

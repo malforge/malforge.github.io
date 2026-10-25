@@ -6,5 +6,5 @@ public MyPlanetMaterialLayer[] Layers
 
 ## Returns
 
-[MyPlanetMaterialLayer[]](VRage.Game.MyPlanetMaterialLayer[])
+[MyPlanetMaterialLayer[]](VRage.Game.MyPlanetMaterialLayer)
 

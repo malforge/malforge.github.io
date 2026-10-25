@@ -6,5 +6,5 @@ public CubeBlockEffect[] SoundEffects
 
 ## Returns
 
-[CubeBlockEffect[]](Sandbox.Definitions.CubeBlockEffect[])
+[CubeBlockEffect[]](Sandbox.Definitions.CubeBlockEffect)
 

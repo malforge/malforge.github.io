@@ -6,5 +6,5 @@ public MyObjectBuilder_CubeBlockTagDefinition[] BlockTags
 
 ## Returns
 
-[MyObjectBuilder_CubeBlockTagDefinition[]](VRage.Game.MyObjectBuilder_CubeBlockTagDefinition[])
+[MyObjectBuilder_CubeBlockTagDefinition[]](VRage.Game.MyObjectBuilder_CubeBlockTagDefinition)
 

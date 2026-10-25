@@ -8,5 +8,5 @@ Sets provider for [IMyIntergridCommunicationSystem](Sandbox.ModAPI.Ingame.IMyInt
 
 ## Returns
 
-[Func<IMyIntergridCommunicationSystem>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6)
+[Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6)&lt;[IMyIntergridCommunicationSystem](Sandbox.ModAPI.Ingame.IMyIntergridCommunicationSystem)&gt;
 

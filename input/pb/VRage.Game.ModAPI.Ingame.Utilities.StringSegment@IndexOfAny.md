@@ -14,4 +14,4 @@ Reports the zero-based index of the first occurence of one of the provided chara
 
 ## Parameters
 
-* Char[] <sub>prohibited</sub> chars
+* [char[]](https://docs.microsoft.com/en-us/dotnet/api/System.Char?view=netframework-4.6) chars

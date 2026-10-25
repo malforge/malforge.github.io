@@ -6,5 +6,5 @@ public FactionTypePrefabs[] StationPrefabsFactionTypes
 
 ## Returns
 
-[FactionTypePrefabs[]](VRage.Game.ObjectBuilders.Definitions.FactionTypePrefabs[])
+[FactionTypePrefabs[]](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_StationsListDefinition+FactionTypePrefabs)
 

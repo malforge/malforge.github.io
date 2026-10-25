@@ -6,4 +6,4 @@ public Enumerator(MyQueue<T> queue)
 
 ## Parameters
 
-* [MyQueue<T>](VRage.Collections.MyQueue{T}) queue
+* [MyQueue](VRage.Collections.MyQueue{T})&lt;T&gt; queue

@@ -6,13 +6,13 @@ public static ImmutableArray<TResult> CreateRange<TSource, TArg, TResult>(Immuta
 
 ## Returns
 
-[ImmutableArray<TResult>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6)
+[ImmutableArray](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6)&lt;TResult&gt;
 
 ## Parameters
 
-* [ImmutableArray<TSource>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6) items
-* [Func<TSource, TArg, TResult>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-3?view=netframework-4.6) selector
-* [TArg](VRage.Scripting.MemorySafeTypes.MemorySafeImmutableArray+TArg) arg
+* [ImmutableArray](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6)&lt;TSource&gt; items
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-3?view=netframework-4.6)&lt;TSource, TArg, TResult&gt; selector
+* TArg arg
 ## Summary
 
 ```csharp
@@ -21,12 +21,12 @@ public static ImmutableArray<TResult> CreateRange<TSource, TArg, TResult>(Immuta
 
 ## Returns
 
-[ImmutableArray<TResult>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6)
+[ImmutableArray](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6)&lt;TResult&gt;
 
 ## Parameters
 
-* [ImmutableArray<TSource>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6) items
+* [ImmutableArray](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6)&lt;TSource&gt; items
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) start
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length
-* [Func<TSource, TArg, TResult>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-3?view=netframework-4.6) selector
-* [TArg](VRage.Scripting.MemorySafeTypes.MemorySafeImmutableArray+TArg) arg
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-3?view=netframework-4.6)&lt;TSource, TArg, TResult&gt; selector
+* TArg arg

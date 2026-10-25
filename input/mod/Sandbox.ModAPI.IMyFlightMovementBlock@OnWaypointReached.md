@@ -8,5 +8,5 @@ Triggers when autopilot reaches current waypoint
 
 ## Returns
 
-[Action<IMyFlightMovementBlock, IMyAutopilotWaypoint>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)&lt;[IMyFlightMovementBlock](Sandbox.ModAPI.IMyFlightMovementBlock), [IMyAutopilotWaypoint](Sandbox.ModAPI.Ingame.IMyAutopilotWaypoint)&gt;
 

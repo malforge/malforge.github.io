@@ -10,4 +10,4 @@ public bool ContainsKey(K key)
 
 ## Parameters
 
-* [K](VRage.Collections.CachingDictionary{K,V}+K) key
+* K key

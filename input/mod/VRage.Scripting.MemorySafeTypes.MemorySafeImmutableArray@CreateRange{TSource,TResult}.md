@@ -6,12 +6,12 @@ public static ImmutableArray<TResult> CreateRange<TSource, TResult>(ImmutableArr
 
 ## Returns
 
-[ImmutableArray<TResult>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6)
+[ImmutableArray](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6)&lt;TResult&gt;
 
 ## Parameters
 
-* [ImmutableArray<TSource>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6) items
-* [Func<TSource, TResult>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) selector
+* [ImmutableArray](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6)&lt;TSource&gt; items
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;TSource, TResult&gt; selector
 ## Summary
 
 ```csharp
@@ -20,11 +20,11 @@ public static ImmutableArray<TResult> CreateRange<TSource, TResult>(ImmutableArr
 
 ## Returns
 
-[ImmutableArray<TResult>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6)
+[ImmutableArray](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6)&lt;TResult&gt;
 
 ## Parameters
 
-* [ImmutableArray<TSource>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6) items
+* [ImmutableArray](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableArray-1?view=netframework-4.6)&lt;TSource&gt; items
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) start
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length
-* [Func<TSource, TResult>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) selector
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;TSource, TResult&gt; selector

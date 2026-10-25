@@ -71,7 +71,7 @@ public double? Intersects(ref RayD ray)
 
 ## Returns
 
-[double?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[double?](https://docs.microsoft.com/en-us/dotnet/api/System.Double?view=netframework-4.6)
 
 ## Parameters
 
@@ -84,7 +84,7 @@ public double? Intersects(ref LineD line)
 
 ## Returns
 
-[double?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[double?](https://docs.microsoft.com/en-us/dotnet/api/System.Double?view=netframework-4.6)
 
 ## Parameters
 

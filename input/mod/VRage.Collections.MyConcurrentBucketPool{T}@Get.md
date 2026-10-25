@@ -6,7 +6,7 @@ public T Get(int bucketId)
 
 ## Returns
 
-[T](VRage.Collections.MyConcurrentBucketPool{T}+T)
+T
 
 ## Parameters
 

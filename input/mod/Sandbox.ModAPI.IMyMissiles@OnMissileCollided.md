@@ -8,5 +8,5 @@ Called when missile hits something. May be more than 1 call per missile.
 
 ## Returns
 
-[Action<IMyMissile>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[IMyMissile](Sandbox.ModAPI.IMyMissile)&gt;
 

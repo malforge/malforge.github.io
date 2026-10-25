@@ -10,7 +10,7 @@ Cast a ray and returns all matching entities. Must not be called from parallel t
 
 * [Vector3D](VRageMath.Vector3D) from
 * [Vector3D](VRageMath.Vector3D) to
-* [List<IHitInfo>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) toList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IHitInfo](VRage.Game.ModAPI.IHitInfo)&gt; toList
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) raycastFilterLayer
 ## Summary
 

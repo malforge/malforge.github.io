@@ -6,7 +6,7 @@ public static ImmutableHashSet<T> Create<T>()
 
 ## Returns
 
-[ImmutableHashSet<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)
+[ImmutableHashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)&lt;T&gt;
 
 ## Summary
 
@@ -16,11 +16,11 @@ public static ImmutableHashSet<T> Create<T>(IEqualityComparer<T> equalityCompare
 
 ## Returns
 
-[ImmutableHashSet<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)
+[ImmutableHashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)&lt;T&gt;
 
 ## Parameters
 
-* [IEqualityComparer<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6) equalityComparer
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6)&lt;T&gt; equalityComparer
 ## Summary
 
 ```csharp
@@ -29,11 +29,11 @@ public static ImmutableHashSet<T> Create<T>(T item)
 
 ## Returns
 
-[ImmutableHashSet<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)
+[ImmutableHashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)&lt;T&gt;
 
 ## Parameters
 
-* [T](VRage.Scripting.MemorySafeTypes.MemorySafeImmutableHashSet+T) item
+* T item
 ## Summary
 
 ```csharp
@@ -42,12 +42,12 @@ public static ImmutableHashSet<T> Create<T>(IEqualityComparer<T> equalityCompare
 
 ## Returns
 
-[ImmutableHashSet<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)
+[ImmutableHashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)&lt;T&gt;
 
 ## Parameters
 
-* [IEqualityComparer<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6) equalityComparer
-* [T](VRage.Scripting.MemorySafeTypes.MemorySafeImmutableHashSet+T) item
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6)&lt;T&gt; equalityComparer
+* T item
 ## Summary
 
 ```csharp
@@ -56,11 +56,11 @@ public static ImmutableHashSet<T> Create<T>(T[] items)
 
 ## Returns
 
-[ImmutableHashSet<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)
+[ImmutableHashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)&lt;T&gt;
 
 ## Parameters
 
-* [T[]](VRage.Scripting.MemorySafeTypes.T[]) items
+* T[] items
 ## Summary
 
 ```csharp
@@ -69,9 +69,9 @@ public static ImmutableHashSet<T> Create<T>(IEqualityComparer<T> equalityCompare
 
 ## Returns
 
-[ImmutableHashSet<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)
+[ImmutableHashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)&lt;T&gt;
 
 ## Parameters
 
-* [IEqualityComparer<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6) equalityComparer
-* [T[]](VRage.Scripting.MemorySafeTypes.T[]) items
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6)&lt;T&gt; equalityComparer
+* T[] items

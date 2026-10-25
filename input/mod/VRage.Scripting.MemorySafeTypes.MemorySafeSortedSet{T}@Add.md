@@ -10,4 +10,4 @@ public bool Add(T item)
 
 ## Parameters
 
-* [T](VRage.Scripting.MemorySafeTypes.MemorySafeSortedSet{T}+T) item
+* T item

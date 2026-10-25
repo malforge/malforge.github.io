@@ -6,7 +6,7 @@ public TControl CreateControl<TControl, TBlock>(string id)
 
 ## Returns
 
-[TControl](Sandbox.ModAPI.IMyTerminalControls+TControl)
+TControl
 
 ## Parameters
 

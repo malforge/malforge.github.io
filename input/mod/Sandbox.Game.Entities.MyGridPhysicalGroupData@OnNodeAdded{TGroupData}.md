@@ -7,4 +7,4 @@ public virtual void OnNodeAdded<TGroupData>(MyCubeGrid entity, TGroupData prevGr
 ## Parameters
 
 * [MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid) entity
-* [TGroupData](Sandbox.Game.Entities.MyGridPhysicalGroupData+TGroupData) prevGroup
+* TGroupData prevGroup

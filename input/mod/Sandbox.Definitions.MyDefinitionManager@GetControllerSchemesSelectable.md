@@ -6,5 +6,5 @@ public List<MyControllerSchemeDefinition> GetControllerSchemesSelectable()
 
 ## Returns
 
-[List<MyControllerSchemeDefinition>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyControllerSchemeDefinition](Sandbox.Definitions.MyControllerSchemeDefinition)&gt;
 

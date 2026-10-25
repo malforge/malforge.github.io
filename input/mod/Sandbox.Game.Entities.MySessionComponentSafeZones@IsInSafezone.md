@@ -25,4 +25,4 @@ public static bool IsInSafezone(long entityId, List<MySafeZone> safeZones)
 ## Parameters
 
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) entityId
-* [List<MySafeZone>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) safeZones
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MySafeZone](Sandbox.Game.Entities.MySafeZone)&gt; safeZones

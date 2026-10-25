@@ -6,5 +6,5 @@ public void FillGpsList(ICollection<Item> gpsItemList, ICollection<Item> selecte
 
 ## Parameters
 
-* [ICollection<Item>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=netframework-4.6) gpsItemList
-* [ICollection<Item>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=netframework-4.6) selectedGpsItemList
+* [ICollection](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=netframework-4.6)&lt;Item <sub>prohibited</sub>&gt; gpsItemList
+* [ICollection](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=netframework-4.6)&lt;Item <sub>prohibited</sub>&gt; selectedGpsItemList

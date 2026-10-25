@@ -16,7 +16,7 @@ True in case item was successfully transferred, false otherwise
 
 * [IMyInventory](VRage.Game.ModAPI.Ingame.IMyInventory) dstInventory
 * [MyInventoryItem](VRage.Game.ModAPI.Ingame.MyInventoryItem) item
-* [MyFixedPoint?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) amount
+* [MyFixedPoint?](VRage.MyFixedPoint) amount
 ## Summary
 
 ```csharp
@@ -35,6 +35,6 @@ True in case item was successfully transferred, false otherwise
 
 * [IMyInventory](VRage.Game.ModAPI.Ingame.IMyInventory) dst
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceItemIndex
-* [int?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) targetItemIndex
-* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) stackIfPossible
-* [MyFixedPoint?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) amount
+* [int?](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) targetItemIndex
+* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) stackIfPossible
+* [MyFixedPoint?](VRage.MyFixedPoint) amount

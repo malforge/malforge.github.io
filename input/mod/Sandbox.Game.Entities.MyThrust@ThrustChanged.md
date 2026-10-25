@@ -6,5 +6,5 @@ public Action<IMyThrust, float, float> event ThrustChanged
 
 ## Returns
 
-[Action<IMyThrust, float, float>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-3?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-3?view=netframework-4.6)&lt;[IMyThrust](Sandbox.ModAPI.IMyThrust), [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6), [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)&gt;
 

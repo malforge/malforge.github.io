@@ -8,7 +8,7 @@ Checks whether a ray intersects a triangleVertexes. This uses the algorithm deve
 
 ## Returns
 
-[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)
 
 ## Parameters
 

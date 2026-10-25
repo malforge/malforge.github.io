@@ -6,5 +6,5 @@ public ListReader<MyCubeBlock> GetFatBlocks()
 
 ## Returns
 
-[ListReader<MyCubeBlock>](VRage.Collections.ListReader{MyCubeBlock})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyCubeBlock](Sandbox.Game.Entities.MyCubeBlock)&gt;
 

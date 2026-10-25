@@ -6,5 +6,5 @@ public DictionaryValuesReader<MyDefinitionId, MyDefinitionBase> GetAllDefinition
 
 ## Returns
 
-[DictionaryValuesReader<MyDefinitionId, MyDefinitionBase>](VRage.Collections.DictionaryValuesReader{MyDefinitionId,MyDefinitionBase})
+[DictionaryValuesReader](VRage.Collections.DictionaryValuesReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyDefinitionBase](VRage.Game.MyDefinitionBase)&gt;
 

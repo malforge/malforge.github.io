@@ -12,4 +12,4 @@ Creates the smallest BoundingBoxI that will contain a group of points.
 
 ## Parameters
 
-* [IEnumerable<Vector3I>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) points
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;[Vector3I](VRageMath.Vector3I)&gt; points

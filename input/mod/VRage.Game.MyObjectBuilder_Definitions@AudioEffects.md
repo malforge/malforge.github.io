@@ -6,5 +6,5 @@ public MyObjectBuilder_AudioEffectDefinition[] AudioEffects
 
 ## Returns
 
-[MyObjectBuilder_AudioEffectDefinition[]](VRage.Game.MyObjectBuilder_AudioEffectDefinition[])
+[MyObjectBuilder_AudioEffectDefinition[]](VRage.Game.MyObjectBuilder_AudioEffectDefinition)
 

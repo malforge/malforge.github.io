@@ -6,8 +6,8 @@ public VertexBoneIndicesWeights? GetAffectingBoneIndicesWeights(ref List<Vertex
 
 ## Returns
 
-[VertexBoneIndicesWeights?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+VertexBoneIndicesWeights? <sub>prohibited</sub>
 
 ## Parameters
 
-* [List<VertexArealBoneIndexWeight>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) tmpStorage
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;VertexArealBoneIndexWeight <sub>prohibited</sub>&gt; tmpStorage

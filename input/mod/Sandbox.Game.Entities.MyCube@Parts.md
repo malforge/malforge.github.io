@@ -6,5 +6,5 @@ public MyCubePart[] Parts
 
 ## Returns
 
-[MyCubePart[]](Sandbox.Game.Entities.MyCubePart[])
+[MyCubePart[]](Sandbox.Game.Entities.MyCubePart)
 

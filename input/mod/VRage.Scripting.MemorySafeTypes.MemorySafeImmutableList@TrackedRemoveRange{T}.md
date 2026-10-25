@@ -6,9 +6,9 @@ public static IImmutableList<T> TrackedRemoveRange<T>(this IImmutableList<T> li
 
 ## Returns
 
-[IImmutableList<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.IImmutableList-1?view=netframework-4.6)
+[IImmutableList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.IImmutableList-1?view=netframework-4.6)&lt;T&gt;
 
 ## Parameters
 
-* [IImmutableList<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.IImmutableList-1?view=netframework-4.6) list
-* [IEnumerable<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) items
+* [IImmutableList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.IImmutableList-1?view=netframework-4.6)&lt;T&gt; list
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;T&gt; items

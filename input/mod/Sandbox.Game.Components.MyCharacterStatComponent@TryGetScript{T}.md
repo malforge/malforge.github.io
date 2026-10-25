@@ -10,4 +10,4 @@ public bool TryGetScript<T>(out T script)
 
 ## Parameters
 
-* [T](Sandbox.Game.Components.MyCharacterStatComponent+T) script
+* T script

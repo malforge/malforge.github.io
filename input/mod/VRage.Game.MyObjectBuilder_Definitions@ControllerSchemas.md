@@ -6,5 +6,5 @@ public MyObjectBuilder_ControllerSchemaDefinition[] ControllerSchemas
 
 ## Returns
 
-[MyObjectBuilder_ControllerSchemaDefinition[]](VRage.Game.MyObjectBuilder_ControllerSchemaDefinition[])
+[MyObjectBuilder_ControllerSchemaDefinition[]](VRage.Game.MyObjectBuilder_ControllerSchemaDefinition)
 

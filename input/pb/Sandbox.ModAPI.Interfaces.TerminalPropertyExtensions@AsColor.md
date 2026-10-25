@@ -8,7 +8,7 @@ Property type cast
 
 ## Returns
 
-[ITerminalProperty<Color>](Sandbox.ModAPI.Interfaces.ITerminalProperty{Color})
+[ITerminalProperty](Sandbox.ModAPI.Interfaces.ITerminalProperty{TValue})&lt;[Color](VRageMath.Color)&gt;
 
 reference to `ITerminalProperty<TValue>`<sub>prohibited</sub> value of specified type (Color)
 

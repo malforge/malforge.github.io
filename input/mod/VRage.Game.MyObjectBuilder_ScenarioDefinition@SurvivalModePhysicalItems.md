@@ -6,5 +6,5 @@ public StartingPhysicalItem[] SurvivalModePhysicalItems
 
 ## Returns
 
-[StartingPhysicalItem[]](VRage.Game.StartingPhysicalItem[])
+[StartingPhysicalItem[]](VRage.Game.MyObjectBuilder_ScenarioDefinition+StartingPhysicalItem)
 

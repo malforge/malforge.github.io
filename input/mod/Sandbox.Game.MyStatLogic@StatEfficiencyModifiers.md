@@ -6,5 +6,5 @@ public Dictionary<string, MyStatEfficiencyModifier> StatEfficiencyModifiers { ge
 
 ## Returns
 
-[Dictionary<string, MyStatEfficiencyModifier>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)
+[Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [MyStatEfficiencyModifier](Sandbox.Game.MyStatLogic+MyStatEfficiencyModifier)&gt;
 

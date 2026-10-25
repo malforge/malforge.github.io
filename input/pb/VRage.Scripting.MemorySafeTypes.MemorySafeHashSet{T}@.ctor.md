@@ -12,7 +12,7 @@ public MemorySafeHashSet(IEnumerable<T> collection)
 
 ## Parameters
 
-* [IEnumerable<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) collection
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;T&gt; collection
 ## Summary
 
 ```csharp
@@ -21,7 +21,7 @@ public MemorySafeHashSet(IEqualityComparer<T> comparer)
 
 ## Parameters
 
-* [IEqualityComparer<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6) comparer
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6)&lt;T&gt; comparer
 ## Summary
 
 ```csharp
@@ -30,8 +30,8 @@ public MemorySafeHashSet(IEnumerable<T> collection, IEqualityComparer<T> compare
 
 ## Parameters
 
-* [IEnumerable<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) collection
-* [IEqualityComparer<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6) comparer
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;T&gt; collection
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6)&lt;T&gt; comparer
 ## Summary
 
 ```csharp

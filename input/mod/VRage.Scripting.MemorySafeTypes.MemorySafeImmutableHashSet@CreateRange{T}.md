@@ -6,11 +6,11 @@ public static ImmutableHashSet<T> CreateRange<T>(IEnumerable<T> items)
 
 ## Returns
 
-[ImmutableHashSet<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)
+[ImmutableHashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)&lt;T&gt;
 
 ## Parameters
 
-* [IEnumerable<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) items
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;T&gt; items
 ## Summary
 
 ```csharp
@@ -19,9 +19,9 @@ public static ImmutableHashSet<T> CreateRange<T>(IEqualityComparer<T> equalityCo
 
 ## Returns
 
-[ImmutableHashSet<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)
+[ImmutableHashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)&lt;T&gt;
 
 ## Parameters
 
-* [IEqualityComparer<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6) equalityComparer
-* [IEnumerable<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) items
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6)&lt;T&gt; equalityComparer
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;T&gt; items

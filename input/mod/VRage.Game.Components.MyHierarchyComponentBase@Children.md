@@ -8,5 +8,5 @@ Gets the children collection.
 
 ## Returns
 
-[ListReader<MyHierarchyComponentBase>](VRage.Collections.ListReader{MyHierarchyComponentBase})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyHierarchyComponentBase](VRage.Game.Components.MyHierarchyComponentBase)&gt;
 

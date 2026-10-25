@@ -6,5 +6,5 @@ public SubEncounter[] FactionSubEncounters
 
 ## Returns
 
-[SubEncounter[]](VRage.Game.SubEncounter[])
+[SubEncounter[]](VRage.Game.SubEncounter)
 

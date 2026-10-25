@@ -6,7 +6,7 @@ public static T GetMaximum<T>(this IMyTerminalBlock block, string propertyId)
 
 ## Returns
 
-[T](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions+T)
+T
 
 ## Parameters
 

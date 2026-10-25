@@ -6,5 +6,5 @@ public DictionaryValuesReader<MyDefinitionId, MyMainMenuInventorySceneDefinition
 
 ## Returns
 
-[DictionaryValuesReader<MyDefinitionId, MyMainMenuInventorySceneDefinition>](VRage.Collections.DictionaryValuesReader{MyDefinitionId,MyMainMenuInventorySceneDefinition})
+[DictionaryValuesReader](VRage.Collections.DictionaryValuesReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyMainMenuInventorySceneDefinition](Sandbox.Definitions.MyMainMenuInventorySceneDefinition)&gt;
 

@@ -6,5 +6,5 @@ public static MySwapQueue<T> Create<T>()
 
 ## Returns
 
-[MySwapQueue<T>](VRage.Collections.MySwapQueue{T})
+[MySwapQueue](VRage.Collections.MySwapQueue{T})&lt;T&gt;
 

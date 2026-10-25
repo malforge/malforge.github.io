@@ -6,5 +6,5 @@ public MyWeaponEffect[] WeaponEffects
 
 ## Returns
 
-[MyWeaponEffect[]](Sandbox.Definitions.MyWeaponEffect[])
+[MyWeaponEffect[]](Sandbox.Definitions.MyWeaponDefinition+MyWeaponEffect)
 

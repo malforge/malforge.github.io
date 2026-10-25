@@ -11,7 +11,7 @@ public static void Spawn(MyPhysicalInventoryItem item, Vector3D position, Vector
 * [Vector3D](VRageMath.Vector3D) forward
 * [Vector3D](VRageMath.Vector3D) up
 * [MyPhysicsComponentBase](VRage.Game.Components.MyPhysicsComponentBase) motionInheritedFrom
-* [Action<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6) completionCallback
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt; completionCallback
 ## Summary
 
 ```csharp
@@ -23,7 +23,7 @@ public static void Spawn(MyPhysicalInventoryItem item, MatrixD worldMatrix, MyPh
 * [MyPhysicalInventoryItem](VRage.Game.Entity.MyPhysicalInventoryItem) item
 * [MatrixD](VRageMath.MatrixD) worldMatrix
 * [MyPhysicsComponentBase](VRage.Game.Components.MyPhysicsComponentBase) motionInheritedFrom
-* [Action<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6) completionCallback
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt; completionCallback
 ## Summary
 
 ```csharp
@@ -36,7 +36,7 @@ public static void Spawn(MyPhysicalInventoryItem item, BoundingSphereD sphere, M
 * [BoundingSphereD](VRageMath.BoundingSphereD) sphere
 * [MyPhysicsComponentBase](VRage.Game.Components.MyPhysicsComponentBase) motionInheritedFrom
 * [MyVoxelMaterialDefinition](VRage.Game.MyVoxelMaterialDefinition) voxelMaterial
-* [Action<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6) OnDone
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt; OnDone
 ## Summary
 
 ```csharp

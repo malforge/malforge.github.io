@@ -6,4 +6,4 @@ public static void AlwaysReject<T, TSyncDirection>(this Sync<T, TSyncDirection>
 
 ## Parameters
 
-* Sync<T, TSyncDirection> <sub>prohibited</sub> sync
+* Sync&lt;T, TSyncDirection&gt; <sub>prohibited</sub> sync

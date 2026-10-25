@@ -8,5 +8,5 @@ Gets or sets function that is called to know how grid should rotate to face targ
 
 ## Returns
 
-[Func<IMyAttackPatternComponent, Vector3?>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)
+[Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[IMyAttackPatternComponent](Sandbox.ModAPI.IMyAttackPatternComponent), [Vector3?](VRageMath.Vector3)&gt;
 

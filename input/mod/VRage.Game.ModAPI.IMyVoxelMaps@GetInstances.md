@@ -8,5 +8,5 @@ Gets all instances of [IMyVoxelBase](VRage.ModAPI.IMyVoxelBase)
 
 ## Parameters
 
-* [List<IMyVoxelBase>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) outInstances
-* [Func<IMyVoxelBase, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) collect
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMyVoxelBase](VRage.ModAPI.IMyVoxelBase)&gt; outInstances
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[IMyVoxelBase](VRage.ModAPI.IMyVoxelBase), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; collect

@@ -6,5 +6,5 @@ public ListReader<MySpawnGroupDefinition> GetSpawnGroupDefinitions()
 
 ## Returns
 
-[ListReader<MySpawnGroupDefinition>](VRage.Collections.ListReader{MySpawnGroupDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MySpawnGroupDefinition](Sandbox.Definitions.MySpawnGroupDefinition)&gt;
 

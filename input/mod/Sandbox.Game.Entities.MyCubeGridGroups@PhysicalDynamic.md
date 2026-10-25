@@ -6,5 +6,5 @@ public MyGroups<MyCubeGrid, MyGridPhysicalDynamicGroupData> PhysicalDynamic
 
 ## Returns
 
-MyGroups<MyCubeGrid, MyGridPhysicalDynamicGroupData> <sub>prohibited</sub>
+MyGroups&lt;[MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid), [MyGridPhysicalDynamicGroupData](Sandbox.Game.Entities.MyGridPhysicalDynamicGroupData)&gt; <sub>prohibited</sub>
 

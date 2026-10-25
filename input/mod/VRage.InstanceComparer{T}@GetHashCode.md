@@ -10,4 +10,4 @@ public int GetHashCode(T obj)
 
 ## Parameters
 
-* [T](VRage.InstanceComparer{T}+T) obj
+* T obj

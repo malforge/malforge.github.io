@@ -6,5 +6,5 @@ public MyObjectBuilder_ComponentDefinition[] Components
 
 ## Returns
 
-[MyObjectBuilder_ComponentDefinition[]](VRage.Game.MyObjectBuilder_ComponentDefinition[])
+[MyObjectBuilder_ComponentDefinition[]](VRage.Game.MyObjectBuilder_ComponentDefinition)
 

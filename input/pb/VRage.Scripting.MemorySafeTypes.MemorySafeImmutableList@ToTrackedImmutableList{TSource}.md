@@ -6,8 +6,8 @@ public static ImmutableList<TSource> ToTrackedImmutableList<TSource>(this IEnum
 
 ## Returns
 
-[ImmutableList<TSource>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableList-1?view=netframework-4.6)
+[ImmutableList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableList-1?view=netframework-4.6)&lt;TSource&gt;
 
 ## Parameters
 
-* [IEnumerable<TSource>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) source
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;TSource&gt; source

@@ -6,5 +6,5 @@ public SerializableDictionary<string, ulong> ULongStorage
 
 ## Returns
 
-[SerializableDictionary<string, ulong>](VRage.Serialization.SerializableDictionary{String,UInt64})
+[SerializableDictionary](VRage.Serialization.SerializableDictionary{T,U})&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6)&gt;
 

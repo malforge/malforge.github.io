@@ -6,5 +6,5 @@ public AnimOverrideDef[] Overrides
 
 ## Returns
 
-[AnimOverrideDef[]](VRage.Game.ObjectBuilders.Definitions.AnimOverrideDef[])
+[AnimOverrideDef[]](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_EmoteDefinition+AnimOverrideDef)
 

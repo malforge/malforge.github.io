@@ -14,4 +14,4 @@ Number of dummies in model
 
 ## Parameters
 
-* [IDictionary<string, IMyModelDummy>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IDictionary-2?view=netframework-4.6) dummies
+* [IDictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IDictionary-2?view=netframework-4.6)&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [IMyModelDummy](VRage.Game.ModAPI.IMyModelDummy)&gt; dummies

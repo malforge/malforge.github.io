@@ -6,5 +6,5 @@ public DictionaryValuesReader<MyDefinitionId, MyAudioDefinition> GetSoundDefinit
 
 ## Returns
 
-[DictionaryValuesReader<MyDefinitionId, MyAudioDefinition>](VRage.Collections.DictionaryValuesReader{MyDefinitionId,MyAudioDefinition})
+[DictionaryValuesReader](VRage.Collections.DictionaryValuesReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyAudioDefinition](VRage.Game.MyAudioDefinition)&gt;
 

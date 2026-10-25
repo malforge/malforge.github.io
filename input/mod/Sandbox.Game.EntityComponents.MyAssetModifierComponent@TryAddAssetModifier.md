@@ -10,7 +10,7 @@ public bool TryAddAssetModifier(Byte[] checkData)
 
 ## Parameters
 
-* Byte[] <sub>prohibited</sub> checkData
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) checkData
 ## Summary
 
 ```csharp

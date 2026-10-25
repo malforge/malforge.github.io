@@ -9,7 +9,7 @@ public void PlaySingleSound(MyCueId soundId, bool stopPrevious, bool skipIntro, 
 * MyCueId <sub>prohibited</sub> soundId
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) stopPrevious
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) skipIntro
-* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) force3D
+* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) force3D
 ## Summary
 
 ```csharp
@@ -26,4 +26,4 @@ public bool PlaySingleSound(MySoundPair soundId, bool stopPrevious, bool skipInt
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) stopPrevious
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) skipIntro
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) skipToEnd
-* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) force3D
+* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) force3D

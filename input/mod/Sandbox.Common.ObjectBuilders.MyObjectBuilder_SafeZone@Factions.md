@@ -6,5 +6,5 @@ public Int64[] Factions
 
 ## Returns
 
-Int64[] <sub>prohibited</sub>
+[long[]](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)
 

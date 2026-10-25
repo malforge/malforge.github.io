@@ -39,7 +39,7 @@ public static void GetIntersectionWithSphere(ref BoundingSphereD sphere, MyEnti
 * [MyEntity](VRage.Game.Entity.MyEntity) ignoreEntity1
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) ignoreVoxelMaps
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) volumetricTest
-* [List<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) result
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt; result
 ## Summary
 
 ```csharp

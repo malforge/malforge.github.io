@@ -6,5 +6,5 @@ public ListReader<MyWeatherEffectDefinition> GetWeatherDefinitions()
 
 ## Returns
 
-[ListReader<MyWeatherEffectDefinition>](VRage.Collections.ListReader{MyWeatherEffectDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyWeatherEffectDefinition](Sandbox.Definitions.MyWeatherEffectDefinition)&gt;
 

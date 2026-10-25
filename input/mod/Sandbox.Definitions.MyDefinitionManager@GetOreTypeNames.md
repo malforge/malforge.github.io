@@ -6,4 +6,4 @@ public void GetOreTypeNames(out String[] outNames)
 
 ## Parameters
 
-* String[] <sub>prohibited</sub> outNames
+* [string[]](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) outNames

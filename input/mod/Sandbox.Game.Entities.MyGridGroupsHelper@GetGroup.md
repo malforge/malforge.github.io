@@ -6,7 +6,7 @@ public List<IMyCubeGrid> GetGroup(IMyCubeGrid node, GridLinkTypeEnum type)
 
 ## Returns
 
-[List<IMyCubeGrid>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMyCubeGrid](VRage.Game.ModAPI.IMyCubeGrid)&gt;
 
 ## Parameters
 
@@ -22,4 +22,4 @@ public void GetGroup(IMyCubeGrid node, GridLinkTypeEnum type, ICollection<IMyCub
 
 * [IMyCubeGrid](VRage.Game.ModAPI.IMyCubeGrid) node
 * [GridLinkTypeEnum](VRage.Game.ModAPI.GridLinkTypeEnum) type
-* [ICollection<IMyCubeGrid>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=netframework-4.6) collection
+* [ICollection](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=netframework-4.6)&lt;[IMyCubeGrid](VRage.Game.ModAPI.IMyCubeGrid)&gt; collection

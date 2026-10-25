@@ -6,7 +6,7 @@ public TElement Get(int bucketId)
 
 ## Returns
 
-[TElement](VRage.Collections.MyConcurrentBufferPool{TElement}+TElement)
+TElement
 
 ## Parameters
 

@@ -8,5 +8,5 @@ Get the variable storage of animation controller instance. Shortcut.
 
 ## Returns
 
-IMyVariableStorage<float> <sub>prohibited</sub>
+IMyVariableStorage&lt;[float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)&gt; <sub>prohibited</sub>
 

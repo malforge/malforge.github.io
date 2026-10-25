@@ -6,8 +6,8 @@ public T GetGrids<T>(T grids)
 
 ## Returns
 
-[T](VRage.Game.ModAPI.IMyGridGroupData+T)
+T
 
 ## Parameters
 
-* [T](VRage.Game.ModAPI.IMyGridGroupData+T) grids
+* T grids

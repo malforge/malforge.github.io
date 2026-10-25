@@ -6,5 +6,5 @@ public MySerializableList<long> AssociatedGrids
 
 ## Returns
 
-MySerializableList<long> <sub>prohibited</sub>
+MySerializableList&lt;[long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt; <sub>prohibited</sub>
 

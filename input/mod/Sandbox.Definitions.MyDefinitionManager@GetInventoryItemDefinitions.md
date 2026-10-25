@@ -6,5 +6,5 @@ public ListReader<MyDefinitionBase> GetInventoryItemDefinitions()
 
 ## Returns
 
-[ListReader<MyDefinitionBase>](VRage.Collections.ListReader{MyDefinitionBase})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyDefinitionBase](VRage.Game.MyDefinitionBase)&gt;
 

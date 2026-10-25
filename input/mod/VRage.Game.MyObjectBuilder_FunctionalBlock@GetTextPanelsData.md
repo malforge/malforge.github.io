@@ -8,7 +8,7 @@ Used to get correct TextPanel stored data. v199- using `TextPanels` and v200+ us
 
 ## Returns
 
-[List<MySerializedTextPanelData>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MySerializedTextPanelData](VRage.Game.ObjectBuilders.MySerializedTextPanelData)&gt;
 
 
 

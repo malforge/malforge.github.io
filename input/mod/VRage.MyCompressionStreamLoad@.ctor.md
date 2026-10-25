@@ -6,4 +6,4 @@ public MyCompressionStreamLoad(Byte[] compressedData)
 
 ## Parameters
 
-* Byte[] <sub>prohibited</sub> compressedData
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) compressedData

@@ -6,5 +6,5 @@ public MyPlanetMaterialDefinition[] SurfaceMaterialTable
 
 ## Returns
 
-[MyPlanetMaterialDefinition[]](VRage.Game.MyPlanetMaterialDefinition[])
+[MyPlanetMaterialDefinition[]](VRage.Game.MyPlanetMaterialDefinition)
 

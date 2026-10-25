@@ -6,5 +6,5 @@ public DictionaryValuesReader<MyDefinitionId, MyHandItemDefinition> GetHandItemD
 
 ## Returns
 
-[DictionaryValuesReader<MyDefinitionId, MyHandItemDefinition>](VRage.Collections.DictionaryValuesReader{MyDefinitionId,MyHandItemDefinition})
+[DictionaryValuesReader](VRage.Collections.DictionaryValuesReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyHandItemDefinition](Sandbox.Definitions.MyHandItemDefinition)&gt;
 

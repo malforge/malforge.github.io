@@ -6,5 +6,5 @@ public static Vector3[] ZNeighbourVectorsBack
 
 ## Returns
 
-[Vector3[]](VRageMath.Vector3[])
+[Vector3[]](VRageMath.Vector3)
 

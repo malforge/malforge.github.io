@@ -6,5 +6,5 @@ public SerializableDefinitionId[] LeftHandWeapons
 
 ## Returns
 
-[SerializableDefinitionId[]](VRage.ObjectBuilders.SerializableDefinitionId[])
+[SerializableDefinitionId[]](VRage.ObjectBuilders.SerializableDefinitionId)
 

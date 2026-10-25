@@ -6,5 +6,5 @@ public MyCubeBlockDefinitionGroup[] BlockGroups { get; }
 
 ## Returns
 
-[MyCubeBlockDefinitionGroup[]](Sandbox.Definitions.MyCubeBlockDefinitionGroup[])
+[MyCubeBlockDefinitionGroup[]](Sandbox.Definitions.MyCubeBlockDefinitionGroup)
 

@@ -6,5 +6,5 @@ public MyVoxelMiningDefinition[] VoxelMinings
 
 ## Returns
 
-[MyVoxelMiningDefinition[]](VRage.Game.MyVoxelMiningDefinition[])
+[MyVoxelMiningDefinition[]](VRage.Game.MyObjectBuilder_ToolItemDefinition+MyVoxelMiningDefinition)
 

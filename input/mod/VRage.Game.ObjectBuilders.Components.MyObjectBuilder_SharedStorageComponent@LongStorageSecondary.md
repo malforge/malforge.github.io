@@ -6,5 +6,5 @@ public SerializableDictionary<string, SerializableDictionary<string, long>> Long
 
 ## Returns
 
-[SerializableDictionary<string, SerializableDictionary<string, long>>](VRage.Serialization.SerializableDictionary{String,SerializableDictionary`2})
+[SerializableDictionary](VRage.Serialization.SerializableDictionary{T,U})&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [SerializableDictionary](VRage.Serialization.SerializableDictionary{T,U})&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt;&gt;
 

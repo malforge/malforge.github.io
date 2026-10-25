@@ -6,5 +6,5 @@ public BlueprintItem[] Results
 
 ## Returns
 
-[BlueprintItem[]](VRage.Game.BlueprintItem[])
+[BlueprintItem[]](VRage.Game.BlueprintItem)
 

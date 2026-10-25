@@ -8,7 +8,7 @@ Enumerate all values in a longeger longerval (a cuboid). This method is an alloc
 
 ## Returns
 
-[IEnumerable<Vector3L>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;[Vector3L](VRageMath.Vector3L)&gt;
 
 An iterator for that range.
 

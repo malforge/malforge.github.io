@@ -22,4 +22,4 @@ public MyBinaryHeap(int initialCapacity, IComparer<K> comparer)
 ## Parameters
 
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) initialCapacity
-* [IComparer<K>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IComparer-1?view=netframework-4.6) comparer
+* [IComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IComparer-1?view=netframework-4.6)&lt;K&gt; comparer

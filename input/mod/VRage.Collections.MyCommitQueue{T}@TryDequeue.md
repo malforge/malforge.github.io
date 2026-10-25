@@ -10,4 +10,4 @@ public bool TryDequeue(out T obj)
 
 ## Parameters
 
-* [T](VRage.Collections.MyCommitQueue{T}+T) obj
+* T obj

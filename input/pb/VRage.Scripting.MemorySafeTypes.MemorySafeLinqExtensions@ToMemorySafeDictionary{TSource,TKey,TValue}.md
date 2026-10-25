@@ -6,10 +6,10 @@ public static MemorySafeDictionary<TKey, TValue> ToMemorySafeDictionary<TSource,
 
 ## Returns
 
-[MemorySafeDictionary<TKey, TValue>](VRage.Scripting.MemorySafeTypes.MemorySafeDictionary{TKey,TValue})
+[MemorySafeDictionary](VRage.Scripting.MemorySafeTypes.MemorySafeDictionary{TKey,TValue})&lt;TKey, TValue&gt;
 
 ## Parameters
 
-* [IEnumerable<TSource>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) source
-* [Func<TSource, TKey>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) keySelector
-* [Func<TSource, TValue>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) valueSelector
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;TSource&gt; source
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;TSource, TKey&gt; keySelector
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;TSource, TValue&gt; valueSelector

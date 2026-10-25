@@ -6,5 +6,5 @@ public static MyConcurrentHashSet<MyEntity> GetEntities()
 
 ## Returns
 
-[MyConcurrentHashSet<MyEntity>](VRage.Collections.MyConcurrentHashSet{MyEntity})
+[MyConcurrentHashSet](VRage.Collections.MyConcurrentHashSet{T})&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt;
 

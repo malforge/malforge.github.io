@@ -6,5 +6,5 @@ public List<MyObjectBuilder_GasGeneratorResourceInfo> ProducedGases
 
 ## Returns
 
-[List<MyObjectBuilder_GasGeneratorResourceInfo>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyObjectBuilder_GasGeneratorResourceInfo](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_GasGeneratorResourceInfo)&gt;
 

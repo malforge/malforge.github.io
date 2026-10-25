@@ -10,4 +10,4 @@ Collects top-most cube grids whose world AABB intersects a sphere of the given r
 
 * [Vector3D](VRageMath.Vector3D) center
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) range
-* [List<MyCubeGrid>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) result
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid)&gt; result

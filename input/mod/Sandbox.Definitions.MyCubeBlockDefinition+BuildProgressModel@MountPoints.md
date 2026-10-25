@@ -6,5 +6,5 @@ public MountPoint[] MountPoints
 
 ## Returns
 
-[MountPoint[]](Sandbox.Definitions.MountPoint[])
+[MountPoint[]](Sandbox.Definitions.MyCubeBlockDefinition+MountPoint)
 

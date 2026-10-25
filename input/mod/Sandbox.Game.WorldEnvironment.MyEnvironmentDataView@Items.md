@@ -6,5 +6,5 @@ public MyList<ItemInfo> Items
 
 ## Returns
 
-MyList<ItemInfo> <sub>prohibited</sub>
+MyList&lt;[ItemInfo](Sandbox.Game.WorldEnvironment.ItemInfo)&gt; <sub>prohibited</sub>
 

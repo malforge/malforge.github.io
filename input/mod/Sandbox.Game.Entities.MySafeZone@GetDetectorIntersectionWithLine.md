@@ -11,4 +11,4 @@ public bool GetDetectorIntersectionWithLine(ref LineD line, out Vector3D? hit)
 ## Parameters
 
 * [LineD](VRageMath.LineD) line
-* [Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) hit
+* [Vector3D?](VRageMath.Vector3D) hit

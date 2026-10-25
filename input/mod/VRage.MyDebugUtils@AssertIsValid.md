@@ -19,7 +19,7 @@ Returns true if Vector3 is valid
 
 ## Parameters
 
-* [Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) vec
+* [Vector3D?](VRageMath.Vector3D) vec
 ## Summary
 
 ```csharp
@@ -41,7 +41,7 @@ Returns true if Vector3 is valid
 
 ## Parameters
 
-* [Vector3?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) vec
+* [Vector3?](VRageMath.Vector3) vec
 ## Summary
 
 ```csharp

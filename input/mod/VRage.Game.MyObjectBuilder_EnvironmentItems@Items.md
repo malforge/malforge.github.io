@@ -6,5 +6,5 @@ public MyOBEnvironmentItemData[] Items
 
 ## Returns
 
-[MyOBEnvironmentItemData[]](VRage.Game.MyOBEnvironmentItemData[])
+[MyOBEnvironmentItemData[]](VRage.Game.MyObjectBuilder_EnvironmentItems+MyOBEnvironmentItemData)
 

@@ -25,4 +25,4 @@ public static void InitCharacterPhysics(this IMyEntity entity, MyStringHash mat
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) maxImpulse
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) maxSpeedRelativeToShip
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) networkProxy
-* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) maxForce
+* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) maxForce

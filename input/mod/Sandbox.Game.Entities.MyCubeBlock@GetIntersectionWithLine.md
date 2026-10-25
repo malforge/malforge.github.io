@@ -11,5 +11,5 @@ public virtual bool GetIntersectionWithLine(ref LineD line, out MyIntersection
 ## Parameters
 
 * [LineD](VRageMath.LineD) line
-* [MyIntersectionResultLineTriangleEx?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) t
+* [MyIntersectionResultLineTriangleEx?](VRage.Game.Models.MyIntersectionResultLineTriangleEx) t
 * [IntersectionFlags](VRage.Game.Components.IntersectionFlags) flags

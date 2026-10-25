@@ -6,5 +6,5 @@ public MyDiscreteSampler<MySpawnGroupDefinition> SpawnGroupSampler
 
 ## Returns
 
-[MyDiscreteSampler<MySpawnGroupDefinition>](VRage.Utils.MyDiscreteSampler{MySpawnGroupDefinition})
+[MyDiscreteSampler](VRage.Utils.MyDiscreteSampler{T})&lt;[MySpawnGroupDefinition](Sandbox.Definitions.MySpawnGroupDefinition)&gt;
 

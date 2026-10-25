@@ -6,5 +6,5 @@ public BoardRow[] Rows
 
 ## Returns
 
-[BoardRow[]](VRage.Game.BoardRow[])
+[BoardRow[]](VRage.Game.MyObjectBuilder_BoardScreen+BoardRow)
 

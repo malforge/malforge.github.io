@@ -19,4 +19,4 @@ Pins the voxel storage to prevent closing, then executes specified action. Unpin
 
 ## Parameters
 
-* [Action<IMyStorage>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6) action
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[IMyStorage](VRage.ModAPI.IMyStorage)&gt; action

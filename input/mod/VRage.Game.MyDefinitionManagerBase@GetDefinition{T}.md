@@ -6,7 +6,7 @@ public T GetDefinition<T>(string subtypeId)
 
 ## Returns
 
-[T](VRage.Game.MyDefinitionManagerBase+T)
+T
 
 ## Parameters
 
@@ -19,7 +19,7 @@ public T GetDefinition<T>(MyStringHash subtypeId)
 
 ## Returns
 
-[T](VRage.Game.MyDefinitionManagerBase+T)
+T
 
 ## Parameters
 
@@ -32,7 +32,7 @@ public T GetDefinition<T>(MyDefinitionId subtypeId)
 
 ## Returns
 
-[T](VRage.Game.MyDefinitionManagerBase+T)
+T
 
 ## Parameters
 

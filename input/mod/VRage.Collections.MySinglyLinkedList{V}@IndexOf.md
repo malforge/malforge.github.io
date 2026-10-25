@@ -10,4 +10,4 @@ public int IndexOf(V item)
 
 ## Parameters
 
-* [V](VRage.Collections.MySinglyLinkedList{V}+V) item
+* V item

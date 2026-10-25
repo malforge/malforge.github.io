@@ -6,5 +6,5 @@ public MySerializableList<MyObjectBuilder_Action> Modifiers
 
 ## Returns
 
-MySerializableList<MyObjectBuilder_Action> <sub>prohibited</sub>
+MySerializableList&lt;[MyObjectBuilder_Action](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_Action)&gt; <sub>prohibited</sub>
 

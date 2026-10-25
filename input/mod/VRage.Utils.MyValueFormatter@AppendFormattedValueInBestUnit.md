@@ -7,8 +7,8 @@ public static void AppendFormattedValueInBestUnit(float value, String[] unitName
 ## Parameters
 
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) value
-* String[] <sub>prohibited</sub> unitNames
-* Single[] <sub>prohibited</sub> unitMultipliers
+* [string[]](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) unitNames
+* [float[]](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) unitMultipliers
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) unitDecimalDigits
 * [StringBuilder](https://docs.microsoft.com/en-us/dotnet/api/System.Text.StringBuilder?view=netframework-4.6) output
 ## Summary
@@ -20,7 +20,7 @@ public static void AppendFormattedValueInBestUnit(float value, String[] unitName
 ## Parameters
 
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) value
-* String[] <sub>prohibited</sub> unitNames
-* Single[] <sub>prohibited</sub> unitMultipliers
-* Int32[] <sub>prohibited</sub> unitDecimalDigits
+* [string[]](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) unitNames
+* [float[]](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) unitMultipliers
+* [int[]](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) unitDecimalDigits
 * [StringBuilder](https://docs.microsoft.com/en-us/dotnet/api/System.Text.StringBuilder?view=netframework-4.6) output

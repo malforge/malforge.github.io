@@ -6,8 +6,8 @@ public static Byte[] Decompress(Byte[] gzBuffer)
 
 ## Returns
 
-Byte[] <sub>prohibited</sub>
+[byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6)
 
 ## Parameters
 
-* Byte[] <sub>prohibited</sub> gzBuffer
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) gzBuffer

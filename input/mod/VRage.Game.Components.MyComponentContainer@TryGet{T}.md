@@ -10,4 +10,4 @@ public bool TryGet<T>(out T component)
 
 ## Parameters
 
-* [T](VRage.Game.Components.MyComponentContainer+T) component
+* T component

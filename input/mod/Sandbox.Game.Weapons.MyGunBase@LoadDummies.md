@@ -6,5 +6,5 @@ public void LoadDummies(Dictionary<string, MyModelDummy> dummies, Dictionary<int
 
 ## Parameters
 
-* [Dictionary<string, MyModelDummy>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6) dummies
-* [Dictionary<int, string>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6) dummyKeys
+* [Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), MyModelDummy <sub>prohibited</sub>&gt; dummies
+* [Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;[int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6), [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6)&gt; dummyKeys

@@ -6,5 +6,5 @@ public Dictionary<MySlimBlock, MyRaycastDamageInfo> DamageRemaining { get; }
 
 ## Returns
 
-[Dictionary<MySlimBlock, MyRaycastDamageInfo>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)
+[Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;MySlimBlock <sub>prohibited</sub>, [MyRaycastDamageInfo](Sandbox.Game.MyGridExplosion+MyRaycastDamageInfo)&gt;
 

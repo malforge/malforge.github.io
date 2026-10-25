@@ -6,5 +6,5 @@ public MySerializableList<uint> TieredUpdateTimes
 
 ## Returns
 
-MySerializableList<uint> <sub>prohibited</sub>
+MySerializableList&lt;[uint](https://docs.microsoft.com/en-us/dotnet/api/System.UInt32?view=netframework-4.6)&gt; <sub>prohibited</sub>
 

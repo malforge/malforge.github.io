@@ -8,4 +8,4 @@ Unregisters gun in weapon system.
 
 ## Parameters
 
-* [IMyGunObject<MyDeviceBase>](VRage.Game.ModAPI.IMyGunObject{MyDeviceBase}) gun
+* [IMyGunObject](VRage.Game.ModAPI.IMyGunObject{T})&lt;[MyDeviceBase](VRage.Game.ModAPI.MyDeviceBase)&gt; gun

@@ -6,5 +6,5 @@ public StartingItem[] SurvivalModeComponents
 
 ## Returns
 
-[StartingItem[]](VRage.Game.StartingItem[])
+[StartingItem[]](VRage.Game.MyObjectBuilder_ScenarioDefinition+StartingItem)
 

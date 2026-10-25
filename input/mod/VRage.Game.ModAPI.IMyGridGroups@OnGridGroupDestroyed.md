@@ -8,5 +8,5 @@ Called when grid-group was destroyed. Example 1: 2 small grids-groups joined int
 
 ## Returns
 
-[Action<IMyGridGroupData>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[IMyGridGroupData](VRage.Game.ModAPI.IMyGridGroupData)&gt;
 

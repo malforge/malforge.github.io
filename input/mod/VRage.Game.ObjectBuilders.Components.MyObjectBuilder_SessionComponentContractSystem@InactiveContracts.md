@@ -6,5 +6,5 @@ public MySerializableList<MyObjectBuilder_Contract> InactiveContracts
 
 ## Returns
 
-MySerializableList<MyObjectBuilder_Contract> <sub>prohibited</sub>
+MySerializableList&lt;MyObjectBuilder_Contract <sub>prohibited</sub>&gt; <sub>prohibited</sub>
 

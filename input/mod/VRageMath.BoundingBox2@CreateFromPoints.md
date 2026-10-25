@@ -12,4 +12,4 @@ Creates the smallest BoundingBox2 that will contain a group of points.
 
 ## Parameters
 
-* [IEnumerable<Vector2>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) points
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;[Vector2](VRageMath.Vector2)&gt; points

@@ -6,13 +6,13 @@ public static MyTuple<T1, T2, T3, T4, T5, T6> Create<T1, T2, T3, T4, T5, T6>(T1 
 
 ## Returns
 
-[MyTuple<T1, T2, T3, T4, T5, T6>](VRage.MyTuple{T1,T2,T3,T4,T5,T6})
+[MyTuple](VRage.MyTuple{T1,T2,T3,T4,T5,T6})&lt;T1, T2, T3, T4, T5, T6&gt;
 
 ## Parameters
 
-* [T1](VRage.MyTuple+T1) arg1
-* [T2](VRage.MyTuple+T2) arg2
-* [T3](VRage.MyTuple+T3) arg3
-* [T4](VRage.MyTuple+T4) arg4
-* [T5](VRage.MyTuple+T5) arg5
-* [T6](VRage.MyTuple+T6) arg6
+* T1 arg1
+* T2 arg2
+* T3 arg3
+* T4 arg4
+* T5 arg5
+* T6 arg6

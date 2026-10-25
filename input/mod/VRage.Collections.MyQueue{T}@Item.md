@@ -6,5 +6,5 @@ public Item { get; }
 
 ## Returns
 
-
+T
 

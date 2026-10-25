@@ -10,6 +10,6 @@ public static bool IsDistanceLessThanTolerance(ref MyIntersectionResultLineTria
 
 ## Parameters
 
-* [MyIntersectionResultLineTriangleEx?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) a
-* [MyIntersectionResultLineTriangleEx?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) b
+* [MyIntersectionResultLineTriangleEx?](VRage.Game.Models.MyIntersectionResultLineTriangleEx) a
+* [MyIntersectionResultLineTriangleEx?](VRage.Game.Models.MyIntersectionResultLineTriangleEx) b
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) distanceTolerance

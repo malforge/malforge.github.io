@@ -6,5 +6,5 @@ public WeaponEffect[] Effects
 
 ## Returns
 
-[WeaponEffect[]](VRage.Game.WeaponEffect[])
+[WeaponEffect[]](VRage.Game.MyObjectBuilder_WeaponDefinition+WeaponEffect)
 

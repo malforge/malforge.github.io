@@ -16,6 +16,6 @@ Adds new projectile
 * [MyEntity](VRage.Game.Entity.MyEntity) owningEntity
 * [MyEntity](VRage.Game.Entity.MyEntity) owningEntityAbsolute
 * [MyEntity](VRage.Game.Entity.MyEntity) weapon
-* [MyEntity[]](VRage.Game.Entity.MyEntity[]) ignoredEntities
+* [MyEntity[]](VRage.Game.Entity.MyEntity) ignoredEntities
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) supressHitIndicator
 * [ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6) owningPlayer

@@ -11,12 +11,12 @@ public static bool CheckMountPointsForSide(MyCubeBlockDefinition defA, MountPoin
 ## Parameters
 
 * [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition) defA
-* [MountPoint[]](Sandbox.Definitions.MountPoint[]) mountPointsA
+* [MountPoint[]](Sandbox.Definitions.MyCubeBlockDefinition+MountPoint) mountPointsA
 * [MyBlockOrientation](VRageMath.MyBlockOrientation) orientationA
 * [Vector3I](VRageMath.Vector3I) positionA
 * [Vector3I](VRageMath.Vector3I) normalA
 * [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition) defB
-* [MountPoint[]](Sandbox.Definitions.MountPoint[]) mountPointsB
+* [MountPoint[]](Sandbox.Definitions.MyCubeBlockDefinition+MountPoint) mountPointsB
 * [MyBlockOrientation](VRageMath.MyBlockOrientation) orientationB
 * [Vector3I](VRageMath.Vector3I) positionB
 ## Summary
@@ -31,12 +31,12 @@ public static bool CheckMountPointsForSide(List<MountPoint> transormedA, ref My
 
 ## Parameters
 
-* [List<MountPoint>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) transormedA
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MountPoint](Sandbox.Definitions.MyCubeBlockDefinition+MountPoint)&gt; transormedA
 * [MyBlockOrientation](VRageMath.MyBlockOrientation) orientationA
 * [Vector3I](VRageMath.Vector3I) positionA
 * [MyDefinitionId](VRage.Game.MyDefinitionId) idA
 * [Vector3I](VRageMath.Vector3I) normalA
-* [List<MountPoint>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) transormedB
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MountPoint](Sandbox.Definitions.MyCubeBlockDefinition+MountPoint)&gt; transormedB
 * [MyBlockOrientation](VRageMath.MyBlockOrientation) orientationB
 * [Vector3I](VRageMath.Vector3I) positionB
 * [MyDefinitionId](VRage.Game.MyDefinitionId) idB

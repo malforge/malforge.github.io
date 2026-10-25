@@ -6,7 +6,7 @@ public T Allocate(int bucketId)
 
 ## Returns
 
-[T](VRage.Collections.IMyElementAllocator{T}+T)
+T
 
 ## Parameters
 

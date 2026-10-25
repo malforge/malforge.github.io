@@ -6,5 +6,5 @@ public Action<MySpectatorCameraMovementEnum, MySpectatorCameraMovementEnum> even
 
 ## Returns
 
-[Action<MySpectatorCameraMovementEnum, MySpectatorCameraMovementEnum>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)&lt;[MySpectatorCameraMovementEnum](VRage.MySpectatorCameraMovementEnum), [MySpectatorCameraMovementEnum](VRage.MySpectatorCameraMovementEnum)&gt;
 

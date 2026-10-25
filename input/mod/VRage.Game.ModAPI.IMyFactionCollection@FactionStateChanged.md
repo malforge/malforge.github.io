@@ -8,5 +8,5 @@ Called when on of factions changed Arguments: action, fromFactionId, faction Id 
 
 ## Returns
 
-[Action<MyFactionStateChange, long, long, long, long>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-5?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-5?view=netframework-4.6)&lt;[MyFactionStateChange](VRage.Game.ModAPI.MyFactionStateChange), [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6), [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6), [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6), [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt;
 

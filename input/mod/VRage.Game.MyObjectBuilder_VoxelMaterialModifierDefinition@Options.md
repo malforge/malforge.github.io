@@ -6,5 +6,5 @@ public MyVoxelMapModifierOption[] Options
 
 ## Returns
 
-[MyVoxelMapModifierOption[]](VRage.Game.MyVoxelMapModifierOption[])
+[MyVoxelMapModifierOption[]](VRage.Game.MyVoxelMapModifierOption)
 

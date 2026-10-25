@@ -6,5 +6,5 @@ public DictionaryValuesReader<MyDefinitionId, MyResearchBlockDefinition> GetRese
 
 ## Returns
 
-[DictionaryValuesReader<MyDefinitionId, MyResearchBlockDefinition>](VRage.Collections.DictionaryValuesReader{MyDefinitionId,MyResearchBlockDefinition})
+[DictionaryValuesReader](VRage.Collections.DictionaryValuesReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyResearchBlockDefinition](Sandbox.Definitions.MyResearchBlockDefinition)&gt;
 

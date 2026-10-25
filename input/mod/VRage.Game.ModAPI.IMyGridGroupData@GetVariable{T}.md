@@ -6,7 +6,7 @@ public T GetVariable<T>(Guid key)
 
 ## Returns
 
-[T](VRage.Game.ModAPI.IMyGridGroupData+T)
+T
 
 ## Parameters
 

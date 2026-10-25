@@ -6,7 +6,7 @@ public void PlaySound(Byte[] buffer, float volume, float maxDistance, MySoundDim
 
 ## Parameters
 
-* Byte[] <sub>prohibited</sub> buffer
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) buffer
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) volume
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) maxDistance
 * MySoundDimensions <sub>prohibited</sub> dimension
@@ -28,5 +28,5 @@ public bool PlaySound(MySoundPair soundId, bool stopPrevious, bool skipIntro, bo
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) force2D
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) alwaysHearOnRealistic
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) skipToEnd
-* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) force3D
+* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) force3D
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) forcePlaySound

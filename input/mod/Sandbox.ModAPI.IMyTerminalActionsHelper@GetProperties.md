@@ -9,5 +9,5 @@ Gets all properties that belongs to specific block
 ## Parameters
 
 * [Type](https://docs.microsoft.com/en-us/dotnet/api/System.Type?view=netframework-4.6) blockType
-* [List<ITerminalProperty>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) resultList
-* [Func<ITerminalProperty, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) collect
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[ITerminalProperty](Sandbox.ModAPI.Interfaces.ITerminalProperty)&gt; resultList
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[ITerminalProperty](Sandbox.ModAPI.Interfaces.ITerminalProperty), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; collect

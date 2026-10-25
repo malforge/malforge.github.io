@@ -10,4 +10,4 @@ public bool Add(T item)
 
 ## Parameters
 
-* [T](VRage.Scripting.MemorySafeTypes.MemorySafeHashSet{T}+T) item
+* T item

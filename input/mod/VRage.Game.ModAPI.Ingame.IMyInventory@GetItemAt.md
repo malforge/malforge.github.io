@@ -8,7 +8,7 @@ Returns info about item at give position.
 
 ## Returns
 
-[MyInventoryItem?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[MyInventoryItem?](VRage.Game.ModAPI.Ingame.MyInventoryItem)
 
 Info about queried inventory slot, null in case there is no item at given slot
 

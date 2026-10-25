@@ -6,5 +6,5 @@ public MyObjectBuilder_LCDTextureDefinition[] LCDTextures
 
 ## Returns
 
-[MyObjectBuilder_LCDTextureDefinition[]](VRage.Game.MyObjectBuilder_LCDTextureDefinition[])
+[MyObjectBuilder_LCDTextureDefinition[]](VRage.Game.MyObjectBuilder_LCDTextureDefinition)
 

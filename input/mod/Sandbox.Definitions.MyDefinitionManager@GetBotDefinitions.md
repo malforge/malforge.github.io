@@ -6,5 +6,5 @@ public ListReader<MyBotDefinition> GetBotDefinitions()
 
 ## Returns
 
-[ListReader<MyBotDefinition>](VRage.Collections.ListReader{MyBotDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyBotDefinition](Sandbox.Definitions.MyBotDefinition)&gt;
 

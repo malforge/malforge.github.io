@@ -10,4 +10,4 @@ public static string GetFormatedArray<T>(T[] array)
 
 ## Parameters
 
-* [T[]](VRage.Utils.T[]) array
+* T[] array

@@ -14,4 +14,4 @@ public static bool GetLineIntersection(ref LineD line, out MyCubeGrid grid, ou
 * [MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid) grid
 * [Vector3I](VRageMath.Vector3I) position
 * [double](https://docs.microsoft.com/en-us/dotnet/api/System.Double?view=netframework-4.6) distanceSquared
-* [Func<MyCubeGrid, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) condition
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; condition

@@ -66,9 +66,9 @@ Transforms an array of Vector2s by a specified Matrix.
 
 ## Parameters
 
-* [Vector2D[]](VRageMath.Vector2D[]) sourceArray
+* [Vector2D[]](VRageMath.Vector2D) sourceArray
 * [Matrix](VRageMath.Matrix) matrix
-* [Vector2D[]](VRageMath.Vector2D[]) destinationArray
+* [Vector2D[]](VRageMath.Vector2D) destinationArray
 ## Summary
 
 ```csharp
@@ -79,10 +79,10 @@ Transforms a specified range in an array of Vector2s by a specified Matrix and p
 
 ## Parameters
 
-* [Vector2D[]](VRageMath.Vector2D[]) sourceArray
+* [Vector2D[]](VRageMath.Vector2D) sourceArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceIndex
 * [Matrix](VRageMath.Matrix) matrix
-* [Vector2D[]](VRageMath.Vector2D[]) destinationArray
+* [Vector2D[]](VRageMath.Vector2D) destinationArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) destinationIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length
 ## Summary
@@ -95,9 +95,9 @@ Transforms an array of Vector2s by a specified Quaternion.
 
 ## Parameters
 
-* [Vector2D[]](VRageMath.Vector2D[]) sourceArray
+* [Vector2D[]](VRageMath.Vector2D) sourceArray
 * [Quaternion](VRageMath.Quaternion) rotation
-* [Vector2D[]](VRageMath.Vector2D[]) destinationArray
+* [Vector2D[]](VRageMath.Vector2D) destinationArray
 ## Summary
 
 ```csharp
@@ -108,9 +108,9 @@ Transforms a specified range in an array of Vector2s by a specified Quaternion a
 
 ## Parameters
 
-* [Vector2D[]](VRageMath.Vector2D[]) sourceArray
+* [Vector2D[]](VRageMath.Vector2D) sourceArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceIndex
 * [Quaternion](VRageMath.Quaternion) rotation
-* [Vector2D[]](VRageMath.Vector2D[]) destinationArray
+* [Vector2D[]](VRageMath.Vector2D) destinationArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) destinationIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length

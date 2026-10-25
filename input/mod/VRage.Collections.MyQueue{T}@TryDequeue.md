@@ -10,4 +10,4 @@ public bool TryDequeue(out T item)
 
 ## Parameters
 
-* [T](VRage.Collections.MyQueue{T}+T) item
+* T item

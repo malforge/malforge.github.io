@@ -10,4 +10,4 @@ public static ulong GetValue(T value)
 
 ## Parameters
 
-* [T](VRage.Library.Utils.MyEnum{T}+T) value
+* T value

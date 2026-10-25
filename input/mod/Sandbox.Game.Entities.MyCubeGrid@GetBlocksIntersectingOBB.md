@@ -8,4 +8,4 @@ public void GetBlocksIntersectingOBB(ref BoundingBoxD box, ref MatrixD boxTran
 
 * [BoundingBoxD](VRageMath.BoundingBoxD) box
 * [MatrixD](VRageMath.MatrixD) boxTransform
-* [List<MySlimBlock>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) blocks
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;MySlimBlock <sub>prohibited</sub>&gt; blocks

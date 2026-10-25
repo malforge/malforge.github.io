@@ -17,4 +17,4 @@ public void Init(MyStringHash sourceGroup, List<MyResourceSourceInfo> sourceReso
 ## Parameters
 
 * [MyStringHash](VRage.Utils.MyStringHash) sourceGroup
-* [List<MyResourceSourceInfo>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) sourceResourceData
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyResourceSourceInfo](Sandbox.Game.EntityComponents.MyResourceSourceInfo)&gt; sourceResourceData

@@ -6,5 +6,5 @@ public DictionaryValuesReader<MyDefinitionId, MyDebugScreenSearchCacheDefinition
 
 ## Returns
 
-[DictionaryValuesReader<MyDefinitionId, MyDebugScreenSearchCacheDefinition>](VRage.Collections.DictionaryValuesReader{MyDefinitionId,MyDebugScreenSearchCacheDefinition})
+[DictionaryValuesReader](VRage.Collections.DictionaryValuesReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyDebugScreenSearchCacheDefinition](Sandbox.Definitions.MyDebugScreenSearchCacheDefinition)&gt;
 

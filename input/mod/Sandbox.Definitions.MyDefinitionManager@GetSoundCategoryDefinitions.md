@@ -6,5 +6,5 @@ public ListReader<MySoundCategoryDefinition> GetSoundCategoryDefinitions()
 
 ## Returns
 
-[ListReader<MySoundCategoryDefinition>](VRage.Collections.ListReader{MySoundCategoryDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MySoundCategoryDefinition](Sandbox.Definitions.MySoundCategoryDefinition)&gt;
 

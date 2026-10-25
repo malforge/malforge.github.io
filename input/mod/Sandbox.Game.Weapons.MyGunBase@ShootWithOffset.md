@@ -12,5 +12,5 @@ This function changes default shooting position (muzzle flash) with an offset. (
 * [Vector3](VRageMath.Vector3) direction
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) offset
 * [MyEntity](VRage.Game.Entity.MyEntity) owner
-* [uint?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) renderId
+* [uint?](https://docs.microsoft.com/en-us/dotnet/api/System.UInt32?view=netframework-4.6) renderId
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) userNormalizedPositionForEffects

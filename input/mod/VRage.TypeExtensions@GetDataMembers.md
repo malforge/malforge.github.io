@@ -6,7 +6,7 @@ public static IEnumerable<MemberInfo> GetDataMembers(this Type t, bool fields, 
 
 ## Returns
 
-[IEnumerable<MemberInfo>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)
+[IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;[MemberInfo](https://docs.microsoft.com/en-us/dotnet/api/System.Reflection.MemberInfo?view=netframework-4.6)&gt;
 
 ## Parameters
 

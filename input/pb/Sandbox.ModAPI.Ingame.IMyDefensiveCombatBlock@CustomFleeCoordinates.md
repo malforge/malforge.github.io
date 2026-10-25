@@ -8,5 +8,5 @@ Gets or sets world position where it should flee. Has higher priority than [Flee
 
 ## Returns
 
-[Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[Vector3D?](VRageMath.Vector3D)
 

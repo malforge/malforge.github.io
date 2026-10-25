@@ -6,5 +6,5 @@ public MyObjectBuilder_GridCreateToolDefinition[] GridCreators
 
 ## Returns
 
-[MyObjectBuilder_GridCreateToolDefinition[]](VRage.Game.MyObjectBuilder_GridCreateToolDefinition[])
+[MyObjectBuilder_GridCreateToolDefinition[]](VRage.Game.MyObjectBuilder_GridCreateToolDefinition)
 

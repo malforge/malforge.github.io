@@ -6,6 +6,6 @@ public void GetAll<T>(List<T> elementsList, bool clear, List<BoundingBox> boxsLi
 
 ## Parameters
 
-* [List<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) elementsList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;T&gt; elementsList
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) clear
-* [List<BoundingBox>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) boxsList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[BoundingBox](VRageMath.BoundingBox)&gt; boxsList

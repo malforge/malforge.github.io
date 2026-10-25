@@ -6,5 +6,5 @@ public SerializableDictionary<string, SerializableDictionary<string, Serializabl
 
 ## Returns
 
-[SerializableDictionary<string, SerializableDictionary<string, SerializableVector3D>>](VRage.Serialization.SerializableDictionary{String,SerializableDictionary`2})
+[SerializableDictionary](VRage.Serialization.SerializableDictionary{T,U})&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [SerializableDictionary](VRage.Serialization.SerializableDictionary{T,U})&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [SerializableVector3D](VRage.SerializableVector3D)&gt;&gt;
 

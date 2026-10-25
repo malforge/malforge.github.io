@@ -8,5 +8,5 @@ Gets the entity id for the player's respawn ship(s).
 
 ## Returns
 
-[ListReader<long>](VRage.Collections.ListReader{Int64})
+[ListReader](VRage.Collections.ListReader{T})&lt;[long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt;
 

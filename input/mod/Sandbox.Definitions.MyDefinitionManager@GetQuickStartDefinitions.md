@@ -6,5 +6,5 @@ public DictionaryValuesReader<MyDefinitionId, MyQuickStartDefinition> GetQuickSt
 
 ## Returns
 
-[DictionaryValuesReader<MyDefinitionId, MyQuickStartDefinition>](VRage.Collections.DictionaryValuesReader{MyDefinitionId,MyQuickStartDefinition})
+[DictionaryValuesReader](VRage.Collections.DictionaryValuesReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyQuickStartDefinition](Sandbox.Definitions.MyQuickStartDefinition)&gt;
 

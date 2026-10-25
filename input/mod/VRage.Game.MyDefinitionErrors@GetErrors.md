@@ -6,5 +6,5 @@ public static ListReader<Error> GetErrors()
 
 ## Returns
 
-[ListReader<Error>](VRage.Collections.ListReader{Error})
+[ListReader](VRage.Collections.ListReader{T})&lt;[Error](VRage.Game.MyDefinitionErrors+Error)&gt;
 

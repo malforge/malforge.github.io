@@ -10,5 +10,5 @@ public bool TryGetValue(K key, out V value)
 
 ## Parameters
 
-* [K](VRage.Collections.SortedDictionaryReader{K,V}+K) key
-* [V](VRage.Collections.SortedDictionaryReader{K,V}+V) value
+* K key
+* V value

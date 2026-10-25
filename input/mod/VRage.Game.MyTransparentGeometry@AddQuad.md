@@ -16,4 +16,4 @@ public static bool AddQuad(MyStringId material, ref MyQuadD quad, Vector4 color
 * [Vector3D](VRageMath.Vector3D) vctPos
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) customViewProjection
 * [BlendTypeEnum](VRageRender.MyBillboard+BlendTypeEnum) blendType
-* [List<MyBillboard>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) persistentBillboards
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyBillboard](VRageRender.MyBillboard)&gt; persistentBillboards

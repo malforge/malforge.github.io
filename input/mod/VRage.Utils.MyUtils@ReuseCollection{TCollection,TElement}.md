@@ -6,8 +6,8 @@ public static ClearCollectionToken<TCollection, TElement> ReuseCollection<TColle
 
 ## Returns
 
-[ClearCollectionToken<TCollection, TElement>](VRage.Utils.MyUtils+ClearCollectionToken{TCollection,TElement})
+[ClearCollectionToken](VRage.Utils.MyUtils+ClearCollectionToken{TCollection,TElement})&lt;TCollection, TElement&gt;
 
 ## Parameters
 
-* [TCollection](VRage.Utils.MyUtils+TCollection) collection
+* TCollection collection

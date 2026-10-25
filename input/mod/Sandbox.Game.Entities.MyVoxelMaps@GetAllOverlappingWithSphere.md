@@ -7,7 +7,7 @@ public void GetAllOverlappingWithSphere(ref BoundingSphereD sphere, List<MyVoxe
 ## Parameters
 
 * [BoundingSphereD](VRageMath.BoundingSphereD) sphere
-* [List<MyVoxelBase>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) voxels
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyVoxelBase](Sandbox.Game.Entities.MyVoxelBase)&gt; voxels
 ## Summary
 
 ```csharp
@@ -16,7 +16,7 @@ public List<MyVoxelBase> GetAllOverlappingWithSphere(ref BoundingSphereD sphere
 
 ## Returns
 
-[List<MyVoxelBase>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyVoxelBase](Sandbox.Game.Entities.MyVoxelBase)&gt;
 
 ## Parameters
 

@@ -11,6 +11,6 @@ public static MyCubeGrid CreateSplit(MyCubeGrid originalGrid, List<MySlimBlock> 
 ## Parameters
 
 * [MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid) originalGrid
-* [List<MySlimBlock>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) blocks
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;MySlimBlock <sub>prohibited</sub>&gt; blocks
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) sync
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) newEntityId

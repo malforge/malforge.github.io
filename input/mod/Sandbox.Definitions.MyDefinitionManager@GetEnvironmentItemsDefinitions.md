@@ -6,7 +6,7 @@ public ListReader<MyDefinitionId> GetEnvironmentItemsDefinitions(int channel)
 
 ## Returns
 
-[ListReader<MyDefinitionId>](VRage.Collections.ListReader{MyDefinitionId})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId)&gt;
 
 ## Parameters
 

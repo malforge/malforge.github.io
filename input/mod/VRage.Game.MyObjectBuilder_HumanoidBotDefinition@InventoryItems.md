@@ -6,5 +6,5 @@ public Item[] InventoryItems
 
 ## Returns
 
-[Item[]](VRage.Game.Item[])
+[Item[]](VRage.Game.MyObjectBuilder_HumanoidBotDefinition+Item)
 

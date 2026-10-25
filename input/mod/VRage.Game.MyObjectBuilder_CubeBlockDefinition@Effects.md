@@ -6,5 +6,5 @@ public CubeBlockEffectBase[] Effects
 
 ## Returns
 
-[CubeBlockEffectBase[]](VRage.Game.CubeBlockEffectBase[])
+[CubeBlockEffectBase[]](VRage.Game.MyObjectBuilder_CubeBlockDefinition+CubeBlockEffectBase)
 

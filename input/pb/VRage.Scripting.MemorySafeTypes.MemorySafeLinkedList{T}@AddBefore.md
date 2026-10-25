@@ -6,9 +6,9 @@ public LinkedListNode<T> AddBefore(LinkedListNode<T> node, T value)
 
 ## Returns
 
-[LinkedListNode<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.LinkedListNode-1?view=netframework-4.6)
+[LinkedListNode](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.LinkedListNode-1?view=netframework-4.6)&lt;T&gt;
 
 ## Parameters
 
-* [LinkedListNode<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.LinkedListNode-1?view=netframework-4.6) node
-* [T](VRage.Scripting.MemorySafeTypes.MemorySafeLinkedList{T}+T) value
+* [LinkedListNode](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.LinkedListNode-1?view=netframework-4.6)&lt;T&gt; node
+* T value

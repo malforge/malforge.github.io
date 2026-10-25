@@ -6,8 +6,8 @@ public static T[] GetInternalArray<T>(this List<T> list)
 
 ## Returns
 
-[T[]](System.Collections.Generic.T[])
+T[]
 
 ## Parameters
 
-* [List<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) list
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;T&gt; list

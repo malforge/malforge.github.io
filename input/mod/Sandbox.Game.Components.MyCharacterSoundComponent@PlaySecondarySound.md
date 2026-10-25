@@ -9,4 +9,4 @@ public void PlaySecondarySound(CharacterSoundsEnum soundEnum, bool stopPrevious,
 * [CharacterSoundsEnum](Sandbox.Game.Components.CharacterSoundsEnum) soundEnum
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) stopPrevious
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) force2D
-* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) force3D
+* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) force3D

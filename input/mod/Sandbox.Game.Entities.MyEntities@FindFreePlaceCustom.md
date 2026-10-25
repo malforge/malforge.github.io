@@ -6,7 +6,7 @@ public static Vector3D? FindFreePlaceCustom(Vector3D basePos, float radius, int 
 
 ## Returns
 
-[Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[Vector3D?](VRageMath.Vector3D)
 
 ## Parameters
 

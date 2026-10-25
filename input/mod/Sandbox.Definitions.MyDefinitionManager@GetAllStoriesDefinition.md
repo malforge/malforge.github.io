@@ -8,7 +8,7 @@ Get all stories
 
 ## Returns
 
-[DictionaryReader<MyDefinitionId, MyStoryDefinition>](VRage.Collections.DictionaryReader{MyDefinitionId,MyStoryDefinition})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyStoryDefinition](Sandbox.Definitions.MyStoryDefinition)&gt;
 
 Dictionary of all story definitions
 

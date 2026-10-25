@@ -6,5 +6,5 @@ public MyConcurrentHashSet<IMyCubeGrid> GetGridsInside()
 
 ## Returns
 
-[MyConcurrentHashSet<IMyCubeGrid>](VRage.Collections.MyConcurrentHashSet{IMyCubeGrid})
+[MyConcurrentHashSet](VRage.Collections.MyConcurrentHashSet{T})&lt;[IMyCubeGrid](VRage.Game.ModAPI.IMyCubeGrid)&gt;
 

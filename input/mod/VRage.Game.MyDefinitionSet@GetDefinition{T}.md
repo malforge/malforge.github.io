@@ -6,7 +6,7 @@ public T GetDefinition<T>(MyStringHash subtypeId)
 
 ## Returns
 
-[T](VRage.Game.MyDefinitionSet+T)
+T
 
 ## Parameters
 
@@ -19,7 +19,7 @@ public T GetDefinition<T>(MyDefinitionId id)
 
 ## Returns
 
-[T](VRage.Game.MyDefinitionSet+T)
+T
 
 ## Parameters
 

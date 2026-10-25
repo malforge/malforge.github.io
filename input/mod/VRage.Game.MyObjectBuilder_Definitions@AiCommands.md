@@ -6,5 +6,5 @@ public MyObjectBuilder_AiCommandDefinition[] AiCommands
 
 ## Returns
 
-[MyObjectBuilder_AiCommandDefinition[]](VRage.Game.MyObjectBuilder_AiCommandDefinition[])
+[MyObjectBuilder_AiCommandDefinition[]](VRage.Game.MyObjectBuilder_AiCommandDefinition)
 

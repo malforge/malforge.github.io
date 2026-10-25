@@ -6,5 +6,5 @@ public ContainerTypeItem[] Items
 
 ## Returns
 
-[ContainerTypeItem[]](Sandbox.Definitions.ContainerTypeItem[])
+[ContainerTypeItem[]](Sandbox.Definitions.MyContainerTypeDefinition+ContainerTypeItem)
 

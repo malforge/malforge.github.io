@@ -6,5 +6,5 @@ public ReadOnlySpan<DynamicTreeNode> Nodes { get; }
 
 ## Returns
 
-ReadOnlySpan<DynamicTreeNode> <sub>prohibited</sub>
+ReadOnlySpan&lt;[DynamicTreeNode](VRageMath.MyDynamicAABBTree+DynamicTreeNode)&gt; <sub>prohibited</sub>
 

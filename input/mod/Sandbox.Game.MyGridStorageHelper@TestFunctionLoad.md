@@ -11,4 +11,4 @@ public MyGridLoadFuture TestFunctionLoad(MyPositionAndOrientation transform, Act
 ## Parameters
 
 * [MyPositionAndOrientation](VRage.MyPositionAndOrientation) transform
-* [Action<MyGridLoadFuture>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6) onCompletion
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[MyGridLoadFuture](Sandbox.Game.MyGridStorageHelper+MyGridLoadFuture)&gt; onCompletion

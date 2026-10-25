@@ -12,6 +12,6 @@ public static MemorySafeStringBuilder ConcatFormat<TA, TB>(this MemorySafeStrin
 
 * [MemorySafeStringBuilder](VRage.Scripting.MemorySafeTypes.MemorySafeStringBuilder) stringBuilder
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) formatString
-* [TA](VRage.Scripting.MemorySafeTypes.MemorySafeStringBuilderExtensions+TA) arg1
-* [TB](VRage.Scripting.MemorySafeTypes.MemorySafeStringBuilderExtensions+TB) arg2
+* TA arg1
+* TB arg2
 * [NumberFormatInfo](https://docs.microsoft.com/en-us/dotnet/api/System.Globalization.NumberFormatInfo?view=netframework-4.6) numberFormat

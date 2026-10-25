@@ -6,4 +6,4 @@ public Enumerator(ObservableCollection<T> collection)
 
 ## Parameters
 
-* [ObservableCollection<T>](VRage.Collections.ObservableCollection{T}) collection
+* [ObservableCollection](VRage.Collections.ObservableCollection{T})&lt;T&gt; collection

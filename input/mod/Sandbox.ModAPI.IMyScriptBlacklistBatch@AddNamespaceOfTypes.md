@@ -8,4 +8,4 @@ Adds the entire namespace of one or more given types to the blacklist
 
 ## Parameters
 
-* Type[] <sub>prohibited</sub> types
+* [Type[]](https://docs.microsoft.com/en-us/dotnet/api/System.Type?view=netframework-4.6) types

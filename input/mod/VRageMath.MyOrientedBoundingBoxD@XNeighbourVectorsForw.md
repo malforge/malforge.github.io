@@ -6,5 +6,5 @@ public static Vector3[] XNeighbourVectorsForw
 
 ## Returns
 
-[Vector3[]](VRageMath.Vector3[])
+[Vector3[]](VRageMath.Vector3)
 

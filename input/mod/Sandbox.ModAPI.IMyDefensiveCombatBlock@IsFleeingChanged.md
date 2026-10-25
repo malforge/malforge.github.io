@@ -8,5 +8,5 @@ Called when block starts or stops fleeing
 
 ## Returns
 
-[Action<IMyDefensiveCombatBlock, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)&lt;[IMyDefensiveCombatBlock](Sandbox.ModAPI.IMyDefensiveCombatBlock), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt;
 

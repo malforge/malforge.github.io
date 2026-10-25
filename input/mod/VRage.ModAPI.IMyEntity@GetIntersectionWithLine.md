@@ -15,5 +15,5 @@ True when line intersects models
 ## Parameters
 
 * [LineD](VRageMath.LineD) line
-* [MyIntersectionResultLineTriangleEx?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) tri
+* [MyIntersectionResultLineTriangleEx?](VRage.Game.Models.MyIntersectionResultLineTriangleEx) tri
 * [IntersectionFlags](VRage.Game.Components.IntersectionFlags) flags

@@ -12,7 +12,7 @@ public MemorySafeSortedSet(IEnumerable<T> collection)
 
 ## Parameters
 
-* [IEnumerable<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) collection
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;T&gt; collection
 ## Summary
 
 ```csharp
@@ -21,7 +21,7 @@ public MemorySafeSortedSet(IComparer<T> comparer)
 
 ## Parameters
 
-* [IComparer<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IComparer-1?view=netframework-4.6) comparer
+* [IComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IComparer-1?view=netframework-4.6)&lt;T&gt; comparer
 ## Summary
 
 ```csharp
@@ -30,8 +30,8 @@ public MemorySafeSortedSet(IEnumerable<T> collection, IComparer<T> comparer)
 
 ## Parameters
 
-* [IEnumerable<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) collection
-* [IComparer<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IComparer-1?view=netframework-4.6) comparer
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;T&gt; collection
+* [IComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IComparer-1?view=netframework-4.6)&lt;T&gt; comparer
 ## Summary
 
 ```csharp

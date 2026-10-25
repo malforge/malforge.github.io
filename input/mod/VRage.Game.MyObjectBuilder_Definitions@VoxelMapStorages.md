@@ -6,5 +6,5 @@ public MyObjectBuilder_VoxelMapStorageDefinition[] VoxelMapStorages
 
 ## Returns
 
-[MyObjectBuilder_VoxelMapStorageDefinition[]](VRage.Game.MyObjectBuilder_VoxelMapStorageDefinition[])
+[MyObjectBuilder_VoxelMapStorageDefinition[]](VRage.Game.MyObjectBuilder_VoxelMapStorageDefinition)
 

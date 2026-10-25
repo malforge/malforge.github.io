@@ -6,7 +6,7 @@ public static MyIntersectionResultLineTriangleEx? GetIntersectionWithLine(ref L
 
 ## Returns
 
-[MyIntersectionResultLineTriangleEx?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[MyIntersectionResultLineTriangleEx?](VRage.Game.Models.MyIntersectionResultLineTriangleEx)
 
 ## Parameters
 

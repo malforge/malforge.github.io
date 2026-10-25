@@ -6,4 +6,4 @@ public Enumerator(MyDistributedTypeUpdater<T> updater)
 
 ## Parameters
 
-* [MyDistributedTypeUpdater<T>](VRage.Collections.MyDistributedTypeUpdater{T}) updater
+* [MyDistributedTypeUpdater](VRage.Collections.MyDistributedTypeUpdater{T})&lt;T&gt; updater

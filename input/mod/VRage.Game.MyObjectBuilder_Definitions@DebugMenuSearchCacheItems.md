@@ -6,5 +6,5 @@ public MyObjectBuilder_DebugScreenSearchCacheDefinition[] DebugMenuSearchCacheIt
 
 ## Returns
 
-[MyObjectBuilder_DebugScreenSearchCacheDefinition[]](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DebugScreenSearchCacheDefinition[])
+[MyObjectBuilder_DebugScreenSearchCacheDefinition[]](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_DebugScreenSearchCacheDefinition)
 

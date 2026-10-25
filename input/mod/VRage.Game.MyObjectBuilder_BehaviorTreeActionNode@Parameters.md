@@ -6,5 +6,5 @@ public TypeValue[] Parameters
 
 ## Returns
 
-[TypeValue[]](VRage.Game.TypeValue[])
+[TypeValue[]](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+TypeValue)
 

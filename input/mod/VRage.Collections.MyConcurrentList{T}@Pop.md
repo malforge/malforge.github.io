@@ -6,5 +6,5 @@ public T Pop()
 
 ## Returns
 
-[T](VRage.Collections.MyConcurrentList{T}+T)
+T
 

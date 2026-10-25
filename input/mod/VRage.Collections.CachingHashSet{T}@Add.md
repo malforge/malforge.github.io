@@ -10,4 +10,4 @@ public bool Add(T item)
 
 ## Parameters
 
-* [T](VRage.Collections.CachingHashSet{T}+T) item
+* T item

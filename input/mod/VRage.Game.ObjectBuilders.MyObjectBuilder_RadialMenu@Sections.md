@@ -6,5 +6,5 @@ public MyObjectBuilder_RadialMenuSection[] Sections
 
 ## Returns
 
-[MyObjectBuilder_RadialMenuSection[]](VRage.Game.MyObjectBuilder_RadialMenuSection[])
+[MyObjectBuilder_RadialMenuSection[]](VRage.Game.MyObjectBuilder_RadialMenuSection)
 

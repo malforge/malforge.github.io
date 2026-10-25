@@ -8,4 +8,4 @@ Gets the current production queue
 
 ## Parameters
 
-* [List<MyProductionItem>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) items
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyProductionItem](Sandbox.ModAPI.Ingame.MyProductionItem)&gt; items

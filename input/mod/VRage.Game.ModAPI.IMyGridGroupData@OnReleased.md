@@ -8,5 +8,5 @@ You must clean your subscriptions here. Instances of IMyGridGroupData are re-use
 
 ## Returns
 
-[Action<IMyGridGroupData>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[IMyGridGroupData](VRage.Game.ModAPI.IMyGridGroupData)&gt;
 

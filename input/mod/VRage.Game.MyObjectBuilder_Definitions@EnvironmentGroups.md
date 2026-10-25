@@ -6,5 +6,5 @@ public MyGroupedIds[] EnvironmentGroups
 
 ## Returns
 
-[MyGroupedIds[]](VRage.Game.ObjectBuilders.MyGroupedIds[])
+[MyGroupedIds[]](VRage.Game.ObjectBuilders.MyGroupedIds)
 

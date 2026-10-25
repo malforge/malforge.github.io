@@ -6,5 +6,5 @@ public static void Remove<K, V>(this ConcurrentDictionary<K, V> dictionary, K k
 
 ## Parameters
 
-* ConcurrentDictionary<K, V> <sub>prohibited</sub> dictionary
-* [K](System.Collections.Generic.DictionaryExtensions+K) key
+* ConcurrentDictionary&lt;K, V&gt; <sub>prohibited</sub> dictionary
+* K key

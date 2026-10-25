@@ -6,5 +6,5 @@ public ListReader<MyComponentBase> Reader { get; }
 
 ## Returns
 
-[ListReader<MyComponentBase>](VRage.Collections.ListReader{MyComponentBase})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyComponentBase](VRage.Game.Components.MyComponentBase)&gt;
 

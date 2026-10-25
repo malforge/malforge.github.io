@@ -8,5 +8,5 @@ Event triggered, when one of GridLinkTypeEnum connections changed. Used to deter
 
 ## Returns
 
-[Action<MyCubeGrid, GridLinkTypeEnum>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)&lt;[MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid), [GridLinkTypeEnum](VRage.Game.ModAPI.GridLinkTypeEnum)&gt;
 

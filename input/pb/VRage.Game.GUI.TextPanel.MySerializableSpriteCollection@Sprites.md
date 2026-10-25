@@ -6,5 +6,5 @@ public MySerializableSprite[] Sprites
 
 ## Returns
 
-[MySerializableSprite[]](VRage.Game.GUI.TextPanel.MySerializableSprite[])
+[MySerializableSprite[]](VRage.Game.GUI.TextPanel.MySerializableSprite)
 

@@ -17,5 +17,5 @@ public static void HighlightGuiControl(MyGuiControlBase control, List<int> indic
 ## Parameters
 
 * MyGuiControlBase <sub>prohibited</sub> control
-* [List<int>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) indicies
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6)&gt; indicies
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) customToolTipMessage

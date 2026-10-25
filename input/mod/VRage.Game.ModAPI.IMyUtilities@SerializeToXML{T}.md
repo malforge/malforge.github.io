@@ -10,4 +10,4 @@ public string SerializeToXML<T>(T objToSerialize)
 
 ## Parameters
 
-* [T](VRage.Game.ModAPI.IMyUtilities+T) objToSerialize
+* T objToSerialize

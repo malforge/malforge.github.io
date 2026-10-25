@@ -6,5 +6,5 @@ public ListReader<MyTransparentMaterialDefinition> GetTransparentMaterialDefinit
 
 ## Returns
 
-[ListReader<MyTransparentMaterialDefinition>](VRage.Collections.ListReader{MyTransparentMaterialDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyTransparentMaterialDefinition](Sandbox.Definitions.MyTransparentMaterialDefinition)&gt;
 

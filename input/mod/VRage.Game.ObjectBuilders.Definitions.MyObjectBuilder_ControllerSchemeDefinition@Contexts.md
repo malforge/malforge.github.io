@@ -6,5 +6,5 @@ public MySerializableList<MyObjectBuilder_ControlBindingContext> Contexts
 
 ## Returns
 
-MySerializableList<MyObjectBuilder_ControlBindingContext> <sub>prohibited</sub>
+MySerializableList&lt;[MyObjectBuilder_ControlBindingContext](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ControlBindingContext)&gt; <sub>prohibited</sub>
 

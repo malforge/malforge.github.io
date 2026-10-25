@@ -6,7 +6,7 @@ public MemorySafeList<T> GetRange(int index, int count)
 
 ## Returns
 
-[MemorySafeList<T>](VRage.Scripting.MemorySafeTypes.MemorySafeList{T})
+[MemorySafeList](VRage.Scripting.MemorySafeTypes.MemorySafeList{T})&lt;T&gt;
 
 ## Parameters
 

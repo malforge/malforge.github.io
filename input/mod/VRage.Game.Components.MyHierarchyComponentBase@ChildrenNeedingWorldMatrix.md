@@ -8,5 +8,5 @@ Gets the children collection for spatial updates.
 
 ## Returns
 
-[HashSetReader<MyHierarchyComponentBase>](VRage.Collections.HashSetReader{MyHierarchyComponentBase})
+[HashSetReader](VRage.Collections.HashSetReader{T})&lt;[MyHierarchyComponentBase](VRage.Game.Components.MyHierarchyComponentBase)&gt;
 

@@ -6,5 +6,5 @@ public T Element
 
 ## Returns
 
-[T](VRageMath.MyLineSegmentOverlapResult{T}+T)
+T
 

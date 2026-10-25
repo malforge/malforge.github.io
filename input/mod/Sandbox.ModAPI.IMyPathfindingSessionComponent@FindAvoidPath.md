@@ -8,7 +8,7 @@ Finds the path between start and end position
 
 ## Returns
 
-MyPath<MyPathVertex> <sub>prohibited</sub>
+MyPath&lt;MyPathVertex <sub>prohibited</sub>&gt; <sub>prohibited</sub>
 
 
 

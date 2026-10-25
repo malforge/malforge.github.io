@@ -6,5 +6,5 @@ public DictionaryValuesReader<MyStringHash, MyEntityStat> Stats { get; }
 
 ## Returns
 
-[DictionaryValuesReader<MyStringHash, MyEntityStat>](VRage.Collections.DictionaryValuesReader{MyStringHash,MyEntityStat})
+[DictionaryValuesReader](VRage.Collections.DictionaryValuesReader{K,V})&lt;[MyStringHash](VRage.Utils.MyStringHash), [MyEntityStat](Sandbox.Game.Entities.MyEntityStat)&gt;
 

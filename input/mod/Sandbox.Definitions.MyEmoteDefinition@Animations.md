@@ -6,5 +6,5 @@ public Animation[] Animations
 
 ## Returns
 
-[Animation[]](VRage.Game.ObjectBuilders.Definitions.Animation[])
+[Animation[]](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_EmoteDefinition+Animation)
 

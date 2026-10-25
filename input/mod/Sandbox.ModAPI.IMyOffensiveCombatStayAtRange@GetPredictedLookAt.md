@@ -8,5 +8,5 @@ Gets or sets function that is called for aiming grid at enemy By default used re
 
 ## Returns
 
-[Func<IMyEntity, IMyAttackPatternComponent, double, Vector3D>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-4?view=netframework-4.6)
+[Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-4?view=netframework-4.6)&lt;[IMyEntity](VRage.ModAPI.IMyEntity), [IMyAttackPatternComponent](Sandbox.ModAPI.IMyAttackPatternComponent), [double](https://docs.microsoft.com/en-us/dotnet/api/System.Double?view=netframework-4.6), [Vector3D](VRageMath.Vector3D)&gt;
 

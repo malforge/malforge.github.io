@@ -6,5 +6,5 @@ public StartingItem[] SurvivalModeAmmoItems
 
 ## Returns
 
-[StartingItem[]](Sandbox.Definitions.StartingItem[])
+[StartingItem[]](Sandbox.Definitions.MyScenarioDefinition+StartingItem)
 

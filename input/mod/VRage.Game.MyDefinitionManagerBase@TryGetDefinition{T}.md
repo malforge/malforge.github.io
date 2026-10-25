@@ -11,4 +11,4 @@ public bool TryGetDefinition<T>(MyStringHash subtypeId, out T def)
 ## Parameters
 
 * [MyStringHash](VRage.Utils.MyStringHash) subtypeId
-* [T](VRage.Game.MyDefinitionManagerBase+T) def
+* T def

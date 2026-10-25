@@ -21,4 +21,4 @@ public virtual void CreateCharacterCollision(Vector3 center, float characterWidt
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) maxLimit
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) maxSpeedRelativeToShip
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) networkProxy
-* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) maxForce
+* [float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) maxForce

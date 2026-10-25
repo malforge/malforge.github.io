@@ -6,5 +6,5 @@ public MyListDictionary<MyCubeGrid, MyEntity> TargetBlocks { get; }
 
 ## Returns
 
-MyListDictionary<MyCubeGrid, MyEntity> <sub>prohibited</sub>
+MyListDictionary&lt;[MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid), [MyEntity](VRage.Game.Entity.MyEntity)&gt; <sub>prohibited</sub>
 

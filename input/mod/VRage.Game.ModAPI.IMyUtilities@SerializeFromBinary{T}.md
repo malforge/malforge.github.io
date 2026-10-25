@@ -6,8 +6,8 @@ public T SerializeFromBinary<T>(Byte[] data)
 
 ## Returns
 
-[T](VRage.Game.ModAPI.IMyUtilities+T)
+T
 
 ## Parameters
 
-* Byte[] <sub>prohibited</sub> data
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) data

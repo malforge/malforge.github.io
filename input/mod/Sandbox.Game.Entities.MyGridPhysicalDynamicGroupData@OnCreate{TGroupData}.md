@@ -6,4 +6,4 @@ public void OnCreate<TGroupData>(Group<MyCubeGrid, TGroupData> group)
 
 ## Parameters
 
-* Group<MyCubeGrid, TGroupData> <sub>prohibited</sub> group
+* MyGroups&lt;[MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid), TGroupData&gt;.Group <sub>prohibited</sub> group

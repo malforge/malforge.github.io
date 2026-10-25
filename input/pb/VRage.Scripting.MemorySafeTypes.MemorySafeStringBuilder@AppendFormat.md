@@ -60,7 +60,7 @@ public MemorySafeStringBuilder AppendFormat(IFormatProvider provider, string for
 
 * IFormatProvider <sub>prohibited</sub> provider
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) format
-* Object[] <sub>prohibited</sub> args
+* [object[]](https://docs.microsoft.com/en-us/dotnet/api/System.Object?view=netframework-4.6) args
 ## Summary
 
 ```csharp
@@ -119,4 +119,4 @@ public MemorySafeStringBuilder AppendFormat(string format, Object[] args)
 ## Parameters
 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) format
-* Object[] <sub>prohibited</sub> args
+* [object[]](https://docs.microsoft.com/en-us/dotnet/api/System.Object?view=netframework-4.6) args

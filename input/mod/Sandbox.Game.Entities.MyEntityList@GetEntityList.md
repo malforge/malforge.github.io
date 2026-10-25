@@ -6,7 +6,7 @@ public static List<MyEntityListInfoItem> GetEntityList(MyEntityTypeEnum selected
 
 ## Returns
 
-[List<MyEntityListInfoItem>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyEntityListInfoItem](Sandbox.Game.Entities.MyEntityList+MyEntityListInfoItem)&gt;
 
 ## Parameters
 
@@ -19,9 +19,9 @@ public static List<MyEntityListInfoItem> GetEntityList(MyEntityTypeEnum selected
 
 ## Returns
 
-[List<MyEntityListInfoItem>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyEntityListInfoItem](Sandbox.Game.Entities.MyEntityList+MyEntityListInfoItem)&gt;
 
 ## Parameters
 
 * [MyEntityTypeEnum](Sandbox.Game.Entities.MyEntityList+MyEntityTypeEnum) selectedType
-* [IEnumerable<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) entities
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt; entities

@@ -6,7 +6,7 @@ public HashSet<byte> GetMaterialsInShape(MyShape shape, int lod)
 
 ## Returns
 
-[HashSet<byte>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)
+[HashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)&lt;[byte](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6)&gt;
 
 ## Parameters
 

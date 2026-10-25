@@ -6,5 +6,5 @@ public UniqueListReader<T> Items { get; }
 
 ## Returns
 
-[UniqueListReader<T>](VRage.Collections.UniqueListReader{T})
+[UniqueListReader](VRage.Collections.UniqueListReader{T})&lt;T&gt;
 

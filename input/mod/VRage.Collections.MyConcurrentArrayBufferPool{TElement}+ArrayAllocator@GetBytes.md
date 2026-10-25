@@ -10,4 +10,4 @@ public int GetBytes(TElement[] instance)
 
 ## Parameters
 
-* [TElement[]](VRage.Collections.TElement[]) instance
+* TElement[] instance

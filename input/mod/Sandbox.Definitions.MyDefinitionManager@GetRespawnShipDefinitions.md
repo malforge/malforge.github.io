@@ -6,5 +6,5 @@ public DictionaryReader<string, MyRespawnShipDefinition> GetRespawnShipDefinitio
 
 ## Returns
 
-[DictionaryReader<string, MyRespawnShipDefinition>](VRage.Collections.DictionaryReader{String,MyRespawnShipDefinition})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [MyRespawnShipDefinition](Sandbox.Definitions.MyRespawnShipDefinition)&gt;
 

@@ -6,5 +6,5 @@ public QueueItem[] Queue
 
 ## Returns
 
-[QueueItem[]](Sandbox.Common.ObjectBuilders.QueueItem[])
+[QueueItem[]](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ProductionBlock+QueueItem)
 

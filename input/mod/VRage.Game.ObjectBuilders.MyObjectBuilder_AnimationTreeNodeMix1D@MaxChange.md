@@ -8,5 +8,5 @@ Threshold: maximum change of variable to take sensitivity in account, if crossed
 
 ## Returns
 
-[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[float?](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)
 

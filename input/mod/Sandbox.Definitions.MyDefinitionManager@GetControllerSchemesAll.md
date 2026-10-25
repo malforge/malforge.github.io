@@ -6,5 +6,5 @@ public ListReader<MyControllerSchemeDefinition> GetControllerSchemesAll()
 
 ## Returns
 
-[ListReader<MyControllerSchemeDefinition>](VRage.Collections.ListReader{MyControllerSchemeDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyControllerSchemeDefinition](Sandbox.Definitions.MyControllerSchemeDefinition)&gt;
 

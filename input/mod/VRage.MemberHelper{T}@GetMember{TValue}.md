@@ -10,4 +10,4 @@ public static MemberInfo GetMember<TValue>(Expression<Func<T, TValue>> selector)
 
 ## Parameters
 
-* Expression<Func<T, TValue>> <sub>prohibited</sub> selector
+* Expression&lt;[Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;T, TValue&gt;&gt; <sub>prohibited</sub> selector

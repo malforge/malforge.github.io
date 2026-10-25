@@ -6,5 +6,5 @@ public MyCubeBlockDefinition[] Blocks
 
 ## Returns
 
-[MyCubeBlockDefinition[]](Sandbox.Definitions.MyCubeBlockDefinition[])
+[MyCubeBlockDefinition[]](Sandbox.Definitions.MyCubeBlockDefinition)
 

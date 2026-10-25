@@ -8,5 +8,5 @@ Default number suffix, k = thousand, m = million, g/b = billion
 
 ## Returns
 
-Tuple`2[] <sub>prohibited</sub>
+Tuple&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)&gt;[] <sub>prohibited</sub>
 

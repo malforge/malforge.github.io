@@ -8,5 +8,5 @@ Called when any of block properties changed. It could be anything, starting from
 
 ## Returns
 
-[Action<IMyTerminalBlock>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[IMyTerminalBlock](Sandbox.ModAPI.IMyTerminalBlock)&gt;
 

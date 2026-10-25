@@ -8,5 +8,5 @@ Fills the provided list with the block groups reachable by this grid terminal sy
 
 ## Parameters
 
-* [List<IMyBlockGroup>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) blockGroups
-* [Func<IMyBlockGroup, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) collect
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMyBlockGroup](Sandbox.ModAPI.Ingame.IMyBlockGroup)&gt; blockGroups
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[IMyBlockGroup](Sandbox.ModAPI.Ingame.IMyBlockGroup), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; collect

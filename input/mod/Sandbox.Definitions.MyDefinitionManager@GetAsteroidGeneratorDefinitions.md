@@ -6,5 +6,5 @@ public DictionaryReader<string, MyAsteroidGeneratorDefinition> GetAsteroidGenera
 
 ## Returns
 
-[DictionaryReader<string, MyAsteroidGeneratorDefinition>](VRage.Collections.DictionaryReader{String,MyAsteroidGeneratorDefinition})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [MyAsteroidGeneratorDefinition](Sandbox.Definitions.MyAsteroidGeneratorDefinition)&gt;
 

@@ -6,5 +6,5 @@ public Boolean[] ShadowCascadeFrozen { get; set; }
 
 ## Returns
 
-Boolean[] <sub>prohibited</sub>
+[bool[]](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)
 

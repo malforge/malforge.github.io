@@ -11,5 +11,5 @@ public static bool IsBlockHostile(MySlimBlock block, HashSet<long> friendlyIdent
 ## Parameters
 
 * MySlimBlock <sub>prohibited</sub> block
-* [HashSet<long>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6) friendlyIdentities
-* [HashSet<long>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6) friendlyFactionIds
+* [HashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)&lt;[long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt; friendlyIdentities
+* [HashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)&lt;[long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt; friendlyFactionIds

@@ -6,5 +6,5 @@ public static MyObjectFactory<MyDefinitionTypeAttribute, MyDefinitionBase> GetOb
 
 ## Returns
 
-[MyObjectFactory<MyDefinitionTypeAttribute, MyDefinitionBase>](VRage.ObjectBuilders.MyObjectFactory{MyDefinitionTypeAttribute,MyDefinitionBase})
+[MyObjectFactory](VRage.ObjectBuilders.MyObjectFactory{TAttribute,TCreatedObjectBase})&lt;[MyDefinitionTypeAttribute](VRage.Game.Definitions.MyDefinitionTypeAttribute), [MyDefinitionBase](VRage.Game.MyDefinitionBase)&gt;
 

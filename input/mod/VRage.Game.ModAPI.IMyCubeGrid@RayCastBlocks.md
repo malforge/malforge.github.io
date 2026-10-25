@@ -8,7 +8,7 @@ Obtains first block position intersected with line.
 
 ## Returns
 
-[Vector3I?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[Vector3I?](VRageMath.Vector3I)
 
 Position of found block or null
 

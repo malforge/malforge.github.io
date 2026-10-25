@@ -7,4 +7,4 @@ public void AddGridGroupLogic<T>(GridLinkTypeEnum type, Func<IMyGridGroupData, T
 ## Parameters
 
 * [GridLinkTypeEnum](VRage.Game.ModAPI.GridLinkTypeEnum) type
-* [Func<IMyGridGroupData, T>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) creator
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[IMyGridGroupData](VRage.Game.ModAPI.IMyGridGroupData), T&gt; creator

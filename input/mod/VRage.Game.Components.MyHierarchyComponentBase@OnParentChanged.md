@@ -6,5 +6,5 @@ public Action<MyHierarchyComponentBase, MyHierarchyComponentBase> event OnParent
 
 ## Returns
 
-[Action<MyHierarchyComponentBase, MyHierarchyComponentBase>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)&lt;[MyHierarchyComponentBase](VRage.Game.Components.MyHierarchyComponentBase), [MyHierarchyComponentBase](VRage.Game.Components.MyHierarchyComponentBase)&gt;
 

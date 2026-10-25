@@ -6,5 +6,5 @@ public ColorDefinitionRGBA? ColorKey
 
 ## Returns
 
-[ColorDefinitionRGBA?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[ColorDefinitionRGBA?](VRage.Game.ColorDefinitionRGBA)
 

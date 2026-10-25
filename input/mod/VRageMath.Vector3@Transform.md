@@ -8,9 +8,9 @@ Transforms a source array of Vector3s by a specified Quaternion rotation and wri
 
 ## Parameters
 
-* [Vector3[]](VRageMath.Vector3[]) sourceArray
+* [Vector3[]](VRageMath.Vector3) sourceArray
 * [Quaternion](VRageMath.Quaternion) rotation
-* [Vector3[]](VRageMath.Vector3[]) destinationArray
+* [Vector3[]](VRageMath.Vector3) destinationArray
 ## Summary
 
 ```csharp
@@ -21,10 +21,10 @@ Applies a specified Quaternion rotation to a specified range of an array of Vect
 
 ## Parameters
 
-* [Vector3[]](VRageMath.Vector3[]) sourceArray
+* [Vector3[]](VRageMath.Vector3) sourceArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceIndex
 * [Quaternion](VRageMath.Quaternion) rotation
-* [Vector3[]](VRageMath.Vector3[]) destinationArray
+* [Vector3[]](VRageMath.Vector3) destinationArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) destinationIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length
 ## Summary
@@ -136,9 +136,9 @@ Transforms a source array of Vector3s by a specified Matrix and writes the resul
 
 ## Parameters
 
-* [Vector3[]](VRageMath.Vector3[]) sourceArray
+* [Vector3[]](VRageMath.Vector3) sourceArray
 * [Matrix](VRageMath.Matrix) matrix
-* [Vector3[]](VRageMath.Vector3[]) destinationArray
+* [Vector3[]](VRageMath.Vector3) destinationArray
 ## Summary
 
 ```csharp
@@ -149,9 +149,9 @@ Applies a specified transform Matrix to a specified range of an array of Vector3
 
 ## Parameters
 
-* [Vector3[]](VRageMath.Vector3[]) sourceArray
+* [Vector3[]](VRageMath.Vector3) sourceArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceIndex
 * [Matrix](VRageMath.Matrix) matrix
-* [Vector3[]](VRageMath.Vector3[]) destinationArray
+* [Vector3[]](VRageMath.Vector3) destinationArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) destinationIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length

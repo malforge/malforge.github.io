@@ -17,6 +17,6 @@ public static bool CheckNeighborMountPoints(Vector3 currentMin, Vector3 currentM
 * [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition) thisDefinition
 * [Vector3I](VRageMath.Vector3I) neighborPosition
 * [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition) neighborDefinition
-* [MountPoint[]](Sandbox.Definitions.MountPoint[]) neighborMountPoints
+* [MountPoint[]](Sandbox.Definitions.MyCubeBlockDefinition+MountPoint) neighborMountPoints
 * [MyBlockOrientation](VRageMath.MyBlockOrientation) neighborOrientation
-* [List<MountPoint>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) otherMountPoints
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MountPoint](Sandbox.Definitions.MyCubeBlockDefinition+MountPoint)&gt; otherMountPoints

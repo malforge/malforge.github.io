@@ -6,5 +6,5 @@ public MyToolActionDefinition[] SecondaryActions
 
 ## Returns
 
-[MyToolActionDefinition[]](VRage.Game.MyToolActionDefinition[])
+[MyToolActionDefinition[]](VRage.Game.MyObjectBuilder_ToolItemDefinition+MyToolActionDefinition)
 

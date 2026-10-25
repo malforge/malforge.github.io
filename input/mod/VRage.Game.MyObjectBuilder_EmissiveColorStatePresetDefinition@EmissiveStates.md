@@ -6,5 +6,5 @@ public EmissiveStateDefinition[] EmissiveStates
 
 ## Returns
 
-[EmissiveStateDefinition[]](VRage.Game.EmissiveStateDefinition[])
+[EmissiveStateDefinition[]](VRage.Game.EmissiveStateDefinition)
 

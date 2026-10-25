@@ -57,7 +57,7 @@
 </code></pre>
 <p>Called when <a href="VRage.ModAPI.IMyEntity@Close.html">Close()</a> is called. Order 1) <a href="VRage.ModAPI.IMyEntity@OnMarkForClose.html">OnMarkForClose</a> 2) <a href="VRage.ModAPI.IMyEntity@OnClosing.html">OnClosing</a> 3) <a href="VRage.ModAPI.IMyEntity@OnClose.html">OnClose</a> .</p>
 <h2 id="returns">Returns</h2>
-<p><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6">Action<IMyEntity></a></p>
+<p><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6">Action</a>&lt;<a href="VRage.ModAPI.IMyEntity.html">IMyEntity</a>&gt;</p>
 <h2 id="remarks">Remarks</h2>
 <p>Modders should prefer <a href="VRage.ModAPI.IMyEntity@OnMarkForClose.html">OnMarkForClose</a> or <a href="VRage.ModAPI.IMyEntity@OnClosing.html">OnClosing</a> . This event may not be invoked at all, when calling MyEntities.CloseAll, marking is bypassed</p>
 

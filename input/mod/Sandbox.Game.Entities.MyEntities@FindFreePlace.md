@@ -8,7 +8,7 @@ Finds free place for objects defined by position and radius. StepSize is how fas
 
 ## Returns
 
-[Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[Vector3D?](VRageMath.Vector3D)
 
 
 
@@ -31,7 +31,7 @@ Finds free place for objects defined by position and radius. StepSize is how fas
 
 ## Returns
 
-[Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[Vector3D?](VRageMath.Vector3D)
 
 ## Parameters
 

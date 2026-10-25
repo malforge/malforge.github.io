@@ -10,4 +10,4 @@ public bool Evaluate(T value)
 
 ## Parameters
 
-* [T](VRage.Library.Utils.IMyCondition{T}+T) value
+* T value

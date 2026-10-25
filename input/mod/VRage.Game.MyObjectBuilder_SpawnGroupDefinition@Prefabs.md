@@ -6,5 +6,5 @@ public SpawnGroupPrefab[] Prefabs
 
 ## Returns
 
-[SpawnGroupPrefab[]](VRage.Game.SpawnGroupPrefab[])
+[SpawnGroupPrefab[]](VRage.Game.MyObjectBuilder_SpawnGroupDefinition+SpawnGroupPrefab)
 

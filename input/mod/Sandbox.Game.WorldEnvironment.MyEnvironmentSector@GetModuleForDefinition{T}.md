@@ -6,7 +6,7 @@ public T GetModuleForDefinition<T>(MyRuntimeEnvironmentItemInfo itemEnvDefinitio
 
 ## Returns
 
-[T](Sandbox.Game.WorldEnvironment.MyEnvironmentSector+T)
+T
 
 ## Parameters
 

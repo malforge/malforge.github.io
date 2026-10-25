@@ -6,5 +6,5 @@ public static void InitializeDeviceBase<T>(this IMyObjectBuilder_GunObject<T> g
 
 ## Parameters
 
-* [IMyObjectBuilder_GunObject<T>](VRage.Game.ObjectBuilders.IMyObjectBuilder_GunObject{T}) gunObjectBuilder
+* [IMyObjectBuilder_GunObject](VRage.Game.ObjectBuilders.IMyObjectBuilder_GunObject{T})&lt;T&gt; gunObjectBuilder
 * [MyObjectBuilder_DeviceBase](VRage.Game.MyObjectBuilder_DeviceBase) newBuilder

@@ -6,5 +6,5 @@ public BlueprintClassEntry[] BlueprintClassEntries
 
 ## Returns
 
-[BlueprintClassEntry[]](VRage.Game.BlueprintClassEntry[])
+[BlueprintClassEntry[]](VRage.Game.BlueprintClassEntry)
 

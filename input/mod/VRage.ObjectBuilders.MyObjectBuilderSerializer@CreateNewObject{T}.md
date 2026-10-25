@@ -6,7 +6,7 @@ public static T CreateNewObject<T>(string subtypeName)
 
 ## Returns
 
-[T](VRage.ObjectBuilders.MyObjectBuilderSerializer+T)
+T
 
 ## Parameters
 
@@ -19,5 +19,5 @@ public static T CreateNewObject<T>()
 
 ## Returns
 
-[T](VRage.ObjectBuilders.MyObjectBuilderSerializer+T)
+T
 

@@ -6,5 +6,5 @@ public MySerializableList<PerEntityData> EntityReplayData
 
 ## Returns
 
-MySerializableList<PerEntityData> <sub>prohibited</sub>
+MySerializableList&lt;[PerEntityData](VRage.Game.ObjectBuilders.Components.PerEntityData)&gt; <sub>prohibited</sub>
 

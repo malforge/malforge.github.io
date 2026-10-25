@@ -15,7 +15,7 @@ Creates a spherical billboard that rotates around a specified object position.
 * [Vector3](VRageMath.Vector3) objectPosition
 * [Vector3](VRageMath.Vector3) cameraPosition
 * [Vector3](VRageMath.Vector3) cameraUpVector
-* [Vector3?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) cameraForwardVector
+* [Vector3?](VRageMath.Vector3) cameraForwardVector
 ## Summary
 
 ```csharp
@@ -29,5 +29,5 @@ Creates a spherical billboard that rotates around a specified object position.
 * [Vector3](VRageMath.Vector3) objectPosition
 * [Vector3](VRageMath.Vector3) cameraPosition
 * [Vector3](VRageMath.Vector3) cameraUpVector
-* [Vector3?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) cameraForwardVector
+* [Vector3?](VRageMath.Vector3) cameraForwardVector
 * [Matrix](VRageMath.Matrix) result

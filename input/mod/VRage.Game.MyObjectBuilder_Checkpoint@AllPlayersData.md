@@ -6,5 +6,5 @@ public SerializableDictionary<PlayerId, MyObjectBuilder_Player> AllPlayersData
 
 ## Returns
 
-[SerializableDictionary<PlayerId, MyObjectBuilder_Player>](VRage.Serialization.SerializableDictionary{PlayerId,MyObjectBuilder_Player})
+[SerializableDictionary](VRage.Serialization.SerializableDictionary{T,U})&lt;[PlayerId](VRage.Game.MyObjectBuilder_Checkpoint+PlayerId), [MyObjectBuilder_Player](VRage.Game.MyObjectBuilder_Player)&gt;
 

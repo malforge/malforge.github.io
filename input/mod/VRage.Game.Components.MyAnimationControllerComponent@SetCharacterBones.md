@@ -7,5 +7,5 @@ public void SetCharacterBones(MyCharacterBone[] characterBones, Matrix[] relativ
 ## Parameters
 
 * MyCharacterBone[] <sub>prohibited</sub> characterBones
-* [Matrix[]](VRageMath.Matrix[]) relativeTransforms
-* [Matrix[]](VRageMath.Matrix[]) absoluteTransforms
+* [Matrix[]](VRageMath.Matrix) relativeTransforms
+* [Matrix[]](VRageMath.Matrix) absoluteTransforms

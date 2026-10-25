@@ -6,5 +6,5 @@ public MyDefinitionId[] AmmoMagazinesId
 
 ## Returns
 
-[MyDefinitionId[]](VRage.Game.MyDefinitionId[])
+[MyDefinitionId[]](VRage.Game.MyDefinitionId)
 

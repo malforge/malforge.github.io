@@ -8,5 +8,5 @@ Mapping children to axis. Each child has assigned its value.
 
 ## Returns
 
-[MyParameterAnimTreeNodeMapping[]](VRage.Game.ObjectBuilders.MyParameterAnimTreeNodeMapping[])
+[MyParameterAnimTreeNodeMapping[]](VRage.Game.ObjectBuilders.MyParameterAnimTreeNodeMapping)
 

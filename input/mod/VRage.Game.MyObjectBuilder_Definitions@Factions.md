@@ -6,5 +6,5 @@ public MyObjectBuilder_FactionDefinition[] Factions
 
 ## Returns
 
-[MyObjectBuilder_FactionDefinition[]](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition[])
+[MyObjectBuilder_FactionDefinition[]](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_FactionDefinition)
 

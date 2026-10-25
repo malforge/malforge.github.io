@@ -10,4 +10,4 @@ public bool IsAnyOfPointInside(Vector3D[] worldPoints)
 
 ## Parameters
 
-* [Vector3D[]](VRageMath.Vector3D[]) worldPoints
+* [Vector3D[]](VRageMath.Vector3D) worldPoints

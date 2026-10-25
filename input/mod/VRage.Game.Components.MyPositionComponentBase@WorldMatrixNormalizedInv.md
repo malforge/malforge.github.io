@@ -6,5 +6,5 @@ public WorldMatrixNormalizedInv { get; }
 
 ## Returns
 
-
+[MatrixD](VRageMath.MatrixD)
 

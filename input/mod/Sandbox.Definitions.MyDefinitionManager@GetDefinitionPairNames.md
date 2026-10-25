@@ -6,5 +6,5 @@ public DictionaryKeysReader<string, MyCubeBlockDefinitionGroup> GetDefinitionPai
 
 ## Returns
 
-[DictionaryKeysReader<string, MyCubeBlockDefinitionGroup>](VRage.Collections.DictionaryKeysReader{String,MyCubeBlockDefinitionGroup})
+[DictionaryKeysReader](VRage.Collections.DictionaryKeysReader{K,V})&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [MyCubeBlockDefinitionGroup](Sandbox.Definitions.MyCubeBlockDefinitionGroup)&gt;
 

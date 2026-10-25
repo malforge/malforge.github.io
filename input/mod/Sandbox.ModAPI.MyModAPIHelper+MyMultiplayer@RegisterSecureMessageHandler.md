@@ -7,4 +7,4 @@ public void RegisterSecureMessageHandler(ushort id, Action<ushort, Byte[], ulong
 ## Parameters
 
 * [ushort](https://docs.microsoft.com/en-us/dotnet/api/System.UInt16?view=netframework-4.6) id
-* [Action<ushort, Byte[], ulong, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-4?view=netframework-4.6) messageHandler
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-4?view=netframework-4.6)&lt;[ushort](https://docs.microsoft.com/en-us/dotnet/api/System.UInt16?view=netframework-4.6), [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6), [ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; messageHandler

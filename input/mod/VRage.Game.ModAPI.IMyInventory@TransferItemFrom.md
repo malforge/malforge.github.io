@@ -16,9 +16,9 @@ True if checkConnection is false, or inventories are connected with correct conv
 
 * [IMyInventory](VRage.Game.ModAPI.IMyInventory) sourceInventory
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceItemIndex
-* [int?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) targetItemIndex
-* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) stackIfPossible
-* [MyFixedPoint?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) amount
+* [int?](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) targetItemIndex
+* [bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) stackIfPossible
+* [MyFixedPoint?](VRage.MyFixedPoint) amount
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) checkConnection
 ## Summary
 

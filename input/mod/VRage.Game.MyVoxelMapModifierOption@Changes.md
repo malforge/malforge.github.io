@@ -6,5 +6,5 @@ public MyVoxelMapModifierChange[] Changes
 
 ## Returns
 
-[MyVoxelMapModifierChange[]](VRage.Game.MyVoxelMapModifierChange[])
+[MyVoxelMapModifierChange[]](VRage.Game.MyVoxelMapModifierChange)
 

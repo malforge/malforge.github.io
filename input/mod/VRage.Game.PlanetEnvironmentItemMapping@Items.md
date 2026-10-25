@@ -6,5 +6,5 @@ public MyPlanetEnvironmentItemDef[] Items
 
 ## Returns
 
-[MyPlanetEnvironmentItemDef[]](VRage.Game.MyPlanetEnvironmentItemDef[])
+[MyPlanetEnvironmentItemDef[]](VRage.Game.MyPlanetEnvironmentItemDef)
 

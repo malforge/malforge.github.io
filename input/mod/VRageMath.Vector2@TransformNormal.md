@@ -37,9 +37,9 @@ Transforms an array of Vector2 vector normals by a specified Matrix.
 
 ## Parameters
 
-* [Vector2[]](VRageMath.Vector2[]) sourceArray
+* [Vector2[]](VRageMath.Vector2) sourceArray
 * [Matrix](VRageMath.Matrix) matrix
-* [Vector2[]](VRageMath.Vector2[]) destinationArray
+* [Vector2[]](VRageMath.Vector2) destinationArray
 ## Summary
 
 ```csharp
@@ -50,9 +50,9 @@ Transforms a specified range in an array of Vector2 vector normals by a specifie
 
 ## Parameters
 
-* [Vector2[]](VRageMath.Vector2[]) sourceArray
+* [Vector2[]](VRageMath.Vector2) sourceArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceIndex
 * [Matrix](VRageMath.Matrix) matrix
-* [Vector2[]](VRageMath.Vector2[]) destinationArray
+* [Vector2[]](VRageMath.Vector2) destinationArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) destinationIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length

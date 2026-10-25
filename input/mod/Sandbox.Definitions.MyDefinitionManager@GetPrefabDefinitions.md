@@ -6,5 +6,5 @@ public DictionaryReader<string, MyPrefabDefinition> GetPrefabDefinitions()
 
 ## Returns
 
-[DictionaryReader<string, MyPrefabDefinition>](VRage.Collections.DictionaryReader{String,MyPrefabDefinition})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [MyPrefabDefinition](Sandbox.Definitions.MyPrefabDefinition)&gt;
 

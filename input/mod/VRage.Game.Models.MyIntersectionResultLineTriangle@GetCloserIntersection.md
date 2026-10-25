@@ -6,9 +6,9 @@ public static MyIntersectionResultLineTriangle? GetCloserIntersection(ref MyInt
 
 ## Returns
 
-[MyIntersectionResultLineTriangle?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[MyIntersectionResultLineTriangle?](VRage.Game.Models.MyIntersectionResultLineTriangle)
 
 ## Parameters
 
-* [MyIntersectionResultLineTriangle?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) a
-* [MyIntersectionResultLineTriangle?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) b
+* [MyIntersectionResultLineTriangle?](VRage.Game.Models.MyIntersectionResultLineTriangle) a
+* [MyIntersectionResultLineTriangle?](VRage.Game.Models.MyIntersectionResultLineTriangle) b

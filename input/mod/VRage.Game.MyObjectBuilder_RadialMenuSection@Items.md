@@ -6,5 +6,5 @@ public MyObjectBuilder_RadialMenuItem[] Items
 
 ## Returns
 
-[MyObjectBuilder_RadialMenuItem[]](VRage.Game.MyObjectBuilder_RadialMenuItem[])
+[MyObjectBuilder_RadialMenuItem[]](VRage.Game.MyObjectBuilder_RadialMenuItem)
 

@@ -6,4 +6,4 @@ public Enumerator(MyDistributedUpdater<TList, TElement> updater)
 
 ## Parameters
 
-* [MyDistributedUpdater<TList, TElement>](VRage.Collections.MyDistributedUpdater{TList,TElement}) updater
+* [MyDistributedUpdater](VRage.Collections.MyDistributedUpdater{TList,TElement})&lt;TList, TElement&gt; updater

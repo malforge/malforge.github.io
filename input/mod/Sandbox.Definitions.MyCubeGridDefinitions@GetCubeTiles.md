@@ -6,7 +6,7 @@ public static MyTileDefinition[] GetCubeTiles(MyCubeBlockDefinition block)
 
 ## Returns
 
-[MyTileDefinition[]](Sandbox.Definitions.MyTileDefinition[])
+[MyTileDefinition[]](Sandbox.Definitions.MyTileDefinition)
 
 ## Parameters
 

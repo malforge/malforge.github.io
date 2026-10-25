@@ -6,5 +6,5 @@ public static Color[] LodColors
 
 ## Returns
 
-[Color[]](VRageMath.Color[])
+[Color[]](VRageMath.Color)
 

@@ -12,4 +12,4 @@ public bool GetVoxelMapsWhoseBoundingBoxesIntersectBox(ref BoundingBoxD boundin
 
 * [BoundingBoxD](VRageMath.BoundingBoxD) boundingBox
 * [MyVoxelBase](Sandbox.Game.Entities.MyVoxelBase) ignoreVoxelMap
-* [List<MyVoxelBase>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) voxelList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyVoxelBase](Sandbox.Game.Entities.MyVoxelBase)&gt; voxelList

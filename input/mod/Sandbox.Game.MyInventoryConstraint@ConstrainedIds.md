@@ -6,5 +6,5 @@ public HashSetReader<MyDefinitionId> ConstrainedIds { get; }
 
 ## Returns
 
-[HashSetReader<MyDefinitionId>](VRage.Collections.HashSetReader{MyDefinitionId})
+[HashSetReader](VRage.Collections.HashSetReader{T})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId)&gt;
 

@@ -77,7 +77,7 @@ public MemorySafeStringBuilder Append(Char[] value)
 
 ## Parameters
 
-* Char[] <sub>prohibited</sub> value
+* [char[]](https://docs.microsoft.com/en-us/dotnet/api/System.Char?view=netframework-4.6) value
 ## Summary
 
 ```csharp
@@ -90,7 +90,7 @@ public MemorySafeStringBuilder Append(Char[] value, int startIndex, int charCoun
 
 ## Parameters
 
-* Char[] <sub>prohibited</sub> value
+* [char[]](https://docs.microsoft.com/en-us/dotnet/api/System.Char?view=netframework-4.6) value
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) startIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) charCount
 ## Summary

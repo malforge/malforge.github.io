@@ -6,8 +6,8 @@ public static ImmutableList<T> CreateRange<T>(IEnumerable<T> items)
 
 ## Returns
 
-[ImmutableList<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableList-1?view=netframework-4.6)
+[ImmutableList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableList-1?view=netframework-4.6)&lt;T&gt;
 
 ## Parameters
 
-* [IEnumerable<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) items
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;T&gt; items

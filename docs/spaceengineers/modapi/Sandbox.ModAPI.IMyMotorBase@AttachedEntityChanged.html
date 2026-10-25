@@ -57,7 +57,7 @@
 </code></pre>
 <p>When the rotor head is attached or detached from the base</p>
 <h2 id="returns">Returns</h2>
-<p><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6">Action<IMyMotorBase></a></p>
+<p><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6">Action</a>&lt;<a href="Sandbox.ModAPI.IMyMotorBase.html">IMyMotorBase</a>&gt;</p>
 <h2 id="remarks">Remarks</h2>
 <p>This event can be called in three states:Stator is detached from rotor, Stator is looking for rotor attachment, Stator is attached to rotorThe looking and attached states will both returnfor <a href="Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock@IsAttached.html">IsAttached</a> . To determine which state it is, use the <a href="Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock@PendingAttachment.html">PendingAttachment</a> property:means awaiting attachment,means the rotor is attached.</p>
 

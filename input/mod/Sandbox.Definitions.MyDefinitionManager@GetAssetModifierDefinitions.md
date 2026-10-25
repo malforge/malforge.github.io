@@ -6,5 +6,5 @@ public DictionaryValuesReader<MyDefinitionId, MyAssetModifierDefinition> GetAsse
 
 ## Returns
 
-[DictionaryValuesReader<MyDefinitionId, MyAssetModifierDefinition>](VRage.Collections.DictionaryValuesReader{MyDefinitionId,MyAssetModifierDefinition})
+[DictionaryValuesReader](VRage.Collections.DictionaryValuesReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyAssetModifierDefinition](Sandbox.Definitions.MyAssetModifierDefinition)&gt;
 

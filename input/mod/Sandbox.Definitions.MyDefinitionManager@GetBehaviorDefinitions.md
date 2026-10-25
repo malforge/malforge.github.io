@@ -6,5 +6,5 @@ public ListReader<MyBehaviorDefinition> GetBehaviorDefinitions()
 
 ## Returns
 
-[ListReader<MyBehaviorDefinition>](VRage.Collections.ListReader{MyBehaviorDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyBehaviorDefinition](Sandbox.Definitions.MyBehaviorDefinition)&gt;
 

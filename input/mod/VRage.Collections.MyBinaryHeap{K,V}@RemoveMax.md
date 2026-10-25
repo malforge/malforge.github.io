@@ -6,5 +6,5 @@ public V RemoveMax()
 
 ## Returns
 
-[V](VRage.Collections.MyBinaryHeap{K,V}+V)
+V
 

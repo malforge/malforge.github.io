@@ -6,5 +6,5 @@ public SerializableDictionary<pair, MyObjectBuilder_MissionTriggers> Triggers
 
 ## Returns
 
-[SerializableDictionary<pair, MyObjectBuilder_MissionTriggers>](VRage.Serialization.SerializableDictionary{pair,MyObjectBuilder_MissionTriggers})
+[SerializableDictionary](VRage.Serialization.SerializableDictionary{T,U})&lt;[pair](VRage.Game.MyObjectBuilder_SessionComponentMission+pair), [MyObjectBuilder_MissionTriggers](VRage.Game.MyObjectBuilder_MissionTriggers)&gt;
 

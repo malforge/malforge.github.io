@@ -6,5 +6,5 @@ public static SortedDictionaryReader<K, V> Empty
 
 ## Returns
 
-[SortedDictionaryReader<K, V>](VRage.Collections.SortedDictionaryReader{K,V})
+[SortedDictionaryReader](VRage.Collections.SortedDictionaryReader{K,V})&lt;K, V&gt;
 

@@ -11,5 +11,5 @@ public bool ChangeColorAndSkin(MySlimBlock block, Vector3? newHSV, MyStringHash?
 ## Parameters
 
 * MySlimBlock <sub>prohibited</sub> block
-* [Vector3?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) newHSV
-* [MyStringHash?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) skinSubtypeId
+* [Vector3?](VRageMath.Vector3) newHSV
+* [MyStringHash?](VRage.Utils.MyStringHash) skinSubtypeId

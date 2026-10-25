@@ -6,8 +6,8 @@ public MemorySafeList<TOutput> ConvertAll<TOutput>(Converter<T, TOutput> convert
 
 ## Returns
 
-[MemorySafeList<TOutput>](VRage.Scripting.MemorySafeTypes.MemorySafeList{TOutput})
+[MemorySafeList](VRage.Scripting.MemorySafeTypes.MemorySafeList{T})&lt;TOutput&gt;
 
 ## Parameters
 
-* Converter<T, TOutput> <sub>prohibited</sub> converter
+* Converter&lt;T, TOutput&gt; <sub>prohibited</sub> converter

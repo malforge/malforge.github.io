@@ -8,4 +8,4 @@ Gets weapons that should be used to damage to attack enemy May return also modde
 
 ## Parameters
 
-* [List<long>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) blockEntityIds
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt; blockEntityIds

@@ -13,4 +13,4 @@ public static bool TestPlacementForWheelWhenPlacingWheel(MyAttachableTopBlockBas
 * MyAttachableTopBlockBase <sub>prohibited</sub> rotorBlock
 * [MatrixD](VRageMath.MatrixD) rotation
 * [Vector3D](VRageMath.Vector3D) wheelPosition
-* [List<HkBodyCollision>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) m_tmpList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;HkBodyCollision <sub>prohibited</sub>&gt; m_tmpList

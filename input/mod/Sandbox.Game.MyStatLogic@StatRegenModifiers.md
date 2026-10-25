@@ -6,5 +6,5 @@ public Dictionary<string, MyStatRegenModifier> StatRegenModifiers { get; }
 
 ## Returns
 
-[Dictionary<string, MyStatRegenModifier>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)
+[Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [MyStatRegenModifier](Sandbox.Game.MyStatLogic+MyStatRegenModifier)&gt;
 

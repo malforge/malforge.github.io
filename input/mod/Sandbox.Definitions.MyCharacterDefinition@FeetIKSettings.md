@@ -6,5 +6,5 @@ public Dictionary<MyCharacterMovementEnum, MyFeetIKSettings> FeetIKSettings
 
 ## Returns
 
-[Dictionary<MyCharacterMovementEnum, MyFeetIKSettings>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)
+[Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;[MyCharacterMovementEnum](VRage.Game.MyCharacterMovementEnum), MyFeetIKSettings <sub>prohibited</sub>&gt;
 

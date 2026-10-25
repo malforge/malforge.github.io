@@ -6,8 +6,8 @@ public static KeyValuePair<K, V> FirstPair<K, V>(this Dictionary<K, V> dictiona
 
 ## Returns
 
-[KeyValuePair<K, V>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2?view=netframework-4.6)
+[KeyValuePair](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2?view=netframework-4.6)&lt;K, V&gt;
 
 ## Parameters
 
-* [Dictionary<K, V>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6) dictionary
+* [Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;K, V&gt; dictionary

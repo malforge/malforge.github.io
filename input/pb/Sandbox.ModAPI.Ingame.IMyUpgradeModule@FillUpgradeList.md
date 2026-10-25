@@ -8,4 +8,4 @@ Gets list of upgrades from this block, see `MyUpgradeModuleInfo`<sub>prohibited<
 
 ## Parameters
 
-* [List<MyUpgradeModuleInfo>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) upgrades
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;MyUpgradeModuleInfo <sub>prohibited</sub>&gt; upgrades

@@ -6,7 +6,7 @@ public MountPoint[] GetBuildProgressModelMountPoints(float currentIntegrityRatio
 
 ## Returns
 
-[MountPoint[]](Sandbox.Definitions.MountPoint[])
+[MountPoint[]](Sandbox.Definitions.MyCubeBlockDefinition+MountPoint)
 
 ## Parameters
 

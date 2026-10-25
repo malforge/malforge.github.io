@@ -6,5 +6,5 @@ public DictionaryValuesReader<MyDefinitionId, MyBlueprintDefinitionBase> GetBlue
 
 ## Returns
 
-[DictionaryValuesReader<MyDefinitionId, MyBlueprintDefinitionBase>](VRage.Collections.DictionaryValuesReader{MyDefinitionId,MyBlueprintDefinitionBase})
+[DictionaryValuesReader](VRage.Collections.DictionaryValuesReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyBlueprintDefinitionBase](Sandbox.Definitions.MyBlueprintDefinitionBase)&gt;
 

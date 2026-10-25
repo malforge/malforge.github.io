@@ -6,11 +6,11 @@ public TObjectBuilder CreateObjectBuilder<TObjectBuilder>(TCreatedObjectBase ins
 
 ## Returns
 
-[TObjectBuilder](VRage.ObjectBuilders.MyObjectFactory{TAttribute,TCreatedObjectBase}+TObjectBuilder)
+TObjectBuilder
 
 ## Parameters
 
-* [TCreatedObjectBase](VRage.ObjectBuilders.MyObjectFactory{TAttribute,TCreatedObjectBase}+TCreatedObjectBase) instance
+* TCreatedObjectBase instance
 ## Summary
 
 ```csharp
@@ -19,7 +19,7 @@ public TObjectBuilder CreateObjectBuilder<TObjectBuilder>(Type instanceType)
 
 ## Returns
 
-[TObjectBuilder](VRage.ObjectBuilders.MyObjectFactory{TAttribute,TCreatedObjectBase}+TObjectBuilder)
+TObjectBuilder
 
 ## Parameters
 

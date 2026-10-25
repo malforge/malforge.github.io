@@ -6,5 +6,5 @@ public MyObjectBuilder_AnimationSM[] StateMachines
 
 ## Returns
 
-[MyObjectBuilder_AnimationSM[]](VRage.Game.ObjectBuilders.MyObjectBuilder_AnimationSM[])
+[MyObjectBuilder_AnimationSM[]](VRage.Game.ObjectBuilders.MyObjectBuilder_AnimationSM)
 

@@ -11,4 +11,4 @@ public static float GetPlayersMinimalDistance(MyEntity entity, ICollection<MyPla
 ## Parameters
 
 * [MyEntity](VRage.Game.Entity.MyEntity) entity
-* [ICollection<MyPlayer>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=netframework-4.6) players
+* [ICollection](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=netframework-4.6)&lt;MyPlayer <sub>prohibited</sub>&gt; players

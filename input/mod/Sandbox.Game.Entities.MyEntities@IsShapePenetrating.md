@@ -31,6 +31,6 @@ public static bool IsShapePenetrating(HkShape shape, ref Vector3D position, ref
 * HkShape <sub>prohibited</sub> shape
 * [Vector3D](VRageMath.Vector3D) position
 * [Quaternion](VRageMath.Quaternion) rotation
-* [Func<IMyEntity, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) entityFilter
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[IMyEntity](VRage.ModAPI.IMyEntity), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; entityFilter
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) filter
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) allowSafezones

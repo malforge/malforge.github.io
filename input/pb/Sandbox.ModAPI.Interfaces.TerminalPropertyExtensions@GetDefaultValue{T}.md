@@ -6,7 +6,7 @@ public static T GetDefaultValue<T>(this IMyTerminalBlock block, string property
 
 ## Returns
 
-[T](Sandbox.ModAPI.Interfaces.TerminalPropertyExtensions+T)
+T
 
 ## Parameters
 

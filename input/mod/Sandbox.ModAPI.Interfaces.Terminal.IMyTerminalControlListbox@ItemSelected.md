@@ -8,5 +8,5 @@ This is triggered when an item is selected. Can contain more than one item if Mu
 
 ## Returns
 
-[Action<IMyTerminalBlock, List<MyTerminalControlListBoxItem>>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)&lt;[IMyTerminalBlock](Sandbox.ModAPI.IMyTerminalBlock), [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyTerminalControlListBoxItem](VRage.ModAPI.MyTerminalControlListBoxItem)&gt;&gt;
 

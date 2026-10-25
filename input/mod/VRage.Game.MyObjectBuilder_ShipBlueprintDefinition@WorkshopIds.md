@@ -6,5 +6,5 @@ public WorkshopId[] WorkshopIds
 
 ## Returns
 
-[WorkshopId[]](VRage.Game.WorkshopId[])
+[WorkshopId[]](VRage.Game.WorkshopId)
 

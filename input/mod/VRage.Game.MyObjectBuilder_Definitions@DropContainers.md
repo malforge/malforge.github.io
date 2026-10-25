@@ -6,5 +6,5 @@ public MyObjectBuilder_DropContainerDefinition[] DropContainers
 
 ## Returns
 
-[MyObjectBuilder_DropContainerDefinition[]](VRage.Game.MyObjectBuilder_DropContainerDefinition[])
+[MyObjectBuilder_DropContainerDefinition[]](VRage.Game.MyObjectBuilder_DropContainerDefinition)
 

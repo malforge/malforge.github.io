@@ -6,5 +6,5 @@ public MyHierarchyComponent<MyEntity> Hierarchy { get; set; }
 
 ## Returns
 
-[MyHierarchyComponent<MyEntity>](VRage.Game.Components.MyHierarchyComponent{MyEntity})
+[MyHierarchyComponent](VRage.Game.Components.MyHierarchyComponent{TYPE})&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt;
 

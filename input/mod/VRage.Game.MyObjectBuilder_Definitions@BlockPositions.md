@@ -6,5 +6,5 @@ public MyBlockPosition[] BlockPositions
 
 ## Returns
 
-[MyBlockPosition[]](VRage.Game.MyBlockPosition[])
+[MyBlockPosition[]](VRage.Game.MyBlockPosition)
 

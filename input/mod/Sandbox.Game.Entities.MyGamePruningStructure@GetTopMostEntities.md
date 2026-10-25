@@ -7,7 +7,7 @@ public void GetTopMostEntities(ref BoundingBoxD box, List<MyEntity> result, MyE
 ## Parameters
 
 * [BoundingBoxD](VRageMath.BoundingBoxD) box
-* [List<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) result
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt; result
 * [MyEntityQueryType](Sandbox.Game.Entities.MyEntityQueryType) qtype
 ## Summary
 
@@ -18,7 +18,7 @@ public void GetTopMostEntities(ref BoundingSphereD sphere, List<MyEntity> resul
 ## Parameters
 
 * [BoundingSphereD](VRageMath.BoundingSphereD) sphere
-* [List<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) result
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt; result
 * [MyEntityQueryType](Sandbox.Game.Entities.MyEntityQueryType) qtype
 ## Summary
 
@@ -29,5 +29,5 @@ public void GetTopMostEntities(ref LineD ray, List<MyLineSegmentOverlapResult<M
 ## Parameters
 
 * [LineD](VRageMath.LineD) ray
-* [List<MyLineSegmentOverlapResult<MyEntity>>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) result
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyLineSegmentOverlapResult](VRageMath.MyLineSegmentOverlapResult{T})&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt;&gt; result
 * [MyEntityQueryType](Sandbox.Game.Entities.MyEntityQueryType) qtype

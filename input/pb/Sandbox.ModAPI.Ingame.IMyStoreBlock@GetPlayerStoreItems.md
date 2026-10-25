@@ -8,4 +8,4 @@ Returns player store items.
 
 ## Parameters
 
-* [List<MyStoreQueryItem>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) storeItems
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyStoreQueryItem](Sandbox.ModAPI.Ingame.MyStoreQueryItem)&gt; storeItems

@@ -6,5 +6,5 @@ public MySerializableList<MyGamepadAxes> GamepadAxes
 
 ## Returns
 
-MySerializableList<MyGamepadAxes> <sub>prohibited</sub>
+MySerializableList&lt;MyGamepadAxes <sub>prohibited</sub>&gt; <sub>prohibited</sub>
 

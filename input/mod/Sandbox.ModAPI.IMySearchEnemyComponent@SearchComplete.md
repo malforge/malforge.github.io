@@ -8,5 +8,5 @@ Called when Search was finished, as argument found enemy (block or character) is
 
 ## Returns
 
-[Action<IMyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[IMyEntity](VRage.ModAPI.IMyEntity)&gt;
 

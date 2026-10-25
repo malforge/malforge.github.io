@@ -8,5 +8,5 @@ Returns all items this inventory accepts.
 
 ## Parameters
 
-* [List<MyItemType>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) itemsTypes
-* [Func<MyItemType, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) filter
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyItemType](VRage.Game.ModAPI.Ingame.MyItemType)&gt; itemsTypes
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[MyItemType](VRage.Game.ModAPI.Ingame.MyItemType), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; filter

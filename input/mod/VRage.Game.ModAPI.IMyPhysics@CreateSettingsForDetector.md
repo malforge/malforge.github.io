@@ -13,7 +13,7 @@ Used to create physical detectors. They don't have physical collisions, instead 
 ## Parameters
 
 * [IMyEntity](VRage.ModAPI.IMyEntity) entity
-* [Action<IMyEntity, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6) detectorColliderCallback
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)&lt;[IMyEntity](VRage.ModAPI.IMyEntity), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; detectorColliderCallback
 * [MatrixD](VRageMath.MatrixD) worldMatrix
 * [Vector3](VRageMath.Vector3) localCenter
 * [RigidBodyFlag](VRage.Game.Components.RigidBodyFlag) rigidBodyFlags

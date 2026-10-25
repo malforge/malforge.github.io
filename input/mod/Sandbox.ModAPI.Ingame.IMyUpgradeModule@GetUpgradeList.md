@@ -8,4 +8,4 @@ Obsolete
 
 ## Parameters
 
-* [List<MyUpgradeModuleInfo>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) upgrades
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyUpgradeModuleInfo](VRage.Game.ObjectBuilders.Definitions.MyUpgradeModuleInfo)&gt; upgrades

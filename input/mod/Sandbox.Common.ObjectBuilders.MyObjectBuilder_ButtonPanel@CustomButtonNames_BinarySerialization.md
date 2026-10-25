@@ -6,5 +6,5 @@ public Dictionary<int, string> CustomButtonNames_BinarySerialization { get; set;
 
 ## Returns
 
-[Dictionary<int, string>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)
+[Dictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2?view=netframework-4.6)&lt;[int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6), [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6)&gt;
 

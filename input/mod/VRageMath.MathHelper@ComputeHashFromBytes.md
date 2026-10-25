@@ -10,4 +10,4 @@ public static int ComputeHashFromBytes(Byte[] bytes)
 
 ## Parameters
 
-* Byte[] <sub>prohibited</sub> bytes
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) bytes

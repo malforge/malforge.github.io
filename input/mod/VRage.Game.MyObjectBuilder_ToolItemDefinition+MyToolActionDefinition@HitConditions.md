@@ -6,5 +6,5 @@ public MyToolActionHitCondition[] HitConditions
 
 ## Returns
 
-[MyToolActionHitCondition[]](VRage.Game.MyToolActionHitCondition[])
+[MyToolActionHitCondition[]](VRage.Game.MyObjectBuilder_ToolItemDefinition+MyToolActionHitCondition)
 

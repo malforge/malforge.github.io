@@ -8,7 +8,7 @@ Called when [Close()](VRage.ModAPI.IMyEntity@Close) is called. Order 1) [OnMarkF
 
 ## Returns
 
-[Action<IMyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[IMyEntity](VRage.ModAPI.IMyEntity)&gt;
 
 ## Remarks
 

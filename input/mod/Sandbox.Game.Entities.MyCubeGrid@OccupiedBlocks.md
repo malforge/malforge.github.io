@@ -6,5 +6,5 @@ public HashSetReader<MyCockpit> OccupiedBlocks { get; }
 
 ## Returns
 
-[HashSetReader<MyCockpit>](VRage.Collections.HashSetReader{MyCockpit})
+[HashSetReader](VRage.Collections.HashSetReader{T})&lt;[MyCockpit](Sandbox.Game.Entities.MyCockpit)&gt;
 

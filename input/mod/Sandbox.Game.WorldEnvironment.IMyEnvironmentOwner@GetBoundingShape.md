@@ -6,7 +6,7 @@ public Vector3D[] GetBoundingShape(ref Vector3D worldPos, ref Vector3 basisX, 
 
 ## Returns
 
-[Vector3D[]](VRageMath.Vector3D[])
+[Vector3D[]](VRageMath.Vector3D)
 
 ## Parameters
 

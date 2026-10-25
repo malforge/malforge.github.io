@@ -8,8 +8,8 @@ Encodes data as 5bit string.
 
 ## Returns
 
-Char[] <sub>prohibited</sub>
+[char[]](https://docs.microsoft.com/en-us/dotnet/api/System.Char?view=netframework-4.6)
 
 ## Parameters
 
-* Byte[] <sub>prohibited</sub> data
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) data

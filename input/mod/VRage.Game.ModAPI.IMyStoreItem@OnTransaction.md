@@ -8,5 +8,5 @@ When player makes an transaction regarding this item int - amount sold int - amo
 
 ## Returns
 
-[Action<int, int, long, long, long>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-5?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-5?view=netframework-4.6)&lt;[int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6), [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6), [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6), [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6), [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt;
 

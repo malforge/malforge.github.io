@@ -8,4 +8,4 @@ Sends a signal to the channel. If no channel number is provided, uses channel nu
 
 ## Parameters
 
-* [int?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) channel
+* [int?](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) channel

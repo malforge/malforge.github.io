@@ -6,7 +6,7 @@ public void Add(Byte[] value)
 
 ## Parameters
 
-* Byte[] <sub>prohibited</sub> value
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) value
 ## Summary
 
 ```csharp
@@ -15,7 +15,7 @@ public void Add(Byte[] value, int count)
 
 ## Parameters
 
-* Byte[] <sub>prohibited</sub> value
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) value
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) count
 ## Summary
 

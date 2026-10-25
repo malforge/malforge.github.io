@@ -6,5 +6,5 @@ public MySerializableList<MyIdBalancePair> AnalysisPerPlayerCurrency
 
 ## Returns
 
-MySerializableList<MyIdBalancePair> <sub>prohibited</sub>
+MySerializableList&lt;[MyIdBalancePair](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_SessionComponentEconomy+MyIdBalancePair)&gt; <sub>prohibited</sub>
 

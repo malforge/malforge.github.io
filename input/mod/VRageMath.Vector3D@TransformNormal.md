@@ -98,9 +98,9 @@ Transforms an array of 3D vector normals by a specified Matrix.
 
 ## Parameters
 
-* [Vector3D[]](VRageMath.Vector3D[]) sourceArray
+* [Vector3D[]](VRageMath.Vector3D) sourceArray
 * [Matrix](VRageMath.Matrix) matrix
-* [Vector3D[]](VRageMath.Vector3D[]) destinationArray
+* [Vector3D[]](VRageMath.Vector3D) destinationArray
 ## Summary
 
 ```csharp
@@ -109,7 +109,7 @@ public static void TransformNormal(Vector3D[] sourceArray, ref Matrix matrix, *
 
 ## Parameters
 
-* [Vector3D[]](VRageMath.Vector3D[]) sourceArray
+* [Vector3D[]](VRageMath.Vector3D) sourceArray
 * [Matrix](VRageMath.Matrix) matrix
 * [Vector3D](VRageMath.Vector3D) destinationArray
 ## Summary
@@ -122,10 +122,10 @@ Transforms a specified range in an array of 3D vector normals by a specified Mat
 
 ## Parameters
 
-* [Vector3D[]](VRageMath.Vector3D[]) sourceArray
+* [Vector3D[]](VRageMath.Vector3D) sourceArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceIndex
 * [Matrix](VRageMath.Matrix) matrix
-* [Vector3D[]](VRageMath.Vector3D[]) destinationArray
+* [Vector3D[]](VRageMath.Vector3D) destinationArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) destinationIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length
 ## Summary

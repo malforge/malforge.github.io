@@ -6,5 +6,5 @@ public MyObjectBuilder_CharacterDefinition[] Characters
 
 ## Returns
 
-[MyObjectBuilder_CharacterDefinition[]](VRage.Game.MyObjectBuilder_CharacterDefinition[])
+[MyObjectBuilder_CharacterDefinition[]](VRage.Game.MyObjectBuilder_CharacterDefinition)
 

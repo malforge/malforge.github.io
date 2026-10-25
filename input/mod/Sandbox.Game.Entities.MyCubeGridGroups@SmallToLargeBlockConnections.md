@@ -6,5 +6,5 @@ public MyGroups<MySlimBlock, MyBlockGroupData> SmallToLargeBlockConnections
 
 ## Returns
 
-MyGroups<MySlimBlock, MyBlockGroupData> <sub>prohibited</sub>
+MyGroups&lt;MySlimBlock <sub>prohibited</sub>, MyBlockGroupData <sub>prohibited</sub>&gt; <sub>prohibited</sub>
 

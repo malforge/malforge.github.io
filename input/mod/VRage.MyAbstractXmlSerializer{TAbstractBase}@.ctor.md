@@ -12,4 +12,4 @@ public MyAbstractXmlSerializer(TAbstractBase data)
 
 ## Parameters
 
-* [TAbstractBase](VRage.MyAbstractXmlSerializer{TAbstractBase}+TAbstractBase) data
+* TAbstractBase data

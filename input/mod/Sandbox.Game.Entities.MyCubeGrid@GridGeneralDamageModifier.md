@@ -6,5 +6,5 @@ public Sync<float, FromServer> GridGeneralDamageModifier
 
 ## Returns
 
-Sync<float, FromServer> <sub>prohibited</sub>
+Sync&lt;[float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6), [FromServer](VRage.Sync.SyncDirection+FromServer)&gt; <sub>prohibited</sub>
 

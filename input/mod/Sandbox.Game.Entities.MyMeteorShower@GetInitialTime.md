@@ -6,7 +6,7 @@ public static TimeSpan? GetInitialTime(MyEnvironmentHostilityEnum hostility)
 
 ## Returns
 
-[TimeSpan?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[TimeSpan?](https://docs.microsoft.com/en-us/dotnet/api/System.TimeSpan?view=netframework-4.6)
 
 ## Parameters
 

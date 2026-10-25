@@ -6,5 +6,5 @@ public FuelInfo[] FuelInfos
 
 ## Returns
 
-[FuelInfo[]](Sandbox.Definitions.FuelInfo[])
+[FuelInfo[]](Sandbox.Definitions.MyReactorDefinition+FuelInfo)
 

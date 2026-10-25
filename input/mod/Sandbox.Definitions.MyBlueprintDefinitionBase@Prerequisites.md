@@ -6,5 +6,5 @@ public Item[] Prerequisites
 
 ## Returns
 
-[Item[]](Sandbox.Definitions.Item[])
+[Item[]](Sandbox.Definitions.MyBlueprintDefinitionBase+Item)
 

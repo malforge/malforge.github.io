@@ -6,7 +6,7 @@ public TBase CreateInstance<TBase>(MyObjectBuilderType objectBuilderType)
 
 ## Returns
 
-[TBase](VRage.ObjectBuilders.MyObjectFactory{TAttribute,TCreatedObjectBase}+TBase)
+TBase
 
 ## Parameters
 
@@ -19,5 +19,5 @@ public TBase CreateInstance<TBase>()
 
 ## Returns
 
-[TBase](VRage.ObjectBuilders.MyObjectFactory{TAttribute,TCreatedObjectBase}+TBase)
+TBase
 

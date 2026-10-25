@@ -6,5 +6,5 @@ public static ListReader<MySafeZone> SafeZones { get; }
 
 ## Returns
 
-[ListReader<MySafeZone>](VRage.Collections.ListReader{MySafeZone})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MySafeZone](Sandbox.Game.Entities.MySafeZone)&gt;
 

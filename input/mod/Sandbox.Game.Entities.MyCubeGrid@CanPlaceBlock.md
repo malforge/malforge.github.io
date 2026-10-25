@@ -15,7 +15,7 @@ public bool CanPlaceBlock(Vector3I min, Vector3I max, MyBlockOrientation orienta
 * [MyBlockOrientation](VRageMath.MyBlockOrientation) orientation
 * [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition) definition
 * [ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6) placingPlayer
-* [int?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) ignoreMultiblockId
+* [int?](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) ignoreMultiblockId
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) ignoreFracturedPieces
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) isProjection
 ## Summary
@@ -36,6 +36,6 @@ public bool CanPlaceBlock(Vector3I min, Vector3I max, MyBlockOrientation orienta
 * [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition) definition
 * [MyGridPlacementSettings](VRage.Game.ObjectBuilders.Definitions.SessionComponents.MyGridPlacementSettings) gridSettings
 * [ulong](https://docs.microsoft.com/en-us/dotnet/api/System.UInt64?view=netframework-4.6) placingPlayer
-* [int?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) ignoreMultiblockId
+* [int?](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) ignoreMultiblockId
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) ignoreFracturedPieces
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) isProjection

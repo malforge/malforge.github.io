@@ -6,5 +6,5 @@ public GroupedId[] Entries
 
 ## Returns
 
-[GroupedId[]](VRage.Game.ObjectBuilders.GroupedId[])
+[GroupedId[]](VRage.Game.ObjectBuilders.MyGroupedIds+GroupedId)
 

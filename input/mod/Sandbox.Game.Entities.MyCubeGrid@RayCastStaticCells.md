@@ -10,7 +10,7 @@ Obtains positions of static grid cells regardless of whether these cells are tak
 
 * [Vector3D](VRageMath.Vector3D) worldStart
 * [Vector3D](VRageMath.Vector3D) worldEnd
-* [List<Vector3I>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) outHitPositions
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[Vector3I](VRageMath.Vector3I)&gt; outHitPositions
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) gridSize
-* [Vector3I?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) gridSizeInflate
+* [Vector3I?](VRageMath.Vector3I) gridSizeInflate
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) havokWorld

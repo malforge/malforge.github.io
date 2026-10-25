@@ -6,7 +6,7 @@ public T Get(int currentTime, bool autoRefreshTimeout)
 
 ## Returns
 
-[T](VRage.Utils.MyTimedItem{T}+T)
+T
 
 ## Parameters
 

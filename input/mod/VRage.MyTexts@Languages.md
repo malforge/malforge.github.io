@@ -6,5 +6,5 @@ public static DictionaryReader<MyLanguagesEnum, MyLanguageDescription> Languages
 
 ## Returns
 
-[DictionaryReader<MyLanguagesEnum, MyLanguageDescription>](VRage.Collections.DictionaryReader{MyLanguagesEnum,MyLanguageDescription})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;[MyLanguagesEnum](VRage.MyLanguagesEnum), [MyLanguageDescription](VRage.MyTexts+MyLanguageDescription)&gt;
 

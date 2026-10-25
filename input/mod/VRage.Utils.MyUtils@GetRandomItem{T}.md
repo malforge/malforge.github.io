@@ -6,8 +6,8 @@ public static T GetRandomItem<T>(this T[] list)
 
 ## Returns
 
-[T](VRage.Utils.MyUtils+T)
+T
 
 ## Parameters
 
-* [T[]](VRage.Utils.T[]) list
+* T[] list

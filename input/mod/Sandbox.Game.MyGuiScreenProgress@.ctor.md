@@ -7,6 +7,6 @@ public MyGuiScreenProgress(StringBuilder text, MyStringId? cancelText, bool isTo
 ## Parameters
 
 * [StringBuilder](https://docs.microsoft.com/en-us/dotnet/api/System.Text.StringBuilder?view=netframework-4.6) text
-* [MyStringId?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) cancelText
+* [MyStringId?](VRage.Utils.MyStringId) cancelText
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) isTopMostScreen
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) enableBackgroundFade

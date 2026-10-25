@@ -8,5 +8,5 @@ Gets list of currently connected players
 
 ## Parameters
 
-* [List<IMyPlayer>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) players
-* [Func<IMyPlayer, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) collect
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMyPlayer](VRage.Game.ModAPI.IMyPlayer)&gt; players
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[IMyPlayer](VRage.Game.ModAPI.IMyPlayer), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; collect

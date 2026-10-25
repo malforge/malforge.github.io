@@ -8,7 +8,7 @@ Get first found gun object with specified definition id.
 
 ## Returns
 
-[IMyGunObject<MyDeviceBase>](VRage.Game.ModAPI.IMyGunObject{MyDeviceBase})
+[IMyGunObject](VRage.Game.ModAPI.IMyGunObject{T})&lt;[MyDeviceBase](VRage.Game.ModAPI.MyDeviceBase)&gt;
 
 
 

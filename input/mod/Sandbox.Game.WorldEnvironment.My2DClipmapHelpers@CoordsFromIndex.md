@@ -6,5 +6,5 @@ public static Vector2D[] CoordsFromIndex
 
 ## Returns
 
-[Vector2D[]](VRageMath.Vector2D[])
+[Vector2D[]](VRageMath.Vector2D)
 

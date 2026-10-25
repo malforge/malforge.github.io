@@ -50,7 +50,7 @@ public MyInventory(MyFixedPoint maxVolume, MyFixedPoint maxMass, MyInventoryFlag
 * [MyFixedPoint](VRage.MyFixedPoint) maxVolume
 * [MyFixedPoint](VRage.MyFixedPoint) maxMass
 * [MyInventoryFlags](VRage.Game.MyInventoryFlags) flags
-* [List<MyPhysicalInventoryItem>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) initialInventory
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyPhysicalInventoryItem](VRage.Game.Entity.MyPhysicalInventoryItem)&gt; initialInventory
 ## Summary
 
 ```csharp

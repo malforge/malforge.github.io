@@ -8,4 +8,4 @@ public static void GetAproximateDynamicClustersForSizeDebug(ref BoundingBoxD co
 
 * [BoundingBoxD](VRageMath.BoundingBoxD) container
 * [double](https://docs.microsoft.com/en-us/dotnet/api/System.Double?view=netframework-4.6) clusterSize
-* [List<BoundingBoxD>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) clusters
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[BoundingBoxD](VRageMath.BoundingBoxD)&gt; clusters

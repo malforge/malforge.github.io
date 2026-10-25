@@ -7,5 +7,5 @@ public static void SortEntityList(MyEntitySortOrder selectedOrder, ref List<MyE
 ## Parameters
 
 * [MyEntitySortOrder](Sandbox.Game.Entities.MyEntityList+MyEntitySortOrder) selectedOrder
-* [List<MyEntityListInfoItem>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) items
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyEntityListInfoItem](Sandbox.Game.Entities.MyEntityList+MyEntityListInfoItem)&gt; items
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) invertOrder

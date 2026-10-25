@@ -6,5 +6,5 @@ public static Tuple<MyRelationsBetweenFactions, int> DefaultFactionRelationshipA
 
 ## Returns
 
-Tuple<MyRelationsBetweenFactions, int> <sub>prohibited</sub>
+Tuple&lt;[MyRelationsBetweenFactions](VRage.Game.MyRelationsBetweenFactions), [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6)&gt; <sub>prohibited</sub>
 

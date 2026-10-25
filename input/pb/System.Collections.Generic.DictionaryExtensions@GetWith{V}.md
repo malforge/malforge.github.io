@@ -6,9 +6,9 @@ public static List<V> GetWith<V>(this List<List<V>> items, V value)
 
 ## Returns
 
-[List<V>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;V&gt;
 
 ## Parameters
 
-* [List<List<V>>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) items
-* [V](System.Collections.Generic.DictionaryExtensions+V) value
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;V&gt;&gt; items
+* V value

@@ -8,5 +8,5 @@ Position in editor.
 
 ## Returns
 
-[Vector2I?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[Vector2I?](VRageMath.Vector2I)
 

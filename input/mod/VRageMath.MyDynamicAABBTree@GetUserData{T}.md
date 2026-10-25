@@ -6,7 +6,7 @@ public T GetUserData<T>(int proxyId)
 
 ## Returns
 
-[T](VRageMath.MyDynamicAABBTree+T)
+T
 
 ## Parameters
 

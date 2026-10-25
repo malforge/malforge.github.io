@@ -6,5 +6,5 @@ public HashSetReader<MyDecoy> Decoys { get; }
 
 ## Returns
 
-[HashSetReader<MyDecoy>](VRage.Collections.HashSetReader{MyDecoy})
+[HashSetReader](VRage.Collections.HashSetReader{T})&lt;MyDecoy <sub>prohibited</sub>&gt;
 

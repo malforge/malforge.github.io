@@ -6,5 +6,5 @@ public static ConcurrentDictionary<string, MyEntity> m_entityNameDictionary
 
 ## Returns
 
-[ConcurrentDictionary<string, MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Concurrent.ConcurrentDictionary-2?view=netframework-4.6)
+[ConcurrentDictionary](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Concurrent.ConcurrentDictionary-2?view=netframework-4.6)&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [MyEntity](VRage.Game.Entity.MyEntity)&gt;
 

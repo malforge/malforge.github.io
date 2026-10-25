@@ -8,5 +8,5 @@ Called when "WorkingState" is changed.
 
 ## Returns
 
-[Action<IMyCubeBlock>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[IMyCubeBlock](VRage.Game.ModAPI.IMyCubeBlock)&gt;
 

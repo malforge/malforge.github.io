@@ -6,5 +6,5 @@ public MyStringId[] CreativeModeWeapons
 
 ## Returns
 
-[MyStringId[]](VRage.Utils.MyStringId[])
+[MyStringId[]](VRage.Utils.MyStringId)
 

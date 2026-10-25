@@ -9,4 +9,4 @@ Trigger an action in the layers specified. If no layers are specified, it is tri
 ## Parameters
 
 * [MyStringId](VRage.Utils.MyStringId) actionName
-* String[] <sub>prohibited</sub> layers
+* [string[]](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) layers

@@ -6,5 +6,5 @@ public HitDefinition[] DefinedHits
 
 ## Returns
 
-[HitDefinition[]](VRage.Game.ObjectBuilders.ComponentSystem.HitDefinition[])
+[HitDefinition[]](VRage.Game.ObjectBuilders.ComponentSystem.MyObjectBuilder_DurabilityComponentDefinition+HitDefinition)
 

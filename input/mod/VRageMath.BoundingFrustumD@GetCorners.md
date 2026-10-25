@@ -8,7 +8,7 @@ Gets an array of points that make up the corners of the BoundingFrustumD. ALLOCA
 
 ## Returns
 
-[Vector3D[]](VRageMath.Vector3D[])
+[Vector3D[]](VRageMath.Vector3D)
 
 ## Summary
 
@@ -20,4 +20,4 @@ Gets an array of points that make up the corners of the BoundingFrustumD.
 
 ## Parameters
 
-* [Vector3D[]](VRageMath.Vector3D[]) corners
+* [Vector3D[]](VRageMath.Vector3D) corners

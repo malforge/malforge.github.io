@@ -6,5 +6,5 @@ public NineTiledData? NineTiledStyle
 
 ## Returns
 
-[NineTiledData?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[NineTiledData?](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ProgressBarStatVisualStyle+NineTiledData)
 

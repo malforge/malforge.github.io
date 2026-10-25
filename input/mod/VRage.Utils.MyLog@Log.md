@@ -8,7 +8,7 @@ public void Log(MyLogSeverity severity, string format, Object[] args)
 
 * [MyLogSeverity](VRage.Utils.MyLogSeverity) severity
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) format
-* Object[] <sub>prohibited</sub> args
+* [object[]](https://docs.microsoft.com/en-us/dotnet/api/System.Object?view=netframework-4.6) args
 ## Summary
 
 ```csharp

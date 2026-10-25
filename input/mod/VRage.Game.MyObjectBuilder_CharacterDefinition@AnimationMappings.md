@@ -6,5 +6,5 @@ public MyMovementAnimationMapping[] AnimationMappings
 
 ## Returns
 
-[MyMovementAnimationMapping[]](VRage.Game.MyMovementAnimationMapping[])
+[MyMovementAnimationMapping[]](VRage.Game.MyMovementAnimationMapping)
 

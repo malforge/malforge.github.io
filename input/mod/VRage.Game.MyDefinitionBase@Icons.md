@@ -8,5 +8,5 @@ Icons for the definition, they are used from top to bottom.
 
 ## Returns
 
-String[] <sub>prohibited</sub>
+[string[]](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6)
 

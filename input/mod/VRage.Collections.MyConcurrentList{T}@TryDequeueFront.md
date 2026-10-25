@@ -10,4 +10,4 @@ public bool TryDequeueFront(out T value)
 
 ## Parameters
 
-* [T](VRage.Collections.MyConcurrentList{T}+T) value
+* T value

@@ -12,5 +12,5 @@ public MyMultiTextPanelComponent(List<MySerializedTextPanelData> panelsData, flo
 
 ## Parameters
 
-* [List<MySerializedTextPanelData>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) panelsData
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MySerializedTextPanelData](VRage.Game.ObjectBuilders.MySerializedTextPanelData)&gt; panelsData
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) maxRenderDistance

@@ -8,4 +8,4 @@ Registers gun in weapon system. Required for being able to use it as a ship tool
 
 ## Parameters
 
-* [IMyGunObject<MyDeviceBase>](VRage.Game.ModAPI.IMyGunObject{MyDeviceBase}) gun
+* [IMyGunObject](VRage.Game.ModAPI.IMyGunObject{T})&lt;[MyDeviceBase](VRage.Game.ModAPI.MyDeviceBase)&gt; gun

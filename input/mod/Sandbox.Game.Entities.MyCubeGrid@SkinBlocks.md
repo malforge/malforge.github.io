@@ -10,6 +10,6 @@ Skin block in area. Verry slow.
 
 * [Vector3I](VRageMath.Vector3I) min
 * [Vector3I](VRageMath.Vector3I) max
-* [Vector3?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) newHSV
-* [MyStringHash?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) newSkin
+* [Vector3?](VRageMath.Vector3) newHSV
+* [MyStringHash?](VRage.Utils.MyStringHash) newSkin
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) playSound

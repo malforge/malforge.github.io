@@ -6,5 +6,5 @@ public DictionaryReader<MyStringHash, MyAssetModifiers> GetAssetModifierDefiniti
 
 ## Returns
 
-[DictionaryReader<MyStringHash, MyAssetModifiers>](VRage.Collections.DictionaryReader{MyStringHash,MyAssetModifiers})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;[MyStringHash](VRage.Utils.MyStringHash), [MyAssetModifiers](Sandbox.Definitions.MyDefinitionManager+MyAssetModifiers)&gt;
 

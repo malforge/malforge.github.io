@@ -12,9 +12,9 @@ public bool IsActionAllowed(MySafeZoneAction action, long sourceEntityId, Boundi
 
 * [MySafeZoneAction](VRage.Game.ObjectBuilders.Components.MySafeZoneAction) action
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) sourceEntityId
-* [BoundingBoxD?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) aabb
-* [BoundingSphereD?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) boundingSphere
-* [Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) point
+* [BoundingBoxD?](VRageMath.BoundingBoxD) aabb
+* [BoundingSphereD?](VRageMath.BoundingSphereD) boundingSphere
+* [Vector3D?](VRageMath.Vector3D) point
 ## Summary
 
 ```csharp

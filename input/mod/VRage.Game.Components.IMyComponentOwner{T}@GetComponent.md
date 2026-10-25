@@ -10,4 +10,4 @@ public bool GetComponent(out T component)
 
 ## Parameters
 
-* [T](VRage.Game.Components.IMyComponentOwner{T}+T) component
+* T component

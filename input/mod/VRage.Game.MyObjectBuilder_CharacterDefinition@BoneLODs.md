@@ -6,5 +6,5 @@ public MyBoneSetDefinition[] BoneLODs
 
 ## Returns
 
-[MyBoneSetDefinition[]](VRage.Game.MyBoneSetDefinition[])
+[MyBoneSetDefinition[]](VRage.Game.MyBoneSetDefinition)
 

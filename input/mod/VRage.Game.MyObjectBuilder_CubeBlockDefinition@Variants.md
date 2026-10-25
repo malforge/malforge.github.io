@@ -6,5 +6,5 @@ public Variant[] Variants
 
 ## Returns
 
-[Variant[]](VRage.Game.Variant[])
+[Variant[]](VRage.Game.MyObjectBuilder_CubeBlockDefinition+Variant)
 

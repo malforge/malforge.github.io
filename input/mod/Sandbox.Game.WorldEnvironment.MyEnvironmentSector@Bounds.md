@@ -6,5 +6,5 @@ public Vector3D[] Bounds { get; }
 
 ## Returns
 
-[Vector3D[]](VRageMath.Vector3D[])
+[Vector3D[]](VRageMath.Vector3D)
 

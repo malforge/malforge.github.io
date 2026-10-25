@@ -11,4 +11,4 @@ public int AddInstances(int model, MyList<MyInstanceData> instances)
 ## Parameters
 
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) model
-* MyList<MyInstanceData> <sub>prohibited</sub> instances
+* MyList&lt;[MyInstanceData](VRage.MyInstanceData)&gt; <sub>prohibited</sub> instances

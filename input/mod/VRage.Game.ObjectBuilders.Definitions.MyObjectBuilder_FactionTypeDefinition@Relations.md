@@ -6,5 +6,5 @@ public FactionRelation[] Relations
 
 ## Returns
 
-[FactionRelation[]](VRage.Game.ObjectBuilders.Definitions.FactionRelation[])
+[FactionRelation[]](VRage.Game.ObjectBuilders.Definitions.FactionRelation)
 

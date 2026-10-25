@@ -8,10 +8,10 @@ Decodes 5bit string as bytes, not alligned characters may be lost. Only decode s
 
 ## Returns
 
-Byte[] <sub>prohibited</sub>
+[byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6)
 
 
 
 ## Parameters
 
-* Char[] <sub>prohibited</sub> encoded5BitText
+* [char[]](https://docs.microsoft.com/en-us/dotnet/api/System.Char?view=netframework-4.6) encoded5BitText

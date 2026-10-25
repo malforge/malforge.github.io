@@ -6,5 +6,5 @@ public MyPlanetAnimal[] Animals
 
 ## Returns
 
-[MyPlanetAnimal[]](VRage.Game.MyPlanetAnimal[])
+[MyPlanetAnimal[]](VRage.Game.MyPlanetAnimal)
 

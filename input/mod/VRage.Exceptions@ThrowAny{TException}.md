@@ -6,5 +6,5 @@ public static void ThrowAny<TException>(Boolean[] conditions, Object[] args)
 
 ## Parameters
 
-* Boolean[] <sub>prohibited</sub> conditions
-* Object[] <sub>prohibited</sub> args
+* [bool[]](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) conditions
+* [object[]](https://docs.microsoft.com/en-us/dotnet/api/System.Object?view=netframework-4.6) args

@@ -8,5 +8,5 @@ Copies the CurveKeys of the CurveKeyCollection to an array, starting at the arra
 
 ## Parameters
 
-* [CurveKey[]](VRageMath.CurveKey[]) array
+* [CurveKey[]](VRageMath.CurveKey) array
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) arrayIndex

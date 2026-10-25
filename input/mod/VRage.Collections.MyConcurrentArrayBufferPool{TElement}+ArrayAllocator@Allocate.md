@@ -6,7 +6,7 @@ public TElement[] Allocate(int size)
 
 ## Returns
 
-[TElement[]](VRage.Collections.TElement[])
+TElement[]
 
 ## Parameters
 

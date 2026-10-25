@@ -6,5 +6,5 @@ public MyObjectBuilder_VoxelMaterialDefinition[] VoxelMaterials
 
 ## Returns
 
-[MyObjectBuilder_VoxelMaterialDefinition[]](VRage.Game.MyObjectBuilder_VoxelMaterialDefinition[])
+[MyObjectBuilder_VoxelMaterialDefinition[]](VRage.Game.MyObjectBuilder_VoxelMaterialDefinition)
 

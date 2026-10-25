@@ -8,7 +8,7 @@ Gets the GPS entries from the specified identity (does not use network traffic).
 
 ## Returns
 
-[List<IMyGps>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMyGps](VRage.Game.ModAPI.IMyGps)&gt;
 
 The GPS entry list.
 
@@ -26,4 +26,4 @@ Gets the GPS entries from the specified identity (does not use network traffic).
 ## Parameters
 
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) identityId
-* [List<IMyGps>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) list
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMyGps](VRage.Game.ModAPI.IMyGps)&gt; list

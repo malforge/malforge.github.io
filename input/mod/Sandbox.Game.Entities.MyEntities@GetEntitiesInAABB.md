@@ -8,7 +8,7 @@ Get all rigid body elements touching a bounding box. Clear() the result list aft
 
 ## Returns
 
-[List<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt;
 
 The list of results.
 
@@ -25,7 +25,7 @@ Returns list of entities that intersects with BoundingBox. If you are modder, yo
 
 ## Returns
 
-[List<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt;
 
 WARNING: Next call of function GetEntitiesInAABB would add elements to that list.right after use. It may break or slow game, if you won't clean array before next [GetEntitiesInAABB(ref BoundingBox)](Sandbox.Game.Entities.MyEntities@GetEntitiesInAABB) , [GetEntitiesInAABB(ref BoundingBoxD, bool)](Sandbox.Game.Entities.MyEntities@GetEntitiesInAABB) , [GetEntitiesInSphere(ref BoundingSphereD)](Sandbox.Game.Entities.MyEntities@GetEntitiesInSphere)  [GetElementsInBox(ref BoundingBoxD, List<MyEntity>)](Sandbox.Game.Entities.MyEntities@GetElementsInBox)  [GetTopMostEntitiesInSphere(ref BoundingSphereD)](Sandbox.Game.Entities.MyEntities@GetTopMostEntitiesInSphere)  [GetTopMostEntitiesInBox(ref BoundingBoxD, List<MyEntity>, MyEntityQueryType)](Sandbox.Game.Entities.MyEntities@GetTopMostEntitiesInBox) 
 

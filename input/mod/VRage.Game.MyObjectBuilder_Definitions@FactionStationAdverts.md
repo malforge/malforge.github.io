@@ -6,5 +6,5 @@ public MyObjectBuilder_FactionStationAdvertDefinition[] FactionStationAdverts
 
 ## Returns
 
-[MyObjectBuilder_FactionStationAdvertDefinition[]](VRage.Game.MyObjectBuilder_FactionStationAdvertDefinition[])
+[MyObjectBuilder_FactionStationAdvertDefinition[]](VRage.Game.MyObjectBuilder_FactionStationAdvertDefinition)
 

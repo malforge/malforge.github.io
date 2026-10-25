@@ -8,7 +8,7 @@ Returns intersection point between sphere and its edges. But only if there is in
 
 ## Returns
 
-[Vector3?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[Vector3?](VRageMath.Vector3)
 
 ## Parameters
 

@@ -6,5 +6,5 @@ public ListReader<MyScenarioDefinition> GetScenarioDefinitions()
 
 ## Returns
 
-[ListReader<MyScenarioDefinition>](VRage.Collections.ListReader{MyScenarioDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyScenarioDefinition](Sandbox.Definitions.MyScenarioDefinition)&gt;
 

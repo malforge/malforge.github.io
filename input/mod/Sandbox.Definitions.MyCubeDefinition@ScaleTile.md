@@ -6,5 +6,5 @@ public Vector2I[] ScaleTile
 
 ## Returns
 
-[Vector2I[]](VRageMath.Vector2I[])
+[Vector2I[]](VRageMath.Vector2I)
 

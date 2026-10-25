@@ -8,5 +8,5 @@ Called when consumable item was consumed
 
 ## Returns
 
-[Action<IMyCharacter, MyDefinitionId>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)&lt;[IMyCharacter](VRage.Game.ModAPI.IMyCharacter), [MyDefinitionId](VRage.Game.MyDefinitionId)&gt;
 

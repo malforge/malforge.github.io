@@ -8,5 +8,5 @@ Models used when building. They are sorted in ascending order according to their
 
 ## Returns
 
-[BuildProgressModel[]](Sandbox.Definitions.BuildProgressModel[])
+[BuildProgressModel[]](Sandbox.Definitions.MyCubeBlockDefinition+BuildProgressModel)
 

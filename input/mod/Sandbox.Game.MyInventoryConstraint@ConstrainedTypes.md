@@ -6,5 +6,5 @@ public HashSetReader<MyObjectBuilderType> ConstrainedTypes { get; }
 
 ## Returns
 
-[HashSetReader<MyObjectBuilderType>](VRage.Collections.HashSetReader{MyObjectBuilderType})
+[HashSetReader](VRage.Collections.HashSetReader{T})&lt;[MyObjectBuilderType](VRage.ObjectBuilders.MyObjectBuilderType)&gt;
 

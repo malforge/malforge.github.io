@@ -6,5 +6,5 @@ public CubeBlockEffectBase[] Effects
 
 ## Returns
 
-[CubeBlockEffectBase[]](Sandbox.Definitions.CubeBlockEffectBase[])
+[CubeBlockEffectBase[]](Sandbox.Definitions.CubeBlockEffectBase)
 

@@ -6,5 +6,5 @@ public CompactSerializedArray<long>? ManagedMemoryBytes
 
 ## Returns
 
-[CompactSerializedArray<long>?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[CompactSerializedArray](VRage.Game.CompactSerializedArray{T})&lt;[long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt;?
 

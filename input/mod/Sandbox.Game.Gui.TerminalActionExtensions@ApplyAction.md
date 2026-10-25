@@ -18,4 +18,4 @@ public static void ApplyAction(this IMyTerminalBlock block, string name, ListRe
 
 * [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock) block
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) name
-* [ListReader<TerminalActionParameter>](VRage.Collections.ListReader{TerminalActionParameter}) parameters
+* [ListReader](VRage.Collections.ListReader{T})&lt;[TerminalActionParameter](Sandbox.ModAPI.Ingame.TerminalActionParameter)&gt; parameters

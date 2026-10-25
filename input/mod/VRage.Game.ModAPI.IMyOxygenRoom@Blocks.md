@@ -8,5 +8,5 @@ HashSet of all the airtight positions in the room (Reference, not a copy!)
 
 ## Returns
 
-[HashSetReader<Vector3I>](VRage.Collections.HashSetReader{Vector3I})
+[HashSetReader](VRage.Collections.HashSetReader{T})&lt;[Vector3I](VRageMath.Vector3I)&gt;
 

@@ -9,7 +9,7 @@ public MyDetectedEntityInfo(long entityId, string name, MyDetectedEntityType typ
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) entityId
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) name
 * [MyDetectedEntityType](Sandbox.ModAPI.Ingame.MyDetectedEntityType) type
-* [Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) hitPosition
+* [Vector3D?](VRageMath.Vector3D) hitPosition
 * [MatrixD](VRageMath.MatrixD) orientation
 * [Vector3](VRageMath.Vector3) velocity
 * [MyRelationsBetweenPlayerAndBlock](VRage.Game.MyRelationsBetweenPlayerAndBlock) relationship

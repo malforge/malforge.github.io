@@ -12,4 +12,4 @@ public bool CanDoAction(string actionId, bool continuous, out MyTuple<ushort, M
 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) actionId
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) continuous
-* [MyTuple<ushort, MyStringHash>](VRage.MyTuple{UInt16,MyStringHash}) message
+* [MyTuple](VRage.MyTuple{T1,T2})&lt;[ushort](https://docs.microsoft.com/en-us/dotnet/api/System.UInt16?view=netframework-4.6), [MyStringHash](VRage.Utils.MyStringHash)&gt; message

@@ -6,5 +6,5 @@ public SoundDesc[] Sounds
 
 ## Returns
 
-[SoundDesc[]](VRage.Game.SoundDesc[])
+[SoundDesc[]](VRage.Game.MyObjectBuilder_SoundCategoryDefinition+SoundDesc)
 

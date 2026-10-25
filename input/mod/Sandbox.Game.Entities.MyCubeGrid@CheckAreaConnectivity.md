@@ -8,5 +8,5 @@ public static void CheckAreaConnectivity(MyCubeGrid grid, ref MyBlockBuildArea 
 
 * [MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid) grid
 * [MyBlockBuildArea](Sandbox.Game.Entities.MyCubeGrid+MyBlockBuildArea) area
-* [List<Vector3UByte>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) validOffsets
-* [HashSet<Vector3UByte>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6) resultFailList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[Vector3UByte](VRageMath.Vector3UByte)&gt; validOffsets
+* [HashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)&lt;[Vector3UByte](VRageMath.Vector3UByte)&gt; resultFailList

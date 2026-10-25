@@ -6,7 +6,7 @@ public static Builder<T> CreateBuilder<T>()
 
 ## Returns
 
-[Builder<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1+Builder?view=netframework-4.6)
+[ImmutableHashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)&lt;T&gt;.[Builder](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1+Builder?view=netframework-4.6)
 
 ## Summary
 
@@ -16,8 +16,8 @@ public static Builder<T> CreateBuilder<T>(IEqualityComparer<T> equalityComparer)
 
 ## Returns
 
-[Builder<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1+Builder?view=netframework-4.6)
+[ImmutableHashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)&lt;T&gt;.[Builder](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1+Builder?view=netframework-4.6)
 
 ## Parameters
 
-* [IEqualityComparer<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6) equalityComparer
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6)&lt;T&gt; equalityComparer

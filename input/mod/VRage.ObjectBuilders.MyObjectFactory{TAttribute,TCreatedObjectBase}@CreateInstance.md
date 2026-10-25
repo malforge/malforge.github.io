@@ -6,7 +6,7 @@ public TCreatedObjectBase CreateInstance(MyObjectBuilderType objectBuilderType)
 
 ## Returns
 
-[TCreatedObjectBase](VRage.ObjectBuilders.MyObjectFactory{TAttribute,TCreatedObjectBase}+TCreatedObjectBase)
+TCreatedObjectBase
 
 ## Parameters
 

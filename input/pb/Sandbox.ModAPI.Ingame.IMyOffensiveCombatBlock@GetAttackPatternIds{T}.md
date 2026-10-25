@@ -6,8 +6,8 @@ public T GetAttackPatternIds<T>(T idsList)
 
 ## Returns
 
-[T](Sandbox.ModAPI.Ingame.IMyOffensiveCombatBlock+T)
+T
 
 ## Parameters
 
-* [T](Sandbox.ModAPI.Ingame.IMyOffensiveCombatBlock+T) idsList
+* T idsList

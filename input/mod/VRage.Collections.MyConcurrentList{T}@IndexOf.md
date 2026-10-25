@@ -10,4 +10,4 @@ public int IndexOf(T item)
 
 ## Parameters
 
-* [T](VRage.Collections.MyConcurrentList{T}+T) item
+* T item

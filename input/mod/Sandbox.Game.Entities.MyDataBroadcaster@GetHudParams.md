@@ -6,7 +6,7 @@ public List<MyHudEntityParams> GetHudParams(bool allowBlink)
 
 ## Returns
 
-[List<MyHudEntityParams>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;MyHudEntityParams <sub>prohibited</sub>&gt;
 
 ## Parameters
 

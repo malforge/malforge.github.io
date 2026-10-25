@@ -12,5 +12,5 @@ Returns false when not all entities were loaded
 
 ## Parameters
 
-* [List<MyObjectBuilder_EntityBase>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) objectBuilders
-* [MyStringId?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) errorMessage
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyObjectBuilder_EntityBase](VRage.ObjectBuilders.MyObjectBuilder_EntityBase)&gt; objectBuilders
+* [MyStringId?](VRage.Utils.MyStringId) errorMessage

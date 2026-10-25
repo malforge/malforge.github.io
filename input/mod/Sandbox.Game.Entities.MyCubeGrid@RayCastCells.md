@@ -10,7 +10,7 @@ Obtains positions of grid cells regardless of whether these cells are taken up b
 
 * [Vector3D](VRageMath.Vector3D) worldStart
 * [Vector3D](VRageMath.Vector3D) worldEnd
-* [List<Vector3I>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) outHitPositions
-* [Vector3I?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) gridSizeInflate
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[Vector3I](VRageMath.Vector3I)&gt; outHitPositions
+* [Vector3I?](VRageMath.Vector3I) gridSizeInflate
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) havokWorld
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) clearOutHitPositions

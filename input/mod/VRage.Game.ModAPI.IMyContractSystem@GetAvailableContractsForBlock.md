@@ -8,7 +8,7 @@ Gets available (inactive) contracts for block. This list does not contain contra
 
 ## Returns
 
-[ListReader<IMyContract>](VRage.Collections.ListReader{IMyContract})
+[ListReader](VRage.Collections.ListReader{T})&lt;[IMyContract](VRage.Game.ModAPI.IMyContract)&gt;
 
 null if block does no exist or dont have any contract
 

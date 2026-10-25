@@ -6,5 +6,5 @@ public StatValue[] Stats
 
 ## Returns
 
-[StatValue[]](VRage.Game.StatValue[])
+[StatValue[]](VRage.Game.MyObjectBuilder_ConsumableItemDefinition+StatValue)
 

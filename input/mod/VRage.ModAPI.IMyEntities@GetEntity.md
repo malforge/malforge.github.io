@@ -14,4 +14,4 @@ First matching condition entity
 
 ## Parameters
 
-* [Func<IMyEntity, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) match
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[IMyEntity](VRage.ModAPI.IMyEntity), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; match

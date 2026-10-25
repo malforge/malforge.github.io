@@ -14,7 +14,7 @@ New grid
 
 ## Parameters
 
-* [List<IMySlimBlock>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) blocks
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMySlimBlock](VRage.Game.ModAPI.IMySlimBlock)&gt; blocks
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) sync
 ## Remarks
 

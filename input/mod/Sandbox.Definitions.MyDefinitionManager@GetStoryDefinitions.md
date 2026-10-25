@@ -8,7 +8,7 @@ Get stories by category id
 
 ## Returns
 
-[ListReader<MyStoryDefinition>](VRage.Collections.ListReader{MyStoryDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyStoryDefinition](Sandbox.Definitions.MyStoryDefinition)&gt;
 
 List of story definitions or empty list
 

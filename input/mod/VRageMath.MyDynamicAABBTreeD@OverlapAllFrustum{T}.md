@@ -7,7 +7,7 @@ public void OverlapAllFrustum<T>(ref BoundingFrustumD frustum, List<T> elements
 ## Parameters
 
 * [BoundingFrustumD](VRageMath.BoundingFrustumD) frustum
-* [List<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) elementsList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;T&gt; elementsList
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) clear
 ## Summary
 
@@ -18,7 +18,7 @@ public void OverlapAllFrustum<T>(ref BoundingFrustumD frustum, List<T> elements
 ## Parameters
 
 * [BoundingFrustumD](VRageMath.BoundingFrustumD) frustum
-* [List<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) elementsList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;T&gt; elementsList
 * [uint](https://docs.microsoft.com/en-us/dotnet/api/System.UInt32?view=netframework-4.6) requiredFlags
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) clear
 ## Summary
@@ -30,8 +30,8 @@ public void OverlapAllFrustum<T>(ref BoundingFrustumD frustum, List<T> elements
 ## Parameters
 
 * [BoundingFrustumD](VRageMath.BoundingFrustumD) frustum
-* [List<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) elementsList
-* [List<bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) isInsideList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;T&gt; elementsList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; isInsideList
 ## Summary
 
 ```csharp
@@ -41,7 +41,7 @@ public void OverlapAllFrustum<T>(ref BoundingFrustumD frustum, T results)
 ## Parameters
 
 * [BoundingFrustumD](VRageMath.BoundingFrustumD) frustum
-* [T](VRageMath.MyDynamicAABBTreeD+T) results
+* T results
 ## Summary
 
 ```csharp
@@ -51,8 +51,8 @@ public void OverlapAllFrustum<T>(ref BoundingFrustumD frustum, List<T> elements
 ## Parameters
 
 * [BoundingFrustumD](VRageMath.BoundingFrustumD) frustum
-* [List<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) elementsList
-* [List<bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) isInsideList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;T&gt; elementsList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; isInsideList
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) tSqr
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) clear
 ## Summary
@@ -64,7 +64,7 @@ public void OverlapAllFrustum<T>(ref BoundingFrustumD frustum, Action<T, bool> 
 ## Parameters
 
 * [BoundingFrustumD](VRageMath.BoundingFrustumD) frustum
-* [Action<T, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6) add
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)&lt;T, [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; add
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) tSqr
 ## Summary
 
@@ -75,5 +75,5 @@ public void OverlapAllFrustum<T>(ref BoundingFrustumD frustum, T results, float
 ## Parameters
 
 * [BoundingFrustumD](VRageMath.BoundingFrustumD) frustum
-* [T](VRageMath.MyDynamicAABBTreeD+T) results
+* T results
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) tSqr

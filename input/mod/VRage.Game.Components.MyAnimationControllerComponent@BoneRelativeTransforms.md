@@ -6,5 +6,5 @@ public Matrix[] BoneRelativeTransforms { get; }
 
 ## Returns
 
-[Matrix[]](VRageMath.Matrix[])
+[Matrix[]](VRageMath.Matrix)
 

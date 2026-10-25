@@ -6,5 +6,5 @@ public MyObjectBuilder_PrefabDefinition[] Prefabs
 
 ## Returns
 
-[MyObjectBuilder_PrefabDefinition[]](VRage.Game.MyObjectBuilder_PrefabDefinition[])
+[MyObjectBuilder_PrefabDefinition[]](VRage.Game.MyObjectBuilder_PrefabDefinition)
 

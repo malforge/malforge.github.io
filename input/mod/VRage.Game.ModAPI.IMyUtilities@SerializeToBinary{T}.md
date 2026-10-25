@@ -6,8 +6,8 @@ public Byte[] SerializeToBinary<T>(T obj)
 
 ## Returns
 
-Byte[] <sub>prohibited</sub>
+[byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6)
 
 ## Parameters
 
-* [T](VRage.Game.ModAPI.IMyUtilities+T) obj
+* T obj

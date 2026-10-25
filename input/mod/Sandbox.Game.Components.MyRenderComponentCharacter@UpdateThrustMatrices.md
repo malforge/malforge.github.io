@@ -6,4 +6,4 @@ public void UpdateThrustMatrices(Matrix[] boneMatrices)
 
 ## Parameters
 
-* [Matrix[]](VRageMath.Matrix[]) boneMatrices
+* [Matrix[]](VRageMath.Matrix) boneMatrices

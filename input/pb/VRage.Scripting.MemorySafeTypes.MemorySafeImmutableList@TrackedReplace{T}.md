@@ -6,10 +6,10 @@ public static IImmutableList<T> TrackedReplace<T>(this IImmutableList<T> list, 
 
 ## Returns
 
-[IImmutableList<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.IImmutableList-1?view=netframework-4.6)
+[IImmutableList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.IImmutableList-1?view=netframework-4.6)&lt;T&gt;
 
 ## Parameters
 
-* [IImmutableList<T>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.IImmutableList-1?view=netframework-4.6) list
-* [T](VRage.Scripting.MemorySafeTypes.MemorySafeImmutableList+T) oldValue
-* [T](VRage.Scripting.MemorySafeTypes.MemorySafeImmutableList+T) newValue
+* [IImmutableList](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.IImmutableList-1?view=netframework-4.6)&lt;T&gt; list
+* T oldValue
+* T newValue

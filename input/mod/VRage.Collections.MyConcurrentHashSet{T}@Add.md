@@ -10,4 +10,4 @@ public bool Add(T instance)
 
 ## Parameters
 
-* [T](VRage.Collections.MyConcurrentHashSet{T}+T) instance
+* T instance

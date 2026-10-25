@@ -6,5 +6,5 @@ public T[] InternalArray { get; }
 
 ## Returns
 
-[T[]](VRage.Collections.T[])
+T[]
 

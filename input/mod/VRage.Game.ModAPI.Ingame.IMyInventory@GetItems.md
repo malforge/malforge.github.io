@@ -8,5 +8,5 @@ Collects all items present inside this inventory and returns snapshot of the cur
 
 ## Parameters
 
-* [List<MyInventoryItem>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) items
-* [Func<MyInventoryItem, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) filter
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyInventoryItem](VRage.Game.ModAPI.Ingame.MyInventoryItem)&gt; items
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[MyInventoryItem](VRage.Game.ModAPI.Ingame.MyInventoryItem), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; filter

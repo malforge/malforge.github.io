@@ -10,5 +10,5 @@ public bool TryAdd(TKey key, TValue value)
 
 ## Parameters
 
-* [TKey](VRage.Collections.MyConcurrentDictionary{TKey,TValue}+TKey) key
-* [TValue](VRage.Collections.MyConcurrentDictionary{TKey,TValue}+TValue) value
+* TKey key
+* TValue value

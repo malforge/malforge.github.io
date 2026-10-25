@@ -6,5 +6,5 @@ public AnimationItem[] AnimationItems
 
 ## Returns
 
-[AnimationItem[]](VRage.Game.AnimationItem[])
+[AnimationItem[]](VRage.Game.AnimationItem)
 

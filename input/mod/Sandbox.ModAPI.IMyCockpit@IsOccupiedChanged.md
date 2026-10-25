@@ -8,5 +8,5 @@ Raised when is occupied is changed (cockpit instance)
 
 ## Returns
 
-[Action<IMyCockpit>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[IMyCockpit](Sandbox.ModAPI.IMyCockpit)&gt;
 

@@ -6,5 +6,5 @@ public static Func<bool> ConstrainInventory
 
 ## Returns
 
-[Func<bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6)
+[Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6)&lt;[bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt;
 

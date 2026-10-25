@@ -6,5 +6,5 @@ public MyTileDefinition[] Tiles
 
 ## Returns
 
-[MyTileDefinition[]](Sandbox.Definitions.MyTileDefinition[])
+[MyTileDefinition[]](Sandbox.Definitions.MyTileDefinition)
 

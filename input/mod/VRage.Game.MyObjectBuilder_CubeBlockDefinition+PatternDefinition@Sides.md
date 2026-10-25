@@ -6,5 +6,5 @@ public Side[] Sides
 
 ## Returns
 
-[Side[]](VRage.Game.Side[])
+[Side[]](VRage.Game.MyObjectBuilder_CubeBlockDefinition+Side)
 

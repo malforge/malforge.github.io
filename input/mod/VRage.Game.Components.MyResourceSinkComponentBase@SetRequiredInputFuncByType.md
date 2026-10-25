@@ -6,9 +6,9 @@ public virtual Func<float> SetRequiredInputFuncByType(MyDefinitionId resourceTyp
 
 ## Returns
 
-[Func<float>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6)
+[Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6)&lt;[float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)&gt;
 
 ## Parameters
 
 * [MyDefinitionId](VRage.Game.MyDefinitionId) resourceTypeId
-* [Func<float>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6) newRequiredInputFunc
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-1?view=netframework-4.6)&lt;[float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6)&gt; newRequiredInputFunc

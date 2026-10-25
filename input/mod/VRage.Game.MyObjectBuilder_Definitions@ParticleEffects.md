@@ -6,5 +6,5 @@ public MyObjectBuilder_ParticleEffect[] ParticleEffects
 
 ## Returns
 
-[MyObjectBuilder_ParticleEffect[]](VRage.Game.MyObjectBuilder_ParticleEffect[])
+[MyObjectBuilder_ParticleEffect[]](VRage.Game.MyObjectBuilder_ParticleEffect)
 

@@ -6,5 +6,5 @@ public MySubBlockId[] SubBlocks
 
 ## Returns
 
-[MySubBlockId[]](VRage.Game.MySubBlockId[])
+[MySubBlockId[]](VRage.Game.MyObjectBuilder_CubeBlock+MySubBlockId)
 

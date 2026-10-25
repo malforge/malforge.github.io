@@ -7,4 +7,4 @@ public virtual void Invoke(IMyTerminalBlock block, List<IMyTerminalControl> cont
 ## Parameters
 
 * [IMyTerminalBlock](Sandbox.ModAPI.IMyTerminalBlock) block
-* [List<IMyTerminalControl>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) controls
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMyTerminalControl](Sandbox.ModAPI.Interfaces.Terminal.IMyTerminalControl)&gt; controls

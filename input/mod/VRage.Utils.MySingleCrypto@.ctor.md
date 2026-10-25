@@ -6,4 +6,4 @@ public MySingleCrypto(Byte[] password)
 
 ## Parameters
 
-* Byte[] <sub>prohibited</sub> password
+* [byte[]](https://docs.microsoft.com/en-us/dotnet/api/System.Byte?view=netframework-4.6) password

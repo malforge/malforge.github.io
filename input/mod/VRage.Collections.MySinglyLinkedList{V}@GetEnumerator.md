@@ -6,5 +6,5 @@ public Enumerator<V> GetEnumerator()
 
 ## Returns
 
-[Enumerator<V>](VRage.Collections.MySinglyLinkedList{V}+Enumerator)
+[MySinglyLinkedList](VRage.Collections.MySinglyLinkedList{V})&lt;V&gt;.[Enumerator](VRage.Collections.MySinglyLinkedList{V}+Enumerator)
 

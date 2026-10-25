@@ -8,5 +8,5 @@ First MyGridGroupData(this) - from where grid was removed Second MyGridGroupData
 
 ## Returns
 
-[Action<IMyGridGroupData, IMyCubeGrid, IMyGridGroupData>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-3?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-3?view=netframework-4.6)&lt;[IMyGridGroupData](VRage.Game.ModAPI.IMyGridGroupData), [IMyCubeGrid](VRage.Game.ModAPI.IMyCubeGrid), [IMyGridGroupData](VRage.Game.ModAPI.IMyGridGroupData)&gt;
 

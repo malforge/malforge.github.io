@@ -6,5 +6,5 @@ public MyObjectBuilder_ContainerDefinition[] EntityContainers
 
 ## Returns
 
-[MyObjectBuilder_ContainerDefinition[]](VRage.Game.MyObjectBuilder_ContainerDefinition[])
+[MyObjectBuilder_ContainerDefinition[]](VRage.Game.MyObjectBuilder_ContainerDefinition)
 

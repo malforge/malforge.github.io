@@ -7,6 +7,6 @@ public MyConcurrentBucketPool(string debugName, IMyElementAllocator<T> allocator
 ## Parameters
 
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) debugName
-* [IMyElementAllocator<T>](VRage.Collections.IMyElementAllocator{T}) allocator
+* [IMyElementAllocator](VRage.Collections.IMyElementAllocator{T})&lt;T&gt; allocator
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) maxPooledInstances
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) autoClearPool

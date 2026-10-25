@@ -6,5 +6,5 @@ public MyObjectBuilder_ShipSoundsDefinition[] ShipSoundGroups
 
 ## Returns
 
-[MyObjectBuilder_ShipSoundsDefinition[]](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ShipSoundsDefinition[])
+[MyObjectBuilder_ShipSoundsDefinition[]](VRage.Game.ObjectBuilders.Definitions.MyObjectBuilder_ShipSoundsDefinition)
 

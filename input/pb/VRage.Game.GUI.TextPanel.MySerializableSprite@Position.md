@@ -8,5 +8,5 @@ Render position for this layer. If not set, it will be placed in the center
 
 ## Returns
 
-[SerializableVector2?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+SerializableVector2? <sub>prohibited</sub>
 

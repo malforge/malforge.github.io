@@ -182,9 +182,9 @@ Transforms an array of Vector4s by a specified Matrix.
 
 ## Parameters
 
-* [Vector4[]](VRageMath.Vector4[]) sourceArray
+* [Vector4[]](VRageMath.Vector4) sourceArray
 * [Matrix](VRageMath.Matrix) matrix
-* [Vector4[]](VRageMath.Vector4[]) destinationArray
+* [Vector4[]](VRageMath.Vector4) destinationArray
 ## Summary
 
 ```csharp
@@ -195,10 +195,10 @@ Transforms a specified range in an array of Vector4s by a specified Matrix into 
 
 ## Parameters
 
-* [Vector4[]](VRageMath.Vector4[]) sourceArray
+* [Vector4[]](VRageMath.Vector4) sourceArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceIndex
 * [Matrix](VRageMath.Matrix) matrix
-* [Vector4[]](VRageMath.Vector4[]) destinationArray
+* [Vector4[]](VRageMath.Vector4) destinationArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) destinationIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length
 ## Summary
@@ -211,9 +211,9 @@ Transforms an array of Vector4s by a specified Quaternion.
 
 ## Parameters
 
-* [Vector4[]](VRageMath.Vector4[]) sourceArray
+* [Vector4[]](VRageMath.Vector4) sourceArray
 * [Quaternion](VRageMath.Quaternion) rotation
-* [Vector4[]](VRageMath.Vector4[]) destinationArray
+* [Vector4[]](VRageMath.Vector4) destinationArray
 ## Summary
 
 ```csharp
@@ -224,9 +224,9 @@ Transforms a specified range in an array of Vector4s by a specified Quaternion i
 
 ## Parameters
 
-* [Vector4[]](VRageMath.Vector4[]) sourceArray
+* [Vector4[]](VRageMath.Vector4) sourceArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) sourceIndex
 * [Quaternion](VRageMath.Quaternion) rotation
-* [Vector4[]](VRageMath.Vector4[]) destinationArray
+* [Vector4[]](VRageMath.Vector4) destinationArray
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) destinationIndex
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) length

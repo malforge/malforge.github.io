@@ -11,6 +11,6 @@ public static void DrawTransparentCapsule(ref MatrixD worldMatrix, float radius
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) height
 * [Color](VRageMath.Color) color
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) wireDivideRatio
-* [MyStringId?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) faceMaterial
+* [MyStringId?](VRage.Utils.MyStringId) faceMaterial
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) customViewProjectionMatrix
 * [BlendTypeEnum](VRageRender.MyBillboard+BlendTypeEnum) blendType

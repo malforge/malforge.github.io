@@ -6,5 +6,5 @@ public LadderInfo? LadderInfo
 
 ## Returns
 
-[LadderInfo?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[LadderInfo?](VRage.Game.MyObjectBuilder_Character+LadderInfo)
 

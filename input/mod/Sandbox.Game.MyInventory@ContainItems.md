@@ -24,6 +24,6 @@ public bool ContainItems(MyFixedPoint? amount, MyDefinitionId contentId, MyItemF
 
 ## Parameters
 
-* [MyFixedPoint?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) amount
+* [MyFixedPoint?](VRage.MyFixedPoint) amount
 * [MyDefinitionId](VRage.Game.MyDefinitionId) contentId
 * [MyItemFlags](VRage.Game.MyItemFlags) flags

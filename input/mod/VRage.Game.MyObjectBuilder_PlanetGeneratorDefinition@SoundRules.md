@@ -6,5 +6,5 @@ public MySerializablePlanetEnvironmentalSoundRule[] SoundRules
 
 ## Returns
 
-[MySerializablePlanetEnvironmentalSoundRule[]](VRage.Game.MySerializablePlanetEnvironmentalSoundRule[])
+[MySerializablePlanetEnvironmentalSoundRule[]](VRage.Game.MySerializablePlanetEnvironmentalSoundRule)
 

@@ -6,4 +6,4 @@ public static void InitByDefinitions(ListReader<MyDlcDefinition> dlcDefinitions)
 
 ## Parameters
 
-* [ListReader<MyDlcDefinition>](VRage.Collections.ListReader{MyDlcDefinition}) dlcDefinitions
+* [ListReader](VRage.Collections.ListReader{T})&lt;[MyDlcDefinition](VRage.Game.Definitions.MyDlcDefinition)&gt; dlcDefinitions

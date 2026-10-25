@@ -6,5 +6,5 @@ public ListReader<MyEnvironmentItemDefinition> GetEnvironmentItemDefinitions()
 
 ## Returns
 
-[ListReader<MyEnvironmentItemDefinition>](VRage.Collections.ListReader{MyEnvironmentItemDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyEnvironmentItemDefinition](Sandbox.Definitions.MyEnvironmentItemDefinition)&gt;
 

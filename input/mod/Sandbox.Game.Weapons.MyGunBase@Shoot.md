@@ -19,7 +19,7 @@ public void Shoot(Vector3 initialVelocity, MyEntity owner, uint? renderId)
 
 * [Vector3](VRageMath.Vector3) initialVelocity
 * [MyEntity](VRage.Game.Entity.MyEntity) owner
-* [uint?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) renderId
+* [uint?](https://docs.microsoft.com/en-us/dotnet/api/System.UInt32?view=netframework-4.6) renderId
 ## Summary
 
 ```csharp
@@ -31,7 +31,7 @@ public void Shoot(Vector3 initialVelocity, Vector3D Target, MyEntity owner, uint
 * [Vector3](VRageMath.Vector3) initialVelocity
 * [Vector3D](VRageMath.Vector3D) Target
 * [MyEntity](VRage.Game.Entity.MyEntity) owner
-* [uint?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) renderId
+* [uint?](https://docs.microsoft.com/en-us/dotnet/api/System.UInt32?view=netframework-4.6) renderId
 ## Summary
 
 ```csharp
@@ -44,5 +44,5 @@ public void Shoot(Vector3D initialPosition, Vector3 initialVelocity, Vector3 dir
 * [Vector3](VRageMath.Vector3) initialVelocity
 * [Vector3](VRageMath.Vector3) direction
 * [MyEntity](VRage.Game.Entity.MyEntity) owner
-* [uint?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) renderId
+* [uint?](https://docs.microsoft.com/en-us/dotnet/api/System.UInt32?view=netframework-4.6) renderId
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) userNormalizedPositionForEffects

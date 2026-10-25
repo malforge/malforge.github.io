@@ -6,7 +6,7 @@ public MyGroupsBase<MyCubeGrid> GetGroups(GridLinkTypeEnum type)
 
 ## Returns
 
-MyGroupsBase<MyCubeGrid> <sub>prohibited</sub>
+MyGroupsBase&lt;[MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid)&gt; <sub>prohibited</sub>
 
 ## Parameters
 

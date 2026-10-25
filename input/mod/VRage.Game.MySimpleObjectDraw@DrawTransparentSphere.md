@@ -6,15 +6,15 @@ public static void DrawTransparentSphere(List<Vector3D> verticesBuffer, float ra
 
 ## Parameters
 
-* [List<Vector3D>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) verticesBuffer
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[Vector3D](VRageMath.Vector3D)&gt; verticesBuffer
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) radius
 * [Color](VRageMath.Color) color
 * [MySimpleObjectRasterizer](VRage.Game.MySimpleObjectRasterizer) rasterization
-* [MyStringId?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) faceMaterial
-* [MyStringId?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) lineMaterial
+* [MyStringId?](VRage.Utils.MyStringId) faceMaterial
+* [MyStringId?](VRage.Utils.MyStringId) lineMaterial
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) lineThickness
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) customViewProjectionMatrix
-* [List<MyBillboard>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) persistentBillboards
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyBillboard](VRageRender.MyBillboard)&gt; persistentBillboards
 * [BlendTypeEnum](VRageRender.MyBillboard+BlendTypeEnum) blendType
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) intensity
 ## Summary
@@ -30,10 +30,10 @@ public static void DrawTransparentSphere(ref MatrixD worldMatrix, float radius,
 * [Color](VRageMath.Color) color
 * [MySimpleObjectRasterizer](VRage.Game.MySimpleObjectRasterizer) rasterization
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) wireDivideRatio
-* [MyStringId?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) faceMaterial
-* [MyStringId?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) lineMaterial
+* [MyStringId?](VRage.Utils.MyStringId) faceMaterial
+* [MyStringId?](VRage.Utils.MyStringId) lineMaterial
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) lineThickness
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) customViewProjectionMatrix
-* [List<MyBillboard>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) persistentBillboards
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyBillboard](VRageRender.MyBillboard)&gt; persistentBillboards
 * [BlendTypeEnum](VRageRender.MyBillboard+BlendTypeEnum) blendType
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) intensity

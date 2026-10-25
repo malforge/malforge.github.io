@@ -12,6 +12,6 @@ public static bool CheckConnectivity(IMyGridConnectivityTest grid, MyCubeBlockDe
 
 * IMyGridConnectivityTest <sub>prohibited</sub> grid
 * [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition) def
-* [MountPoint[]](Sandbox.Definitions.MountPoint[]) mountPoints
+* [MountPoint[]](Sandbox.Definitions.MyCubeBlockDefinition+MountPoint) mountPoints
 * [Quaternion](VRageMath.Quaternion) rotation
 * [Vector3I](VRageMath.Vector3I) position

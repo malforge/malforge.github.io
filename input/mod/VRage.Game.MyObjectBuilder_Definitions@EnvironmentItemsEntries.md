@@ -6,5 +6,5 @@ public EnvironmentItemsEntry[] EnvironmentItemsEntries
 
 ## Returns
 
-[EnvironmentItemsEntry[]](VRage.Game.EnvironmentItemsEntry[])
+[EnvironmentItemsEntry[]](VRage.Game.EnvironmentItemsEntry)
 

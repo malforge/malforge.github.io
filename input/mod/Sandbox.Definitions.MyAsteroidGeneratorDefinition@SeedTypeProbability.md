@@ -6,5 +6,5 @@ public DictionaryReader<MyObjectSeedType, double> SeedTypeProbability
 
 ## Returns
 
-[DictionaryReader<MyObjectSeedType, double>](VRage.Collections.DictionaryReader{MyObjectSeedType,Double})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;[MyObjectSeedType](VRage.Game.MyObjectSeedType), [double](https://docs.microsoft.com/en-us/dotnet/api/System.Double?view=netframework-4.6)&gt;
 

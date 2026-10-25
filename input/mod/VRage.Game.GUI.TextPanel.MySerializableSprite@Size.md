@@ -8,5 +8,5 @@ Render size for this layer. If not set, it will be sized to take up the whole te
 
 ## Returns
 
-[SerializableVector2?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[SerializableVector2?](VRage.SerializableVector2)
 

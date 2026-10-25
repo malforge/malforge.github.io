@@ -6,5 +6,5 @@ public MyObjectBuilder_StoryDefinition[] Stories
 
 ## Returns
 
-[MyObjectBuilder_StoryDefinition[]](VRage.Game.MyObjectBuilder_StoryDefinition[])
+[MyObjectBuilder_StoryDefinition[]](VRage.Game.MyObjectBuilder_StoryDefinition)
 

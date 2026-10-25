@@ -8,7 +8,7 @@ Tries to find an item of given type inside this inventory.
 
 ## Returns
 
-[MyInventoryItem?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[MyInventoryItem?](VRage.Game.ModAPI.Ingame.MyInventoryItem)
 
 Info about item found, null in case there is no item of given type inside this inventory
 

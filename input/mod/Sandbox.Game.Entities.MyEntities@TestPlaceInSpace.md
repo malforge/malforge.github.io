@@ -6,13 +6,13 @@ public static Vector3D? TestPlaceInSpace(Vector3D basePos, float radius, Func<IM
 
 ## Returns
 
-[Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[Vector3D?](VRageMath.Vector3D)
 
 ## Parameters
 
 * [Vector3D](VRageMath.Vector3D) basePos
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) radius
-* [Func<IMyEntity, bool>](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6) ignoredEntity
+* [Func](https://docs.microsoft.com/en-us/dotnet/api/System.Func-2?view=netframework-4.6)&lt;[IMyEntity](VRage.ModAPI.IMyEntity), [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)&gt; ignoredEntity
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) detailedVoxelsCheck
 ## Summary
 
@@ -22,7 +22,7 @@ public static Vector3D? TestPlaceInSpace(Vector3D basePos, float radius, MyEntit
 
 ## Returns
 
-[Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[Vector3D?](VRageMath.Vector3D)
 
 ## Parameters
 

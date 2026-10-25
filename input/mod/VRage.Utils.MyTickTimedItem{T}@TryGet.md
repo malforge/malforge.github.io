@@ -10,4 +10,4 @@ public bool TryGet(out T outStoredItem)
 
 ## Parameters
 
-* [T](VRage.Utils.MyTickTimedItem{T}+T) outStoredItem
+* T outStoredItem

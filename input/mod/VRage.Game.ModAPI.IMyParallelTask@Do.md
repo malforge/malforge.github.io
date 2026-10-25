@@ -20,7 +20,7 @@ Executes the given work items potentially in parallel with each other. This meth
 
 ## Parameters
 
-* IWork[] <sub>prohibited</sub> work
+* [IWork[]](ParallelTasks.IWork) work
 ## Summary
 
 ```csharp
@@ -43,4 +43,4 @@ Executes the given work items potentially in parallel with each other. This meth
 
 ## Parameters
 
-* Action[] <sub>prohibited</sub> actions
+* [Action[]](https://docs.microsoft.com/en-us/dotnet/api/System.Action?view=netframework-4.6) actions

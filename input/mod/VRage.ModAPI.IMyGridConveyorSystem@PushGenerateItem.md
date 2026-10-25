@@ -15,7 +15,7 @@ Returns info whether all items could fit in target network or not.
 ## Parameters
 
 * [MyDefinitionId](VRage.Game.MyDefinitionId) itemDefinitionId
-* [MyFixedPoint?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) amount
+* [MyFixedPoint?](VRage.MyFixedPoint) amount
 * [MyFixedPoint](VRage.MyFixedPoint) transferredAmount
 * [IMyEntity](VRage.ModAPI.IMyEntity) sourceBlock
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) partialPush

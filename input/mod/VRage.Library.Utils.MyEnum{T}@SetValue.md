@@ -6,7 +6,7 @@ public static T SetValue(ulong value)
 
 ## Returns
 
-[T](VRage.Library.Utils.MyEnum{T}+T)
+T
 
 ## Parameters
 

@@ -10,4 +10,4 @@ public bool Remove(T value)
 
 ## Parameters
 
-* [T](VRage.Collections.MyConcurrentHashSet{T}+T) value
+* T value

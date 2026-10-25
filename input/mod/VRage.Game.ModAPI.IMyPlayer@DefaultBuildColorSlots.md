@@ -8,5 +8,5 @@ Gets the list of the default build colors.
 
 ## Returns
 
-[ListReader<Vector3>](VRage.Collections.ListReader{Vector3})
+[ListReader](VRage.Collections.ListReader{T})&lt;[Vector3](VRageMath.Vector3)&gt;
 

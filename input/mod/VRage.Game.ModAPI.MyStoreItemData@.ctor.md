@@ -9,6 +9,6 @@ public MyStoreItemData(SerializableDefinitionId itemId, int amount, int pricePer
 * [SerializableDefinitionId](VRage.ObjectBuilders.SerializableDefinitionId) itemId
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) amount
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) pricePerUnit
-* [List<long>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) gasTanks
-* [Action<int, int, long, long, long>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-5?view=netframework-4.6) onTransactionCallback
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt; gasTanks
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-5?view=netframework-4.6)&lt;[int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6), [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6), [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6), [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6), [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6)&gt; onTransactionCallback
 * [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action?view=netframework-4.6) onCancelCallback

@@ -18,4 +18,4 @@ public static MyCubeGrid SpawnDynamicGrid(MyCubeBlockDefinition blockDefinition,
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) entityId
 * [SpawnFlags](Sandbox.Game.Entities.MyCubeBuilder+SpawnFlags) spawnFlags
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) builtBy
-* [Action<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6) completionCallback
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt; completionCallback

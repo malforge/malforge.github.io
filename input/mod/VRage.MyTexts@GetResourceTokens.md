@@ -6,7 +6,7 @@ public static List<ValueTuple`2> GetResourceTokens(string rootDirectory, string 
 
 ## Returns
 
-[List<ValueTuple`2>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;ValueTuple&lt;[string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6), [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6)&gt; <sub>prohibited</sub>&gt;
 
 ## Parameters
 

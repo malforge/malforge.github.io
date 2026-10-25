@@ -22,4 +22,4 @@ Finds action by [GetActionWithName(string)](Sandbox.ModAPI.Ingame.IMyTerminalBlo
 
 * [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock) block
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) actionName
-* [List<TerminalActionParameter>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) parameters
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[TerminalActionParameter](Sandbox.ModAPI.Ingame.TerminalActionParameter)&gt; parameters

@@ -8,5 +8,5 @@ Get a list of all DLCs the game has. This will not change for the lifetime of th
 
 ## Returns
 
-[ListReader<IMyDLC>](VRage.Collections.ListReader{IMyDLC})
+[ListReader](VRage.Collections.ListReader{T})&lt;[IMyDLC](VRage.Game.ModAPI.IMyDLC)&gt;
 

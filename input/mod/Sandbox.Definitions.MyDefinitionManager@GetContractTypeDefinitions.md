@@ -6,5 +6,5 @@ public DictionaryReader<MyDefinitionId, MyContractTypeDefinition> GetContractTyp
 
 ## Returns
 
-[DictionaryReader<MyDefinitionId, MyContractTypeDefinition>](VRage.Collections.DictionaryReader{MyDefinitionId,MyContractTypeDefinition})
+[DictionaryReader](VRage.Collections.DictionaryReader{K,V})&lt;[MyDefinitionId](VRage.Game.MyDefinitionId), [MyContractTypeDefinition](Sandbox.Definitions.MyContractTypeDefinition)&gt;
 

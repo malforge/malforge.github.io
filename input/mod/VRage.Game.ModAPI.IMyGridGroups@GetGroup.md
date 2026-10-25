@@ -8,7 +8,7 @@ OBSOLETE: Use GetGroup with passing your own collection, it is better for simula
 
 ## Returns
 
-[List<IMyCubeGrid>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMyCubeGrid](VRage.Game.ModAPI.IMyCubeGrid)&gt;
 
 New list of connected grids
 
@@ -28,4 +28,4 @@ Returns all grids connected to the given grid by the specified link type. Array 
 
 * [IMyCubeGrid](VRage.Game.ModAPI.IMyCubeGrid) node
 * [GridLinkTypeEnum](VRage.Game.ModAPI.GridLinkTypeEnum) type
-* [ICollection<IMyCubeGrid>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=netframework-4.6) collection
+* [ICollection](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.ICollection-1?view=netframework-4.6)&lt;[IMyCubeGrid](VRage.Game.ModAPI.IMyCubeGrid)&gt; collection

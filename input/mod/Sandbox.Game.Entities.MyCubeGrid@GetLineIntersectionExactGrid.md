@@ -28,4 +28,4 @@ public bool GetLineIntersectionExactGrid(ref LineD line, ref Vector3I position
 * [LineD](VRageMath.LineD) line
 * [Vector3I](VRageMath.Vector3I) position
 * [double](https://docs.microsoft.com/en-us/dotnet/api/System.Double?view=netframework-4.6) distanceSquared
-* [HitInfo?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) hitInfo
+* HitInfo? <sub>prohibited</sub> hitInfo

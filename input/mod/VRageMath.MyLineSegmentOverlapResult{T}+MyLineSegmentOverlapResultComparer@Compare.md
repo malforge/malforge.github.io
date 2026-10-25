@@ -10,5 +10,5 @@ public int Compare(MyLineSegmentOverlapResult<T> x, MyLineSegmentOverlapResult<T
 
 ## Parameters
 
-* [MyLineSegmentOverlapResult<T>](VRageMath.MyLineSegmentOverlapResult{T}) x
-* [MyLineSegmentOverlapResult<T>](VRageMath.MyLineSegmentOverlapResult{T}) y
+* [MyLineSegmentOverlapResult](VRageMath.MyLineSegmentOverlapResult{T})&lt;T&gt; x
+* [MyLineSegmentOverlapResult](VRageMath.MyLineSegmentOverlapResult{T})&lt;T&gt; y

@@ -6,4 +6,4 @@ public void ActivateFromRadialMenu(MyDefinitionId? blockDefinitionId)
 
 ## Parameters
 
-* [MyDefinitionId?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) blockDefinitionId
+* [MyDefinitionId?](VRage.Game.MyDefinitionId) blockDefinitionId

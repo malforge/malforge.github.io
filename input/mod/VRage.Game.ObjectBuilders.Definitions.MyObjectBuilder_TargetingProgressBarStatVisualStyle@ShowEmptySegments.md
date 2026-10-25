@@ -6,5 +6,5 @@ public bool? ShowEmptySegments
 
 ## Returns
 
-[bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6)
+[bool?](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6)
 

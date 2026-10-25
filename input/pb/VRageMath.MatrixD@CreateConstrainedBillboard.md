@@ -15,8 +15,8 @@ Creates a cylindrical billboard that rotates around a specified axis.
 * [Vector3D](VRageMath.Vector3D) objectPosition
 * [Vector3D](VRageMath.Vector3D) cameraPosition
 * [Vector3D](VRageMath.Vector3D) rotateAxis
-* [Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) cameraForwardVector
-* [Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) objectForwardVector
+* [Vector3D?](VRageMath.Vector3D) cameraForwardVector
+* [Vector3D?](VRageMath.Vector3D) objectForwardVector
 ## Summary
 
 ```csharp
@@ -30,6 +30,6 @@ Creates a cylindrical billboard that rotates around a specified axis.
 * [Vector3D](VRageMath.Vector3D) objectPosition
 * [Vector3D](VRageMath.Vector3D) cameraPosition
 * [Vector3D](VRageMath.Vector3D) rotateAxis
-* [Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) cameraForwardVector
-* [Vector3D?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) objectForwardVector
+* [Vector3D?](VRageMath.Vector3D) cameraForwardVector
+* [Vector3D?](VRageMath.Vector3D) objectForwardVector
 * [MatrixD](VRageMath.MatrixD) result

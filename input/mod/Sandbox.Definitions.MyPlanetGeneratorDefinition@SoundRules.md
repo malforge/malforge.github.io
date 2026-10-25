@@ -6,5 +6,5 @@ public MyPlanetEnvironmentalSoundRule[] SoundRules
 
 ## Returns
 
-[MyPlanetEnvironmentalSoundRule[]](Sandbox.Definitions.MyPlanetEnvironmentalSoundRule[])
+[MyPlanetEnvironmentalSoundRule[]](Sandbox.Definitions.MyPlanetEnvironmentalSoundRule)
 

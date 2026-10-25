@@ -10,4 +10,4 @@ public bool Contains(KeyValuePair<Guid, string> item)
 
 ## Parameters
 
-* [KeyValuePair<Guid, string>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2?view=netframework-4.6) item
+* [KeyValuePair](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2?view=netframework-4.6)&lt;[Guid](https://docs.microsoft.com/en-us/dotnet/api/System.Guid?view=netframework-4.6), [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6)&gt; item

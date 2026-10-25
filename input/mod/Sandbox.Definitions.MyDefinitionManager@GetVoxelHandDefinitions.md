@@ -6,5 +6,5 @@ public ListReader<MyVoxelHandDefinition> GetVoxelHandDefinitions()
 
 ## Returns
 
-[ListReader<MyVoxelHandDefinition>](VRage.Collections.ListReader{MyVoxelHandDefinition})
+[ListReader](VRage.Collections.ListReader{T})&lt;[MyVoxelHandDefinition](Sandbox.Definitions.MyVoxelHandDefinition)&gt;
 

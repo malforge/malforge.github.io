@@ -8,5 +8,5 @@ Array of block stages. Stage represents other block definition which have differ
 
 ## Returns
 
-[MyDefinitionId[]](VRage.Game.MyDefinitionId[])
+[MyDefinitionId[]](VRage.Game.MyDefinitionId)
 

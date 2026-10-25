@@ -6,5 +6,5 @@ public static MyStringId[] JETPACK_CONTROLS_GAMEPAD
 
 ## Returns
 
-[MyStringId[]](VRage.Utils.MyStringId[])
+[MyStringId[]](VRage.Utils.MyStringId)
 

@@ -6,5 +6,5 @@ public MyComponentBlockEntry[] ComponentBlocks
 
 ## Returns
 
-[MyComponentBlockEntry[]](VRage.Game.ObjectBuilders.MyComponentBlockEntry[])
+[MyComponentBlockEntry[]](VRage.Game.ObjectBuilders.MyComponentBlockEntry)
 

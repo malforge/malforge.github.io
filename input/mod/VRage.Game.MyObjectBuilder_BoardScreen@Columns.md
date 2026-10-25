@@ -6,5 +6,5 @@ public BoardColumn[] Columns
 
 ## Returns
 
-[BoardColumn[]](VRage.Game.BoardColumn[])
+[BoardColumn[]](VRage.Game.MyObjectBuilder_BoardScreen+BoardColumn)
 

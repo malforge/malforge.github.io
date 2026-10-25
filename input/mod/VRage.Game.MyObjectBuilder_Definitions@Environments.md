@@ -6,5 +6,5 @@ public MyObjectBuilder_EnvironmentDefinition[] Environments
 
 ## Returns
 
-[MyObjectBuilder_EnvironmentDefinition[]](VRage.Game.MyObjectBuilder_EnvironmentDefinition[])
+[MyObjectBuilder_EnvironmentDefinition[]](VRage.Game.MyObjectBuilder_EnvironmentDefinition)
 

@@ -6,5 +6,5 @@ public MyCharacterName[] CharacterNames
 
 ## Returns
 
-[MyCharacterName[]](VRage.Game.MyCharacterName[])
+[MyCharacterName[]](VRage.Game.MyCharacterName)
 

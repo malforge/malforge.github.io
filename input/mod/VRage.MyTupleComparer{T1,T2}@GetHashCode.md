@@ -10,4 +10,4 @@ public int GetHashCode(MyTuple<T1, T2> obj)
 
 ## Parameters
 
-* [MyTuple<T1, T2>](VRage.MyTuple{T1,T2}) obj
+* [MyTuple](VRage.MyTuple{T1,T2})&lt;T1, T2&gt; obj

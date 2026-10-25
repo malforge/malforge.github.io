@@ -8,8 +8,8 @@ public MyAutopilotWaypoint(Vector3D coords, string name, List<MyObjectBuilder_To
 
 * [Vector3D](VRageMath.Vector3D) coords
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) name
-* [List<MyObjectBuilder_ToolbarItem>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) actionBuilders
-* [List<int>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) indexes
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyObjectBuilder_ToolbarItem](VRage.Game.MyObjectBuilder_ToolbarItem)&gt; actionBuilders
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6)&gt; indexes
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) draw
 ## Summary
 
@@ -21,8 +21,8 @@ public MyAutopilotWaypoint(MatrixD matrix, string name, List<MyObjectBuilder_Too
 
 * [MatrixD](VRageMath.MatrixD) matrix
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) name
-* [List<MyObjectBuilder_ToolbarItem>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) actionBuilders
-* [List<int>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) indexes
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyObjectBuilder_ToolbarItem](VRage.Game.MyObjectBuilder_ToolbarItem)&gt; actionBuilders
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6)&gt; indexes
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) draw
 ## Summary
 

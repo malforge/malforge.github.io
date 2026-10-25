@@ -12,5 +12,5 @@ public bool IsVisible(MyCubeGrid myGrid, MyEntity target, List<HitInfo> hits, ou
 
 * [MyCubeGrid](Sandbox.Game.Entities.MyCubeGrid) myGrid
 * [MyEntity](VRage.Game.Entity.MyEntity) target
-* [List<HitInfo>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) hits
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;HitInfo <sub>prohibited</sub>&gt; hits
 * [MyEntity](VRage.Game.Entity.MyEntity) visibleBy

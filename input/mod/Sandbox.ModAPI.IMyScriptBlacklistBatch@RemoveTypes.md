@@ -8,4 +8,4 @@ Removes types previously added with [AddTypes(Type[])](Sandbox.ModAPI.IMyScriptB
 
 ## Parameters
 
-* Type[] <sub>prohibited</sub> types
+* [Type[]](https://docs.microsoft.com/en-us/dotnet/api/System.Type?view=netframework-4.6) types

@@ -84,6 +84,6 @@ A task which represents one execution of the action.
 
 ## Parameters
 
-* [Action<WorkData>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6) action
-* [Action<WorkData>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6) completionCallback
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[WorkData](ParallelTasks.WorkData)&gt; action
+* [Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[WorkData](ParallelTasks.WorkData)&gt; completionCallback
 * [WorkData](ParallelTasks.WorkData) workData

@@ -6,8 +6,8 @@ public static TCollection PrepareCollection<TCollection, TElement>(ref TCollect
 
 ## Returns
 
-[TCollection](VRage.Utils.MyUtils+TCollection)
+TCollection
 
 ## Parameters
 
-* [TCollection](VRage.Utils.MyUtils+TCollection) collection
+* TCollection collection

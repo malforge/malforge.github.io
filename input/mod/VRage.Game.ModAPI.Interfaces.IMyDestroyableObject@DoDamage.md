@@ -17,8 +17,8 @@ Applies damage to an object
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) damage
 * [MyStringHash](VRage.Utils.MyStringHash) damageSource
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) sync
-* [MyHitInfo?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) hitInfo
+* [MyHitInfo?](VRage.Game.ModAPI.MyHitInfo) hitInfo
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) attackerId
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) realHitEntityId
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) shouldDetonateAmmo
-* [MyStringHash?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) extraInfo
+* [MyStringHash?](VRage.Utils.MyStringHash) extraInfo

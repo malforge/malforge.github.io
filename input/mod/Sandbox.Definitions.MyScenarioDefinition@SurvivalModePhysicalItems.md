@@ -6,5 +6,5 @@ public StartingPhysicalItem[] SurvivalModePhysicalItems
 
 ## Returns
 
-[StartingPhysicalItem[]](Sandbox.Definitions.StartingPhysicalItem[])
+[StartingPhysicalItem[]](Sandbox.Definitions.MyScenarioDefinition+StartingPhysicalItem)
 

@@ -57,7 +57,7 @@
 </code></pre>
 <p>Dijkstra search over grid-to-grid connections until searcher is return true NOTE: pretty expensive function on large grid-groups, don't call it often.</p>
 <h2 id="returns">Returns</h2>
-<p><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6">List&lt;KeyValuePair&lt;long, IMyCubeGrid&gt;&gt;</a></p>
+<p><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6">List</a>&lt;<a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.KeyValuePair-2?view=netframework-4.6">KeyValuePair</a>&lt;<a href="https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6">long</a>, <a href="VRage.Game.ModAPI.IMyCubeGrid.html">IMyCubeGrid</a>&gt;&gt;</p>
 <p>Null if linking islinkingis incorrect.</p>
 <p>Null ifsearcherhasn't returned true.</p>
 <p>Otherwise list of connections, where long is block entityId, and IMyCubeGrid - grid, where search is hopped</p>
@@ -66,7 +66,7 @@
 <ul>
 <li><a href="VRage.Game.ModAPI.GridLinkTypeEnum.html">GridLinkTypeEnum</a> linking</li>
 <li><a href="VRage.Game.ModAPI.IMyCubeGrid.html">IMyCubeGrid</a> from</li>
-<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Func-4?view=netframework-4.6">Func&lt;IMyCubeGrid, IMyCubeGrid, long, bool&gt;</a> searcher</li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Func-4?view=netframework-4.6">Func</a>&lt;<a href="VRage.Game.ModAPI.IMyCubeGrid.html">IMyCubeGrid</a>, <a href="VRage.Game.ModAPI.IMyCubeGrid.html">IMyCubeGrid</a>, <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6">long</a>, <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6">bool</a>&gt; searcher</li>
 </ul>
 
     </main>

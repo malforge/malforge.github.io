@@ -42,7 +42,7 @@ public static void AssertIsValid(Vector3? vec)
 
 ## Parameters
 
-* [Vector3?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) vec
+* [Vector3?](VRageMath.Vector3) vec
 ## Summary
 
 ```csharp

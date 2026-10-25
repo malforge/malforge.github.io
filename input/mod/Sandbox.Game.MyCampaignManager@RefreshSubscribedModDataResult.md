@@ -6,5 +6,5 @@ public ValueTuple<MyGameServiceCallResult, string> RefreshSubscribedModDataResul
 
 ## Returns
 
-ValueTuple<MyGameServiceCallResult, string> <sub>prohibited</sub>
+ValueTuple&lt;MyGameServiceCallResult <sub>prohibited</sub>, [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6)&gt; <sub>prohibited</sub>
 

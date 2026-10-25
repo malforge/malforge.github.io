@@ -13,8 +13,8 @@ public static MyEntity CrateSafeZone(MatrixD transform, MySafeZoneShape safeZone
 * [MatrixD](VRageMath.MatrixD) transform
 * [MySafeZoneShape](Sandbox.Common.ObjectBuilders.MySafeZoneShape) safeZoneShape
 * [MySafeZoneAccess](Sandbox.Common.ObjectBuilders.MySafeZoneAccess) zoneAccess
-* Int64[] <sub>prohibited</sub> players
-* Int64[] <sub>prohibited</sub> factions
+* [long[]](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) players
+* [long[]](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) factions
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) startRadius
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) enable
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) isVisible

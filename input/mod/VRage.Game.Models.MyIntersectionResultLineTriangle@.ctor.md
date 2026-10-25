@@ -20,6 +20,6 @@ public MyIntersectionResultLineTriangle(int triangleIndex, ref MyTriangle_Verti
 
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) triangleIndex
 * [MyTriangle_Vertices](VRage.MyTriangle_Vertices) triangle
-* [MyTriangle_BoneIndicesWeigths?](https://docs.microsoft.com/en-us/dotnet/api/System.Nullable-1?view=netframework-4.6) boneWeigths
+* [MyTriangle_BoneIndicesWeigths?](VRage.MyTriangle_BoneIndicesWeigths) boneWeigths
 * [Vector3](VRageMath.Vector3) triangleNormal
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) distance

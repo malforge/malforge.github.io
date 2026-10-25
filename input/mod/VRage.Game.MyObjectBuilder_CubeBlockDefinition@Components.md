@@ -6,5 +6,5 @@ public CubeBlockComponent[] Components
 
 ## Returns
 
-[CubeBlockComponent[]](VRage.Game.CubeBlockComponent[])
+[CubeBlockComponent[]](VRage.Game.MyObjectBuilder_CubeBlockDefinition+CubeBlockComponent)
 

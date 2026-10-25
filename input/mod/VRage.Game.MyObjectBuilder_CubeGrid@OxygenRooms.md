@@ -6,5 +6,5 @@ public OxygenRoom[] OxygenRooms
 
 ## Returns
 
-[OxygenRoom[]](VRage.Game.OxygenRoom[])
+[OxygenRoom[]](VRage.Game.OxygenRoom)
 

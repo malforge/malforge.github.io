@@ -10,7 +10,7 @@ public bool Remove(T item)
 
 ## Parameters
 
-* [T](VRage.Collections.MyQueue{T}+T) item
+* T item
 ## Summary
 
 ```csharp

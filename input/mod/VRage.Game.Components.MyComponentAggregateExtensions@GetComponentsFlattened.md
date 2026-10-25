@@ -7,4 +7,4 @@ public static void GetComponentsFlattened(this IMyComponentAggregate aggregate,
 ## Parameters
 
 * [IMyComponentAggregate](VRage.Game.Components.IMyComponentAggregate) aggregate
-* [List<MyComponentBase>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) output
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyComponentBase](VRage.Game.Components.MyComponentBase)&gt; output

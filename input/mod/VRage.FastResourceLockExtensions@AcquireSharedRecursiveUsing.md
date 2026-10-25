@@ -11,4 +11,4 @@ public static MySharedLock AcquireSharedRecursiveUsing(this FastResourceLock lo
 ## Parameters
 
 * [FastResourceLock](VRage.FastResourceLock) lockObject
-* [Ref<int>](VRage.Ref{Int32}) ownerField
+* [Ref](VRage.Ref{T})&lt;[int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6)&gt; ownerField

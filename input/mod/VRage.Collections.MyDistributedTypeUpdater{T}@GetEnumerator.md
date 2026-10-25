@@ -6,5 +6,5 @@ public Enumerator<T> GetEnumerator()
 
 ## Returns
 
-[Enumerator<T>](VRage.Collections.MyDistributedTypeUpdater{T}+Enumerator)
+[MyDistributedTypeUpdater](VRage.Collections.MyDistributedTypeUpdater{T})&lt;T&gt;.[Enumerator](VRage.Collections.MyDistributedTypeUpdater{T}+Enumerator)
 

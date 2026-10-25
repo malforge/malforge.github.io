@@ -8,7 +8,7 @@ Find all blocks built by a specific player..
 
 ## Returns
 
-[HashSet<MySlimBlock>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)
+[HashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)&lt;MySlimBlock <sub>prohibited</sub>&gt;
 
 ## Parameters
 
@@ -21,9 +21,9 @@ public HashSet<MySlimBlock> FindBlocksBuiltByID(long identityID, HashSet<MySlimB
 
 ## Returns
 
-[HashSet<MySlimBlock>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)
+[HashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)&lt;MySlimBlock <sub>prohibited</sub>&gt;
 
 ## Parameters
 
 * [long](https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6) identityID
-* [HashSet<MySlimBlock>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6) builtBlocks
+* [HashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)&lt;MySlimBlock <sub>prohibited</sub>&gt; builtBlocks

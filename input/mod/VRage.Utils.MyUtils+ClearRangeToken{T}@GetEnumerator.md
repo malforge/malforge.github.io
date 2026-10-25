@@ -6,5 +6,5 @@ public OffsetEnumerator<T> GetEnumerator()
 
 ## Returns
 
-[OffsetEnumerator<T>](VRage.Utils.MyUtils+ClearRangeToken{T}+OffsetEnumerator)
+[ClearRangeToken](VRage.Utils.MyUtils+ClearRangeToken{T})&lt;T&gt;.[OffsetEnumerator](VRage.Utils.MyUtils+ClearRangeToken{T}+OffsetEnumerator)
 

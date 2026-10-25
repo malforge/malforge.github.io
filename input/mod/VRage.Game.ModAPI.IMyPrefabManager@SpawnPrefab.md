@@ -8,7 +8,7 @@ Spawns prefab
 
 ## Parameters
 
-* [List<IMyCubeGrid>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) resultList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMyCubeGrid](VRage.Game.ModAPI.IMyCubeGrid)&gt; resultList
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) prefabName
 * [Vector3D](VRageMath.Vector3D) position
 * [Vector3](VRageMath.Vector3) forward
@@ -29,7 +29,7 @@ Spawns prefab
 
 ## Parameters
 
-* [List<IMyCubeGrid>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) resultList
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMyCubeGrid](VRage.Game.ModAPI.IMyCubeGrid)&gt; resultList
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) prefabName
 * [Vector3D](VRageMath.Vector3D) position
 * [Vector3](VRageMath.Vector3) forward

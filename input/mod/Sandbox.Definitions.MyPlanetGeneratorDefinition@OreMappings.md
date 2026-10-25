@@ -6,5 +6,5 @@ public MyPlanetOreMapping[] OreMappings
 
 ## Returns
 
-[MyPlanetOreMapping[]](VRage.Game.MyPlanetOreMapping[])
+[MyPlanetOreMapping[]](VRage.Game.MyPlanetOreMapping)
 

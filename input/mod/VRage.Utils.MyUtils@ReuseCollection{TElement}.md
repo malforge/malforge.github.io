@@ -6,11 +6,11 @@ public static ClearCollectionToken<List<TElement>, TElement> ReuseCollection<TEl
 
 ## Returns
 
-[ClearCollectionToken<List<TElement>, TElement>](VRage.Utils.MyUtils+ClearCollectionToken{List`1,TElement})
+[ClearCollectionToken](VRage.Utils.MyUtils+ClearCollectionToken{TCollection,TElement})&lt;[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;TElement&gt;, TElement&gt;
 
 ## Parameters
 
-* [List<TElement>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) collection
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;TElement&gt; collection
 ## Summary
 
 ```csharp
@@ -19,11 +19,11 @@ public static ClearCollectionToken<MyList`1, TElement> ReuseCollection<TElement>
 
 ## Returns
 
-[ClearCollectionToken<MyList`1, TElement>](VRage.Utils.MyUtils+ClearCollectionToken{MyList`1,TElement})
+[ClearCollectionToken](VRage.Utils.MyUtils+ClearCollectionToken{TCollection,TElement})&lt;MyList&lt;TElement&gt; <sub>prohibited</sub>, TElement&gt;
 
 ## Parameters
 
-* MyList<TElement> <sub>prohibited</sub> collection
+* MyList&lt;TElement&gt; <sub>prohibited</sub> collection
 ## Summary
 
 ```csharp
@@ -32,8 +32,8 @@ public static ClearCollectionToken<HashSet<TElement>, TElement> ReuseCollection<
 
 ## Returns
 
-[ClearCollectionToken<HashSet<TElement>, TElement>](VRage.Utils.MyUtils+ClearCollectionToken{HashSet`1,TElement})
+[ClearCollectionToken](VRage.Utils.MyUtils+ClearCollectionToken{TCollection,TElement})&lt;[HashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)&lt;TElement&gt;, TElement&gt;
 
 ## Parameters
 
-* [HashSet<TElement>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6) collection
+* [HashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.HashSet-1?view=netframework-4.6)&lt;TElement&gt; collection

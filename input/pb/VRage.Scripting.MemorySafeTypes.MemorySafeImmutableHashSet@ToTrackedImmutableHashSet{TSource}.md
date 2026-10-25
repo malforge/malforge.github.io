@@ -6,11 +6,11 @@ public static ImmutableHashSet<TSource> ToTrackedImmutableHashSet<TSource>(thisÂ
 
 ## Returns
 
-[ImmutableHashSet<TSource>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)
+[ImmutableHashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)&lt;TSource&gt;
 
 ## Parameters
 
-* [IEnumerable<TSource>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) source
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;TSource&gt; source
 ## Summary
 
 ```csharp
@@ -19,9 +19,9 @@ public static ImmutableHashSet<TSource> ToTrackedImmutableHashSet<TSource>(thisÂ
 
 ## Returns
 
-[ImmutableHashSet<TSource>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)
+[ImmutableHashSet](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Immutable.ImmutableHashSet-1?view=netframework-4.6)&lt;TSource&gt;
 
 ## Parameters
 
-* [IEnumerable<TSource>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6) source
-* [IEqualityComparer<TSource>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6) equalityComparer
+* [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1?view=netframework-4.6)&lt;TSource&gt; source
+* [IEqualityComparer](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEqualityComparer-1?view=netframework-4.6)&lt;TSource&gt; equalityComparer

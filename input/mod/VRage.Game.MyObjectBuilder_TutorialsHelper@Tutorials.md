@@ -6,5 +6,5 @@ public MyTutorialDescription[] Tutorials
 
 ## Returns
 
-[MyTutorialDescription[]](VRage.Game.MyTutorialDescription[])
+[MyTutorialDescription[]](VRage.Game.MyTutorialDescription)
 

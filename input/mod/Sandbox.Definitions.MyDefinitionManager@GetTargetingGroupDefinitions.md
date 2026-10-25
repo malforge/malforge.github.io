@@ -6,8 +6,8 @@ public List<MyTargetingGroupDefinition> GetTargetingGroupDefinitions(List<MyTarg
 
 ## Returns
 
-[List<MyTargetingGroupDefinition>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)
+[List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyTargetingGroupDefinition](Sandbox.Definitions.MyTargetingGroupDefinition)&gt;
 
 ## Parameters
 
-* [List<MyTargetingGroupDefinition>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) list
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyTargetingGroupDefinition](Sandbox.Definitions.MyTargetingGroupDefinition)&gt; list

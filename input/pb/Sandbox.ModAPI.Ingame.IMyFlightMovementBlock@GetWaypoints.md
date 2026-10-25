@@ -8,4 +8,4 @@ Gets current waypoints
 
 ## Parameters
 
-* [List<IMyAutopilotWaypoint>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) points
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[IMyAutopilotWaypoint](Sandbox.ModAPI.Ingame.IMyAutopilotWaypoint)&gt; points

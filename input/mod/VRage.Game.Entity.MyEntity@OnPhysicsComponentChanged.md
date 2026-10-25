@@ -6,5 +6,5 @@ public Action<MyPhysicsComponentBase, MyPhysicsComponentBase> event OnPhysicsCom
 
 ## Returns
 
-[Action<MyPhysicsComponentBase, MyPhysicsComponentBase>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-2?view=netframework-4.6)&lt;[MyPhysicsComponentBase](VRage.Game.Components.MyPhysicsComponentBase), [MyPhysicsComponentBase](VRage.Game.Components.MyPhysicsComponentBase)&gt;
 

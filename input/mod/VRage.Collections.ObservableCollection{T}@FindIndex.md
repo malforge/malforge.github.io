@@ -10,4 +10,4 @@ public int FindIndex(Predicate<T> match)
 
 ## Parameters
 
-* Predicate<T> <sub>prohibited</sub> match
+* Predicate&lt;T&gt; <sub>prohibited</sub> match

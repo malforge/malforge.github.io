@@ -7,7 +7,7 @@ public void GetAllEntities(ref BoundingBoxD box, List<MyEntity> result, MyEntit
 ## Parameters
 
 * [BoundingBoxD](VRageMath.BoundingBoxD) box
-* [List<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) result
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt; result
 * [MyEntityQueryType](Sandbox.Game.Entities.MyEntityQueryType) qtype
 ## Summary
 
@@ -18,7 +18,7 @@ public void GetAllEntities(ref MyOrientedBoundingBoxD obb, List<MyEntity> resul
 ## Parameters
 
 * [MyOrientedBoundingBoxD](VRageMath.MyOrientedBoundingBoxD) obb
-* [List<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) result
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt; result
 * [MyEntityQueryType](Sandbox.Game.Entities.MyEntityQueryType) qtype
 ## Summary
 
@@ -29,7 +29,7 @@ public void GetAllEntities(ref BoundingSphereD sphere, List<MyEntity> result, M
 ## Parameters
 
 * [BoundingSphereD](VRageMath.BoundingSphereD) sphere
-* [List<MyEntity>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) result
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt; result
 * [MyEntityQueryType](Sandbox.Game.Entities.MyEntityQueryType) qtype
 ## Summary
 
@@ -40,5 +40,5 @@ public void GetAllEntities(ref LineD ray, List<MyLineSegmentOverlapResult<MyEnt
 ## Parameters
 
 * [LineD](VRageMath.LineD) ray
-* [List<MyLineSegmentOverlapResult<MyEntity>>](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6) result
+* [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyLineSegmentOverlapResult](VRageMath.MyLineSegmentOverlapResult{T})&lt;[MyEntity](VRage.Game.Entity.MyEntity)&gt;&gt; result
 * [MyEntityQueryType](Sandbox.Game.Entities.MyEntityQueryType) qtype

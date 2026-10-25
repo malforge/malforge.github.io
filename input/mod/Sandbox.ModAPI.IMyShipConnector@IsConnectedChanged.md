@@ -8,5 +8,5 @@ Raised when is connected is changed
 
 ## Returns
 
-[Action<IMyShipConnector>](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)
+[Action](https://docs.microsoft.com/en-us/dotnet/api/System.Action-1?view=netframework-4.6)&lt;[IMyShipConnector](Sandbox.ModAPI.IMyShipConnector)&gt;
 

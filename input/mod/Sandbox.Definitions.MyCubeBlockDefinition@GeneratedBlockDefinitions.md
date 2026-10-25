@@ -6,5 +6,5 @@ public MyDefinitionId[] GeneratedBlockDefinitions
 
 ## Returns
 
-[MyDefinitionId[]](VRage.Game.MyDefinitionId[])
+[MyDefinitionId[]](VRage.Game.MyDefinitionId)
 
