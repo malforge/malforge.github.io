@@ -29,11 +29,14 @@ Describes ship controller block (cockpit/remote control/cryopod) (mods interface
 
 |Member|Description|
 |---|---|
+|[BuildToolbar](Sandbox.ModAPI.IMyShipController@BuildToolbar)|Gets the toolbar the pilot uses to place blocks while in building mode.|
 |[HasFirstPersonCamera](Sandbox.ModAPI.IMyShipController@HasFirstPersonCamera)|Gets if this ship controller contains a first-person camera view.|
 |[IsDefault3rdView](Sandbox.ModAPI.IMyShipController@IsDefault3rdView)|If player gets into this cockpit for the first time, the camera is in 3rd view|
 |[IsShooting](Sandbox.ModAPI.IMyShipController@IsShooting)|Gets if the ship is shooting selected weapons.|
 |[LastPilot](Sandbox.ModAPI.IMyShipController@LastPilot)|Get the last character that was piloting the controller.|
 |[Pilot](Sandbox.ModAPI.IMyShipController@Pilot)|Get the character that is currently piloting the controller.|
+|[TargetLockToolbar](Sandbox.ModAPI.IMyShipController@TargetLockToolbar)|Gets the toolbar triggered when this block's grid is target locked. Slot 0 fires on lock and slot 1 on losing the lock, each across every page, and only on the server.|
+|[Toolbar](Sandbox.ModAPI.IMyShipController@Toolbar)|Gets the toolbar the pilot drives while controlling this block. This is the primary toolbar, index 0.|
 |[BlockDefinition](VRage.Game.ModAPI.Ingame.IMyCubeBlock@BlockDefinition)|Gets definition.Id assigned to this block<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.Ingame.IMyCubeBlock)_|
 |[CanControlShip](Sandbox.ModAPI.Ingame.IMyShipController@CanControlShip)|Determines whether this specific ship controller is capable of controlling the ship it's installed on.<br /><br />_Inherited from [IMyShipController](Sandbox.ModAPI.Ingame.IMyShipController)_|
 |[CanSwitchLandingGears](VRage.Game.ModAPI.Interfaces.IMyControllableEntity@CanSwitchLandingGears)|Gets if entity can switch landing gears<br /><br />_Inherited from [IMyControllableEntity](VRage.Game.ModAPI.Interfaces.IMyControllableEntity)_|

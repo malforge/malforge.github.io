@@ -56,6 +56,7 @@ public class MyHandItemDefinition: MyDefinitionBase
 |[SimulateRightHand](Sandbox.Definitions.MyHandItemDefinition@SimulateRightHand)||
 |[SimulateRightHandFps](Sandbox.Definitions.MyHandItemDefinition@SimulateRightHandFps)||
 |[SprintSpeedMultiplier](Sandbox.Definitions.MyHandItemDefinition@SprintSpeedMultiplier)||
+|[TargetLockingEnabled](Sandbox.Definitions.MyHandItemDefinition@TargetLockingEnabled)|Opts this hand weapon into target locking: focus rectangles while held, lock-on while aiming down sights, and the lead indicator. Whether a fired missile then homes on the locked target is the ammo's decision.|
 |[ToolMaterial](Sandbox.Definitions.MyHandItemDefinition@ToolMaterial)||
 |[ToolSounds](Sandbox.Definitions.MyHandItemDefinition@ToolSounds)||
 |[WalkSpeedMultiplier](Sandbox.Definitions.MyHandItemDefinition@WalkSpeedMultiplier)||

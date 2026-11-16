@@ -14,6 +14,7 @@ public abstract sealed class MyPlatformGameSettings
 |[static BUGS_REPORT_PAGE](Sandbox.Game.MyPlatformGameSettings@BUGS_REPORT_PAGE)||
 |[static CHARACTER_CONTROLS_GAMEPAD](Sandbox.Game.MyPlatformGameSettings@CHARACTER_CONTROLS_GAMEPAD)||
 |[static CHARACTER_CONTROLS_JOYSTICK](Sandbox.Game.MyPlatformGameSettings@CHARACTER_CONTROLS_JOYSTICK)||
+|[static CHECK_CONTROLLER_ID_IN_BINDINGS](Sandbox.Game.MyPlatformGameSettings@CHECK_CONTROLLER_ID_IN_BINDINGS)|When true, joystick control bindings are matched against the source device slot so two devices can bind the same axis/button to different controls. Off (default) keeps single-device behavior on platforms that support only one controller.|
 |[static CLOUD_ALWAYS_ENABLED](Sandbox.Game.MyPlatformGameSettings@CLOUD_ALWAYS_ENABLED)||
 |[static CONSOLE_COMPATIBLE](Sandbox.Game.MyPlatformGameSettings@CONSOLE_COMPATIBLE)||
 |[static CONSOLE_COMPATIBLE_SEARCH_KEY](Sandbox.Game.MyPlatformGameSettings@CONSOLE_COMPATIBLE_SEARCH_KEY)||
@@ -73,6 +74,7 @@ public abstract sealed class MyPlatformGameSettings
 |[static GAME_SAVES_COMPRESSED_BY_DEFAULT](Sandbox.Game.MyPlatformGameSettings@GAME_SAVES_COMPRESSED_BY_DEFAULT)||
 |[static GAME_SAVES_TO_CLOUD](Sandbox.Game.MyPlatformGameSettings@GAME_SAVES_TO_CLOUD)||
 |[static GAMEPAD_IMAGE](Sandbox.Game.MyPlatformGameSettings@GAMEPAD_IMAGE)||
+|[static GAMEPAD_IMAGE_PLAYSTATION_LAYOUT](Sandbox.Game.MyPlatformGameSettings@GAMEPAD_IMAGE_PLAYSTATION_LAYOUT)|True when [GAMEPAD_IMAGE](Sandbox.Game.MyPlatformGameSettings@GAMEPAD_IMAGE) shows a PlayStation pad, which has the D-pad and the left stick in the opposite positions to the Xbox pad the controller scheme labels are laid out for.|
 |[static GENERATE_ANALYTICS_ID_WHEN_USER_OFFLINE](Sandbox.Game.MyPlatformGameSettings@GENERATE_ANALYTICS_ID_WHEN_USER_OFFLINE)||
 |[static GLOBAL_ENCOUTER_CAP_DEFAULT](Sandbox.Game.MyPlatformGameSettings@GLOBAL_ENCOUTER_CAP_DEFAULT)||
 |[static GLOBAL_ENCOUTER_CAP_MAX](Sandbox.Game.MyPlatformGameSettings@GLOBAL_ENCOUTER_CAP_MAX)||
@@ -106,18 +108,22 @@ public abstract sealed class MyPlatformGameSettings
 |[static MODIO_PORTAL](Sandbox.Game.MyPlatformGameSettings@MODIO_PORTAL)||
 |[static MODIO_TEST_APIKEY](Sandbox.Game.MyPlatformGameSettings@MODIO_TEST_APIKEY)||
 |[static MODIO_TEST_GAMEID](Sandbox.Game.MyPlatformGameSettings@MODIO_TEST_GAMEID)||
-|[static NAVMESH_CELL_SIZE](Sandbox.Game.MyPlatformGameSettings@NAVMESH_CELL_SIZE)|Recast horizontal cell size. Smaller = finer navmesh detail (narrow stairs become traversable) at quadratic memory/CPU cost.|
+|[static NAVMESH_CELL_HEIGHT](Sandbox.Game.MyPlatformGameSettings@NAVMESH_CELL_HEIGHT)|Recast vertical cell size. An edge up to one cell above the agent's climb still connects, so this bounds how closely the navmesh follows the highest step an NPC can mount. An even number of cells per 2.5 m block.|
+|[static NAVMESH_CELL_SIZE](Sandbox.Game.MyPlatformGameSettings@NAVMESH_CELL_SIZE)|Recast horizontal cell size. Smaller = finer navmesh detail (narrow stairs become traversable) at quadratic memory/CPU cost. An odd number of cells per 2.5 m block, so every block of a base sits at the same lattice phase.|
+|[static NAVMESH_MIN_AGENT_CLIMB](Sandbox.Game.MyPlatformGameSettings@NAVMESH_MIN_AGENT_CLIMB)|Floor on the navmesh climb of humanoid (door-opening) agents, for platforms whose cells or RecastDetour library cannot pass a stair tread at the agent's own climb. Wildlife keeps its own value.|
 |[static NEED_TO_CONVERT_IDS](Sandbox.Game.MyPlatformGameSettings@NEED_TO_CONVERT_IDS)||
 |[static OFFLINE_TOTAL_PCU_MAX](Sandbox.Game.MyPlatformGameSettings@OFFLINE_TOTAL_PCU_MAX)||
 |[static PREFER_ONLINE](Sandbox.Game.MyPlatformGameSettings@PREFER_ONLINE)||
 |[static PUBLIC_BETA_MP_TEST](Sandbox.Game.MyPlatformGameSettings@PUBLIC_BETA_MP_TEST)||
 |[static REFRESH_EOS_JOIN_REQUEST_EVENTS_ON_WAKEUP](Sandbox.Game.MyPlatformGameSettings@REFRESH_EOS_JOIN_REQUEST_EVENTS_ON_WAKEUP)||
+|[static RENDER_PLATFORM](Sandbox.Game.MyPlatformGameSettings@RENDER_PLATFORM)||
 |[static REPLACE_PS_PLATFORM_ICON](Sandbox.Game.MyPlatformGameSettings@REPLACE_PS_PLATFORM_ICON)||
 |[static SAVE_TO_CLOUD_OPTION_AVAILABLE](Sandbox.Game.MyPlatformGameSettings@SAVE_TO_CLOUD_OPTION_AVAILABLE)||
 |[static SAVE_TO_CLOUD_OPTION_ENABLED_BY_DEFAULT](Sandbox.Game.MyPlatformGameSettings@SAVE_TO_CLOUD_OPTION_ENABLED_BY_DEFAULT)||
 |[static SERVER_TOTAL_PCU_MAX](Sandbox.Game.MyPlatformGameSettings@SERVER_TOTAL_PCU_MAX)||
 |[static SHIP_CONTROLS_GAMEPAD](Sandbox.Game.MyPlatformGameSettings@SHIP_CONTROLS_GAMEPAD)||
 |[static SHIP_CONTROLS_JOYSTICK](Sandbox.Game.MyPlatformGameSettings@SHIP_CONTROLS_JOYSTICK)||
+|[static SHOW_ALT_GR_KEYBOARD_OPTION](Sandbox.Game.MyPlatformGameSettings@SHOW_ALT_GR_KEYBOARD_OPTION)||
 |[static SHOW_ALTF11_DEBUG](Sandbox.Game.MyPlatformGameSettings@SHOW_ALTF11_DEBUG)||
 |[static SHOW_CONTROLLER_SELECTION](Sandbox.Game.MyPlatformGameSettings@SHOW_CONTROLLER_SELECTION)||
 |[static SHOW_DISPLAY_GRAPHIC_OPTIONS](Sandbox.Game.MyPlatformGameSettings@SHOW_DISPLAY_GRAPHIC_OPTIONS)||
@@ -129,14 +135,11 @@ public abstract sealed class MyPlatformGameSettings
 |[static SHOW_ONLY_COMPATIBLE_SERVICE_LOBBY](Sandbox.Game.MyPlatformGameSettings@SHOW_ONLY_COMPATIBLE_SERVICE_LOBBY)||
 |[static SHOW_ONLY_SAME_SERVICE_LOBBY](Sandbox.Game.MyPlatformGameSettings@SHOW_ONLY_SAME_SERVICE_LOBBY)||
 |[static SHOW_PICTURES_MAIN_MENU](Sandbox.Game.MyPlatformGameSettings@SHOW_PICTURES_MAIN_MENU)||
-|[static SHOW_QUICKSTART_MENU_BUTTON](Sandbox.Game.MyPlatformGameSettings@SHOW_QUICKSTART_MENU_BUTTON)||
 |[static SHOW_SCRIPTS_AUTHOR](Sandbox.Game.MyPlatformGameSettings@SHOW_SCRIPTS_AUTHOR)||
 |[static SHOW_VOICE_MUTE_IN_PLAYER_SCREEN](Sandbox.Game.MyPlatformGameSettings@SHOW_VOICE_MUTE_IN_PLAYER_SCREEN)||
 |[static SIMPLIFIED_SIMULATION_OVERRIDE](Sandbox.Game.MyPlatformGameSettings@SIMPLIFIED_SIMULATION_OVERRIDE)||
 |[static SUPPORT_COMMUNITY_TRANSLATIONS](Sandbox.Game.MyPlatformGameSettings@SUPPORT_COMMUNITY_TRANSLATIONS)||
 |[static SYNCHRONIZED_PLANET_LOADING](Sandbox.Game.MyPlatformGameSettings@SYNCHRONIZED_PLANET_LOADING)||
-|[static TUTORIAL_PARTS_URLS_CONTROLLER](Sandbox.Game.MyPlatformGameSettings@TUTORIAL_PARTS_URLS_CONTROLLER)||
-|[static TUTORIAL_PARTS_URLS_KEYBOARD](Sandbox.Game.MyPlatformGameSettings@TUTORIAL_PARTS_URLS_KEYBOARD)||
 |[static UGC_TEST_ENVIRONMENT](Sandbox.Game.MyPlatformGameSettings@UGC_TEST_ENVIRONMENT)||
 |[static USE_REDACTED_USERID](Sandbox.Game.MyPlatformGameSettings@USE_REDACTED_USERID)||
 |[static USE_SCENARIOSELECTION_NEWGAME_SCREEN](Sandbox.Game.MyPlatformGameSettings@USE_SCENARIOSELECTION_NEWGAME_SCREEN)||

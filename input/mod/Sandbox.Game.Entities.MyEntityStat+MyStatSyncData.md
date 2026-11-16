@@ -10,6 +10,7 @@ public struct MyStatSyncData
 |---|---|
 |[Amount](Sandbox.Game.Entities.MyEntityStat+MyStatSyncData@Amount)||
 |[ChangeInfo](Sandbox.Game.Entities.MyEntityStat+MyStatSyncData@ChangeInfo)||
+|[MaxValue](Sandbox.Game.Entities.MyEntityStat+MyStatSyncData@MaxValue)||
 |[RegenLeft](Sandbox.Game.Entities.MyEntityStat+MyStatSyncData@RegenLeft)||
 |[StatId](Sandbox.Game.Entities.MyEntityStat+MyStatSyncData@StatId)||
 

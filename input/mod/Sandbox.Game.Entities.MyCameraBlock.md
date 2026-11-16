@@ -9,7 +9,9 @@ public class MyCameraBlock: MyFunctionalBlock, IMyEntity, IMyEntity, IMyComponen
 |Member|Description|
 |---|---|
 |[static DUMMY_NAME_POSITION](Sandbox.Game.Entities.MyCameraBlock@DUMMY_NAME_POSITION)||
+|[static ID_ENABLE_PANNING](Sandbox.Game.Entities.MyCameraBlock@ID_ENABLE_PANNING)||
 |[static ID_VIEW](Sandbox.Game.Entities.MyCameraBlock@ID_VIEW)||
+|[static ID_VIEW_ROTATION](Sandbox.Game.Entities.MyCameraBlock@ID_VIEW_ROTATION)||
 
 ## Events
 
@@ -38,11 +40,13 @@ public class MyCameraBlock: MyFunctionalBlock, IMyEntity, IMyEntity, IMyComponen
 |---|---|
 |[BlockDefinition](Sandbox.Game.Entities.MyCameraBlock@BlockDefinition)||
 |[EnableFirstPersonView](Sandbox.Game.Entities.MyCameraBlock@EnableFirstPersonView)||
+|[EnablePanning](Sandbox.Game.Entities.MyCameraBlock@EnablePanning)||
 |[EnableRaycast](Sandbox.Game.Entities.MyCameraBlock@EnableRaycast)||
 |[Entity](Sandbox.Game.Entities.MyCameraBlock@Entity)||
 |[ForceFirstPersonCamera](Sandbox.Game.Entities.MyCameraBlock@ForceFirstPersonCamera)||
 |[IsActive](Sandbox.Game.Entities.MyCameraBlock@IsActive)||
 |[IsInFirstPersonView](Sandbox.Game.Entities.MyCameraBlock@IsInFirstPersonView)||
+|[ViewRotation](Sandbox.Game.Entities.MyCameraBlock@ViewRotation)||
 |[AllowCubeBuilding](VRage.Game.ModAPI.Interfaces.IMyCameraController@AllowCubeBuilding)|Gets if player block building enabled<br /><br />_Inherited from [IMyCameraController](VRage.Game.ModAPI.Interfaces.IMyCameraController)_|
 |[AvailableScanRange](Sandbox.ModAPI.Ingame.IMyCameraBlock@AvailableScanRange)|Gets the maximum distance that this camera can scan, based on the time since the last scan.<br /><br />_Inherited from [IMyCameraBlock](Sandbox.ModAPI.Ingame.IMyCameraBlock)_|
 |[BlockDefinition](VRage.Game.ModAPI.Ingame.IMyCubeBlock@BlockDefinition)|Gets definition.Id assigned to this block<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.Ingame.IMyCubeBlock)_|
@@ -175,6 +179,7 @@ public class MyCameraBlock: MyFunctionalBlock, IMyEntity, IMyEntity, IMyComponen
 |[OnReleaseControl(IMyCameraController)](Sandbox.Game.Entities.MyCameraBlock@OnReleaseControl)||
 |[Raycast(double, Vector3D)](Sandbox.Game.Entities.MyCameraBlock@Raycast)||
 |[RequestSetView()](Sandbox.Game.Entities.MyCameraBlock@RequestSetView)||
+|[ResetPan()](Sandbox.Game.Entities.MyCameraBlock@ResetPan)||
 |[Rotate(Vector2, float)](Sandbox.Game.Entities.MyCameraBlock@Rotate)||
 |[RotateStopped()](Sandbox.Game.Entities.MyCameraBlock@RotateStopped)||
 |[SetEmissiveStateWorking()](Sandbox.Game.Entities.MyCameraBlock@SetEmissiveStateWorking)||

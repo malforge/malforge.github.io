@@ -69,10 +69,6 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="VRageRender.MyEnvironmentLightData@__pad.html">__pad</a></td>
-<td></td>
-</tr>
-<tr>
 <td><a href="VRageRender.MyEnvironmentLightData@AmbientDiffuseFactor.html">AmbientDiffuseFactor</a></td>
 <td></td>
 </tr>
@@ -131,6 +127,10 @@
 <tr>
 <td><a href="VRageRender.MyEnvironmentLightData@MaxTileLigths.html">MaxTileLigths</a></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="VRageRender.MyEnvironmentLightData@PointShadowResolutionPadding.html">PointShadowResolutionPadding</a></td>
+<td>Padding, kept because it is part of the constant buffer's layout that DX11 and DX12 share. It carried the per-tier point-shadow resolutions until each cube got a size of its own, which travels in the b1 info row.</td>
 </tr>
 <tr>
 <td><a href="VRageRender.MyEnvironmentLightData@ShadowFadeoutMultiplier.html">ShadowFadeoutMultiplier</a></td>

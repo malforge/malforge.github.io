@@ -10,6 +10,7 @@ public class MyBehaviorDefinition: MyDefinitionBase
 |---|---|
 |[Behavior](Sandbox.Definitions.MyBehaviorDefinition@Behavior)||
 |[FirstNode](Sandbox.Definitions.MyBehaviorDefinition@FirstNode)||
+|[PreemptOnTakeover](Sandbox.Definitions.MyBehaviorDefinition@PreemptOnTakeover)||
 |[ResetMemoryOnNodeExit](Sandbox.Definitions.MyBehaviorDefinition@ResetMemoryOnNodeExit)||
 |[AvailableInSurvival](VRage.Game.MyDefinitionBase@AvailableInSurvival)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Context](VRage.Game.MyDefinitionBase@Context)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|

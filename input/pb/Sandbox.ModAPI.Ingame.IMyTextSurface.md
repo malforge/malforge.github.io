@@ -43,6 +43,7 @@ Describes one of block LCDs where you can write text or draw things (PB scriptin
 |[GetSprites(List<string>)](Sandbox.ModAPI.Ingame.IMyTextSurface@GetSprites)|Gets a list of available sprites|
 |[GetText()](Sandbox.ModAPI.Ingame.IMyTextSurface@GetText)|Gets current text that is written on surface. Allocates memory (StringBuilder.ToString())! This method doesn't allocate memory [ReadText(StringBuilder, bool)](Sandbox.ModAPI.Ingame.IMyTextSurface@ReadText) |
 |[MeasureStringInPixels(StringBuilder, string, float)](Sandbox.ModAPI.Ingame.IMyTextSurface@MeasureStringInPixels)|Calculates how many pixels a string of a given font and scale will take up.|
+|[MeasureStringInPixels(string, string, float)](Sandbox.ModAPI.Ingame.IMyTextSurface@MeasureStringInPixels)|Calculates how many pixels a string of a given font and scale will take up.|
 |[ReadText(StringBuilder, bool)](Sandbox.ModAPI.Ingame.IMyTextSurface@ReadText)|Gets current text that is written on surface.|
 |[RemoveImageFromSelection(string, bool)](Sandbox.ModAPI.Ingame.IMyTextSurface@RemoveImageFromSelection)|Removes image from shown images.|
 |[RemoveImagesFromSelection(List<string>, bool)](Sandbox.ModAPI.Ingame.IMyTextSurface@RemoveImagesFromSelection)|Removes images from shown images.|

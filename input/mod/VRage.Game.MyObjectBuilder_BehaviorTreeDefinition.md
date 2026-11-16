@@ -10,6 +10,7 @@ public class MyObjectBuilder_BehaviorTreeDefinition: MyObjectBuilder_DefinitionB
 |---|---|
 |[Behavior](VRage.Game.MyObjectBuilder_BehaviorTreeDefinition@Behavior)||
 |[FirstNode](VRage.Game.MyObjectBuilder_BehaviorTreeDefinition@FirstNode)||
+|[PreemptOnTakeover](VRage.Game.MyObjectBuilder_BehaviorTreeDefinition@PreemptOnTakeover)|True: a RUNNING branch exits only when the tick ends on a different path. False: legacy, any RUNNING-capable node evaluated off the running path aborts it in place. Must be set explicitly per tree.|
 |[ResetMemoryOnNodeExit](VRage.Game.MyObjectBuilder_BehaviorTreeDefinition@ResetMemoryOnNodeExit)||
 |[AvailableInSurvival](VRage.Game.MyObjectBuilder_DefinitionBase@AvailableInSurvival)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[Description](VRage.Game.MyObjectBuilder_DefinitionBase@Description)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|

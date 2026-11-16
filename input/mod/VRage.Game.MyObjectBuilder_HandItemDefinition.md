@@ -65,6 +65,7 @@ public class MyObjectBuilder_HandItemDefinition: MyObjectBuilder_DefinitionBase
 |[SimulateRightHand](VRage.Game.MyObjectBuilder_HandItemDefinition@SimulateRightHand)||
 |[SimulateRightHandFps](VRage.Game.MyObjectBuilder_HandItemDefinition@SimulateRightHandFps)||
 |[SprintSpeedMultiplier](VRage.Game.MyObjectBuilder_HandItemDefinition@SprintSpeedMultiplier)||
+|[TargetLockingEnabled](VRage.Game.MyObjectBuilder_HandItemDefinition@TargetLockingEnabled)|Opts this hand weapon into target locking: focus rectangles while held, lock-on while aiming down sights, and the lead indicator. Whether a fired missile then homes on the locked target is the ammo's decision.|
 |[ToolMaterial](VRage.Game.MyObjectBuilder_HandItemDefinition@ToolMaterial)||
 |[ToolSounds](VRage.Game.MyObjectBuilder_HandItemDefinition@ToolSounds)||
 |[WalkSpeedMultiplier](VRage.Game.MyObjectBuilder_HandItemDefinition@WalkSpeedMultiplier)||

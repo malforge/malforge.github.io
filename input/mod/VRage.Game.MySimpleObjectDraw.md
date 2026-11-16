@@ -16,7 +16,7 @@ public abstract sealed class MySimpleObjectDraw
 |Member|Description|
 |---|---|
 |[static DrawAttachedTransparentBox(ref MatrixD, ref BoundingBoxD, ref Color, uint, ref MatrixD, MySimpleObjectRasterizer, int, float, MyStringId?, MyStringId?, bool)](VRage.Game.MySimpleObjectDraw@DrawAttachedTransparentBox)||
-|[static DrawAttachedTransparentBox(ref MatrixD, ref BoundingBoxD, ref Color, uint, ref MatrixD, MySimpleObjectRasterizer, Vector3I, float, MyStringId?, MyStringId?, bool, BlendTypeEnum)](VRage.Game.MySimpleObjectDraw@DrawAttachedTransparentBox)||
+|[static DrawAttachedTransparentBox(ref MatrixD, ref BoundingBoxD, ref Color, uint, ref MatrixD, MySimpleObjectRasterizer, Vector3I, float, MyStringId?, MyStringId?, bool, BlendTypeEnum, bool)](VRage.Game.MySimpleObjectDraw@DrawAttachedTransparentBox)||
 |[static DrawLine(Vector3D, Vector3D, MyStringId?, ref Vector4, float, BlendTypeEnum)](VRage.Game.MySimpleObjectDraw@DrawLine)||
 |[static DrawTransparentBox(ref MatrixD, ref BoundingBoxD, ref Color, MySimpleObjectRasterizer, int, float, MyStringId?, MyStringId?, bool, int, BlendTypeEnum, float, List<MyBillboard>)](VRage.Game.MySimpleObjectDraw@DrawTransparentBox)||
 |[static DrawTransparentBox(ref MatrixD, ref BoundingBoxD, ref Color, ref Color, MySimpleObjectRasterizer, int, float, MyStringId?, MyStringId?, bool, int, BlendTypeEnum, float, List<MyBillboard>)](VRage.Game.MySimpleObjectDraw@DrawTransparentBox)||

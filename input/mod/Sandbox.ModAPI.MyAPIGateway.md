@@ -13,6 +13,7 @@ This is entry point for entire scripting possibilities in game
 |[static ContractSystem](Sandbox.ModAPI.MyAPIGateway@ContractSystem)|IMyContractSystem allows you add or edit contracts|
 |[static CubeBuilder](Sandbox.ModAPI.MyAPIGateway@CubeBuilder)|IMyCubeBuilder represents building hand|
 |[static DLC](Sandbox.ModAPI.MyAPIGateway@DLC)|Provides access for checking installation state of DLCs, and if DLC required by a definition is present.|
+|[static GeneratedTextures](Sandbox.ModAPI.MyAPIGateway@GeneratedTextures)|Lets a mod create textures it fills with its own pixels, for drawing as ordinary textures — on an LCD, for instance.|
 |[static GravityProviderSystem](Sandbox.ModAPI.MyAPIGateway@GravityProviderSystem)|Provides access to gravity control|
 |[static GridGroups](Sandbox.ModAPI.MyAPIGateway@GridGroups)|Provides access to the Grid Group system|
 |[static Gui](Sandbox.ModAPI.MyAPIGateway@Gui)|IMyGui exposes some useful values from the GUI systems|

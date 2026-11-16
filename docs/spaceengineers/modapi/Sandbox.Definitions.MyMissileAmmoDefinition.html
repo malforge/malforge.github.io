@@ -69,7 +69,63 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@CanBeTargeted.html">CanBeTargeted</a></td>
+<td>Whether turrets running with the Target Missiles option on may pick this ammo as a target. Turn it off for ammo that only nominally is a missile - slugs and cannon shells - so turrets keep shooting at real threats.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@CanDistract.html">CanDistract</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@CanSeek.html">CanSeek</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@CanSeekCharacters.html">CanSeekCharacters</a></td>
+<td>Whether a character may be inherited as this ammo's homing target. Off means a locked character is not a usable target: the missile is dumb-fired, and a launcher with Require Target Lock refuses the shot.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@CountermeasureResilience.html">CountermeasureResilience</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@EnforceConeOnLaunch.html">EnforceConeOnLaunch</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@ExplosionFlags.html">ExplosionFlags</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@Guidance.html">Guidance</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@GuidanceRange.html">GuidanceRange</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@Integrity.html">Integrity</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@Lifetime.html">Lifetime</a></td>
+<td>Seconds before the missile self-destructs regardless of distance; 0 disables the timer, leaving MaxTrajectory as the only range limit.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@LockMaintainConeDegrees.html">LockMaintainConeDegrees</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@LockOnConeDegrees.html">LockOnConeDegrees</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@MaxLaunchOffAxisDegrees.html">MaxLaunchOffAxisDegrees</a></td>
+<td>Widest angle between the launcher's forward and the target at which an AI combat block may still fire this ammo, in degrees; 0 keeps the attack pattern's own firing angle. Only seeking ammo can convert an off-axis launch into a hit, so keep it within what MaxTurnRateDegreesPerSecond and Lifetime can actually recover.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@MaxTurnRateDegreesPerSecond.html">MaxTurnRateDegreesPerSecond</a></td>
 <td></td>
 </tr>
 <tr>
@@ -121,6 +177,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@MissilePreserveLaunchMomentum.html">MissilePreserveLaunchMomentum</a></td>
+<td>Keeps momentum inherited from the launching grid out of the missile's heading: the nose is not snapped onto the travel direction while that momentum dominates, and the velocity is swung onto the nose at MaxTurnRateDegreesPerSecond instead of instantly. Required by ammo whose MissileInitialSpeed is well below grid speeds. Not for ammo relying on MissileGravityEnabled, whose arc the velocity turn would cancel out.</td>
+</tr>
+<tr>
 <td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@MissileRicochetDamage.html">MissileRicochetDamage</a></td>
 <td></td>
 </tr>
@@ -130,6 +190,10 @@
 </tr>
 <tr>
 <td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@MissileTrailEffect.html">MissileTrailEffect</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyMissileAmmoDefinition@SeekDelay.html">SeekDelay</a></td>
 <td></td>
 </tr>
 <tr>

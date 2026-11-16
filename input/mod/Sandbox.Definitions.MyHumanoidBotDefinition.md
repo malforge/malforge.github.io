@@ -13,11 +13,33 @@ public class MyHumanoidBotDefinition: MyAgentDefinition
 |[static DEFAULT_AGENT_MAX_SLOPE](Sandbox.Definitions.MyAgentDefinition@DEFAULT_AGENT_MAX_SLOPE)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[static DEFAULT_AGENT_RADIUS](Sandbox.Definitions.MyAgentDefinition@DEFAULT_AGENT_RADIUS)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[static DEFAULT_PATH_ARRIVAL_RADIUS](Sandbox.Definitions.MyAgentDefinition@DEFAULT_PATH_ARRIVAL_RADIUS)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[static DEFAULT_PATHFINDING_RADIUS](Sandbox.Definitions.MyAgentDefinition@DEFAULT_PATHFINDING_RADIUS)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[AdditionalAimErrorAngle](Sandbox.Definitions.MyHumanoidBotDefinition@AdditionalAimErrorAngle)|Extra aiming error applied on top of weapon spread, in radians (degrees in XML).|
+|[AlertMergeDistance](Sandbox.Definitions.MyHumanoidBotDefinition@AlertMergeDistance)|Meters. An alert written this close to the one the squad already holds is the same event going on (a burst, a hull under fire) and only refreshes it; a farther one restarts the alert phases at the new point.|
+|[AllowRouteFlight](Sandbox.Definitions.MyHumanoidBotDefinition@AllowRouteFlight)|False keeps the bot walking-only: navigation never arbitrates an unreachable goal into a jetpack flight route. Explicit flight orders (FlyTo behavior tree leaves) are unaffected.|
 |[BlockInteractionAnimation](Sandbox.Definitions.MyHumanoidBotDefinition@BlockInteractionAnimation)||
+|[CanTargetBlocks](Sandbox.Definitions.MyHumanoidBotDefinition@CanTargetBlocks)|The bot may hold a block or grid as its AI target, e.g. the seat of a boarded player.|
+|[ChatMessageSet](Sandbox.Definitions.MyHumanoidBotDefinition@ChatMessageSet)|Subtype of the [MyNpcChatMessageSetDefinition](Sandbox.Definitions.MyNpcChatMessageSetDefinition) this bot speaks from; null means the bot never chats.|
+|[CoverHoldMaxSeconds](Sandbox.Definitions.MyHumanoidBotDefinition@CoverHoldMaxSeconds)||
+|[CoverHoldMinSeconds](Sandbox.Definitions.MyHumanoidBotDefinition@CoverHoldMinSeconds)|Seconds a bot holds cover from a threatening turret before a launcher carrier peeks out; rolled between min and max.|
+|[FlightRetargetDistance](Sandbox.Definitions.MyHumanoidBotDefinition@FlightRetargetDistance)|Meters. A goal that moves less than this while the bot flies to it keeps the current flight leg.|
 |[InventoryItems](Sandbox.Definitions.MyHumanoidBotDefinition@InventoryItems)||
+|[LauncherSightRange](Sandbox.Definitions.MyHumanoidBotDefinition@LauncherSightRange)|Meters. Sight range of a bot carrying a rocket launcher; at least [RocketLauncherPreferredDistance](Sandbox.Definitions.MyHumanoidBotDefinition@RocketLauncherPreferredDistance) .|
+|[MaxFlightSiteChecks](Sandbox.Definitions.MyHumanoidBotDefinition@MaxFlightSiteChecks)|Flight sites checked for walking reachability per decision.|
+|[MaxRockets](Sandbox.Definitions.MyHumanoidBotDefinition@MaxRockets)|Rocket budget per bot; 0 = unlimited.|
 |[PlayerGreetingAnimation](Sandbox.Definitions.MyHumanoidBotDefinition@PlayerGreetingAnimation)||
+|[ReloadMagazineFraction](Sandbox.Definitions.MyHumanoidBotDefinition@ReloadMagazineFraction)|Fraction of the magazine capacity (0..1) at or below which a bot holding a rifle or pistol reloads instead of firing the last rounds; launchers reload only when empty.|
+|[RocketBlastSafetyFactor](Sandbox.Definitions.MyHumanoidBotDefinition@RocketBlastSafetyFactor)|Minimum rocket launch distance is the missile explosion radius times this factor; at least 1.|
+|[RocketLauncherPreferredDistance](Sandbox.Definitions.MyHumanoidBotDefinition@RocketLauncherPreferredDistance)|Meters. A character at least this far away makes a launcher-carrying bot draw the launcher.|
+|[RocketLauncherReleaseDistance](Sandbox.Definitions.MyHumanoidBotDefinition@RocketLauncherReleaseDistance)|Meters. Below this a bot holding the launcher returns to its rifle or pistol; never above [RocketLauncherPreferredDistance](Sandbox.Definitions.MyHumanoidBotDefinition@RocketLauncherPreferredDistance) .|
+|[RocketRegenerationSeconds](Sandbox.Definitions.MyHumanoidBotDefinition@RocketRegenerationSeconds)|Seconds until one spent rocket token comes back.|
+|[RouteFlightFailureCooldown](Sandbox.Definitions.MyHumanoidBotDefinition@RouteFlightFailureCooldown)|Seconds after a failed jetpack flight during which navigation only walks.|
+|[SmallArmsFireRange](Sandbox.Definitions.MyHumanoidBotDefinition@SmallArmsFireRange)|Meters. A bot holding a rifle or pistol (any gun but the launcher) fires only inside this distance and closes in until it is; never above [SmallArmsSightRange](Sandbox.Definitions.MyHumanoidBotDefinition@SmallArmsSightRange) .|
+|[SmallArmsSightRange](Sandbox.Definitions.MyHumanoidBotDefinition@SmallArmsSightRange)|Meters. Sight range of a bot with no rocket launcher in its inventory: acquisition, tracking and shooting all stop here.|
 |[StartingWeaponDefinitionId](Sandbox.Definitions.MyHumanoidBotDefinition@StartingWeaponDefinitionId)||
-|[AgentHeight](Sandbox.Definitions.MyAgentDefinition@AgentHeight)|This and AgentRadius/AgentMaxClimb are discretized at navmesh build: height & climb against MyRecastOptions.cellHeight, radius against MyPlatformGameSettings.NAVMESH_CELL_SIZE. SBC values are snapped to the Steam grid: the number is what Recast uses on Steam, and on console (coarser cellSize) it rounds up to the next cell count.<br /><br />_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[UseDoorFlightSites](Sandbox.Definitions.MyHumanoidBotDefinition@UseDoorFlightSites)|Doors the bot can open count as takeoff and landing sites.|
+|[UseFlightSites](Sandbox.Definitions.MyHumanoidBotDefinition@UseFlightSites)|A bot on a large grid takes off only from air connected to open space, and lands where it can walk to its goal.|
+|[AgentHeight](Sandbox.Definitions.MyAgentDefinition@AgentHeight)|This and AgentRadius/AgentMaxClimb are discretized at navmesh build: height & climb against MyPlatformGameSettings.NAVMESH_CELL_HEIGHT, radius against MyPlatformGameSettings.NAVMESH_CELL_SIZE. Height and radius round up to whole cells, climb rounds down and is raised to at least MyPlatformGameSettings.NAVMESH_MIN_AGENT_CLIMB.<br /><br />_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AgentMaxClimb](Sandbox.Definitions.MyAgentDefinition@AgentMaxClimb)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AgentMaxSlope](Sandbox.Definitions.MyAgentDefinition@AgentMaxSlope)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AgentRadius](Sandbox.Definitions.MyAgentDefinition@AgentRadius)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
@@ -49,6 +71,7 @@ public class MyHumanoidBotDefinition: MyAgentDefinition
 |[Invulnerable](Sandbox.Definitions.MyAgentDefinition@Invulnerable)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[JoinSpawnerFaction](Sandbox.Definitions.MyAgentDefinition@JoinSpawnerFaction)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[PathArrivalRadius](Sandbox.Definitions.MyAgentDefinition@PathArrivalRadius)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[PathfindingRadius](Sandbox.Definitions.MyAgentDefinition@PathfindingRadius)|Clearance radius (meters) used when querying the grid octree pathfinding for flight routes.<br /><br />_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[Public](VRage.Game.MyDefinitionBase@Public)|Indicates if definition should be offered in Cube builder<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[RemoveAfterDeath](Sandbox.Definitions.MyAgentDefinition@RemoveAfterDeath)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[RemoveTimeMs](Sandbox.Definitions.MyAgentDefinition@RemoveTimeMs)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
@@ -88,6 +111,7 @@ public class MyHumanoidBotDefinition: MyAgentDefinition
 |[AddItems(MyCharacter)](Sandbox.Definitions.MyAgentDefinition@AddItems)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AddItems(MyCharacter)](Sandbox.Definitions.MyBotDefinition@AddItems)|_Inherited from [MyBotDefinition](Sandbox.Definitions.MyBotDefinition)_|
 |[CheckDefinitionDLCs(String[])](VRage.Game.MyDefinitionBase@CheckDefinitionDLCs)|Checks if the definition has all required DLCs as it should have<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[GetBotModel(float)](Sandbox.Definitions.MyAgentDefinition@GetBotModel)|Picks a character model from BotModels by weight, or returns BotModel when none are valid.<br /><br />_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[GetObjectBuilder()](VRage.Game.MyDefinitionBase@GetObjectBuilder)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Init(MyObjectBuilder_DefinitionBase, MyModContext)](VRage.Game.MyDefinitionBase@Init)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Postprocess()](VRage.Game.MyDefinitionBase@Postprocess)|Override this in case you want to do some postprocessing of the definition before the game starts. Prefer to use MyDefinitionPostprocessor instead.Postprocess is useful if you want to process the definition before the game begins,<br /><br />but you only want to do it when all the definitions are loaded and merged.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|

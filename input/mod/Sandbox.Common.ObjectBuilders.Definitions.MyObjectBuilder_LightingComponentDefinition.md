@@ -9,6 +9,7 @@ public class MyObjectBuilder_LightingComponentDefinition: MyObjectBuilder_Compon
 |Member|Description|
 |---|---|
 |[Flare](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingComponentDefinition@Flare)||
+|[GroupLightDummies](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingComponentDefinition@GroupLightDummies)|Marks the block's own light dummies as effects-only and lights the block with a single source added at their center, so a cluster of dummies costs one lit and shadowed light instead of one per dummy.|
 |[LightBlinkIntervalSeconds](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingComponentDefinition@LightBlinkIntervalSeconds)||
 |[LightBlinkLength](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingComponentDefinition@LightBlinkLength)||
 |[LightBlinkOffset](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_LightingComponentDefinition@LightBlinkOffset)||

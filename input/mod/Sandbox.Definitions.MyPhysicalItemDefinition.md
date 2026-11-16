@@ -12,10 +12,12 @@ public class MyPhysicalItemDefinition: MyDefinitionBase
 |[CanPlayerOffer](Sandbox.Definitions.MyPhysicalItemDefinition@CanPlayerOffer)||
 |[CanPlayerOrder](Sandbox.Definitions.MyPhysicalItemDefinition@CanPlayerOrder)||
 |[CanSpawnFromScreen](Sandbox.Definitions.MyPhysicalItemDefinition@CanSpawnFromScreen)||
+|[ColorMaskHsv](Sandbox.Definitions.MyPhysicalItemDefinition@ColorMaskHsv)||
 |[DepositAllEnabled](Sandbox.Definitions.MyPhysicalItemDefinition@DepositAllEnabled)||
 |[DestroyedPieceId](Sandbox.Definitions.MyPhysicalItemDefinition@DestroyedPieceId)||
 |[DestroyedPieces](Sandbox.Definitions.MyPhysicalItemDefinition@DestroyedPieces)||
 |[DestroySound](Sandbox.Definitions.MyPhysicalItemDefinition@DestroySound)||
+|[ExplosiveDamageMultiplier](Sandbox.Definitions.MyPhysicalItemDefinition@ExplosiveDamageMultiplier)||
 |[Health](Sandbox.Definitions.MyPhysicalItemDefinition@Health)||
 |[IconSymbol](Sandbox.Definitions.MyPhysicalItemDefinition@IconSymbol)||
 |[Mass](Sandbox.Definitions.MyPhysicalItemDefinition@Mass)||

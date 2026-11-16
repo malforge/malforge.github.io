@@ -55,6 +55,7 @@
 <h2 id="summary">Summary</h2>
 <pre><code class="language-csharp">public static float RoundOn2(float x)
 </code></pre>
+<p>Rounds to two decimal places. Not through an int: every renderer passes squared camera distances here and those leave int's range at 4.6 km, where the cast wrapped them to a large negative - which reads as the nearest thing in the scene to anything ordering by distance.</p>
 <h2 id="returns">Returns</h2>
 <p><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6">float</a></p>
 <h2 id="parameters">Parameters</h2>

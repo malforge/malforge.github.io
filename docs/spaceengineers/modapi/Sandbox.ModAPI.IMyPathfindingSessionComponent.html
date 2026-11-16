@@ -69,6 +69,10 @@
 <td><a href="Sandbox.ModAPI.IMyPathfindingSessionComponent@FindAvoidPath.html">FindAvoidPath(IMyEntity, Vector3D, Vector3D, float, out MyAutopilotPathfindingState)</a></td>
 <td>Finds the path between start and end position</td>
 </tr>
+<tr>
+<td><a href="Sandbox.ModAPI.IMyPathfindingSessionComponent@FindAvoidPath.html">FindAvoidPath(IMyEntity, Vector3D, Vector3D, float, out MyAutopilotPathfindingState, bool)</a></td>
+<td>As <a href="Sandbox.ModAPI.IMyPathfindingSessionComponent@FindAvoidPath.html">FindAvoidPath(IMyEntity, Vector3D, Vector3D, float, out MyAutopilotPathfindingState)</a> , but withsnapToRoutableVertexan endpoint that resolves to an unusable vertex (disabled, reserved, or edge-less) may snap to the nearest usable vertex in the surrounding cells. Meant for character flight, whose endpoints routinely sit in cells solidified by thin blocks; ship collision avoidance keeps the strict resolution.</td>
+</tr>
 </tbody>
 </table>
 

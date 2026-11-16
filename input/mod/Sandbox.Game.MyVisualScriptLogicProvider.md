@@ -530,6 +530,7 @@ public abstract sealed class MyVisualScriptLogicProvider
 |[static SortByRanking(string, bool, long)](Sandbox.Game.MyVisualScriptLogicProvider@SortByRanking)||
 |[static SpawnBot(string, Vector3D)](Sandbox.Game.MyVisualScriptLogicProvider@SpawnBot)||
 |[static SpawnBot(string, Vector3D, Vector3D, Vector3D, string)](Sandbox.Game.MyVisualScriptLogicProvider@SpawnBot)||
+|[static SpawnBot(MyDefinitionId, Vector3D, Vector3D, Vector3D, string, string, string, string, string)](Sandbox.Game.MyVisualScriptLogicProvider@SpawnBot)||
 |[static SpawnGroup(string, Vector3D, Vector3D, Vector3D, long, string)](Sandbox.Game.MyVisualScriptLogicProvider@SpawnGroup)||
 |[static SpawnItem(MyDefinitionId, Vector3D, string, float)](Sandbox.Game.MyVisualScriptLogicProvider@SpawnItem)||
 |[static SpawnLocalBlueprint(string, Vector3D, Vector3D, string, long)](Sandbox.Game.MyVisualScriptLogicProvider@SpawnLocalBlueprint)||

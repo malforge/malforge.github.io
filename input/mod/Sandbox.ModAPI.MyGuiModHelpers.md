@@ -39,8 +39,10 @@ public class MyGuiModHelpers: IMyGui
 |Member|Description|
 |---|---|
 |[ChangeInteractedEntity(IMyEntity, bool)](Sandbox.ModAPI.MyGuiModHelpers@ChangeInteractedEntity)||
+|[CloseTerminalScreen()](Sandbox.ModAPI.MyGuiModHelpers@CloseTerminalScreen)||
 |[ShowTerminalPage(MyTerminalPageEnum, IMyCharacter, IMyEntity, bool)](Sandbox.ModAPI.MyGuiModHelpers@ShowTerminalPage)||
 |[ChangeInteractedEntity(IMyEntity, bool)](VRage.Game.ModAPI.IMyGui@ChangeInteractedEntity)|Switches the entity the terminal is activated for.<br /><br />_Inherited from [IMyGui](VRage.Game.ModAPI.IMyGui)_|
+|[CloseTerminalScreen()](VRage.Game.ModAPI.IMyGui@CloseTerminalScreen)|Closes the terminal. Does nothing when it is not open.<br /><br />_Inherited from [IMyGui](VRage.Game.ModAPI.IMyGui)_|
 |[ShowTerminalPage(MyTerminalPageEnum, IMyCharacter, IMyEntity, bool)](VRage.Game.ModAPI.IMyGui@ShowTerminalPage)|Shows the terminal and opens a specific tab.<br /><br />_Inherited from [IMyGui](VRage.Game.ModAPI.IMyGui)_|
 
 **Implements:**  

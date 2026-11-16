@@ -114,8 +114,10 @@ Describes ship controller block (cockpit/remote control/cryopod) (PB scripting i
 * MyObjectBuilder_Cockpit/BuggyCockpit  
 * MyObjectBuilder_Cockpit/CockpitOpen  
 * MyObjectBuilder_Cockpit/DBSmallBlockFighterCockpit  
+* MyObjectBuilder_Cockpit/FighterCockpitType2  
 * MyObjectBuilder_Cockpit/LargeBlockBathroom  
 * MyObjectBuilder_Cockpit/LargeBlockBathroomOpen  
+* MyObjectBuilder_Cockpit/LargeBlockCaptainChair  
 * MyObjectBuilder_Cockpit/LargeBlockCaptainDesk  
 * MyObjectBuilder_Cockpit/LargeBlockClosedSlopedCockpit  
 * MyObjectBuilder_Cockpit/LargeBlockCockpit  
@@ -129,6 +131,9 @@ Describes ship controller block (cockpit/remote control/cryopod) (PB scripting i
 * MyObjectBuilder_Cockpit/LargeBlockDeskCorner  
 * MyObjectBuilder_Cockpit/LargeBlockDeskCornerInv  
 * MyObjectBuilder_Cockpit/LargeBlockInsetPlantCouch  
+* MyObjectBuilder_Cockpit/LargeBlockJumpSeat  
+* MyObjectBuilder_Cockpit/LargeBlockJumpSeatL  
+* MyObjectBuilder_Cockpit/LargeBlockJumpSeatR  
 * MyObjectBuilder_Cockpit/LargeBlockLabDeskSeat  
 * MyObjectBuilder_Cockpit/LargeBlockModularBridgeCockpit  
 * MyObjectBuilder_Cockpit/LargeBlockOpenSlopedCockpit  
@@ -148,6 +153,7 @@ Describes ship controller block (cockpit/remote control/cryopod) (PB scripting i
 * MyObjectBuilder_Cockpit/SmallBlockCockpit  
 * MyObjectBuilder_Cockpit/SmallBlockCockpitIndustrial  
 * MyObjectBuilder_Cockpit/SmallBlockFlushCockpit  
+* MyObjectBuilder_Cockpit/SmallBlockJumpSeat  
 * MyObjectBuilder_Cockpit/SmallBlockOpenSlopedCockpit  
 * MyObjectBuilder_Cockpit/SmallBlockStandingCockpit  
 * MyObjectBuilder_Cockpit/SmallBlockSuspendedControlSeat  

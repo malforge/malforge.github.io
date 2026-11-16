@@ -32,7 +32,7 @@ public interface IMyInput
 |[GetControl(MyStringId, MyStringId)](VRage.ModAPI.IMyInput@GetControl)||
 |[GetGameControl(MyStringId)](VRage.ModAPI.IMyInput@GetGameControl)||
 |[GetGameControlAnalogState(MyStringId)](VRage.ModAPI.IMyInput@GetGameControlAnalogState)||
-|[GetJoystickAxisStateForGameplay(MyJoystickAxesEnum)](VRage.ModAPI.IMyInput@GetJoystickAxisStateForGameplay)||
+|[GetJoystickAxisStateForGameplay(MyJoystickAxesEnum, int)](VRage.ModAPI.IMyInput@GetJoystickAxisStateForGameplay)||
 |[GetKeyName(MyKeys)](VRage.ModAPI.IMyInput@GetKeyName)||
 |[GetListOfPressedKeys(List<MyKeys>)](VRage.ModAPI.IMyInput@GetListOfPressedKeys)||
 |[GetListOfPressedMouseButtons(List<MyMouseButtonsEnum>)](VRage.ModAPI.IMyInput@GetListOfPressedMouseButtons)||
@@ -65,11 +65,11 @@ public interface IMyInput
 |[IsDefined(MyStringId, MyStringId)](VRage.ModAPI.IMyInput@IsDefined)||
 |[IsGameControlPressed(MyStringId)](VRage.ModAPI.IMyInput@IsGameControlPressed)||
 |[IsGameControlReleased(MyStringId)](VRage.ModAPI.IMyInput@IsGameControlReleased)||
-|[IsJoystickAxisNewPressed(MyJoystickAxesEnum)](VRage.ModAPI.IMyInput@IsJoystickAxisNewPressed)||
-|[IsJoystickAxisPressed(MyJoystickAxesEnum)](VRage.ModAPI.IMyInput@IsJoystickAxisPressed)||
+|[IsJoystickAxisNewPressed(MyJoystickAxesEnum, int)](VRage.ModAPI.IMyInput@IsJoystickAxisNewPressed)||
+|[IsJoystickAxisPressed(MyJoystickAxesEnum, int)](VRage.ModAPI.IMyInput@IsJoystickAxisPressed)||
 |[IsJoystickAxisValid(MyJoystickAxesEnum)](VRage.ModAPI.IMyInput@IsJoystickAxisValid)||
-|[IsJoystickButtonNewPressed(MyJoystickButtonsEnum)](VRage.ModAPI.IMyInput@IsJoystickButtonNewPressed)||
-|[IsJoystickButtonPressed(MyJoystickButtonsEnum)](VRage.ModAPI.IMyInput@IsJoystickButtonPressed)||
+|[IsJoystickButtonNewPressed(MyJoystickButtonsEnum, int)](VRage.ModAPI.IMyInput@IsJoystickButtonNewPressed)||
+|[IsJoystickButtonPressed(MyJoystickButtonsEnum, int)](VRage.ModAPI.IMyInput@IsJoystickButtonPressed)||
 |[IsJoystickButtonValid(MyJoystickButtonsEnum)](VRage.ModAPI.IMyInput@IsJoystickButtonValid)||
 |[IsJoystickConnected()](VRage.ModAPI.IMyInput@IsJoystickConnected)||
 |[IsKeyDigit(MyKeys)](VRage.ModAPI.IMyInput@IsKeyDigit)||
@@ -85,8 +85,8 @@ public interface IMyInput
 |[IsNewButtonReleased(MySharedButtonsEnum)](VRage.ModAPI.IMyInput@IsNewButtonReleased)||
 |[IsNewGameControlPressed(MyStringId)](VRage.ModAPI.IMyInput@IsNewGameControlPressed)||
 |[IsNewGameControlReleased(MyStringId)](VRage.ModAPI.IMyInput@IsNewGameControlReleased)||
-|[IsNewJoystickAxisReleased(MyJoystickAxesEnum)](VRage.ModAPI.IMyInput@IsNewJoystickAxisReleased)||
-|[IsNewJoystickButtonReleased(MyJoystickButtonsEnum)](VRage.ModAPI.IMyInput@IsNewJoystickButtonReleased)||
+|[IsNewJoystickAxisReleased(MyJoystickAxesEnum, int)](VRage.ModAPI.IMyInput@IsNewJoystickAxisReleased)||
+|[IsNewJoystickButtonReleased(MyJoystickButtonsEnum, int)](VRage.ModAPI.IMyInput@IsNewJoystickButtonReleased)||
 |[IsNewKeyPressed(MyKeys)](VRage.ModAPI.IMyInput@IsNewKeyPressed)||
 |[IsNewKeyReleased(MyKeys)](VRage.ModAPI.IMyInput@IsNewKeyReleased)||
 |[IsNewLeftMousePressed()](VRage.ModAPI.IMyInput@IsNewLeftMousePressed)||

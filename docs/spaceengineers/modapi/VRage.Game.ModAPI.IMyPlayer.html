@@ -88,12 +88,20 @@
 <td>Gets the Character entity for the player.</td>
 </tr>
 <tr>
+<td><a href="VRage.Game.ModAPI.IMyPlayer@CharacterToolbar.html">CharacterToolbar</a></td>
+<td>Gets the live character toolbar this machine draws for the player, the one their hotbar shows on foot. This is the character toolbar that accepts writes; <a href="VRage.Game.ModAPI.IMyPlayer@Toolbar.html">Toolbar</a> is the session's saved copy and is read only. Null for every player except the one running the code, and null on a dedicated server.</td>
+</tr>
+<tr>
 <td><a href="VRage.Game.ModAPI.IMyPlayer@Client.html">Client</a></td>
 <td>Gets network client for this player. Used for sending network messages between players and server</td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyPlayer@Controller.html">Controller</a></td>
 <td>Gets the EntityController for the player.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyPlayer@CurrentToolbar.html">CurrentToolbar</a></td>
+<td>Gets the toolbar this player is driving at the moment: their character toolbar, or the controlled block's while they are seated, following the same switches the HUD does. This is local state rather than session state, so it is null for every player except the one running the code, and null on a dedicated server.</td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyPlayer@DefaultBuildColorSlots.html">DefaultBuildColorSlots</a></td>
@@ -138,6 +146,10 @@
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyPlayer@SteamUserId.html">SteamUserId</a></td>
 <td>Gets the Steam user id for the player.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyPlayer@Toolbar.html">Toolbar</a></td>
+<td>Gets this player's character toolbar, or null when the session holds none for them. This is the copy the session owns and saves, which is a separate object from the live toolbar the local player's HUD draws; edits reach it through a client to server update. See <a href="VRage.Game.ModAPI.IMyPlayer@CurrentToolbar.html">CurrentToolbar</a> for the live one.</td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.IMyPlayer@IsAdmin.html">IsAdmin</a></td>

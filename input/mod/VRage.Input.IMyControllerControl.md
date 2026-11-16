@@ -15,6 +15,7 @@ Describes interface of the control
 |[Context](VRage.Input.IMyControllerControl@Context)|Context in which this control exists|
 |[Control](VRage.Input.IMyControllerControl@Control)|Base Control|
 |[ControlId](VRage.Input.IMyControllerControl@ControlId)|Id of this control|
+|[Id](VRage.Input.IMyControllerControl@Id)|Device slot this control reads from (0 = primary, 1 = secondary).|
 |[IgnorePriorityMap](VRage.Input.IMyControllerControl@IgnorePriorityMap)|Should this control ignore priority map|
 |[Modifier1](VRage.Input.IMyControllerControl@Modifier1)|First modifier|
 |[Modifier2](VRage.Input.IMyControllerControl@Modifier2)|Second modifier|

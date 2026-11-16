@@ -11,6 +11,7 @@ Describes a component that can charge like a battery and has the ability to lose
 |Member|Description|
 |---|---|
 |[OnCharged](VRage.Game.ModAPI.Interfaces.IMyEntityCapacitorComponent@OnCharged)|Called on server and client when capacitor is fully charged.|
+|[OnNotCharged](VRage.Game.ModAPI.Interfaces.IMyEntityCapacitorComponent@OnNotCharged)|Called on server and client when the capacitor is not fully charged, including when it loses a charge it already had.|
 
 ## Properties
 

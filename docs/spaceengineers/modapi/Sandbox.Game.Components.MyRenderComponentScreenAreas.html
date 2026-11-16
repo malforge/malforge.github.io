@@ -207,6 +207,10 @@
 <td><em>Inherited from <a href="VRage.Game.Components.MyRenderComponentBase.html">MyRenderComponentBase</a></em></td>
 </tr>
 <tr>
+<td><a href="VRage.Game.Components.MyRenderComponentBase@DynamicCaster.html">DynamicCaster</a></td>
+<td>Whether the entity moves on its own, apart from any grid - a dropped item, a held tool. Read once, when the render object is created: set it before the entity is added to the scene.<br /><br /><em>Inherited from <a href="VRage.Game.Components.MyRenderComponentBase.html">MyRenderComponentBase</a></em></td>
+</tr>
+<tr>
 <td><a href="VRage.Game.Components.MyRenderComponentBase@EnableColorMaskHsv.html">EnableColorMaskHsv</a></td>
 <td><em>Inherited from <a href="VRage.Game.Components.MyRenderComponentBase.html">MyRenderComponentBase</a></em></td>
 </tr>
@@ -379,6 +383,10 @@
 <tr>
 <td><a href="Sandbox.Game.Components.MyRenderComponentScreenAreas@UpdateModelProperties.html">UpdateModelProperties()</a></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.Components.MyRenderComponentScreenAreas@UpdateTextureFromRawData.html">UpdateTextureFromRawData(int, Byte[], Vector2I)</a></td>
+<td>Replaces a screen area's texture with raw pixels, bypassing the sprite pipeline entirely — no <a href="VRage.Game.GUI.TextPanel.MySprite.html">MySprite</a> list, no glyph-to-quad expansion and no offscreen render pass, just an upload. For content that is already an image (a rendered map, a decoded video frame) this is far cheaper than encoding it as sprites for <a href="Sandbox.Game.Components.MyRenderComponentScreenAreas@RenderSpritesToTexture.html">RenderSpritesToTexture(int, ListReader<MySprite>, Vector2I, Vector2, Color, byte)</a> to draw back into pixels.datais mip 0 alone: tightly packed, top-down, RGBA one byte per channel, at leasttextureSizeworth of bytes (a larger pooled buffer is fine — the extra is ignored). The renderer rebuilds the mip chain and marks the texture ready. Unlike the sprite path there is no aspect-ratio correction, so the buffer must already be at the area's texture resolution.<br /><br />The area's generated texture must exist — see <a href="Sandbox.Game.Components.MyRenderComponentScreenAreas@CreateTexture.html">CreateTexture(int, Vector2I)</a> .</td>
 </tr>
 <tr>
 <td><a href="Sandbox.Game.Components.MyRenderComponentCubeBlock@AddRenderObjects.html">AddRenderObjects()</a></td>

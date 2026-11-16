@@ -65,20 +65,104 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@AdditionalAimErrorAngle.html">AdditionalAimErrorAngle</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@AlertMergeDistance.html">AlertMergeDistance</a></td>
+<td>Meters. An alert (hull hit, gunshot) this close to the one the squad already holds only refreshes it; a farther one moves the alert and restarts the squad's alert phases there.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@AllowRouteFlight.html">AllowRouteFlight</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@BlockInteractionAnimation.html">BlockInteractionAnimation</a></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@CanTargetBlocks.html">CanTargetBlocks</a></td>
+<td>Lets the bot hold a block or grid as its AI target (a boarded player's seat); TargetGrids stays about biting grids.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@ChatMessageSet.html">ChatMessageSet</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@CoverHoldMaxSeconds.html">CoverHoldMaxSeconds</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@CoverHoldMinSeconds.html">CoverHoldMinSeconds</a></td>
+<td>Seconds a bot holds its cover from a threatening turret before a launcher carrier peeks out; the hold is rolled between min and max.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@FlightRetargetDistance.html">FlightRetargetDistance</a></td>
+<td>Meters. A goal that moves less than this while the bot flies to it keeps the current flight leg.</td>
 </tr>
 <tr>
 <td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@InventoryItems.html">InventoryItems</a></td>
 <td></td>
 </tr>
 <tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@LauncherSightRange.html">LauncherSightRange</a></td>
+<td>Meters. Sight range of a bot carrying a rocket launcher; keep it above RocketLauncherPreferredDistance or the launcher never comes out.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@MaxFlightSiteChecks.html">MaxFlightSiteChecks</a></td>
+<td>Flight sites checked for walking reachability per decision, cheapest detour first; each check is a navmesh query.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@MaxRockets.html">MaxRockets</a></td>
+<td>Rocket budget per bot; 0 = unlimited. One token per launch, one back every RocketRegenerationSeconds.</td>
+</tr>
+<tr>
 <td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@PlayerGreetingAnimation.html">PlayerGreetingAnimation</a></td>
 <td></td>
 </tr>
 <tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@ReloadMagazineFraction.html">ReloadMagazineFraction</a></td>
+<td>Fraction of the magazine capacity (0..1) at or below which a bot holding a rifle or pistol reloads instead of shooting the last rounds; 0 reloads only when empty. Launchers reload only when empty.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@RocketBlastSafetyFactor.html">RocketBlastSafetyFactor</a></td>
+<td>Minimum rocket launch distance is the missile explosion radius times this factor.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@RocketLauncherPreferredDistance.html">RocketLauncherPreferredDistance</a></td>
+<td>Meters. A character at least this far away makes a launcher-carrying bot draw the launcher.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@RocketLauncherReleaseDistance.html">RocketLauncherReleaseDistance</a></td>
+<td>Meters. A bot holding the launcher goes back to its rifle or pistol once the character is closer than this.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@RocketRegenerationSeconds.html">RocketRegenerationSeconds</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@RouteFlightFailureCooldown.html">RouteFlightFailureCooldown</a></td>
+<td>Seconds after a failed jetpack flight (stalled, landed short, nothing to land on) during which navigation only walks.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@SmallArmsFireRange.html">SmallArmsFireRange</a></td>
+<td>Meters. A bot holding a rifle or pistol (any gun but the launcher) opens fire only inside this distance and closes in from sight range until it is; never above SmallArmsSightRange.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@SmallArmsSightRange.html">SmallArmsSightRange</a></td>
+<td>Meters. How far a bot without a rocket launcher spots, tracks and shoots targets; combat tree scans and the engage check all use it.</td>
+</tr>
+<tr>
 <td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@StartingItem.html">StartingItem</a></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@UseDoorFlightSites.html">UseDoorFlightSites</a></td>
+<td>Doors the bot can open count as takeoff and landing sites: it opens the door and flies out through it.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_HumanoidBotDefinition@UseFlightSites.html">UseFlightSites</a></td>
+<td>A bot on a large grid takes off only from air connected to open space, and lands where it can walk to its goal.</td>
 </tr>
 <tr>
 <td><a href="VRage.Game.MyObjectBuilder_AgentDefinition@AgentHeight.html">AgentHeight</a></td>
@@ -126,6 +210,10 @@
 </tr>
 <tr>
 <td><a href="VRage.Game.MyObjectBuilder_AgentDefinition@BotModel.html">BotModel</a></td>
+<td><em>Inherited from <a href="VRage.Game.MyObjectBuilder_AgentDefinition.html">MyObjectBuilder_AgentDefinition</a></em></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_AgentDefinition@BotModels.html">BotModels</a></td>
 <td><em>Inherited from <a href="VRage.Game.MyObjectBuilder_AgentDefinition.html">MyObjectBuilder_AgentDefinition</a></em></td>
 </tr>
 <tr>
@@ -206,6 +294,10 @@
 </tr>
 <tr>
 <td><a href="VRage.Game.MyObjectBuilder_AgentDefinition@PathArrivalRadius.html">PathArrivalRadius</a></td>
+<td><em>Inherited from <a href="VRage.Game.MyObjectBuilder_AgentDefinition.html">MyObjectBuilder_AgentDefinition</a></em></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.MyObjectBuilder_AgentDefinition@PathfindingRadius.html">PathfindingRadius</a></td>
 <td><em>Inherited from <a href="VRage.Game.MyObjectBuilder_AgentDefinition.html">MyObjectBuilder_AgentDefinition</a></em></td>
 </tr>
 <tr>

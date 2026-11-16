@@ -9,7 +9,21 @@ public class MyMissileAmmoDefinition: MyAmmoDefinition
 |Member|Description|
 |---|---|
 |[static MINIMAL_EXPLOSION_RADIUS](Sandbox.Definitions.MyMissileAmmoDefinition@MINIMAL_EXPLOSION_RADIUS)||
+|[CanBeTargeted](Sandbox.Definitions.MyMissileAmmoDefinition@CanBeTargeted)|Whether turrets running with the Target Missiles option on may pick this ammo as a target. Turn it off for ammo that only nominally is a missile - slugs and cannon shells - so turrets keep shooting at real threats.|
+|[CanDistract](Sandbox.Definitions.MyMissileAmmoDefinition@CanDistract)||
+|[CanSeek](Sandbox.Definitions.MyMissileAmmoDefinition@CanSeek)||
+|[CanSeekCharacters](Sandbox.Definitions.MyMissileAmmoDefinition@CanSeekCharacters)|Whether a character may be inherited as this ammo's homing target. Off means a locked character is not a usable target: the missile is dumb-fired, and a launcher with Require Target Lock refuses the shot.|
+|[CountermeasureResilience](Sandbox.Definitions.MyMissileAmmoDefinition@CountermeasureResilience)||
+|[EnforceConeOnLaunch](Sandbox.Definitions.MyMissileAmmoDefinition@EnforceConeOnLaunch)||
 |[ExplosionFlags](Sandbox.Definitions.MyMissileAmmoDefinition@ExplosionFlags)||
+|[Guidance](Sandbox.Definitions.MyMissileAmmoDefinition@Guidance)||
+|[GuidanceRange](Sandbox.Definitions.MyMissileAmmoDefinition@GuidanceRange)||
+|[Integrity](Sandbox.Definitions.MyMissileAmmoDefinition@Integrity)||
+|[Lifetime](Sandbox.Definitions.MyMissileAmmoDefinition@Lifetime)|Seconds before the missile self-destructs regardless of distance; 0 disables the timer, leaving MaxTrajectory as the only range limit.|
+|[LockMaintainConeDegrees](Sandbox.Definitions.MyMissileAmmoDefinition@LockMaintainConeDegrees)||
+|[LockOnConeDegrees](Sandbox.Definitions.MyMissileAmmoDefinition@LockOnConeDegrees)||
+|[MaxLaunchOffAxisDegrees](Sandbox.Definitions.MyMissileAmmoDefinition@MaxLaunchOffAxisDegrees)|Widest angle between the launcher's forward and the target at which an AI combat block may still fire this ammo, in degrees; 0 keeps the attack pattern's own firing angle. Only seeking ammo can convert an off-axis launch into a hit, so keep it within what MaxTurnRateDegreesPerSecond and Lifetime can actually recover.|
+|[MaxTurnRateDegreesPerSecond](Sandbox.Definitions.MyMissileAmmoDefinition@MaxTurnRateDegreesPerSecond)||
 |[MissileAcceleration](Sandbox.Definitions.MyMissileAmmoDefinition@MissileAcceleration)||
 |[MissileExplosionDamage](Sandbox.Definitions.MyMissileAmmoDefinition@MissileExplosionDamage)||
 |[MissileExplosionRadius](Sandbox.Definitions.MyMissileAmmoDefinition@MissileExplosionRadius)||
@@ -22,9 +36,11 @@ public class MyMissileAmmoDefinition: MyAmmoDefinition
 |[MissileMinRicochetAngle](Sandbox.Definitions.MyMissileAmmoDefinition@MissileMinRicochetAngle)||
 |[MissileMinRicochetProbability](Sandbox.Definitions.MyMissileAmmoDefinition@MissileMinRicochetProbability)||
 |[MissileModelName](Sandbox.Definitions.MyMissileAmmoDefinition@MissileModelName)||
+|[MissilePreserveLaunchMomentum](Sandbox.Definitions.MyMissileAmmoDefinition@MissilePreserveLaunchMomentum)|Keeps momentum inherited from the launching grid out of the missile's heading: the nose is not snapped onto the travel direction while that momentum dominates, and the velocity is swung onto the nose at MaxTurnRateDegreesPerSecond instead of instantly. Required by ammo whose MissileInitialSpeed is well below grid speeds. Not for ammo relying on MissileGravityEnabled, whose arc the velocity turn would cancel out.|
 |[MissileRicochetDamage](Sandbox.Definitions.MyMissileAmmoDefinition@MissileRicochetDamage)||
 |[MissileSkipAcceleration](Sandbox.Definitions.MyMissileAmmoDefinition@MissileSkipAcceleration)||
 |[MissileTrailEffect](Sandbox.Definitions.MyMissileAmmoDefinition@MissileTrailEffect)||
+|[SeekDelay](Sandbox.Definitions.MyMissileAmmoDefinition@SeekDelay)||
 |[AmmoType](Sandbox.Definitions.MyAmmoDefinition@AmmoType)|_Inherited from [MyAmmoDefinition](Sandbox.Definitions.MyAmmoDefinition)_|
 |[AvailableInSurvival](VRage.Game.MyDefinitionBase@AvailableInSurvival)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[BackkickForce](Sandbox.Definitions.MyAmmoDefinition@BackkickForce)|_Inherited from [MyAmmoDefinition](Sandbox.Definitions.MyAmmoDefinition)_|

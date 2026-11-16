@@ -86,6 +86,7 @@ public class MyObjectBuilder_LargeTurretBaseDefinition: MyObjectBuilder_WeaponBl
 |[IsAirTight](VRage.Game.MyObjectBuilder_CubeBlockDefinition@IsAirTight)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[IsInventoryItem](VRage.Game.MyObjectBuilder_CubeBlockDefinition@IsInventoryItem)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[IsStandAlone](VRage.Game.MyObjectBuilder_CubeBlockDefinition@IsStandAlone)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
+|[LaserPointerEnabled](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition@LaserPointerEnabled)|_Inherited from [MyObjectBuilder_WeaponBlockDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition)_|
 |[Mass](VRage.Game.MyObjectBuilder_PhysicalModelDefinition@Mass)|_Inherited from [MyObjectBuilder_PhysicalModelDefinition](VRage.Game.MyObjectBuilder_PhysicalModelDefinition)_|
 |[MaxIntegrity](VRage.Game.MyObjectBuilder_CubeBlockDefinition@MaxIntegrity)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[MechanicalTopInitialPlacementOffset](VRage.Game.MyObjectBuilder_CubeBlockDefinition@MechanicalTopInitialPlacementOffset)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
@@ -121,6 +122,8 @@ public class MyObjectBuilder_LargeTurretBaseDefinition: MyObjectBuilder_WeaponBl
 |[Size](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Size)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[Skeleton](VRage.Game.MyObjectBuilder_CubeBlockDefinition@Skeleton)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[TargetingGroups](VRage.Game.MyObjectBuilder_CubeBlockDefinition@TargetingGroups)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
+|[TargetingSubsystemEnabled](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition@TargetingSubsystemEnabled)|_Inherited from [MyObjectBuilder_WeaponBlockDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition)_|
+|[TargetLockRequirementEnabled](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition@TargetLockRequirementEnabled)|_Inherited from [MyObjectBuilder_WeaponBlockDefinition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition)_|
 |[TieredUpdateTimes](VRage.Game.MyObjectBuilder_CubeBlockDefinition@TieredUpdateTimes)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[UseInstanceRender](VRage.Game.MyObjectBuilder_PhysicalModelDefinition@UseInstanceRender)|_Inherited from [MyObjectBuilder_PhysicalModelDefinition](VRage.Game.MyObjectBuilder_PhysicalModelDefinition)_|
 |[UseModelIntersection](VRage.Game.MyObjectBuilder_CubeBlockDefinition@UseModelIntersection)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|

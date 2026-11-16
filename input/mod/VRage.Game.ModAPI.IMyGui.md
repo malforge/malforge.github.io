@@ -28,6 +28,7 @@ ModAPI interface giving access to GUI
 |Member|Description|
 |---|---|
 |[ChangeInteractedEntity(IMyEntity, bool)](VRage.Game.ModAPI.IMyGui@ChangeInteractedEntity)|Switches the entity the terminal is activated for.|
+|[CloseTerminalScreen()](VRage.Game.ModAPI.IMyGui@CloseTerminalScreen)|Closes the terminal. Does nothing when it is not open.|
 |[ShowTerminalPage(MyTerminalPageEnum, IMyCharacter, IMyEntity, bool)](VRage.Game.ModAPI.IMyGui@ShowTerminalPage)|Shows the terminal and opens a specific tab.|
 
 **Inheritors:**  

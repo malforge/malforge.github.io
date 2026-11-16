@@ -17,6 +17,7 @@ public interface IMyCharacterComponent
 |[OnCharacterDead()](Sandbox.Game.Entities.Character.Components.IMyCharacterComponent@OnCharacterDead)||
 
 **Inheritors:**  
+* [MyCharacterAutopilotComponent](Sandbox.Game.EntityComponents.MyCharacterAutopilotComponent)  
 * [MyCharacterComponent](Sandbox.Game.Entities.Character.Components.MyCharacterComponent)  
 * [MyCharacterDetectorComponent](Sandbox.Game.Entities.Character.Components.MyCharacterDetectorComponent)  
 * [MyCharacterJetpackComponent](Sandbox.Game.Entities.Character.Components.MyCharacterJetpackComponent)  

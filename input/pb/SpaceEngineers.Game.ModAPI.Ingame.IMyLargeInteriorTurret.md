@@ -46,6 +46,7 @@ public interface IMyLargeInteriorTurret: IMyLargeTurretBase, IMyUserControllable
 |[OwnerId](VRage.Game.ModAPI.Ingame.IMyCubeBlock@OwnerId)|IdentityId of player owning block (not steam Id)<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.Ingame.IMyCubeBlock)_|
 |[Position](VRage.Game.ModAPI.Ingame.IMyCubeBlock@Position)|Position in grid coordinates<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.Ingame.IMyCubeBlock)_|
 |[Range](Sandbox.ModAPI.Ingame.IMyLargeTurretBase@Range)|Gets and Sets shooting range of the turret<br /><br />_Inherited from [IMyLargeTurretBase](Sandbox.ModAPI.Ingame.IMyLargeTurretBase)_|
+|[SelectedAmmoType](Sandbox.ModAPI.Ingame.IMyUserControllableGun@SelectedAmmoType)|Gets or sets the preferred ammunition magazine; null means any compatible magazine.<br /><br />_Inherited from [IMyUserControllableGun](Sandbox.ModAPI.Ingame.IMyUserControllableGun)_|
 |[Shoot](Sandbox.ModAPI.Ingame.IMyUserControllableGun@Shoot)|Represents terminal gui toggle element "Shoot". Not same as [IsShooting](Sandbox.ModAPI.Ingame.IMyUserControllableGun@IsShooting)<br /><br />_Inherited from [IMyUserControllableGun](Sandbox.ModAPI.Ingame.IMyUserControllableGun)_|
 |[ShowInInventory](Sandbox.ModAPI.Ingame.IMyTerminalBlock@ShowInInventory)|Represent terminal gui toggle `Show block in Inventory Screen`. Gets or sets its value<br /><br />_Inherited from [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock)_|
 |[ShowInTerminal](Sandbox.ModAPI.Ingame.IMyTerminalBlock@ShowInTerminal)|Represent terminal gui toggle `Show block in terminal`. Gets or sets its value<br /><br />_Inherited from [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock)_|
@@ -69,6 +70,8 @@ public interface IMyLargeInteriorTurret: IMyLargeTurretBase, IMyUserControllable
 
 |Member|Description|
 |---|---|
+|[CycleSelectedAmmoType()](Sandbox.ModAPI.Ingame.IMyUserControllableGun@CycleSelectedAmmoType)|Selects the next compatible ammunition type.<br /><br />_Inherited from [IMyUserControllableGun](Sandbox.ModAPI.Ingame.IMyUserControllableGun)_|
+|[ForceReload()](Sandbox.ModAPI.Ingame.IMyUserControllableGun@ForceReload)|Unloads the current magazine and begins reloading the selected type.<br /><br />_Inherited from [IMyUserControllableGun](Sandbox.ModAPI.Ingame.IMyUserControllableGun)_|
 |[GetActions(List<ITerminalAction>, Func<ITerminalAction, bool>)](Sandbox.ModAPI.Ingame.IMyTerminalBlock@GetActions)|Get all terminal actions available for block<br /><br />_Inherited from [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock)_|
 |[GetActionWithName(string)](Sandbox.ModAPI.Ingame.IMyTerminalBlock@GetActionWithName)|Get first found terminal action with name<br /><br />_Inherited from [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock)_|
 |[GetInventory()](VRage.Game.ModAPI.Ingame.IMyEntity@GetInventory)|Simply get the MyInventoryBase component stored in this entity.<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|

@@ -9,6 +9,7 @@ public class MyObjectBuilder_FlightMovementBlock: MyObjectBuilder_FunctionalBloc
 |Member|Description|
 |---|---|
 |[static MIN_HEIGHT_ABOVE_TERRAIN_UPPER_LIMIT](Sandbox.Common.ObjectBuilders.MyObjectBuilder_FlightMovementBlock@MIN_HEIGHT_ABOVE_TERRAIN_UPPER_LIMIT)||
+|[OccupiedAt](Sandbox.Common.ObjectBuilders.MyObjectBuilder_FlightMovementBlock@OccupiedAt)||
 |[BlockGeneralDamageModifier](VRage.Game.MyObjectBuilder_CubeBlock@BlockGeneralDamageModifier)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[BlockOrientation](VRage.Game.MyObjectBuilder_CubeBlock@BlockOrientation)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[BuildPercent](VRage.Game.MyObjectBuilder_CubeBlock@BuildPercent)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|

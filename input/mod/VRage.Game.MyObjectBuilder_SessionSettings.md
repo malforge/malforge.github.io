@@ -16,6 +16,8 @@ public class MyObjectBuilder_SessionSettings: MyObjectBuilder_Base
 |[AdaptiveSimulationQuality](VRage.Game.MyObjectBuilder_SessionSettings@AdaptiveSimulationQuality)||
 |[AdjustableMaxVehicleSpeed](VRage.Game.MyObjectBuilder_SessionSettings@AdjustableMaxVehicleSpeed)||
 |[AFKTimeountMin](VRage.Game.MyObjectBuilder_SessionSettings@AFKTimeountMin)||
+|[AllowDampeningToHostileGrids](VRage.Game.MyObjectBuilder_SessionSettings@AllowDampeningToHostileGrids)||
+|[AllowGravityDrives](VRage.Game.MyObjectBuilder_SessionSettings@AllowGravityDrives)||
 |[AssemblerEfficiencyMultiplier](VRage.Game.MyObjectBuilder_SessionSettings@AssemblerEfficiencyMultiplier)||
 |[AssemblerSpeedMultiplier](VRage.Game.MyObjectBuilder_SessionSettings@AssemblerSpeedMultiplier)||
 |[AutoHealing](VRage.Game.MyObjectBuilder_SessionSettings@AutoHealing)||
@@ -51,6 +53,7 @@ public class MyObjectBuilder_SessionSettings: MyObjectBuilder_Base
 |[EnableGoodBotHints](VRage.Game.MyObjectBuilder_SessionSettings@EnableGoodBotHints)||
 |[EnableIngameScripts](VRage.Game.MyObjectBuilder_SessionSettings@EnableIngameScripts)||
 |[EnableJetpack](VRage.Game.MyObjectBuilder_SessionSettings@EnableJetpack)||
+|[EnableJumpSignatures](VRage.Game.MyObjectBuilder_SessionSettings@EnableJumpSignatures)||
 |[EnableMatchComponent](VRage.Game.MyObjectBuilder_SessionSettings@EnableMatchComponent)||
 |[EnableOrca](VRage.Game.MyObjectBuilder_SessionSettings@EnableOrca)||
 |[EnableOxygen](VRage.Game.MyObjectBuilder_SessionSettings@EnableOxygen)||

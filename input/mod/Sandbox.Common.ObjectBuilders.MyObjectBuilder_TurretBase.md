@@ -30,6 +30,7 @@ public class MyObjectBuilder_TurretBase: MyObjectBuilder_UserControllableGun
 |[TargetNeutrals](Sandbox.Common.ObjectBuilders.MyObjectBuilder_TurretBase@TargetNeutrals)||
 |[TargetSmallGrids](Sandbox.Common.ObjectBuilders.MyObjectBuilder_TurretBase@TargetSmallGrids)||
 |[TargetStations](Sandbox.Common.ObjectBuilders.MyObjectBuilder_TurretBase@TargetStations)||
+|[ViewRotation](Sandbox.Common.ObjectBuilders.MyObjectBuilder_TurretBase@ViewRotation)|Clockwise roll of the controlled view in degrees. Snapped to 0/90/180/270 on load.|
 |[BlockGeneralDamageModifier](VRage.Game.MyObjectBuilder_CubeBlock@BlockGeneralDamageModifier)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[BlockOrientation](VRage.Game.MyObjectBuilder_CubeBlock@BlockOrientation)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[BuildPercent](VRage.Game.MyObjectBuilder_CubeBlock@BuildPercent)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|

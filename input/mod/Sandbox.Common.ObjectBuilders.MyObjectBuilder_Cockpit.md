@@ -45,6 +45,7 @@ public class MyObjectBuilder_Cockpit: MyObjectBuilder_ShipController
 |[MultiBlockIndex](VRage.Game.MyObjectBuilder_CubeBlock@MultiBlockIndex)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[Name](VRage.Game.MyObjectBuilder_CubeBlock@Name)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[NumberInGrid](VRage.Game.MyObjectBuilder_TerminalBlock@NumberInGrid)|_Inherited from [MyObjectBuilder_TerminalBlock](VRage.Game.MyObjectBuilder_TerminalBlock)_|
+|[OccupiedAt](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipController@OccupiedAt)|_Inherited from [MyObjectBuilder_ShipController](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipController)_|
 |[OnLockedToolbar](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipController@OnLockedToolbar)|_Inherited from [MyObjectBuilder_ShipController](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipController)_|
 |[Owner](VRage.Game.MyObjectBuilder_CubeBlock@Owner)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[SelectedGunId](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipController@SelectedGunId)|_Inherited from [MyObjectBuilder_ShipController](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipController)_|

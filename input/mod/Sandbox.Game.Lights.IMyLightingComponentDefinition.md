@@ -14,6 +14,7 @@ Definition interface used for instantiation of MyLightingLogic.
 |[BlinkLength](Sandbox.Game.Lights.IMyLightingComponentDefinition@BlinkLength)||
 |[BlinkOffset](Sandbox.Game.Lights.IMyLightingComponentDefinition@BlinkOffset)||
 |[Flare](Sandbox.Game.Lights.IMyLightingComponentDefinition@Flare)||
+|[GroupLightDummies](Sandbox.Game.Lights.IMyLightingComponentDefinition@GroupLightDummies)||
 |[LightDummyName](Sandbox.Game.Lights.IMyLightingComponentDefinition@LightDummyName)||
 |[LightFalloff](Sandbox.Game.Lights.IMyLightingComponentDefinition@LightFalloff)||
 |[LightIntensity](Sandbox.Game.Lights.IMyLightingComponentDefinition@LightIntensity)||

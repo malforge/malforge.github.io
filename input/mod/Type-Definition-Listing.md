@@ -79,10 +79,6 @@
 <a name="blocks-Almagest Engineer Plushie">**Almagest Engineer Plushie**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/EngineerPlushieSE2`  
   
-<a name="blocks-And">**And**</a>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolAnd`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolAnd`  
-  
 <a name="blocks-Angled Door A">**Angled Door A**</a> ([IMyDoor](Sandbox.ModAPI.Ingame.IMyDoor))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Door/LargeBlockAngledDoorA`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Door/SmallBlockAngledDoorA`  
@@ -106,9 +102,8 @@
 <a name="blocks-Antenna Dish">**Antenna Dish**</a> ([IMyRadioAntenna](Sandbox.ModAPI.Ingame.IMyRadioAntenna))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_RadioAntenna/LargeBlockRadioAntennaDish`  
   
-<a name="blocks-Apostrophe">**Apostrophe**</a>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolApostrophe`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolApostrophe`  
+<a name="blocks-Anti-Personnel Turret">**Anti-Personnel Turret**</a> ([IMyLargeInteriorTurret](SpaceEngineers.Game.ModAPI.Ingame.IMyLargeInteriorTurret))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_InteriorTurret/LargeInteriorTurret`  
   
 <a name="blocks-Armory">**Armory**</a> ([IMyCargoContainer](Sandbox.ModAPI.Ingame.IMyCargoContainer))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CargoContainer/LargeBlockLockerRoom`  
@@ -126,12 +121,25 @@
 <a name="blocks-Artillery Turret">**Artillery Turret**</a> ([]())  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_LargeMissileTurret/LargeCalibreTurret`  
   
+<a name="blocks-Artillery Turret Type II">**Artillery Turret Type II**</a> ([]())  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_LargeMissileTurret/LargeCalibreTurretType2`  
+  
+<a name="blocks-Artillery Type II">**Artillery Type II**</a> ([IMySmallMissileLauncher](Sandbox.ModAPI.Ingame.IMySmallMissileLauncher))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_SmallMissileLauncher/LargeBlockLargeCalibreGunType2`  
+  
 <a name="blocks-Assault Cannon">**Assault Cannon**</a> ([IMySmallMissileLauncherReload](Sandbox.ModAPI.Ingame.IMySmallMissileLauncherReload))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_SmallMissileLauncherReload/SmallBlockMediumCalibreGun`  
   
 <a name="blocks-Assault Cannon Turret">**Assault Cannon Turret**</a> ([]())  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_LargeMissileTurret/LargeBlockMediumCalibreTurret`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_LargeMissileTurret/SmallBlockMediumCalibreTurret`  
+  
+<a name="blocks-Assault Cannon Turret Type II">**Assault Cannon Turret Type II**</a> ([]())  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_LargeMissileTurret/LargeBlockMediumCalibreTurretType2`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_LargeMissileTurret/SmallBlockMediumCalibreTurretType2`  
+  
+<a name="blocks-Assault Cannon Type II">**Assault Cannon Type II**</a> ([IMySmallMissileLauncherReload](Sandbox.ModAPI.Ingame.IMySmallMissileLauncherReload))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_SmallMissileLauncherReload/SmallBlockMediumCalibreGunType2`  
   
 <a name="blocks-Assembler">**Assembler**</a> ([IMyAssembler](Sandbox.ModAPI.Ingame.IMyAssembler))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Assembler/LargeAssembler`  
@@ -149,6 +157,12 @@
 <a name="blocks-Autocannon Turret">**Autocannon Turret**</a> ([IMyLargeGatlingTurret](SpaceEngineers.Game.ModAPI.Ingame.IMyLargeGatlingTurret))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_LargeGatlingTurret/AutoCannonTurret`  
   
+<a name="blocks-Autocannon Turret Type II">**Autocannon Turret Type II**</a> ([IMyLargeGatlingTurret](SpaceEngineers.Game.ModAPI.Ingame.IMyLargeGatlingTurret))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_LargeGatlingTurret/AutoCannonTurretType2`  
+  
+<a name="blocks-Autocannon Type II">**Autocannon Type II**</a> ([IMySmallGatlingGun](Sandbox.ModAPI.Ingame.IMySmallGatlingGun))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_SmallGatlingGun/SmallBlockAutocannonType2`  
+  
 <a name="blocks-Automaton Programmable Block">**Automaton Programmable Block**</a> ([IMyProgrammableBlock](Sandbox.ModAPI.Ingame.IMyProgrammableBlock))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_MyProgrammableBlock/LargeProgrammableBlockReskin`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_MyProgrammableBlock/SmallProgrammableBlockReskin`  
@@ -162,15 +176,56 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_TimerBlock/TimerBlockReskinSmall`  
   
 <a name="blocks-Barred Window">**Barred Window**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindow`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/BarredWindow`  
   
+<a name="blocks-Barred Window 2x1">**Barred Window 2x1**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindow1x2`  
+  
+<a name="blocks-Barred Window 2x1 Crossed">**Barred Window 2x1 Crossed**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindowCrossed1x2`  
+  
+<a name="blocks-Barred Window Crossed">**Barred Window Crossed**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindowCrossed`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/BarredWindowCrossed`  
+  
+<a name="blocks-Barred Window Crossed Face">**Barred Window Crossed Face**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindowCrossedFace`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/BarredWindowCrossedFace`  
+  
+<a name="blocks-Barred Window Crossed Face Inv.">**Barred Window Crossed Face Inv.**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindowCrossedFaceInv`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/BarredWindowCrossedFaceInv`  
+  
+<a name="blocks-Barred Window Crossed Side">**Barred Window Crossed Side**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindowCrossedSide`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/BarredWindowCrossedSide`  
+  
+<a name="blocks-Barred Window Crossed Side Inv.">**Barred Window Crossed Side Inv.**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindowCrossedSideInv`  
+  
+<a name="blocks-Barred Window Crossed Slope">**Barred Window Crossed Slope**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindowCrossedSlope`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/BarredWindowCrossedSlope`  
+  
 <a name="blocks-Barred Window Face">**Barred Window Face**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindowFace`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/BarredWindowFace`  
   
+<a name="blocks-Barred Window Face Inv.">**Barred Window Face Inv.**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindowFaceInv`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/BarredWindowFaceInv`  
+  
 <a name="blocks-Barred Window Side">**Barred Window Side**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindowSide`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/BarredWindowSide`  
   
+<a name="blocks-Barred Window Side Inv.">**Barred Window Side Inv.**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindowSideInv`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/BarredWindowSideInv`  
+  
 <a name="blocks-Barred Window Slope">**Barred Window Slope**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBarredWindowSlope`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/BarredWindowSlope`  
   
 <a name="blocks-Barrel">**Barrel**</a>  
@@ -362,6 +417,12 @@
 <a name="blocks-Bridge Window Slope">**Bridge Window Slope**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/BridgeWindow1x1Slope`  
   
+<a name="blocks-Brig Door Left">**Brig Door Left**</a> ([IMyDoor](Sandbox.ModAPI.Ingame.IMyDoor))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Door/LargeBlockBrigDoorB`  
+  
+<a name="blocks-Brig Door Right">**Brig Door Right**</a> ([IMyDoor](Sandbox.ModAPI.Ingame.IMyDoor))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Door/LargeBlockBrigDoorA`  
+  
 <a name="blocks-Broadcast Controller">**Broadcast Controller**</a> ([IMyBroadcastController](SpaceEngineers.Game.ModAPI.Ingame.IMyBroadcastController))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_BroadcastController/LargeBlockBroadcastController`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_BroadcastController/SmallBlockBroadcastController`  
@@ -421,6 +482,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CameraBlock/LargeCameraBlock`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CameraBlock/SmallCameraBlock`  
   
+<a name="blocks-Captain's Chair">**Captain's Chair**</a> ([IMyCockpit](Sandbox.ModAPI.Ingame.IMyCockpit))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Cockpit/LargeBlockCaptainChair`  
+  
 <a name="blocks-Captain's Desk">**Captain's Desk**</a> ([IMyCockpit](Sandbox.ModAPI.Ingame.IMyCockpit))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Cockpit/LargeBlockCaptainDesk`  
   
@@ -472,10 +536,6 @@
 <a name="blocks-Collector">**Collector**</a> ([IMyCollector](Sandbox.ModAPI.Ingame.IMyCollector))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Collector/Collector`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Collector/CollectorSmall`  
-  
-<a name="blocks-Colon">**Colon**</a>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolColon`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolColon`  
   
 <a name="blocks-Colorable Solar Panel">**Colorable Solar Panel**</a> ([IMySolarPanel](SpaceEngineers.Game.ModAPI.Ingame.IMySolarPanel))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_SolarPanel/LargeBlockColorableSolarPanel`  
@@ -591,6 +651,15 @@
 <a name="blocks-Conveyor Pipe">**Conveyor Pipe**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_ConveyorConnector/LargeBlockConveyorPipeSeamless`  
   
+<a name="blocks-Conveyor Pipe 3x">**Conveyor Pipe 3x**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_ConveyorConnector/LargeBlockConveyorPipeSeamless3X`  
+  
+<a name="blocks-Conveyor Pipe 3x End">**Conveyor Pipe 3x End**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_ConveyorConnector/LargeBlockConveyorPipeEnd3X`  
+  
+<a name="blocks-Conveyor Pipe 3x Flanged">**Conveyor Pipe 3x Flanged**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_ConveyorConnector/LargeBlockConveyorPipeFlange3X`  
+  
 <a name="blocks-Conveyor Pipe Cap">**Conveyor Pipe Cap**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockConveyorPipeCap`  
   
@@ -617,6 +686,9 @@
   
 <a name="blocks-Conveyor Tube">**Conveyor Tube**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_ConveyorConnector/ConveyorTube`  
+  
+<a name="blocks-Conveyor Tube 3x">**Conveyor Tube 3x**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_ConveyorConnector/ConveyorTube3X`  
   
 <a name="blocks-Conveyor Tube T Junction">**Conveyor Tube T Junction**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Conveyor/ConveyorTubeT`  
@@ -780,10 +852,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Door/`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Door/SmallDoor`  
   
-<a name="blocks-Dot">**Dot**</a>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolDot`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolDot`  
-  
 <a name="blocks-Drill">**Drill**</a> ([IMyShipDrill](Sandbox.ModAPI.Ingame.IMyShipDrill))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Drill/LargeBlockDrill`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Drill/SmallBlockDrill`  
@@ -806,10 +874,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_EventControllerBlock/EventControllerLarge`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_EventControllerBlock/EventControllerSmall`  
   
-<a name="blocks-Exclamationmark">**Exclamationmark**</a>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolExclamationMark`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolExclamationMark`  
-  
 <a name="blocks-Exhaust Cap">**Exhaust Cap**</a> ([]())  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_ExhaustBlock/LargeExhaustCap`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_ExhaustBlock/SmallExhaustCap`  
@@ -828,18 +892,21 @@
 <a name="blocks-Fighter Cockpit">**Fighter Cockpit**</a> ([IMyCockpit](Sandbox.ModAPI.Ingame.IMyCockpit))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Cockpit/DBSmallBlockFighterCockpit`  
   
+<a name="blocks-Fighter Cockpit Type II">**Fighter Cockpit Type II**</a> ([IMyCockpit](Sandbox.ModAPI.Ingame.IMyCockpit))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Cockpit/FighterCockpitType2`  
+  
 <a name="blocks-Fire Cover">**Fire Cover**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/FireCover`  
   
 <a name="blocks-Fire Cover Corner">**Fire Cover Corner**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/FireCoverCorner`  
   
-<a name="blocks-Firework Launcher">**Firework Launcher**</a> ([IMySmallMissileLauncher](Sandbox.ModAPI.Ingame.IMySmallMissileLauncher))  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_SmallMissileLauncher/LargeFlareLauncher`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_SmallMissileLauncher/SmallFlareLauncher`  
-  
 <a name="blocks-First Aid Cabinet">**First Aid Cabinet**</a> ([IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_TerminalBlock/SmallBlockFirstAidCabinet`  
+  
+<a name="blocks-Flare Launcher">**Flare Launcher**</a> ([IMySmallMissileLauncher](Sandbox.ModAPI.Ingame.IMySmallMissileLauncher))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_SmallMissileLauncher/LargeFlareLauncher`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_SmallMissileLauncher/SmallFlareLauncher`  
   
 <a name="blocks-Flat Atmospheric Thruster">**Flat Atmospheric Thruster**</a> ([IMyThrust](Sandbox.ModAPI.Ingame.IMyThrust))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Thrust/LargeBlockSmallFlatAtmosphericThrust`  
@@ -848,6 +915,10 @@
 <a name="blocks-Flat Atmospheric Thruster D Shape">**Flat Atmospheric Thruster D Shape**</a> ([IMyThrust](Sandbox.ModAPI.Ingame.IMyThrust))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Thrust/LargeBlockSmallFlatAtmosphericThrustDShape`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Thrust/SmallBlockSmallFlatAtmosphericThrustDShape`  
+  
+<a name="blocks-Flat Atmospheric Thruster Round">**Flat Atmospheric Thruster Round**</a> ([IMyThrust](Sandbox.ModAPI.Ingame.IMyThrust))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Thrust/LargeBlockSmallFlatAtmosphericThrustRound`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Thrust/SmallBlockSmallFlatAtmosphericThrustRound`  
   
 <a name="blocks-Flat Collector">**Flat Collector**</a> ([IMyCollector](Sandbox.ModAPI.Ingame.IMyCollector))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Collector/CollectorFlat`  
@@ -1326,10 +1397,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Thrust/LargeBlockSmallHydrogenThrust`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Thrust/SmallBlockSmallHydrogenThrust`  
   
-<a name="blocks-Hyphen">**Hyphen**</a>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolHyphen`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolHyphen`  
-  
 <a name="blocks-Industrial Assembler">**Industrial Assembler**</a> ([IMyAssembler](Sandbox.ModAPI.Ingame.IMyAssembler))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Assembler/LargeAssemblerIndustrial`  
   
@@ -1379,6 +1446,10 @@
 <a name="blocks-Inset Entertainment Corner">**Inset Entertainment Corner**</a> ([]())  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Jukebox/LargeBlockInsetEntertainmentCorner`  
   
+<a name="blocks-Inset Flare Launcher">**Inset Flare Launcher**</a> ([IMySmallMissileLauncher](Sandbox.ModAPI.Ingame.IMySmallMissileLauncher))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_SmallMissileLauncher/LargeInsetFlareLauncher`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_SmallMissileLauncher/SmallInsetFlareLauncher`  
+  
 <a name="blocks-Inset Kitchen">**Inset Kitchen**</a> ([IMyInteriorLight](SpaceEngineers.Game.ModAPI.Ingame.IMyInteriorLight))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_InteriorLight/LargeBlockInsetKitchen`  
   
@@ -1420,15 +1491,40 @@
 <a name="blocks-Inset Wall Pillar">**Inset Wall Pillar**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockInsetWallPillar`  
   
+<a name="blocks-Intake Block">**Intake Block**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockIntakeCube`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallBlockIntakeCube`  
+  
+<a name="blocks-Intake Block 2x1 Base">**Intake Block 2x1 Base**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockIntake2x1SlopeBase`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallBlockIntake2x1SlopeBase`  
+  
+<a name="blocks-Intake Block 2x1 Tip">**Intake Block 2x1 Tip**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockIntake2x1SlopeTip`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallBlockIntake2x1SlopeTip`  
+  
+<a name="blocks-Intake Block Corner">**Intake Block Corner**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockIntakeCorner`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallBlockIntakeCorner`  
+  
+<a name="blocks-Intake Block Half">**Intake Block Half**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockIntakeHalf`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallBlockIntakeHalf`  
+  
+<a name="blocks-Intake Block Half 2">**Intake Block Half 2**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockIntakeHalf2`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallBlockIntakeHalf2`  
+  
+<a name="blocks-Intake Block Half Corner">**Intake Block Half Corner**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockIntakeHalfCorner`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallBlockIntakeHalfCorner`  
+  
 <a name="blocks-Interior Light">**Interior Light**</a> ([IMyInteriorLight](SpaceEngineers.Game.ModAPI.Ingame.IMyInteriorLight))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_InteriorLight/SmallLight`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_InteriorLight/SmallBlockSmallLight`  
   
 <a name="blocks-Interior Pillar">**Interior Pillar**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeInteriorPillar`  
-  
-<a name="blocks-Interior Turret">**Interior Turret**</a> ([IMyLargeInteriorTurret](SpaceEngineers.Game.ModAPI.Ingame.IMyLargeInteriorTurret))  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_InteriorTurret/LargeInteriorTurret`  
   
 <a name="blocks-Interior Wall">**Interior Wall**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockInteriorWall`  
@@ -1448,6 +1544,16 @@
   
 <a name="blocks-Jump Drive Type II">**Jump Drive Type II**</a> ([IMyJumpDrive](Sandbox.ModAPI.Ingame.IMyJumpDrive))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_JumpDrive/LargeJumpDriveReskin`  
+  
+<a name="blocks-Jump Seat">**Jump Seat**</a> ([IMyCockpit](Sandbox.ModAPI.Ingame.IMyCockpit))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Cockpit/LargeBlockJumpSeat`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Cockpit/SmallBlockJumpSeat`  
+  
+<a name="blocks-Jump Seat Left">**Jump Seat Left**</a> ([IMyCockpit](Sandbox.ModAPI.Ingame.IMyCockpit))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Cockpit/LargeBlockJumpSeatL`  
+  
+<a name="blocks-Jump Seat Right">**Jump Seat Right**</a> ([IMyCockpit](Sandbox.ModAPI.Ingame.IMyCockpit))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Cockpit/LargeBlockJumpSeatR`  
   
 <a name="blocks-Kitchen">**Kitchen**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Kitchen/LargeBlockKitchen`  
@@ -1532,6 +1638,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Thrust/LargeBlockLargeFlatAtmosphericThrustDShape`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Thrust/SmallBlockLargeFlatAtmosphericThrustDShape`  
   
+<a name="blocks-Large Flat Atmospheric Thruster Round">**Large Flat Atmospheric Thruster Round**</a> ([IMyThrust](Sandbox.ModAPI.Ingame.IMyThrust))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Thrust/LargeBlockLargeFlatAtmosphericThrustRound`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Thrust/SmallBlockLargeFlatAtmosphericThrustRound`  
+  
 <a name="blocks-Large Hydrogen Thruster">**Large Hydrogen Thruster**</a> ([IMyThrust](Sandbox.ModAPI.Ingame.IMyThrust))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Thrust/LargeBlockLargeHydrogenThrust`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Thrust/SmallBlockLargeHydrogenThrust`  
@@ -1565,6 +1675,10 @@
 <a name="blocks-Laser Antenna">**Laser Antenna**</a> ([IMyLaserAntenna](Sandbox.ModAPI.Ingame.IMyLaserAntenna))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_LaserAntenna/LargeBlockLaserAntenna`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_LaserAntenna/SmallBlockLaserAntenna`  
+  
+<a name="blocks-Laser Antenna Type II">**Laser Antenna Type II**</a> ([IMyLaserAntenna](Sandbox.ModAPI.Ingame.IMyLaserAntenna))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_LaserAntenna/LargeBlockLaserAntennaType2`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_LaserAntenna/SmallBlockLaserAntennaType2`  
   
 <a name="blocks-LCD Panel">**LCD Panel**</a> ([IMyTextPanel](Sandbox.ModAPI.Ingame.IMyTextPanel))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_TextPanel/LargeLCDPanel`  
@@ -2277,6 +2391,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_JumpDrive/LargePrototechJumpDrive`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_JumpDrive/SmallPrototechJumpDrive`  
   
+<a name="blocks-Prototech Microwave Emitter">**Prototech Microwave Emitter**</a> ([IMyFunctionalBlock](Sandbox.ModAPI.Ingame.IMyFunctionalBlock))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_FunctionalBlock/LargeBlockPrototechMicroEmitter`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_FunctionalBlock/SmallBlockPrototechMicroEmitter`  
+  
 <a name="blocks-Prototech O2/H2 Generator">**Prototech O2/H2 Generator**</a> ([IMyGasGenerator](Sandbox.ModAPI.Ingame.IMyGasGenerator))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_OxygenGenerator/LargeBlockPrototechOxygenGenerator`  
   
@@ -2287,10 +2405,6 @@
 <a name="blocks-Prototech Thruster">**Prototech Thruster**</a> ([IMyThrust](Sandbox.ModAPI.Ingame.IMyThrust))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Thrust/LargeBlockPrototechThruster`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Thrust/SmallBlockPrototechThruster`  
-  
-<a name="blocks-Questionmark">**Questionmark**</a>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolQuestionMark`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolQuestionMark`  
   
 <a name="blocks-Railgun">**Railgun**</a> ([IMySmallMissileLauncherReload](Sandbox.ModAPI.Ingame.IMySmallMissileLauncherReload))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_SmallMissileLauncherReload/LargeRailgun`  
@@ -2335,6 +2449,9 @@
   
 <a name="blocks-Reinforced Conveyor Tube">**Reinforced Conveyor Tube**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_ConveyorConnector/ConveyorTubeDuct`  
+  
+<a name="blocks-Reinforced Conveyor Tube 3x">**Reinforced Conveyor Tube 3x**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_ConveyorConnector/ConveyorTubeDuct3X`  
   
 <a name="blocks-Reinforced Conveyor Tube T Junction">**Reinforced Conveyor Tube T Junction**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Conveyor/ConveyorTubeDuctT`  
@@ -2584,6 +2701,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_SensorBlock/LargeBlockSensor`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_SensorBlock/SmallBlockSensor`  
   
+<a name="blocks-Separation Charge">**Separation Charge**</a> ([IMyFunctionalBlock](Sandbox.ModAPI.Ingame.IMyFunctionalBlock))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_FunctionalBlock/LargeBlockSeparationCharge`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_FunctionalBlock/SmallBlockSeparationCharge`  
+  
 <a name="blocks-Server Rack A">**Server Rack A**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeBlockServerRack1`  
   
@@ -2747,6 +2868,9 @@
 <a name="blocks-Small Conveyor Tube">**Small Conveyor Tube**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_ConveyorConnector/ConveyorTubeSmall`  
   
+<a name="blocks-Small Conveyor Tube 3x">**Small Conveyor Tube 3x**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_ConveyorConnector/ConveyorTubeSmall3X`  
+  
 <a name="blocks-Small Conveyor Tube T Junction">**Small Conveyor Tube T Junction**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Conveyor/ConveyorTubeSmallT`  
   
@@ -2783,6 +2907,9 @@
   
 <a name="blocks-Small Reinforced Conveyor Tube">**Small Reinforced Conveyor Tube**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_ConveyorConnector/ConveyorTubeDuctSmall`  
+  
+<a name="blocks-Small Reinforced Conveyor Tube 3x">**Small Reinforced Conveyor Tube 3x**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_ConveyorConnector/ConveyorTubeDuctSmall3X`  
   
 <a name="blocks-Small Reinforced Conveyor Tube T Junction">**Small Reinforced Conveyor Tube T Junction**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Conveyor/ConveyorTubeDuctSmallT`  
@@ -2979,6 +3106,38 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Cockpit/LargeBlockSuspendedControlSeat`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Cockpit/SmallBlockSuspendedControlSeat`  
   
+<a name="blocks-Symbol And">**Symbol And**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolAnd`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolAnd`  
+  
+<a name="blocks-Symbol Apostrophe">**Symbol Apostrophe**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolApostrophe`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolApostrophe`  
+  
+<a name="blocks-Symbol Colon">**Symbol Colon**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolColon`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolColon`  
+  
+<a name="blocks-Symbol Dot">**Symbol Dot**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolDot`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolDot`  
+  
+<a name="blocks-Symbol Exclamation Mark">**Symbol Exclamation Mark**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolExclamationMark`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolExclamationMark`  
+  
+<a name="blocks-Symbol Hyphen">**Symbol Hyphen**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolHyphen`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolHyphen`  
+  
+<a name="blocks-Symbol Question Mark">**Symbol Question Mark**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolQuestionMark`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolQuestionMark`  
+  
+<a name="blocks-Symbol Underscore">**Symbol Underscore**</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolUnderscore`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolUnderscore`  
+  
 <a name="blocks-Target Dummy">**Target Dummy**</a> ([IMyTargetDummyBlock](Sandbox.ModAPI.Ingame.IMyTargetDummyBlock))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_TargetDummyBlock/TargetDummy`  
   
@@ -3010,6 +3169,10 @@
 <a name="blocks-Top Square Piston Part">**Top Square Piston Part**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_PistonTop/LargePistonTopReskin`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_PistonTop/SmallPistonTopReskin`  
+  
+<a name="blocks-Torpedo Launcher">**Torpedo Launcher**</a> ([IMySmallMissileLauncher](Sandbox.ModAPI.Ingame.IMySmallMissileLauncher))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_SmallMissileLauncher/LargeBlockTorpedoLauncher`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_SmallMissileLauncher/SmallBlockTorpedoLauncher`  
   
 <a name="blocks-Transparent LCD">**Transparent LCD**</a> ([IMyTextPanel](Sandbox.ModAPI.Ingame.IMyTextPanel))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_TextPanel/TransparentLCDLarge`  
@@ -3049,10 +3212,6 @@
   
 <a name="blocks-Twin-blade Wind Turbine">**Twin-blade Wind Turbine**</a> ([IMyWindTurbine](Sandbox.ModAPI.Ingame.IMyWindTurbine))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_WindTurbine/LargeBlockWindTurbineReskin`  
-  
-<a name="blocks-Underscore">**Underscore**</a>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeSymbolUnderscore`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_CubeBlock/SmallSymbolUnderscore`  
   
 <a name="blocks-Vending Machine">**Vending Machine**</a> ([]())  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_VendingMachine/VendingMachine`  
@@ -3114,6 +3273,10 @@
 <a name="blocks-Warhead">**Warhead**</a> ([IMyWarhead](Sandbox.ModAPI.Ingame.IMyWarhead))  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Warhead/LargeWarhead`  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Warhead/SmallWarhead`  
+  
+<a name="blocks-Warhead Type II">**Warhead Type II**</a> ([IMyWarhead](Sandbox.ModAPI.Ingame.IMyWarhead))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_Warhead/LargeWarheadType2`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small Grid: `MyObjectBuilder_Warhead/SmallWarheadType2`  
   
 <a name="blocks-Warning Sign Access">**Warning Sign Access**</a>  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Large Grid: `MyObjectBuilder_CubeBlock/LargeWarningSign2`  
@@ -3390,6 +3553,12 @@
 **<a name="Ammo Magazines-5.56x45mm NATO magazine">5.56x45mm NATO magazine</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/NATO_5p56x45mm`  
   
+**<a name="Ammo Magazines-Anti-Personnel Turret Magazine">Anti-Personnel Turret Magazine</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/AntiPersonnelTurret_Mag`  
+  
+**<a name="Ammo Magazines-Armor Piercing Torpedo">Armor Piercing Torpedo</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/Torpedo_Piercing`  
+  
 **<a name="Ammo Magazines-Artillery Shell">Artillery Shell</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/LargeCalibreAmmo`  
   
@@ -3398,6 +3567,9 @@
   
 **<a name="Ammo Magazines-Autocannon Magazine">Autocannon Magazine</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/AutocannonClip`  
+  
+**<a name="Ammo Magazines-Countermeasure Flares">Countermeasure Flares</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/FlareBox`  
   
 **<a name="Ammo Magazines-Fireworks Blue">Fireworks Blue</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/FireworksBoxBlue`  
@@ -3423,8 +3595,17 @@
 **<a name="Ammo Magazines-Gatling Ammo Box">Gatling Ammo Box</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/NATO_25x184mm`  
   
+**<a name="Ammo Magazines-Heavy Torpedo">Heavy Torpedo</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/Torpedo_Heavy`  
+  
+**<a name="Ammo Magazines-Homing Missile">Homing Missile</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/Missile200mmHoming`  
+  
 **<a name="Ammo Magazines-Large Railgun Sabot">Large Railgun Sabot</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/LargeRailgunAmmo`  
+  
+**<a name="Ammo Magazines-Light Torpedo">Light Torpedo</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/Torpedo_Seeking`  
   
 **<a name="Ammo Magazines-MR-20 Rifle Magazine">MR-20 Rifle Magazine</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/AutomaticRifleGun_Mag_20rd`  
@@ -3453,8 +3634,17 @@
 **<a name="Ammo Magazines-Small Railgun Sabot">Small Railgun Sabot</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/SmallRailgunAmmo`  
   
+**<a name="Ammo Magazines-Torpedo">Torpedo</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_AmmoMagazine/Torpedo`  
+  
 
 ## Blueprints  
+**<a name="Blueprints-Anti-Personnel Turret Magazine">Anti-Personnel Turret Magazine</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0075_AntiPersonnelTurretMagazine`  
+  
+**<a name="Blueprints-Armor Piercing Torpedo">Armor Piercing Torpedo</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0230_Torpedo_Piercing`  
+  
 **<a name="Blueprints-Artillery Shell">Artillery Shell</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0120_LargeCalibreAmmo`  
   
@@ -3490,8 +3680,11 @@ Heal Value: {0}
 Fill Value: {1}</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0010_CookMammalMeat`  
   
+**<a name="Blueprints-Countermeasure Flares">Countermeasure Flares</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0071_FlareBox`  
+  
 **<a name="Blueprints-Datapad">Datapad</a>**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0040_Datapad`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0030_Datapad`  
   
 **<a name="Blueprints-Detector Comp.">Detector Comp.</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/DetectorComponent`  
@@ -3548,10 +3741,10 @@ Fill Value: {1}</a>**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0063_FireworksBoxYellow`  
   
 **<a name="Blueprints-Flare Gun">Flare Gun</a>**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0050_FlareGun`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0000_FlareGun`  
   
 **<a name="Blueprints-Flare Gun Magazine">Flare Gun Magazine</a>**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0051_FlareGunMagazine`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0000_FlareGunMagazine`  
   
 **<a name="Blueprints-Gatling Ammo Box">Gatling Ammo Box</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0080_NATO_25x184mmMagazine`  
@@ -3586,6 +3779,12 @@ Fill Value: {1}</a>**
 **<a name="Blueprints-Harvest Vegetable Seeds">Harvest Vegetable Seeds</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0030_Seeds_Vegetables`  
   
+**<a name="Blueprints-Heavy Torpedo">Heavy Torpedo</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0220_Torpedo_Heavy`  
+  
+**<a name="Blueprints-Homing Missile">Homing Missile</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0101_Missile200mmHoming`  
+  
 **<a name="Blueprints-Hydrogen Bottle">Hydrogen Bottle</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0020_HydrogenBottle`  
   
@@ -3615,6 +3814,9 @@ Fill Value: {1}</a>**
   
 **<a name="Blueprints-Large Steel Tube">Large Steel Tube</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/LargeTube`  
+  
+**<a name="Blueprints-Light Torpedo">Light Torpedo</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0210_Torpedo_Seeking`  
   
 **<a name="Blueprints-Magnesium Powder">Magnesium Powder</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/MagnesiumOreToIngot`  
@@ -3796,7 +3998,7 @@ Heal Value: {0}</a>**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/OxygenBottlesRefill`  
   
 **<a name="Blueprints-Parachute Canvas">Parachute Canvas</a>**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0030_Canvas`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0040_Canvas`  
   
 **<a name="Blueprints-Platinum Ingot">Platinum Ingot</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/PlatinumOreToIngot`  
@@ -3898,6 +4100,9 @@ Recharge Value: {0}</a>**
   
 **<a name="Blueprints-Thruster Comp.">Thruster Comp.</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/ThrustComponent`  
+  
+**<a name="Blueprints-Torpedo">Torpedo</a>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/Position0200_Torpedo`  
   
 **<a name="Blueprints-Uranium Ingot">Uranium Ingot</a>**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`MyObjectBuilder_BlueprintDefinition/UraniumOreToIngot`  

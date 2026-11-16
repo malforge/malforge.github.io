@@ -82,5 +82,6 @@ public abstract class MyEventProxyEntityComponent: MyEntityComponentBase, IMyCom
 * [MyAutopilotComponent](Sandbox.Game.EntityComponents.MyAutopilotComponent)  
 * [MyPathRecorderComponent](Sandbox.Game.EntityComponents.MyPathRecorderComponent)  
 * [MyTargetLockingBlockComponent](Sandbox.Game.EntityComponents.MyTargetLockingBlockComponent)  
+* [MyToolbarProviderComponent](Sandbox.Game.EntityComponents.MyToolbarProviderComponent)  
 * [MyUpdatingEntityComponent](Sandbox.Game.EntityComponents.MyUpdatingEntityComponent)
 

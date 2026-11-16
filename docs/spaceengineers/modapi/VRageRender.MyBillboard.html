@@ -53,7 +53,7 @@
                 <h1>MyBillboard</h1>
             </div>
 <p><strong>Assembly:</strong> VRage.Render.dll</p>
-<pre><code class="language-csharp">public class MyBillboard: IComparable
+<pre><code class="language-csharp">public class MyBillboard: IComparable, IComparable&lt;MyBillboard&gt;
 </code></pre>
 <p>This class is used for storing and sorting particle billboards You can change it's values ONLY WITH MyTransparentGeometry.ApplyActionOnPersistentBillboards</p>
 <h2 id="fields">Fields</h2>
@@ -65,6 +65,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="VRageRender.MyBillboard@PARENT_ID_CAMERA.html">static PARENT_ID_CAMERA</a></td>
+<td>Set as <a href="VRageRender.MyBillboard@ParentID.html">ParentID</a> to declare the positions camera-local. The renderer then places the billboard with the camera it actually draws that frame with, which is what keeps screen-anchored content pinned — positions derived from the game-side camera matrix are a tick stale and swim once the camera is interpolated.</td>
+</tr>
 <tr>
 <td><a href="VRageRender.MyBillboard@AlphaCutout.html">AlphaCutout</a></td>
 <td></td>
@@ -99,7 +103,7 @@
 </tr>
 <tr>
 <td><a href="VRageRender.MyBillboard@ParentID.html">ParentID</a></td>
-<td></td>
+<td>Render object the positions are local to, or <a href="VRageRender.MyBillboard@PARENT_ID_CAMERA.html">PARENT_ID_CAMERA</a> for camera-local ones. Unassigned means the positions are absolute world coordinates.</td>
 </tr>
 <tr>
 <td><a href="VRageRender.MyBillboard@Position0.html">Position0</a></td>
@@ -160,6 +164,10 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="VRageRender.MyBillboard@CompareTo.html">CompareTo(MyBillboard)</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="VRageRender.MyBillboard@CompareTo.html">CompareTo(object)</a></td>
 <td></td>
 </tr>
@@ -168,6 +176,7 @@
 <p><strong>Implements:</strong></p>
 <ul>
 <li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.IComparable?view=netframework-4.6">IComparable</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.IComparable-1?view=netframework-4.6">IComparable<MyBillboard></a></li>
 </ul>
 <p><strong>Inheritors:</strong></p>
 <ul>

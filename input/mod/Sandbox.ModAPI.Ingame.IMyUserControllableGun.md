@@ -11,6 +11,7 @@ Describes gun block (PB scripting interface)
 |Member|Description|
 |---|---|
 |[IsShooting](Sandbox.ModAPI.Ingame.IMyUserControllableGun@IsShooting)|Gets whether block is shooting|
+|[SelectedAmmoType](Sandbox.ModAPI.Ingame.IMyUserControllableGun@SelectedAmmoType)|Gets or sets the preferred ammunition magazine; null means any compatible magazine.|
 |[Shoot](Sandbox.ModAPI.Ingame.IMyUserControllableGun@Shoot)|Represents terminal gui toggle element "Shoot". Not same as [IsShooting](Sandbox.ModAPI.Ingame.IMyUserControllableGun@IsShooting) |
 |[BlockDefinition](VRage.Game.ModAPI.Ingame.IMyCubeBlock@BlockDefinition)|Gets definition.Id assigned to this block<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.Ingame.IMyCubeBlock)_|
 |[Closed](VRage.Game.ModAPI.Ingame.IMyEntity@Closed)|True if the block has been removed from the world.<br /><br />_Inherited from [IMyEntity](VRage.Game.ModAPI.Ingame.IMyEntity)_|
@@ -54,6 +55,8 @@ Describes gun block (PB scripting interface)
 
 |Member|Description|
 |---|---|
+|[CycleSelectedAmmoType()](Sandbox.ModAPI.Ingame.IMyUserControllableGun@CycleSelectedAmmoType)|Selects the next compatible ammunition type.|
+|[ForceReload()](Sandbox.ModAPI.Ingame.IMyUserControllableGun@ForceReload)|Unloads the current magazine and begins reloading the selected type.|
 |[ShootOnce()](Sandbox.ModAPI.Ingame.IMyUserControllableGun@ShootOnce)|Triggers a single shot.|
 |[GetActions(List<ITerminalAction>, Func<ITerminalAction, bool>)](Sandbox.ModAPI.Ingame.IMyTerminalBlock@GetActions)|Get all terminal actions available for block<br /><br />_Inherited from [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock)_|
 |[GetActionWithName(string)](Sandbox.ModAPI.Ingame.IMyTerminalBlock@GetActionWithName)|Get first found terminal action with name<br /><br />_Inherited from [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock)_|
@@ -106,20 +109,28 @@ Describes gun block (PB scripting interface)
 * MyObjectBuilder_InteriorTurret/LargeInteriorTurret  
 * MyObjectBuilder_LargeGatlingTurret/  
 * MyObjectBuilder_LargeGatlingTurret/AutoCannonTurret  
+* MyObjectBuilder_LargeGatlingTurret/AutoCannonTurretType2  
 * MyObjectBuilder_LargeGatlingTurret/LargeGatlingTurretReskin  
 * MyObjectBuilder_LargeGatlingTurret/SmallGatlingTurret  
 * MyObjectBuilder_LargeGatlingTurret/SmallGatlingTurretReskin  
 * MyObjectBuilder_SmallGatlingGun/  
 * MyObjectBuilder_SmallGatlingGun/SmallBlockAutocannon  
+* MyObjectBuilder_SmallGatlingGun/SmallBlockAutocannonType2  
 * MyObjectBuilder_SmallGatlingGun/SmallGatlingGunWarfare2  
 * MyObjectBuilder_SmallMissileLauncher/  
 * MyObjectBuilder_SmallMissileLauncher/LargeBlockLargeCalibreGun  
+* MyObjectBuilder_SmallMissileLauncher/LargeBlockLargeCalibreGunType2  
+* MyObjectBuilder_SmallMissileLauncher/LargeBlockTorpedoLauncher  
 * MyObjectBuilder_SmallMissileLauncher/LargeFlareLauncher  
+* MyObjectBuilder_SmallMissileLauncher/LargeInsetFlareLauncher  
 * MyObjectBuilder_SmallMissileLauncher/LargeMissileLauncher  
+* MyObjectBuilder_SmallMissileLauncher/SmallBlockTorpedoLauncher  
 * MyObjectBuilder_SmallMissileLauncher/SmallFlareLauncher  
+* MyObjectBuilder_SmallMissileLauncher/SmallInsetFlareLauncher  
 * MyObjectBuilder_SmallMissileLauncher/SmallMissileLauncherWarfare2  
 * MyObjectBuilder_SmallMissileLauncherReload/LargeRailgun  
 * MyObjectBuilder_SmallMissileLauncherReload/SmallBlockMediumCalibreGun  
+* MyObjectBuilder_SmallMissileLauncherReload/SmallBlockMediumCalibreGunType2  
 * MyObjectBuilder_SmallMissileLauncherReload/SmallRailgun  
 * MyObjectBuilder_SmallMissileLauncherReload/SmallRocketLauncherReload
 

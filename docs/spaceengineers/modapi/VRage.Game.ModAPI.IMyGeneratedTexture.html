@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRage.Game.ModAPI.IMyGeneratedTexture - API Reference</title>
+    <link rel="stylesheet" href="styles.css?v=21d60a28e8d9">
+</head>
+<body>
+    <noscript>
+        <div style="position: fixed; top: 0; left: 0; right: 0; background: #ff6b6b; color: white; padding: 1em; text-align: center; z-index: 10000; font-family: Arial, sans-serif;">
+            <strong>JavaScript Required:</strong> This documentation site requires JavaScript to function. Please enable JavaScript in your browser to view the navigation and search features.
+        </div>
+    </noscript>
+    <header class="top-header">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-nav">
+            <a href="index.html" class="header-btn" title="Home">
+                <span>🏠</span>
+            </a>
+            <a href="https://spaceengineers.wiki.gg/" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="Space Engineers Wiki">
+                <img src="wiki.png" alt="Wiki" class="header-icon">
+            </a>
+            <a href="https://github.com/malforge/mdk2" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="MDK2 - Malware's Development Kit">
+                <img src="mdk2.png" alt="MDK2" class="header-icon">
+            </a>
+            <a href="../pbapi/index.html" class="header-btn api-switcher" title="Switch to PB API">🔄 PB API</a>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search API..." autocomplete="off">
+                <button id="clear-search" style="display: none;">&times;</button>
+                <div class="search-hint">Prefix: T: for types, M: for members</div>
+            </div>
+        </div>
+        <nav class="sidebar-nav" data-current-page="VRage.Game.ModAPI.IMyGeneratedTexture" data-cache-buster="21d60a28e8d9" data-api-type="mod">
+            <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+            <div class="sidebar-loading">Loading navigation...</div>
+        </nav>
+        <div class="sidebar-footer"><span class="generation-timestamp" data-root-path="">Generated...</span></div>
+        <div class="sidebar-resize-handle"></div>
+    </aside>
+    <div id="search-results" style="display: none;"></div>
+    <main class="content">
+            <div class="page-header">
+                <div class="page-namespace">VRage.Game.ModAPI</div>
+                <h1>IMyGeneratedTexture</h1>
+            </div>
+<p><strong>Assembly:</strong> VRage.Game.dll</p>
+<pre><code class="language-csharp">public interface IMyGeneratedTexture: IDisposable
+</code></pre>
+<p>A texture whose pixels a mod writes itself, created through <a href="VRage.Game.ModAPI.IMyGeneratedTextures@Create.html">Create(string, Vector2I, MyGeneratedTextureFormat)</a> . Give <a href="VRage.Game.ModAPI.IMyGeneratedTexture@Name.html">Name</a> anywhere the game takes a texture path — an LCD sprite of type<code>VRage.Game.GUI.TextPanel.SpriteType.TEXTURE</code>, for instance — and the renderer resolves it to this texture.Content that is already an image, such as a rendered map or a decoded video frame, costs one upload here against one textured quad per pixel if it were encoded as sprites for the panel to draw back into pixels.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyGeneratedTexture@ByteCount.html">ByteCount</a></td>
+<td>Length of the buffer <a href="VRage.Game.ModAPI.IMyGeneratedTexture@BeginUpdate.html">BeginUpdate()</a> hands out —<code>Size.X * Size.Y * 4</code>.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyGeneratedTexture@Format.html">Format</a></td>
+<td>Pixel format, fixed for the lifetime of the texture.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyGeneratedTexture@IsValid.html">IsValid</a></td>
+<td>True until <a href="https://docs.microsoft.com/en-us/dotnet/api/system.idisposable.dispose?view=netframework-4.6">Dispose()</a> is called, after which every method here does nothing.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyGeneratedTexture@MaterialId.html">MaterialId</a></td>
+<td><a href="VRage.Game.ModAPI.IMyGeneratedTexture@Name.html">Name</a> as the id<code>Sandbox.ModAPI.MyScreenSpaceSprite</code>takes, interned once here rather than per call —<code>MyStringId.GetOrCompute</code>never releases what it interns, and every texture gets a name of its own. <a href="VRage.Utils.MyStringId@NullOrEmpty.html">NullOrEmpty</a> once the texture has been disposed.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyGeneratedTexture@Name.html">Name</a></td>
+<td>Unique name of this texture, assigned at creation. Pass it wherever a texture path is expected. Empty once the texture has been disposed.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyGeneratedTexture@Size.html">Size</a></td>
+<td>Pixel dimensions, fixed for the lifetime of the texture.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyGeneratedTexture@BeginUpdate.html">BeginUpdate()</a></td>
+<td>Borrows a <a href="VRage.Game.ModAPI.IMyGeneratedTexture@ByteCount.html">ByteCount</a> -byte buffer to write the next image into. Fill it, then hand it to <a href="VRage.Game.ModAPI.IMyGeneratedTexture@EndUpdate.html">EndUpdate(Byte[])</a> ; do not keep it afterwards, and do not assume it still holds what you last wrote — the same few buffers are cycled as the renderer finishes with them.Pixel order is top-down, tightly packed, four bytes per pixel as R, G, B, A.<br /><br />Colour channels must be premultiplied by alpha: the sprite pass treats these as premultiplied, so straight alpha reads too bright wherever the image is translucent. Fully opaque and fully transparent pixels are the same under both conventions.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyGeneratedTexture@EndUpdate.html">EndUpdate(Byte[])</a></td>
+<td>Hands the filled buffer to the renderer, which replaces the whole image with it and rebuilds the mip chain. The buffer belongs to the renderer from here on — write to it again and you will see a torn image.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Implements:</strong></p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.IDisposable?view=netframework-4.6">IDisposable</a></li>
+</ul>
+
+    </main>
+    <script src="api-index.js?v=21d60a28e8d9"></script>
+</body>
+</html>

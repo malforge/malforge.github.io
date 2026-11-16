@@ -250,6 +250,10 @@
 <td>Position in grid coordinates<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.Ingame.IMyCubeBlock.html">IMyCubeBlock</a></em></td>
 </tr>
 <tr>
+<td><a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun@SelectedAmmoType.html">SelectedAmmoType</a></td>
+<td>Gets or sets the preferred ammunition magazine; null means any compatible magazine.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun.html">IMyUserControllableGun</a></em></td>
+</tr>
+<tr>
 <td><a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun@Shoot.html">Shoot</a></td>
 <td>Represents terminal gui toggle element &quot;Shoot&quot;. Not same as <a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun@IsShooting.html">IsShooting</a><br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun.html">IMyUserControllableGun</a></em></td>
 </tr>
@@ -343,6 +347,14 @@
 <tr>
 <td><a href="Sandbox.ModAPI.Ingame.IMyLargeTurretBase@TrackTarget.html">TrackTarget(Vector3D, Vector3)</a></td>
 <td>Tracks given target with enabled position prediction</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun@CycleSelectedAmmoType.html">CycleSelectedAmmoType()</a></td>
+<td>Selects the next compatible ammunition type.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun.html">IMyUserControllableGun</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun@ForceReload.html">ForceReload()</a></td>
+<td>Unloads the current magazine and begins reloading the selected type.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun.html">IMyUserControllableGun</a></em></td>
 </tr>
 <tr>
 <td><a href="Sandbox.ModAPI.Ingame.IMyTerminalBlock@GetActions.html">GetActions(List<ITerminalAction>, Func&lt;ITerminalAction, bool&gt;)</a></td>
@@ -463,6 +475,7 @@
 <li>MyObjectBuilder_InteriorTurret/LargeInteriorTurret</li>
 <li>MyObjectBuilder_LargeGatlingTurret/</li>
 <li>MyObjectBuilder_LargeGatlingTurret/AutoCannonTurret</li>
+<li>MyObjectBuilder_LargeGatlingTurret/AutoCannonTurretType2</li>
 <li>MyObjectBuilder_LargeGatlingTurret/LargeGatlingTurretReskin</li>
 <li>MyObjectBuilder_LargeGatlingTurret/SmallGatlingTurret</li>
 <li>MyObjectBuilder_LargeGatlingTurret/SmallGatlingTurretReskin</li>

@@ -89,6 +89,8 @@ Describes Warhead block (PB scripting interface)
 **Type Definitions:**  
 * MyObjectBuilder_Warhead/LargeExplosiveBarrel  
 * MyObjectBuilder_Warhead/LargeWarhead  
+* MyObjectBuilder_Warhead/LargeWarheadType2  
 * MyObjectBuilder_Warhead/SmallExplosiveBarrel  
-* MyObjectBuilder_Warhead/SmallWarhead
+* MyObjectBuilder_Warhead/SmallWarhead  
+* MyObjectBuilder_Warhead/SmallWarheadType2
 

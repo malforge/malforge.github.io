@@ -20,14 +20,19 @@ public class MyGunBase: MyDeviceBase
 |Member|Description|
 |---|---|
 |[OnAmmoAmountChanged](Sandbox.Game.Weapons.MyGunBase@OnAmmoAmountChanged)||
+|[OnAmmoDefinitionChanged](Sandbox.Game.Weapons.MyGunBase@OnAmmoDefinitionChanged)||
+|[OnShotsLeftInBurstChanged](Sandbox.Game.Weapons.MyGunBase@OnShotsLeftInBurstChanged)||
+|[OnVisualAmmoAmountChanged](Sandbox.Game.Weapons.MyGunBase@OnVisualAmmoAmountChanged)||
 
 ## Properties
 
 |Member|Description|
 |---|---|
+|[AmmoMagazineIdToPull](Sandbox.Game.Weapons.MyGunBase@AmmoMagazineIdToPull)|The magazine the conveyor system is allowed to supply. A selected ammo type takes precedence even while another type is still loaded.|
 |[BackkickForcePerSecond](Sandbox.Game.Weapons.MyGunBase@BackkickForcePerSecond)||
 |[CurrentAmmo](Sandbox.Game.Weapons.MyGunBase@CurrentAmmo)||
 |[CurrentAmmoDefinition](Sandbox.Game.Weapons.MyGunBase@CurrentAmmoDefinition)||
+|[CurrentAmmoDefinitionId](Sandbox.Game.Weapons.MyGunBase@CurrentAmmoDefinitionId)||
 |[CurrentAmmoMagazineDefinition](Sandbox.Game.Weapons.MyGunBase@CurrentAmmoMagazineDefinition)||
 |[CurrentAmmoMagazineId](Sandbox.Game.Weapons.MyGunBase@CurrentAmmoMagazineId)||
 |[CurrentMagazines](Sandbox.Game.Weapons.MyGunBase@CurrentMagazines)||
@@ -50,11 +55,15 @@ public class MyGunBase: MyDeviceBase
 |[ReloadSound](Sandbox.Game.Weapons.MyGunBase@ReloadSound)||
 |[ReloadTime](Sandbox.Game.Weapons.MyGunBase@ReloadTime)||
 |[SecondarySound](Sandbox.Game.Weapons.MyGunBase@SecondarySound)||
+|[SelectedAmmoType](Sandbox.Game.Weapons.MyGunBase@SelectedAmmoType)||
 |[ShootIntervalInMiliseconds](Sandbox.Game.Weapons.MyGunBase@ShootIntervalInMiliseconds)||
 |[ShootIntervalModifier](Sandbox.Game.Weapons.MyGunBase@ShootIntervalModifier)||
 |[ShootSound](Sandbox.Game.Weapons.MyGunBase@ShootSound)||
 |[ShotsInBurst](Sandbox.Game.Weapons.MyGunBase@ShotsInBurst)||
+|[ShotsLeftInBurst](Sandbox.Game.Weapons.MyGunBase@ShotsLeftInBurst)||
 |[SupportReloading](Sandbox.Game.Weapons.MyGunBase@SupportReloading)||
+|[SupportsAmmoSelection](Sandbox.Game.Weapons.MyGunBase@SupportsAmmoSelection)||
+|[SyncedAmmoDefinition](Sandbox.Game.Weapons.MyGunBase@SyncedAmmoDefinition)||
 |[UseDefaultMuzzleFlash](Sandbox.Game.Weapons.MyGunBase@UseDefaultMuzzleFlash)||
 |[User](Sandbox.Game.Weapons.MyGunBase@User)||
 |[WeaponDefinition](Sandbox.Game.Weapons.MyGunBase@WeaponDefinition)||
@@ -79,8 +88,10 @@ public class MyGunBase: MyDeviceBase
 |[ConsumeMagazine()](Sandbox.Game.Weapons.MyGunBase@ConsumeMagazine)||
 |[CreateAmmoInventoryConstraints(string)](Sandbox.Game.Weapons.MyGunBase@CreateAmmoInventoryConstraints)||
 |[CreateEffects(WeaponEffectAction, uint?, bool)](Sandbox.Game.Weapons.MyGunBase@CreateEffects)||
+|[CycleSelectedAmmoType()](Sandbox.Game.Weapons.MyGunBase@CycleSelectedAmmoType)||
 |[DummiesPerType(MyAmmoType)](Sandbox.Game.Weapons.MyGunBase@DummiesPerType)||
 |[EmptyMagazine()](Sandbox.Game.Weapons.MyGunBase@EmptyMagazine)||
+|[ForceReload()](Sandbox.Game.Weapons.MyGunBase@ForceReload)||
 |[GetAmmoMagazinesClient()](Sandbox.Game.Weapons.MyGunBase@GetAmmoMagazinesClient)||
 |[GetAmmunitionAmount()](Sandbox.Game.Weapons.MyGunBase@GetAmmunitionAmount)||
 |[GetCurrentDummyName()](Sandbox.Game.Weapons.MyGunBase@GetCurrentDummyName)||
@@ -92,7 +103,9 @@ public class MyGunBase: MyDeviceBase
 |[GetMuzzleWorldMatrix()](Sandbox.Game.Weapons.MyGunBase@GetMuzzleWorldMatrix)||
 |[GetMuzzleWorldPosition()](Sandbox.Game.Weapons.MyGunBase@GetMuzzleWorldPosition)||
 |[GetObjectBuilder()](Sandbox.Game.Weapons.MyGunBase@GetObjectBuilder)||
+|[GetSelectedAmmoTypeName()](Sandbox.Game.Weapons.MyGunBase@GetSelectedAmmoTypeName)||
 |[GetTotalAmmunitionAmount()](Sandbox.Game.Weapons.MyGunBase@GetTotalAmmunitionAmount)||
+|[GetVisualAmmoAmount()](Sandbox.Game.Weapons.MyGunBase@GetVisualAmmoAmount)||
 |[HasActiveEffects()](Sandbox.Game.Weapons.MyGunBase@HasActiveEffects)||
 |[HasEnoughAmmunition()](Sandbox.Game.Weapons.MyGunBase@HasEnoughAmmunition)||
 |[HasEnoughMagazines()](Sandbox.Game.Weapons.MyGunBase@HasEnoughMagazines)||
@@ -103,10 +116,12 @@ public class MyGunBase: MyDeviceBase
 |[IsAmmoMagazineCompatible(MyDefinitionId)](Sandbox.Game.Weapons.MyGunBase@IsAmmoMagazineCompatible)||
 |[LoadDummies(Dictionary<string, MyModelDummy>, Dictionary<int, string>)](Sandbox.Game.Weapons.MyGunBase@LoadDummies)||
 |[MoveToNextMuzzle(MyAmmoType)](Sandbox.Game.Weapons.MyGunBase@MoveToNextMuzzle)||
+|[PullAmmo(MyGridConveyorSystem, IMyConveyorEndpointBlock, MyInventory, MyFixedPoint)](Sandbox.Game.Weapons.MyGunBase@PullAmmo)|Pulls [AmmoMagazineIdToPull](Sandbox.Game.Weapons.MyGunBase@AmmoMagazineIdToPull) over the conveyor system. An empty weapon set to any ammo type falls back to the first magazine type, in definition order, that the conveyor system can supply.|
 |[RefreshAmmunitionAmount(bool)](Sandbox.Game.Weapons.MyGunBase@RefreshAmmunitionAmount)||
 |[RemoveAllEffects()](Sandbox.Game.Weapons.MyGunBase@RemoveAllEffects)||
 |[RemoveOldEffects(WeaponEffectAction)](Sandbox.Game.Weapons.MyGunBase@RemoveOldEffects)||
 |[SetCurrentAmmo(int, bool)](Sandbox.Game.Weapons.MyGunBase@SetCurrentAmmo)||
+|[SetShotsLeftInBurst(int)](Sandbox.Game.Weapons.MyGunBase@SetShotsLeftInBurst)||
 |[Shoot(Vector3, MyEntity, MyLargeBarrelBase)](Sandbox.Game.Weapons.MyGunBase@Shoot)||
 |[Shoot(Vector3, MyEntity, uint?)](Sandbox.Game.Weapons.MyGunBase@Shoot)||
 |[Shoot(Vector3, Vector3D, MyEntity, uint?)](Sandbox.Game.Weapons.MyGunBase@Shoot)||
@@ -122,6 +137,7 @@ public class MyGunBase: MyDeviceBase
 |[TrySubscribeToEntityEvents(MyEntity)](Sandbox.Game.Weapons.MyGunBase@TrySubscribeToEntityEvents)||
 |[UpdateEffectPositions()](Sandbox.Game.Weapons.MyGunBase@UpdateEffectPositions)||
 |[UpdateEffects()](Sandbox.Game.Weapons.MyGunBase@UpdateEffects)||
+|[UpdateVisualAmmoAmount()](Sandbox.Game.Weapons.MyGunBase@UpdateVisualAmmoAmount)|Raises an event only when reload readiness changes the visual ammo state.|
 |[CanSwitchAmmoMagazine()](VRage.Game.ModAPI.MyDeviceBase@CanSwitchAmmoMagazine)|Determines whether this device can switch ammo<br /><br />_Inherited from [MyDeviceBase](VRage.Game.ModAPI.MyDeviceBase)_|
 |[GetMuzzleLocalPosition()](VRage.Game.ModAPI.MyDeviceBase@GetMuzzleLocalPosition)|Gets the muzzle local position<br /><br />_Inherited from [MyDeviceBase](VRage.Game.ModAPI.MyDeviceBase)_|
 |[GetMuzzleWorldPosition()](VRage.Game.ModAPI.MyDeviceBase@GetMuzzleWorldPosition)|Gets the muzzle world position<br /><br />_Inherited from [MyDeviceBase](VRage.Game.ModAPI.MyDeviceBase)_|

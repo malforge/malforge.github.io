@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox.ModAPI.MyModScreen - API Reference</title>
+    <link rel="stylesheet" href="styles.css?v=21d60a28e8d9">
+</head>
+<body>
+    <noscript>
+        <div style="position: fixed; top: 0; left: 0; right: 0; background: #ff6b6b; color: white; padding: 1em; text-align: center; z-index: 10000; font-family: Arial, sans-serif;">
+            <strong>JavaScript Required:</strong> This documentation site requires JavaScript to function. Please enable JavaScript in your browser to view the navigation and search features.
+        </div>
+    </noscript>
+    <header class="top-header">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-nav">
+            <a href="index.html" class="header-btn" title="Home">
+                <span>🏠</span>
+            </a>
+            <a href="https://spaceengineers.wiki.gg/" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="Space Engineers Wiki">
+                <img src="wiki.png" alt="Wiki" class="header-icon">
+            </a>
+            <a href="https://github.com/malforge/mdk2" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="MDK2 - Malware's Development Kit">
+                <img src="mdk2.png" alt="MDK2" class="header-icon">
+            </a>
+            <a href="../pbapi/index.html" class="header-btn api-switcher" title="Switch to PB API">🔄 PB API</a>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search API..." autocomplete="off">
+                <button id="clear-search" style="display: none;">&times;</button>
+                <div class="search-hint">Prefix: T: for types, M: for members</div>
+            </div>
+        </div>
+        <nav class="sidebar-nav" data-current-page="Sandbox.ModAPI.MyModScreen" data-cache-buster="21d60a28e8d9" data-api-type="mod">
+            <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+            <div class="sidebar-loading">Loading navigation...</div>
+        </nav>
+        <div class="sidebar-footer"><span class="generation-timestamp" data-root-path="">Generated...</span></div>
+        <div class="sidebar-resize-handle"></div>
+    </aside>
+    <div id="search-results" style="display: none;"></div>
+    <main class="content">
+            <div class="page-header">
+                <div class="page-namespace">Sandbox.ModAPI</div>
+                <h1>MyModScreen</h1>
+            </div>
+<p><strong>Assembly:</strong> Sandbox.Game.dll</p>
+<pre><code class="language-csharp">public abstract class MyModScreen
+</code></pre>
+<p>A GUI screen owned by a mod: a real entry in the game's screen stack, so it takes focus, starves gameplay of input while it is open, fades in and out with the game's transitions, and closes on Escape.</p>
+<p>Derive from this, override the callbacks you need, and call <a href="Sandbox.ModAPI.MyModScreen@Open.html">Open()</a> . The screen itself is empty: draw its content from <code>MyModScreen.OnDraw(float)</code><sub>prohibited</sub> with <a href="Sandbox.ModAPI.MyScreenSpaceText.html">MyScreenSpaceText</a> and <a href="Sandbox.ModAPI.MyScreenSpaceSprite.html">MyScreenSpaceSprite</a> , left on the default <a href="Sandbox.ModAPI.MyScreenSpaceLayer@BelowHud.html">BelowHud</a> layer, which composites in place inside the screen. Multiply colours by the alpha passed to <code>MyModScreen.OnDraw(float)</code><sub>prohibited</sub> so the content fades with the screen, and hit test with <a href="Sandbox.ModAPI.MyScreenSpace@TryGetCursorPosition.html">TryGetCursorPosition(out Vector2)</a> , whose coordinates are the ones the content was drawn at. Anything that has to stay inside a panel - a scrolling list, a progress fill - is clipped with <a href="Sandbox.ModAPI.MyScreenSpace@UsingScissorRectangle.html">UsingScissorRectangle(RectangleF, MyScreenSpaceLayer)</a> .</p>
+<p>Because the screen carries no controls, it is a mouse and keyboard surface: a gamepad can close it but cannot point at anything, as pointing in this GUI is a matter of control focus.</p>
+<p>Everything here must be called from the update thread, and a screen never outlives its session.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@BackgroundColor.html">BackgroundColor</a></td>
+<td>Colour of the background panel, which is drawn only together with a <a href="Sandbox.ModAPI.MyModScreen@Size.html">Size</a> .</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@CloseButtonEnabled.html">CloseButtonEnabled</a></td>
+<td>Shows the game's own close button in the corner of the panel. Clicking it goes through <code>MyModScreen.OnCancelling()</code><sub>prohibited</sub> exactly as Escape does.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@CloseOnEscape.html">CloseOnEscape</a></td>
+<td>Whether Escape and the gamepad cancel button close the screen. On by default; a screen that turns it off has to offer the player some other way out.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@DrawMouseCursor.html">DrawMouseCursor</a></td>
+<td>Whether the mouse cursor is drawn while this screen has focus. On by default, since a screen with nothing to point at is the unusual case.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@EnabledBackgroundFade.html">EnabledBackgroundFade</a></td>
+<td>Darkens whatever is behind the screen, the way the game's own full-screen menus do.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@HasFocus.html">HasFocus</a></td>
+<td>Whether this is the screen input is going to. False while another screen sits above it.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@IsOpen.html">IsOpen</a></td>
+<td>Whether the screen is in the screen stack. False again as soon as <code>MyModScreen.OnClosed(bool)</code><sub>prohibited</sub> is delivered.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@IsVisible.html">IsVisible</a></td>
+<td>Whether the screen is drawn. False while it is hidden underneath a screen that hides the ones below it.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@Name.html">Name</a></td>
+<td>Name given at construction, or the type name.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@PausesGameInSinglePlayer.html">PausesGameInSinglePlayer</a></td>
+<td>Pauses a single-player game while the screen is open, as the main menu does. Ignored in multiplayer. Read when the screen opens, so set it before <a href="Sandbox.ModAPI.MyModScreen@Open.html">Open()</a> .</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@Position.html">Position</a></td>
+<td>Normalized [0,1] position of the screen's centre. May be changed while open.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@Size.html">Size</a></td>
+<td>Normalized [0,1] size of the background panel, or null for no panel. May be changed while open.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@SkipTransition.html">SkipTransition</a></td>
+<td>Skips the opening and closing fades.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@Close.html">Close()</a></td>
+<td>Closes the screen with the usual fade out. <code>MyModScreen.OnClosed(bool)</code><sub>prohibited</sub> arrives once the fade has finished.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@CloseNow.html">CloseNow()</a></td>
+<td>Closes the screen without a fade, delivering <code>MyModScreen.OnClosed(bool)</code><sub>prohibited</sub> before returning.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@Hide.html">Hide()</a></td>
+<td>Transitions the screen out but keeps it in the stack, so <a href="Sandbox.ModAPI.MyModScreen@Unhide.html">Unhide()</a> brings it back with its state intact.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@Open.html">Open()</a></td>
+<td>Puts the screen on top of the screen stack, where it takes focus and input. Does nothing when the screen is already open, and logs and returns rather than throwing when a screen cannot be opened at all: on a dedicated server, off the update thread, with no running session, or once too many mod screens are open.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyModScreen@Unhide.html">Unhide()</a></td>
+<td>Brings a hidden screen back.</td>
+</tr>
+</tbody>
+</table>
+
+    </main>
+    <script src="api-index.js?v=21d60a28e8d9"></script>
+</body>
+</html>

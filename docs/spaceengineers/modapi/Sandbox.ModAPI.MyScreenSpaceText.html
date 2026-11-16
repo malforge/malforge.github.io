@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox.ModAPI.MyScreenSpaceText - API Reference</title>
+    <link rel="stylesheet" href="styles.css?v=21d60a28e8d9">
+</head>
+<body>
+    <noscript>
+        <div style="position: fixed; top: 0; left: 0; right: 0; background: #ff6b6b; color: white; padding: 1em; text-align: center; z-index: 10000; font-family: Arial, sans-serif;">
+            <strong>JavaScript Required:</strong> This documentation site requires JavaScript to function. Please enable JavaScript in your browser to view the navigation and search features.
+        </div>
+    </noscript>
+    <header class="top-header">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-nav">
+            <a href="index.html" class="header-btn" title="Home">
+                <span>🏠</span>
+            </a>
+            <a href="https://spaceengineers.wiki.gg/" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="Space Engineers Wiki">
+                <img src="wiki.png" alt="Wiki" class="header-icon">
+            </a>
+            <a href="https://github.com/malforge/mdk2" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="MDK2 - Malware's Development Kit">
+                <img src="mdk2.png" alt="MDK2" class="header-icon">
+            </a>
+            <a href="../pbapi/index.html" class="header-btn api-switcher" title="Switch to PB API">🔄 PB API</a>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search API..." autocomplete="off">
+                <button id="clear-search" style="display: none;">&times;</button>
+                <div class="search-hint">Prefix: T: for types, M: for members</div>
+            </div>
+        </div>
+        <nav class="sidebar-nav" data-current-page="Sandbox.ModAPI.MyScreenSpaceText" data-cache-buster="21d60a28e8d9" data-api-type="mod">
+            <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+            <div class="sidebar-loading">Loading navigation...</div>
+        </nav>
+        <div class="sidebar-footer"><span class="generation-timestamp" data-root-path="">Generated...</span></div>
+        <div class="sidebar-resize-handle"></div>
+    </aside>
+    <div id="search-results" style="display: none;"></div>
+    <main class="content">
+            <div class="page-header">
+                <div class="page-namespace">Sandbox.ModAPI</div>
+                <h1>MyScreenSpaceText</h1>
+            </div>
+<p><strong>Assembly:</strong> Sandbox.Game.dll</p>
+<pre><code class="language-csharp">public abstract sealed class MyScreenSpaceText
+</code></pre>
+<p>Draws text in screen space using the game's own fonts and text renderer.</p>
+<p>Immediate mode: every call draws for a single frame, so call it every frame, from a session component's <a href="VRage.Game.Components.MySessionComponentBase@Draw.html">Draw()</a> for content over the game, or from the OnDraw of a <a href="Sandbox.ModAPI.MyModScreen.html">MyModScreen</a> for the content of a mod's own screen, where the layer should be left at <a href="Sandbox.ModAPI.MyScreenSpaceLayer@BelowHud.html">BelowHud</a> so it composites inside that screen. Must be called from the update thread.</p>
+<p>Fonts are named by the subtype id of a font definition, so any font declared in Fonts.sbc works, including ones added by mods. Because fonts are registered per session, always pass names rather than caching anything across worlds.</p>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpaceText@Draw.html">static Draw(string, string, Vector2, float, Color, MyGuiDrawAlignEnum, float, MyScreenSpaceLayer)</a></td>
+<td>Draws a single-colour line or block of text. There is no markup: to mix colours, draw one call per colour run and advance the position using <a href="Sandbox.ModAPI.MyScreenSpaceText@Measure.html">Measure(string, string, float)</a> .</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpaceText@DrawPixels.html">static DrawPixels(string, string, Vector2, float, Color, MyGuiDrawAlignEnum, float, MyScreenSpaceLayer)</a></td>
+<td>Pixel-positioned counterpart of <a href="Sandbox.ModAPI.MyScreenSpaceText@Draw.html">Draw(string, string, Vector2, float, Color, MyGuiDrawAlignEnum, float, MyScreenSpaceLayer)</a> . Sizes still scale with the player's UI Scale setting, so this is not a way to get pixel-exact output at every UI scale.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpaceText@GetCharsThatFit.html">static GetCharsThatFit(string, StringBuilder, float, float)</a></td>
+<td>How many leading characters fit within a normalized width, for hand-rolled clipping or wrapping.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpaceText@GetLineHeight.html">static GetLineHeight(string, float)</a></td>
+<td>Height of one line of this font, in normalized units. Use it to stack rows without measuring each one.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpaceText@IsFontAvailable.html">static IsFontAvailable(string)</a></td>
+<td>Whether a font of this name is loaded in the current session. Worth checking once when a mod starts rather than relying on a name that a world's mod set may not provide.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpaceText@Measure.html">static Measure(string, StringBuilder, float)</a></td>
+<td>Size the text would occupy, in normalized units. Does not allocate.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpaceText@Measure.html">static Measure(string, string, float)</a></td>
+<td>Size the text would occupy, in normalized units.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpaceText@MeasurePixels.html">static MeasurePixels(string, StringBuilder, float)</a></td>
+<td>Size the text would occupy, in screen pixels. Does not allocate.</td>
+</tr>
+</tbody>
+</table>
+
+    </main>
+    <script src="api-index.js?v=21d60a28e8d9"></script>
+</body>
+</html>

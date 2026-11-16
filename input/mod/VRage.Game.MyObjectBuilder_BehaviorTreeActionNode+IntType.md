@@ -9,6 +9,7 @@ public class IntType: TypeValue
 |Member|Description|
 |---|---|
 |[IntValue](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+IntType@IntValue)||
+|[Name](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+TypeValue@Name)|_Inherited from [TypeValue](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+TypeValue)_|
 
 ## Constructors
 

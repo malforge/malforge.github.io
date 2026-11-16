@@ -8,5 +8,5 @@ Gets the type code
 
 ## Returns
 
-TypeCode <sub>prohibited</sub>
+[TypeCode](https://docs.microsoft.com/en-us/dotnet/api/System.TypeCode?view=netframework-4.6)
 

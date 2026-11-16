@@ -92,6 +92,7 @@ Describes assembler block (PB scripting interface)
 * MyObjectBuilder_Thrust/LargeBlockLargeAtmosphericThrustSciFi  
 * MyObjectBuilder_Thrust/LargeBlockLargeFlatAtmosphericThrust  
 * MyObjectBuilder_Thrust/LargeBlockLargeFlatAtmosphericThrustDShape  
+* MyObjectBuilder_Thrust/LargeBlockLargeFlatAtmosphericThrustRound  
 * MyObjectBuilder_Thrust/LargeBlockLargeHydrogenThrust  
 * MyObjectBuilder_Thrust/LargeBlockLargeHydrogenThrustIndustrial  
 * MyObjectBuilder_Thrust/LargeBlockLargeHydrogenThrustReskin  
@@ -103,6 +104,7 @@ Describes assembler block (PB scripting interface)
 * MyObjectBuilder_Thrust/LargeBlockSmallAtmosphericThrustSciFi  
 * MyObjectBuilder_Thrust/LargeBlockSmallFlatAtmosphericThrust  
 * MyObjectBuilder_Thrust/LargeBlockSmallFlatAtmosphericThrustDShape  
+* MyObjectBuilder_Thrust/LargeBlockSmallFlatAtmosphericThrustRound  
 * MyObjectBuilder_Thrust/LargeBlockSmallHydrogenThrust  
 * MyObjectBuilder_Thrust/LargeBlockSmallHydrogenThrustIndustrial  
 * MyObjectBuilder_Thrust/LargeBlockSmallHydrogenThrustReskin  
@@ -113,6 +115,7 @@ Describes assembler block (PB scripting interface)
 * MyObjectBuilder_Thrust/SmallBlockLargeAtmosphericThrustSciFi  
 * MyObjectBuilder_Thrust/SmallBlockLargeFlatAtmosphericThrust  
 * MyObjectBuilder_Thrust/SmallBlockLargeFlatAtmosphericThrustDShape  
+* MyObjectBuilder_Thrust/SmallBlockLargeFlatAtmosphericThrustRound  
 * MyObjectBuilder_Thrust/SmallBlockLargeHydrogenThrust  
 * MyObjectBuilder_Thrust/SmallBlockLargeHydrogenThrustIndustrial  
 * MyObjectBuilder_Thrust/SmallBlockLargeHydrogenThrustReskin  
@@ -124,6 +127,7 @@ Describes assembler block (PB scripting interface)
 * MyObjectBuilder_Thrust/SmallBlockSmallAtmosphericThrustSciFi  
 * MyObjectBuilder_Thrust/SmallBlockSmallFlatAtmosphericThrust  
 * MyObjectBuilder_Thrust/SmallBlockSmallFlatAtmosphericThrustDShape  
+* MyObjectBuilder_Thrust/SmallBlockSmallFlatAtmosphericThrustRound  
 * MyObjectBuilder_Thrust/SmallBlockSmallHydrogenThrust  
 * MyObjectBuilder_Thrust/SmallBlockSmallHydrogenThrustIndustrial  
 * MyObjectBuilder_Thrust/SmallBlockSmallHydrogenThrustReskin  

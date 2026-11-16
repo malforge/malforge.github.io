@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public bool IsJoystickButtonNewPressed(MyJoystickButtonsEnum button)
+public bool IsJoystickButtonNewPressed(MyJoystickButtonsEnum button, int id)
 ```
 
 ## Returns
@@ -11,3 +11,4 @@ public bool IsJoystickButtonNewPressed(MyJoystickButtonsEnum button)
 ## Parameters
 
 * [MyJoystickButtonsEnum](VRage.Input.MyJoystickButtonsEnum) button
+* [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) id

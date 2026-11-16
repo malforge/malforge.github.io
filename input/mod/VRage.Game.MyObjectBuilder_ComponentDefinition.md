@@ -16,6 +16,7 @@ public class MyObjectBuilder_ComponentDefinition: MyObjectBuilder_PhysicalItemDe
 |[CanPlayerOffer](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@CanPlayerOffer)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|
 |[CanPlayerOrder](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@CanPlayerOrder)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|
 |[CanSpawnFromScreen](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@CanSpawnFromScreen)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|
+|[DefaultColor](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@DefaultColor)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|
 |[DepositAllEnabled](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@DepositAllEnabled)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|
 |[Description](VRage.Game.MyObjectBuilder_DefinitionBase@Description)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[DescriptionArgs](VRage.Game.MyObjectBuilder_DefinitionBase@DescriptionArgs)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
@@ -25,6 +26,7 @@ public class MyObjectBuilder_ComponentDefinition: MyObjectBuilder_PhysicalItemDe
 |[DisplayName](VRage.Game.MyObjectBuilder_DefinitionBase@DisplayName)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[DLCs](VRage.Game.MyObjectBuilder_DefinitionBase@DLCs)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[Enabled](VRage.Game.MyObjectBuilder_DefinitionBase@Enabled)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
+|[ExplosiveDamageMultiplier](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@ExplosiveDamageMultiplier)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|
 |[ExtraInventoryTooltipLine](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@ExtraInventoryTooltipLine)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|
 |[ExtraInventoryTooltipLineId](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@ExtraInventoryTooltipLineId)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|
 |[Health](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@Health)|_Inherited from [MyObjectBuilder_PhysicalItemDefinition](VRage.Game.MyObjectBuilder_PhysicalItemDefinition)_|

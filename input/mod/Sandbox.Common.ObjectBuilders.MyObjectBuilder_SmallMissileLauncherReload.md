@@ -36,6 +36,7 @@ public class MyObjectBuilder_SmallMissileLauncherReload: MyObjectBuilder_SmallMi
 |[Name](VRage.Game.MyObjectBuilder_CubeBlock@Name)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[NumberInGrid](VRage.Game.MyObjectBuilder_TerminalBlock@NumberInGrid)|_Inherited from [MyObjectBuilder_TerminalBlock](VRage.Game.MyObjectBuilder_TerminalBlock)_|
 |[Owner](VRage.Game.MyObjectBuilder_CubeBlock@Owner)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
+|[RequireTargetLock](Sandbox.Common.ObjectBuilders.MyObjectBuilder_SmallMissileLauncher@RequireTargetLock)|Require Target Lock terminal state; ignored unless the block definition enables it.<br /><br />_Inherited from [MyObjectBuilder_SmallMissileLauncher](Sandbox.Common.ObjectBuilders.MyObjectBuilder_SmallMissileLauncher)_|
 |[ShareMode](VRage.Game.MyObjectBuilder_CubeBlock@ShareMode)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[ShowInInventory](VRage.Game.MyObjectBuilder_TerminalBlock@ShowInInventory)|_Inherited from [MyObjectBuilder_TerminalBlock](VRage.Game.MyObjectBuilder_TerminalBlock)_|
 |[ShowInTerminal](VRage.Game.MyObjectBuilder_TerminalBlock@ShowInTerminal)|_Inherited from [MyObjectBuilder_TerminalBlock](VRage.Game.MyObjectBuilder_TerminalBlock)_|
@@ -43,6 +44,7 @@ public class MyObjectBuilder_SmallMissileLauncherReload: MyObjectBuilder_SmallMi
 |[ShowOnHUD](VRage.Game.MyObjectBuilder_TerminalBlock@ShowOnHUD)|_Inherited from [MyObjectBuilder_TerminalBlock](VRage.Game.MyObjectBuilder_TerminalBlock)_|
 |[SkinSubtypeId](VRage.Game.MyObjectBuilder_CubeBlock@SkinSubtypeId)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[SubBlocks](VRage.Game.MyObjectBuilder_CubeBlock@SubBlocks)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
+|[TargetingGroup](Sandbox.Common.ObjectBuilders.MyObjectBuilder_SmallMissileLauncher@TargetingGroup)|Selected Targeting Subsystem group subtype (null/empty = Default). Mirrors the turret's targeting-group persistence.<br /><br />_Inherited from [MyObjectBuilder_SmallMissileLauncher](Sandbox.Common.ObjectBuilders.MyObjectBuilder_SmallMissileLauncher)_|
 |[TextPanelsNew](VRage.Game.MyObjectBuilder_FunctionalBlock@TextPanelsNew)|_Inherited from [MyObjectBuilder_FunctionalBlock](VRage.Game.MyObjectBuilder_FunctionalBlock)_|
 |[UseConveyorSystem](Sandbox.Common.ObjectBuilders.MyObjectBuilder_SmallMissileLauncher@UseConveyorSystem)|_Inherited from [MyObjectBuilder_SmallMissileLauncher](Sandbox.Common.ObjectBuilders.MyObjectBuilder_SmallMissileLauncher)_|
 

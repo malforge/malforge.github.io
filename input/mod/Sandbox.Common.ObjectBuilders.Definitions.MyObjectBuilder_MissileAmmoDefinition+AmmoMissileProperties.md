@@ -8,7 +8,11 @@ public class AmmoMissileProperties
 
 |Member|Description|
 |---|---|
+|[CanBeTargeted](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@CanBeTargeted)||
+|[CanDistract](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@CanDistract)||
 |[ExplosionFlags](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@ExplosionFlags)||
+|[Integrity](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@Integrity)||
+|[Lifetime](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@Lifetime)||
 |[MissileAcceleration](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@MissileAcceleration)||
 |[MissileExplosionDamage](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@MissileExplosionDamage)||
 |[MissileExplosionRadius](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@MissileExplosionRadius)||
@@ -21,9 +25,11 @@ public class AmmoMissileProperties
 |[MissileMinRicochetAngle](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@MissileMinRicochetAngle)||
 |[MissileMinRicochetProbability](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@MissileMinRicochetProbability)||
 |[MissileModelName](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@MissileModelName)||
+|[MissilePreserveLaunchMomentum](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@MissilePreserveLaunchMomentum)||
 |[MissileRicochetDamage](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@MissileRicochetDamage)||
 |[MissileSkipAcceleration](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@MissileSkipAcceleration)||
 |[MissileTrailEffect](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@MissileTrailEffect)||
+|[Seeker](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MissileAmmoDefinition+AmmoMissileProperties@Seeker)||
 
 ## Constructors
 

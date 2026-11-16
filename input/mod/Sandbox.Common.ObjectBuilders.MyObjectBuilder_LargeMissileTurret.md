@@ -65,6 +65,7 @@ public class MyObjectBuilder_LargeMissileTurret: MyObjectBuilder_ConveyorTurretB
 |[TargetStations](Sandbox.Common.ObjectBuilders.MyObjectBuilder_TurretBase@TargetStations)|_Inherited from [MyObjectBuilder_TurretBase](Sandbox.Common.ObjectBuilders.MyObjectBuilder_TurretBase)_|
 |[TextPanelsNew](VRage.Game.MyObjectBuilder_FunctionalBlock@TextPanelsNew)|_Inherited from [MyObjectBuilder_FunctionalBlock](VRage.Game.MyObjectBuilder_FunctionalBlock)_|
 |[UseConveyorSystem](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ConveyorTurretBase@UseConveyorSystem)|_Inherited from [MyObjectBuilder_ConveyorTurretBase](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ConveyorTurretBase)_|
+|[ViewRotation](Sandbox.Common.ObjectBuilders.MyObjectBuilder_TurretBase@ViewRotation)|Clockwise roll of the controlled view in degrees. Snapped to 0/90/180/270 on load.<br /><br />_Inherited from [MyObjectBuilder_TurretBase](Sandbox.Common.ObjectBuilders.MyObjectBuilder_TurretBase)_|
 
 ## Properties
 

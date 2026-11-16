@@ -13,7 +13,8 @@ public class MyAnimalBotDefinition: MyAgentDefinition
 |[static DEFAULT_AGENT_MAX_SLOPE](Sandbox.Definitions.MyAgentDefinition@DEFAULT_AGENT_MAX_SLOPE)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[static DEFAULT_AGENT_RADIUS](Sandbox.Definitions.MyAgentDefinition@DEFAULT_AGENT_RADIUS)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[static DEFAULT_PATH_ARRIVAL_RADIUS](Sandbox.Definitions.MyAgentDefinition@DEFAULT_PATH_ARRIVAL_RADIUS)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
-|[AgentHeight](Sandbox.Definitions.MyAgentDefinition@AgentHeight)|This and AgentRadius/AgentMaxClimb are discretized at navmesh build: height & climb against MyRecastOptions.cellHeight, radius against MyPlatformGameSettings.NAVMESH_CELL_SIZE. SBC values are snapped to the Steam grid: the number is what Recast uses on Steam, and on console (coarser cellSize) it rounds up to the next cell count.<br /><br />_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[static DEFAULT_PATHFINDING_RADIUS](Sandbox.Definitions.MyAgentDefinition@DEFAULT_PATHFINDING_RADIUS)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[AgentHeight](Sandbox.Definitions.MyAgentDefinition@AgentHeight)|This and AgentRadius/AgentMaxClimb are discretized at navmesh build: height & climb against MyPlatformGameSettings.NAVMESH_CELL_HEIGHT, radius against MyPlatformGameSettings.NAVMESH_CELL_SIZE. Height and radius round up to whole cells, climb rounds down and is raised to at least MyPlatformGameSettings.NAVMESH_MIN_AGENT_CLIMB.<br /><br />_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AgentMaxClimb](Sandbox.Definitions.MyAgentDefinition@AgentMaxClimb)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AgentMaxSlope](Sandbox.Definitions.MyAgentDefinition@AgentMaxSlope)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AgentRadius](Sandbox.Definitions.MyAgentDefinition@AgentRadius)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
@@ -45,6 +46,7 @@ public class MyAnimalBotDefinition: MyAgentDefinition
 |[Invulnerable](Sandbox.Definitions.MyAgentDefinition@Invulnerable)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[JoinSpawnerFaction](Sandbox.Definitions.MyAgentDefinition@JoinSpawnerFaction)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[PathArrivalRadius](Sandbox.Definitions.MyAgentDefinition@PathArrivalRadius)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
+|[PathfindingRadius](Sandbox.Definitions.MyAgentDefinition@PathfindingRadius)|Clearance radius (meters) used when querying the grid octree pathfinding for flight routes.<br /><br />_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[Public](VRage.Game.MyDefinitionBase@Public)|Indicates if definition should be offered in Cube builder<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[RemoveAfterDeath](Sandbox.Definitions.MyAgentDefinition@RemoveAfterDeath)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[RemoveTimeMs](Sandbox.Definitions.MyAgentDefinition@RemoveTimeMs)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
@@ -83,6 +85,7 @@ public class MyAnimalBotDefinition: MyAgentDefinition
 |[AddItems(MyCharacter)](Sandbox.Definitions.MyAgentDefinition@AddItems)|_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[AddItems(MyCharacter)](Sandbox.Definitions.MyBotDefinition@AddItems)|_Inherited from [MyBotDefinition](Sandbox.Definitions.MyBotDefinition)_|
 |[CheckDefinitionDLCs(String[])](VRage.Game.MyDefinitionBase@CheckDefinitionDLCs)|Checks if the definition has all required DLCs as it should have<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[GetBotModel(float)](Sandbox.Definitions.MyAgentDefinition@GetBotModel)|Picks a character model from BotModels by weight, or returns BotModel when none are valid.<br /><br />_Inherited from [MyAgentDefinition](Sandbox.Definitions.MyAgentDefinition)_|
 |[GetObjectBuilder()](VRage.Game.MyDefinitionBase@GetObjectBuilder)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Init(MyObjectBuilder_DefinitionBase, MyModContext)](VRage.Game.MyDefinitionBase@Init)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Postprocess()](VRage.Game.MyDefinitionBase@Postprocess)|Override this in case you want to do some postprocessing of the definition before the game starts. Prefer to use MyDefinitionPostprocessor instead.Postprocess is useful if you want to process the definition before the game begins,<br /><br />but you only want to do it when all the definitions are loaded and merged.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|

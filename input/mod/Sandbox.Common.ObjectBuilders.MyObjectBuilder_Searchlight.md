@@ -33,6 +33,7 @@ public class MyObjectBuilder_Searchlight: MyObjectBuilder_FunctionalBlock
 |[TargetCharacters](Sandbox.Common.ObjectBuilders.MyObjectBuilder_Searchlight@TargetCharacters)||
 |[TargetingGroup](Sandbox.Common.ObjectBuilders.MyObjectBuilder_Searchlight@TargetingGroup)||
 |[TargetLocking](Sandbox.Common.ObjectBuilders.MyObjectBuilder_Searchlight@TargetLocking)||
+|[ViewRotation](Sandbox.Common.ObjectBuilders.MyObjectBuilder_Searchlight@ViewRotation)|Clockwise roll of the controlled view in degrees. Snapped to 0/90/180/270 on load.|
 |[BlockGeneralDamageModifier](VRage.Game.MyObjectBuilder_CubeBlock@BlockGeneralDamageModifier)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[BlockOrientation](VRage.Game.MyObjectBuilder_CubeBlock@BlockOrientation)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[BuildPercent](VRage.Game.MyObjectBuilder_CubeBlock@BuildPercent)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|

@@ -17,10 +17,6 @@ Implements entity features for ModAPI interface
 |[static MyEntitiesCreateFromObjectBuilderExtCallback](VRage.Game.Entity.MyEntity@MyEntitiesCreateFromObjectBuilderExtCallback)||
 |[static MyEntityFactoryCreateObjectBuilderExtCallback](VRage.Game.Entity.MyEntity@MyEntityFactoryCreateObjectBuilderExtCallback)||
 |[static MyProceduralWorldGeneratorTrackEntityExtCallback](VRage.Game.Entity.MyEntity@MyProceduralWorldGeneratorTrackEntityExtCallback)||
-|[static MyWeldingGroupsAddNodeExtCallback](VRage.Game.Entity.MyEntity@MyWeldingGroupsAddNodeExtCallback)||
-|[static MyWeldingGroupsGetGroupNodesExtCallback](VRage.Game.Entity.MyEntity@MyWeldingGroupsGetGroupNodesExtCallback)||
-|[static MyWeldingGroupsGroupExistsExtCallback](VRage.Game.Entity.MyEntity@MyWeldingGroupsGroupExistsExtCallback)||
-|[static MyWeldingGroupsRemoveNodeExtCallback](VRage.Game.Entity.MyEntity@MyWeldingGroupsRemoveNodeExtCallback)||
 |[static RemoveFromGamePruningStructureExtCallBack](VRage.Game.Entity.MyEntity@RemoveFromGamePruningStructureExtCallBack)||
 |[static UpdateGamePruningStructureExtCallBack](VRage.Game.Entity.MyEntity@UpdateGamePruningStructureExtCallBack)||
 |[DebugAsyncLoading](VRage.Game.Entity.MyEntity@DebugAsyncLoading)||

@@ -14,6 +14,7 @@ public class MyWeaponEffect
 |[InstantStop](Sandbox.Definitions.MyWeaponDefinition+MyWeaponEffect@InstantStop)||
 |[Loop](Sandbox.Definitions.MyWeaponDefinition+MyWeaponEffect@Loop)||
 |[Offset](Sandbox.Definitions.MyWeaponDefinition+MyWeaponEffect@Offset)||
+|[ParentToWeapon](Sandbox.Definitions.MyWeaponDefinition+MyWeaponEffect@ParentToWeapon)||
 |[Particle](Sandbox.Definitions.MyWeaponDefinition+MyWeaponEffect@Particle)||
 |[ParticleBirthDecrease](Sandbox.Definitions.MyWeaponDefinition+MyWeaponEffect@ParticleBirthDecrease)||
 |[ParticleBirthIncrease](Sandbox.Definitions.MyWeaponDefinition+MyWeaponEffect@ParticleBirthIncrease)||
@@ -28,5 +29,5 @@ public class MyWeaponEffect
 
 |Member|Description|
 |---|---|
-|[MyWeaponEffect(string, string, string, bool, bool, Vector3, float, float, float, float, float, bool, string)](Sandbox.Definitions.MyWeaponDefinition+MyWeaponEffect@.ctor)||
+|[MyWeaponEffect(string, string, string, bool, bool, Vector3, float, float, float, float, float, bool, string, bool)](Sandbox.Definitions.MyWeaponDefinition+MyWeaponEffect@.ctor)||
 

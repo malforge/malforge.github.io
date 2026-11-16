@@ -217,6 +217,10 @@
 <td>Gets and Sets shooting range of the turret<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyLargeTurretBase.html">IMyLargeTurretBase</a></em></td>
 </tr>
 <tr>
+<td><a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun@SelectedAmmoType.html">SelectedAmmoType</a></td>
+<td>Gets or sets the preferred ammunition magazine; null means any compatible magazine.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun.html">IMyUserControllableGun</a></em></td>
+</tr>
+<tr>
 <td><a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun@Shoot.html">Shoot</a></td>
 <td>Represents terminal gui toggle element &quot;Shoot&quot;. Not same as <a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun@IsShooting.html">IsShooting</a><br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun.html">IMyUserControllableGun</a></em></td>
 </tr>
@@ -299,6 +303,14 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun@CycleSelectedAmmoType.html">CycleSelectedAmmoType()</a></td>
+<td>Selects the next compatible ammunition type.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun.html">IMyUserControllableGun</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun@ForceReload.html">ForceReload()</a></td>
+<td>Unloads the current magazine and begins reloading the selected type.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun.html">IMyUserControllableGun</a></em></td>
+</tr>
 <tr>
 <td><a href="Sandbox.ModAPI.Ingame.IMyTerminalBlock@GetActions.html">GetActions(List<ITerminalAction>, Func&lt;ITerminalAction, bool&gt;)</a></td>
 <td>Get all terminal actions available for block<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyTerminalBlock.html">IMyTerminalBlock</a></em></td>

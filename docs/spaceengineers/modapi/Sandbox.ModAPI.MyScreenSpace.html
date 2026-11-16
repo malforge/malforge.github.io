@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox.ModAPI.MyScreenSpace - API Reference</title>
+    <link rel="stylesheet" href="styles.css?v=21d60a28e8d9">
+</head>
+<body>
+    <noscript>
+        <div style="position: fixed; top: 0; left: 0; right: 0; background: #ff6b6b; color: white; padding: 1em; text-align: center; z-index: 10000; font-family: Arial, sans-serif;">
+            <strong>JavaScript Required:</strong> This documentation site requires JavaScript to function. Please enable JavaScript in your browser to view the navigation and search features.
+        </div>
+    </noscript>
+    <header class="top-header">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-nav">
+            <a href="index.html" class="header-btn" title="Home">
+                <span>🏠</span>
+            </a>
+            <a href="https://spaceengineers.wiki.gg/" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="Space Engineers Wiki">
+                <img src="wiki.png" alt="Wiki" class="header-icon">
+            </a>
+            <a href="https://github.com/malforge/mdk2" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="MDK2 - Malware's Development Kit">
+                <img src="mdk2.png" alt="MDK2" class="header-icon">
+            </a>
+            <a href="../pbapi/index.html" class="header-btn api-switcher" title="Switch to PB API">🔄 PB API</a>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search API..." autocomplete="off">
+                <button id="clear-search" style="display: none;">&times;</button>
+                <div class="search-hint">Prefix: T: for types, M: for members</div>
+            </div>
+        </div>
+        <nav class="sidebar-nav" data-current-page="Sandbox.ModAPI.MyScreenSpace" data-cache-buster="21d60a28e8d9" data-api-type="mod">
+            <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+            <div class="sidebar-loading">Loading navigation...</div>
+        </nav>
+        <div class="sidebar-footer"><span class="generation-timestamp" data-root-path="">Generated...</span></div>
+        <div class="sidebar-resize-handle"></div>
+    </aside>
+    <div id="search-results" style="display: none;"></div>
+    <main class="content">
+            <div class="page-header">
+                <div class="page-namespace">Sandbox.ModAPI</div>
+                <h1>MyScreenSpace</h1>
+            </div>
+<p><strong>Assembly:</strong> Sandbox.Game.dll</p>
+<pre><code class="language-csharp">public abstract sealed class MyScreenSpace
+</code></pre>
+<p>Converts between the two coordinate spaces used by <a href="Sandbox.ModAPI.MyScreenSpaceText.html">MyScreenSpaceText</a> and <a href="Sandbox.ModAPI.MyScreenSpaceSprite.html">MyScreenSpaceSprite</a> , for laying out content that mixes them, and reports the cursor position in those same coordinates for hit testing what a mod has drawn. It also clips drawing to a rectangle, which is what scrolling lists, progress fills and panels that content must not spill out of are built from.</p>
+<p>Normalized [0,1] isa fraction of the window. It is relative to the game's safe GUI rectangle, which is a centred, roughly 4:3 area, so on a wide screen normalized 0 sits well inside the left edge. Pixel coordinates are true window pixels. Computing one from the other by multiplying by the viewport size is therefore wrong; use these methods.</p>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpace@GetSafeGuiArea.html">static GetSafeGuiArea()</a></td>
+<td>The safe GUI rectangle in window pixels: the area normalized [0,1] maps onto.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpace@NormalizedSizeToPixels.html">static NormalizedSizeToPixels(Vector2)</a></td>
+<td>Converts a normalized [0,1] size to pixels. Note X and Y scale by different amounts, because the safe GUI rectangle is not square, which is why an equal normalized X and Y is not square on screen.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpace@NormalizedToPixels.html">static NormalizedToPixels(Vector2)</a></td>
+<td>Converts a normalized [0,1] position, relative to the safe GUI rectangle, to window pixels.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpace@PixelSizeToNormalized.html">static PixelSizeToNormalized(Vector2)</a></td>
+<td>Converts a pixel size to normalized [0,1].</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpace@PixelsToNormalized.html">static PixelsToNormalized(Vector2)</a></td>
+<td>Converts a window pixel position to normalized [0,1] relative to the safe GUI rectangle. Positions outside that rectangle fall outside [0,1], which is expected rather than an error.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpace@TryGetCursorPosition.html">static TryGetCursorPosition(out Vector2)</a></td>
+<td>The GUI cursor position, normalized [0,1] relative to the safe GUI rectangle. This is the same space <a href="Sandbox.ModAPI.MyScreenSpaceSprite@Draw.html">Draw(MyStringId, Vector2, Vector2, Color, MyGuiDrawAlignEnum, float, MyScreenSpaceLayer)</a> takes, so a hit test can compare it directly against the coordinates content was drawn at, and it is the same value the game's own controls test against.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpace@TryGetCursorPositionPixels.html">static TryGetCursorPositionPixels(out Vector2)</a></td>
+<td>Pixel counterpart of <a href="Sandbox.ModAPI.MyScreenSpace@TryGetCursorPosition.html">TryGetCursorPosition(out Vector2)</a> , for hit testing content placed with <a href="Sandbox.ModAPI.MyScreenSpaceSprite@DrawPixels.html">DrawPixels(MyStringId, Rectangle, Rectangle?, Color, float, MyScreenSpaceLayer)</a> .</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpace@UsingScissorRectangle.html">static UsingScissorRectangle(RectangleF, MyScreenSpaceLayer)</a></td>
+<td>Clips everything drawn inside the returned scope to a normalized rectangle, so a list can scroll under a fixed frame, a bar can be filled by revealing a wider sprite, and text can run out of a panel without spilling over its edge. The game's own scrollable lists and text boxes are built the same way.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpace@UsingScissorRectanglePixels.html">static UsingScissorRectanglePixels(Rectangle, MyScreenSpaceLayer)</a></td>
+<td>Pixel counterpart of <a href="Sandbox.ModAPI.MyScreenSpace@UsingScissorRectangle.html">UsingScissorRectangle(RectangleF, MyScreenSpaceLayer)</a> , for clipping content placed with the pixel-positioned draw calls.</td>
+</tr>
+</tbody>
+</table>
+
+    </main>
+    <script src="api-index.js?v=21d60a28e8d9"></script>
+</body>
+</html>

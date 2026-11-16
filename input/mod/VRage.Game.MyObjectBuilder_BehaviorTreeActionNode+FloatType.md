@@ -9,6 +9,7 @@ public class FloatType: TypeValue
 |Member|Description|
 |---|---|
 |[FloatValue](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+FloatType@FloatValue)||
+|[Name](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+TypeValue@Name)|_Inherited from [TypeValue](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+TypeValue)_|
 
 ## Constructors
 

@@ -1,13 +1,14 @@
 **Assembly:** VRage.Render.dll
 
 ```csharp
-public class MyTriangleBillboard: MyBillboard, IComparable
+public class MyTriangleBillboard: MyBillboard, IComparable, IComparable<MyBillboard>
 ```
 
 ## Fields
 
 |Member|Description|
 |---|---|
+|[static PARENT_ID_CAMERA](VRageRender.MyBillboard@PARENT_ID_CAMERA)|Set as [ParentID](VRageRender.MyBillboard@ParentID) to declare the positions camera-local. The renderer then places the billboard with the camera it actually draws that frame with, which is what keeps screen-anchored content pinned — positions derived from the game-side camera matrix are a tick stale and swim once the camera is interpolated.<br /><br />_Inherited from [MyBillboard](VRageRender.MyBillboard)_|
 |[Normal0](VRageRender.MyTriangleBillboard@Normal0)||
 |[UV0](VRageRender.MyTriangleBillboard@UV0)||
 |[UV1](VRageRender.MyTriangleBillboard@UV1)||
@@ -20,7 +21,7 @@ public class MyTriangleBillboard: MyBillboard, IComparable
 |[DistanceSquared](VRageRender.MyBillboard@DistanceSquared)|_Inherited from [MyBillboard](VRageRender.MyBillboard)_|
 |[LocalType](VRageRender.MyBillboard@LocalType)|_Inherited from [MyBillboard](VRageRender.MyBillboard)_|
 |[Material](VRageRender.MyBillboard@Material)|_Inherited from [MyBillboard](VRageRender.MyBillboard)_|
-|[ParentID](VRageRender.MyBillboard@ParentID)|_Inherited from [MyBillboard](VRageRender.MyBillboard)_|
+|[ParentID](VRageRender.MyBillboard@ParentID)|Render object the positions are local to, or [PARENT_ID_CAMERA](VRageRender.MyBillboard@PARENT_ID_CAMERA) for camera-local ones. Unassigned means the positions are absolute world coordinates.<br /><br />_Inherited from [MyBillboard](VRageRender.MyBillboard)_|
 |[Position0](VRageRender.MyBillboard@Position0)|_Inherited from [MyBillboard](VRageRender.MyBillboard)_|
 |[Position1](VRageRender.MyBillboard@Position1)|_Inherited from [MyBillboard](VRageRender.MyBillboard)_|
 |[Position2](VRageRender.MyBillboard@Position2)|_Inherited from [MyBillboard](VRageRender.MyBillboard)_|
@@ -43,10 +44,12 @@ public class MyTriangleBillboard: MyBillboard, IComparable
 
 |Member|Description|
 |---|---|
+|[CompareTo(MyBillboard)](VRageRender.MyBillboard@CompareTo)|_Inherited from [MyBillboard](VRageRender.MyBillboard)_|
 |[CompareTo(object)](VRageRender.MyBillboard@CompareTo)|_Inherited from [MyBillboard](VRageRender.MyBillboard)_|
 
 **Inheritance:**   [MyBillboard](VRageRender.MyBillboard)
 
 **Implements:**  
-* [IComparable](https://docs.microsoft.com/en-us/dotnet/api/System.IComparable?view=netframework-4.6)
+* [IComparable](https://docs.microsoft.com/en-us/dotnet/api/System.IComparable?view=netframework-4.6)  
+* [IComparable<MyBillboard>](https://docs.microsoft.com/en-us/dotnet/api/System.IComparable-1?view=netframework-4.6)
 

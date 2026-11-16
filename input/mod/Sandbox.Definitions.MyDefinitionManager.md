@@ -147,7 +147,6 @@ public class MyDefinitionManager: MyDefinitionManagerBase
 |[GetPrefabDefinition(string)](Sandbox.Definitions.MyDefinitionManager@GetPrefabDefinition)||
 |[GetPrefabDefinitions()](Sandbox.Definitions.MyDefinitionManager@GetPrefabDefinitions)||
 |[GetPreloadSet(PreloadType)](Sandbox.Definitions.MyDefinitionManager@GetPreloadSet)||
-|[GetQuickStartDefinitions()](Sandbox.Definitions.MyDefinitionManager@GetQuickStartDefinitions)||
 |[GetRadialMenuDefinition(string)](Sandbox.Definitions.MyDefinitionManager@GetRadialMenuDefinition)||
 |[GetRandomCharacterName()](Sandbox.Definitions.MyDefinitionManager@GetRandomCharacterName)||
 |[GetRandomEnvironmentClass(int)](Sandbox.Definitions.MyDefinitionManager@GetRandomEnvironmentClass)||

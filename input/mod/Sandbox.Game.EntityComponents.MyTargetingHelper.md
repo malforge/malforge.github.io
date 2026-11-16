@@ -21,7 +21,7 @@ public sealed class MyTargetingHelper
 |Member|Description|
 |---|---|
 |[GetLockingPosition(MyEntity)](Sandbox.Game.EntityComponents.MyTargetingHelper@GetLockingPosition)||
-|[IsVisible(MyCubeGrid, MyEntity, List<HitInfo>, out MyEntity)](Sandbox.Game.EntityComponents.MyTargetingHelper@IsVisible)||
+|[IsVisible(MyEntity, MyEntity, List<HitInfo>, out MyEntity)](Sandbox.Game.EntityComponents.MyTargetingHelper@IsVisible)||
 |[PrefetchVoxels(Vector3D, Vector3D)](Sandbox.Game.EntityComponents.MyTargetingHelper@PrefetchVoxels)||
-|[RaycastCheck(MyCubeBlock, MyEntity, double, Action<MyEntity, List<HitInfo>>)](Sandbox.Game.EntityComponents.MyTargetingHelper@RaycastCheck)||
+|[RaycastCheck(Vector3D, MyEntity, double, Action<MyEntity, List<HitInfo>>)](Sandbox.Game.EntityComponents.MyTargetingHelper@RaycastCheck)||
 

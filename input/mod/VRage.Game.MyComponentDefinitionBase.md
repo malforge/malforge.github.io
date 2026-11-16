@@ -52,11 +52,13 @@ public class MyComponentDefinitionBase: MyDefinitionBase
 **Inheritors:**  
 * [MyAiBlockComponentDefinition](Sandbox.Game.EntityComponents.MyAiBlockComponentDefinition)  
 * [MyAutopilotComponentDefinition](Sandbox.Game.EntityComponents.MyAutopilotComponentDefinition)  
+* [MyCharacterAutopilotComponentDefinition](Sandbox.Game.EntityComponents.MyCharacterAutopilotComponentDefinition)  
 * [MyCharacterLadderComponentDefinition](Sandbox.Definitions.MyCharacterLadderComponentDefinition)  
 * [MyEntityCapacitorComponentDefinition](Sandbox.Game.EntityComponents.MyEntityCapacitorComponentDefinition)  
 * [MyEntityInventorySpawnComponent_Definition](Sandbox.Game.EntityComponents.MyEntityInventorySpawnComponent_Definition)  
 * [MyEntityStatComponentDefinition](Sandbox.Game.EntityComponents.MyEntityStatComponentDefinition)  
 * [MyInventoryComponentDefinition](Sandbox.Game.EntityComponents.MyInventoryComponentDefinition)  
+* [MyMissileLauncherHatchComponentDefinition](Sandbox.Game.EntityComponents.MyMissileLauncherHatchComponentDefinition)  
 * [MyModelComponentDefinition](Sandbox.Game.EntityComponents.MyModelComponentDefinition)  
 * [MyModStorageComponentDefinition](VRage.Game.Definitions.MyModStorageComponentDefinition)  
 * [MyMultiTextPanelComponentDefinition](Sandbox.Game.EntityComponents.MyMultiTextPanelComponentDefinition)  

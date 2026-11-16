@@ -85,8 +85,12 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Definitions.MyAgentDefinition@DEFAULT_PATHFINDING_RADIUS.html">static DEFAULT_PATHFINDING_RADIUS</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="Sandbox.Definitions.MyAgentDefinition@AgentHeight.html">AgentHeight</a></td>
-<td>This and AgentRadius/AgentMaxClimb are discretized at navmesh build: height &amp; climb against MyRecastOptions.cellHeight, radius against MyPlatformGameSettings.NAVMESH_CELL_SIZE. SBC values are snapped to the Steam grid: the number is what Recast uses on Steam, and on console (coarser cellSize) it rounds up to the next cell count.</td>
+<td>This and AgentRadius/AgentMaxClimb are discretized at navmesh build: height &amp; climb against MyPlatformGameSettings.NAVMESH_CELL_HEIGHT, radius against MyPlatformGameSettings.NAVMESH_CELL_SIZE. Height and radius round up to whole cells, climb rounds down and is raised to at least MyPlatformGameSettings.NAVMESH_MIN_AGENT_CLIMB.</td>
 </tr>
 <tr>
 <td><a href="Sandbox.Definitions.MyAgentDefinition@AgentMaxClimb.html">AgentMaxClimb</a></td>
@@ -163,6 +167,10 @@
 <tr>
 <td><a href="Sandbox.Definitions.MyAgentDefinition@PathArrivalRadius.html">PathArrivalRadius</a></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyAgentDefinition@PathfindingRadius.html">PathfindingRadius</a></td>
+<td>Clearance radius (meters) used when querying the grid octree pathfinding for flight routes.</td>
 </tr>
 <tr>
 <td><a href="Sandbox.Definitions.MyAgentDefinition@RemoveAfterDeath.html">RemoveAfterDeath</a></td>
@@ -324,6 +332,10 @@
 <tr>
 <td><a href="Sandbox.Definitions.MyAgentDefinition@AddItems.html">AddItems(MyCharacter)</a></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyAgentDefinition@GetBotModel.html">GetBotModel(float)</a></td>
+<td>Picks a character model from BotModels by weight, or returns BotModel when none are valid.</td>
 </tr>
 <tr>
 <td><a href="Sandbox.Definitions.MyBotDefinition@AddItems.html">AddItems(MyCharacter)</a></td>

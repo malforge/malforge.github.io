@@ -9,6 +9,7 @@ public class MyObjectBuilder_BotAnchorComponent: MyObjectBuilder_SessionComponen
 |Member|Description|
 |---|---|
 |[SpawnGroupAnchors](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_BotAnchorComponent@SpawnGroupAnchors)||
+|[SquadAnchors](VRage.Game.ObjectBuilders.Components.MyObjectBuilder_BotAnchorComponent@SquadAnchors)||
 
 ## Properties
 

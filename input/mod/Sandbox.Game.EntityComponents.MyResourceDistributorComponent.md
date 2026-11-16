@@ -73,6 +73,7 @@ public class MyResourceDistributorComponent: MyEntityComponentBase, IMyComponent
 |[GetElectricalGridsGroups()](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@GetElectricalGridsGroups)||
 |[GetElectricalGroupIndex(ref MyDefinitionId, MyCubeGrid)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@GetElectricalGroupIndex)||
 |[GetSourceCount(MyDefinitionId, MyStringHash)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@GetSourceCount)||
+|[IsResourceDisrupted(MyDefinitionId)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@IsResourceDisrupted)||
 |[MarkConveyoredResourcesDirty()](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@MarkConveyoredResourcesDirty)||
 |[MarkForUpdate()](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@MarkForUpdate)||
 |[MaxAvailableResourceByType(MyDefinitionId, MyCubeGrid)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@MaxAvailableResourceByType)||
@@ -82,9 +83,11 @@ public class MyResourceDistributorComponent: MyEntityComponentBase, IMyComponent
 |[RemoveSink(MyResourceSinkComponent, bool, bool)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@RemoveSink)||
 |[RemoveSource(MyResourceSourceComponent)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@RemoveSource)||
 |[ResourceStateByType(MyDefinitionId, bool, MyCubeGrid)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@ResourceStateByType)|Specify grid when asking for electricity. Electricity is shared only between certain grids.|
+|[Schedule(MyCubeGrid)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@Schedule)||
 |[SetDataDirty(MyDefinitionId)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@SetDataDirty)||
 |[SetNeedRecompute(MyDefinitionId)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@SetNeedRecompute)||
 |[SetNeedRecomputeAll()](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@SetNeedRecomputeAll)||
+|[SetResourceDisrupted(MyDefinitionId, bool)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@SetResourceDisrupted)|Suppresses distribution of the given resource until it is cleared again, leaving every sink and source at zero. Electricity only, other types keep distributing.|
 |[SourcesEnabledByType(MyDefinitionId)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@SourcesEnabledByType)||
 |[TotalRequiredInputByType(MyDefinitionId, MyCubeGrid)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@TotalRequiredInputByType)||
 |[TotalRequiredInputByType(MyDefinitionId, IMyCubeGrid)](Sandbox.Game.EntityComponents.MyResourceDistributorComponent@TotalRequiredInputByType)||

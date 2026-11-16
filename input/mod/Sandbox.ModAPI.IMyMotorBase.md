@@ -134,10 +134,7 @@ Describes base class for motor, advanced rotor and motor suspension block (mods 
 |[Rotor](Sandbox.ModAPI.IMyMotorBase@Rotor)|_**Obsolete:** Use IMyMechanicalConnectionBlock.Top_<br /><br />Gets the attached rotor part entity|
 |[RotorGrid](Sandbox.ModAPI.IMyMotorBase@RotorGrid)|_**Obsolete:** Use IMyMechanicalConnectionBlock.TopGrid_<br /><br />Gets the grid attached to the rotor part|
 |[IsCCDForProjectiles](VRage.ModAPI.IMyEntity@IsCCDForProjectiles)|_**Obsolete**_<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
-|[IsLocked](Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock@IsLocked)|_**Obsolete:** SafetyLock is no longer supported. This is property dummy property only, for backwards compatibility._<br /><br />Gets if the block is safety locked (welded)<br /><br />_Inherited from [IMyMechanicalConnectionBlock](Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock)_|
 |[LocationForHudMarker](VRage.ModAPI.IMyEntity@LocationForHudMarker)|_**Obsolete**_<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
-|[SafetyLock](Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock@SafetyLock)|_**Obsolete:** SafetyLock is no longer supported. This is property dummy property only, for backwards compatibility._<br /><br />Gets if the block is safety locked (welded)<br /><br />_Inherited from [IMyMechanicalConnectionBlock](Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock)_|
-|[SafetyLockSpeed](Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock@SafetyLockSpeed)|_**Obsolete:** SafetyLock is no longer supported. This is property dummy property only, for backwards compatibility._<br /><br />Gets or sets the speed at which this device will engage it's safety lock ( [IsLocked](Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock@IsLocked) ).<br /><br />_Inherited from [IMyMechanicalConnectionBlock](Sandbox.ModAPI.Ingame.IMyMechanicalConnectionBlock)_|
 
 ## Methods
 

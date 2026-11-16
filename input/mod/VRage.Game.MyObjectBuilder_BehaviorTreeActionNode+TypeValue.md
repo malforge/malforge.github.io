@@ -4,6 +4,12 @@
 public abstract class TypeValue
 ```
 
+## Fields
+
+|Member|Description|
+|---|---|
+|[Name](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+TypeValue@Name)||
+
 ## Methods
 
 |Member|Description|

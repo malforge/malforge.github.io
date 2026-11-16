@@ -97,6 +97,46 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="VRage.MyCompilationSymbols@DX12DebugLayer.html">static DX12DebugLayer</a></td>
+<td>D3D12 debug layer (DX12 backend bring-up). Costs real frame time — validation runs on every API call and every stored message is marshalled out in<code>DrainDebugMessages</code>— so turn it off when measuring frame time and back on when bringing up a new pass family. Must be set before device creation to have any effect.</td>
+</tr>
+<tr>
+<td><a href="VRage.MyCompilationSymbols@DX12DetectCrossFrameWrites.html">static DX12DetectCrossFrameWrites</a></td>
+<td>Diagnostic: report every CPU write to a buffer the GPU may still be reading — a write whose target was last bound by a frame the GPU has not finished. Unlike the discard-map tally this covers all write paths and reports the race actually happening rather than the buffer merely being at risk, and unlike <a href="VRage.MyCompilationSymbols@DX12SerializeFrames.html">DX12SerializeFrames</a> it does not perturb timing, so it can catch an artifact that only appears at full speed. Never ship it on.</td>
+</tr>
+<tr>
+<td><a href="VRage.MyCompilationSymbols@DX12DetectDirectDiscardMaps.html">static DX12DetectDirectDiscardMaps</a></td>
+<td>Diagnostic: report a buffer<code>WriteDiscard</code>-mapped more than once in a frame on the path where discard renaming does not apply, where the second map overwrites what the draws recorded after the first still read. The only detector for that corruption — <a href="VRage.MyCompilationSymbols@DX12DetectCrossFrameWrites.html">DX12DetectCrossFrameWrites</a> sees the cross-frame race instead. Turn it off when profiling/release: the tally takes a backend-wide lock on every such map, and the recording threads map in parallel.</td>
+</tr>
+<tr>
+<td><a href="VRage.MyCompilationSymbols@DX12DirectStorage.html">static DX12DirectStorage</a></td>
+<td>DirectStorage file-to-GPU texture uploads. Cleared by the<code>-nodirectstorage</code>command line switch, which also keeps<code>dstorage.dll</code>from being loaded at all — the escape hatch for when the runtime itself is suspect. Must be set before device creation to stop the uploader from being created; flipping it later only steers subsequent loads back onto the CPU path.</td>
+</tr>
+<tr>
+<td><a href="VRage.MyCompilationSymbols@DX12DStorageSmokeTest.html">static DX12DStorageSmokeTest</a></td>
+<td>Debug-only DirectStorage interop smoke test: right after D3D12 device creation, DStorage-read one content DDS into memory and byte-compare against File.ReadAllBytes, logging [DStorage] PASSED/FAILED. Proves the whole interop layer (factory, file, queue, request struct layout, status array, fence signal) with no renderer integration. Compiled out of Release entirely.</td>
+</tr>
+<tr>
+<td><a href="VRage.MyCompilationSymbols@DX12GpuValidation.html">static DX12GpuValidation</a></td>
+<td>D3D12 GPU-based validation. Instruments the shaders, so out-of-bounds descriptor-table reads, uninitialised descriptors and wrong resource states are named in the log instead of surfacing as a bare<code>DXGI_ERROR_DEVICE_HUNG</code>. Drastically slower — turn on only to diagnose a GPU fault, and expect the slowdown itself to change frame timings. Requires <a href="VRage.MyCompilationSymbols@DX12DebugLayer.html">DX12DebugLayer</a> ; must be set before device creation.</td>
+</tr>
+<tr>
+<td><a href="VRage.MyCompilationSymbols@DX12MarkFrameRequested.html">static DX12MarkFrameRequested</a></td>
+<td>One-shot request (Ctrl+Shift+M) to stamp the render log with the current frame number and per-frame counters, so a visually-spotted artifact can be located in continuously-running traces. Set from the game thread, cleared by the render thread when it services it.</td>
+</tr>
+<tr>
+<td><a href="VRage.MyCompilationSymbols@DX12MeasureMaterialBinds.html">static DX12MeasureMaterialBinds</a></td>
+<td>Measurement scaffold for the bindless-material plan: splits per-draw material SRV binds by binding pipeline and by merge-instancing, tracks the distinct material descriptors a session needs, and times the ring staging. See<code>MyMaterialBindStats</code>. Costs a timestamp pair per staged block plus a hash insert per material descriptor, so the timing it reports is very slightly inflated by its own measurement — turn it off before quoting absolute frame times. Temporary; remove with the scaffold.</td>
+</tr>
+<tr>
+<td><a href="VRage.MyCompilationSymbols@DX12SerializeFrames.html">static DX12SerializeFrames</a></td>
+<td>Diagnostic: block in<code>Present</code>until the GPU has finished the whole frame, removing all CPU/GPU overlap while leaving parallel recording intact. Discriminates a cross-frame write-under-read (a buffer rewritten by frame N+1 while frame N's draws still read it) from a recording race — the former disappears here, the latter does not. Halves throughput; never ship it on.</td>
+</tr>
+<tr>
+<td><a href="VRage.MyCompilationSymbols@DX12VramReport.html">static DX12VramReport</a></td>
+<td>Diagnostic: log the per-second VRAM breakdown (file textures, buffer pools, unaccounted). Off by default because each line walks every registered texture and pool on the render thread and adds ~350 lines per five minutes of log. Peaks, the sampler thread and the over-budget warning stay on regardless.</td>
+</tr>
+<tr>
 <td><a href="VRage.MyCompilationSymbols@EnableAnalytics.html">static EnableAnalytics</a></td>
 <td></td>
 </tr>
@@ -141,6 +181,14 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="VRage.MyCompilationSymbols@GpuMarkers.html">static GpuMarkers</a></td>
+<td>GPU debug markers: a BeginEvent/EndEvent region around every RHI profiling block, so a PIX/Nsight/RenderDoc capture reads as named passes instead of a flat draw list. Separate from <a href="VRage.MyCompilationSymbols@PerformanceProfiling.html">PerformanceProfiling</a> because that also collects timestamps and is only reachable in a RELEASE_PROFILE build, which the DX12 renderer has no buildable configuration for.</td>
+</tr>
+<tr>
+<td><a href="VRage.MyCompilationSymbols@GpuMarkersSymbol.html">static GpuMarkersSymbol</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="VRage.MyCompilationSymbols@HavokDeepProfiling.html">static HavokDeepProfiling</a></td>
 <td></td>
 </tr>
@@ -170,6 +218,18 @@
 </tr>
 <tr>
 <td><a href="VRage.MyCompilationSymbols@ReinterpretFormatsStoredInFiles.html">static ReinterpretFormatsStoredInFiles</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="VRage.MyCompilationSymbols@RenderProfileFromStart.html">static RenderProfileFromStart</a></td>
+<td><a href="VRage.MyCompilationSymbols@ProfileFromStart.html">ProfileFromStart</a> for <a href="VRage.MyCompilationSymbols@RenderProfiling.html">RenderProfiling</a> : collect from the first frame instead of waiting for the profiler to be opened (Alt+Decimal) and unpaused (Alt+Enter) by hand.</td>
+</tr>
+<tr>
+<td><a href="VRage.MyCompilationSymbols@RenderProfiling.html">static RenderProfiling</a></td>
+<td>Render-only profiling. Keeps the profiler call sites of the render assemblies alive — the render thread's CPU blocks and the GPU timestamp blocks — while every game-side one stays compiled out, so DX12 can be profiled without <a href="VRage.MyCompilationSymbols@PerformanceProfiling.html">PerformanceProfiling</a> , whose whole-game instrumentation costs a dictionary lookup and a timestamp on every block in the simulation and which the DX12 renderer has no buildable configuration for. Works because the symbol is only in the render projects' DefineConstants, and<code>[Conditional]</code>is resolved against the caller's defines.</td>
+</tr>
+<tr>
+<td><a href="VRage.MyCompilationSymbols@RenderProfilingSymbol.html">static RenderProfilingSymbol</a></td>
 <td></td>
 </tr>
 <tr>

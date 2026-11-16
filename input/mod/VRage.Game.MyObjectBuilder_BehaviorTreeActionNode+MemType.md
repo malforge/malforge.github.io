@@ -9,6 +9,7 @@ public class MemType: TypeValue
 |Member|Description|
 |---|---|
 |[MemName](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+MemType@MemName)||
+|[Name](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+TypeValue@Name)|_Inherited from [TypeValue](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+TypeValue)_|
 
 ## Constructors
 

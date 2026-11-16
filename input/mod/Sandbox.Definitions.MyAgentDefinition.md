@@ -13,7 +13,8 @@ public class MyAgentDefinition: MyBotDefinition
 |[static DEFAULT_AGENT_MAX_SLOPE](Sandbox.Definitions.MyAgentDefinition@DEFAULT_AGENT_MAX_SLOPE)||
 |[static DEFAULT_AGENT_RADIUS](Sandbox.Definitions.MyAgentDefinition@DEFAULT_AGENT_RADIUS)||
 |[static DEFAULT_PATH_ARRIVAL_RADIUS](Sandbox.Definitions.MyAgentDefinition@DEFAULT_PATH_ARRIVAL_RADIUS)||
-|[AgentHeight](Sandbox.Definitions.MyAgentDefinition@AgentHeight)|This and AgentRadius/AgentMaxClimb are discretized at navmesh build: height & climb against MyRecastOptions.cellHeight, radius against MyPlatformGameSettings.NAVMESH_CELL_SIZE. SBC values are snapped to the Steam grid: the number is what Recast uses on Steam, and on console (coarser cellSize) it rounds up to the next cell count.|
+|[static DEFAULT_PATHFINDING_RADIUS](Sandbox.Definitions.MyAgentDefinition@DEFAULT_PATHFINDING_RADIUS)||
+|[AgentHeight](Sandbox.Definitions.MyAgentDefinition@AgentHeight)|This and AgentRadius/AgentMaxClimb are discretized at navmesh build: height & climb against MyPlatformGameSettings.NAVMESH_CELL_HEIGHT, radius against MyPlatformGameSettings.NAVMESH_CELL_SIZE. Height and radius round up to whole cells, climb rounds down and is raised to at least MyPlatformGameSettings.NAVMESH_MIN_AGENT_CLIMB.|
 |[AgentMaxClimb](Sandbox.Definitions.MyAgentDefinition@AgentMaxClimb)||
 |[AgentMaxSlope](Sandbox.Definitions.MyAgentDefinition@AgentMaxSlope)||
 |[AgentRadius](Sandbox.Definitions.MyAgentDefinition@AgentRadius)||
@@ -33,6 +34,7 @@ public class MyAgentDefinition: MyBotDefinition
 |[Invulnerable](Sandbox.Definitions.MyAgentDefinition@Invulnerable)||
 |[JoinSpawnerFaction](Sandbox.Definitions.MyAgentDefinition@JoinSpawnerFaction)||
 |[PathArrivalRadius](Sandbox.Definitions.MyAgentDefinition@PathArrivalRadius)||
+|[PathfindingRadius](Sandbox.Definitions.MyAgentDefinition@PathfindingRadius)|Clearance radius (meters) used when querying the grid octree pathfinding for flight routes.|
 |[RemoveAfterDeath](Sandbox.Definitions.MyAgentDefinition@RemoveAfterDeath)||
 |[RemoveTimeMs](Sandbox.Definitions.MyAgentDefinition@RemoveTimeMs)||
 |[RespawnTimeMs](Sandbox.Definitions.MyAgentDefinition@RespawnTimeMs)||
@@ -80,6 +82,7 @@ public class MyAgentDefinition: MyBotDefinition
 |Member|Description|
 |---|---|
 |[AddItems(MyCharacter)](Sandbox.Definitions.MyAgentDefinition@AddItems)||
+|[GetBotModel(float)](Sandbox.Definitions.MyAgentDefinition@GetBotModel)|Picks a character model from BotModels by weight, or returns BotModel when none are valid.|
 |[AddItems(MyCharacter)](Sandbox.Definitions.MyBotDefinition@AddItems)|_Inherited from [MyBotDefinition](Sandbox.Definitions.MyBotDefinition)_|
 |[CheckDefinitionDLCs(String[])](VRage.Game.MyDefinitionBase@CheckDefinitionDLCs)|Checks if the definition has all required DLCs as it should have<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[GetObjectBuilder()](VRage.Game.MyDefinitionBase@GetObjectBuilder)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|

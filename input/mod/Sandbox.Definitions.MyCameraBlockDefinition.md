@@ -12,12 +12,14 @@ public class MyCameraBlockDefinition: MyFunctionalBlockDefinition
 |[MaxFov](Sandbox.Definitions.MyCameraBlockDefinition@MaxFov)||
 |[MinFov](Sandbox.Definitions.MyCameraBlockDefinition@MinFov)||
 |[OverlayTexture](Sandbox.Definitions.MyCameraBlockDefinition@OverlayTexture)||
+|[PanSound](Sandbox.Definitions.MyCameraBlockDefinition@PanSound)||
 |[RaycastConeLimit](Sandbox.Definitions.MyCameraBlockDefinition@RaycastConeLimit)||
 |[RaycastDistanceLimit](Sandbox.Definitions.MyCameraBlockDefinition@RaycastDistanceLimit)||
 |[RaycastTimeMultiplier](Sandbox.Definitions.MyCameraBlockDefinition@RaycastTimeMultiplier)||
 |[RequiredChargingInput](Sandbox.Definitions.MyCameraBlockDefinition@RequiredChargingInput)||
 |[RequiredPowerInput](Sandbox.Definitions.MyCameraBlockDefinition@RequiredPowerInput)||
 |[ResourceSinkGroup](Sandbox.Definitions.MyCameraBlockDefinition@ResourceSinkGroup)||
+|[ZoomSound](Sandbox.Definitions.MyCameraBlockDefinition@ZoomSound)||
 |[ActionSound](Sandbox.Definitions.MyCubeBlockDefinition@ActionSound)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[AimingOffset](Sandbox.Definitions.MyCubeBlockDefinition@AimingOffset)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[AllowInteractionThroughBlock](Sandbox.Definitions.MyCubeBlockDefinition@AllowInteractionThroughBlock)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|

@@ -413,6 +413,10 @@
 <td>Gets or sets <a href="VRage.ModAPI.EntityFlags@Save.html">Save</a> . Entity won't be saved if <a href="VRage.ModAPI.IMyEntity@Save.html">Save</a> is false<br /><br /><em>Inherited from <a href="VRage.ModAPI.IMyEntity.html">IMyEntity</a></em></td>
 </tr>
 <tr>
+<td><a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun@SelectedAmmoType.html">SelectedAmmoType</a></td>
+<td>Gets or sets the preferred ammunition magazine; null means any compatible magazine.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun.html">IMyUserControllableGun</a></em></td>
+</tr>
+<tr>
 <td><a href="VRage.ModAPI.IMyEntity@ShadowBoxLod.html">ShadowBoxLod</a></td>
 <td>Gets or sets flag <a href="VRage.Game.Components.MyRenderComponentBase@ShadowBoxLod.html">ShadowBoxLod</a><br /><br /><em>Inherited from <a href="VRage.ModAPI.IMyEntity.html">IMyEntity</a></em></td>
 </tr>
@@ -552,6 +556,10 @@
 <td>This method marks this entity for close which means, that Close will be called after all entities are updated<br /><br /><em>Inherited from <a href="VRage.ModAPI.IMyEntity.html">IMyEntity</a></em></td>
 </tr>
 <tr>
+<td><a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun@CycleSelectedAmmoType.html">CycleSelectedAmmoType()</a></td>
+<td>Selects the next compatible ammunition type.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun.html">IMyUserControllableGun</a></em></td>
+</tr>
+<tr>
 <td><a href="VRage.ModAPI.IMyEntity@DebugDraw.html">DebugDraw()</a></td>
 <td>Calls debug draw of entity<br /><br /><em>Inherited from <a href="VRage.ModAPI.IMyEntity.html">IMyEntity</a></em></td>
 </tr>
@@ -570,6 +578,10 @@
 <tr>
 <td><a href="VRage.ModAPI.IMyEntity@EnableColorMaskForSubparts.html">EnableColorMaskForSubparts(bool)</a></td>
 <td>Allows subparts have different color than their parent<br /><br /><em>Inherited from <a href="VRage.ModAPI.IMyEntity.html">IMyEntity</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun@ForceReload.html">ForceReload()</a></td>
+<td>Unloads the current magazine and begins reloading the selected type.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.Ingame.IMyUserControllableGun.html">IMyUserControllableGun</a></em></td>
 </tr>
 <tr>
 <td><a href="Sandbox.ModAPI.Ingame.IMyTerminalBlock@GetActions.html">GetActions(List<ITerminalAction>, Func&lt;ITerminalAction, bool&gt;)</a></td>

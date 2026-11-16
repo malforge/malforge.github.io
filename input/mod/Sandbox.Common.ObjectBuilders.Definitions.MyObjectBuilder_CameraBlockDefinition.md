@@ -11,12 +11,14 @@ public class MyObjectBuilder_CameraBlockDefinition: MyObjectBuilder_FunctionalBl
 |[MaxFov](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CameraBlockDefinition@MaxFov)||
 |[MinFov](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CameraBlockDefinition@MinFov)||
 |[OverlayTexture](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CameraBlockDefinition@OverlayTexture)||
+|[PanSound](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CameraBlockDefinition@PanSound)||
 |[RaycastConeLimit](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CameraBlockDefinition@RaycastConeLimit)||
 |[RaycastDistanceLimit](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CameraBlockDefinition@RaycastDistanceLimit)||
 |[RaycastTimeMultiplier](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CameraBlockDefinition@RaycastTimeMultiplier)||
 |[RequiredChargingInput](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CameraBlockDefinition@RequiredChargingInput)||
 |[RequiredPowerInput](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CameraBlockDefinition@RequiredPowerInput)||
 |[ResourceSinkGroup](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CameraBlockDefinition@ResourceSinkGroup)||
+|[ZoomSound](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_CameraBlockDefinition@ZoomSound)||
 |[ActionSound](VRage.Game.MyObjectBuilder_CubeBlockDefinition@ActionSound)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[AimingOffset](VRage.Game.MyObjectBuilder_CubeBlockDefinition@AimingOffset)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[AllowInteractionThroughBlock](VRage.Game.MyObjectBuilder_CubeBlockDefinition@AllowInteractionThroughBlock)|Used when block has see-through parts (like holodisplay) that you want to be able to interact through.<br /><br />_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|

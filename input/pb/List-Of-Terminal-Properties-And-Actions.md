@@ -599,6 +599,7 @@ Subtypes: `LargeCameraBlock`, `LargeCameraTopMounted`, `SmallCameraBlock`, `Smal
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
+|EnablePanning|Enable Panning On/Off|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseTextPaddingSlider|Increase Text Padding|
@@ -618,6 +619,7 @@ Subtypes: `LargeCameraBlock`, `LargeCameraTopMounted`, `SmallCameraBlock`, `Smal
 |BackgroundColor|Color|
 |ChangeIntervalSlider|float|
 |Content|long|
+|EnablePanning|bool|
 |Font|long|
 |FontColor|Color|
 |FontSize|float|
@@ -631,6 +633,7 @@ Subtypes: `LargeCameraBlock`, `LargeCameraTopMounted`, `SmallCameraBlock`, `Smal
 |ShowInToolbarConfig|bool|
 |ShowOnHUD|bool|
 |TextPaddingSlider|float|
+|ViewRotation|long|
 
 ## CargoContainer
 
@@ -660,7 +663,7 @@ Subtypes: `LargeBlockBulkContainerA`, `LargeBlockBulkContainerB`, `LargeBlockBul
 
 Interface: `IMyCockpit`
 
-Subtypes: `BuggyCockpit`, `CockpitOpen`, `DBSmallBlockFighterCockpit`, `LargeBlockBathroom`, `LargeBlockBathroomOpen`, `LargeBlockCaptainDesk`, `LargeBlockClosedSlopedCockpit`, `LargeBlockCockpit`, `LargeBlockCockpitIndustrial`, `LargeBlockCockpitSeat`, `LargeBlockConsoleModuleInvertedCorner`, `LargeBlockConsoleModuleScreens`, `LargeBlockCouch`, `LargeBlockCouchCorner`, `LargeBlockDesk`, `LargeBlockDeskCorner`, `LargeBlockDeskCornerInv`, `LargeBlockInsetPlantCouch`, `LargeBlockLabDeskSeat`, `LargeBlockModularBridgeCockpit`, `LargeBlockOpenSlopedCockpit`, `LargeBlockStandingCockpit`, `LargeBlockSuspendedControlSeat`, `LargeBlockSuspendedControlSeatB`, `LargeBlockToilet`, `OpenCockpitLarge`, `OpenCockpitSmall`, `PassengerBench`, `PassengerSeatLarge`, `PassengerSeatSmallNew`, `PassengerSeatSmallOffset`, `RoverCockpit`, `SmallBlockCapCockpit`, `SmallBlockClosedSlopedCockpit`, `SmallBlockCockpit`, `SmallBlockCockpitIndustrial`, `SmallBlockFlushCockpit`, `SmallBlockOpenSlopedCockpit`, `SmallBlockStandingCockpit`, `SmallBlockSuspendedControlSeat`, `SmallBlockSuspendedControlSeatB`, `SpeederCockpit`, `SpeederCockpitCompact`
+Subtypes: `BuggyCockpit`, `CockpitOpen`, `DBSmallBlockFighterCockpit`, `FighterCockpitType2`, `LargeBlockBathroom`, `LargeBlockBathroomOpen`, `LargeBlockCaptainChair`, `LargeBlockCaptainDesk`, `LargeBlockClosedSlopedCockpit`, `LargeBlockCockpit`, `LargeBlockCockpitIndustrial`, `LargeBlockCockpitSeat`, `LargeBlockConsoleModuleInvertedCorner`, `LargeBlockConsoleModuleScreens`, `LargeBlockCouch`, `LargeBlockCouchCorner`, `LargeBlockDesk`, `LargeBlockDeskCorner`, `LargeBlockDeskCornerInv`, `LargeBlockInsetPlantCouch`, `LargeBlockJumpSeat`, `LargeBlockJumpSeatL`, `LargeBlockJumpSeatR`, `LargeBlockLabDeskSeat`, `LargeBlockModularBridgeCockpit`, `LargeBlockOpenSlopedCockpit`, `LargeBlockStandingCockpit`, `LargeBlockSuspendedControlSeat`, `LargeBlockSuspendedControlSeatB`, `LargeBlockToilet`, `OpenCockpitLarge`, `OpenCockpitSmall`, `PassengerBench`, `PassengerSeatLarge`, `PassengerSeatSmallNew`, `PassengerSeatSmallOffset`, `RoverCockpit`, `SmallBlockCapCockpit`, `SmallBlockClosedSlopedCockpit`, `SmallBlockCockpit`, `SmallBlockCockpitIndustrial`, `SmallBlockFlushCockpit`, `SmallBlockJumpSeat`, `SmallBlockOpenSlopedCockpit`, `SmallBlockStandingCockpit`, `SmallBlockSuspendedControlSeat`, `SmallBlockSuspendedControlSeatB`, `SpeederCockpit`, `SpeederCockpitCompact`
 
 ### Actions
 
@@ -669,17 +672,23 @@ Subtypes: `BuggyCockpit`, `CockpitOpen`, `DBSmallBlockFighterCockpit`, `LargeBlo
 |ControlGyros|Control Gyros On/Off|
 |ControlThrusters|Control thrusters On/Off|
 |ControlWheels|Control wheels On/Off|
-|DampenersOverride|Inertia dampeners On/Off|
+|DampenersOverride|Inertia Dampeners On/Off|
+|DampenersOverride_Off|Inertia Dampeners Off|
+|DampenersOverride_On|Inertia Dampeners On|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
 |HandBrake|Handbrake On/Off|
+|HandBrake_Off|Handbrake Off|
+|HandBrake_On|Handbrake On|
 |HorizonIndicator|Show horizon and altitude On/Off|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseTextPaddingSlider|Increase Text Padding|
 |MainCockpit|Main cockpit On/Off|
 |Park|Park On/Off|
+|Park_Off|Park Off|
+|Park_On|Park On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
@@ -875,17 +884,23 @@ Subtypes: `LargeBlockBed`, `LargeBlockBedFree`, `LargeBlockCryoChamber`, `LargeB
 |ControlGyros|Control Gyros On/Off|
 |ControlThrusters|Control thrusters On/Off|
 |ControlWheels|Control wheels On/Off|
-|DampenersOverride|Inertia dampeners On/Off|
+|DampenersOverride|Inertia Dampeners On/Off|
+|DampenersOverride_Off|Inertia Dampeners Off|
+|DampenersOverride_On|Inertia Dampeners On|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
 |HandBrake|Handbrake On/Off|
+|HandBrake_Off|Handbrake Off|
+|HandBrake_On|Handbrake On|
 |HorizonIndicator|Show horizon and altitude On/Off|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseTextPaddingSlider|Increase Text Padding|
 |MainCockpit|Main cockpit On/Off|
 |Park|Park On/Off|
+|Park_Off|Park Off|
+|Park_On|Park On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
@@ -1006,7 +1021,7 @@ Subtypes: `LargeDefensiveCombat`, `SmallDefensiveCombat`
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
 |SetAttackMode_EnemiesAndNeutrals|Set Attack Mode: Enemies And Neutrals|
 |SetAttackMode_EnemiesOnly|Set Attack Mode: Enemies Only|
-|SetTargetingGroup_PowerSystems|Target Power systems|
+|SetTargetingGroup_PowerSystems|Target Power|
 |SetTargetingGroup_Propulsion|Target Propulsion|
 |SetTargetingGroup_Weapons|Target Weapons|
 |ShowOnHUD|Show on HUD On/Off|
@@ -1051,7 +1066,7 @@ Subtypes: `LargeDefensiveCombat`, `SmallDefensiveCombat`
 
 Interface: `IMyDoor`
 
-Subtypes: `CorridorRoundDoor`, `CorridorRoundDoorInv`, `LargeBlockAngledDoorA`, `LargeBlockAngledDoorB`, `LargeBlockCentredDoor`, `LargeBlockCentredDoorGlass`, `LargeBlockEvenWideDoor`, `LargeBlockGate`, `LargeBlockHalfCentredDoor`, `LargeBlockHalfCentredDoorGlass`, `LargeBlockLabDoor`, `LargeBlockLabDoorInv`, `LargeBlockNarrowDoor`, `LargeBlockNarrowDoorHalf`, `LargeBlockOffsetDoor`, `LargeBlockSmallGate`, `SlidingHatchDoor`, `SlidingHatchDoorHalf`, `SmallBlockAngledDoorA`, `SmallBlockCentredDoor`, `SmallBlockCentredDoorGlass`, `SmallDoor`, `SmallSideDoor`
+Subtypes: `CorridorRoundDoor`, `CorridorRoundDoorInv`, `LargeBlockAngledDoorA`, `LargeBlockAngledDoorB`, `LargeBlockBrigDoorA`, `LargeBlockBrigDoorB`, `LargeBlockCentredDoor`, `LargeBlockCentredDoorGlass`, `LargeBlockEvenWideDoor`, `LargeBlockGate`, `LargeBlockHalfCentredDoor`, `LargeBlockHalfCentredDoorGlass`, `LargeBlockLabDoor`, `LargeBlockLabDoorInv`, `LargeBlockNarrowDoor`, `LargeBlockNarrowDoorHalf`, `LargeBlockOffsetDoor`, `LargeBlockSmallGate`, `SlidingHatchDoor`, `SlidingHatchDoorHalf`, `SmallBlockAngledDoorA`, `SmallBlockCentredDoor`, `SmallBlockCentredDoorGlass`, `SmallDoor`, `SmallSideDoor`
 
 ### Actions
 
@@ -1229,6 +1244,7 @@ Subtypes: `EventControllerLarge`, `EventControllerSmall`
 |DecreaseAngle|Decrease Angle Threshold|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
+|DecreaseMissileLockedDistanceSlider|Decrease Distance|
 |DecreaseNaturalGravityChangedSlider|Decrease Natural gravity:|
 |DecreaseNaturalGravityChangedSlider|Decrease Distance to Locked Target|
 |DecreaseSpeed|Decrease Speed Threshold|
@@ -1238,6 +1254,7 @@ Subtypes: `EventControllerLarge`, `EventControllerSmall`
 |IncreaseAngle|Increase Angle Threshold|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
+|IncreaseMissileLockedDistanceSlider|Increase Distance|
 |IncreaseNaturalGravityChangedSlider|Increase Natural gravity:|
 |IncreaseNaturalGravityChangedSlider|Increase Distance to Locked Target|
 |IncreaseSpeed|Increase Speed Threshold|
@@ -1248,6 +1265,7 @@ Subtypes: `EventControllerLarge`, `EventControllerSmall`
 |OnOff_Off|Toggle block Off|
 |OnOff_On|Toggle block On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
+|SetThreshold|Set Threshold|
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
 |ShowOnHUD_On|Show on HUD On|
@@ -1267,6 +1285,7 @@ Subtypes: `EventControllerLarge`, `EventControllerSmall`
 |Font|long|
 |FontColor|Color|
 |FontSize|float|
+|MissileLockedDistanceSlider|float|
 |Name|StringBuilder|
 |NaturalGravityChangedSlider|float|
 |NaturalGravityChangedSlider|float|
@@ -1352,9 +1371,7 @@ Subtypes: `LargePistonBase`, `LargePistonBaseReskin`, `SmallPistonBase`, `SmallP
 |DecreaseTextPaddingSlider|Decrease Text Padding|
 |DecreaseUpperLimit|Decrease Maximum distance|
 |DecreaseVelocity|Decrease Velocity|
-|DecreaseWeld speed|Decrease Safety lock speed|
 |Extend|Extend|
-|Force weld|Safety lock override On/Off|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseLowerLimit|Increase Minimum distance|
@@ -1364,7 +1381,6 @@ Subtypes: `LargePistonBase`, `LargePistonBaseReskin`, `SmallPistonBase`, `SmallP
 |IncreaseTextPaddingSlider|Increase Text Padding|
 |IncreaseUpperLimit|Increase Maximum distance|
 |IncreaseVelocity|Increase Velocity|
-|IncreaseWeld speed|Increase Safety lock speed|
 |OnOff|Toggle block On/Off|
 |OnOff_Off|Toggle block Off|
 |OnOff_On|Toggle block On|
@@ -1390,7 +1406,6 @@ Subtypes: `LargePistonBase`, `LargePistonBaseReskin`, `SmallPistonBase`, `SmallP
 |Font|long|
 |FontColor|Color|
 |FontSize|float|
-|Force weld|bool|
 |LowerLimit|float|
 |MaxImpulseAxis|float|
 |MaxImpulseNonAxis|float|
@@ -1408,7 +1423,6 @@ Subtypes: `LargePistonBase`, `LargePistonBaseReskin`, `SmallPistonBase`, `SmallP
 |TextPaddingSlider|float|
 |UpperLimit|float|
 |Velocity|float|
-|Weld speed|float|
 
 ## FlightMovementBlock
 
@@ -1489,7 +1503,7 @@ Subtypes: `LargeFlightMovement`, `SmallFlightMovement`
 
 Interface: `IMyFunctionalBlock`
 
-Subtypes: `LargeBlockAlgaeFarm`, `LargeBlockAlgaeFarmReskin`, `LargeBlockConduitDamaged`, `LargeBlockFarmPlot`, `ServicesTerminal`
+Subtypes: `LargeBlockAlgaeFarm`, `LargeBlockAlgaeFarmReskin`, `LargeBlockConduitDamaged`, `LargeBlockFarmPlot`, `LargeBlockPrototechMicroEmitter`, `LargeBlockSeparationCharge`, `ServicesTerminal`, `SmallBlockPrototechMicroEmitter`, `SmallBlockSeparationCharge`
 
 ### Actions
 
@@ -1849,7 +1863,11 @@ Subtypes: `AirDuctLight`, `CorridorLight`, `CorridorNarrowStowage`, `CorridorRou
 |OnOff_On|Toggle block On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
 |SetBlinkInterval|Set Blink Interval|
+|SetBlinkLength|Set Blink Length|
+|SetBlinkOffset|Set Blink Offset|
 |SetColor|Set Color|
+|SetFalloff|Set Falloff|
+|SetIntensity|Set Intensity|
 |SetRadius|Set Radius|
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
@@ -1895,6 +1913,7 @@ Subtypes: `LargeInteriorTurret`
 
 |Name|Description|
 |-|-|
+|CycleSelectedAmmoType|Cycle Selected Ammo Type|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseRange|Decrease AI aiming radius|
@@ -1904,6 +1923,7 @@ Subtypes: `LargeInteriorTurret`
 |EnableIdleMovement_On|Enable idle movement On|
 |EnableTargetLocking|Enable target locking On/Off|
 |FocusLockedTarget|Focus Locked Target|
+|ForceReload|Force Reload|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseRange|Increase AI aiming radius|
@@ -1929,7 +1949,7 @@ Subtypes: `LargeInteriorTurret`
 |TargetFriends_Off|Target Friends Off|
 |TargetFriends_On|Target Friends On|
 |TargetingGroup_CycleSubsystems|Cycle Subsystems|
-|TargetingGroup_PowerSystems|Target Power systems|
+|TargetingGroup_PowerSystems|Target Power|
 |TargetingGroup_Propulsion|Target Propulsion|
 |TargetingGroup_Weapons|Target Weapons|
 |TargetLargeShips|Target large ships On/Off|
@@ -1970,6 +1990,7 @@ Subtypes: `LargeInteriorTurret`
 |Range|float|
 |ScriptBackgroundColor|Color|
 |ScriptForegroundColor|Color|
+|SelectedAmmoType|long|
 |Shoot|bool|
 |ShowInInventory|bool|
 |ShowInTerminal|bool|
@@ -1986,6 +2007,7 @@ Subtypes: `LargeInteriorTurret`
 |TargetSmallShips|bool|
 |TargetStations|bool|
 |TextPaddingSlider|float|
+|ViewRotation|long|
 
 ## Jukebox
 
@@ -2108,6 +2130,8 @@ Subtypes: `LargeBlockLandingGear`, `LargeBlockLandingGearReskin`, `LargeBlockMag
 |Name|Description|
 |-|-|
 |Autolock|Autolock On/Off|
+|Autolock_Off|Autolock Off|
+|Autolock_On|Autolock On|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
@@ -2154,12 +2178,13 @@ Subtypes: `LargeBlockLandingGear`, `LargeBlockLandingGearReskin`, `LargeBlockMag
 
 Interface: `IMyLargeGatlingTurret`
 
-Subtypes: `AutoCannonTurret`, `LargeGatlingTurretReskin`, `SmallGatlingTurret`, `SmallGatlingTurretReskin`
+Subtypes: `AutoCannonTurret`, `AutoCannonTurretType2`, `LargeGatlingTurretReskin`, `SmallGatlingTurret`, `SmallGatlingTurretReskin`
 
 ### Actions
 
 |Name|Description|
 |-|-|
+|CycleSelectedAmmoType|Cycle Selected Ammo Type|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseRange|Decrease AI aiming radius|
@@ -2169,6 +2194,7 @@ Subtypes: `AutoCannonTurret`, `LargeGatlingTurretReskin`, `SmallGatlingTurret`, 
 |EnableIdleMovement_On|Enable idle movement On|
 |EnableTargetLocking|Enable target locking On/Off|
 |FocusLockedTarget|Focus Locked Target|
+|ForceReload|Force Reload|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseRange|Increase AI aiming radius|
@@ -2194,7 +2220,7 @@ Subtypes: `AutoCannonTurret`, `LargeGatlingTurretReskin`, `SmallGatlingTurret`, 
 |TargetFriends_Off|Target Friends Off|
 |TargetFriends_On|Target Friends On|
 |TargetingGroup_CycleSubsystems|Cycle Subsystems|
-|TargetingGroup_PowerSystems|Target Power systems|
+|TargetingGroup_PowerSystems|Target Power|
 |TargetingGroup_Propulsion|Target Propulsion|
 |TargetingGroup_Weapons|Target Weapons|
 |TargetLargeShips|Target large ships On/Off|
@@ -2236,6 +2262,7 @@ Subtypes: `AutoCannonTurret`, `LargeGatlingTurretReskin`, `SmallGatlingTurret`, 
 |Range|float|
 |ScriptBackgroundColor|Color|
 |ScriptForegroundColor|Color|
+|SelectedAmmoType|long|
 |Shoot|bool|
 |ShowInInventory|bool|
 |ShowInTerminal|bool|
@@ -2253,15 +2280,17 @@ Subtypes: `AutoCannonTurret`, `LargeGatlingTurretReskin`, `SmallGatlingTurret`, 
 |TargetStations|bool|
 |TextPaddingSlider|float|
 |UseConveyor|bool|
+|ViewRotation|long|
 
 ## LargeMissileTurret
 
-Subtypes: `LargeBlockMediumCalibreTurret`, `LargeCalibreTurret`, `LargeMissileTurretReskin`, `SmallBlockMediumCalibreTurret`, `SmallMissileTurret`, `SmallMissileTurretReskin`
+Subtypes: `LargeBlockMediumCalibreTurret`, `LargeBlockMediumCalibreTurretType2`, `LargeCalibreTurret`, `LargeCalibreTurretType2`, `LargeMissileTurretReskin`, `SmallBlockMediumCalibreTurret`, `SmallBlockMediumCalibreTurretType2`, `SmallMissileTurret`, `SmallMissileTurretReskin`
 
 ### Actions
 
 |Name|Description|
 |-|-|
+|CycleSelectedAmmoType|Cycle Selected Ammo Type|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseRange|Decrease AI aiming radius|
@@ -2271,6 +2300,7 @@ Subtypes: `LargeBlockMediumCalibreTurret`, `LargeCalibreTurret`, `LargeMissileTu
 |EnableIdleMovement_On|Enable idle movement On|
 |EnableTargetLocking|Enable target locking On/Off|
 |FocusLockedTarget|Focus Locked Target|
+|ForceReload|Force Reload|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseRange|Increase AI aiming radius|
@@ -2296,7 +2326,7 @@ Subtypes: `LargeBlockMediumCalibreTurret`, `LargeCalibreTurret`, `LargeMissileTu
 |TargetFriends_Off|Target Friends Off|
 |TargetFriends_On|Target Friends On|
 |TargetingGroup_CycleSubsystems|Cycle Subsystems|
-|TargetingGroup_PowerSystems|Target Power systems|
+|TargetingGroup_PowerSystems|Target Power|
 |TargetingGroup_Propulsion|Target Propulsion|
 |TargetingGroup_Weapons|Target Weapons|
 |TargetLargeShips|Target large ships On/Off|
@@ -2338,6 +2368,7 @@ Subtypes: `LargeBlockMediumCalibreTurret`, `LargeCalibreTurret`, `LargeMissileTu
 |Range|float|
 |ScriptBackgroundColor|Color|
 |ScriptForegroundColor|Color|
+|SelectedAmmoType|long|
 |Shoot|bool|
 |ShowInInventory|bool|
 |ShowInTerminal|bool|
@@ -2355,12 +2386,13 @@ Subtypes: `LargeBlockMediumCalibreTurret`, `LargeCalibreTurret`, `LargeMissileTu
 |TargetStations|bool|
 |TextPaddingSlider|float|
 |UseConveyor|bool|
+|ViewRotation|long|
 
 ## LaserAntenna
 
 Interface: `IMyLaserAntenna`
 
-Subtypes: `LargeBlockLaserAntenna`, `SmallBlockLaserAntenna`
+Subtypes: `LargeBlockLaserAntenna`, `LargeBlockLaserAntennaType2`, `SmallBlockLaserAntenna`, `SmallBlockLaserAntennaType2`
 
 ### Actions
 
@@ -2577,9 +2609,7 @@ Subtypes: `LargeAdvancedStator`, `LargeHinge`, `MediumHinge`, `SmallAdvancedStat
 |DecreaseTorque|Decrease Torque|
 |DecreaseUpperLimit|Decrease Upper limit|
 |DecreaseVelocity|Decrease Velocity|
-|DecreaseWeld speed|Decrease Safety lock speed|
 |Detach|Detach|
-|Force weld|Safety lock override On/Off|
 |HingeLock|Hinge lock On/Off|
 |HingeLock_Off|Hinge lock Off|
 |HingeLock_On|Hinge lock On|
@@ -2593,7 +2623,6 @@ Subtypes: `LargeAdvancedStator`, `LargeHinge`, `MediumHinge`, `SmallAdvancedStat
 |IncreaseTorque|Increase Torque|
 |IncreaseUpperLimit|Increase Upper limit|
 |IncreaseVelocity|Increase Velocity|
-|IncreaseWeld speed|Increase Safety lock speed|
 |OnOff|Toggle block On/Off|
 |OnOff_Off|Toggle block Off|
 |OnOff_On|Toggle block On|
@@ -2625,7 +2654,6 @@ Subtypes: `LargeAdvancedStator`, `LargeHinge`, `MediumHinge`, `SmallAdvancedStat
 |Font|long|
 |FontColor|Color|
 |FontSize|float|
-|Force weld|bool|
 |HingeLock|bool|
 |LowerLimit|float|
 |Name|StringBuilder|
@@ -2644,7 +2672,6 @@ Subtypes: `LargeAdvancedStator`, `LargeHinge`, `MediumHinge`, `SmallAdvancedStat
 |Torque|float|
 |UpperLimit|float|
 |Velocity|float|
-|Weld speed|float|
 
 ## MotorStator
 
@@ -2671,9 +2698,7 @@ Subtypes: `LargeStator`, `SmallStator`
 |DecreaseTorque|Decrease Torque|
 |DecreaseUpperLimit|Decrease Upper limit|
 |DecreaseVelocity|Decrease Velocity|
-|DecreaseWeld speed|Decrease Safety lock speed|
 |Detach|Detach|
-|Force weld|Safety lock override On/Off|
 |HingeLock|Hinge lock On/Off|
 |HingeLock_Off|Hinge lock Off|
 |HingeLock_On|Hinge lock On|
@@ -2687,7 +2712,6 @@ Subtypes: `LargeStator`, `SmallStator`
 |IncreaseTorque|Increase Torque|
 |IncreaseUpperLimit|Increase Upper limit|
 |IncreaseVelocity|Increase Velocity|
-|IncreaseWeld speed|Increase Safety lock speed|
 |OnOff|Toggle block On/Off|
 |OnOff_Off|Toggle block Off|
 |OnOff_On|Toggle block On|
@@ -2719,7 +2743,6 @@ Subtypes: `LargeStator`, `SmallStator`
 |Font|long|
 |FontColor|Color|
 |FontSize|float|
-|Force weld|bool|
 |HingeLock|bool|
 |LowerLimit|float|
 |Name|StringBuilder|
@@ -2738,7 +2761,6 @@ Subtypes: `LargeStator`, `SmallStator`
 |Torque|float|
 |UpperLimit|float|
 |Velocity|float|
-|Weld speed|float|
 
 ## MotorSuspension
 
@@ -2753,6 +2775,8 @@ Subtypes: `OffroadShortSuspension1x1`, `OffroadShortSuspension1x1mirrored`, `Off
 |Add Top Part|Add Wheel|
 |AirShock|AirShock On/Off|
 |Braking|Brake On/Off|
+|Braking_Off|Brake Off|
+|Braking_On|Brake On|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseFriction|Decrease Friction|
@@ -2765,9 +2789,7 @@ Subtypes: `OffroadShortSuspension1x1`, `OffroadShortSuspension1x1mirrored`, `Off
 |DecreaseSteer override|Decrease Steer override|
 |DecreaseStrength|Decrease Strength|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
-|DecreaseWeld speed|Decrease Safety lock speed|
 |EnableParking|Allow Parking Brake On/Off|
-|Force weld|Safety lock override On/Off|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseFriction|Increase Friction|
@@ -2780,7 +2802,6 @@ Subtypes: `OffroadShortSuspension1x1`, `OffroadShortSuspension1x1mirrored`, `Off
 |IncreaseSteer override|Increase Steer override|
 |IncreaseStrength|Increase Strength|
 |IncreaseTextPaddingSlider|Increase Text Padding|
-|IncreaseWeld speed|Increase Safety lock speed|
 |InvertPropulsion|Invert Propulsion On/Off|
 |InvertSteering|Invert Steering On/Off|
 |OnOff|Toggle block On/Off|
@@ -2788,19 +2809,27 @@ Subtypes: `OffroadShortSuspension1x1`, `OffroadShortSuspension1x1mirrored`, `Off
 |OnOff_On|Toggle block On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
 |Propulsion|Propulsion On/Off|
+|Propulsion_Off|Propulsion Off|
+|Propulsion_On|Propulsion On|
 |ResetHeight|Reset Height Offset|
 |ResetMaxSteerAngle|Reset Steering Angle|
 |ResetPropulsion override|Reset Propulsion override|
 |ResetSpeed Limit|Reset Speed limit|
 |ResetSteer override|Reset Steer override|
+|SetFriction|Set Friction|
+|SetHeight|Set Height|
+|SetMaxSteerAngle|Set Max Steering Angle|
 |SetPropulsionOverride|Set Propulsion Override|
 |SetSpeedLimit|Set Speed Limit|
 |SetSteerOverride|Set Steer Override|
+|SetStrength|Set Strength|
 |ShareInertiaTensor|Share inertia tensor On/Off|
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
 |ShowOnHUD_On|Show on HUD On|
 |Steering|Steering On/Off|
+|Steering_Off|Steering Off|
+|Steering_On|Steering On|
 
 ### Properties
 
@@ -2816,7 +2845,6 @@ Subtypes: `OffroadShortSuspension1x1`, `OffroadShortSuspension1x1mirrored`, `Off
 |Font|long|
 |FontColor|Color|
 |FontSize|float|
-|Force weld|bool|
 |Friction|float|
 |Height|float|
 |InvertPropulsion|bool|
@@ -2841,7 +2869,6 @@ Subtypes: `OffroadShortSuspension1x1`, `OffroadShortSuspension1x1mirrored`, `Off
 |Steering|bool|
 |Strength|float|
 |TextPaddingSlider|float|
-|Weld speed|float|
 
 ## MyProgrammableBlock
 
@@ -2906,6 +2933,8 @@ Subtypes: `LargeOffensiveCombat`, `SmallOffensiveCombat`
 |ActivateBehavior_Off|AI Behavior Off|
 |ActivateBehavior_On|AI Behavior On|
 |CanTargetCharacters|Target Characters On/Off|
+|CanTargetCharacters_Off|Target Characters Off|
+|CanTargetCharacters_On|Target Characters On|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseOffensiveCombatCircleOrbit_CircleDistance|Decrease Circle Distance|
@@ -2949,7 +2978,7 @@ Subtypes: `LargeOffensiveCombat`, `SmallOffensiveCombat`
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
 |SetAttackMode_EnemiesAndNeutrals|Set Attack Mode: Enemies And Neutrals|
 |SetAttackMode_EnemiesOnly|Set Attack Mode: Enemies Only|
-|SetTargetingGroup_PowerSystems|Target Power systems|
+|SetTargetingGroup_PowerSystems|Target Power|
 |SetTargetingGroup_Propulsion|Target Propulsion|
 |SetTargetingGroup_Weapons|Target Weapons|
 |SetTargetPriority_Closest|Set Target Priority: Closest|
@@ -3434,7 +3463,9 @@ Subtypes: `LargeBlockCompactRadioAntenna`, `LargeBlockCompactRadioAntennaReskin`
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseRadius|Decrease Broadcast radius|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
-|EnableBroadCast|Enable broadcasting On/Off|
+|EnableBroadCast|Enable Broadcasting On/Off|
+|EnableBroadCast_Off|Enable Broadcasting Off|
+|EnableBroadCast_On|Enable Broadcasting On|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseRadius|Increase Broadcast radius|
@@ -3604,7 +3635,11 @@ Subtypes: `LargeBlockFloodlight`, `LargeBlockFloodlightAngled`, `LargeBlockFlood
 |OnOff_On|Toggle block On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
 |SetBlinkInterval|Set Blink Interval|
+|SetBlinkLength|Set Blink Length|
+|SetBlinkOffset|Set Blink Offset|
 |SetColor|Set Color|
+|SetFalloff|Set Falloff|
+|SetIntensity|Set Intensity|
 |SetRadius|Set Radius|
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
@@ -3661,7 +3696,9 @@ Subtypes: `LargeBlockRemoteControl`, `SmallBlockRemoteControl`
 |ControlGyros|Control Gyros On/Off|
 |ControlThrusters|Control thrusters On/Off|
 |ControlWheels|Control wheels On/Off|
-|DampenersOverride|Inertia dampeners On/Off|
+|DampenersOverride|Inertia Dampeners On/Off|
+|DampenersOverride_Off|Inertia Dampeners Off|
+|DampenersOverride_On|Inertia Dampeners On|
 |DecreaseSpeedLimit|Decrease Speed limit|
 |DockingMode|Precision Mode On/Off|
 |DockingMode_Off|Precision Mode Off|
@@ -3669,12 +3706,16 @@ Subtypes: `LargeBlockRemoteControl`, `SmallBlockRemoteControl`
 |Down|Down|
 |Forward|Forward|
 |HandBrake|Handbrake On/Off|
+|HandBrake_Off|Handbrake Off|
+|HandBrake_On|Handbrake On|
 |HorizonIndicator|Show horizon and altitude On/Off|
 |IncreaseSpeedLimit|Increase Speed limit|
 |Left|Left|
 |MainCockpit|Main cockpit On/Off|
 |MainRemoteControl|Main Remote Control On/Off|
 |Park|Park On/Off|
+|Park_Off|Park Off|
+|Park_On|Park On|
 |Reset|Reset waypoint|
 |Right|Right|
 |SetFlightMode_BlockPropertyTitle_FlightMode_Circle|Set Flight Mode: Circle|
@@ -3836,7 +3877,7 @@ Subtypes: `LargeSearchlight`, `SmallSearchlight`
 |TargetFriends_Off|Target Friends Off|
 |TargetFriends_On|Target Friends On|
 |TargetingGroup_CycleSubsystems|Cycle Subsystems|
-|TargetingGroup_PowerSystems|Target Power systems|
+|TargetingGroup_PowerSystems|Target Power|
 |TargetingGroup_Propulsion|Target Propulsion|
 |TargetingGroup_Weapons|Target Weapons|
 |TargetLargeShips|Target large ships On/Off|
@@ -3900,6 +3941,7 @@ Subtypes: `LargeSearchlight`, `SmallSearchlight`
 |TargetSmallShips|bool|
 |TargetStations|bool|
 |TextPaddingSlider|float|
+|ViewRotation|long|
 
 ## SensorBlock
 
@@ -4189,15 +4231,17 @@ Subtypes: `LargeShipWelder`, `LargeShipWelderReskin`, `SmallShipWelder`, `SmallS
 
 Interface: `IMySmallGatlingGun`
 
-Subtypes: `SmallBlockAutocannon`, `SmallGatlingGunWarfare2`
+Subtypes: `SmallBlockAutocannon`, `SmallBlockAutocannonType2`, `SmallGatlingGunWarfare2`
 
 ### Actions
 
 |Name|Description|
 |-|-|
+|CycleSelectedAmmoType|Cycle Selected Ammo Type|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
+|ForceReload|Force Reload|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseTextPaddingSlider|Increase Text Padding|
@@ -4230,6 +4274,7 @@ Subtypes: `SmallBlockAutocannon`, `SmallGatlingGunWarfare2`
 |PreserveAspectRatio|bool|
 |ScriptBackgroundColor|Color|
 |ScriptForegroundColor|Color|
+|SelectedAmmoType|long|
 |Shoot|bool|
 |ShowInInventory|bool|
 |ShowInTerminal|bool|
@@ -4242,15 +4287,17 @@ Subtypes: `SmallBlockAutocannon`, `SmallGatlingGunWarfare2`
 
 Interface: `IMySmallMissileLauncher`
 
-Subtypes: `LargeBlockLargeCalibreGun`, `LargeFlareLauncher`, `LargeMissileLauncher`, `SmallFlareLauncher`, `SmallMissileLauncherWarfare2`
+Subtypes: `LargeBlockLargeCalibreGun`, `LargeBlockLargeCalibreGunType2`, `LargeBlockTorpedoLauncher`, `LargeFlareLauncher`, `LargeInsetFlareLauncher`, `LargeMissileLauncher`, `SmallBlockTorpedoLauncher`, `SmallFlareLauncher`, `SmallInsetFlareLauncher`, `SmallMissileLauncherWarfare2`
 
 ### Actions
 
 |Name|Description|
 |-|-|
+|CycleSelectedAmmoType|Cycle Selected Ammo Type|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
+|ForceReload|Force Reload|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseTextPaddingSlider|Increase Text Padding|
@@ -4258,6 +4305,7 @@ Subtypes: `LargeBlockLargeCalibreGun`, `LargeFlareLauncher`, `LargeMissileLaunch
 |OnOff_Off|Toggle block Off|
 |OnOff_On|Toggle block On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
+|RequireTargetLock|Require Target Lock On/Off|
 |Shoot|Shoot On/Off|
 |Shoot_Off|Shoot Off|
 |Shoot_On|Shoot On|
@@ -4265,6 +4313,10 @@ Subtypes: `LargeBlockLargeCalibreGun`, `LargeFlareLauncher`, `LargeMissileLaunch
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
 |ShowOnHUD_On|Show on HUD On|
+|TargetingGroup_CycleSubsystems|Cycle Subsystems|
+|TargetingGroup_PowerSystems|Target Power|
+|TargetingGroup_Propulsion|Target Propulsion|
+|TargetingGroup_Weapons|Target Weapons|
 |UseConveyor|Automatic Push/Pull On/Off|
 
 ### Properties
@@ -4281,13 +4333,16 @@ Subtypes: `LargeBlockLargeCalibreGun`, `LargeFlareLauncher`, `LargeMissileLaunch
 |Name|StringBuilder|
 |OnOff|bool|
 |PreserveAspectRatio|bool|
+|RequireTargetLock|bool|
 |ScriptBackgroundColor|Color|
 |ScriptForegroundColor|Color|
+|SelectedAmmoType|long|
 |Shoot|bool|
 |ShowInInventory|bool|
 |ShowInTerminal|bool|
 |ShowInToolbarConfig|bool|
 |ShowOnHUD|bool|
+|TargetingGroup_Selector|long|
 |TextPaddingSlider|float|
 |UseConveyor|bool|
 
@@ -4295,15 +4350,17 @@ Subtypes: `LargeBlockLargeCalibreGun`, `LargeFlareLauncher`, `LargeMissileLaunch
 
 Interface: `IMySmallMissileLauncherReload`
 
-Subtypes: `LargeRailgun`, `SmallBlockMediumCalibreGun`, `SmallRailgun`, `SmallRocketLauncherReload`
+Subtypes: `LargeRailgun`, `SmallBlockMediumCalibreGun`, `SmallBlockMediumCalibreGunType2`, `SmallRailgun`, `SmallRocketLauncherReload`
 
 ### Actions
 
 |Name|Description|
 |-|-|
+|CycleSelectedAmmoType|Cycle Selected Ammo Type|
 |DecreaseChangeIntervalSlider|Decrease Image change interval|
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
+|ForceReload|Force Reload|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseTextPaddingSlider|Increase Text Padding|
@@ -4311,6 +4368,7 @@ Subtypes: `LargeRailgun`, `SmallBlockMediumCalibreGun`, `SmallRailgun`, `SmallRo
 |OnOff_Off|Toggle block Off|
 |OnOff_On|Toggle block On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
+|RequireTargetLock|Require Target Lock On/Off|
 |Shoot|Shoot On/Off|
 |Shoot_Off|Shoot Off|
 |Shoot_On|Shoot On|
@@ -4318,6 +4376,10 @@ Subtypes: `LargeRailgun`, `SmallBlockMediumCalibreGun`, `SmallRailgun`, `SmallRo
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
 |ShowOnHUD_On|Show on HUD On|
+|TargetingGroup_CycleSubsystems|Cycle Subsystems|
+|TargetingGroup_PowerSystems|Target Power|
+|TargetingGroup_Propulsion|Target Propulsion|
+|TargetingGroup_Weapons|Target Weapons|
 |UseConveyor|Automatic Push/Pull On/Off|
 |UseConveyor|Automatic Push/Pull On/Off|
 
@@ -4335,13 +4397,16 @@ Subtypes: `LargeRailgun`, `SmallBlockMediumCalibreGun`, `SmallRailgun`, `SmallRo
 |Name|StringBuilder|
 |OnOff|bool|
 |PreserveAspectRatio|bool|
+|RequireTargetLock|bool|
 |ScriptBackgroundColor|Color|
 |ScriptForegroundColor|Color|
+|SelectedAmmoType|long|
 |Shoot|bool|
 |ShowInInventory|bool|
 |ShowInTerminal|bool|
 |ShowInToolbarConfig|bool|
 |ShowOnHUD|bool|
+|TargetingGroup_Selector|long|
 |TextPaddingSlider|float|
 |UseConveyor|bool|
 |UseConveyor|bool|
@@ -4463,7 +4528,7 @@ Subtypes: `SpaceBallLarge`, `SpaceBallSmall`
 |DecreaseFontSize|Decrease Font Size|
 |DecreaseTextPaddingSlider|Decrease Text Padding|
 |DecreaseVirtualMass|Decrease Virtual mass|
-|EnableBroadCast|Enable broadcasting On/Off|
+|EnableBroadCast|Enable Broadcasting On/Off|
 |IncreaseChangeIntervalSlider|Increase Image change interval|
 |IncreaseFontSize|Increase Font Size|
 |IncreaseTextPaddingSlider|Increase Text Padding|
@@ -4747,7 +4812,7 @@ Subtypes: `HoloLCDLarge`, `HoloLCDSmall`, `LargeBlockCorner_LCD_1`, `LargeBlockC
 
 Interface: `IMyThrust`
 
-Subtypes: `LargeBlockLargeAtmosphericThrust`, `LargeBlockLargeAtmosphericThrustSciFi`, `LargeBlockLargeFlatAtmosphericThrust`, `LargeBlockLargeFlatAtmosphericThrustDShape`, `LargeBlockLargeHydrogenThrust`, `LargeBlockLargeHydrogenThrustIndustrial`, `LargeBlockLargeHydrogenThrustReskin`, `LargeBlockLargeModularThruster`, `LargeBlockLargeThrust`, `LargeBlockLargeThrustSciFi`, `LargeBlockPrototechThruster`, `LargeBlockSmallAtmosphericThrust`, `LargeBlockSmallAtmosphericThrustSciFi`, `LargeBlockSmallFlatAtmosphericThrust`, `LargeBlockSmallFlatAtmosphericThrustDShape`, `LargeBlockSmallHydrogenThrust`, `LargeBlockSmallHydrogenThrustIndustrial`, `LargeBlockSmallHydrogenThrustReskin`, `LargeBlockSmallModularThruster`, `LargeBlockSmallThrust`, `LargeBlockSmallThrustSciFi`, `SmallBlockLargeAtmosphericThrust`, `SmallBlockLargeAtmosphericThrustSciFi`, `SmallBlockLargeFlatAtmosphericThrust`, `SmallBlockLargeFlatAtmosphericThrustDShape`, `SmallBlockLargeHydrogenThrust`, `SmallBlockLargeHydrogenThrustIndustrial`, `SmallBlockLargeHydrogenThrustReskin`, `SmallBlockLargeModularThruster`, `SmallBlockLargeThrust`, `SmallBlockLargeThrustSciFi`, `SmallBlockPrototechThruster`, `SmallBlockSmallAtmosphericThrust`, `SmallBlockSmallAtmosphericThrustSciFi`, `SmallBlockSmallFlatAtmosphericThrust`, `SmallBlockSmallFlatAtmosphericThrustDShape`, `SmallBlockSmallHydrogenThrust`, `SmallBlockSmallHydrogenThrustIndustrial`, `SmallBlockSmallHydrogenThrustReskin`, `SmallBlockSmallModularThruster`, `SmallBlockSmallThrust`, `SmallBlockSmallThrustSciFi`
+Subtypes: `LargeBlockLargeAtmosphericThrust`, `LargeBlockLargeAtmosphericThrustSciFi`, `LargeBlockLargeFlatAtmosphericThrust`, `LargeBlockLargeFlatAtmosphericThrustDShape`, `LargeBlockLargeFlatAtmosphericThrustRound`, `LargeBlockLargeHydrogenThrust`, `LargeBlockLargeHydrogenThrustIndustrial`, `LargeBlockLargeHydrogenThrustReskin`, `LargeBlockLargeModularThruster`, `LargeBlockLargeThrust`, `LargeBlockLargeThrustSciFi`, `LargeBlockPrototechThruster`, `LargeBlockSmallAtmosphericThrust`, `LargeBlockSmallAtmosphericThrustSciFi`, `LargeBlockSmallFlatAtmosphericThrust`, `LargeBlockSmallFlatAtmosphericThrustDShape`, `LargeBlockSmallFlatAtmosphericThrustRound`, `LargeBlockSmallHydrogenThrust`, `LargeBlockSmallHydrogenThrustIndustrial`, `LargeBlockSmallHydrogenThrustReskin`, `LargeBlockSmallModularThruster`, `LargeBlockSmallThrust`, `LargeBlockSmallThrustSciFi`, `SmallBlockLargeAtmosphericThrust`, `SmallBlockLargeAtmosphericThrustSciFi`, `SmallBlockLargeFlatAtmosphericThrust`, `SmallBlockLargeFlatAtmosphericThrustDShape`, `SmallBlockLargeFlatAtmosphericThrustRound`, `SmallBlockLargeHydrogenThrust`, `SmallBlockLargeHydrogenThrustIndustrial`, `SmallBlockLargeHydrogenThrustReskin`, `SmallBlockLargeModularThruster`, `SmallBlockLargeThrust`, `SmallBlockLargeThrustSciFi`, `SmallBlockPrototechThruster`, `SmallBlockSmallAtmosphericThrust`, `SmallBlockSmallAtmosphericThrustSciFi`, `SmallBlockSmallFlatAtmosphericThrust`, `SmallBlockSmallFlatAtmosphericThrustDShape`, `SmallBlockSmallFlatAtmosphericThrustRound`, `SmallBlockSmallHydrogenThrust`, `SmallBlockSmallHydrogenThrustIndustrial`, `SmallBlockSmallHydrogenThrustReskin`, `SmallBlockSmallModularThruster`, `SmallBlockSmallThrust`, `SmallBlockSmallThrustSciFi`
 
 ### Actions
 
@@ -4815,6 +4880,7 @@ Subtypes: `TimerBlockLarge`, `TimerBlockReskinLarge`, `TimerBlockReskinSmall`, `
 |OnOff_Off|Toggle block Off|
 |OnOff_On|Toggle block On|
 |PreserveAspectRatio|Preserve aspect ratio On/Off|
+|SetDelay|Set Delay|
 |ShowOnHUD|Show on HUD On/Off|
 |ShowOnHUD_Off|Show on HUD Off|
 |ShowOnHUD_On|Show on HUD On|
@@ -4956,7 +5022,7 @@ Subtypes: `LargeTurretControlBlock`, `SmallTurretControlBlock`
 |TargetFriends_Off|Target Friends Off|
 |TargetFriends_On|Target Friends On|
 |TargetingGroup_CycleSubsystems|Cycle Subsystems|
-|TargetingGroup_PowerSystems|Target Power systems|
+|TargetingGroup_PowerSystems|Target Power|
 |TargetingGroup_Propulsion|Target Propulsion|
 |TargetingGroup_Weapons|Target Weapons|
 |TargetLargeShips|Target large ships On/Off|
@@ -5167,7 +5233,7 @@ Subtypes: `VirtualMassLarge`, `VirtualMassSmall`
 
 Interface: `IMyWarhead`
 
-Subtypes: `LargeExplosiveBarrel`, `LargeWarhead`, `SmallExplosiveBarrel`, `SmallWarhead`
+Subtypes: `LargeExplosiveBarrel`, `LargeWarhead`, `LargeWarheadType2`, `SmallExplosiveBarrel`, `SmallWarhead`, `SmallWarheadType2`
 
 ### Actions
 

@@ -11,9 +11,12 @@ public class MyObjectBuilder_WeaponBlockDefinition: MyObjectBuilder_FunctionalBl
 |[HoldingDummyName](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition@HoldingDummyName)||
 |[InventoryFillFactorMin](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition@InventoryFillFactorMin)||
 |[InventoryMaxVolume](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition@InventoryMaxVolume)||
+|[LaserPointerEnabled](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition@LaserPointerEnabled)||
 |[MuzzleMissileDummyName](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition@MuzzleMissileDummyName)||
 |[MuzzleProjectileDummyName](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition@MuzzleProjectileDummyName)||
 |[ResourceSinkGroup](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition@ResourceSinkGroup)||
+|[TargetingSubsystemEnabled](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition@TargetingSubsystemEnabled)||
+|[TargetLockRequirementEnabled](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition@TargetLockRequirementEnabled)||
 |[WeaponDefinitionId](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_WeaponBlockDefinition@WeaponDefinitionId)||
 |[ActionSound](VRage.Game.MyObjectBuilder_CubeBlockDefinition@ActionSound)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|
 |[AimingOffset](VRage.Game.MyObjectBuilder_CubeBlockDefinition@AimingOffset)|_Inherited from [MyObjectBuilder_CubeBlockDefinition](VRage.Game.MyObjectBuilder_CubeBlockDefinition)_|

@@ -37,7 +37,6 @@ public class MyObjectBuilder_CharacterDefinition: MyObjectBuilder_DefinitionBase
 |[EnableFirstPersonView](VRage.Game.MyObjectBuilder_CharacterDefinition@EnableFirstPersonView)||
 |[EnableSpawnInventoryAsContainer](VRage.Game.MyObjectBuilder_CharacterDefinition@EnableSpawnInventoryAsContainer)||
 |[FastFlySoundName](VRage.Game.MyObjectBuilder_CharacterDefinition@FastFlySoundName)||
-|[FeetIKEnabled](VRage.Game.MyObjectBuilder_CharacterDefinition@FeetIKEnabled)||
 |[FootOnGroundPostions](VRage.Game.MyObjectBuilder_CharacterDefinition@FootOnGroundPostions)||
 |[FootprintDecal](VRage.Game.MyObjectBuilder_CharacterDefinition@FootprintDecal)||
 |[FootprintMirroredDecal](VRage.Game.MyObjectBuilder_CharacterDefinition@FootprintMirroredDecal)||
@@ -49,7 +48,6 @@ public class MyObjectBuilder_CharacterDefinition: MyObjectBuilder_DefinitionBase
 |[HelmetOxygenNoneSoundName](VRage.Game.MyObjectBuilder_CharacterDefinition@HelmetOxygenNoneSoundName)||
 |[HelmetOxygenNormalSoundName](VRage.Game.MyObjectBuilder_CharacterDefinition@HelmetOxygenNormalSoundName)||
 |[HUD](VRage.Game.MyObjectBuilder_CharacterDefinition@HUD)||
-|[IKSettings](VRage.Game.MyObjectBuilder_CharacterDefinition@IKSettings)||
 |[ImpulseLimit](VRage.Game.MyObjectBuilder_CharacterDefinition@ImpulseLimit)||
 |[InitialAnimation](VRage.Game.MyObjectBuilder_CharacterDefinition@InitialAnimation)||
 |[Inventory](VRage.Game.MyObjectBuilder_CharacterDefinition@Inventory)||
@@ -67,8 +65,6 @@ public class MyObjectBuilder_CharacterDefinition: MyObjectBuilder_DefinitionBase
 |[LeftHandIKEndBone](VRage.Game.MyObjectBuilder_CharacterDefinition@LeftHandIKEndBone)||
 |[LeftHandIKStartBone](VRage.Game.MyObjectBuilder_CharacterDefinition@LeftHandIKStartBone)||
 |[LeftHandItemBone](VRage.Game.MyObjectBuilder_CharacterDefinition@LeftHandItemBone)||
-|[LeftHipBoneName](VRage.Game.MyObjectBuilder_CharacterDefinition@LeftHipBoneName)||
-|[LeftKneeBoneName](VRage.Game.MyObjectBuilder_CharacterDefinition@LeftKneeBoneName)||
 |[LeftLightBone](VRage.Game.MyObjectBuilder_CharacterDefinition@LeftLightBone)||
 |[LeftUpperarmBone](VRage.Game.MyObjectBuilder_CharacterDefinition@LeftUpperarmBone)||
 |[LightGlareSize](VRage.Game.MyObjectBuilder_CharacterDefinition@LightGlareSize)||
@@ -95,7 +91,6 @@ public class MyObjectBuilder_CharacterDefinition: MyObjectBuilder_DefinitionBase
 |[MaxWalkStrafingSpeed](VRage.Game.MyObjectBuilder_CharacterDefinition@MaxWalkStrafingSpeed)||
 |[MinOxygenLevelForSuitRefill](VRage.Game.MyObjectBuilder_CharacterDefinition@MinOxygenLevelForSuitRefill)||
 |[Model](VRage.Game.MyObjectBuilder_CharacterDefinition@Model)||
-|[ModelRootBoneName](VRage.Game.MyObjectBuilder_CharacterDefinition@ModelRootBoneName)||
 |[MovementSoundName](VRage.Game.MyObjectBuilder_CharacterDefinition@MovementSoundName)||
 |[Name](VRage.Game.MyObjectBuilder_CharacterDefinition@Name)||
 |[NeedsOxygen](VRage.Game.MyObjectBuilder_CharacterDefinition@NeedsOxygen)||
@@ -121,8 +116,6 @@ public class MyObjectBuilder_CharacterDefinition: MyObjectBuilder_DefinitionBase
 |[RightHandIKEndBone](VRage.Game.MyObjectBuilder_CharacterDefinition@RightHandIKEndBone)||
 |[RightHandIKStartBone](VRage.Game.MyObjectBuilder_CharacterDefinition@RightHandIKStartBone)||
 |[RightHandItemBone](VRage.Game.MyObjectBuilder_CharacterDefinition@RightHandItemBone)||
-|[RightHipBoneName](VRage.Game.MyObjectBuilder_CharacterDefinition@RightHipBoneName)||
-|[RightKneeBoneName](VRage.Game.MyObjectBuilder_CharacterDefinition@RightKneeBoneName)||
 |[RightLightBone](VRage.Game.MyObjectBuilder_CharacterDefinition@RightLightBone)||
 |[RightUpperarmBone](VRage.Game.MyObjectBuilder_CharacterDefinition@RightUpperarmBone)||
 |[RotationToSupport](VRage.Game.MyObjectBuilder_CharacterDefinition@RotationToSupport)|Align with the support?|
@@ -133,6 +126,7 @@ public class MyObjectBuilder_CharacterDefinition: MyObjectBuilder_DefinitionBase
 |[SuffocateSoundName](VRage.Game.MyObjectBuilder_CharacterDefinition@SuffocateSoundName)||
 |[SuitConsumptionInTemperatureExtreme](VRage.Game.MyObjectBuilder_CharacterDefinition@SuitConsumptionInTemperatureExtreme)||
 |[SuitResourceStorage](VRage.Game.MyObjectBuilder_CharacterDefinition@SuitResourceStorage)||
+|[UnlimitedSuitEnergy](VRage.Game.MyObjectBuilder_CharacterDefinition@UnlimitedSuitEnergy)||
 |[UsableByPlayer](VRage.Game.MyObjectBuilder_CharacterDefinition@UsableByPlayer)||
 |[UseOnlyWalking](VRage.Game.MyObjectBuilder_CharacterDefinition@UseOnlyWalking)||
 |[UsesAtmosphereDetector](VRage.Game.MyObjectBuilder_CharacterDefinition@UsesAtmosphereDetector)||

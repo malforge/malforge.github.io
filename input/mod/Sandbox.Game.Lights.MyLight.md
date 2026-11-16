@@ -8,6 +8,8 @@ public class MyLight
 
 |Member|Description|
 |---|---|
+|[BlinkIntervalSeconds](Sandbox.Game.Lights.MyLight@BlinkIntervalSeconds)|Seconds between the starts of this light's blinks, 0 for a light that does not blink. The blink is applied by whoever drives [LightOn](Sandbox.Game.Lights.MyLight@LightOn) ; this only tells the renderer that those flips are a blink and how long they last, so a shadow it holds for the light can outlive an off phase.|
+|[BlinkLength](Sandbox.Game.Lights.MyLight@BlinkLength)|Percentage of [BlinkIntervalSeconds](Sandbox.Game.Lights.MyLight@BlinkIntervalSeconds) the light is on for.|
 |[CastShadows](Sandbox.Game.Lights.MyLight@CastShadows)||
 |[Color](Sandbox.Game.Lights.MyLight@Color)||
 |[DiffuseFactor](Sandbox.Game.Lights.MyLight@DiffuseFactor)||

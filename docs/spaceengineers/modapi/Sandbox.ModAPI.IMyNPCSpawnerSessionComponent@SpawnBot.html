@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox.ModAPI.IMyNPCSpawnerSessionComponent.SpawnBot - API Reference</title>
+    <link rel="stylesheet" href="styles.css?v=21d60a28e8d9">
+</head>
+<body>
+    <noscript>
+        <div style="position: fixed; top: 0; left: 0; right: 0; background: #ff6b6b; color: white; padding: 1em; text-align: center; z-index: 10000; font-family: Arial, sans-serif;">
+            <strong>JavaScript Required:</strong> This documentation site requires JavaScript to function. Please enable JavaScript in your browser to view the navigation and search features.
+        </div>
+    </noscript>
+    <header class="top-header">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-nav">
+            <a href="index.html" class="header-btn" title="Home">
+                <span>🏠</span>
+            </a>
+            <a href="https://spaceengineers.wiki.gg/" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="Space Engineers Wiki">
+                <img src="wiki.png" alt="Wiki" class="header-icon">
+            </a>
+            <a href="https://github.com/malforge/mdk2" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="MDK2 - Malware's Development Kit">
+                <img src="mdk2.png" alt="MDK2" class="header-icon">
+            </a>
+            <a href="../pbapi/index.html" class="header-btn api-switcher" title="Switch to PB API">🔄 PB API</a>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search API..." autocomplete="off">
+                <button id="clear-search" style="display: none;">&times;</button>
+                <div class="search-hint">Prefix: T: for types, M: for members</div>
+            </div>
+        </div>
+        <nav class="sidebar-nav" data-current-page="Sandbox.ModAPI.IMyNPCSpawnerSessionComponent@SpawnBot" data-cache-buster="21d60a28e8d9" data-api-type="mod">
+            <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+            <div class="sidebar-loading">Loading navigation...</div>
+        </nav>
+        <div class="sidebar-footer"><span class="generation-timestamp" data-root-path="">Generated...</span></div>
+        <div class="sidebar-resize-handle"></div>
+    </aside>
+    <div id="search-results" style="display: none;"></div>
+    <main class="content">
+            <div class="page-header">
+                <div class="page-namespace"><a href="Sandbox.ModAPI.IMyNPCSpawnerSessionComponent.html">Sandbox.ModAPI.IMyNPCSpawnerSessionComponent</a></div>
+                <h1>SpawnBot</h1>
+            </div>
+<h2 id="summary">Summary</h2>
+<pre><code class="language-csharp">public long SpawnBot(MyDefinitionId botDefinitionId, Vector3D position, Vector3D direction, Vector3D up, string name, string factionTag, string weaponsContainerSubtype, string lootContainerSubtype, string chatMessageSetSubtype, long squadGridEntityId)
+</code></pre>
+<p>Spawns a bot of any type (HumanoidBot or AnimalBot) at a position. Call it on the server, from the update thread. The bot persists until it dies or is removed; it never despawns by distance. A lone combat bot reacts only to hits on itself. A humanoid bot given a squad grid joins that grid's squad: alerts from grid damage, hits on squad members and gunshots near the grid, cover from hostile turrets while a player is near, a leash to the grid and squad chat. The squad is created with its first bot and saved with the world; all its bots share that bot's faction, and it speaks from that bot's chat message set. A squad with no living bots takes the faction of the next bot. When the grid is closed or its NPC claim countdown expires, its bots stay as lone bots. Placement, seating and despawning are up to the caller. Overrides apply to this character only; a definition with RemoveAfterDeath false respawns without them. Spawns nothing and returns 0 on a client, off the update thread, for an unknown bot definition, faction tag or subtype, for any override or squad on a non-humanoid bot, for a squad grid that does not exist or has an encounter crew, for a faction other than the squad's, and when the bot limit refuses the spawn; every case but the client one is logged.</p>
+<h2 id="returns">Returns</h2>
+<p><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6">long</a></p>
+<p>Entity id of the bot's character, or 0 when nothing was spawned.</p>
+<h2 id="parameters">Parameters</h2>
+<ul>
+<li><a href="VRage.Game.MyDefinitionId.html">MyDefinitionId</a> botDefinitionId</li>
+<li><a href="VRageMath.Vector3D.html">Vector3D</a> position</li>
+<li><a href="VRageMath.Vector3D.html">Vector3D</a> direction</li>
+<li><a href="VRageMath.Vector3D.html">Vector3D</a> up</li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6">string</a> name</li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6">string</a> factionTag</li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6">string</a> weaponsContainerSubtype</li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6">string</a> lootContainerSubtype</li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6">string</a> chatMessageSetSubtype</li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Int64?view=netframework-4.6">long</a> squadGridEntityId</li>
+</ul>
+
+    </main>
+    <script src="api-index.js?v=21d60a28e8d9"></script>
+</body>
+</html>

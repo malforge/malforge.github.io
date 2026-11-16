@@ -24,7 +24,12 @@ public class MyObjectBuilder_ShipBlueprintDefinition: MyObjectBuilder_PrefabDefi
 |[Icons](VRage.Game.MyObjectBuilder_DefinitionBase@Icons)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[Id](VRage.Game.MyObjectBuilder_DefinitionBase@Id)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[MaxNPCCount](VRage.Game.MyObjectBuilder_PrefabDefinition@MaxNPCCount)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|
+|[NPCBotSubtypes](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCBotSubtypes)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|
+|[NPCChatMessageSet](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCChatMessageSet)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|
+|[NPCSeatlessUpDirectionOverride](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCSeatlessUpDirectionOverride)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|
+|[NPCSpawnBlocksOverride](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCSpawnBlocksOverride)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|
 |[NPCSpawnPointsOverride](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCSpawnPointsOverride)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|
+|[NPCWeaponsContainerType](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCWeaponsContainerType)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|
 |[PrefabPath](VRage.Game.MyObjectBuilder_PrefabDefinition@PrefabPath)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|
 |[Public](VRage.Game.MyObjectBuilder_DefinitionBase@Public)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[RespawnShip](VRage.Game.MyObjectBuilder_PrefabDefinition@RespawnShip)|_Inherited from [MyObjectBuilder_PrefabDefinition](VRage.Game.MyObjectBuilder_PrefabDefinition)_|

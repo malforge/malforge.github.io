@@ -10,6 +10,8 @@ public class MyObjectBuilder_SmallMissileLauncher: MyObjectBuilder_UserControlla
 |---|---|
 |[GunBase](Sandbox.Common.ObjectBuilders.MyObjectBuilder_SmallMissileLauncher@GunBase)||
 |[Inventory](Sandbox.Common.ObjectBuilders.MyObjectBuilder_SmallMissileLauncher@Inventory)||
+|[RequireTargetLock](Sandbox.Common.ObjectBuilders.MyObjectBuilder_SmallMissileLauncher@RequireTargetLock)|Require Target Lock terminal state; ignored unless the block definition enables it.|
+|[TargetingGroup](Sandbox.Common.ObjectBuilders.MyObjectBuilder_SmallMissileLauncher@TargetingGroup)|Selected Targeting Subsystem group subtype (null/empty = Default). Mirrors the turret's targeting-group persistence.|
 |[UseConveyorSystem](Sandbox.Common.ObjectBuilders.MyObjectBuilder_SmallMissileLauncher@UseConveyorSystem)||
 |[BlockGeneralDamageModifier](VRage.Game.MyObjectBuilder_CubeBlock@BlockGeneralDamageModifier)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[BlockOrientation](VRage.Game.MyObjectBuilder_CubeBlock@BlockOrientation)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|

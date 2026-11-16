@@ -102,16 +102,19 @@ public abstract class MyUpdatingEntityComponent: MyEventProxyEntityComponent, IM
 
 **Inheritors:**  
 * [MyAtmosphereDetectorComponent](Sandbox.Game.EntityComponents.MyAtmosphereDetectorComponent)  
+* [MyCharacterAutopilotComponent](Sandbox.Game.EntityComponents.MyCharacterAutopilotComponent)  
 * [MyCharacterDetectorComponent](Sandbox.Game.Entities.Character.Components.MyCharacterDetectorComponent)  
 * [MyCharacterJetpackComponent](Sandbox.Game.Entities.Character.Components.MyCharacterJetpackComponent)  
 * [MyCharacterLadderComponent](Sandbox.Game.Entities.Character.Components.MyCharacterLadderComponent)  
 * [MyCharacterOxygenComponent](Sandbox.Game.Entities.Character.Components.MyCharacterOxygenComponent)  
 * [MyCharacterRagdollComponent](Sandbox.Game.Entities.Character.Components.MyCharacterRagdollComponent)  
 * [MyCharacterSoundComponent](Sandbox.Game.Components.MyCharacterSoundComponent)  
+* [MyEmpCharacterComponent](Sandbox.Game.Entities.Character.Components.MyEmpCharacterComponent)  
 * [MyEntityReverbDetectorComponent](Sandbox.Game.EntityComponents.MyEntityReverbDetectorComponent)  
 * [MyEntityStatComponent](Sandbox.Game.Components.MyEntityStatComponent)  
 * [MyMultiTextPanelComponent](Sandbox.Game.EntityComponents.MyMultiTextPanelComponent)  
 * [MyNpcAssetModifierComponent](Sandbox.Game.EntityComponents.MyNpcAssetModifierComponent)  
+* [MySeekerMissileComponent](Sandbox.Game.EntityComponents.MySeekerMissileComponent)  
 * [MyTargetFocusComponent](Sandbox.Game.EntityComponents.MyTargetFocusComponent)  
 * [MyTargetLockingComponent](Sandbox.Game.EntityComponents.MyTargetLockingComponent)
 

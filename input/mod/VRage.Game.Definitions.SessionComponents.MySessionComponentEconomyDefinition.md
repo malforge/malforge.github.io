@@ -27,6 +27,7 @@ public class MySessionComponentEconomyDefinition: MySessionComponentDefinition
 |[ReputationHostileMid](VRage.Game.Definitions.SessionComponents.MySessionComponentEconomyDefinition@ReputationHostileMid)||
 |[ReputationHostileMin](VRage.Game.Definitions.SessionComponents.MySessionComponentEconomyDefinition@ReputationHostileMin)||
 |[ReputationLevelValue](VRage.Game.Definitions.SessionComponents.MySessionComponentEconomyDefinition@ReputationLevelValue)||
+|[ReputationLossPerNpcKill](VRage.Game.Definitions.SessionComponents.MySessionComponentEconomyDefinition@ReputationLossPerNpcKill)||
 |[ReputationNeutralMid](VRage.Game.Definitions.SessionComponents.MySessionComponentEconomyDefinition@ReputationNeutralMid)||
 |[ReputationNeutralMin](VRage.Game.Definitions.SessionComponents.MySessionComponentEconomyDefinition@ReputationNeutralMin)||
 |[ReputationPlayerDefault](VRage.Game.Definitions.SessionComponents.MySessionComponentEconomyDefinition@ReputationPlayerDefault)||

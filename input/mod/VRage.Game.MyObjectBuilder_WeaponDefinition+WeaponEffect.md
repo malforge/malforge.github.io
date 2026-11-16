@@ -16,6 +16,7 @@ public class WeaponEffect
 |[OffsetX](VRage.Game.MyObjectBuilder_WeaponDefinition+WeaponEffect@OffsetX)||
 |[OffsetY](VRage.Game.MyObjectBuilder_WeaponDefinition+WeaponEffect@OffsetY)||
 |[OffsetZ](VRage.Game.MyObjectBuilder_WeaponDefinition+WeaponEffect@OffsetZ)||
+|[ParentToWeapon](VRage.Game.MyObjectBuilder_WeaponDefinition+WeaponEffect@ParentToWeapon)||
 |[Particle](VRage.Game.MyObjectBuilder_WeaponDefinition+WeaponEffect@Particle)||
 |[ParticleBirthDecrease](VRage.Game.MyObjectBuilder_WeaponDefinition+WeaponEffect@ParticleBirthDecrease)||
 |[ParticleBirthIncrease](VRage.Game.MyObjectBuilder_WeaponDefinition+WeaponEffect@ParticleBirthIncrease)||

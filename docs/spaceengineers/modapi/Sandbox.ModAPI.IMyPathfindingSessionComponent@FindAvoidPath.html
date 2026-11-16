@@ -66,6 +66,21 @@
 <li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6">float</a> shipRadius</li>
 <li><a href="Sandbox.ModAPI.MyAutopilotPathfindingState.html">MyAutopilotPathfindingState</a> state</li>
 </ul>
+<h2 id="summary-1">Summary</h2>
+<pre><code class="language-csharp">public MyPath&lt;MyPathVertex&gt; FindAvoidPath(IMyEntity entity, Vector3D startPosition, Vector3D endPosition, float shipRadius, out MyAutopilotPathfindingState state, bool snapToRoutableVertex)
+</code></pre>
+<p>As <a href="Sandbox.ModAPI.IMyPathfindingSessionComponent@FindAvoidPath.html">FindAvoidPath(IMyEntity, Vector3D, Vector3D, float, out MyAutopilotPathfindingState)</a> , but withsnapToRoutableVertexan endpoint that resolves to an unusable vertex (disabled, reserved, or edge-less) may snap to the nearest usable vertex in the surrounding cells. Meant for character flight, whose endpoints routinely sit in cells solidified by thin blocks; ship collision avoidance keeps the strict resolution.</p>
+<h2 id="returns-1">Returns</h2>
+<p>MyPath&lt;MyPathVertex <sub>prohibited</sub>&gt; <sub>prohibited</sub></p>
+<h2 id="parameters-1">Parameters</h2>
+<ul>
+<li><a href="VRage.ModAPI.IMyEntity.html">IMyEntity</a> entity</li>
+<li><a href="VRageMath.Vector3D.html">Vector3D</a> startPosition</li>
+<li><a href="VRageMath.Vector3D.html">Vector3D</a> endPosition</li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6">float</a> shipRadius</li>
+<li><a href="Sandbox.ModAPI.MyAutopilotPathfindingState.html">MyAutopilotPathfindingState</a> state</li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6">bool</a> snapToRoutableVertex</li>
+</ul>
 
     </main>
     <script src="api-index.js?v=21d60a28e8d9"></script>

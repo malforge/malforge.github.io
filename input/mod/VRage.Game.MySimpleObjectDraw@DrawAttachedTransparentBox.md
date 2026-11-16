@@ -20,7 +20,7 @@ public static void DrawAttachedTransparentBox(ref MatrixD worldMatrix, ref Bou
 ## Summary
 
 ```csharp
-public static void DrawAttachedTransparentBox(ref MatrixD worldMatrix, ref BoundingBoxD localbox, ref Color color, uint renderObjectID, ref MatrixD worldToLocal, MySimpleObjectRasterizer rasterization, Vector3I wireDivideRatio, float lineWidth, MyStringId? faceMaterial, MyStringId? lineMaterial, bool onlyFrontFaces, BlendTypeEnum blendType)
+public static void DrawAttachedTransparentBox(ref MatrixD worldMatrix, ref BoundingBoxD localbox, ref Color color, uint renderObjectID, ref MatrixD worldToLocal, MySimpleObjectRasterizer rasterization, Vector3I wireDivideRatio, float lineWidth, MyStringId? faceMaterial, MyStringId? lineMaterial, bool onlyFrontFaces, BlendTypeEnum blendType, bool gridSizedLineWidth)
 ```
 
 ## Parameters
@@ -37,3 +37,4 @@ public static void DrawAttachedTransparentBox(ref MatrixD worldMatrix, ref Bou
 * [MyStringId?](VRage.Utils.MyStringId) lineMaterial
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) onlyFrontFaces
 * [BlendTypeEnum](VRageRender.MyBillboard+BlendTypeEnum) blendType
+* [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) gridSizedLineWidth

@@ -62,6 +62,7 @@ Dynamic aabb tree implementation as a prunning structure
 |[OverlapAllLineSegment<T>(ref Line, List<MyLineSegmentOverlapResult<T>>)](VRageMath.MyDynamicAABBTree@OverlapAllLineSegment{T})||
 |[OverlapAllLineSegment<T>(ref Line, List<MyLineSegmentOverlapResult<T>>, uint)](VRageMath.MyDynamicAABBTree@OverlapAllLineSegment{T})||
 |[OverlapsAnyLeafBoundingBox(ref BoundingBox)](VRageMath.MyDynamicAABBTree@OverlapsAnyLeafBoundingBox)||
+|[OverlapsAnyLeafBoundingBox(ref BoundingBox, uint)](VRageMath.MyDynamicAABBTree@OverlapsAnyLeafBoundingBox)|Whether any leaf carrying every bit ofrequiredFlagsoverlaps the box. Early-outs on the first hit, and rejects at the root for a box outside the tree.|
 |[OverlapSizeableClusters(ref BoundingBox, List<BoundingBox>, double)](VRageMath.MyDynamicAABBTree@OverlapSizeableClusters)||
 |[Query(Func<int, bool>, ref BoundingBox)](VRageMath.MyDynamicAABBTree@Query)||
 |[RemoveProxy(int)](VRageMath.MyDynamicAABBTree@RemoveProxy)|Destroy a proxy. This asserts if the id is invalid.|

@@ -15,6 +15,7 @@ public class MyOxygenContainerDefinition: MyPhysicalItemDefinition
 |[CanPlayerOffer](Sandbox.Definitions.MyPhysicalItemDefinition@CanPlayerOffer)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[CanPlayerOrder](Sandbox.Definitions.MyPhysicalItemDefinition@CanPlayerOrder)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[CanSpawnFromScreen](Sandbox.Definitions.MyPhysicalItemDefinition@CanSpawnFromScreen)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
+|[ColorMaskHsv](Sandbox.Definitions.MyPhysicalItemDefinition@ColorMaskHsv)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[Context](VRage.Game.MyDefinitionBase@Context)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DepositAllEnabled](Sandbox.Definitions.MyPhysicalItemDefinition@DepositAllEnabled)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[DescriptionArgs](VRage.Game.MyDefinitionBase@DescriptionArgs)|String used for shortcuts used in description<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
@@ -24,6 +25,7 @@ public class MyOxygenContainerDefinition: MyPhysicalItemDefinition
 |[DestroyedPieces](Sandbox.Definitions.MyPhysicalItemDefinition@DestroyedPieces)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[DestroySound](Sandbox.Definitions.MyPhysicalItemDefinition@DestroySound)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[Enabled](VRage.Game.MyDefinitionBase@Enabled)|Definition can be disabled by mod, then it will be removed from definition manager<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
+|[ExplosiveDamageMultiplier](Sandbox.Definitions.MyPhysicalItemDefinition@ExplosiveDamageMultiplier)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[Health](Sandbox.Definitions.MyPhysicalItemDefinition@Health)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|
 |[Icons](VRage.Game.MyDefinitionBase@Icons)|Icons for the definition, they are used from top to bottom.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[IconSymbol](Sandbox.Definitions.MyPhysicalItemDefinition@IconSymbol)|_Inherited from [MyPhysicalItemDefinition](Sandbox.Definitions.MyPhysicalItemDefinition)_|

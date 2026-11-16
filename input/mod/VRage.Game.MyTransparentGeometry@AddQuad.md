@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public static bool AddQuad(MyStringId material, ref MyQuadD quad, Vector4 color, ref Vector3D vctPos, int customViewProjection, BlendTypeEnum blendType, List<MyBillboard> persistentBillboards)
+public static bool AddQuad(MyStringId material, ref MyQuadD quad, Vector4 color, ref Vector3D vctPos, int customViewProjection, BlendTypeEnum blendType, List<MyBillboard> persistentBillboards, uint parentId)
 ```
 
 ## Returns
@@ -17,3 +17,4 @@ public static bool AddQuad(MyStringId material, ref MyQuadD quad, Vector4 color
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) customViewProjection
 * [BlendTypeEnum](VRageRender.MyBillboard+BlendTypeEnum) blendType
 * [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyBillboard](VRageRender.MyBillboard)&gt; persistentBillboards
+* [uint](https://docs.microsoft.com/en-us/dotnet/api/System.UInt32?view=netframework-4.6) parentId

@@ -10,6 +10,8 @@ public class MyObjectBuilder_BotCharacterAvoidanceSteering: MyObjectBuilder_BotS
 |---|---|
 |[AvoidSameFactionOnly](VRage.Game.MyObjectBuilder_BotCharacterAvoidanceSteering@AvoidSameFactionOnly)||
 |[DetectionRadius](VRage.Game.MyObjectBuilder_BotCharacterAvoidanceSteering@DetectionRadius)||
+|[FlightBendGain](VRage.Game.MyObjectBuilder_BotCharacterAvoidanceSteering@FlightBendGain)|Scales the avoidance push into the deflection the character autopilot adds to its seek direction while flying.|
+|[FlightMaxBend](VRage.Game.MyObjectBuilder_BotCharacterAvoidanceSteering@FlightMaxBend)|Cap on that deflection, as the length added to a unit seek direction (1 is ~45 degrees).|
 |[SmoothingRate](VRage.Game.MyObjectBuilder_BotCharacterAvoidanceSteering@SmoothingRate)||
 |[Weight](VRage.Game.MyObjectBuilder_BotSteeringBase@Weight)|_Inherited from [MyObjectBuilder_BotSteeringBase](VRage.Game.MyObjectBuilder_BotSteeringBase)_|
 

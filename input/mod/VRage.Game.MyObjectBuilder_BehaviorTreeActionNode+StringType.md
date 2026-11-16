@@ -9,6 +9,7 @@ public class StringType: TypeValue
 |Member|Description|
 |---|---|
 |[StringValue](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+StringType@StringValue)||
+|[Name](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+TypeValue@Name)|_Inherited from [TypeValue](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+TypeValue)_|
 
 ## Constructors
 

@@ -40,6 +40,7 @@ public abstract class MyRenderComponentBase: MyEntityComponentBase, IMyComponent
 |[ComponentTypeDebugString](VRage.Game.Components.MyRenderComponentBase@ComponentTypeDebugString)||
 |[DrawInAllCascades](VRage.Game.Components.MyRenderComponentBase@DrawInAllCascades)||
 |[DrawOutsideViewDistance](VRage.Game.Components.MyRenderComponentBase@DrawOutsideViewDistance)||
+|[DynamicCaster](VRage.Game.Components.MyRenderComponentBase@DynamicCaster)|Whether the entity moves on its own, apart from any grid - a dropped item, a held tool. Read once, when the render object is created: set it before the entity is added to the scene.|
 |[EnableColorMaskHsv](VRage.Game.Components.MyRenderComponentBase@EnableColorMaskHsv)||
 |[FastCastShadowResolve](VRage.Game.Components.MyRenderComponentBase@FastCastShadowResolve)||
 |[MetalnessColorable](VRage.Game.Components.MyRenderComponentBase@MetalnessColorable)||

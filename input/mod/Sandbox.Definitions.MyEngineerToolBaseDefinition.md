@@ -68,6 +68,7 @@ public class MyEngineerToolBaseDefinition: MyHandItemDefinition
 |[SimulateRightHand](Sandbox.Definitions.MyHandItemDefinition@SimulateRightHand)|_Inherited from [MyHandItemDefinition](Sandbox.Definitions.MyHandItemDefinition)_|
 |[SimulateRightHandFps](Sandbox.Definitions.MyHandItemDefinition@SimulateRightHandFps)|_Inherited from [MyHandItemDefinition](Sandbox.Definitions.MyHandItemDefinition)_|
 |[SprintSpeedMultiplier](Sandbox.Definitions.MyHandItemDefinition@SprintSpeedMultiplier)|_Inherited from [MyHandItemDefinition](Sandbox.Definitions.MyHandItemDefinition)_|
+|[TargetLockingEnabled](Sandbox.Definitions.MyHandItemDefinition@TargetLockingEnabled)|Opts this hand weapon into target locking: focus rectangles while held, lock-on while aiming down sights, and the lead indicator. Whether a fired missile then homes on the locked target is the ammo's decision.<br /><br />_Inherited from [MyHandItemDefinition](Sandbox.Definitions.MyHandItemDefinition)_|
 |[ToolMaterial](Sandbox.Definitions.MyHandItemDefinition@ToolMaterial)|_Inherited from [MyHandItemDefinition](Sandbox.Definitions.MyHandItemDefinition)_|
 |[ToolSounds](Sandbox.Definitions.MyHandItemDefinition@ToolSounds)|_Inherited from [MyHandItemDefinition](Sandbox.Definitions.MyHandItemDefinition)_|
 |[WalkSpeedMultiplier](Sandbox.Definitions.MyHandItemDefinition@WalkSpeedMultiplier)|_Inherited from [MyHandItemDefinition](Sandbox.Definitions.MyHandItemDefinition)_|

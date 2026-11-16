@@ -10,6 +10,7 @@ public class MyObjectBuilder_JetpackDefinition
 |---|---|
 |[ThrustProperties](VRage.Game.MyObjectBuilder_JetpackDefinition@ThrustProperties)||
 |[Thrusts](VRage.Game.MyObjectBuilder_JetpackDefinition@Thrusts)||
+|[UnlimitedPower](VRage.Game.MyObjectBuilder_JetpackDefinition@UnlimitedPower)|The jetpack thrusts at full power whatever the suit battery holds; the battery still drains.|
 
 ## Constructors
 

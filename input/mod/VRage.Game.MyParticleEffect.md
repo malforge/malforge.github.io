@@ -23,6 +23,7 @@ public class MyParticleEffect
 |[IsEmittingStopped](VRage.Game.MyParticleEffect@IsEmittingStopped)||
 |[IsStopped](VRage.Game.MyParticleEffect@IsStopped)||
 |[Loop](VRage.Game.MyParticleEffect@Loop)||
+|[ParentID](VRage.Game.MyParticleEffect@ParentID)|Render object the effect is attached to; when set, [WorldMatrix](VRage.Game.MyParticleEffect@WorldMatrix) is relative to it.|
 |[SoftParticleDistanceScaleMultiplier](VRage.Game.MyParticleEffect@SoftParticleDistanceScaleMultiplier)||
 |[UserBirthMultiplier](VRage.Game.MyParticleEffect@UserBirthMultiplier)||
 |[UserColorIntensityMultiplier](VRage.Game.MyParticleEffect@UserColorIntensityMultiplier)||

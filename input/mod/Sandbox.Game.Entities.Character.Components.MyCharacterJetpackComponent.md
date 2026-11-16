@@ -36,6 +36,7 @@ public class MyCharacterJetpackComponent: MyUpdatingEntityComponent, IMyComponen
 |[DampenersTurnedOn](Sandbox.Game.Entities.Character.Components.MyCharacterJetpackComponent@DampenersTurnedOn)||
 |[EffectivenessAtMaxInfluence](Sandbox.Game.Entities.Character.Components.MyCharacterJetpackComponent@EffectivenessAtMaxInfluence)||
 |[EffectivenessAtMinInfluence](Sandbox.Game.Entities.Character.Components.MyCharacterJetpackComponent@EffectivenessAtMinInfluence)||
+|[EntityThrustComponent](Sandbox.Game.Entities.Character.Components.MyCharacterJetpackComponent@EntityThrustComponent)|Public view of the jetpack thrust component for external (autopilot / debug) thrust control.|
 |[FinalThrust](Sandbox.Game.Entities.Character.Components.MyCharacterJetpackComponent@FinalThrust)||
 |[ForceMagnitude](Sandbox.Game.Entities.Character.Components.MyCharacterJetpackComponent@ForceMagnitude)||
 |[FuelConverterDefinition](Sandbox.Game.Entities.Character.Components.MyCharacterJetpackComponent@FuelConverterDefinition)||

@@ -12,10 +12,12 @@ public class MyObjectBuilder_PhysicalItemDefinition: MyObjectBuilder_DefinitionB
 |[CanPlayerOffer](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@CanPlayerOffer)||
 |[CanPlayerOrder](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@CanPlayerOrder)||
 |[CanSpawnFromScreen](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@CanSpawnFromScreen)||
+|[DefaultColor](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@DefaultColor)||
 |[DepositAllEnabled](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@DepositAllEnabled)||
 |[DestroyedPieceId](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@DestroyedPieceId)||
 |[DestroyedPieces](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@DestroyedPieces)||
 |[DestroySound](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@DestroySound)||
+|[ExplosiveDamageMultiplier](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@ExplosiveDamageMultiplier)||
 |[ExtraInventoryTooltipLine](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@ExtraInventoryTooltipLine)||
 |[ExtraInventoryTooltipLineId](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@ExtraInventoryTooltipLineId)||
 |[Health](VRage.Game.MyObjectBuilder_PhysicalItemDefinition@Health)||

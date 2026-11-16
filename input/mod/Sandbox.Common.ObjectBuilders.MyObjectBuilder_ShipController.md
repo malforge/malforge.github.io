@@ -15,6 +15,7 @@ public class MyObjectBuilder_ShipController: MyObjectBuilder_TerminalBlock
 |[HorizonIndicatorEnabled](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipController@HorizonIndicatorEnabled)||
 |[IsMainCockpit](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipController@IsMainCockpit)||
 |[IsTargetLockingEnabled](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipController@IsTargetLockingEnabled)||
+|[OccupiedAt](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipController@OccupiedAt)||
 |[OnLockedToolbar](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipController@OnLockedToolbar)||
 |[SelectedGunId](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipController@SelectedGunId)||
 |[Toolbar](Sandbox.Common.ObjectBuilders.MyObjectBuilder_ShipController@Toolbar)||

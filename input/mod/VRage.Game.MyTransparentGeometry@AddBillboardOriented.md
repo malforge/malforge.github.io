@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public static void AddBillboardOriented(MyStringId material, Vector4 color, Vector3D origin, Vector3 leftVector, Vector3 upVector, float radius, BlendTypeEnum blendType, int customViewProjection, float reflection, List<MyBillboard> persistentBillboards)
+public static void AddBillboardOriented(MyStringId material, Vector4 color, Vector3D origin, Vector3 leftVector, Vector3 upVector, float radius, BlendTypeEnum blendType, int customViewProjection, float reflection, List<MyBillboard> persistentBillboards, uint parentId)
 ```
 
 ## Parameters
@@ -16,6 +16,7 @@ public static void AddBillboardOriented(MyStringId material, Vector4 color, Vect
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) customViewProjection
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) reflection
 * [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyBillboard](VRageRender.MyBillboard)&gt; persistentBillboards
+* [uint](https://docs.microsoft.com/en-us/dotnet/api/System.UInt32?view=netframework-4.6) parentId
 ## Summary
 
 ```csharp
@@ -52,7 +53,7 @@ public static void AddBillboardOriented(MyStringId material, Vector4 color, Vect
 ## Summary
 
 ```csharp
-public static void AddBillboardOriented(MyStringId material, Vector4 color, Vector3D origin, Vector3 leftVector, Vector3 upVector, float width, float height, Vector2 uvOffset, BlendTypeEnum blendType, int customViewProjection, float reflection, List<MyBillboard> persistentBillboards)
+public static void AddBillboardOriented(MyStringId material, Vector4 color, Vector3D origin, Vector3 leftVector, Vector3 upVector, float width, float height, Vector2 uvOffset, BlendTypeEnum blendType, int customViewProjection, float reflection, List<MyBillboard> persistentBillboards, uint parentId)
 ```
 
 ## Parameters
@@ -69,3 +70,4 @@ public static void AddBillboardOriented(MyStringId material, Vector4 color, Vect
 * [int](https://docs.microsoft.com/en-us/dotnet/api/System.Int32?view=netframework-4.6) customViewProjection
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) reflection
 * [List](https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1?view=netframework-4.6)&lt;[MyBillboard](VRageRender.MyBillboard)&gt; persistentBillboards
+* [uint](https://docs.microsoft.com/en-us/dotnet/api/System.UInt32?view=netframework-4.6) parentId

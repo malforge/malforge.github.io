@@ -29,7 +29,12 @@ public class MyPrefabDefinition: MyDefinitionBase
 |[CubeGrids](Sandbox.Definitions.MyPrefabDefinition@CubeGrids)||
 |[EnvironmentType](Sandbox.Definitions.MyPrefabDefinition@EnvironmentType)||
 |[MaxNPCCount](Sandbox.Definitions.MyPrefabDefinition@MaxNPCCount)||
+|[NPCBotSubtypes](Sandbox.Definitions.MyPrefabDefinition@NPCBotSubtypes)|Humanoid bot definition subtypes spawned on this prefab's NPC anchor, cycled in order. Null falls back to the owning faction type's`BotSubtypes`.|
+|[NPCChatMessageSet](Sandbox.Definitions.MyPrefabDefinition@NPCChatMessageSet)|Subtype of the [MyNpcChatMessageSetDefinition](Sandbox.Definitions.MyNpcChatMessageSetDefinition) the prefab's NPCs speak from, overriding the bot definition's default. Null means "use the bot's default".|
+|[NPCSeatlessUpDirectionOverride](Sandbox.Definitions.MyPrefabDefinition@NPCSeatlessUpDirectionOverride)|Grid-local up the prefab's NPCs stand and walk on when the grid has no seat to infer it from. Null falls back to grid up. Ignored on any grid that has a seat.|
+|[NPCSpawnBlocksOverride](Sandbox.Definitions.MyPrefabDefinition@NPCSpawnBlocksOverride)|Block subtypes the prefab's NPCs spawn at, one bot per matching block, instead of any free seat; a listed seat is sat in, other blocks are stood in. Null means "seats only"; explicit [NPCSpawnPointsOverride](Sandbox.Definitions.MyPrefabDefinition@NPCSpawnPointsOverride) positions take precedence over both.|
 |[NPCSpawnPointsOverride](Sandbox.Definitions.MyPrefabDefinition@NPCSpawnPointsOverride)||
+|[NPCWeaponsContainerType](Sandbox.Definitions.MyPrefabDefinition@NPCWeaponsContainerType)||
 |[TooltipImage](Sandbox.Definitions.MyPrefabDefinition@TooltipImage)||
 |[DescriptionText](VRage.Game.MyDefinitionBase@DescriptionText)|Use this property when showing description in GUI, as it takes into account more complex description construction.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[DisplayNameEnum](VRage.Game.MyDefinitionBase@DisplayNameEnum)|Enum used for localization of display name. Null for player created definitions.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|

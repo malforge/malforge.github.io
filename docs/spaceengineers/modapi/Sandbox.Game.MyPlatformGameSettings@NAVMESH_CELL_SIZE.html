@@ -55,7 +55,7 @@
 <h2 id="summary">Summary</h2>
 <pre><code class="language-csharp">public static float NAVMESH_CELL_SIZE
 </code></pre>
-<p>Recast horizontal cell size. Smaller = finer navmesh detail (narrow stairs become traversable) at quadratic memory/CPU cost.</p>
+<p>Recast horizontal cell size. Smaller = finer navmesh detail (narrow stairs become traversable) at quadratic memory/CPU cost. An odd number of cells per 2.5 m block, so every block of a base sits at the same lattice phase.</p>
 <h2 id="returns">Returns</h2>
 <p><a href="https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6">float</a></p>
 

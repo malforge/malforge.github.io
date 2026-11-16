@@ -9,6 +9,7 @@ public class BoolType: TypeValue
 |Member|Description|
 |---|---|
 |[BoolValue](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+BoolType@BoolValue)||
+|[Name](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+TypeValue@Name)|_Inherited from [TypeValue](VRage.Game.MyObjectBuilder_BehaviorTreeActionNode+TypeValue)_|
 
 ## Constructors
 

@@ -15,10 +15,6 @@ public class MyWaypoint: MyEntity, IMyEntity, IMyEntity, IMyEventProxy, IMyEvent
 |[static MyEntitiesCreateFromObjectBuilderExtCallback](VRage.Game.Entity.MyEntity@MyEntitiesCreateFromObjectBuilderExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[static MyEntityFactoryCreateObjectBuilderExtCallback](VRage.Game.Entity.MyEntity@MyEntityFactoryCreateObjectBuilderExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[static MyProceduralWorldGeneratorTrackEntityExtCallback](VRage.Game.Entity.MyEntity@MyProceduralWorldGeneratorTrackEntityExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
-|[static MyWeldingGroupsAddNodeExtCallback](VRage.Game.Entity.MyEntity@MyWeldingGroupsAddNodeExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
-|[static MyWeldingGroupsGetGroupNodesExtCallback](VRage.Game.Entity.MyEntity@MyWeldingGroupsGetGroupNodesExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
-|[static MyWeldingGroupsGroupExistsExtCallback](VRage.Game.Entity.MyEntity@MyWeldingGroupsGroupExistsExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
-|[static MyWeldingGroupsRemoveNodeExtCallback](VRage.Game.Entity.MyEntity@MyWeldingGroupsRemoveNodeExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[static RemoveFromGamePruningStructureExtCallBack](VRage.Game.Entity.MyEntity@RemoveFromGamePruningStructureExtCallBack)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[static UpdateGamePruningStructureExtCallBack](VRage.Game.Entity.MyEntity@UpdateGamePruningStructureExtCallBack)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[DebugAsyncLoading](VRage.Game.Entity.MyEntity@DebugAsyncLoading)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|

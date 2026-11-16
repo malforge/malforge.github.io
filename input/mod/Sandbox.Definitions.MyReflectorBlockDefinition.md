@@ -66,6 +66,7 @@ public class MyReflectorBlockDefinition: MyLightingBlockDefinition
 |[GeneralDamageMultiplier](Sandbox.Definitions.MyCubeBlockDefinition@GeneralDamageMultiplier)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[GeneratedBlockDefinitions](Sandbox.Definitions.MyCubeBlockDefinition@GeneratedBlockDefinitions)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[GeneratedBlockType](Sandbox.Definitions.MyCubeBlockDefinition@GeneratedBlockType)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
+|[GroupLightDummies](Sandbox.Definitions.MyLightingBlockDefinition@GroupLightDummies)|_Inherited from [MyLightingBlockDefinition](Sandbox.Definitions.MyLightingBlockDefinition)_|
 |[HasPhysics](Sandbox.Definitions.MyCubeBlockDefinition@HasPhysics)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[Icons](VRage.Game.MyDefinitionBase@Icons)|Icons for the definition, they are used from top to bottom.<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[Id](VRage.Game.MyDefinitionBase@Id)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|

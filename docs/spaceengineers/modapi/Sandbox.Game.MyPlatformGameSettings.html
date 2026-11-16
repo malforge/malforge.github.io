@@ -89,6 +89,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Game.MyPlatformGameSettings@CHECK_CONTROLLER_ID_IN_BINDINGS.html">static CHECK_CONTROLLER_ID_IN_BINDINGS</a></td>
+<td>When true, joystick control bindings are matched against the source device slot so two devices can bind the same axis/button to different controls. Off (default) keeps single-device behavior on platforms that support only one controller.</td>
+</tr>
+<tr>
 <td><a href="Sandbox.Game.MyPlatformGameSettings@CLOUD_ALWAYS_ENABLED.html">static CLOUD_ALWAYS_ENABLED</a></td>
 <td></td>
 </tr>
@@ -325,6 +329,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Game.MyPlatformGameSettings@GAMEPAD_IMAGE_PLAYSTATION_LAYOUT.html">static GAMEPAD_IMAGE_PLAYSTATION_LAYOUT</a></td>
+<td>True when <a href="Sandbox.Game.MyPlatformGameSettings@GAMEPAD_IMAGE.html">GAMEPAD_IMAGE</a> shows a PlayStation pad, which has the D-pad and the left stick in the opposite positions to the Xbox pad the controller scheme labels are laid out for.</td>
+</tr>
+<tr>
 <td><a href="Sandbox.Game.MyPlatformGameSettings@GENERATE_ANALYTICS_ID_WHEN_USER_OFFLINE.html">static GENERATE_ANALYTICS_ID_WHEN_USER_OFFLINE</a></td>
 <td></td>
 </tr>
@@ -457,8 +465,16 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Game.MyPlatformGameSettings@NAVMESH_CELL_HEIGHT.html">static NAVMESH_CELL_HEIGHT</a></td>
+<td>Recast vertical cell size. An edge up to one cell above the agent's climb still connects, so this bounds how closely the navmesh follows the highest step an NPC can mount. An even number of cells per 2.5 m block.</td>
+</tr>
+<tr>
 <td><a href="Sandbox.Game.MyPlatformGameSettings@NAVMESH_CELL_SIZE.html">static NAVMESH_CELL_SIZE</a></td>
-<td>Recast horizontal cell size. Smaller = finer navmesh detail (narrow stairs become traversable) at quadratic memory/CPU cost.</td>
+<td>Recast horizontal cell size. Smaller = finer navmesh detail (narrow stairs become traversable) at quadratic memory/CPU cost. An odd number of cells per 2.5 m block, so every block of a base sits at the same lattice phase.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.MyPlatformGameSettings@NAVMESH_MIN_AGENT_CLIMB.html">static NAVMESH_MIN_AGENT_CLIMB</a></td>
+<td>Floor on the navmesh climb of humanoid (door-opening) agents, for platforms whose cells or RecastDetour library cannot pass a stair tread at the agent's own climb. Wildlife keeps its own value.</td>
 </tr>
 <tr>
 <td><a href="Sandbox.Game.MyPlatformGameSettings@NEED_TO_CONVERT_IDS.html">static NEED_TO_CONVERT_IDS</a></td>
@@ -478,6 +494,10 @@
 </tr>
 <tr>
 <td><a href="Sandbox.Game.MyPlatformGameSettings@REFRESH_EOS_JOIN_REQUEST_EVENTS_ON_WAKEUP.html">static REFRESH_EOS_JOIN_REQUEST_EVENTS_ON_WAKEUP</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.MyPlatformGameSettings@RENDER_PLATFORM.html">static RENDER_PLATFORM</a></td>
 <td></td>
 </tr>
 <tr>
@@ -502,6 +522,10 @@
 </tr>
 <tr>
 <td><a href="Sandbox.Game.MyPlatformGameSettings@SHIP_CONTROLS_JOYSTICK.html">static SHIP_CONTROLS_JOYSTICK</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.MyPlatformGameSettings@SHOW_ALT_GR_KEYBOARD_OPTION.html">static SHOW_ALT_GR_KEYBOARD_OPTION</a></td>
 <td></td>
 </tr>
 <tr>
@@ -549,10 +573,6 @@
 <td></td>
 </tr>
 <tr>
-<td><a href="Sandbox.Game.MyPlatformGameSettings@SHOW_QUICKSTART_MENU_BUTTON.html">static SHOW_QUICKSTART_MENU_BUTTON</a></td>
-<td></td>
-</tr>
-<tr>
 <td><a href="Sandbox.Game.MyPlatformGameSettings@SHOW_SCRIPTS_AUTHOR.html">static SHOW_SCRIPTS_AUTHOR</a></td>
 <td></td>
 </tr>
@@ -570,14 +590,6 @@
 </tr>
 <tr>
 <td><a href="Sandbox.Game.MyPlatformGameSettings@SYNCHRONIZED_PLANET_LOADING.html">static SYNCHRONIZED_PLANET_LOADING</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="Sandbox.Game.MyPlatformGameSettings@TUTORIAL_PARTS_URLS_CONTROLLER.html">static TUTORIAL_PARTS_URLS_CONTROLLER</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="Sandbox.Game.MyPlatformGameSettings@TUTORIAL_PARTS_URLS_KEYBOARD.html">static TUTORIAL_PARTS_URLS_KEYBOARD</a></td>
 <td></td>
 </tr>
 <tr>

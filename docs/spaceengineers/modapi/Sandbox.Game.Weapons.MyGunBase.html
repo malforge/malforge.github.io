@@ -103,6 +103,18 @@
 <td><a href="Sandbox.Game.Weapons.MyGunBase@OnAmmoAmountChanged.html">OnAmmoAmountChanged</a></td>
 <td></td>
 </tr>
+<tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@OnAmmoDefinitionChanged.html">OnAmmoDefinitionChanged</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@OnShotsLeftInBurstChanged.html">OnShotsLeftInBurstChanged</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@OnVisualAmmoAmountChanged.html">OnVisualAmmoAmountChanged</a></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <h2 id="properties">Properties</h2>
@@ -115,6 +127,10 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@AmmoMagazineIdToPull.html">AmmoMagazineIdToPull</a></td>
+<td>The magazine the conveyor system is allowed to supply. A selected ammo type takes precedence even while another type is still loaded.</td>
+</tr>
+<tr>
 <td><a href="Sandbox.Game.Weapons.MyGunBase@BackkickForcePerSecond.html">BackkickForcePerSecond</a></td>
 <td></td>
 </tr>
@@ -124,6 +140,10 @@
 </tr>
 <tr>
 <td><a href="Sandbox.Game.Weapons.MyGunBase@CurrentAmmoDefinition.html">CurrentAmmoDefinition</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@CurrentAmmoDefinitionId.html">CurrentAmmoDefinitionId</a></td>
 <td></td>
 </tr>
 <tr>
@@ -215,6 +235,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@SelectedAmmoType.html">SelectedAmmoType</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="Sandbox.Game.Weapons.MyGunBase@ShootIntervalInMiliseconds.html">ShootIntervalInMiliseconds</a></td>
 <td></td>
 </tr>
@@ -231,7 +255,19 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@ShotsLeftInBurst.html">ShotsLeftInBurst</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="Sandbox.Game.Weapons.MyGunBase@SupportReloading.html">SupportReloading</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@SupportsAmmoSelection.html">SupportsAmmoSelection</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@SyncedAmmoDefinition.html">SyncedAmmoDefinition</a></td>
 <td></td>
 </tr>
 <tr>
@@ -313,11 +349,19 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@CycleSelectedAmmoType.html">CycleSelectedAmmoType()</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="Sandbox.Game.Weapons.MyGunBase@DummiesPerType.html">DummiesPerType(MyAmmoType)</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="Sandbox.Game.Weapons.MyGunBase@EmptyMagazine.html">EmptyMagazine()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@ForceReload.html">ForceReload()</a></td>
 <td></td>
 </tr>
 <tr>
@@ -365,7 +409,15 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@GetSelectedAmmoTypeName.html">GetSelectedAmmoTypeName()</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="Sandbox.Game.Weapons.MyGunBase@GetTotalAmmunitionAmount.html">GetTotalAmmunitionAmount()</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@GetVisualAmmoAmount.html">GetVisualAmmoAmount()</a></td>
 <td></td>
 </tr>
 <tr>
@@ -409,6 +461,10 @@
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@PullAmmo.html">PullAmmo(MyGridConveyorSystem, IMyConveyorEndpointBlock, MyInventory, MyFixedPoint)</a></td>
+<td>Pulls <a href="Sandbox.Game.Weapons.MyGunBase@AmmoMagazineIdToPull.html">AmmoMagazineIdToPull</a> over the conveyor system. An empty weapon set to any ammo type falls back to the first magazine type, in definition order, that the conveyor system can supply.</td>
+</tr>
+<tr>
 <td><a href="Sandbox.Game.Weapons.MyGunBase@RefreshAmmunitionAmount.html">RefreshAmmunitionAmount(bool)</a></td>
 <td></td>
 </tr>
@@ -422,6 +478,10 @@
 </tr>
 <tr>
 <td><a href="Sandbox.Game.Weapons.MyGunBase@SetCurrentAmmo.html">SetCurrentAmmo(int, bool)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@SetShotsLeftInBurst.html">SetShotsLeftInBurst(int)</a></td>
 <td></td>
 </tr>
 <tr>
@@ -483,6 +543,10 @@
 <tr>
 <td><a href="Sandbox.Game.Weapons.MyGunBase@UpdateEffects.html">UpdateEffects()</a></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.Weapons.MyGunBase@UpdateVisualAmmoAmount.html">UpdateVisualAmmoAmount()</a></td>
+<td>Raises an event only when reload readiness changes the visual ammo state.</td>
 </tr>
 <tr>
 <td><a href="VRage.Game.ModAPI.MyDeviceBase@CanSwitchAmmoMagazine.html">CanSwitchAmmoMagazine()</a></td>

@@ -45,11 +45,13 @@ public class MyFontDefinition: MyDefinitionBase
 |Member|Description|
 |---|---|
 |[static GetFont(MyStringHash)](VRage.Game.Definitions.MyFontDefinition@GetFont)||
+|[static HasFont(MyStringHash)](VRage.Game.Definitions.MyFontDefinition@HasFont)|Whether a font of this subtype id is registered. Fonts are registered per session, so this can change between worlds.|
 |[static MeasureStringRaw(string, StringBuilder, float, bool)](VRage.Game.Definitions.MyFontDefinition@MeasureStringRaw)||
 |[static MeasureStringRaw(string, string, float, bool)](VRage.Game.Definitions.MyFontDefinition@MeasureStringRaw)||
 |[static MeasureStringRaw(MyStringHash, string, float, bool)](VRage.Game.Definitions.MyFontDefinition@MeasureStringRaw)||
 |[static SplitIntoSameHeightStrings(string, StringBuilder)](VRage.Game.Definitions.MyFontDefinition@SplitIntoSameHeightStrings)||
 |[static SplitIntoSameHeightStrings(string, string)](VRage.Game.Definitions.MyFontDefinition@SplitIntoSameHeightStrings)||
+|[static TryGetFont(MyStringHash, out MyFont)](VRage.Game.Definitions.MyFontDefinition@TryGetFont)|Safe counterpart of [GetFont(MyStringHash)](VRage.Game.Definitions.MyFontDefinition@GetFont) , which throws on an unregistered id.|
 |[UseLanguage(string)](VRage.Game.Definitions.MyFontDefinition@UseLanguage)|Call to switch the Resources to different language variant.|
 |[CheckDefinitionDLCs(String[])](VRage.Game.MyDefinitionBase@CheckDefinitionDLCs)|Checks if the definition has all required DLCs as it should have<br /><br />_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|
 |[GetObjectBuilder()](VRage.Game.MyDefinitionBase@GetObjectBuilder)|_Inherited from [MyDefinitionBase](VRage.Game.MyDefinitionBase)_|

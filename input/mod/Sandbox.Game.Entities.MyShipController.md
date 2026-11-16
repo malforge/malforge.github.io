@@ -1,7 +1,7 @@
 **Assembly:** Sandbox.Game.dll
 
 ```csharp
-public class MyShipController: MyTerminalBlock, IMyEntity, IMyEntity, IMyComponentOwner<MyIDModule>, IMyCubeBlock, IMyCubeBlock, IMyUpgradableBlock, IMyUpgradableBlock, IMyEventProxy, IMyEventOwner, IMySyncedEntity, IMyTerminalBlock, IMyTerminalBlock, IMyControllableEntity, IMyControllableEntity, IMyRechargeSocketOwner, IMyShipController, IMyShipController, IMyTargetingCapableBlock, IMyShootOrigin, IMyPilotable, IMyShipControl, IMyWheelControllableEntity
+public class MyShipController: MyTerminalBlock, IMyEntity, IMyEntity, IMyComponentOwner<MyIDModule>, IMyCubeBlock, IMyCubeBlock, IMyUpgradableBlock, IMyUpgradableBlock, IMyEventProxy, IMyEventOwner, IMySyncedEntity, IMyTerminalBlock, IMyTerminalBlock, IMyControllableEntity, IMyControllableEntity, IMyRechargeSocketOwner, IMyShipController, IMyShipController, IMyTargetingCapableBlock, IMyShootOrigin, IMyPilotable, IMyShipControl, IMyWheelControllableEntity, IMyToolbarOwner
 ```
 
 ## Fields
@@ -88,6 +88,7 @@ public class MyShipController: MyTerminalBlock, IMyEntity, IMyEntity, IMyCompone
 |[ToolbarType](Sandbox.Game.Entities.MyShipController@ToolbarType)||
 |[TopGrid](Sandbox.Game.Entities.MyShipController@TopGrid)||
 |[BlockDefinition](VRage.Game.ModAPI.Ingame.IMyCubeBlock@BlockDefinition)|Gets definition.Id assigned to this block<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.Ingame.IMyCubeBlock)_|
+|[BuildToolbar](Sandbox.ModAPI.IMyShipController@BuildToolbar)|Gets the toolbar the pilot uses to place blocks while in building mode.<br /><br />_Inherited from [IMyShipController](Sandbox.ModAPI.IMyShipController)_|
 |[CanControlShip](Sandbox.ModAPI.Ingame.IMyShipController@CanControlShip)|Determines whether this specific ship controller is capable of controlling the ship it's installed on.<br /><br />_Inherited from [IMyShipController](Sandbox.ModAPI.Ingame.IMyShipController)_|
 |[CanSwitchLandingGears](VRage.Game.ModAPI.Interfaces.IMyControllableEntity@CanSwitchLandingGears)|Gets if entity can switch landing gears<br /><br />_Inherited from [IMyControllableEntity](VRage.Game.ModAPI.Interfaces.IMyControllableEntity)_|
 |[CastShadows](VRage.ModAPI.IMyEntity@CastShadows)|Gets or sets flag [CastShadows](VRage.ObjectBuilders.MyPersistentEntityFlags2@CastShadows)<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
@@ -206,6 +207,8 @@ public class MyShipController: MyTerminalBlock, IMyEntity, IMyEntity, IMyCompone
 |[Storage](VRage.ModAPI.IMyEntity@Storage)|Custom storage for mods. Shared with all mods.<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
 |[Synchronized](VRage.ModAPI.IMyEntity@Synchronized)|Gets or sets if the entity should be synced.<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
 |[SyncObject](VRage.ModAPI.IMyEntity@SyncObject)|Gets SyncObject used for synchronizing data over network with<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
+|[TargetLockToolbar](Sandbox.ModAPI.IMyShipController@TargetLockToolbar)|Gets the toolbar triggered when this block's grid is target locked. Slot 0 fires on lock and slot 1 on losing the lock, each across every page, and only on the server.<br /><br />_Inherited from [IMyShipController](Sandbox.ModAPI.IMyShipController)_|
+|[Toolbar](Sandbox.ModAPI.IMyShipController@Toolbar)|Gets the toolbar the pilot drives while controlling this block. This is the primary toolbar, index 0.<br /><br />_Inherited from [IMyShipController](Sandbox.ModAPI.IMyShipController)_|
 |[Toolbar](Sandbox.Game.Entities.IMyControllableEntity@Toolbar)|_Inherited from [IMyControllableEntity](Sandbox.Game.Entities.IMyControllableEntity)_|
 |[ToolbarType](Sandbox.Game.Entities.IMyControllableEntity@ToolbarType)|_Inherited from [IMyControllableEntity](Sandbox.Game.Entities.IMyControllableEntity)_|
 |[Transparent](VRage.ModAPI.IMyEntity@Transparent)|Gets or sets [Transparency](VRage.Game.Components.MyRenderComponentBase@Transparency) . When setting true entity would be 25% transparent<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
@@ -488,6 +491,7 @@ public class MyShipController: MyTerminalBlock, IMyEntity, IMyEntity, IMyCompone
 * [IMyTargetingCapableBlock](Sandbox.ModAPI.IMyTargetingCapableBlock)  
 * [IMyTerminalBlock](Sandbox.ModAPI.IMyTerminalBlock)  
 * [IMyTerminalBlock](Sandbox.ModAPI.Ingame.IMyTerminalBlock)  
+* IMyToolbarOwner <sub>prohibited</sub>  
 * [IMyUpgradableBlock](Sandbox.ModAPI.IMyUpgradableBlock)  
 * [IMyUpgradableBlock](Sandbox.ModAPI.Ingame.IMyUpgradableBlock)  
 * IMyWheelControllableEntity <sub>prohibited</sub>

@@ -16,6 +16,7 @@ public class MyObjectBuilder_AgentDefinition: MyObjectBuilder_BotDefinition
 |[AttackRadius](VRage.Game.MyObjectBuilder_AgentDefinition@AttackRadius)||
 |[AttackSound](VRage.Game.MyObjectBuilder_AgentDefinition@AttackSound)||
 |[BotModel](VRage.Game.MyObjectBuilder_AgentDefinition@BotModel)||
+|[BotModels](VRage.Game.MyObjectBuilder_AgentDefinition@BotModels)||
 |[CanOpenDoors](VRage.Game.MyObjectBuilder_AgentDefinition@CanOpenDoors)||
 |[CharacterDamage](VRage.Game.MyObjectBuilder_AgentDefinition@CharacterDamage)||
 |[DisableBroadcasting](VRage.Game.MyObjectBuilder_AgentDefinition@DisableBroadcasting)||
@@ -28,6 +29,7 @@ public class MyObjectBuilder_AgentDefinition: MyObjectBuilder_BotDefinition
 |[Invulnerable](VRage.Game.MyObjectBuilder_AgentDefinition@Invulnerable)||
 |[JoinSpawnerFaction](VRage.Game.MyObjectBuilder_AgentDefinition@JoinSpawnerFaction)||
 |[PathArrivalRadius](VRage.Game.MyObjectBuilder_AgentDefinition@PathArrivalRadius)||
+|[PathfindingRadius](VRage.Game.MyObjectBuilder_AgentDefinition@PathfindingRadius)||
 |[RemoveAfterDeath](VRage.Game.MyObjectBuilder_AgentDefinition@RemoveAfterDeath)||
 |[RemoveTimeMs](VRage.Game.MyObjectBuilder_AgentDefinition@RemoveTimeMs)||
 |[RespawnTimeMs](VRage.Game.MyObjectBuilder_AgentDefinition@RespawnTimeMs)||

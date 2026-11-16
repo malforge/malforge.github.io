@@ -30,6 +30,7 @@ Describes remote control block (mods interface)
 |Member|Description|
 |---|---|
 |[BlockDefinition](VRage.Game.ModAPI.Ingame.IMyCubeBlock@BlockDefinition)|Gets definition.Id assigned to this block<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.Ingame.IMyCubeBlock)_|
+|[BuildToolbar](Sandbox.ModAPI.IMyShipController@BuildToolbar)|Gets the toolbar the pilot uses to place blocks while in building mode.<br /><br />_Inherited from [IMyShipController](Sandbox.ModAPI.IMyShipController)_|
 |[CanControlShip](Sandbox.ModAPI.Ingame.IMyShipController@CanControlShip)|Determines whether this specific ship controller is capable of controlling the ship it's installed on.<br /><br />_Inherited from [IMyShipController](Sandbox.ModAPI.Ingame.IMyShipController)_|
 |[CanSwitchLandingGears](VRage.Game.ModAPI.Interfaces.IMyControllableEntity@CanSwitchLandingGears)|Gets if entity can switch landing gears<br /><br />_Inherited from [IMyControllableEntity](VRage.Game.ModAPI.Interfaces.IMyControllableEntity)_|
 |[CastShadows](VRage.ModAPI.IMyEntity@CastShadows)|Gets or sets flag [CastShadows](VRage.ObjectBuilders.MyPersistentEntityFlags2@CastShadows)<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
@@ -143,6 +144,8 @@ Describes remote control block (mods interface)
 |[Storage](VRage.ModAPI.IMyEntity@Storage)|Custom storage for mods. Shared with all mods.<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
 |[Synchronized](VRage.ModAPI.IMyEntity@Synchronized)|Gets or sets if the entity should be synced.<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
 |[SyncObject](VRage.ModAPI.IMyEntity@SyncObject)|Gets SyncObject used for synchronizing data over network with<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
+|[TargetLockToolbar](Sandbox.ModAPI.IMyShipController@TargetLockToolbar)|Gets the toolbar triggered when this block's grid is target locked. Slot 0 fires on lock and slot 1 on losing the lock, each across every page, and only on the server.<br /><br />_Inherited from [IMyShipController](Sandbox.ModAPI.IMyShipController)_|
+|[Toolbar](Sandbox.ModAPI.IMyShipController@Toolbar)|Gets the toolbar the pilot drives while controlling this block. This is the primary toolbar, index 0.<br /><br />_Inherited from [IMyShipController](Sandbox.ModAPI.IMyShipController)_|
 |[Transparent](VRage.ModAPI.IMyEntity@Transparent)|Gets or sets [Transparency](VRage.Game.Components.MyRenderComponentBase@Transparency) . When setting true entity would be 25% transparent<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|
 |[UpgradeValues](VRage.Game.ModAPI.IMyCubeBlock@UpgradeValues)|Get all values changed by upgrade modules Should only be used as read-only<br /><br />_Inherited from [IMyCubeBlock](VRage.Game.ModAPI.IMyCubeBlock)_|
 |[Visible](VRage.ModAPI.IMyEntity@Visible)|Gets or sets flag [Visible](VRage.Game.Components.MyRenderComponentBase@Visible)<br /><br />_Inherited from [IMyEntity](VRage.ModAPI.IMyEntity)_|

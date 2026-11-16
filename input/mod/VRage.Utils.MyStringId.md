@@ -1,7 +1,7 @@
 **Assembly:** VRage.Library.dll
 
 ```csharp
-public struct MyStringId: IXmlSerializable
+public struct MyStringId: IXmlSerializable, IEquatable<MyStringId>
 ```
 
 Generates unique IDs for strings. When used as key for hash tables (Dictionary or HashSet) always pass in MyStringId.Comparer, otherwise lookups will allocate memory! Never serialize to network or disk! IDs are created sequentially as they get requested so two IDs might be different between sessions or clients and server. You can safely use ToString() as it will not allocate.
@@ -39,5 +39,6 @@ Generates unique IDs for strings. When used as key for hash tables (Dictionary o
 |[WriteXml(XmlWriter)](VRage.Utils.MyStringId@WriteXml)||
 
 **Implements:**  
+* [IEquatable<MyStringId>](https://docs.microsoft.com/en-us/dotnet/api/System.IEquatable-1?view=netframework-4.6)  
 * IXmlSerializable <sub>prohibited</sub>
 

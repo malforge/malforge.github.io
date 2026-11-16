@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox.ModAPI.MyScreenSpaceSprite - API Reference</title>
+    <link rel="stylesheet" href="styles.css?v=21d60a28e8d9">
+</head>
+<body>
+    <noscript>
+        <div style="position: fixed; top: 0; left: 0; right: 0; background: #ff6b6b; color: white; padding: 1em; text-align: center; z-index: 10000; font-family: Arial, sans-serif;">
+            <strong>JavaScript Required:</strong> This documentation site requires JavaScript to function. Please enable JavaScript in your browser to view the navigation and search features.
+        </div>
+    </noscript>
+    <header class="top-header">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-nav">
+            <a href="index.html" class="header-btn" title="Home">
+                <span>🏠</span>
+            </a>
+            <a href="https://spaceengineers.wiki.gg/" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="Space Engineers Wiki">
+                <img src="wiki.png" alt="Wiki" class="header-icon">
+            </a>
+            <a href="https://github.com/malforge/mdk2" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="MDK2 - Malware's Development Kit">
+                <img src="mdk2.png" alt="MDK2" class="header-icon">
+            </a>
+            <a href="../pbapi/index.html" class="header-btn api-switcher" title="Switch to PB API">🔄 PB API</a>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search API..." autocomplete="off">
+                <button id="clear-search" style="display: none;">&times;</button>
+                <div class="search-hint">Prefix: T: for types, M: for members</div>
+            </div>
+        </div>
+        <nav class="sidebar-nav" data-current-page="Sandbox.ModAPI.MyScreenSpaceSprite" data-cache-buster="21d60a28e8d9" data-api-type="mod">
+            <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+            <div class="sidebar-loading">Loading navigation...</div>
+        </nav>
+        <div class="sidebar-footer"><span class="generation-timestamp" data-root-path="">Generated...</span></div>
+        <div class="sidebar-resize-handle"></div>
+    </aside>
+    <div id="search-results" style="display: none;"></div>
+    <main class="content">
+            <div class="page-header">
+                <div class="page-namespace">Sandbox.ModAPI</div>
+                <h1>MyScreenSpaceSprite</h1>
+            </div>
+<p><strong>Assembly:</strong> Sandbox.Game.dll</p>
+<pre><code class="language-csharp">public abstract sealed class MyScreenSpaceSprite
+</code></pre>
+<p>Draws textured quads in screen space through the game's sprite renderer, for backgrounds, icons, bars and gauges that accompany <a href="Sandbox.ModAPI.MyScreenSpaceText.html">MyScreenSpaceText</a> .</p>
+<p>Immediate mode: every call draws for a single frame, so call it every frame, from a session component's <a href="VRage.Game.Components.MySessionComponentBase@Draw.html">Draw()</a> for content over the game, or from the OnDraw of a <a href="Sandbox.ModAPI.MyModScreen.html">MyModScreen</a> for the content of a mod's own screen, where the layer should be left at <a href="Sandbox.ModAPI.MyScreenSpaceLayer@BelowHud.html">BelowHud</a> so it composites inside that screen. Must be called from the update thread.</p>
+<p>Textures are named by the subtype id of a transparent material declared in TransparentMaterials.sbc, the same ids used for billboards, so a mod's own textures need no extra setup beyond that definition. An id matching no such material is looked up as an LCD texture, which covers the whole set an LCD or a Programmable Block can draw, item and faction icons included, then as a GUI texture, which is what the game's own HUD and screens are built from, then as the icon of the definition named &quot;TypeId/SubtypeId&quot;, which is what reaches block icons, and finally as the <a href="VRage.Game.ModAPI.IMyGeneratedTexture@Name.html">Name</a> of a texture the mod is drawing into itself.</p>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpaceSprite@Draw.html">static Draw(MyStringId, Vector2, Vector2, Color, MyGuiDrawAlignEnum, float, MyScreenSpaceLayer)</a></td>
+<td>Draws a sprite stretched over a normalized rectangle, rotating about its own centre.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpaceSprite@DrawPivoted.html">static DrawPivoted(MyStringId, Rectangle, Rectangle?, Color, float, Vector2, MyScreenSpaceLayer)</a></td>
+<td>Draws a sprite rotating about an arbitrary pivot rather than its own centre, which is what gauge needles, swinging bars and radial fills need. The pivot may lie outside the destination rectangle.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpaceSprite@DrawPixels.html">static DrawPixels(MyStringId, Rectangle, Rectangle?, Color, float, MyScreenSpaceLayer)</a></td>
+<td>Pixel-positioned counterpart of <a href="Sandbox.ModAPI.MyScreenSpaceSprite@Draw.html">Draw(MyStringId, Vector2, Vector2, Color, MyGuiDrawAlignEnum, float, MyScreenSpaceLayer)</a> , rotating about the destination's centre. Pass a source rectangle to take one region out of a larger texture, which is how sprite sheets are used.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpaceSprite@GetTextureSize.html">static GetTextureSize(MyStringId)</a></td>
+<td>Size of the material's texture in pixels, for sizing sprites to their source art or for building source rectangles, or zero if the material is unknown. The first lookup of a texture reads its header from disk, so cache the result instead of calling this every frame.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.MyScreenSpaceSprite@IsMaterialAvailable.html">static IsMaterialAvailable(MyStringId)</a></td>
+<td>Whether an id resolves to a texture usable here, through any of the sources this class accepts. Render-target and atlas-packed materials are rejected even though billboards accept them.</td>
+</tr>
+</tbody>
+</table>
+
+    </main>
+    <script src="api-index.js?v=21d60a28e8d9"></script>
+</body>
+</html>

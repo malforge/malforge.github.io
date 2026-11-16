@@ -9,7 +9,6 @@ public struct MyEnvironmentLightData
 |Member|Description|
 |---|---|
 |[static Default](VRageRender.MyEnvironmentLightData@Default)||
-|[__pad](VRageRender.MyEnvironmentLightData@__pad)||
 |[AmbientDiffuseFactor](VRageRender.MyEnvironmentLightData@AmbientDiffuseFactor)||
 |[AmbientForwardPass](VRageRender.MyEnvironmentLightData@AmbientForwardPass)||
 |[AmbientLightsGatherRadius](VRageRender.MyEnvironmentLightData@AmbientLightsGatherRadius)||
@@ -25,6 +24,7 @@ public struct MyEnvironmentLightData
 |[ForwardDimDistance](VRageRender.MyEnvironmentLightData@ForwardDimDistance)||
 |[GlassAmbient](VRageRender.MyEnvironmentLightData@GlassAmbient)||
 |[MaxTileLigths](VRageRender.MyEnvironmentLightData@MaxTileLigths)||
+|[PointShadowResolutionPadding](VRageRender.MyEnvironmentLightData@PointShadowResolutionPadding)|Padding, kept because it is part of the constant buffer's layout that DX11 and DX12 share. It carried the per-tier point-shadow resolutions until each cube got a size of its own, which travels in the b1 info row.|
 |[ShadowFadeoutMultiplier](VRageRender.MyEnvironmentLightData@ShadowFadeoutMultiplier)||
 |[SkipIBLevels](VRageRender.MyEnvironmentLightData@SkipIBLevels)||
 |[SkyboxBrightness](VRageRender.MyEnvironmentLightData@SkyboxBrightness)||

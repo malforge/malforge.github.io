@@ -32,11 +32,13 @@ public class DetonationData
 
 |Member|Description|
 |---|---|
+|[static TryGetExplosiveDamageMultiplier(MyDefinitionId, out float)](Sandbox.Game.Entities.DetonationData@TryGetExplosiveDamageMultiplier)||
 |[CacheItem(MyInventoryBase, MyPhysicalInventoryItem, MyFixedPoint)](Sandbox.Game.Entities.DetonationData@CacheItem)||
 |[CalculateAmmoExplosionEffects(float, float)](Sandbox.Game.Entities.DetonationData@CalculateAmmoExplosionEffects)||
+|[CalculateEffectiveExplosiveVolumeInLiters(bool)](Sandbox.Game.Entities.DetonationData@CalculateEffectiveExplosiveVolumeInLiters)||
 |[CalculateStoredExplosiveDamage(List<StoredExplosive>)](Sandbox.Game.Entities.DetonationData@CalculateStoredExplosiveDamage)||
 |[CalculateStoredExplosiveRadius(float)](Sandbox.Game.Entities.DetonationData@CalculateStoredExplosiveRadius)||
-|[CalculateTemporaryContainerExplosiveRadius(float)](Sandbox.Game.Entities.DetonationData@CalculateTemporaryContainerExplosiveRadius)||
 |[Clear()](Sandbox.Game.Entities.DetonationData@Clear)||
 |[Init(MyGameDefinition, float, float)](Sandbox.Game.Entities.DetonationData@Init)||
+|[CalculateTemporaryContainerExplosiveRadius(float)](Sandbox.Game.Entities.DetonationData@CalculateTemporaryContainerExplosiveRadius)|_**Obsolete:** CalculateEffectiveExplosiveVolumeInLiters is used now_<br /><br />Obsolete|
 

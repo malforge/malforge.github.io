@@ -12,7 +12,10 @@ public class MyWeaponBlockDefinition: MyFunctionalBlockDefinition
 |[DummyNames](Sandbox.Definitions.MyWeaponBlockDefinition@DummyNames)||
 |[InventoryFillFactorMin](Sandbox.Definitions.MyWeaponBlockDefinition@InventoryFillFactorMin)||
 |[InventoryMaxVolume](Sandbox.Definitions.MyWeaponBlockDefinition@InventoryMaxVolume)||
+|[LaserPointerEnabled](Sandbox.Definitions.MyWeaponBlockDefinition@LaserPointerEnabled)|Draws the aiming dot at the point the weapon is pointing at. Turrets never draw one.|
 |[ResourceSinkGroup](Sandbox.Definitions.MyWeaponBlockDefinition@ResourceSinkGroup)||
+|[TargetingSubsystemEnabled](Sandbox.Definitions.MyWeaponBlockDefinition@TargetingSubsystemEnabled)||
+|[TargetLockRequirementEnabled](Sandbox.Definitions.MyWeaponBlockDefinition@TargetLockRequirementEnabled)|Offers the Require Target Lock terminal option; honoured only together with [TargetingSubsystemEnabled](Sandbox.Definitions.MyWeaponBlockDefinition@TargetingSubsystemEnabled) .|
 |[WeaponDefinitionId](Sandbox.Definitions.MyWeaponBlockDefinition@WeaponDefinitionId)||
 |[ActionSound](Sandbox.Definitions.MyCubeBlockDefinition@ActionSound)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[AimingOffset](Sandbox.Definitions.MyCubeBlockDefinition@AimingOffset)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|

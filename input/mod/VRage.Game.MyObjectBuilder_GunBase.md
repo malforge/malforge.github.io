@@ -13,6 +13,7 @@ public class MyObjectBuilder_GunBase: MyObjectBuilder_DeviceBase
 |[RemainingAmmo](VRage.Game.MyObjectBuilder_GunBase@RemainingAmmo)||
 |[RemainingAmmosList](VRage.Game.MyObjectBuilder_GunBase@RemainingAmmosList)||
 |[RemainingMagazines](VRage.Game.MyObjectBuilder_GunBase@RemainingMagazines)||
+|[SelectedAmmoType](VRage.Game.MyObjectBuilder_GunBase@SelectedAmmoType)||
 |[InventoryItemId](VRage.Game.MyObjectBuilder_DeviceBase@InventoryItemId)|_Inherited from [MyObjectBuilder_DeviceBase](VRage.Game.MyObjectBuilder_DeviceBase)_|
 
 ## Properties

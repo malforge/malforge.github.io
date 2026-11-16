@@ -1,7 +1,7 @@
 ## Summary
 
 ```csharp
-public MyWeaponEffect(string action, string dummy, string particle, bool loop, bool instantStop, Vector3 offset, float particleBirthStart, float particleBirthMin, float particleBirthMax, float particleBirthIncrease, float particleBirthDecrease, bool displayOnlyOnDummyFiring, string particleForIronsights)
+public MyWeaponEffect(string action, string dummy, string particle, bool loop, bool instantStop, Vector3 offset, float particleBirthStart, float particleBirthMin, float particleBirthMax, float particleBirthIncrease, float particleBirthDecrease, bool displayOnlyOnDummyFiring, string particleForIronsights, bool parentToWeapon)
 ```
 
 ## Parameters
@@ -19,3 +19,4 @@ public MyWeaponEffect(string action, string dummy, string particle, bool loop, b
 * [float](https://docs.microsoft.com/en-us/dotnet/api/System.Single?view=netframework-4.6) particleBirthDecrease
 * [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) displayOnlyOnDummyFiring
 * [string](https://docs.microsoft.com/en-us/dotnet/api/System.String?view=netframework-4.6) particleForIronsights
+* [bool](https://docs.microsoft.com/en-us/dotnet/api/System.Boolean?view=netframework-4.6) parentToWeapon

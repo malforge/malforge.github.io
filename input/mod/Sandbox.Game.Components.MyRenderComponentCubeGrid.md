@@ -35,6 +35,7 @@ public class MyRenderComponentCubeGrid: MyRenderComponent, IMyComponentBase, IMy
 
 |Member|Description|
 |---|---|
+|[BodyKey](Sandbox.Game.Components.MyRenderComponentCubeGrid@BodyKey)|Entity id of the grid at the root of this one's physical hierarchy, which is the body its render cells cast shadows as. A docked ship therefore counts as part of its host rather than as something flying past it.|
 |[CubeGrid](Sandbox.Game.Components.MyRenderComponentCubeGrid@CubeGrid)||
 |[DeferRenderRelease](Sandbox.Game.Components.MyRenderComponentCubeGrid@DeferRenderRelease)||
 |[GridSize](Sandbox.Game.Components.MyRenderComponentCubeGrid@GridSize)||
@@ -53,6 +54,7 @@ public class MyRenderComponentCubeGrid: MyRenderComponent, IMyComponentBase, IMy
 |[ContainerBase](VRage.Game.Components.MyComponentBase@ContainerBase)|This cannot be named Container to not conflict with the definition of Container in MyEntityComponentBase.<br /><br />_Inherited from [MyComponentBase](VRage.Game.Components.MyComponentBase)_|
 |[DrawInAllCascades](VRage.Game.Components.MyRenderComponentBase@DrawInAllCascades)|_Inherited from [MyRenderComponentBase](VRage.Game.Components.MyRenderComponentBase)_|
 |[DrawOutsideViewDistance](VRage.Game.Components.MyRenderComponentBase@DrawOutsideViewDistance)|_Inherited from [MyRenderComponentBase](VRage.Game.Components.MyRenderComponentBase)_|
+|[DynamicCaster](VRage.Game.Components.MyRenderComponentBase@DynamicCaster)|Whether the entity moves on its own, apart from any grid - a dropped item, a held tool. Read once, when the render object is created: set it before the entity is added to the scene.<br /><br />_Inherited from [MyRenderComponentBase](VRage.Game.Components.MyRenderComponentBase)_|
 |[EnableColorMaskHsv](VRage.Game.Components.MyRenderComponentBase@EnableColorMaskHsv)|_Inherited from [MyRenderComponentBase](VRage.Game.Components.MyRenderComponentBase)_|
 |[Entity](VRage.Game.Components.Interfaces.IMyEntityComponentBase@Entity)|_Inherited from [IMyEntityComponentBase](VRage.Game.Components.Interfaces.IMyEntityComponentBase)_|
 |[Entity](VRage.Game.Components.MyEntityComponentBase@Entity)|_Inherited from [MyEntityComponentBase](VRage.Game.Components.MyEntityComponentBase)_|

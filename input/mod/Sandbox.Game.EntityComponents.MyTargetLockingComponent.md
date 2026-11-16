@@ -84,6 +84,7 @@ public class MyTargetLockingComponent: MyUpdatingEntityComponent, IMyComponentBa
 |[OnAddedToContainer()](Sandbox.Game.EntityComponents.MyTargetLockingComponent@OnAddedToContainer)||
 |[OnBeforeRemovedFromContainer()](Sandbox.Game.EntityComponents.MyTargetLockingComponent@OnBeforeRemovedFromContainer)||
 |[OnControlledEntityChanged(IMyControllableEntity, IMyControllableEntity)](Sandbox.Game.EntityComponents.MyTargetLockingComponent@OnControlledEntityChanged)||
+|[OnHandWeaponTargetRequest(MyEntity, bool)](Sandbox.Game.EntityComponents.MyTargetLockingComponent@OnHandWeaponTargetRequest)|Asks the server to start lockingtargetfrom a hand weapon, which holds its lock by keeping the sights up rather than by a button press. A repeat for the same target is therefore a retry, not an unlock, and stays silent - the server refuses without a reply, so an unconditional start sound would chirp on every retry.|
 |[OnLockAcquired()](Sandbox.Game.EntityComponents.MyTargetLockingComponent@OnLockAcquired)||
 |[OnLockLost()](Sandbox.Game.EntityComponents.MyTargetLockingComponent@OnLockLost)||
 |[OnTargetInfoChanged(SyncBase)](Sandbox.Game.EntityComponents.MyTargetLockingComponent@OnTargetInfoChanged)||

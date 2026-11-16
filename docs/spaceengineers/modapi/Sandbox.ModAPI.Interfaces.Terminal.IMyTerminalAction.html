@@ -70,6 +70,14 @@
 <td>This is the action taken when an action is performed.</td>
 </tr>
 <tr>
+<td><a href="Sandbox.ModAPI.Interfaces.Terminal.IMyTerminalAction@ActionWithParameters.html">ActionWithParameters</a></td>
+<td>What the action does, given the arguments it was run with. Set this rather than <a href="Sandbox.ModAPI.Interfaces.Terminal.IMyTerminalAction@Action.html">Action</a> when the action takes any; setting either one replaces the other.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.Interfaces.Terminal.IMyTerminalAction@DoUserParameterRequestWithItem.html">DoUserParameterRequestWithItem</a></td>
+<td>Asks the player for the arguments when they put this action in a toolbar slot. Show your own screen from here, as the programmable block's Run does. Leave it null and the action is placed with the values its definitions carry.<br /><br />The item's Parameters are already sized to <a href="Sandbox.ModAPI.Interfaces.Terminal.IMyTerminalAction@ParameterDefinitions.html">ParameterDefinitions</a> and hold those values, so assign by index. Call back true when they are set, or false if the player cancelled; a cancel is only honoured on some of the ways an item can be placed, so leave Parameters holding what the slot should get either way.</td>
+</tr>
+<tr>
 <td><a href="Sandbox.ModAPI.Interfaces.Terminal.IMyTerminalAction@Enabled.html">Enabled</a></td>
 <td>Allows you to set if this action is enabled or disabled</td>
 </tr>
@@ -84,6 +92,10 @@
 <tr>
 <td><a href="Sandbox.ModAPI.Interfaces.Terminal.IMyTerminalAction@Name.html">Name</a></td>
 <td>Allows you to set the name of the Action</td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.Interfaces.Terminal.IMyTerminalAction@ParameterDefinitions.html">ParameterDefinitions</a></td>
+<td>Arguments this action takes, in the order it expects them. Add one entry per argument with TerminalActionParameter.Get; the value fixes the argument's type, and is what the action is given when it is run with none supplied.</td>
 </tr>
 <tr>
 <td><a href="Sandbox.ModAPI.Interfaces.Terminal.IMyTerminalAction@ValidForGroups.html">ValidForGroups</a></td>

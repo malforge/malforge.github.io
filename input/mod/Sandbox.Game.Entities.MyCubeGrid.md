@@ -21,10 +21,6 @@ Grid - small ship, large ship, station Cubes (armor, walls...) are merge and ren
 |[static MyEntitiesCreateFromObjectBuilderExtCallback](VRage.Game.Entity.MyEntity@MyEntitiesCreateFromObjectBuilderExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[static MyEntityFactoryCreateObjectBuilderExtCallback](VRage.Game.Entity.MyEntity@MyEntityFactoryCreateObjectBuilderExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[static MyProceduralWorldGeneratorTrackEntityExtCallback](VRage.Game.Entity.MyEntity@MyProceduralWorldGeneratorTrackEntityExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
-|[static MyWeldingGroupsAddNodeExtCallback](VRage.Game.Entity.MyEntity@MyWeldingGroupsAddNodeExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
-|[static MyWeldingGroupsGetGroupNodesExtCallback](VRage.Game.Entity.MyEntity@MyWeldingGroupsGetGroupNodesExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
-|[static MyWeldingGroupsGroupExistsExtCallback](VRage.Game.Entity.MyEntity@MyWeldingGroupsGroupExistsExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
-|[static MyWeldingGroupsRemoveNodeExtCallback](VRage.Game.Entity.MyEntity@MyWeldingGroupsRemoveNodeExtCallback)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[static RemoveFromGamePruningStructureExtCallBack](VRage.Game.Entity.MyEntity@RemoveFromGamePruningStructureExtCallBack)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[static UpdateGamePruningStructureExtCallBack](VRage.Game.Entity.MyEntity@UpdateGamePruningStructureExtCallBack)|_Inherited from [MyEntity](VRage.Game.Entity.MyEntity)_|
 |[BeingCreatedInSplit](Sandbox.Game.Entities.MyCubeGrid@BeingCreatedInSplit)||
@@ -172,6 +168,7 @@ Grid - small ship, large ship, station Cubes (armor, walls...) are merge and ren
 |[DestructibleBlocks](Sandbox.Game.Entities.MyCubeGrid@DestructibleBlocks)||
 |[DirtyBlocks](Sandbox.Game.Entities.MyCubeGrid@DirtyBlocks)||
 |[Editable](Sandbox.Game.Entities.MyCubeGrid@Editable)||
+|[EmpImmunitySeconds](Sandbox.Game.Entities.MyCubeGrid@EmpImmunitySeconds)||
 |[EntityThrustComponent](Sandbox.Game.Entities.MyCubeGrid@EntityThrustComponent)||
 |[ForceDisablePrediction](Sandbox.Game.Entities.MyCubeGrid@ForceDisablePrediction)||
 |[GameLogic](Sandbox.Game.Entities.MyCubeGrid@GameLogic)||
@@ -196,6 +193,7 @@ Grid - small ship, large ship, station Cubes (armor, walls...) are merge and ren
 |[IsClientPredicted](Sandbox.Game.Entities.MyCubeGrid@IsClientPredicted)||
 |[IsClientPredictedCar](Sandbox.Game.Entities.MyCubeGrid@IsClientPredictedCar)||
 |[IsClientPredictedWheel](Sandbox.Game.Entities.MyCubeGrid@IsClientPredictedWheel)||
+|[IsElectricityDisrupted](Sandbox.Game.Entities.MyCubeGrid@IsElectricityDisrupted)||
 |[IsGenerated](Sandbox.Game.Entities.MyCubeGrid@IsGenerated)|Gets or sets is generated, used for economy stations|
 |[IsLargeDestroyInProgress](Sandbox.Game.Entities.MyCubeGrid@IsLargeDestroyInProgress)||
 |[IsMarkedForEarlyDeactivation](Sandbox.Game.Entities.MyCubeGrid@IsMarkedForEarlyDeactivation)||
@@ -625,6 +623,8 @@ Grid - small ship, large ship, station Cubes (armor, walls...) are merge and ren
 |[SerializeControls(BitStream)](Sandbox.Game.Entities.MyCubeGrid@SerializeControls)||
 |[SetBlockDirty(MySlimBlock)](Sandbox.Game.Entities.MyCubeGrid@SetBlockDirty)||
 |[SetCubeDirty(Vector3I)](Sandbox.Game.Entities.MyCubeGrid@SetCubeDirty)||
+|[SetElectricityDisrupted(bool)](Sandbox.Game.Entities.MyCubeGrid@SetElectricityDisrupted)||
+|[SetEmpImmunitySeconds(int)](Sandbox.Game.Entities.MyCubeGrid@SetEmpImmunitySeconds)||
 |[SetMainCockpit(MyTerminalBlock)](Sandbox.Game.Entities.MyCubeGrid@SetMainCockpit)||
 |[SetMainRemoteControl(MyTerminalBlock)](Sandbox.Game.Entities.MyCubeGrid@SetMainRemoteControl)||
 |[SetSolarOcclusion(bool)](Sandbox.Game.Entities.MyCubeGrid@SetSolarOcclusion)||

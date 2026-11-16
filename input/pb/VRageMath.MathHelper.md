@@ -105,7 +105,7 @@ Contains commonly used precalculated values.
 |[static MonotonicAcos(float)](VRageMath.MathHelper@MonotonicAcos)||
 |[static MonotonicCosine(float)](VRageMath.MathHelper@MonotonicCosine)|Calculate the monotonic cosine of a value. Monotonic cosine is an alternative cosine encoding that is monotonic in the [-pi, pi] interval. We use this when some parameter of an onject in a planet is constrained by latitude. The 'monotonicity' is guaranteed by subtracting the cosine value from 2 if the angle is positive. So for instance MonotonicCos(pi/2) = 2. This only works in the above interval of course.|
 |[static Pow2(int)](VRageMath.MathHelper@Pow2)|Returns 2^n|
-|[static RoundOn2(float)](VRageMath.MathHelper@RoundOn2)||
+|[static RoundOn2(float)](VRageMath.MathHelper@RoundOn2)|Rounds to two decimal places. Not through an int: every renderer passes squared camera distances here and those leave int's range at 4.6 km, where the cast wrapped them to a large negative - which reads as the nearest thing in the scene to anything ordering by distance.|
 |[static RoundToInt(float)](VRageMath.MathHelper@RoundToInt)||
 |[static RoundToInt(double)](VRageMath.MathHelper@RoundToInt)||
 |[static Saturate(float)](VRageMath.MathHelper@Saturate)||

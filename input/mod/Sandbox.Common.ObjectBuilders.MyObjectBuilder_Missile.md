@@ -10,10 +10,12 @@ public class MyObjectBuilder_Missile: MyObjectBuilder_EntityBase
 |---|---|
 |[AmmoMagazineId](Sandbox.Common.ObjectBuilders.MyObjectBuilder_Missile@AmmoMagazineId)||
 |[HealthPool](Sandbox.Common.ObjectBuilders.MyObjectBuilder_Missile@HealthPool)||
+|[Integrity](Sandbox.Common.ObjectBuilders.MyObjectBuilder_Missile@Integrity)||
 |[LauncherId](Sandbox.Common.ObjectBuilders.MyObjectBuilder_Missile@LauncherId)||
 |[LinearVelocity](Sandbox.Common.ObjectBuilders.MyObjectBuilder_Missile@LinearVelocity)||
 |[OriginEntity](Sandbox.Common.ObjectBuilders.MyObjectBuilder_Missile@OriginEntity)||
 |[Owner](Sandbox.Common.ObjectBuilders.MyObjectBuilder_Missile@Owner)||
+|[TargetEntityId](Sandbox.Common.ObjectBuilders.MyObjectBuilder_Missile@TargetEntityId)||
 |[WeaponDefinitionId](Sandbox.Common.ObjectBuilders.MyObjectBuilder_Missile@WeaponDefinitionId)||
 |[ComponentContainer](VRage.ObjectBuilders.MyObjectBuilder_EntityBase@ComponentContainer)|_Inherited from [MyObjectBuilder_EntityBase](VRage.ObjectBuilders.MyObjectBuilder_EntityBase)_|
 |[EntityDefinitionId](VRage.ObjectBuilders.MyObjectBuilder_EntityBase@EntityDefinitionId)|_Inherited from [MyObjectBuilder_EntityBase](VRage.ObjectBuilders.MyObjectBuilder_EntityBase)_|

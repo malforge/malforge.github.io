@@ -75,7 +75,6 @@ public class MyObjectBuilder_Definitions: MyObjectBuilder_Base
 |[PlanetGeneratorDefinitions](VRage.Game.MyObjectBuilder_Definitions@PlanetGeneratorDefinitions)||
 |[PlanetPrefabs](VRage.Game.MyObjectBuilder_Definitions@PlanetPrefabs)||
 |[Prefabs](VRage.Game.MyObjectBuilder_Definitions@Prefabs)||
-|[QuickStarts](VRage.Game.MyObjectBuilder_Definitions@QuickStarts)||
 |[RadialMenus](VRage.Game.MyObjectBuilder_Definitions@RadialMenus)||
 |[ResearchBlocks](VRage.Game.MyObjectBuilder_Definitions@ResearchBlocks)||
 |[ResearchGroups](VRage.Game.MyObjectBuilder_Definitions@ResearchGroups)||

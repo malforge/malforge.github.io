@@ -9,6 +9,7 @@ public class MyObjectBuilder_MaintenancePanelComponentDefinition: MyObjectBuilde
 |Member|Description|
 |---|---|
 |[CloseSpeed](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MaintenancePanelComponentDefinition@CloseSpeed)||
+|[DefaultOpened](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MaintenancePanelComponentDefinition@DefaultOpened)||
 |[DefaultOpeningDirectionRevert](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MaintenancePanelComponentDefinition@DefaultOpeningDirectionRevert)||
 |[DetectorName](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MaintenancePanelComponentDefinition@DetectorName)||
 |[HingePosition](Sandbox.Common.ObjectBuilders.Definitions.MyObjectBuilder_MaintenancePanelComponentDefinition@HingePosition)||

@@ -11,6 +11,7 @@ Enumeration describing Enabled state of multiple objects.
 |Member|Description|
 |---|---|
 |Disconnected|Used only for internal use.|
+|Disrupted|Distribution is suppressed from the outside, for example by an EMP. Nothing is powered until it is cleared.|
 |NoPower|No power|
 |Ok|Working fine. Every block has enough power|
 |OverloadAdaptible|Some adaptible group does not have enough resources, but everything else still works fine|

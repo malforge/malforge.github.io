@@ -33,6 +33,7 @@ public class MyObjectbuilder_SessionComponentEconomyDefinition: MyObjectBuilder_
 |[ReputationHostileMid](VRage.Game.ObjectBuilders.Definitions.MyObjectbuilder_SessionComponentEconomyDefinition@ReputationHostileMid)||
 |[ReputationHostileMin](VRage.Game.ObjectBuilders.Definitions.MyObjectbuilder_SessionComponentEconomyDefinition@ReputationHostileMin)||
 |[ReputationLevelValue](VRage.Game.ObjectBuilders.Definitions.MyObjectbuilder_SessionComponentEconomyDefinition@ReputationLevelValue)||
+|[ReputationLossPerNpcKill](VRage.Game.ObjectBuilders.Definitions.MyObjectbuilder_SessionComponentEconomyDefinition@ReputationLossPerNpcKill)||
 |[ReputationNeutralMid](VRage.Game.ObjectBuilders.Definitions.MyObjectbuilder_SessionComponentEconomyDefinition@ReputationNeutralMid)||
 |[ReputationNeutralMin](VRage.Game.ObjectBuilders.Definitions.MyObjectbuilder_SessionComponentEconomyDefinition@ReputationNeutralMin)||
 |[ReputationPlayerDefault](VRage.Game.ObjectBuilders.Definitions.MyObjectbuilder_SessionComponentEconomyDefinition@ReputationPlayerDefault)||

@@ -12,6 +12,7 @@ public class MyObjectBuilder_LaserAntenna: MyObjectBuilder_FunctionalBlock
 |[gpsTarget](Sandbox.Common.ObjectBuilders.MyObjectBuilder_LaserAntenna@gpsTarget)||
 |[gpsTargetName](Sandbox.Common.ObjectBuilders.MyObjectBuilder_LaserAntenna@gpsTargetName)||
 |[HeadRotation](Sandbox.Common.ObjectBuilders.MyObjectBuilder_LaserAntenna@HeadRotation)||
+|[KnownReceiverIds](Sandbox.Common.ObjectBuilders.MyObjectBuilder_LaserAntenna@KnownReceiverIds)||
 |[LastKnownTargetName](Sandbox.Common.ObjectBuilders.MyObjectBuilder_LaserAntenna@LastKnownTargetName)||
 |[LastTargetPosition](Sandbox.Common.ObjectBuilders.MyObjectBuilder_LaserAntenna@LastTargetPosition)||
 |[Range](Sandbox.Common.ObjectBuilders.MyObjectBuilder_LaserAntenna@Range)||

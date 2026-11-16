@@ -53,7 +53,7 @@
                 <h1>MyCockpit</h1>
             </div>
 <p><strong>Assembly:</strong> Sandbox.Game.dll</p>
-<pre><code class="language-csharp">public class MyCockpit: MyShipController, IMyEntity, IMyEntity, IMyComponentOwner&lt;MyIDModule&gt;, IMyCubeBlock, IMyCubeBlock, IMyUpgradableBlock, IMyUpgradableBlock, IMyEventProxy, IMyEventOwner, IMySyncedEntity, IMyTerminalBlock, IMyTerminalBlock, IMyControllableEntity, IMyControllableEntity, IMyRechargeSocketOwner, IMyShipController, IMyShipController, IMyTargetingCapableBlock, IMyShootOrigin, IMyPilotable, IMyShipControl, IMyWheelControllableEntity, IMyCameraController, IMyUsableEntity, IMyCockpit, IMyCockpit, IMyTextSurfaceProvider, IMyTextSurfaceProvider, IMyConveyorEndpointBlock, IMyMultiTextPanelComponentOwner, IMyTextPanelComponentOwner
+<pre><code class="language-csharp">public class MyCockpit: MyShipController, IMyEntity, IMyEntity, IMyComponentOwner&lt;MyIDModule&gt;, IMyCubeBlock, IMyCubeBlock, IMyUpgradableBlock, IMyUpgradableBlock, IMyEventProxy, IMyEventOwner, IMySyncedEntity, IMyTerminalBlock, IMyTerminalBlock, IMyControllableEntity, IMyControllableEntity, IMyRechargeSocketOwner, IMyShipController, IMyShipController, IMyTargetingCapableBlock, IMyShootOrigin, IMyPilotable, IMyShipControl, IMyWheelControllableEntity, IMyToolbarOwner, IMyCameraController, IMyUsableEntity, IMyCockpit, IMyCockpit, IMyTextSurfaceProvider, IMyTextSurfaceProvider, IMyConveyorEndpointBlock, IMyMultiTextPanelComponentOwner, IMyTextPanelComponentOwner
 </code></pre>
 <h2 id="fields">Fields</h2>
 <table>
@@ -277,6 +277,10 @@
 <tr>
 <td><a href="Sandbox.Game.Entities.MyShipController@BlockDefinition.html">BlockDefinition</a></td>
 <td><em>Inherited from <a href="Sandbox.Game.Entities.MyShipController.html">MyShipController</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.IMyShipController@BuildToolbar.html">BuildToolbar</a></td>
+<td>Gets the toolbar the pilot uses to place blocks while in building mode.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.IMyShipController.html">IMyShipController</a></em></td>
 </tr>
 <tr>
 <td><a href="Sandbox.ModAPI.Ingame.IMyShipController@CanControlShip.html">CanControlShip</a></td>
@@ -975,6 +979,14 @@
 <td>Gets SyncObject used for synchronizing data over network with<br /><br /><em>Inherited from <a href="VRage.ModAPI.IMyEntity.html">IMyEntity</a></em></td>
 </tr>
 <tr>
+<td><a href="Sandbox.ModAPI.IMyShipController@TargetLockToolbar.html">TargetLockToolbar</a></td>
+<td>Gets the toolbar triggered when this block's grid is target locked. Slot 0 fires on lock and slot 1 on losing the lock, each across every page, and only on the server.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.IMyShipController.html">IMyShipController</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.ModAPI.IMyShipController@Toolbar.html">Toolbar</a></td>
+<td>Gets the toolbar the pilot drives while controlling this block. This is the primary toolbar, index 0.<br /><br /><em>Inherited from <a href="Sandbox.ModAPI.IMyShipController.html">IMyShipController</a></em></td>
+</tr>
+<tr>
 <td><a href="Sandbox.Game.Entities.IMyControllableEntity@Toolbar.html">Toolbar</a></td>
 <td><em>Inherited from <a href="Sandbox.Game.Entities.IMyControllableEntity.html">IMyControllableEntity</a></em></td>
 </tr>
@@ -1131,6 +1143,10 @@
 <tr>
 <td><a href="Sandbox.Game.Entities.MyCockpit@ClearSavedpilot.html">ClearSavedpilot()</a></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Game.Entities.MyCockpit@FindBotStandWorldMatrix.html">FindBotStandWorldMatrix(MyCharacter)</a></td>
+<td>World matrix a bot should stand at next to this seat, placed the same way a bot leaving the seat is. Works for a seat the bot never sat in, e.g. one too damaged to be used.</td>
 </tr>
 <tr>
 <td><a href="Sandbox.Game.Entities.MyCockpit@GetDetectorPosition.html">GetDetectorPosition()</a></td>
@@ -2324,6 +2340,7 @@
 <li>IMyTextPanelComponentOwner <sub>prohibited</sub></li>
 <li><a href="Sandbox.ModAPI.Ingame.IMyTextSurfaceProvider.html">IMyTextSurfaceProvider</a></li>
 <li><a href="Sandbox.ModAPI.IMyTextSurfaceProvider.html">IMyTextSurfaceProvider</a></li>
+<li>IMyToolbarOwner <sub>prohibited</sub></li>
 <li><a href="Sandbox.ModAPI.IMyUpgradableBlock.html">IMyUpgradableBlock</a></li>
 <li><a href="Sandbox.ModAPI.Ingame.IMyUpgradableBlock.html">IMyUpgradableBlock</a></li>
 <li>IMyUsableEntity <sub>prohibited</sub></li>

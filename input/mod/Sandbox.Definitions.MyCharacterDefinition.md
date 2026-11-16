@@ -39,8 +39,6 @@ public class MyCharacterDefinition: MyDefinitionBase
 |[EnableFirstPersonView](Sandbox.Definitions.MyCharacterDefinition@EnableFirstPersonView)||
 |[EnableSpawnInventoryAsContainer](Sandbox.Definitions.MyCharacterDefinition@EnableSpawnInventoryAsContainer)||
 |[FastFlySoundName](Sandbox.Definitions.MyCharacterDefinition@FastFlySoundName)||
-|[FeetIKEnabled](Sandbox.Definitions.MyCharacterDefinition@FeetIKEnabled)||
-|[FeetIKSettings](Sandbox.Definitions.MyCharacterDefinition@FeetIKSettings)||
 |[FootOnGroundPostions](Sandbox.Definitions.MyCharacterDefinition@FootOnGroundPostions)||
 |[FootprintDecal](Sandbox.Definitions.MyCharacterDefinition@FootprintDecal)||
 |[FootprintMirroredDecal](Sandbox.Definitions.MyCharacterDefinition@FootprintMirroredDecal)||
@@ -69,8 +67,6 @@ public class MyCharacterDefinition: MyDefinitionBase
 |[LeftHandIKEndBone](Sandbox.Definitions.MyCharacterDefinition@LeftHandIKEndBone)||
 |[LeftHandIKStartBone](Sandbox.Definitions.MyCharacterDefinition@LeftHandIKStartBone)||
 |[LeftHandItemBone](Sandbox.Definitions.MyCharacterDefinition@LeftHandItemBone)||
-|[LeftHipBoneName](Sandbox.Definitions.MyCharacterDefinition@LeftHipBoneName)||
-|[LeftKneeBoneName](Sandbox.Definitions.MyCharacterDefinition@LeftKneeBoneName)||
 |[LeftLightBone](Sandbox.Definitions.MyCharacterDefinition@LeftLightBone)||
 |[LeftUpperarmBone](Sandbox.Definitions.MyCharacterDefinition@LeftUpperarmBone)||
 |[LightGlareSize](Sandbox.Definitions.MyCharacterDefinition@LightGlareSize)||
@@ -97,7 +93,6 @@ public class MyCharacterDefinition: MyDefinitionBase
 |[MaxWalkStrafingSpeed](Sandbox.Definitions.MyCharacterDefinition@MaxWalkStrafingSpeed)||
 |[MinOxygenLevelForSuitRefill](Sandbox.Definitions.MyCharacterDefinition@MinOxygenLevelForSuitRefill)||
 |[Model](Sandbox.Definitions.MyCharacterDefinition@Model)||
-|[ModelRootBoneName](Sandbox.Definitions.MyCharacterDefinition@ModelRootBoneName)||
 |[MovementSoundName](Sandbox.Definitions.MyCharacterDefinition@MovementSoundName)||
 |[Name](Sandbox.Definitions.MyCharacterDefinition@Name)||
 |[OxygenChokeCriticalSoundName](Sandbox.Definitions.MyCharacterDefinition@OxygenChokeCriticalSoundName)||
@@ -122,8 +117,6 @@ public class MyCharacterDefinition: MyDefinitionBase
 |[RightGlare](Sandbox.Definitions.MyCharacterDefinition@RightGlare)||
 |[RightHandIKEndBone](Sandbox.Definitions.MyCharacterDefinition@RightHandIKEndBone)||
 |[RightHandIKStartBone](Sandbox.Definitions.MyCharacterDefinition@RightHandIKStartBone)||
-|[RightHipBoneName](Sandbox.Definitions.MyCharacterDefinition@RightHipBoneName)||
-|[RightKneeBoneName](Sandbox.Definitions.MyCharacterDefinition@RightKneeBoneName)||
 |[RightLightBone](Sandbox.Definitions.MyCharacterDefinition@RightLightBone)||
 |[RightUpperarmBone](Sandbox.Definitions.MyCharacterDefinition@RightUpperarmBone)||
 |[RotationToSupport](Sandbox.Definitions.MyCharacterDefinition@RotationToSupport)||
@@ -134,6 +127,7 @@ public class MyCharacterDefinition: MyDefinitionBase
 |[SuffocateSoundName](Sandbox.Definitions.MyCharacterDefinition@SuffocateSoundName)||
 |[SuitConsumptionInTemperatureExtreme](Sandbox.Definitions.MyCharacterDefinition@SuitConsumptionInTemperatureExtreme)||
 |[SuitResourceStorage](Sandbox.Definitions.MyCharacterDefinition@SuitResourceStorage)||
+|[UnlimitedSuitEnergy](Sandbox.Definitions.MyCharacterDefinition@UnlimitedSuitEnergy)||
 |[UsableByPlayer](Sandbox.Definitions.MyCharacterDefinition@UsableByPlayer)||
 |[UseOnlyWalking](Sandbox.Definitions.MyCharacterDefinition@UseOnlyWalking)||
 |[UsesAtmosphereDetector](Sandbox.Definitions.MyCharacterDefinition@UsesAtmosphereDetector)||

@@ -13,6 +13,7 @@ public class MyLightingBlockDefinition: MyFunctionalBlockDefinition
 |[BlinkLenght](Sandbox.Definitions.MyLightingBlockDefinition@BlinkLenght)||
 |[BlinkOffset](Sandbox.Definitions.MyLightingBlockDefinition@BlinkOffset)||
 |[Flare](Sandbox.Definitions.MyLightingBlockDefinition@Flare)||
+|[GroupLightDummies](Sandbox.Definitions.MyLightingBlockDefinition@GroupLightDummies)||
 |[LightDummyName](Sandbox.Definitions.MyLightingBlockDefinition@LightDummyName)||
 |[LightFalloff](Sandbox.Definitions.MyLightingBlockDefinition@LightFalloff)||
 |[LightIntensity](Sandbox.Definitions.MyLightingBlockDefinition@LightIntensity)||

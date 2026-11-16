@@ -93,5 +93,7 @@ Laser antenna block interface
 
 **Type Definitions:**  
 * MyObjectBuilder_LaserAntenna/LargeBlockLaserAntenna  
-* MyObjectBuilder_LaserAntenna/SmallBlockLaserAntenna
+* MyObjectBuilder_LaserAntenna/LargeBlockLaserAntennaType2  
+* MyObjectBuilder_LaserAntenna/SmallBlockLaserAntenna  
+* MyObjectBuilder_LaserAntenna/SmallBlockLaserAntennaType2
 

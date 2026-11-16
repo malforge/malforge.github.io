@@ -88,6 +88,7 @@ public class MyLargeTurretBaseDefinition: MyWeaponBlockDefinition
 |[IsAirTight](Sandbox.Definitions.MyCubeBlockDefinition@IsAirTight)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[IsCubePressurized](Sandbox.Definitions.MyCubeBlockDefinition@IsCubePressurized)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[IsStandAlone](Sandbox.Definitions.MyCubeBlockDefinition@IsStandAlone)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
+|[LaserPointerEnabled](Sandbox.Definitions.MyWeaponBlockDefinition@LaserPointerEnabled)|Draws the aiming dot at the point the weapon is pointing at. Turrets never draw one.<br /><br />_Inherited from [MyWeaponBlockDefinition](Sandbox.Definitions.MyWeaponBlockDefinition)_|
 |[Mass](Sandbox.Definitions.MyPhysicalModelDefinition@Mass)|_Inherited from [MyPhysicalModelDefinition](Sandbox.Definitions.MyPhysicalModelDefinition)_|
 |[MaxIntegrity](Sandbox.Definitions.MyCubeBlockDefinition@MaxIntegrity)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[MaxIntegrityRatio](Sandbox.Definitions.MyCubeBlockDefinition@MaxIntegrityRatio)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
@@ -109,6 +110,8 @@ public class MyLargeTurretBaseDefinition: MyWeaponBlockDefinition
 |[Size](Sandbox.Definitions.MyCubeBlockDefinition@Size)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[Skeleton](Sandbox.Definitions.MyCubeBlockDefinition@Skeleton)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[TagDefinition](Sandbox.Definitions.MyCubeBlockDefinition@TagDefinition)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
+|[TargetingSubsystemEnabled](Sandbox.Definitions.MyWeaponBlockDefinition@TargetingSubsystemEnabled)|_Inherited from [MyWeaponBlockDefinition](Sandbox.Definitions.MyWeaponBlockDefinition)_|
+|[TargetLockRequirementEnabled](Sandbox.Definitions.MyWeaponBlockDefinition@TargetLockRequirementEnabled)|Offers the Require Target Lock terminal option; honoured only together with [TargetingSubsystemEnabled](Sandbox.Definitions.MyWeaponBlockDefinition@TargetingSubsystemEnabled) .<br /><br />_Inherited from [MyWeaponBlockDefinition](Sandbox.Definitions.MyWeaponBlockDefinition)_|
 |[TieredUpdateTimes](Sandbox.Definitions.MyCubeBlockDefinition@TieredUpdateTimes)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[UniqueVersion](Sandbox.Definitions.MyCubeBlockDefinition@UniqueVersion)|_Inherited from [MyCubeBlockDefinition](Sandbox.Definitions.MyCubeBlockDefinition)_|
 |[UseInstanceRender](Sandbox.Definitions.MyPhysicalModelDefinition@UseInstanceRender)|_Inherited from [MyPhysicalModelDefinition](Sandbox.Definitions.MyPhysicalModelDefinition)_|

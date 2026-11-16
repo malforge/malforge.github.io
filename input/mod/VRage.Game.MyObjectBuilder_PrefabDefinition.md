@@ -12,7 +12,12 @@ public class MyObjectBuilder_PrefabDefinition: MyObjectBuilder_DefinitionBase
 |[CubeGrids](VRage.Game.MyObjectBuilder_PrefabDefinition@CubeGrids)||
 |[EnvironmentType](VRage.Game.MyObjectBuilder_PrefabDefinition@EnvironmentType)||
 |[MaxNPCCount](VRage.Game.MyObjectBuilder_PrefabDefinition@MaxNPCCount)||
+|[NPCBotSubtypes](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCBotSubtypes)||
+|[NPCChatMessageSet](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCChatMessageSet)||
+|[NPCSeatlessUpDirectionOverride](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCSeatlessUpDirectionOverride)||
+|[NPCSpawnBlocksOverride](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCSpawnBlocksOverride)||
 |[NPCSpawnPointsOverride](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCSpawnPointsOverride)||
+|[NPCWeaponsContainerType](VRage.Game.MyObjectBuilder_PrefabDefinition@NPCWeaponsContainerType)||
 |[PrefabPath](VRage.Game.MyObjectBuilder_PrefabDefinition@PrefabPath)||
 |[RespawnShip](VRage.Game.MyObjectBuilder_PrefabDefinition@RespawnShip)||
 |[TooltipImage](VRage.Game.MyObjectBuilder_PrefabDefinition@TooltipImage)||

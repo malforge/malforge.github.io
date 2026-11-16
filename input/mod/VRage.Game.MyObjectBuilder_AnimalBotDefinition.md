@@ -20,6 +20,7 @@ public class MyObjectBuilder_AnimalBotDefinition: MyObjectBuilder_AgentDefinitio
 |[BehaviorType](VRage.Game.MyObjectBuilder_BotDefinition@BehaviorType)|_Inherited from [MyObjectBuilder_BotDefinition](VRage.Game.MyObjectBuilder_BotDefinition)_|
 |[BotBehaviorTree](VRage.Game.MyObjectBuilder_BotDefinition@BotBehaviorTree)|_Inherited from [MyObjectBuilder_BotDefinition](VRage.Game.MyObjectBuilder_BotDefinition)_|
 |[BotModel](VRage.Game.MyObjectBuilder_AgentDefinition@BotModel)|_Inherited from [MyObjectBuilder_AgentDefinition](VRage.Game.MyObjectBuilder_AgentDefinition)_|
+|[BotModels](VRage.Game.MyObjectBuilder_AgentDefinition@BotModels)|_Inherited from [MyObjectBuilder_AgentDefinition](VRage.Game.MyObjectBuilder_AgentDefinition)_|
 |[CanOpenDoors](VRage.Game.MyObjectBuilder_AgentDefinition@CanOpenDoors)|_Inherited from [MyObjectBuilder_AgentDefinition](VRage.Game.MyObjectBuilder_AgentDefinition)_|
 |[CharacterDamage](VRage.Game.MyObjectBuilder_AgentDefinition@CharacterDamage)|_Inherited from [MyObjectBuilder_AgentDefinition](VRage.Game.MyObjectBuilder_AgentDefinition)_|
 |[Commandable](VRage.Game.MyObjectBuilder_BotDefinition@Commandable)|_Inherited from [MyObjectBuilder_BotDefinition](VRage.Game.MyObjectBuilder_BotDefinition)_|
@@ -40,6 +41,7 @@ public class MyObjectBuilder_AnimalBotDefinition: MyObjectBuilder_AgentDefinitio
 |[Invulnerable](VRage.Game.MyObjectBuilder_AgentDefinition@Invulnerable)|_Inherited from [MyObjectBuilder_AgentDefinition](VRage.Game.MyObjectBuilder_AgentDefinition)_|
 |[JoinSpawnerFaction](VRage.Game.MyObjectBuilder_AgentDefinition@JoinSpawnerFaction)|_Inherited from [MyObjectBuilder_AgentDefinition](VRage.Game.MyObjectBuilder_AgentDefinition)_|
 |[PathArrivalRadius](VRage.Game.MyObjectBuilder_AgentDefinition@PathArrivalRadius)|_Inherited from [MyObjectBuilder_AgentDefinition](VRage.Game.MyObjectBuilder_AgentDefinition)_|
+|[PathfindingRadius](VRage.Game.MyObjectBuilder_AgentDefinition@PathfindingRadius)|_Inherited from [MyObjectBuilder_AgentDefinition](VRage.Game.MyObjectBuilder_AgentDefinition)_|
 |[Public](VRage.Game.MyObjectBuilder_DefinitionBase@Public)|_Inherited from [MyObjectBuilder_DefinitionBase](VRage.Game.MyObjectBuilder_DefinitionBase)_|
 |[RemoveAfterDeath](VRage.Game.MyObjectBuilder_AgentDefinition@RemoveAfterDeath)|_Inherited from [MyObjectBuilder_AgentDefinition](VRage.Game.MyObjectBuilder_AgentDefinition)_|
 |[RemoveTimeMs](VRage.Game.MyObjectBuilder_AgentDefinition@RemoveTimeMs)|_Inherited from [MyObjectBuilder_AgentDefinition](VRage.Game.MyObjectBuilder_AgentDefinition)_|

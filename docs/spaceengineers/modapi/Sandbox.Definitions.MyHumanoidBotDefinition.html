@@ -85,24 +85,112 @@
 <td><em>Inherited from <a href="Sandbox.Definitions.MyAgentDefinition.html">MyAgentDefinition</a></em></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Definitions.MyAgentDefinition@DEFAULT_PATHFINDING_RADIUS.html">static DEFAULT_PATHFINDING_RADIUS</a></td>
+<td><em>Inherited from <a href="Sandbox.Definitions.MyAgentDefinition.html">MyAgentDefinition</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@AdditionalAimErrorAngle.html">AdditionalAimErrorAngle</a></td>
+<td>Extra aiming error applied on top of weapon spread, in radians (degrees in XML).</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@AlertMergeDistance.html">AlertMergeDistance</a></td>
+<td>Meters. An alert written this close to the one the squad already holds is the same event going on (a burst, a hull under fire) and only refreshes it; a farther one restarts the alert phases at the new point.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@AllowRouteFlight.html">AllowRouteFlight</a></td>
+<td>False keeps the bot walking-only: navigation never arbitrates an unreachable goal into a jetpack flight route. Explicit flight orders (FlyTo behavior tree leaves) are unaffected.</td>
+</tr>
+<tr>
 <td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@BlockInteractionAnimation.html">BlockInteractionAnimation</a></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@CanTargetBlocks.html">CanTargetBlocks</a></td>
+<td>The bot may hold a block or grid as its AI target, e.g. the seat of a boarded player.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@ChatMessageSet.html">ChatMessageSet</a></td>
+<td>Subtype of the <a href="Sandbox.Definitions.MyNpcChatMessageSetDefinition.html">MyNpcChatMessageSetDefinition</a> this bot speaks from; null means the bot never chats.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@CoverHoldMaxSeconds.html">CoverHoldMaxSeconds</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@CoverHoldMinSeconds.html">CoverHoldMinSeconds</a></td>
+<td>Seconds a bot holds cover from a threatening turret before a launcher carrier peeks out; rolled between min and max.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@FlightRetargetDistance.html">FlightRetargetDistance</a></td>
+<td>Meters. A goal that moves less than this while the bot flies to it keeps the current flight leg.</td>
 </tr>
 <tr>
 <td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@InventoryItems.html">InventoryItems</a></td>
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@LauncherSightRange.html">LauncherSightRange</a></td>
+<td>Meters. Sight range of a bot carrying a rocket launcher; at least <a href="Sandbox.Definitions.MyHumanoidBotDefinition@RocketLauncherPreferredDistance.html">RocketLauncherPreferredDistance</a> .</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@MaxFlightSiteChecks.html">MaxFlightSiteChecks</a></td>
+<td>Flight sites checked for walking reachability per decision.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@MaxRockets.html">MaxRockets</a></td>
+<td>Rocket budget per bot; 0 = unlimited.</td>
+</tr>
+<tr>
 <td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@PlayerGreetingAnimation.html">PlayerGreetingAnimation</a></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@ReloadMagazineFraction.html">ReloadMagazineFraction</a></td>
+<td>Fraction of the magazine capacity (0..1) at or below which a bot holding a rifle or pistol reloads instead of firing the last rounds; launchers reload only when empty.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@RocketBlastSafetyFactor.html">RocketBlastSafetyFactor</a></td>
+<td>Minimum rocket launch distance is the missile explosion radius times this factor; at least 1.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@RocketLauncherPreferredDistance.html">RocketLauncherPreferredDistance</a></td>
+<td>Meters. A character at least this far away makes a launcher-carrying bot draw the launcher.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@RocketLauncherReleaseDistance.html">RocketLauncherReleaseDistance</a></td>
+<td>Meters. Below this a bot holding the launcher returns to its rifle or pistol; never above <a href="Sandbox.Definitions.MyHumanoidBotDefinition@RocketLauncherPreferredDistance.html">RocketLauncherPreferredDistance</a> .</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@RocketRegenerationSeconds.html">RocketRegenerationSeconds</a></td>
+<td>Seconds until one spent rocket token comes back.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@RouteFlightFailureCooldown.html">RouteFlightFailureCooldown</a></td>
+<td>Seconds after a failed jetpack flight during which navigation only walks.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@SmallArmsFireRange.html">SmallArmsFireRange</a></td>
+<td>Meters. A bot holding a rifle or pistol (any gun but the launcher) fires only inside this distance and closes in until it is; never above <a href="Sandbox.Definitions.MyHumanoidBotDefinition@SmallArmsSightRange.html">SmallArmsSightRange</a> .</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@SmallArmsSightRange.html">SmallArmsSightRange</a></td>
+<td>Meters. Sight range of a bot with no rocket launcher in its inventory: acquisition, tracking and shooting all stop here.</td>
 </tr>
 <tr>
 <td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@StartingWeaponDefinitionId.html">StartingWeaponDefinitionId</a></td>
 <td></td>
 </tr>
 <tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@UseDoorFlightSites.html">UseDoorFlightSites</a></td>
+<td>Doors the bot can open count as takeoff and landing sites.</td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyHumanoidBotDefinition@UseFlightSites.html">UseFlightSites</a></td>
+<td>A bot on a large grid takes off only from air connected to open space, and lands where it can walk to its goal.</td>
+</tr>
+<tr>
 <td><a href="Sandbox.Definitions.MyAgentDefinition@AgentHeight.html">AgentHeight</a></td>
-<td>This and AgentRadius/AgentMaxClimb are discretized at navmesh build: height &amp; climb against MyRecastOptions.cellHeight, radius against MyPlatformGameSettings.NAVMESH_CELL_SIZE. SBC values are snapped to the Steam grid: the number is what Recast uses on Steam, and on console (coarser cellSize) it rounds up to the next cell count.<br /><br /><em>Inherited from <a href="Sandbox.Definitions.MyAgentDefinition.html">MyAgentDefinition</a></em></td>
+<td>This and AgentRadius/AgentMaxClimb are discretized at navmesh build: height &amp; climb against MyPlatformGameSettings.NAVMESH_CELL_HEIGHT, radius against MyPlatformGameSettings.NAVMESH_CELL_SIZE. Height and radius round up to whole cells, climb rounds down and is raised to at least MyPlatformGameSettings.NAVMESH_MIN_AGENT_CLIMB.<br /><br /><em>Inherited from <a href="Sandbox.Definitions.MyAgentDefinition.html">MyAgentDefinition</a></em></td>
 </tr>
 <tr>
 <td><a href="Sandbox.Definitions.MyAgentDefinition@AgentMaxClimb.html">AgentMaxClimb</a></td>
@@ -227,6 +315,10 @@
 <tr>
 <td><a href="Sandbox.Definitions.MyAgentDefinition@PathArrivalRadius.html">PathArrivalRadius</a></td>
 <td><em>Inherited from <a href="Sandbox.Definitions.MyAgentDefinition.html">MyAgentDefinition</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyAgentDefinition@PathfindingRadius.html">PathfindingRadius</a></td>
+<td>Clearance radius (meters) used when querying the grid octree pathfinding for flight routes.<br /><br /><em>Inherited from <a href="Sandbox.Definitions.MyAgentDefinition.html">MyAgentDefinition</a></em></td>
 </tr>
 <tr>
 <td><a href="VRage.Game.MyDefinitionBase@Public.html">Public</a></td>
@@ -356,6 +448,10 @@
 <tr>
 <td><a href="VRage.Game.MyDefinitionBase@CheckDefinitionDLCs.html">CheckDefinitionDLCs(String[])</a></td>
 <td>Checks if the definition has all required DLCs as it should have<br /><br /><em>Inherited from <a href="VRage.Game.MyDefinitionBase.html">MyDefinitionBase</a></em></td>
+</tr>
+<tr>
+<td><a href="Sandbox.Definitions.MyAgentDefinition@GetBotModel.html">GetBotModel(float)</a></td>
+<td>Picks a character model from BotModels by weight, or returns BotModel when none are valid.<br /><br /><em>Inherited from <a href="Sandbox.Definitions.MyAgentDefinition.html">MyAgentDefinition</a></em></td>
 </tr>
 <tr>
 <td><a href="VRage.Game.MyDefinitionBase@GetObjectBuilder.html">GetObjectBuilder()</a></td>

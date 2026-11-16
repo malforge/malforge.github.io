@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRage.Game.ModAPI.IMyToolbar - API Reference</title>
+    <link rel="stylesheet" href="styles.css?v=21d60a28e8d9">
+</head>
+<body>
+    <noscript>
+        <div style="position: fixed; top: 0; left: 0; right: 0; background: #ff6b6b; color: white; padding: 1em; text-align: center; z-index: 10000; font-family: Arial, sans-serif;">
+            <strong>JavaScript Required:</strong> This documentation site requires JavaScript to function. Please enable JavaScript in your browser to view the navigation and search features.
+        </div>
+    </noscript>
+    <header class="top-header">
+        <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-nav">
+            <a href="index.html" class="header-btn" title="Home">
+                <span>🏠</span>
+            </a>
+            <a href="https://spaceengineers.wiki.gg/" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="Space Engineers Wiki">
+                <img src="wiki.png" alt="Wiki" class="header-icon">
+            </a>
+            <a href="https://github.com/malforge/mdk2" target="_blank" rel="noopener" class="header-btn header-btn-icon" title="MDK2 - Malware's Development Kit">
+                <img src="mdk2.png" alt="MDK2" class="header-icon">
+            </a>
+            <a href="../pbapi/index.html" class="header-btn api-switcher" title="Switch to PB API">🔄 PB API</a>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search API..." autocomplete="off">
+                <button id="clear-search" style="display: none;">&times;</button>
+                <div class="search-hint">Prefix: T: for types, M: for members</div>
+            </div>
+        </div>
+        <nav class="sidebar-nav" data-current-page="VRage.Game.ModAPI.IMyToolbar" data-cache-buster="21d60a28e8d9" data-api-type="mod">
+            <button id="sidebar-scroll-top" class="sidebar-scroll-top" aria-label="Scroll to top">↑ Back to top</button>
+            <div class="sidebar-loading">Loading navigation...</div>
+        </nav>
+        <div class="sidebar-footer"><span class="generation-timestamp" data-root-path="">Generated...</span></div>
+        <div class="sidebar-resize-handle"></div>
+    </aside>
+    <div id="search-results" style="display: none;"></div>
+    <main class="content">
+            <div class="page-header">
+                <div class="page-namespace">VRage.Game.ModAPI</div>
+                <h1>IMyToolbar</h1>
+            </div>
+<p><strong>Assembly:</strong> VRage.Game.dll</p>
+<pre><code class="language-csharp">public interface IMyToolbar: IMyToolbarSlots
+</code></pre>
+<p>A toolbar a player can configure: a block's action toolbar, a cockpit's own toolbar, or a player's character toolbar. Obtained from a block's <a href="VRage.Game.ModAPI.IMyToolbarProvider.html">IMyToolbarProvider</a> component, and for players from <a href="VRage.Game.ModAPI.IMyPlayer@CharacterToolbar.html">CharacterToolbar</a> , which accepts writes, or <a href="VRage.Game.ModAPI.IMyPlayer@Toolbar.html">Toolbar</a> , the session's read only copy. The inherited members address the slots a keyboard player uses; the gamepad slots are a parallel set reached through <a href="VRage.Game.ModAPI.IMyToolbar@GamepadSlots.html">GamepadSlots</a> .</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyToolbar@GamepadSlots.html">GamepadSlots</a></td>
+<td>The parallel set of slots a gamepad player uses. Null on a character toolbar, which has no gamepad slots a player can reach; check for it before use.<br /><br /> <a href="VRage.Game.ModAPI.IMyToolbarSlots@SlotCount.html">SlotCount</a> is always four, whatever this toolbar's is, because a page maps to the four directions of a pad rather than to the owning block. Pages grow as a player fills them and only those up to the last filled slot survive a save, so do not store a gamepad slot index between sessions.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyToolbar@Type.html">Type</a></td>
+<td>The toolbar's type. Action toolbars are <a href="VRage.Game.MyToolbarType@ButtonPanel.html">ButtonPanel</a> ; a cockpit's own toolbar reports <a href="VRage.Game.MyToolbarType@Ship.html">Ship</a> or <a href="VRage.Game.MyToolbarType@Seat.html">Seat</a> , its build toolbar <a href="VRage.Game.MyToolbarType@BuildCockpit.html">BuildCockpit</a> , and a character toolbar <a href="VRage.Game.MyToolbarType@Character.html">Character</a> .</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyToolbarSlots@ItemCount.html">ItemCount</a></td>
+<td>Total number of slots, <a href="VRage.Game.ModAPI.IMyToolbarSlots@SlotCount.html">SlotCount</a> multiplied by <a href="VRage.Game.ModAPI.IMyToolbarSlots@PageCount.html">PageCount</a> .<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyToolbarSlots.html">IMyToolbarSlots</a></em></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyToolbarSlots@PageCount.html">PageCount</a></td>
+<td>Number of pages.<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyToolbarSlots.html">IMyToolbarSlots</a></em></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyToolbarSlots@SlotCount.html">SlotCount</a></td>
+<td>Number of slots on a single page.<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyToolbarSlots.html">IMyToolbarSlots</a></em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyToolbar@GetObjectBuilder.html">GetObjectBuilder()</a></td>
+<td>Gets a copy of the entire toolbar, including the gamepad slots and the selected slot.</td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyToolbarSlots@BeginChanges.html">BeginChanges()</a></td>
+<td>Starts a batch of slot assignments. Chain calls onto the result and finish with <a href="VRage.Game.ModAPI.IMyToolbarChangeBuilder@Apply.html">Apply()</a> , which applies the lot together and, for a block toolbar, sends it to clients as one message. Later calls win where two address the same slot.<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyToolbarSlots.html">IMyToolbarSlots</a></em></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyToolbarSlots@GetItems.html">GetItems(List<MyToolbarItemInfo>)</a></td>
+<td>Clearsoutputand fills it with one entry per slot, so that list index matches slot index. Empty slots come back as <a href="VRage.Game.ModAPI.MyToolbarItemKind@Empty.html">Empty</a> .<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyToolbarSlots.html">IMyToolbarSlots</a></em></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyToolbarSlots@Trigger.html">Trigger(int)</a></td>
+<td>Runs the item in a slot, as a player pressing it would. A block toolbar is owned by the server, so this runs there and refuses anywhere else; a mod gets itself to the server by sending its own message and calls this from there. What the item does replicates as usual.<br /><br />An item that is not currently available does not run: a block action needs its target to share a grid group with the block owning the toolbar.<br /><br />A slot holding a definition rather than an action - a block to build, a tool - selects it for whoever is at the keyboard. That is the expected thing in single player and nothing useful on a dedicated server, where nobody is.<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyToolbarSlots.html">IMyToolbarSlots</a></em></td>
+</tr>
+<tr>
+<td><a href="VRage.Game.ModAPI.IMyToolbarSlots@TryGetItem.html">TryGetItem(int, out MyToolbarItemInfo)</a></td>
+<td>Reads what a slot holds. Copies out; nothing in the result tracks later edits.<br /><br /><em>Inherited from <a href="VRage.Game.ModAPI.IMyToolbarSlots.html">IMyToolbarSlots</a></em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Implements:</strong></p>
+<ul>
+<li><a href="VRage.Game.ModAPI.IMyToolbarSlots.html">IMyToolbarSlots</a></li>
+</ul>
+
+    </main>
+    <script src="api-index.js?v=21d60a28e8d9"></script>
+</body>
+</html>

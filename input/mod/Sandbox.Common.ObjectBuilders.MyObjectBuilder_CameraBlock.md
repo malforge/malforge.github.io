@@ -8,8 +8,10 @@ public class MyObjectBuilder_CameraBlock: MyObjectBuilder_FunctionalBlock
 
 |Member|Description|
 |---|---|
+|[EnablePanning](Sandbox.Common.ObjectBuilders.MyObjectBuilder_CameraBlock@EnablePanning)||
 |[Fov](Sandbox.Common.ObjectBuilders.MyObjectBuilder_CameraBlock@Fov)||
 |[IsActive](Sandbox.Common.ObjectBuilders.MyObjectBuilder_CameraBlock@IsActive)||
+|[ViewRotation](Sandbox.Common.ObjectBuilders.MyObjectBuilder_CameraBlock@ViewRotation)|Clockwise roll of the camera view in degrees. Snapped to 0/90/180/270 on load.|
 |[BlockGeneralDamageModifier](VRage.Game.MyObjectBuilder_CubeBlock@BlockGeneralDamageModifier)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[BlockOrientation](VRage.Game.MyObjectBuilder_CubeBlock@BlockOrientation)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
 |[BuildPercent](VRage.Game.MyObjectBuilder_CubeBlock@BuildPercent)|_Inherited from [MyObjectBuilder_CubeBlock](VRage.Game.MyObjectBuilder_CubeBlock)_|
